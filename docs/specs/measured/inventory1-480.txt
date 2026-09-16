@@ -1,0 +1,161 @@
+# /inventory1 @480 — высота 5450
+
+## rec1120433846 T396 rect=0,0,480,0  
+   artboard: 0,0,480,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750064265438 @16,-79,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @860,-65,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @43,-63,394,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064585345 @63,-54,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @119,-54,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @200,-54,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @261,-54,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @332,-54,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [shape] #1750064216340 @0,0,480,44 bg:rgb(255, 255, 255)
+- [button] #1750064809384 @318,10,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [shape] #1750065106018 @434,10,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750064375153 @12,15,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @33,16,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [image] #1750065280847 @444,19,14,2 → #menu_open
+- [image] #1750065303997 @444,23,14,2 → #menu_open
+
+## rec2019524321 T396 rect=0,0,480,0  
+   artboard: 0,700,480,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,78 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/15.6px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,830,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:cover pos:0% 0% r:8px
+
+## rec759581948 T396 rect=0,0,480,1289  
+   artboard: 0,90,480,1199 bg=rgb(248, 248, 251) img=none pos=relative
+- [text] #1669372132956 @9,90,461,41 «Где приобрести инвентарь?» | 33px/41px 200 RockStar rgb(27, 27, 27) align:center
+- [text] #1672138794150 @117,191,244,32 «Актуализировала для вашего удобства ссылки на инвентарь ❤️» | 12px/16px 100 RockStar rgb(27, 27, 27) align:center
+- [shape] #1678701430269 @62,250,356,203 → #popup:youtubevideo_inv bg:rgb(255, 255, 255) img:image_32.jpg.webp size:cover pos:50% 50% r:20px
+- [image] #1678701430271 @215,326,50,50 → #popup:youtubevideo_inv
+- [button] #1678706911630 @72,419,251,24 «Смотреть видео про инвентарь» → #popup:youtubevideo_inv | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678701611500 @350,419,58,24 «5:56» → #popup:youtubevideo_inv | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(30, 31, 33) r:30px
+- [shape] #1684579370257 @11,473,459,781 → #popup:video_invent bg:rgb(255, 255, 255) r:20px
+- [text] #1678706079846 @30,493,303,42 «Structura.shop скидка 15% на все товары по коду natalyapopovich» → http://structura.shop/ | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [shape] #1678706157732 @167,517,142,20 bg:rgb(255, 106, 69) r:7px
+- [text] #1684579789443 @29,547,340,36 «Для вашего удобства собраны готовые боксы от магазина Structura.shop с инвентарем:» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [image] #1684578789235 @29,598,120,120 r:400px
+- [text] #1684578689245 @161,606,390,18 «Сет: Popovich Коррекция» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [text] #1684579025108 @162,630,390,24 «6 000 руб.» | 16px/24px 200 RockStar rgb(7, 17, 25)
+- [button] #1684578902707 @161,664,227,47 «Купить бокс в магазине» → http://structura.shop/gifts/tproduct/393900298-253898741841-set-popovich-korrektsiya | 12px/18.6px 200 RockStar rgb(27, 27, 27) align:center r:14px
+- [image] #1684580521849 @29,738,120,120 r:400px
+- [text] #1684580521862 @161,746,390,18 «Сет: Popovich Силовой» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [text] #1684580521859 @162,770,390,24 «9 600 руб.» | 16px/24px 200 RockStar rgb(7, 17, 25)
+- [button] #1684580521855 @161,804,227,47 «Купить бокс в магазине» → http://structura.shop/gifts/tproduct/393900298-364561949421-set-popovich-silovoi | 12px/18.6px 200 RockStar rgb(27, 27, 27) align:center r:14px
+- [text] #1678706079851 @29,877,420,21 «Fitnessroller.ru скидка 15% по коду NPopovich» → http://fitnessroller.ru/ | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [shape] #1678707685915 @328,880,94,20 bg:rgb(255, 106, 69) r:7px
+- [text] #1678706079849 @29,910,390,36 «Вы всегда можете написать менеджерам, они уже знают наизусть, какой участницам нужен инвентарь для курсов ❤️ Всегда помогут.» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [text] #1678706524380 @29,974,307,36 «Также много различного инвентаря есть на OZON, Wildberries, Декатлон и т.д.» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [text] #1678706079853 @29,1030,400,198 «ВАЖНО: Не паникуйте, если что-то не успели купить и тд, на курсе «Коррекция» большинство тренировок вообще без инвентаря и вы ВСЕГДА сможете позаниматься. Самое» | 12px/18px 100 RockStar rgb(7, 17, 25)
+
+## rec435844607 T396 rect=0,1289,480,130  
+   artboard: 0,1349,480,40 bg=rgb(248, 248, 251) img=none pos=relative
+- [text] #1678709306858 @10,1349,461,41 «Ниже примеры» | 33px/41px 200 RockStar rgb(27, 27, 27)
+
+## rec562582525 T396 rect=0,1419,480,340  
+   artboard: 0,1449,480,280 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,1452,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:01_6.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,1602,346,21 «Массажный ролл (пилатес - ролл)» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678706079849 @10,1633,271,36 «От 33-90 см (мне удобнее использовать в работе 33 и 45 см)» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678712660739 @10,1688,136,30 «Structura.shop» → http://structura.shop/rolls/tproduct/245717691-936967133850-massazhnii-roll-45-sm | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678712729242 @150,1688,115,30 «Fitnessroller» → https://fitnessroller.ru/massajnoe-oborudovanie/pilates-roll/rolik-dlya-yogi-polnoteliy-dvucvetniy-45sm/ | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678712729926 @269,1688,87,30 «Ozon 1» → https://www.ozon.ru/product/massazhnyy-tsilindr-indigo-foam-roll-in022-fioletovyy-60-15-sm-240468233/?sh=ykseB2vCGw | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678712693082 @358,1688,87,30 «Ozon 2» → https://www.ozon.ru/product/massazhnyy-tsilindr-roller-roll-rolik-valik-trigger-point-grid-33-sm-laym-173405082/?sh=ykseB32XuA | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec562644896 T396 rect=0,1759,480,420  
+   artboard: 0,1789,480,360 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,1792,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:02_7.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,1942,192,21 «Мяч для стоп» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678718674555 @10,1973,271,36 «Самый лучший мячик triggerpoint (настоятельно рекомендую):» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678712660739 @10,2019,65,30 «Ozon» → https://www.ozon.ru/product/massazhnyy-myach-trigger-point-mobipoint-5-sm-152167703/?sh=ykseB1zwDg | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [text] #1678706079849 @10,2069,345,36 «Но также можно посмотреть более дешевые аналоги (размер 5-7 см, без шипов):» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678712729926 @10,2115,65,30 «Ozon» → https://www.ozon.ru/product/sportzen-massazhnyy-myach-dlya-stop-massazhnyy-myach-myach-dlya-mfr-triggerbol-massazhnyy-myachik-224318910/?asb=bHLihT6D56m1HGRNc%252BSL5tmr2okA42QEgGgr9%252Fc1Nn8%253D&asb2=tW-F0au5X6UYWqy-m4eQsQHZnFFpq-CbhUARghkP2ab9hTIQE5gKi8WmRms9hgNl&keywords=%D0%BC%D1%8F%D1%87+%D0%B4%D0%BB%D1%8F+%D1%81%D1%82%D0%BE%D0%BF&sh=ykseB25rxQ | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678712729242 @79,2115,115,30 «Fitnessroller» → https://fitnessroller.ru/massajnoe-oborudovanie/massajnie-myachi/gladkie-myachi/myach-dlya-mfr-original-fittools-65mm/ | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec562663080 T396 rect=0,2179,480,759  
+   artboard: 0,2209,480,699 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,2212,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:03_2.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,2362,192,21 «2 мягких мяча» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678721267762 @10,2391,457,36 «Вводите в поисковой строке Franklin Method easy crip (если вы находитесь не на территории РФ - то же самое, такие мячи есть на Amazon и т.д)» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678720078312 @7,2450,346,30 «Пример OZON по поиску «мячи Франклина»» → https://www.ozon.ru/product/myachi-dlya-massazha-i-relaksatsii-franklin-method-easy-grip-set-diametr-10-sm-komplekt-iz-2-sht-530233587/?sh=mzN1tY0B7Q | 12px/15.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678721082204 @7,2487,172,30 «Мячи Sling in motion» → https://www.ozon.ru/product/myachi-massazhnye-teksturirovannye-slings-in-motion-slingi-v-dvizhenii-diametr-10-sm-komplekt-iz-714559190/ | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678712729242 @182,2487,113,30 «fitnessroller» → https://fitnessroller.ru/massajnoe-oborudovanie/massajnie-myachi/igolchatie-myachi/myachi-dlya-relaksatsii-franklin-method-easy-grip-set/ | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678721125764 @7,2525,137,30 «structura.shop 1» → http://structura.shop/balls/tproduct/245726277-694769729587-massazhnii-myach-10-sm (http://structura.shop/balls/tproduct/245726277-694769729587-massazhnii-myach-10-sm) | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678721101978 @148,2525,143,30 «structura.shop 2» → http://structura.shop/balls/tproduct/245726277-402114102991-massazhnii-myach-12-sm | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [text] #1678718674555 @8,2564,271,18 «Также прекрасные мячи у элефант:» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678721304967 @8,2593,112,30 «elephant 1» → https://elephant.ru/catalog/lechebnaya_fizkultura/massazh/myach-dlya-massazha/diametr_10_12_sm/myach_massazhnyy_10_sm_ledraplastic.html | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678721304962 @123,2593,116,30 «elephant 2» → https://elephant.ru/catalog/lechebnaya_fizkultura/massazh/myach-dlya-massazha/diametr_10_12_sm/myachi_myagkie_massazhnye_izi_krip_easy_grip_set_10_sm_2_shtuki_ledraplastic.html | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [text] #1678722047667 @8,2642,298,36 «Русские мячи, нужно сдувать. Не идеальный вариант, но тоже неплохие.» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678721988585 @8,2688,138,30 «structura.shop» → http://structura.shop/balls/tproduct/245726277-259427712131-massazhnii-myagkii-myach-12-sm | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [text] #1678721426806 @8,2738,346,36 «ПРОШУ ОБРАТИТЬ ВНИМАНИЕ - ТАКИЕ МЯЧИ - ЖЕСТКИЕ их категорически нельзя:» | 12px/18px 300 RockStar rgb(7, 17, 25)
+- [button] #1678721426799 @8,2784,99,30 «Ozon» → https://www.ozon.ru/product/massazhnyy-myachik-tsvet-zelenyy-190326260/?asb=2XdZMGEmF49xgFQ5Gd07wJ5h2nEm%252BkH%252FZyurCpKLSZ0%253D&asb2=M6Jw5pMDfb-L1jFxsdNBcJq6gA0ljHxQtPMjgpO8zElWebvL2YxKrjYomN3Yicvm&keywords=%D0%BC%D1%8F%D1%87%D0%B8+%D1%84%D1%80%D0%B0%D0%BD%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0&sh=ykseB2qGZw | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [text] #1678722043919 @8,2834,454,54 «Настоятельно рекомендую брать те, что я подобрала. За неимением мячей на первое время можно использовать несколько пар свернутых носков» | 12px/18px 100 RockStar rgb(7, 17, 25)
+
+## rec562689059 T396 rect=0,2938,480,450  
+   artboard: 0,2968,480,390 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,2971,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:04_1.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,3121,461,63 «Эспандер (лента для пилатеса) - для курса силовой, для курса коррекция вы можете ограничиться плясом для халата, так как понадобится редко» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678718674555 @10,3194,292,36 «Не берите слишком тугую, достаточно будет среднего уровня сопротивления.» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678712660739 @10,3240,133,30 «structura.shop» → http://structura.shop/elastic | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [text] #1678706079849 @10,3291,345,18 «В fix price также есть ленты за 99 р.» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678712729242 @10,3319,101,30 «Ozon» → https://www.ozon.ru/product/espander-starfit-lentochnyy-dlya-yogi-lentochnyy-dlya-pilatesa-core-es-201-1-sht-120-kg-302093857/?asb=%252F2tkYpc1xVGoBMbNWj%252BtFRzbEkZYMxAKywDNV8wDeK%252F0Vu%252Bm0DWZGlx%252B3YzgppI4&asb2=bN1jyLlk0Ta1C5rymJAVCXzFQdaPuilDtxqHvIOjjLTUfS5XayNyDAWSL7OhRJsPXp-Rd6VVtJlzf3eKCP7R5DxNhnbYtO1frTqZOT-ThyLLKtW8gPtGAB0yB5t_JMNvuP_FGzA__jUSmY6uDgRIkQ&ectx=0&keywords=%D1%8D%D1%81%D0%BF%D0%B0%D0%BD%D0%B4%D0%B5%D1%80+%D0%BB%D0%B5%D0%BD%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0 | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec562691475 T396 rect=0,3388,480,360  
+   artboard: 0,3418,480,300 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,3421,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:05_3.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,3571,276,42 «Мяч для пилатеса 25-30 см (или детский мяч сдутый)» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678718674555 @10,3623,225,36 «Он продаётся сдутый, надуваем его не максимально» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678723091491 @10,3679,133,30 «structura.shop» → http://structura.shop/pilatesballs/tproduct/247161096-714827850711-myach-dlya-pilatesa-25-sm | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+- [button] #1678712660739 @147,3679,133,30 «structura.shop» → http://structura.shop/pilatesballs/tproduct/247161096-978258025291-myach-dlya-pilatesa-27-sm | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec562692497 T396 rect=0,3748,480,340  
+   artboard: 0,3778,480,280 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,3781,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:06_2.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,3931,425,42 «Коврик (желательно не тонкий - так вашим коленям будет максимально комфортно)» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678718674555 @10,3983,225,18 «Толщина 1 см (ниже пример)» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678723091491 @10,4019,92,30 «Ozon» → https://www.ozon.ru/product/kovrik-dlya-yogi-starfit-fm-301-nbr-183x58x1-0-sm-tsvet-seryy-167777828/?asb=GVG7YoO2F3edLHy%252FR%252FvN46g%252F2GSN2Lzwy%252Bz3ZRVOiaRKxh8d1tnGYsF7DCDtk6sB&asb2=BuSOx0c4-xg2BN3KBYmeOyX4gGBft17wZT0epjDffX-D1EDzZ_yCj-9thYwmYm0cIF52WB_Nd4uRNvmy9oeIYhWiGk7S8UsTSshL504YxTR3N6J8hjyimZPpS9_1MnJnZCS1bStnqqeMvl8aO_tQ7Q&keywords=%D0%BA%D0%BE%D0%B2%D1%80%D0%B8%D0%BA+%D0%B4%D0%BB%D1%8F+%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81%D0%B0+1+%D1%81%D0%BC&sh=ykseBziBOQ | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec562693852 T396 rect=0,4088,480,370  
+   artboard: 0,4118,480,310 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,4121,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:07_2.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,4271,425,21 «Набор гантелей (гиря)» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678718674555 @10,4301,367,54 «*для тарифа СИЛОВОЙ Набор гантелей выгоднее, если вы планируете заниматься дома, у вас будет рост в весе и вы сможете прогрессировать» | 12px/18px 100 RockStar rgb(7, 17, 25)
+- [button] #1678723091491 @10,4388,92,30 «Ozon» → https://www.ozon.ru/product/tselnaya-tiguar-6-kg-180264479/?asb=7dr7DGM6MFLPJMie81TR7Pwyg4LXR0l%252BKqOwZP%252FNsko%253D&asb2=qr6PcYkvKDI3rrSF7BLAov3Z-LablL69Ck5su6CF1F3iB0dJMqQG7rrpQhjdenpR&keywords=%D0%B3%D0%B8%D1%80%D1%8F&sh=ykseB3GB1Q | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec562695241 T396 rect=0,4458,480,380  
+   artboard: 0,4488,480,260 bg=rgb(248, 248, 251) img=none pos=relative
+- [shape] #1678701430265 @10,4491,140,140 → #popup:video_invent bg:rgb(255, 255, 255) img:08_1.jpg.webp size:cover pos:50% 50% r:20px
+- [text] #1678706079846 @10,4641,425,21 «Кольцевая лента (лучше набор)» | 14px/21px 200 RockStar rgb(7, 17, 25)
+- [text] #1678718674555 @10,4671,367,18 «*для тарифа СИЛОВОЙ» | 12px/18px 200 RockStar rgb(114, 90, 255)
+- [button] #1678723091491 @10,4708,92,30 «Ozon» → https://www.ozon.ru/product/lemleo-rezinki-dlya-fitnesa-i-sporta-lentochnyy-trenazher-espander-dlya-sportivnyh-trenirovok-260875987/?sh=ykseB-wY3A | 12px/18.6px 200 RockStar rgb(255, 255, 255) align:center bg:rgb(114, 90, 255) r:30px
+
+## rec1120448561 T396 rect=0,4838,480,612  
+   artboard: 0,288,480,612 bg=rgb(29, 29, 29) img=none pos=fixed
+- [button] #1749597221603 @10,339,49,19 «Главная» → https://popovichfit.ru/ | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @10,339,85,189 img:none size:undefined pos:undefined flex row gap:15px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597623457 @320,339,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [button] #1749597242361 @10,373,39,19 «Курсы» → https://popovichfit.ru/ | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597681380 @320,389,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [button] #1749597275677 @10,407,66,19 «Результаты» → https://popovichfit.ru/results | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073913259 @430,439,6,6
+- [button] #1749597276052 @10,441,54,19 «Обо мне» → https://popovichfit.ru/about | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @334,443,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @334,443,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @369,443,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @404,443,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @439,443,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597276374 @10,475,38,19 «Media» → https://popovichfit.ru/media | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [text] #1750073992932 @337,488,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597309677 @10,509,79,19 «Сообщество» → https://popovichfit.ru/community | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1749597598043 @13,558,454,55
+- [text] #1749597352468 @10,643,199,28 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @249,643,208,28 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @249,695,242,28 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @10,703,94,14 «Договор-оферта» → https://popovichfit.ru/oferta | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @0,743,199,14 «e-mail: info@popovichfit.ru» | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @249,743,208,28 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @249,783,208,28 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [shape] #1749597712349 @10,823,460,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @185,858,110,11 → https://shumann.ru/ op:0.6

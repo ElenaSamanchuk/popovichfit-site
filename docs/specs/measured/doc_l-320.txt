@@ -1,0 +1,23 @@
+# /doc_l @320 — высота 845
+
+## rec782484414 T396 rect=0,0,320,45  
+   artboard: 0,0,320,45 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [button] #1720448527219 @160,10,110,25 «ЛИЧНЫЙ КАБИНЕТ» → members/login | 8px/12.4px 700 Manrope rgb(255, 255, 255) uppercase align:center bg:rgb(35, 35, 35) r:6px
+
+## rec782484436 T396 rect=0,0,320,500  
+   artboard: 0,90,320,320 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720688572138 @10,145,170,29 «Документы» | 24px/29px 600 Manrope rgb(32, 32, 32)
+- [shape] #1720688572119 @1688,151,44,225 r:20px
+- [button] #1722936090673 @10,192,135,35 «Публичная оферта» → https://popovichfit.ru/oferta | 9px/13.95px 100 Manrope rgb(39, 39, 39) r:11px
+- [button] #1722936090669 @10,228,255,35 «Согласие на обработку персональных данных» → https://popovichfit.ru/oferta | 9px/13.95px 100 Manrope rgb(39, 39, 39) r:11px
+- [button] #1722936090671 @10,264,284,35 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 9px/13.95px 100 Manrope rgb(39, 39, 39) r:11px
+- [button] #1722936090667 @10,300,284,50 «Дополнительная общеобразовательная программа –дополнительная общеразвивающая программа «Коррекция»» → https://disk.yandex.ru/i/In_VD4zQs-Bnqw | 9px/13.95px 100 Manrope rgb(39, 39, 39) r:11px
+
+## rec782484441 T396 rect=0,500,320,345  
+   artboard: 0,500,320,345 bg=rgb(27, 27, 27) img=none pos=relative
+- [text] #1722935400129 @10,522,277,76 «Индивидуальный предприниматель Попович Наталья Викторовна ИНН 780528255230, ОГРНИП 321784700363794 NATALYA.POPOVICH87@YANDEX.RU» | 12px/19px 400 Manrope rgb(255, 255, 255)
+- [button] #1684475516477 @10,622,135,35 «Публичная оферта» → https://popovichfit.ru/oferta | 9px/13.95px 100 Manrope rgb(189, 189, 189) r:11px
+- [button] #1722935452945 @10,658,255,35 «Согласие на обработку персональных данных» → https://popovichfit.ru/oferta | 9px/13.95px 100 Manrope rgb(189, 189, 189) r:11px
+- [button] #1684475480886 @10,694,284,35 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 9px/13.95px 100 Manrope rgb(189, 189, 189) r:11px
+- [button] #1722935467315 @10,730,135,35 «Документы» → https://popovichfit.ru/oferta | 9px/13.95px 100 Manrope rgb(189, 189, 189) r:11px
+- [button] #1684474502765 @10,790,122,35 «Личный кабинет» → members/login | 9px/13.95px 600 Manrope rgb(255, 255, 255) align:center r:8px

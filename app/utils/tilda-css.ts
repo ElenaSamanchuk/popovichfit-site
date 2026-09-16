@@ -9,17 +9,18 @@ export type Px = number | { pct: number } | null
 export interface Eff { left?: Left | null; top?: Px; width?: Px; height?: Px; style?: Record<string, string> }
 export interface ZeroElem {
   id: string; type: 'text' | 'button' | 'image' | 'shape' | 'vector' | 'html' | 'video' | 'form' | 'gallery' | 'tooltip'
-  cls?: string; eff: Record<string, Eff>; fields: Record<string, string>; anim?: Record<string, string>
+  cls?: string; flex?: boolean; eff: Record<string, Eff>; fields: Record<string, string>; anim?: Record<string, string>
   html?: string; text?: string; href?: string; img?: string; bgImg?: string; svg?: string; embed?: string
   video?: { kind: 'youtube' | 'vimeo' | 'kinescope'; id: string }; form?: unknown[]; formServices?: string[]
 }
-export interface ZeroGroup { id: string; cls: string; members: string[]; eff: Record<string, Eff>; mol: Record<string, Record<string, string>> }
+export interface ZeroGroup { id: string; cls: string; flex?: boolean; molFlex?: boolean; attrs?: Record<string, string>; eff: Record<string, Eff>; mol: Record<string, Record<string, string>> }
+export type ZeroNode = { kind: 'elem'; id: string } | { kind: 'group'; id: string; cls: string; flex: boolean; molFlex: boolean; children: ZeroNode[] }
 export interface Artboard { h: number | null; bg?: string | null; pos?: string | null; upscale?: string | null; valign?: string | null; hug?: boolean; bgImage?: string | null }
 export interface TildaBlock {
   id: string; type: string; vis: { min: number | null; max: number | null }; bg?: string | null
   pad: { 'padding-top': number | null; 'padding-bottom': number | null }; uc: string[]
   artboard?: { screens: string; fixed: boolean; fixedPos?: string | null; ovrflw?: string | null; bg: Record<string, string> }
-  artboards?: Record<string, Artboard>; elems?: ZeroElem[]; groups?: ZeroGroup[]
+  artboards?: Record<string, Artboard>; elems?: ZeroElem[]; groups?: ZeroGroup[]; tree?: ZeroNode[]
   html?: string; css?: string; hooks?: string[]; popupRecs?: string[]; custom?: string
 }
 export interface TildaPageData { file: string; blocks: TildaBlock[] }
@@ -32,7 +33,7 @@ const RANGES = [
   { scr: '320', media: '(max-width: 479.98px)', artW: 320 },
 ] as const
 
-const SKIP_STYLE = new Set(['z-index', 'hover', 'font-family', 'display'])
+const SKIP_STYLE = new Set(['z-index', 'hover', 'font-family', 'display', 'icon', 'btn-color', 'btn-pad', 'btn-gap'])
 
 function num(v: Px | undefined, mobile: boolean): string | null {
   if (v === null || v === undefined) return null
@@ -93,6 +94,23 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   if (st['$bgcolor-color'] && !st['background-color']) css += `background-color:${st['$bgcolor-color']};`
   if (st['$bgcolor-image'] && st['$bgcolor-image'] !== 'none' && !st['background-image']) css += `background-image:${st['$bgcolor-image']};`
   let out = `${sel}{${css}}`
+  // иконка кнопки (библиотечная svg через mask) и цвет текста кнопки
+  if (st['icon']) {
+    const ic: Record<string, string> = {}
+    for (const part of st['icon'].split(/\s+(?=[\w-]+:)/)) { const i = part.indexOf(':'); if (i > 0) ic[part.slice(0, i)] = part.slice(i + 1) }
+    let icss = ''
+    if (ic['--icon']) icss += `-webkit-mask-image:${ic['--icon']};mask-image:${ic['--icon']};`
+    for (const k of ['width', 'height', 'order', 'margin-right', 'margin-left']) if (ic[k]) icss += `${k}:${ic[k]};`
+    if (icss) out += `${sel} .tz__icon{${icss}}`
+  }
+  if (st['btn-color']) out += `${sel} .tz__btn-text{color:${st['btn-color']};}`
+  // кнопка без фиксированной высоты: высота из padding контента (.tn-atom__button-content)
+  if (e.type === 'button' && (st['btn-pad'] || st['btn-gap'])) {
+    let b2 = ''
+    if (st['btn-pad'] && (eff.height === null || eff.height === undefined)) b2 += `padding:${st['btn-pad']};`
+    if (st['btn-gap']) b2 += `column-gap:${st['btn-gap']};`
+    if (b2) out += `${sel}{${b2}}`
+  }
   // hover
   const hv: string[] = []
   if (st['$hover-bgcolor-color']) hv.push(`background-color:${st['$hover-bgcolor-color']}`)
@@ -123,14 +141,25 @@ export function zeroBlockCss(b: TildaBlock): string {
     sec += '}'
     parts.push(`@media ${r.media}{${u}${sec}`)
     for (const g of b.groups ?? []) {
-      const eff = g.eff?.[r.scr]; if (!eff) continue
+      const eff = g.eff?.[r.scr] ?? {}
       const mol = g.mol?.[r.scr] ?? {}
-      let css = posCss(eff.left, mobile, r.artW)
-      const top = num(eff.top, mobile); if (top !== null) css += `top:${top};`
+      // контейнер группы: абсолютный (или flex-элемент родительской молекулы)
+      let css = g.flex ? '' : posCss(eff.left, mobile, r.artW)
+      const top = num(eff.top, mobile); if (top !== null && !g.flex) css += `top:${top};`
       const w = num(eff.width, mobile); if (w !== null) css += `width:${w};`
       const h = num(eff.height, mobile); if (h !== null) css += `height:${h};`
-      for (const k of ['background-color', 'background-image', 'border-radius', 'box-shadow', 'opacity']) if (mol[k]) css += `${k}:${mol[k]};`
+      if (eff.style?.['z-index']) css += `z-index:${eff.style['z-index']};`
+      for (const k of ['flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width']) if (eff.style?.[k]) css += `${k}:${eff.style[k]};`
       parts.push(`${id} .g${g.id}{${css}}`)
+      // молекула: flex-раскладка и оформление
+      let m = ''
+      for (const k of ['display', 'flex-direction', 'flex-wrap', 'row-gap', 'column-gap', 'gap', 'align-items', 'justify-content', 'align-content', 'padding', 'background-color', 'background-image', 'border-radius', 'box-shadow', 'opacity', 'border-width', 'border-color', 'border-style']) {
+        if (mol[k] === undefined) continue
+        if (k === 'padding' && mobile) { m += `padding:${mol[k].split(' ').map((v) => (/^\d/.test(v) ? `calc(${parseFloat(v)} * var(--u))` : v)).join(' ')};`; continue }
+        if ((k === 'row-gap' || k === 'column-gap') && mobile && /^\d/.test(mol[k])) { m += `${k}:calc(${parseFloat(mol[k])} * var(--u));`; continue }
+        m += `${k}:${mol[k]};`
+      }
+      if (m) parts.push(`${id} .g${g.id} > .tz__mol{${m}}`)
     }
     for (const e of b.elems ?? []) {
       const eff = e.eff?.[r.scr]; if (!eff) continue

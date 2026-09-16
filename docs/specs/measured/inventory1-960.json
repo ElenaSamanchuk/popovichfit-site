@@ -1,0 +1,3272 @@
+{
+ "width": 960,
+ "height": 5037,
+ "recs": [
+  {
+   "id": "rec774067934",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120433846",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1750064216340",
+     "type": "shape",
+     "rect": [
+      0,
+      0,
+      960,
+      10
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064585345",
+     "type": "button",
+     "rect": [
+      303,
+      19,
+      40,
+      16
+     ],
+     "text": "КУРСЫ",
+     "href": "https://popovichfit.ru/#rec1120250416",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064641344",
+     "type": "button",
+     "rect": [
+      359,
+      19,
+      65,
+      16
+     ],
+     "text": "ДО/ПОСЛЕ",
+     "href": "https://popovichfit.ru/results",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064660802",
+     "type": "button",
+     "rect": [
+      440,
+      19,
+      45,
+      16
+     ],
+     "text": "СТАТЬИ",
+     "href": "https://popovichfit.ru/media",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064661319",
+     "type": "button",
+     "rect": [
+      501,
+      19,
+      55,
+      16
+     ],
+     "text": "О ТРЕНЕРЕ",
+     "href": "https://popovichfit.ru/about",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1773122482265000001",
+     "type": "button",
+     "rect": [
+      572,
+      19,
+      85,
+      16
+     ],
+     "text": "ВОПРОС/ОТВЕТ",
+     "href": "https://popovichfit.ru/#question-answer",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064265438",
+     "type": "shape",
+     "rect": [
+      -32,
+      0,
+      109,
+      43
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064321583",
+     "type": "text",
+     "rect": [
+      2,
+      19,
+      65,
+      12
+     ],
+     "text": "POPOVICHFIT",
+     "href": "https://popovichfit.ru/",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064375153",
+     "type": "image",
+     "rect": [
+      -19,
+      18,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065106018",
+     "type": "shape",
+     "rect": [
+      400,
+      -50,
+      34,
+      24
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(245, 244, 244)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065303997",
+     "type": "image",
+     "rect": [
+      410,
+      -37,
+      14,
+      2
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065280847",
+     "type": "image",
+     "rect": [
+      410,
+      -41,
+      14,
+      2
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064777730",
+     "type": "shape",
+     "rect": [
+      834,
+      0,
+      126,
+      43
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064809384",
+     "type": "button",
+     "rect": [
+      842,
+      11,
+      108,
+      24
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(48, 48, 48)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G175006465878646380",
+     "type": "group",
+     "rect": [
+      283,
+      10,
+      394,
+      34
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "0px 0px 6px 6px",
+     "display": "flex",
+     "flex": "row gap:normal 16px align:center justify:flex-start pad:9px 20px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     960,
+     44
+    ],
+    "bg": "rgb(245, 245, 245)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec1551840931",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828336527",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec592229670",
+   "type": "450",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Главная Курсы До/после Статьи О тренере Вопрос-ответ ПРЕДЗАПИСЬ"
+  },
+  {
+   "id": "rec2019524321",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1773213623323000003",
+     "type": "text",
+     "rect": [
+      32,
+      740,
+      257,
+      80
+     ],
+     "text": "Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "12px/16px 500 Involve",
+     "color": "rgb(38, 38, 38)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1773213623325000005",
+     "type": "button",
+     "rect": [
+      32,
+      832,
+      100,
+      36
+     ],
+     "text": "Согласен",
+     "href": "",
+     "font": "14px/20.3px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1773213623322000002",
+     "type": "group",
+     "rect": [
+      20,
+      728,
+      270,
+      152
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%",
+     "radius": "10px",
+     "display": "flex",
+     "flex": "column gap:12px normal align:flex-start justify:flex-start pad:12px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     700,
+     960,
+     200
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec2019524641",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828337470",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec759581948",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    960,
+    935
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1684579370257",
+     "type": "shape",
+     "rect": [
+      9,
+      300,
+      940,
+      627
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1669372132956",
+     "type": "text",
+     "rect": [
+      10,
+      135,
+      363,
+      90
+     ],
+     "text": "Где приобрести инвентарь?",
+     "href": "",
+     "font": "36px/45px 200 RockStar",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1672138794150",
+     "type": "text",
+     "rect": [
+      12,
+      238,
+      250,
+      32
+     ],
+     "text": "Актуализировала для вашего удобства ссылки на инвентарь ❤️",
+     "href": "",
+     "font": "12px/16px 100 RockStar",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678707685915",
+     "type": "shape",
+     "rect": [
+      137,
+      758,
+      94,
+      20
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 106, 69)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "7px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079851",
+     "type": "text",
+     "rect": [
+      31,
+      735,
+      204,
+      42
+     ],
+     "text": "Fitnessroller.ru скидка 15% по коду NPopovich",
+     "href": "http://fitnessroller.ru/",
+     "font": "14px/21px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079849",
+     "type": "text",
+     "rect": [
+      31,
+      798,
+      357,
+      54
+     ],
+     "text": "Вы всегда можете написать менеджерам, они уже знают наизусть, какой участницам нужен инвентарь для курсов ❤️ Всегда помогут.",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706524380",
+     "type": "text",
+     "rect": [
+      31,
+      869,
+      316,
+      36
+     ],
+     "text": "Также много различного инвентаря есть на OZON, Wildberries, Декатлон и т.д.",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079853",
+     "type": "text",
+     "rect": [
+      445,
+      650,
+      463,
+      198
+     ],
+     "text": "ВАЖНО: Не паникуйте, если что-то не успели купить и тд, на курсе «Коррекция» большинство тренировок вообще без инвентаря и вы ВСЕГДА сможете позаниматься. Самое",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684579789443",
+     "type": "text",
+     "rect": [
+      31,
+      398,
+      348,
+      36
+     ],
+     "text": "Для вашего удобства собраны готовые боксы от магазина Structura.shop с инвентарем:",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706157732",
+     "type": "shape",
+     "rect": [
+      30,
+      364,
+      142,
+      20
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 106, 69)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "7px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      31,
+      320,
+      243,
+      42
+     ],
+     "text": "Structura.shop скидка 15% на все товары по коду natalyapopovich",
+     "href": "http://structura.shop/",
+     "font": "14px/21px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684578789235",
+     "type": "image",
+     "rect": [
+      31,
+      455,
+      120,
+      120
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "400px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684580521849",
+     "type": "image",
+     "rect": [
+      31,
+      595,
+      120,
+      120
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "400px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678701430269",
+     "type": "shape",
+     "rect": [
+      445,
+      320,
+      484,
+      283
+     ],
+     "text": "",
+     "href": "#popup:youtubevideo_inv",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "image_32.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678701430271",
+     "type": "image",
+     "rect": [
+      666,
+      440,
+      42,
+      42
+     ],
+     "text": "",
+     "href": "#popup:youtubevideo_inv",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706911630",
+     "type": "button",
+     "rect": [
+      465,
+      552,
+      306,
+      31
+     ],
+     "text": "Смотреть видео про инвентарь",
+     "href": "#popup:youtubevideo_inv",
+     "font": "13px/20.15px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678701611500",
+     "type": "button",
+     "rect": [
+      852,
+      552,
+      57,
+      31
+     ],
+     "text": "5:56",
+     "href": "#popup:youtubevideo_inv",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(30, 31, 33)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684578902707",
+     "type": "button",
+     "rect": [
+      165,
+      521,
+      226,
+      45
+     ],
+     "text": "Купить бокс в магазине",
+     "href": "http://structura.shop/gifts/tproduct/393900298-253898741841-set-popovich-korrektsiya",
+     "font": "12px/18.6px 200 RockStar",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684579025108",
+     "type": "text",
+     "rect": [
+      165,
+      487,
+      294,
+      24
+     ],
+     "text": "6 000 руб.",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684578689245",
+     "type": "text",
+     "rect": [
+      165,
+      463,
+      294,
+      18
+     ],
+     "text": "Сет: Popovich Коррекция",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684580521855",
+     "type": "button",
+     "rect": [
+      164,
+      661,
+      226,
+      45
+     ],
+     "text": "Купить бокс в магазине",
+     "href": "http://structura.shop/gifts/tproduct/393900298-364561949421-set-popovich-silovoi",
+     "font": "12px/18.6px 200 RockStar",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684580521859",
+     "type": "text",
+     "rect": [
+      164,
+      627,
+      294,
+      24
+     ],
+     "text": "9 600 руб.",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684580521862",
+     "type": "text",
+     "rect": [
+      164,
+      603,
+      294,
+      18
+     ],
+     "text": "Сет: Popovich Силовой",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     135,
+     960,
+     800
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec531305644",
+   "type": "331",
+   "rect": [
+    0,
+    935,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec435844607",
+   "type": "396",
+   "rect": [
+    0,
+    935,
+    960,
+    140
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678709306858",
+     "type": "text",
+     "rect": [
+      10,
+      995,
+      363,
+      45
+     ],
+     "text": "Ниже примеры",
+     "href": "",
+     "font": "36px/45px 200 RockStar",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     995,
+     960,
+     50
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562582525",
+   "type": "396",
+   "rect": [
+    0,
+    1075,
+    960,
+    390
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      1105,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "01_6.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      1105,
+      360,
+      24
+     ],
+     "text": "Массажный ролл (пилатес - ролл)",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079849",
+     "type": "text",
+     "rect": [
+      370,
+      1142,
+      261,
+      36
+     ],
+     "text": "От 33-90 см (мне удобнее использовать в работе 33 и 45 см)",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712660739",
+     "type": "button",
+     "rect": [
+      370,
+      1207,
+      165,
+      34
+     ],
+     "text": "Structura.shop",
+     "href": "http://structura.shop/rolls/tproduct/245717691-936967133850-massazhnii-roll-45-sm",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712729242",
+     "type": "button",
+     "rect": [
+      542,
+      1207,
+      142,
+      34
+     ],
+     "text": "Fitnessroller",
+     "href": "https://fitnessroller.ru/massajnoe-oborudovanie/pilates-roll/rolik-dlya-yogi-polnoteliy-dvucvetniy-45sm/",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712729926",
+     "type": "button",
+     "rect": [
+      688,
+      1207,
+      95,
+      34
+     ],
+     "text": "Ozon 1",
+     "href": "https://www.ozon.ru/product/massazhnyy-tsilindr-indigo-foam-roll-in022-fioletovyy-60-15-sm-240468233/?sh=ykseB2vCGw",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712693082",
+     "type": "button",
+     "rect": [
+      790,
+      1207,
+      95,
+      34
+     ],
+     "text": "Ozon 2",
+     "href": "https://www.ozon.ru/product/massazhnyy-tsilindr-roller-roll-rolik-valik-trigger-point-grid-33-sm-laym-173405082/?sh=ykseB32XuA",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1105,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562644896",
+   "type": "396",
+   "rect": [
+    0,
+    1465,
+    960,
+    390
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      1495,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "02_7.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      1495,
+      360,
+      24
+     ],
+     "text": "Мяч для стоп",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      370,
+      1529,
+      261,
+      36
+     ],
+     "text": "Самый лучший мячик triggerpoint (настоятельно рекомендую):",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712660739",
+     "type": "button",
+     "rect": [
+      370,
+      1575,
+      86,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/massazhnyy-myach-trigger-point-mobipoint-5-sm-152167703/?sh=ykseB1zwDg",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712729242",
+     "type": "button",
+     "rect": [
+      370,
+      1688,
+      142,
+      34
+     ],
+     "text": "Fitnessroller",
+     "href": "https://fitnessroller.ru/massajnoe-oborudovanie/massajnie-myachi/gladkie-myachi/myach-dlya-mfr-original-fittools-65mm/",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712729926",
+     "type": "button",
+     "rect": [
+      516,
+      1688,
+      90,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/sportzen-massazhnyy-myach-dlya-stop-massazhnyy-myach-myach-dlya-mfr-triggerbol-massazhnyy-myachik-224318910/?asb=bHLihT6D56m1HGRNc%252BSL5tmr2okA42QEgGgr9%252Fc1Nn8%253D&asb2=tW-F0au5X6UYWqy-m4eQsQHZnFFpq-CbhUARghkP2ab9hTIQE5gKi8WmRms9hgNl&keywords=%D0%BC%D1%8F%D1%87+%D0%B4%D0%BB%D1%8F+%D1%81%D1%82%D0%BE%D0%BF&sh=ykseB25rxQ",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079849",
+     "type": "text",
+     "rect": [
+      370,
+      1642,
+      331,
+      36
+     ],
+     "text": "Но также можно посмотреть более дешевые аналоги (размер 5-7 см, без шипов):",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1495,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562663080",
+   "type": "396",
+   "rect": [
+    0,
+    1855,
+    960,
+    639
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      1885,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "03_2.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      1885,
+      360,
+      24
+     ],
+     "text": "2 мягких мяча",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721267762",
+     "type": "text",
+     "rect": [
+      370,
+      1922,
+      460,
+      36
+     ],
+     "text": "Вводите в поисковой строке Franklin Method easy crip (если вы находитесь не на территории РФ - то же самое, такие мячи есть на Amazon и т.д)",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678720078312",
+     "type": "button",
+     "rect": [
+      366,
+      1986,
+      410,
+      34
+     ],
+     "text": "Пример OZON по поиску «мячи Франклина»",
+     "href": "https://www.ozon.ru/product/myachi-dlya-massazha-i-relaksatsii-franklin-method-easy-grip-set-diametr-10-sm-komplekt-iz-2-sht-530233587/?sh=mzN1tY0B7Q",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721082204",
+     "type": "button",
+     "rect": [
+      780,
+      1986,
+      197,
+      34
+     ],
+     "text": "Мячи Sling in motion",
+     "href": "https://www.ozon.ru/product/myachi-massazhnye-teksturirovannye-slings-in-motion-slingi-v-dvizhenii-diametr-10-sm-komplekt-iz-714559190/",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712729242",
+     "type": "button",
+     "rect": [
+      366,
+      2028,
+      145,
+      34
+     ],
+     "text": "fitnessroller",
+     "href": "https://fitnessroller.ru/massajnoe-oborudovanie/massajnie-myachi/igolchatie-myachi/myachi-dlya-relaksatsii-franklin-method-easy-grip-set/",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721125764",
+     "type": "button",
+     "rect": [
+      515,
+      2028,
+      171,
+      34
+     ],
+     "text": "structura.shop 1",
+     "href": "http://structura.shop/balls/tproduct/245726277-694769729587-massazhnii-myach-10-sm (http://structura.shop/balls/tproduct/245726277-694769729587-massazhnii-myach-10-sm)",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721304967",
+     "type": "button",
+     "rect": [
+      367,
+      2101,
+      141,
+      34
+     ],
+     "text": "elephant 1",
+     "href": "https://elephant.ru/catalog/lechebnaya_fizkultura/massazh/myach-dlya-massazha/diametr_10_12_sm/myach_massazhnyy_10_sm_ledraplastic.html",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721101978",
+     "type": "button",
+     "rect": [
+      691,
+      2028,
+      171,
+      34
+     ],
+     "text": "structura.shop 2",
+     "href": "http://structura.shop/balls/tproduct/245726277-402114102991-massazhnii-myach-12-sm",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721304962",
+     "type": "button",
+     "rect": [
+      511,
+      2101,
+      141,
+      34
+     ],
+     "text": "elephant 2",
+     "href": "https://elephant.ru/catalog/lechebnaya_fizkultura/massazh/myach-dlya-massazha/diametr_10_12_sm/myachi_myagkie_massazhnye_izi_krip_easy_grip_set_10_sm_2_shtuki_ledraplastic.html",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      367,
+      2074,
+      460,
+      18
+     ],
+     "text": "Также прекрасные мячи у элефант:",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721988585",
+     "type": "button",
+     "rect": [
+      367,
+      2211,
+      164,
+      34
+     ],
+     "text": "structura.shop",
+     "href": "http://structura.shop/balls/tproduct/245726277-259427712131-massazhnii-myagkii-myach-12-sm",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678722047667",
+     "type": "text",
+     "rect": [
+      367,
+      2165,
+      305,
+      36
+     ],
+     "text": "Русские мячи, нужно сдувать. Не идеальный вариант, но тоже неплохие.",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721426806",
+     "type": "text",
+     "rect": [
+      367,
+      2275,
+      338,
+      36
+     ],
+     "text": "ПРОШУ ОБРАТИТЬ ВНИМАНИЕ - ТАКИЕ МЯЧИ - ЖЕСТКИЕ их категорически нельзя:",
+     "href": "",
+     "font": "12px/18px 300 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678721426799",
+     "type": "button",
+     "rect": [
+      367,
+      2321,
+      105,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/massazhnyy-myachik-tsvet-zelenyy-190326260/?asb=2XdZMGEmF49xgFQ5Gd07wJ5h2nEm%252BkH%252FZyurCpKLSZ0%253D&asb2=M6Jw5pMDfb-L1jFxsdNBcJq6gA0ljHxQtPMjgpO8zElWebvL2YxKrjYomN3Yicvm&keywords=%D0%BC%D1%8F%D1%87%D0%B8+%D1%84%D1%80%D0%B0%D0%BD%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0&sh=ykseB2qGZw",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678722043919",
+     "type": "text",
+     "rect": [
+      367,
+      2385,
+      458,
+      54
+     ],
+     "text": "Настоятельно рекомендую брать те, что я подобрала. За неимением мячей на первое время можно использовать несколько пар свернутых носков",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1885,
+     960,
+     579
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562689059",
+   "type": "396",
+   "rect": [
+    0,
+    2494,
+    960,
+    390
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      2524,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "04_1.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      2524,
+      540,
+      72
+     ],
+     "text": "Эспандер (лента для пилатеса) - для курса силовой, для курса коррекция вы можете ограничиться плясом для халата, так как понадобится редко",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      370,
+      2616,
+      354,
+      36
+     ],
+     "text": "Не берите слишком тугую, достаточно будет среднего уровня сопротивления.",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712660739",
+     "type": "button",
+     "rect": [
+      370,
+      2662,
+      167,
+      34
+     ],
+     "text": "structura.shop",
+     "href": "http://structura.shop/elastic",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712729242",
+     "type": "button",
+     "rect": [
+      370,
+      2754,
+      87,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/espander-starfit-lentochnyy-dlya-yogi-lentochnyy-dlya-pilatesa-core-es-201-1-sht-120-kg-302093857/?asb=%252F2tkYpc1xVGoBMbNWj%252BtFRzbEkZYMxAKywDNV8wDeK%252F0Vu%252Bm0DWZGlx%252B3YzgppI4&asb2=bN1jyLlk0Ta1C5rymJAVCXzFQdaPuilDtxqHvIOjjLTUfS5XayNyDAWSL7OhRJsPXp-Rd6VVtJlzf3eKCP7R5DxNhnbYtO1frTqZOT-ThyLLKtW8gPtGAB0yB5t_JMNvuP_FGzA__jUSmY6uDgRIkQ&ectx=0&keywords=%D1%8D%D1%81%D0%BF%D0%B0%D0%BD%D0%B4%D0%B5%D1%80+%D0%BB%D0%B5%D0%BD%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079849",
+     "type": "text",
+     "rect": [
+      370,
+      2726,
+      331,
+      18
+     ],
+     "text": "В fix price также есть ленты за 99 р.",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2524,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562691475",
+   "type": "396",
+   "rect": [
+    0,
+    2884,
+    960,
+    390
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      2914,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "05_3.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      2914,
+      540,
+      24
+     ],
+     "text": "Мяч для пилатеса 25-30 см (или детский мяч сдутый)",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      370,
+      2948,
+      416,
+      18
+     ],
+     "text": "Он продаётся сдутый, надуваем его не максимально",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678723091491",
+     "type": "button",
+     "rect": [
+      370,
+      2986,
+      167,
+      34
+     ],
+     "text": "structura.shop",
+     "href": "http://structura.shop/pilatesballs/tproduct/247161096-714827850711-myach-dlya-pilatesa-25-sm",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678712660739",
+     "type": "button",
+     "rect": [
+      542,
+      2986,
+      167,
+      34
+     ],
+     "text": "structura.shop",
+     "href": "http://structura.shop/pilatesballs/tproduct/247161096-978258025291-myach-dlya-pilatesa-27-sm",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2914,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562692497",
+   "type": "396",
+   "rect": [
+    0,
+    3274,
+    960,
+    390
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      3304,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "06_2.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      3304,
+      540,
+      48
+     ],
+     "text": "Коврик (желательно не тонкий - так вашим коленям будет максимально комфортно)",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      370,
+      3364,
+      416,
+      18
+     ],
+     "text": "Толщина 1 см (ниже пример)",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678723091491",
+     "type": "button",
+     "rect": [
+      370,
+      3402,
+      98,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/kovrik-dlya-yogi-starfit-fm-301-nbr-183x58x1-0-sm-tsvet-seryy-167777828/?asb=GVG7YoO2F3edLHy%252FR%252FvN46g%252F2GSN2Lzwy%252Bz3ZRVOiaRKxh8d1tnGYsF7DCDtk6sB&asb2=BuSOx0c4-xg2BN3KBYmeOyX4gGBft17wZT0epjDffX-D1EDzZ_yCj-9thYwmYm0cIF52WB_Nd4uRNvmy9oeIYhWiGk7S8UsTSshL504YxTR3N6J8hjyimZPpS9_1MnJnZCS1bStnqqeMvl8aO_tQ7Q&keywords=%D0%BA%D0%BE%D0%B2%D1%80%D0%B8%D0%BA+%D0%B4%D0%BB%D1%8F+%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81%D0%B0+1+%D1%81%D0%BC&sh=ykseBziBOQ",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     3304,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562693852",
+   "type": "396",
+   "rect": [
+    0,
+    3664,
+    960,
+    390
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      3694,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "07_2.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      3694,
+      540,
+      24
+     ],
+     "text": "Набор гантелей (гиря)",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      370,
+      3729,
+      468,
+      54
+     ],
+     "text": "*для тарифа СИЛОВОЙ Набор гантелей выгоднее, если вы планируете заниматься дома, у вас будет рост в весе и вы сможете прогрессировать",
+     "href": "",
+     "font": "12px/18px 100 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678723091491",
+     "type": "button",
+     "rect": [
+      370,
+      3800,
+      98,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/tselnaya-tiguar-6-kg-180264479/?asb=7dr7DGM6MFLPJMie81TR7Pwyg4LXR0l%252BKqOwZP%252FNsko%253D&asb2=qr6PcYkvKDI3rrSF7BLAov3Z-LablL69Ck5su6CF1F3iB0dJMqQG7rrpQhjdenpR&keywords=%D0%B3%D0%B8%D1%80%D1%8F&sh=ykseB3GB1Q",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     3694,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec562695241",
+   "type": "396",
+   "rect": [
+    0,
+    4054,
+    960,
+    450
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1678701430265",
+     "type": "shape",
+     "rect": [
+      10,
+      4084,
+      320,
+      320
+     ],
+     "text": "",
+     "href": "#popup:video_invent",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "08_1.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678706079846",
+     "type": "text",
+     "rect": [
+      370,
+      4084,
+      540,
+      24
+     ],
+     "text": "Кольцевая лента (лучше набор)",
+     "href": "",
+     "font": "16px/24px 200 RockStar",
+     "color": "rgb(7, 17, 25)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678718674555",
+     "type": "text",
+     "rect": [
+      370,
+      4118,
+      468,
+      18
+     ],
+     "text": "*для тарифа СИЛОВОЙ",
+     "href": "",
+     "font": "12px/18px 200 RockStar",
+     "color": "rgb(114, 90, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1678723091491",
+     "type": "button",
+     "rect": [
+      370,
+      4163,
+      98,
+      34
+     ],
+     "text": "Ozon",
+     "href": "https://www.ozon.ru/product/lemleo-rezinki-dlya-fitnesa-i-sporta-lentochnyy-trenazher-espander-dlya-sportivnyh-trenirovok-260875987/?sh=ykseB-wY3A",
+     "font": "14px/21.7px 200 RockStar",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(114, 90, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     4084,
+     960,
+     330
+    ],
+    "bg": "rgb(248, 248, 251)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec1120432771",
+   "type": "131",
+   "rect": [
+    0,
+    4504,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120448561",
+   "type": "396",
+   "rect": [
+    0,
+    4504,
+    960,
+    533
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1749597221603",
+     "type": "button",
+     "rect": [
+      10,
+      418,
+      49,
+      19
+     ],
+     "text": "Главная",
+     "href": "https://popovichfit.ru/",
+     "font": "12px/18.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597242361",
+     "type": "button",
+     "rect": [
+      93,
+      418,
+      39,
+      19
+     ],
+     "text": "Курсы",
+     "href": "https://popovichfit.ru/",
+     "font": "12px/18.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597275677",
+     "type": "button",
+     "rect": [
+      166,
+      418,
+      66,
+      19
+     ],
+     "text": "Результаты",
+     "href": "https://popovichfit.ru/results",
+     "font": "12px/18.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597276052",
+     "type": "button",
+     "rect": [
+      266,
+      418,
+      54,
+      19
+     ],
+     "text": "Обо мне",
+     "href": "https://popovichfit.ru/about",
+     "font": "12px/18.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597276374",
+     "type": "button",
+     "rect": [
+      354,
+      418,
+      38,
+      19
+     ],
+     "text": "Media",
+     "href": "https://popovichfit.ru/media",
+     "font": "12px/18.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597309677",
+     "type": "button",
+     "rect": [
+      426,
+      418,
+      79,
+      19
+     ],
+     "text": "Сообщество",
+     "href": "https://popovichfit.ru/community",
+     "font": "12px/18.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597447049",
+     "type": "text",
+     "rect": [
+      259,
+      629,
+      102,
+      16
+     ],
+     "text": "Договор-оферта",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597476207",
+     "type": "text",
+     "rect": [
+      719,
+      576,
+      242,
+      32
+     ],
+     "text": "Партнерское соглашение (Договор-оферта) о реферальной программе",
+     "href": "https://popovichfit.ru/part_oferta",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597395336",
+     "type": "text",
+     "rect": [
+      259,
+      576,
+      208,
+      32
+     ],
+     "text": "Политика в отношении обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750650026561",
+     "type": "text",
+     "rect": [
+      502,
+      576,
+      208,
+      32
+     ],
+     "text": "Согласие на обработку персональных данных",
+     "href": "https://popovichfit.ru/data-consent",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "175916580376279630",
+     "type": "text",
+     "rect": [
+      502,
+      629,
+      208,
+      32
+     ],
+     "text": "Согласие на рассылку информационных сообщений",
+     "href": "https://popovichfit.ru/consent",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597352468",
+     "type": "text",
+     "rect": [
+      10,
+      576,
+      199,
+      32
+     ],
+     "text": "ИП Попович Наталья Викторовна ИНН: 780528255230",
+     "href": "",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750650003498",
+     "type": "text",
+     "rect": [
+      10,
+      629,
+      199,
+      16
+     ],
+     "text": "e-mail: info@popovichfit.ru",
+     "href": "",
+     "font": "12px/16px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597598043",
+     "type": "image",
+     "rect": [
+      17,
+      680,
+      926,
+      112
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597681380",
+     "type": "button",
+     "rect": [
+      800,
+      468,
+      150,
+      39
+     ],
+     "text": "Предзапись",
+     "href": "tg://resolve?domain=popovichfitcourse_bot",
+     "font": "12px/18.6px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597623457",
+     "type": "button",
+     "rect": [
+      800,
+      418,
+      150,
+      39
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "12px/18.6px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597712349",
+     "type": "shape",
+     "rect": [
+      10,
+      835,
+      940,
+      1
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.27",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597826758",
+     "type": "image",
+     "rect": [
+      425,
+      857,
+      110,
+      11
+     ],
+     "text": "",
+     "href": "https://shumann.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.6",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825682",
+     "type": "image",
+     "rect": [
+      641,
+      418,
+      30,
+      30
+     ],
+     "text": "",
+     "href": "tg://resolve?domain=natalyapopovich87",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825721",
+     "type": "image",
+     "rect": [
+      676,
+      418,
+      30,
+      30
+     ],
+     "text": "",
+     "href": "https://www.youtube.com/@popovichfit",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825744",
+     "type": "image",
+     "rect": [
+      711,
+      418,
+      30,
+      30
+     ],
+     "text": "",
+     "href": "https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825766",
+     "type": "image",
+     "rect": [
+      746,
+      418,
+      30,
+      30
+     ],
+     "text": "",
+     "href": "mailto:info@popovichfit.ru",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073913259",
+     "type": "image",
+     "rect": [
+      734,
+      412,
+      6,
+      6
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073992932",
+     "type": "text",
+     "rect": [
+      644,
+      468,
+      128,
+      24
+     ],
+     "text": "*Meta признана экстремистской организацией на территории РФ",
+     "href": "",
+     "font": "8px/12px 400 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.3",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G174959725855129400",
+     "type": "group",
+     "rect": [
+      10,
+      418,
+      495,
+      19
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 34px align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G175007383007674350",
+     "type": "group",
+     "rect": [
+      641,
+      418,
+      136,
+      30
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     367,
+     960,
+     533
+    ],
+    "bg": "rgb(29, 29, 29)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec681175286",
+   "type": "131",
+   "rect": [
+    0,
+    5037,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec485115011",
+   "type": "270",
+   "rect": [
+    0,
+    5037,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec541441588",
+   "type": "890",
+   "rect": [
+    0,
+    5037,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec2828455201",
+   "type": "131",
+   "rect": [
+    0,
+    5037,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec840321610",
+   "type": "131",
+   "rect": [
+    0,
+    5037,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

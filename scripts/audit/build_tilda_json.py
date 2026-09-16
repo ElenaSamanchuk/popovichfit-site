@@ -39,6 +39,7 @@ def rewrite_links(h):
     h = re.sub(r"href='https?://(?:www\.)?popovichfit\.ru/?([^']*)'", lambda m: f"href='/{m.group(1)}'", h)
     h = re.sub(r'(src|data-original|data-src|content)="(images/[^"]+)"', lambda m: f'{m.group(1)}="{img_path(m.group(2))}"', h)
     h = re.sub(r"url\(['\"]?(images/[^'\")]+)['\"]?\)", lambda m: f"url('{img_path(m.group(1))}')", h)
+    h = re.sub(r"url\('\.\./images/(lib__[^']+)'\)", lambda m: f"url('/img/t/{m.group(1)}')", h)
     return h
 
 def px(v):
@@ -70,7 +71,7 @@ def parse_left(v):
     if m: return {'a': 'window-left', 'x': 0.0, 'xpct': float(m.group(1))}
     return {'a': 'raw', 'raw': v}
 
-STYLE_KEYS = ('font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
+STYLE_KEYS = ('icon', 'btn-color', 'btn-pad', 'btn-gap', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
               'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow',
               'background-position', 'background-size', 'white-space', 'padding', 'justify-content', 'align-items', 'z-index',
               'text-decoration', 'font-style', 'background-attachment', 'background-repeat', 'overflow', 'display')
@@ -81,7 +82,7 @@ def norm_geo(g):
     if 'top' in g: out['top'] = px(g['top'])
     if 'width' in g: out['width'] = px(g['width'])
     if 'height' in g: out['height'] = px(g['height'])
-    st = {k: g[k] for k in g if k in STYLE_KEYS or k.startswith('$')}
+    st = {k: (rewrite_links(g[k]) if k == 'icon' else g[k]) for k in g if k in STYLE_KEYS or k.startswith('$')}
     if 'hover' in g: st['hover'] = g['hover']
     if st: out['style'] = st
     return out
@@ -200,9 +201,19 @@ def parse_page(fname):
             groups = []
             for g in spec['groups']:
                 geo = {scr: norm_geo({k: v for k, v in gg.items() if not k.startswith('mol.')}) for scr, gg in g['geo'].items()}
+                for scr, gg in g['geo'].items():
+                    extra = {k: v for k, v in gg.items() if k in ('flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'z-index')}
+                    if extra: geo.setdefault(scr, {}).setdefault('style', {}).update(extra)
                 mol = {scr: {k[4:]: v for k, v in gg.items() if k.startswith('mol.')} for scr, gg in g['geo'].items()}
-                groups.append({'id': g['id'], 'cls': g['cls'], 'members': g['members'], 'eff': effective(geo), 'mol': mol})
+                # каскад для стилей молекулы (как для элементов)
+                molEff = {}; cur = {}
+                for scr in SCREENS:
+                    cur = {**cur, **mol.get(scr, {})}; molEff[scr] = dict(cur)
+                groups.append({'id': g['id'], 'cls': g['cls'], 'flex': g['flex'], 'molFlex': g['molFlex'], 'attrs': g['attrs'], 'eff': effective(geo), 'mol': molEff})
             block['groups'] = groups
+            block['tree'] = spec['tree']
+            for el in elems:
+                el['flex'] = by_id[el['id']].get('flex', False)
         else:
             block['html'] = clean_block_html(r)[:80000]
             # блочный CSS экспорта (#recNNN …) — безопасен, нужен для типовых блоков

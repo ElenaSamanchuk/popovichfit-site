@@ -42,7 +42,8 @@ def parse_style_rules(style_css, rec):
                 if tail == '': kind = 'elem'
                 elif tail == '.tn-atom': kind = 'atom'
                 elif tail == '.tn-atom:hover': kind = 'hover'
-                elif tail.startswith('.tn-atom__button-text') or tail.startswith('.tn-atom__button-content'): kind = 'btntext'
+                elif 'tn-atom__button-text' in tail or 'tn-atom__button-content' in tail: kind = 'btntext'
+                elif tail == '.tn-atom .tn-atom__button-icon' or tail == '.tn-atom__button-icon': kind = 'icon'
                 else: kind = 'other:' + tail
             else:
                 kind = 'elem'
@@ -57,7 +58,9 @@ def parse_style_rules(style_css, rec):
 def elem_spec(el_html, rules):
     m = re.search(r'data-elem-id=[\'"](\d+)[\'"]', el_html); eid = m.group(1)
     etype = re.search(r'data-elem-type=[\'"](\w+)[\'"]', el_html); etype = etype.group(1) if etype else '?'
-    cls = re.search(r"<div class='t396__elem tn-elem([^']*)'", el_html); cls = re.sub(r'\s*(t396__elem-flex|tn-elem__\d+)\s*', ' ', cls.group(1)).strip() if cls else ''
+    cls_raw = re.search(r"<div class='t396__elem tn-elem([^']*)'", el_html)
+    is_flex = bool(cls_raw and 't396__elem-flex' in cls_raw.group(1))
+    cls = re.sub(r'\s*(t396__elem-flex|tn-elem__\d+)\s*', ' ', cls_raw.group(1)).strip() if cls_raw else ''
     fields = dict(re.findall(r'data-field-([\w-]+)-value=[\'"]([^\'"]*)[\'"]', el_html))
     atom = re.search(r"<(?:div|a|img|iframe)[^>]*class=['\"][^'\"]*tn-atom[^'\"]*['\"][^>]*>(.*)", el_html, re.S)
     text = ''; html_inner = ''
@@ -84,9 +87,18 @@ def elem_spec(el_html, rules):
             if k in a: g[k] = a[k]
         for k, v in a.items():
             if k.startswith('--t396-'): g[k.replace('--t396-', '$')] = v
+        ic = rules.get((eid, scr, 'icon'), {})
+        if ic:
+            g['icon'] = ' '.join(f'{k}:{v}' for k, v in ic.items() if k in ('width', 'height', 'order', '--icon', 'margin-right', 'margin-left'))
+        bt = rules.get((eid, scr, 'btntext'), {})
+        if bt.get('color'): g['btn-color'] = bt['color']
+        if bt.get('padding'): g['btn-pad'] = bt['padding']
+        if bt.get('column-gap'): g['btn-gap'] = bt['column-gap']
+        for k in ('flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width'):
+            if k in r and r[k] != '': g[k] = r[k]
         if hv: g['hover'] = '{' + ' '.join(f'{k}:{v}' for k, v in hv.items()) + '}'
         if g: geo[scr] = g
-    return dict(id=eid, type=etype, cls=cls, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
+    return dict(id=eid, type=etype, cls=cls, flex=is_flex, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
 
 def block_spec(rec_html):
     rid = re.match(r'<div id="(rec\d+)"', rec_html).group(1)
@@ -99,23 +111,39 @@ def block_spec(rec_html):
     artcss = {scr: rules.get(('ARTBOARD', scr, 'elem'), {}) for scr in SCREENS}
     els = re.split(r"(?=<div class='t396__elem tn-elem)", rec_html)[1:]
     specs = [elem_spec(e, rules) for e in els]
-    # группы (tn-group / molecule): геометрия + стили контейнера + какие элементы внутри (приближённо: до следующей группы)
+    # группы (tn-group / molecule): дерево вложенности обходом тегов, стили контейнера и молекулы
     groups = []
-    for gm in re.finditer(r'<div\s+class="t396__group tn-group ([^"]*)"[^>]*data-group-id="(\d+)"', rec_html):
-        gid = gm.group(2); cls = ' '.join(c for c in gm.group(1).split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate'))
-        chunk = rec_html[gm.end():]
-        nxt = re.search(r'<div\s+class="t396__group tn-group ', chunk)
-        chunk = chunk[:nxt.start()] if nxt else chunk
-        members = re.findall(r"data-elem-id='(\d+)'", chunk)
-        geo = {}
-        for scr in SCREENS:
-            g = rules.get(('G' + gid, scr, 'group'), {}); mol = rules.get(('G' + gid, scr, 'molecule'), {})
-            d = {k: g[k] for k in ('top', 'left', 'width', 'height', 'z-index') if k in g}
-            for k, v in mol.items():
-                if k in ('display', 'flex-direction', 'row-gap', 'column-gap', 'gap', 'align-items', 'justify-content', 'padding', 'background-color', 'border-radius', 'box-shadow', 'flex-wrap', 'background-image', 'border-width', 'border-color', 'opacity', 'width', 'height'):
-                    d['mol.' + k] = v
-            if d: geo[scr] = d
-        groups.append(dict(id=gid, cls=cls, members=members, geo=geo))
+    tree = []
+    stack = []  # [(node, depth)] — node: dict(kind='group', children=[])
+    depth = 0
+    for tm in re.finditer(r"<div\b[^>]*>|</div>", rec_html):
+        tag = tm.group(0)
+        if tag == '</div>':
+            depth -= 1
+            while stack and stack[-1][1] >= depth: stack.pop()
+            continue
+        depth += 1
+        gm = re.search(r'class="t396__group tn-group ([^"]*)"[^>]*data-group-id="(\d+)"', tag)
+        if gm:
+            gid = gm.group(2); cl = gm.group(1)
+            attrs = dict(re.findall(r'data-group-([\w-]+)="([^"]*)"', tag))
+            geo = {}
+            for scr in SCREENS:
+                g = rules.get(('G' + gid, scr, 'group'), {}); mol = rules.get(('G' + gid, scr, 'molecule'), {})
+                d = {k: g[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width') if k in g and g[k] != ''}
+                for k, v in mol.items():
+                    if k in ('display', 'flex-direction', 'row-gap', 'column-gap', 'gap', 'align-items', 'justify-content', 'padding', 'background-color', 'border-radius', 'box-shadow', 'flex-wrap', 'background-image', 'border-width', 'border-color', 'border-style', 'opacity', 'width', 'height', 'align-content'):
+                        d['mol.' + k] = v
+                if d: geo[scr] = d
+            node = dict(kind='group', id=gid, cls=' '.join(c for c in cl.split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate', 't396__elem-flex')),
+                        flex='t396__elem-flex' in cl, molFlex='t396__group-flex' in cl, attrs={k: v for k, v in attrs.items() if k in ('flex', 'flexdirection', 'flexalignitems', 'padding', 'widthmode', 'heightmode', 'type-value')}, geo=geo, children=[])
+            groups.append(dict(id=gid, cls=node['cls'], flex=node['flex'], molFlex=node['molFlex'], attrs=node['attrs'], geo=geo))
+            (stack[-1][0]['children'] if stack else tree).append(node)
+            stack.append((node, depth))
+            continue
+        em = re.search(r"class='t396__elem tn-elem[^']*'[^>]*data-elem-id='(\d+)'", tag)
+        if em:
+            (stack[-1][0]['children'] if stack else tree).append(dict(kind='elem', id=em.group(1)))
     # sort by top at 1200 then left
     def key(s):
         g = s['geo'].get('1200', {})
@@ -124,7 +152,7 @@ def block_spec(rec_html):
             except: return 9999
         return (num(g.get('top', '9999')), num(g.get('left', '9999')))
     specs.sort(key=key)
-    return dict(rec=rid, vis=vis, artboard=artattrs, artcss=artcss, elems=specs, groups=groups)
+    return dict(rec=rid, vis=vis, artboard=artattrs, artcss=artcss, elems=specs, groups=groups, tree=tree)
 
 def fmt(spec):
     L = [f"## {spec['rec']}  {('VISIBILITY: ' + spec['vis'] + '  ') if spec.get('vis') else ''}artboard: " + ', '.join(f'{k}={v}' for k, v in spec['artboard'].items() if k not in ('recid',))]

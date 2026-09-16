@@ -1,0 +1,408 @@
+{
+ "width": 640,
+ "height": 890,
+ "recs": [
+  {
+   "id": "rec782484413",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    640,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec782484414",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    640,
+    50
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720448527219",
+     "type": "button",
+     "rect": [
+      500,
+      10,
+      110,
+      30
+     ],
+     "text": "ЛИЧНЫЙ КАБИНЕТ",
+     "href": "members/login",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(35, 35, 35)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     640,
+     50
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782484436",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    640,
+    590
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720688572138",
+     "type": "text",
+     "rect": [
+      10,
+      206,
+      219,
+      29
+     ],
+     "text": "Документы",
+     "href": "",
+     "font": "24px/29px 600 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572119",
+     "type": "shape",
+     "rect": [
+      2253,
+      172,
+      60,
+      353
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722936090673",
+     "type": "button",
+     "rect": [
+      10,
+      260,
+      121,
+      35
+     ],
+     "text": "Публичная оферта",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(39, 39, 39)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722936090671",
+     "type": "button",
+     "rect": [
+      10,
+      297,
+      320,
+      35
+     ],
+     "text": "Политика в отношении обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(39, 39, 39)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722936090669",
+     "type": "button",
+     "rect": [
+      10,
+      334,
+      289,
+      35
+     ],
+     "text": "Согласие на обработку персональных данных",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(39, 39, 39)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722936090667",
+     "type": "button",
+     "rect": [
+      10,
+      371,
+      369,
+      35
+     ],
+     "text": "Дополнительная общеобразовательная программа –дополнительная общеразвивающая программа «Коррекция»",
+     "href": "https://disk.yandex.ru/i/In_VD4zQs-Bnqw",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(39, 39, 39)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     150,
+     640,
+     350
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782484441",
+   "type": "396",
+   "rect": [
+    0,
+    590,
+    640,
+    300
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1684474502765",
+     "type": "button",
+     "rect": [
+      491,
+      615,
+      139,
+      40
+     ],
+     "text": "Личный кабинет",
+     "href": "members/login",
+     "font": "11px/17.05px 600 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684475516477",
+     "type": "button",
+     "rect": [
+      20,
+      700,
+      121,
+      35
+     ],
+     "text": "Публичная оферта",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684475480886",
+     "type": "button",
+     "rect": [
+      20,
+      737,
+      320,
+      35
+     ],
+     "text": "Политика в отношении обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722935400129",
+     "type": "text",
+     "rect": [
+      20,
+      612,
+      428,
+      57
+     ],
+     "text": "Индивидуальный предприниматель Попович Наталья Викторовна ИНН 780528255230, ОГРНИП 321784700363794 NATALYA.POPOVICH87@YANDEX.RU",
+     "href": "",
+     "font": "12px/19px 400 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722935452945",
+     "type": "button",
+     "rect": [
+      20,
+      774,
+      289,
+      35
+     ],
+     "text": "Согласие на обработку персональных данных",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722935467315",
+     "type": "button",
+     "rect": [
+      20,
+      811,
+      121,
+      35
+     ],
+     "text": "Документы",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     590,
+     640,
+     300
+    ],
+    "bg": "rgb(27, 27, 27)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782484451",
+   "type": "270",
+   "rect": [
+    0,
+    890,
+    640,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

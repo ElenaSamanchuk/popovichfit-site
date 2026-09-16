@@ -2,25 +2,24 @@
 // Универсальный рендер Zero Block (T396) из данных экспорта (app/data/tilda/*.json).
 // Секция фиксированной высоты артборда (по 5 диапазонам ширин), элементы позиционируются абсолютно
 // CSS-правилами из utils/tilda-css.ts — то же поведение, что у Тильды, без её runtime.
-import { zeroBlockCss, type TildaBlock, type ZeroElem } from '~/utils/tilda-css'
+import { zeroBlockCss, type TildaBlock, type ZeroElem, type ZeroNode } from '~/utils/tilda-css'
+import { initPfCards } from '~/utils/pf-cards'
 
 const props = defineProps<{ block: TildaBlock }>()
 const css = computed(() => zeroBlockCss(props.block))
 useHead({ style: [{ key: 'zb-' + props.block.id, innerHTML: css.value }] })
 
-/** элементы вне групп (участники групп рендерятся внутри группы) */
-const groupOf = computed(() => {
-  const m = new Map<string, string>()
-  for (const g of props.block.groups ?? []) for (const id of g.members) m.set(id, g.id)
-  return m
-})
-const topLevel = computed(() => (props.block.elems ?? []).filter((e) => !groupOf.value.has(e.id)))
-const membersOf = (gid: string) => (props.block.elems ?? []).filter((e) => groupOf.value.get(e.id) === gid)
+const elemMap = computed(() => new Map((props.block.elems ?? []).map((e) => [e.id, e as ZeroElem])))
+/** дерево (новые данные) или плоский список (совместимость) */
+const tree = computed<ZeroNode[]>(() => props.block.tree ?? (props.block.elems ?? []).map((e) => ({ kind: 'elem', id: e.id })))
 const fixedStyle = computed(() => {
   const a = props.block.artboard
   if (!a?.fixed) return undefined
   return { position: 'fixed', left: 0, width: '100%', zIndex: 1000, [a.fixedPos === 'bottom' ? 'bottom' : 'top']: 0 } as Record<string, string | number>
 })
+const root = ref<HTMLElement | null>(null)
+// карточки тарифов внутри блока — после гидрации этого компонента (плагин может отработать раньше)
+onMounted(() => { if (root.value?.querySelector('.pf-card')) nextTick(() => initPfCards(root.value!)) })
 const isEmpty = computed(() => !(props.block.elems?.length || props.block.groups?.length))
 /** отступы t-rec (padding-top/bottom) — артборд лежит внутри секции с этими отступами */
 const padStyle = computed(() => {
@@ -37,26 +36,25 @@ const padStyle = computed(() => {
   <section
     v-if="!isEmpty"
     :id="block.id"
+    ref="root"
     class="tz relative w-full overflow-visible box-content"
     :class="block.uc"
     :style="[fixedStyle, block.bg ? { backgroundColor: block.bg } : undefined, block.artboard?.ovrflw === 'auto' ? { overflowX: 'auto', overflowY: 'hidden' } : undefined, padStyle]"
     :data-tilda-rec="block.id"
   >
     <div class="tz__art relative w-full">
-      <template v-for="g in block.groups ?? []" :key="g.id">
-        <div class="tz__group absolute" :class="'g' + g.id + ' ' + g.cls">
-          <ZeroElem v-for="e in membersOf(g.id)" :key="e.id" :elem="e as ZeroElem" />
-        </div>
-      </template>
-      <ZeroElem v-for="e in topLevel" :key="e.id" :elem="e as ZeroElem" />
+      <ZeroNode v-for="(n, i) in tree" :key="n.id + i" :node="n" :elems="elemMap" />
     </div>
   </section>
 </template>
 
 <style>
 .tz .tz__el { position: absolute; box-sizing: border-box; }
+.tz .tz__flex { position: relative !important; left: auto !important; top: auto !important; right: auto !important; height: fit-content; flex-shrink: 0; }
+.tz .tz__group.absolute { position: absolute; }
 .tz .tz__el--text { overflow-wrap: break-word; }
-.tz .tz__el--button { display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; }
+.tz .tz__el--button { display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; column-gap: 8px; }
+.tz .tz__icon { display: inline-block; flex-shrink: 0; background-color: currentColor; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; }
 .tz .tz__el--image img, .tz .tz__el--vector svg { display: block; width: 100%; height: auto; }
 .tz .tz__el--shape { background-repeat: no-repeat; }
 .tz .tz__el--video, .tz .tz__el--html { overflow: hidden; }

@@ -1,0 +1,8 @@
+/* Сброс правил Tailwind preflight внутри типовых блоков экспорта (.tb): у Тильды box-sizing по умолчанию
+   content-box, списки с маркерами, картинки inline. Подключается ДО tilda-blocks-export.css, чтобы его
+   явные правила (например .t-col{box-sizing:border-box} на ≤960px) побеждали. */
+.tb, .tb *, .tb *::before, .tb *::after { box-sizing: content-box; }
+.tb ul { list-style: disc; }
+.tb ol { list-style: decimal; }
+.tb img { display: inline-block; }
+.tb b, .tb strong { font-weight: 700; }

@@ -28,6 +28,32 @@ const customVisible = computed(() => b.type === '131' && /<(div|iframe|img|p|a|s
 
 if (b.css) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: b.css }] })
 const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"/)?.[1] : undefined)
+
+// интерактив стандартных блоков без runtime Тильды: аккордеон T585 и табы T395
+const root = ref<HTMLElement | null>(null)
+onMounted(() => {
+  const el = root.value
+  if (!el) return
+  if (b.type === '585') {
+    el.querySelectorAll<HTMLElement>('.t585__header').forEach((header) => {
+      const content = header.nextElementSibling as HTMLElement | null
+      header.addEventListener('click', () => {
+        const open = header.classList.toggle('t585__opened')
+        header.querySelector('.t585__trigger-button')?.setAttribute('aria-expanded', String(open))
+        if (content) { content.hidden = !open; content.style.display = open ? 'block' : 'none' }
+      })
+    })
+  }
+  if (b.type === '395') {
+    const tabs = [...el.querySelectorAll<HTMLElement>('.t395__tab')]
+    const panels = [...el.querySelectorAll<HTMLElement>('.t395__content')]
+    tabs.forEach((tab, i) => tab.addEventListener('click', () => {
+      tabs.forEach((t, j) => t.classList.toggle('t395__tab_active', i === j))
+      panels.forEach((p, j) => { p.style.display = i === j ? 'block' : 'none' })
+    }))
+    panels.forEach((p, j) => { p.style.display = j === 0 ? 'block' : 'none' })
+  }
+})
 </script>
 
 <template>
@@ -55,6 +81,7 @@ const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"
   <div
     v-else
     :id="b.id"
+    ref="root"
     class="tb t-rec"
     :class="'t-rec-' + b.type"
     :style="{ paddingTop: b.pad['padding-top'] != null ? b.pad['padding-top'] + 'px' : undefined, paddingBottom: b.pad['padding-bottom'] != null ? b.pad['padding-bottom'] + 'px' : undefined, backgroundColor: b.bg || undefined }"

@@ -1,0 +1,87 @@
+/* Стили карточек тарифов (из T123 PF_CARDS экспорта, селекторы переведены на классы рендерера) */
+/* ===== СТИЛИ — не менять при копировании ===== */
+
+  .pf-card .pf-option {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .pf-card .pf-option .tz__radio {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .pf-card .pf-option.pf-active .tz__radio {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .pf-card .pf-option.pf-active {
+    outline: 2px solid #4f86c4;
+    outline-offset: -2px;
+    border-radius: 8px;
+  }
+
+  /* ★ РАЗМЕР РАДИО — меняйте здесь */
+  :root {
+    --pf-radio-size: 16px;
+    --pf-radio-dot: 30px;
+  }
+  
+  @media screen and (max-width: 479px) {
+    :root {
+      --pf-radio-size: 14px;
+      --pf-radio-dot: 20px;
+    }
+  }
+
+  .pf-card .pf-option .tz__el--button .tz__el,
+  .pf-card .pf-option .pf-radio.tz__el .tz__el,
+  .pf-card .pf-option .tz__el--button,
+  .pf-card .pf-option .pf-radio.tz__el {
+    width: var(--pf-radio-size) !important;
+    height: var(--pf-radio-size) !important;
+    min-width: var(--pf-radio-size) !important;
+    min-height: var(--pf-radio-size) !important;
+    max-width: var(--pf-radio-size) !important;
+    max-height: var(--pf-radio-size) !important;
+  }
+
+  .pf-card .pf-option .tz__el--button .tz__radio,
+  .pf-card .pf-option .pf-radio .tz__radio {
+    width: var(--pf-radio-dot) !important;
+    height: var(--pf-radio-dot) !important;
+  }
+
+  .pf-card {
+    overflow: visible !important;
+  }
+
+  .pf-card > .tz__mol,
+  .pf-card .tz__mol:first-child {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .pf-card .pf-discount {
+    position: absolute !important;
+    top: -20px !important;
+    right: -20px !important;
+    left: auto !important;
+    z-index: 10 !important;
+  }
+
+  .pf-card .pf-discount .tz__el {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  @media screen and (max-width: 639px) {
+    .pf-card .pf-discount {
+      top: -5px !important;
+      right: -5px !important;
+      left: auto !important;
+    }
+  }

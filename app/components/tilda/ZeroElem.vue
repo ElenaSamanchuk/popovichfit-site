@@ -3,48 +3,63 @@
 // Геометрия и стили — в CSS (класс .e<id>, см. utils/tilda-css.ts); здесь только разметка и контент.
 import type { ZeroElem } from '~/utils/tilda-css'
 
+import { tariffs } from '~/data/tariffs'
+
 const props = defineProps<{ elem: ZeroElem }>()
 const e = props.elem
-const cls = computed(() => `tz__el tz__el--${e.type} e${e.id}${e.cls ? ' ' + e.cls : ''}`)
+const cls = computed(() => `tz__el tz__el--${e.type} e${e.id}${e.cls ? ' ' + e.cls : ''}${e.flex ? ' tz__flex' : ''}`)
+
+// карточки тарифов: начальное состояние из данных (SSR), клики — utils/pf-cards.ts
+const pfKey = inject<string | null>('pfKey', null)
+const pf = computed(() => (pfKey && tariffs[pfKey] ? tariffs[pfKey]!.options[tariffs[pfKey]!.defaultOption || 0] : null))
+const classes = (e.cls || '').split(' ')
+const html = computed(() => {
+  if (pf.value && classes.includes('pf-price-new')) return pf.value.newPrice
+  if (pf.value && classes.includes('pf-price-old')) return pf.value.oldPrice ? `<s>${pf.value.oldPrice}</s>` : ''
+  return e.html
+})
+const btnText = computed(() => (pf.value && classes.includes('pf-price-new') ? pf.value.newPrice : e.text))
+const href = computed(() => (pf.value && classes.includes('pf-buy') ? pf.value.link : e.href))
 // фигура с картинкой: inline background-image или ленивый data-original (img)
 const bgStyle = computed(() => (e.bgImg || e.img ? { backgroundImage: `url('${e.bgImg || e.img}')` } : undefined))
 /** внешняя ссылка? → target/rel; hash и tg: — как есть */
 const isExternal = computed(() => !!e.href && /^https?:\/\//.test(e.href) && !e.href.includes('popovichfit.ru'))
+const hasIcon = computed(() => Object.values(e.eff ?? {}).some((x) => x.style?.icon))
 const isInternal = computed(() => !!e.href && e.href.startsWith('/') && !e.href.startsWith('/page') && !e.href.includes('.html'))
 </script>
 
 <template>
   <!-- текст -->
   <template v-if="e.type === 'text'">
-    <NuxtLink v-if="isInternal" :to="e.href!" :class="cls" v-html="e.html" />
-    <a v-else-if="e.href" :href="e.href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" v-html="e.html" />
-    <div v-else :class="cls" v-html="e.html" />
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls" v-html="html" />
+    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" v-html="html" />
+    <div v-else :class="cls" v-html="html" />
   </template>
 
   <!-- кнопка -->
   <template v-else-if="e.type === 'button'">
-    <NuxtLink v-if="isInternal" :to="e.href!" :class="cls"><span class="tz__btn-text" v-html="e.text" /></NuxtLink>
-    <a v-else-if="e.href" :href="e.href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><span class="tz__btn-text" v-html="e.text" /></a>
-    <div v-else :class="cls"><span class="tz__btn-text" v-html="e.text" /></div>
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls"><span v-if="hasIcon" class="tz__icon" /><span class="tz__btn-text" v-html="btnText" /></NuxtLink>
+    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><span v-if="hasIcon" class="tz__icon" /><span class="tz__btn-text" v-html="btnText" /></a>
+    <div v-else :class="cls"><span v-if="hasIcon" class="tz__icon" /><span class="tz__btn-text" v-html="btnText" /></div>
   </template>
 
   <!-- картинка -->
   <template v-else-if="e.type === 'image'">
-    <NuxtLink v-if="isInternal" :to="e.href!" :class="cls"><img :src="e.img" alt="" loading="lazy"></NuxtLink>
-    <a v-else-if="e.href" :href="e.href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><img :src="e.img" alt="" loading="lazy"></a>
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls"><img :src="e.img" alt="" loading="lazy"></NuxtLink>
+    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><img :src="e.img" alt="" loading="lazy"></a>
     <div v-else :class="cls"><img :src="e.img" alt="" loading="lazy"></div>
   </template>
 
   <!-- фигура (в т.ч. с фоновой картинкой) -->
   <template v-else-if="e.type === 'shape'">
-    <NuxtLink v-if="isInternal" :to="e.href!" :class="cls" :style="bgStyle" />
-    <a v-else-if="e.href" :href="e.href" :class="cls" :style="bgStyle" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" />
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls" :style="bgStyle" />
+    <a v-else-if="href" :href="href" :class="cls" :style="bgStyle" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" />
     <div v-else :class="cls" :style="bgStyle" />
   </template>
 
   <!-- inline SVG -->
   <template v-else-if="e.type === 'vector'">
-    <a v-if="e.href" :href="e.href" :class="cls" v-html="e.svg" />
+    <a v-if="href" :href="href" :class="cls" v-html="e.svg" />
     <div v-else :class="cls" v-html="e.svg" />
   </template>
 

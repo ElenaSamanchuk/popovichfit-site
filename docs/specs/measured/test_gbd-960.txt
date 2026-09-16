@@ -1,0 +1,83 @@
+# /test_gbd @960 — высота 2848
+
+## rec1120433846 T396 rect=0,0,960,0  
+   artboard: 0,0,960,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064265438 @-32,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064216340 @0,0,960,10 bg:rgb(255, 255, 255)
+- [shape] #1750064777730 @834,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @283,10,394,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @842,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @-19,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @2,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @303,19,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @359,19,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @440,19,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @501,19,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @572,19,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,0,960,0  
+   artboard: 0,700,960,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:cover pos:0% 0% r:8px
+
+## rec400534889 T396 rect=0,0,960,2185  
+   artboard: 0,15,960,2170 bg=rgb(255, 255, 255) img=none pos=relative
+- [button] #1641905059079 @7,54,97,32 «Тест» | 14px/21.7px 600 Manrope rgb(255, 255, 255) align:center bg:rgb(99, 144, 238) r:30px
+- [text] #1641905059075 @10,104,660,46 «ГБД» | 48px/46px 500 Manrope rgb(7, 17, 25)
+- [shape] #1641905059057 @10,189,940,1 bg:rgb(55, 56, 57)
+- [text] #1641905059066 @15,225,700,63 «Самодиагностика. Ниже указан МИНИМУМ диагностики» | 14px/21px 400 Manrope rgb(7, 17, 25)
+- [shape] #1641905059041 @26,355,912,194 bg:rgb(243, 244, 248) r:20px op:0.7
+- [text] #1641905059054 @10,393,609,29 «1. Количество дыхательных циклов (ДЦ) в минуту» | 24px/29px 500 Manrope rgb(7, 17, 25)
+- [text] #1642069084614 @10,441,700,63 «Идеальное количество до 10-12 ДЦ (8 - идеально) Больше 15 - учащённое дыхание (но будет являться нормой при беременности)» | 14px/21px 400 Manrope rgb(7, 17, 25)
+- [shape] #1642069459375 @26,559,912,294 bg:rgb(243, 244, 248) r:20px op:0.7
+- [text] #1642069459385 @10,597,759,58 «2. Симметричность ДД (дыхательного движения) справа и слева (лучше измерять в положении лежа)» | 24px/29px 500 Manrope rgb(7, 17, 25)
+- [text] #1642069459392 @10,675,700,147 «В норме должно быть симметрично (ребра, плечи, ключицы) Возможные патологии при асимметричности: - спазм ГБД - Спазм межреберных мышц - Сколиоз - Невралгия» | 14px/21px 400 Manrope rgb(7, 17, 25)
+- [shape] #1642069642587 @26,867,912,398 bg:rgb(243, 244, 248) r:20px op:0.7
+- [text] #1642069642597 @10,905,653,58 «3. ЭГК (экскурсия грудной клетки) и ЭТ (экскурсия талии) и их соотношение - с сантиметровой лентой» | 24px/29px 500 Manrope rgb(7, 17, 25)
+- [text] #1642069642606 @10,983,700,231 «А) ЭГК по мечевидному отростку (6-10 ребра) При показателях < 4 увеличивать обьем ГК Б) ЭТ между нижними ребрами и тазом ( ~ 1 см над пупком) ЭГК > ЭТ на 20-50%» | 14px/21px 400 Manrope rgb(7, 17, 25)
+- [shape] #1642072416866 @26,1277,912,198 bg:rgb(243, 244, 248) r:20px op:0.7
+- [text] #1642072416876 @10,1315,653,29 «4. Задержка дыхания после вдоха (проба Штанге)» | 24px/29px 500 Manrope rgb(7, 17, 25)
+- [text] #1642072416881 @10,1373,700,63 «Норма > 40 секунд ДО ПЕРВОГО ПОЗЫВА! Не на максимум, обязательно зажать носовой проход» | 14px/21px 400 Manrope rgb(7, 17, 25)
+- [shape] #1642072461201 @26,1485,912,210 bg:rgb(243, 244, 248) r:20px op:0.7
+- [text] #1642072461211 @10,1523,653,29 «5. Задержка дыхания после выдоха (проба Генги)» | 24px/29px 500 Manrope rgb(7, 17, 25)
+- [text] #1642072461218 @10,1581,700,63 «Норма от 20-60- секунд ДО ПЕРВОГО ПОЗЫВА! Не на максимум, обязательно зажать носовой проход» | 14px/21px 400 Manrope rgb(7, 17, 25)
+- [shape] #1642072497321 @26,1707,912,404 bg:rgb(243, 244, 248) r:20px op:0.7
+- [text] #1642072497329 @10,1743,653,29 «6. Парадоксальный тип дыхания» | 24px/29px 500 Manrope rgb(7, 17, 25)
+- [text] #1642072497334 @10,1811,700,252 «1) Втягивается живот на фоне расширения ГК (грудной клетки) Это значит, что грудобрюшная диафрагма (ГБД) подтягивается наверх - восстанавливаем ЭГК ( релиз ГБД » | 14px/21px 400 Manrope rgb(7, 17, 25)
+
+## rec485063145 T396 rect=0,2185,960,130  
+   artboard: 0,2185,960,40 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [button] #1654232107078 @836,2185,104,40 «Назад» → javascript:history.back() | 16px/24.8px 500 Manrope rgb(255, 255, 255) align:center bg:rgb(99, 144, 238) r:10px
+
+## rec1120448561 T396 rect=0,2315,960,533  
+   artboard: 0,367,960,533 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @734,412,6,6
+- [button] #1749597221603 @10,418,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @10,418,495,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @93,418,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @166,418,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @266,418,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @354,418,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @426,418,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @641,418,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @641,418,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @676,418,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @711,418,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @746,418,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @800,418,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [text] #1750073992932 @644,468,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @800,468,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,576,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @259,576,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @502,576,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @719,576,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,629,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @259,629,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @502,629,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @17,680,926,112
+- [shape] #1749597712349 @10,835,940,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @425,857,110,11 → https://shumann.ru/ op:0.6
