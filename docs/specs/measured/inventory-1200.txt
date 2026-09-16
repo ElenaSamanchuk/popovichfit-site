@@ -1,0 +1,330 @@
+# /inventory @1200 — высота 2679
+
+## rec1120433846 T396 rect=0,0,1200,0  
+   artboard: 0,0,1200,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064216340 @0,0,1200,10 bg:rgb(255, 255, 255)
+- [shape] #1750064265438 @0,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @1074,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @352,10,499,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @1082,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @13,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @34,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @372,19,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @428,19,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @509,19,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @570,19,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @641,19,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [button] #1786447424492000001 @742,19,89,16 «ТЕХ.ПОДДЕРЖКА» → tg://resolve?domain=popovichfitCare_Bot | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,0,1200,0  
+   artboard: 0,700,1200,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:auto pos:0% 0% r:8px
+
+## rec1865947471 T396 rect=0,0,1200,450  
+   artboard: 0,0,1200,450 bg=rgb(245, 244, 244) img=none pos=relative
+- [shape] #1770062875792000001 @20,84,717,282 bg:rgb(255, 255, 255) r:12px
+- [group] #G1770105816604000001 @20,84,1160,282 img:none size:undefined pos:undefined flex row gap:normal 16px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770064177386000004 @20,84,717,282 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770062875794000017 @753,84,427,282 bg:rgb(255, 255, 255) img:Frame_1321319434_1.svg size:110.2% auto pos:49.079% 36.753% r:10px
+- [group] #G1770064928398000001 @753,84,427,282 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770063876981 @466,92,263,266 bg:rgb(245, 244, 244) r:8px
+- [group] #G1770064115251000002 @466,92,263,266 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770098620277 @470,96,255,188 img:1534_9_2.png size:cover pos:50% 50% r:6px
+- [group] #G1770064097922000001 @470,96,255,188 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770062875793000005 @40,104,181,20 img:linear-gradient(93.6deg, rgb(248, 162, 180) 0%, rgb(238, 134, 157) 100%) size:auto pos:0% 0% r:100px
+- [group] #G1770064168467000003 @40,104,417,242 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770063461539000001 @40,104,181,20 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770062875794000019 @773,104,88,20 img:linear-gradient(93.6deg, rgb(248, 162, 180) 0%, rgb(238, 134, 157) 100%) size:auto pos:0% 0% r:100px
+- [group] #G1770064733445000005 @773,104,88,20 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1770062875795000020 @781,107,72,14 «Промокоды» | 12px/14px 600 Involve rgb(255, 255, 255) align:center
+- [text] #1770062875793000006 @49,108,165,12 «Инвентарь для тренировок» | 12px/12px 600 Involve rgb(255, 255, 255) align:center
+- [text] #1770062875793000003 @40,134,417,24 «Где приобрести инвентарь?» | 24px/24px 700 Involve rgb(48, 48, 48)
+- [shape] #1770062875795000022 @773,141,190,62 bg:rgb(255, 238, 242) r:10px
+- [group] #G1770064765427000006 @773,141,190,62 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770062875795000024 @973,141,187,62 bg:rgb(255, 238, 242) r:10px
+- [group] #G1770064771079000007 @973,141,187,62 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1770062875795000023 @788,158,160,28 «Structura.shop скидка 15% по коду natalyapopovich» → https://structura.shop/ | 12px/14px 500 Involve rgb(48, 48, 48)
+- [text] #1770062875795000025 @989,158,157,28 «Fitnessroller.ru скидка 15% по коду NPopovich» → https://fitnessroller.ru/ | 12px/14px 500 Involve rgb(48, 48, 48)
+- [image] #1770064061309 @579,170,40,40
+- [text] #1770062875793000002 @40,192,409,154 «Важно: не переживайте, если что-то не успели купить! На курсе «Коррекция» большинство тренировок проходят без инвентаря — заниматься можно всегда. Самое важное » | 12px/14px 400 Involve rgb(48, 48, 48)
+- [text] #1770062875795000021 @773,236,294,42 «Менеджеры всегда помогут, можете написать им, они уже знают наизусть, какой инвентарь для курсов нужен участницам ❤️» | 12px/14px 500 Involve rgb(48, 48, 48)
+- [shape] #1770062875794000011 @658,252,55,20 bg:rgb(48, 48, 48) r:100px
+- [group] #G1770063829960000003 @658,252,55,20 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1770062875794000012 @663,256,47,12 «38 мин» | 12px/12px 500 Involve rgb(255, 255, 255) align:center
+- [shape] #1770062875794000013 @478,297,175,20 img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:100px
+- [group] #G1770063723754000002 @478,297,175,20 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1770062875794000015 @483,301,166,12 «Обязательно к просмотру» | 12px/12px 600 Involve rgb(255, 255, 255) align:center
+- [text] #1770062875795000026 @773,303,250,28 «Также много различного инвентаря есть на OZON, Wildberries, Декатлон и т. д.» | 12px/14px 500 Involve rgb(48, 48, 48)
+- [text] #1770062875794000016 @478,329,132,12 «Видео про инвентарь» | 12px/12px 700 Involve rgb(48, 48, 48)
+
+## rec1866063371 T1281 rect=0,450,1200,106  
+   text: Курс «Коррекция» Курс «Силовой»
+
+## rec1866078621 T396 rect=0,556,1200,560  
+   artboard: 0,556,1200,560 bg=rgb(245, 244, 244) img=none pos=relative
+- [text] #1770065900857000001 @20,600,564,58 «Минимальный набор, который понадобится для комфортных тренировок» | 24px/29px 700 Involve rgb(48, 48, 48)
+- [text] #1770065900857000002 @1065,651,115,12 «#ЛУЧШЕ КУПИТЬ СРАЗУ» | 10px/12px 700 Involve rgb(156, 157, 159) uppercase align:right
+- [shape] #1770065900858000003 @20,704,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770105904556000001 @20,704,1160,368 img:none size:undefined pos:undefined flex row gap:normal 16px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770066727787000058 @20,704,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770065900860000021 @412,704,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770066891004000060 @412,704,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770065900862000037 @804,704,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770066972630000061 @804,704,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770065900859000008 @40,724,62,62 img:Rectangle_29337_22.png.webp size:cover pos:50% 50% r:36px
+- [shape] #1770065900860000024 @432,724,62,62 img:Rectangle_29337_23.png.webp size:cover pos:50% 50% r:36px
+- [shape] #1770065900862000040 @824,724,62,62 img:Rectangle_29337_24.png.webp size:cover pos:50% 50% r:36px
+- [text] #1770065900859000009 @122,734,254,38 «Массажные мячи — 2 шт. (10−12 см)» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900860000025 @514,734,254,38 «Лента для пилатеса — 1.5 м, уровень «Средний»» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900862000041 @906,734,206,38 «Мяч для пилатеса — 25−30 см» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900859000014 @40,802,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770065900859000012 @213,802,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770065900861000030 @432,802,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770065900861000028 @605,802,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770065900862000046 @824,802,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770065900862000044 @997,802,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770065900859000013 @170,824,24,14 «85%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900859000011 @213,824,154,14 «Лучше купить сразу» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900861000029 @562,824,25,14 «60%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900861000027 @605,824,141,14 «Лучше купить сразу» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900862000045 @954,824,25,14 «70%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770065900862000043 @997,824,143,14 «Лучше купить сразу» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [shape] #1770065900859000015 @40,828,122,8 img:Group_1321320160.svg size:cover pos:50% 50% r:50px
+- [shape] #1770065900861000031 @432,828,122,8 img:Group_1321320160_1.svg size:cover pos:50% 50% r:50px
+- [shape] #1770065900862000047 @824,828,122,8 img:Group_1321320160_2.svg size:cover pos:50% 50% r:50px
+- [shape] #1770065900860000017 @40,856,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770065900861000033 @432,856,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770065900862000049 @824,856,336,1 bg:rgb(156, 157, 159) op:0.2
+- [text] #1770065900860000018 @40,873,336,28 «Два массажных мяча одинакового диаметра — от 10 до 12 см.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770065900861000034 @432,873,336,14 «Любая резиновая лента средней жесткости подойдёт.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770065900862000050 @824,873,336,28 «Для занятий вам понадобится один мяч для пилатеса диаметром от 25 до 30 см.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1770065900861000035 @432,905,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770065900860000019 @40,921,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770065900862000051 @824,921,336,1 bg:rgb(156, 157, 159) op:0.2
+- [text] #1770065900862000036 @432,922,336,28 «Рекомендации: Размер: 150 см x 15 см. Можно заменить капроновыми колготками.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770065900860000020 @40,938,336,42 «Рекомендации: Новичкам лучше выбирать мягкие мячи. Если чувствуется боль или сильный дискомфорт — мячи можно и нужно немного спустить.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770065900862000052 @824,938,336,28 «Рекомендации: Подходит любой мягкий мяч размером 25−30 см.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [button] #1770066707236000055 @40,1016,163,36 «Ссылки на инвентарь» → #zeropopup1 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770066707236000054 @213,1016,163,36 «Видео к просмотру» → #popup:embedcode_invent2 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(93.6deg, rgb(248, 162, 180) 0%, rgb(238, 134, 157) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770066720177000057 @432,1016,163,36 «Ссылки на инвентарь» → #zeropopup2 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770066638971000001 @824,1016,163,36 «Ссылки на инвентарь» → #zeropopup3 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+
+## rec1866123461 T396 rect=0,1116,1200,980  
+   artboard: 0,1116,1200,980 bg=rgb(245, 244, 244) img=none pos=relative
+- [text] #1770067128305000049 @20,1194,564,29 «Опционально» | 24px/29px 700 Involve rgb(48, 48, 48)
+- [text] #1770067128305000050 @1055,1213,125,12 «#МОЖНО КУПИТЬ ПОЗЖЕ» | 10px/12px 700 Involve rgb(156, 157, 159) uppercase align:right
+- [shape] #1770067128305000051 @20,1266,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770106070463000001 @20,1266,1160,752 img:none size:undefined pos:undefined flex row gap:16px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770067684974000002 @20,1266,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770067128306000065 @412,1266,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770067767656000003 @412,1266,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770067128306000079 @804,1266,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770067825902000004 @804,1266,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770067128305000054 @40,1286,62,62 img:Rectangle_29337_22.png.webp size:cover pos:50% 50% r:36px
+- [shape] #1770067128306000068 @432,1286,62,62 img:Rectangle_29337_23.png.webp size:cover pos:50% 50% r:36px
+- [shape] #1770067128306000082 @824,1286,62,62 img:Rectangle_29337_24.png.webp size:cover pos:50% 50% r:36px
+- [text] #1770067128305000055 @122,1296,224,38 «Ролл для МФР — мягкий, 33−45 см» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128306000069 @514,1307,254,19 «Мини-ленты (кольцевые)» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128306000083 @906,1307,254,19 «Мяч для стоп — ~5 см» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128305000060 @40,1364,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128305000058 @213,1364,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128306000074 @432,1364,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128306000072 @605,1364,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128306000088 @824,1364,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128306000086 @997,1364,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128305000059 @170,1386,24,14 «30%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128305000057 @213,1386,151,14 «Можно купить позже» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128306000073 @562,1386,23,14 «15%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128306000071 @605,1386,157,14 «Можно купить позже» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128306000087 @954,1386,17,14 «5%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128306000085 @997,1386,156,14 «Можно купить позже» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [shape] #1770067128305000061 @40,1390,122,8 img:Group_1321320160_3.svg size:cover pos:50% 50% r:50px
+- [shape] #1770067128306000075 @432,1390,122,8 img:Group_1321320160_4.svg size:cover pos:50% 50% r:50px
+- [shape] #1770067128306000089 @824,1390,122,8 img:Group_1321320160_5.svg size:cover pos:50% 50% r:50px
+- [shape] #1770067128305000063 @40,1418,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770067128306000077 @432,1418,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770067128306000091 @824,1418,336,1 bg:rgb(156, 157, 159) op:0.2
+- [text] #1770067128306000064 @40,1435,336,28 «Можно заменить на свернутое полотенце, но ролл предпочтительнее.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770067128306000078 @432,1435,336,14 «Можно заменить лентой для пилатеса.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770067128306000092 @824,1435,336,28 «Для точечного расслабления подошвенной фасции, стимуляции стоп.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [button] #1770067532980000001 @40,1576,163,36 «Ссылки на инвентарь» → #zeropopup7 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770067535381000002 @432,1578,163,36 «Ссылки на инвентарь» → #zeropopup8 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770067550356000003 @824,1578,163,36 «Ссылки на инвентарь» → #zeropopup9 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [shape] #1770067128303000001 @20,1650,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770067871508000005 @20,1650,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770067128304000017 @412,1650,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770067985114000001 @412,1650,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770067128305000033 @804,1650,376,368 bg:rgb(255, 255, 255) r:10px
+- [group] #G1770068041893000002 @804,1650,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1770067128303000004 @40,1670,62,62 img:Rectangle_29337_25.png.webp size:cover pos:50% 50% r:36px
+- [shape] #1770067128304000020 @432,1670,62,62 img:Rectangle_29337_26.png.webp size:cover pos:50% 50% r:36px
+- [shape] #1770067128305000036 @824,1670,62,62 img:Rectangle_29337_27.png.webp size:cover pos:50% 50% r:36px
+- [text] #1770067128303000005 @122,1691,254,19 «Йога блоки» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128304000021 @514,1691,254,19 «Тейпы» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128305000037 @906,1691,254,19 «Коврик для фитнеса» | 16px/19px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128304000010 @40,1748,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128304000008 @213,1748,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128304000026 @432,1748,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128304000024 @605,1748,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128305000042 @824,1748,62,14 «Важность:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128305000040 @997,1748,99,14 «Необходимость:» | 12px/14px 400 Involve rgb(156, 157, 159)
+- [text] #1770067128304000009 @170,1770,24,14 «30%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128303000007 @213,1770,163,14 «Можно купить позже» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128304000025 @562,1770,23,14 «20%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128304000023 @605,1770,155,14 «Можно купить позже» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128305000041 @954,1770,23,14 «98%» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [text] #1770067128305000039 @997,1770,154,14 «Можно купить позже» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [shape] #1770067128304000011 @40,1774,122,8 img:Group_1321320160_6.svg size:cover pos:50% 50% r:50px
+- [shape] #1770067128304000027 @432,1774,122,8 img:Group_1321320160_22.svg size:cover pos:50% 50% r:50px
+- [shape] #1770067128305000043 @824,1774,122,8 img:Group_1321320160_23.svg size:cover pos:50% 50% r:50px
+- [shape] #1770067128304000013 @40,1802,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770067128304000029 @432,1802,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770067128305000045 @824,1802,336,1 bg:rgb(156, 157, 159) op:0.2
+- [text] #1770067128304000014 @40,1819,336,42 «Помогают углубить растяжку, удерживать баланс и выполнять движения технически правильно, снижая нагрузку на суставы и спину.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770067128305000030 @432,1819,345,28 «Тейп — не волшебство, а дополнительный инструмент. Лучший эффект — в сочетании с упражнениями.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770067128305000046 @824,1819,336,56 «Коврик для фитнеса обеспечивает комфорт и устойчивость во время тренировок, защищает суставы и не скользит, помогая выполнять упражнения безопасно и эффективно.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1770067128305000031 @432,1867,336,1 bg:rgb(156, 157, 159) op:0.2
+- [shape] #1770067128304000015 @40,1883,336,1 bg:rgb(156, 157, 159) op:0.2
+- [text] #1770067128305000032 @432,1884,336,28 «Рекомендации: Основная ширина: 5 см. Для лимфодренажа можно использовать: 7−10 см.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1770067128305000047 @824,1899,336,1 bg:rgb(156, 157, 159) op:0.2
+- [text] #1770067128304000016 @40,1900,336,42 «Рекомендации: Вместо йога-блоков подойдут плотные книги одинаковой высоты — они обеспечат опору и безопасность в позе.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [text] #1770067128305000048 @824,1916,336,14 «Рекомендации: ДxШxВ: 1830×610×6 мм.» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [button] #1770067565709000004 @40,1962,163,36 «Ссылки на инвентарь» → #zeropopup10 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770067575337000005 @432,1962,163,36 «Ссылки на инвентарь» → #zeropopup11 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+- [button] #1770067589162000006 @824,1962,163,36 «Ссылки на инвентарь» → #zeropopup12 | 12px/12px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(92.88deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:6px
+
+## rec1866161711 T396 rect=0,2096,1200,0  
+   artboard: 0,2096,1200,950 bg=rgb(245, 244, 244) img=none pos=relative
+- [text] #1770068346523000001 @20,2143,564,58 «Минимальный набор, который понадобится для комфортных тренировок» | 24px/29px 700 Involve rgb(48, 48, 48)
+- [text] #1770068346523000002 @1065,2194,115,12 «#ЛУЧШЕ КУПИТЬ СРАЗУ» | 10px/12px 700 Involve rgb(156, 157, 159) uppercase align:right
+- [group] #G1770118491028000001 @20,2247,1160,752 img:none size:undefined pos:undefined flex row gap:16px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770069213552000001 @20,2247,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770069217443000002 @412,2247,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770069223043000003 @804,2247,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770069225752000004 @20,2631,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770069229932000005 @412,2631,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770069233844000006 @804,2631,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1866157681 T396 rect=0,2096,1200,0  
+   artboard: 0,2096,1200,970 bg=rgb(245, 244, 244) img=none pos=relative
+- [text] #1770068232745 @20,2169,564,29 «Опционально» | 24px/29px 700 Involve rgb(48, 48, 48)
+- [text] #1770068232797 @1055,2188,125,12 «#МОЖНО КУПИТЬ ПОЗЖЕ» | 10px/12px 700 Involve rgb(156, 157, 159) uppercase align:right
+- [group] #G1770120335938000001 @20,2241,1160,752 img:none size:undefined pos:undefined flex row gap:16px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096442570000001 @20,2241,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096445871000002 @412,2241,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096448549000003 @804,2241,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096451851000004 @20,2625,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096454475000005 @412,2625,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096457534000006 @804,2625,376,368 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1866172971 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770209985004000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097458918000004 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097456289000003 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097450188000002 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770096803245000001 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097443933000001 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873045331 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873137471 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873174941 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873272521 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873307561 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873406311 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873479201 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873534501 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873597511 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873668421 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1873724721 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1770201847257000001 @0,0,0,0 img:none size:undefined pos:undefined flex column gap:16px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097500705000006 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1770097491951000005 @0,0,0,0 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+
+## rec1120448561 T396 rect=0,2096,1200,583  
+   artboard: 0,317,1200,583 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @966,363,6,6
+- [button] #1749597221603 @20,368,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @20,368,631,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @103,368,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @176,368,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @276,368,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @364,368,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @436,368,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1786447328157000001 @549,368,102,19 «Тех.поддержка» → tg://resolve?domain=popovichfitCare_Bot | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @871,368,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @871,368,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @906,368,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @941,368,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @976,368,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @1030,368,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:auto pos:0% 0% r:8px
+- [text] #1750073992932 @874,418,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @1030,418,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,526,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @349,526,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @658,526,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @940,526,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,576,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @349,576,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @658,576,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @23,630,1154,139
+- [shape] #1749597712349 @20,812,1160,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @545,843,110,11 → https://shumann.ru/ op:0.6

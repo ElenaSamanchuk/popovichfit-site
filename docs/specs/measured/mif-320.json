@@ -1,0 +1,3082 @@
+{
+ "width": 320,
+ "height": 6113,
+ "recs": [
+  {
+   "id": "rec774067934",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120433846",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1750064216340",
+     "type": "shape",
+     "rect": [
+      0,
+      0,
+      320,
+      34
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064585345",
+     "type": "button",
+     "rect": [
+      -17,
+      -54,
+      40,
+      16
+     ],
+     "text": "КУРСЫ",
+     "href": "https://popovichfit.ru/#rec1120250416",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064641344",
+     "type": "button",
+     "rect": [
+      39,
+      -54,
+      65,
+      16
+     ],
+     "text": "ДО/ПОСЛЕ",
+     "href": "https://popovichfit.ru/results",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064660802",
+     "type": "button",
+     "rect": [
+      120,
+      -54,
+      45,
+      16
+     ],
+     "text": "СТАТЬИ",
+     "href": "https://popovichfit.ru/media",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064661319",
+     "type": "button",
+     "rect": [
+      181,
+      -54,
+      55,
+      16
+     ],
+     "text": "О ТРЕНЕРЕ",
+     "href": "https://popovichfit.ru/about",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1773122482265000001",
+     "type": "button",
+     "rect": [
+      252,
+      -54,
+      85,
+      16
+     ],
+     "text": "ВОПРОС/ОТВЕТ",
+     "href": "https://popovichfit.ru/#question-answer",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064265438",
+     "type": "shape",
+     "rect": [
+      16,
+      -79,
+      109,
+      43
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064321583",
+     "type": "text",
+     "rect": [
+      25,
+      12,
+      58,
+      11
+     ],
+     "text": "POPOVICHFIT",
+     "href": "https://popovichfit.ru/",
+     "font": "9px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064375153",
+     "type": "image",
+     "rect": [
+      8,
+      11,
+      13,
+      13
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065106018",
+     "type": "shape",
+     "rect": [
+      287,
+      8,
+      26,
+      19
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(245, 244, 244)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065303997",
+     "type": "image",
+     "rect": [
+      295,
+      19,
+      10,
+      1
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065280847",
+     "type": "image",
+     "rect": [
+      295,
+      15,
+      10,
+      1
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064777730",
+     "type": "shape",
+     "rect": [
+      700,
+      -65,
+      126,
+      43
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064809384",
+     "type": "button",
+     "rect": [
+      203,
+      8,
+      78,
+      19
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "8px/12.4px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(48, 48, 48)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G175006465878646380",
+     "type": "group",
+     "rect": [
+      -37,
+      -63,
+      394,
+      34
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "0px 0px 6px 6px",
+     "display": "flex",
+     "flex": "row gap:normal 16px align:center justify:flex-start pad:9px 20px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     320,
+     34
+    ],
+    "bg": "rgb(245, 245, 245)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec1551840931",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828336527",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec592229670",
+   "type": "450",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Главная Курсы До/после Статьи О тренере Вопрос-ответ ПРЕДЗАПИСЬ"
+  },
+  {
+   "id": "rec2019524321",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1773213623323000003",
+     "type": "text",
+     "rect": [
+      15,
+      777,
+      218,
+      68
+     ],
+     "text": "Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "10px/13.5px 500 Involve",
+     "color": "rgb(38, 38, 38)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1773213623325000005",
+     "type": "button",
+     "rect": [
+      15,
+      855,
+      79,
+      31
+     ],
+     "text": "Согласен",
+     "href": "",
+     "font": "10px/14.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1773213623322000002",
+     "type": "group",
+     "rect": [
+      5,
+      767,
+      233,
+      128
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:10px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     750,
+     320,
+     150
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec2019524641",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828337470",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec779568659",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    125
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      12,
+      85,
+      296,
+      26
+     ],
+     "text": "Фитнес-мифы",
+     "href": "",
+     "font": "24px/26px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     75,
+     320,
+     50
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec582535815",
+   "type": "396",
+   "rect": [
+    0,
+    125,
+    320,
+    1140
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1682356977615",
+     "type": "shape",
+     "rect": [
+      10,
+      163,
+      300,
+      332
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977621",
+     "type": "button",
+     "rect": [
+      20,
+      289,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682356977632",
+     "type": "text",
+     "rect": [
+      20,
+      319,
+      279,
+      160
+     ],
+     "text": "Чтобы убрать холку, нужно работать с опорно-двигательным аппаратом: с улучшением мобильности грудной клетки; с артикуляцией позвоночника; с дыханием; комплексно",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977634",
+     "type": "text",
+     "rect": [
+      20,
+      263,
+      277,
+      18
+     ],
+     "text": "Миф: холка убирается массажем",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682357083640",
+     "type": "image",
+     "rect": [
+      20,
+      173,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137069",
+     "type": "shape",
+     "rect": [
+      10,
+      505,
+      300,
+      338
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137076",
+     "type": "button",
+     "rect": [
+      20,
+      664,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392137080",
+     "type": "text",
+     "rect": [
+      20,
+      694,
+      279,
+      128
+     ],
+     "text": "Чтобы «ляжки» похудели, нужно работать с глубинной фронтальной линией, а это — тазовое дно, дыхание и стопы. Когда вы закачиваете приводящие, вы создаёте там ещ",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137083",
+     "type": "text",
+     "rect": [
+      20,
+      605,
+      277,
+      54
+     ],
+     "text": "Миф: чтобы похудела проблемная зона «ляжки», их надо качать «сведением» в тренажере",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137089",
+     "type": "image",
+     "rect": [
+      20,
+      515,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481841",
+     "type": "shape",
+     "rect": [
+      10,
+      853,
+      300,
+      400
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481850",
+     "type": "button",
+     "rect": [
+      20,
+      996,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392481855",
+     "type": "text",
+     "rect": [
+      20,
+      1026,
+      279,
+      208
+     ],
+     "text": "Чтобы лимфа корректно двигалась нужно: работать с грудобрюшной диафрагмой — мощнейшим насосом, который запускает ток лимфы; снимать напряжение с напряжённых мыш",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481862",
+     "type": "text",
+     "rect": [
+      20,
+      953,
+      277,
+      36
+     ],
+     "text": "Миф: чтобы разогнать лимфу, нужно по утрам прыгать 100 раз «на носочках»",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481869",
+     "type": "image",
+     "rect": [
+      20,
+      863,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     155,
+     320,
+     1110
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec582669222",
+   "type": "396",
+   "rect": [
+    0,
+    1265,
+    320,
+    1170
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1682356977615",
+     "type": "shape",
+     "rect": [
+      10,
+      1308,
+      300,
+      355
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977621",
+     "type": "button",
+     "rect": [
+      20,
+      1454,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682356977632",
+     "type": "text",
+     "rect": [
+      20,
+      1484,
+      279,
+      160
+     ],
+     "text": "Схема идеальной тренировки: ~ 20 минут — разминка; ~ 30-40 минут — силовая часть; ~ 10 минут — заминка При грамотной разминке вы подготовите тело и к нагрузке и",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977634",
+     "type": "text",
+     "rect": [
+      20,
+      1408,
+      277,
+      36
+     ],
+     "text": "Миф: чем длиннее тренировка — тем она эффективнее",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682357083640",
+     "type": "image",
+     "rect": [
+      20,
+      1318,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137069",
+     "type": "shape",
+     "rect": [
+      10,
+      1673,
+      300,
+      481
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137076",
+     "type": "button",
+     "rect": [
+      20,
+      1836,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392137080",
+     "type": "text",
+     "rect": [
+      20,
+      1866,
+      279,
+      288
+     ],
+     "text": "Для плоского живота нужно: работать с истинным миофасциальным кором (а это дыхание, мышцы тазового дна, поперечная мышца живота и так далее); регулировать питан",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137083",
+     "type": "text",
+     "rect": [
+      20,
+      1773,
+      277,
+      54
+     ],
+     "text": "Миф: если хочешь плоский живот — «держи живот втянутым», а еще качай пресс утром и вечером",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137089",
+     "type": "image",
+     "rect": [
+      20,
+      1683,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481841",
+     "type": "shape",
+     "rect": [
+      10,
+      2163,
+      300,
+      259
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481850",
+     "type": "button",
+     "rect": [
+      20,
+      2308,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392481855",
+     "type": "text",
+     "rect": [
+      20,
+      2338,
+      269,
+      64
+     ],
+     "text": "Чтобы похудеть, нужно тратить больше калорий, чем получаешь — то есть, быть в дефиците. Тут всё. Нет никаких «жиросжигающих» тренировок.",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481862",
+     "type": "text",
+     "rect": [
+      20,
+      2263,
+      277,
+      36
+     ],
+     "text": "Миф: чтобы похудеть, нужны тренировки на жиросжигание",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481869",
+     "type": "image",
+     "rect": [
+      20,
+      2173,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1295,
+     320,
+     1140
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec582672986",
+   "type": "396",
+   "rect": [
+    0,
+    2435,
+    320,
+    1180
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1682356977615",
+     "type": "shape",
+     "rect": [
+      10,
+      2478,
+      300,
+      563
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977621",
+     "type": "button",
+     "rect": [
+      20,
+      2622,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682356977632",
+     "type": "text",
+     "rect": [
+      20,
+      2652,
+      279,
+      368
+     ],
+     "text": "Чтобы увеличить мышечную массу нужно: хорошо спать и восстанавливаться. Не пару раз в неделю лечь до 23:00, а всегда. хорошо питаться. Также всегда, а не «отрыв",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977634",
+     "type": "text",
+     "rect": [
+      20,
+      2578,
+      277,
+      36
+     ],
+     "text": "Миф: чтобы накачать ягодицы, нужна база, присед и тяжёлые веса",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682357083640",
+     "type": "image",
+     "rect": [
+      20,
+      2488,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137069",
+     "type": "shape",
+     "rect": [
+      10,
+      3051,
+      300,
+      278
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137076",
+     "type": "button",
+     "rect": [
+      20,
+      3175,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392137080",
+     "type": "text",
+     "rect": [
+      20,
+      3205,
+      279,
+      112
+     ],
+     "text": "Неважно, где вы занимаетесь, важно — что вы делаете А что делать на тренировке, чтобы она была эффективной, я рассказываю и показываю на курсе POPOVICHFIT — вы ",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137083",
+     "type": "text",
+     "rect": [
+      20,
+      3151,
+      277,
+      18
+     ],
+     "text": "Миф: тренировки дома неэффективны",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137089",
+     "type": "image",
+     "rect": [
+      20,
+      3061,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481841",
+     "type": "shape",
+     "rect": [
+      10,
+      3339,
+      300,
+      267
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481850",
+     "type": "button",
+     "rect": [
+      20,
+      3500,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392481855",
+     "type": "text",
+     "rect": [
+      20,
+      3530,
+      277,
+      64
+     ],
+     "text": "Это блокирует крестец, приводит к защемлению седалищного нерва — всё! Если бы все было так просто, то можно было бы в качестве тренировки сидеть на диване и сжи",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481862",
+     "type": "text",
+     "rect": [
+      20,
+      3439,
+      277,
+      54
+     ],
+     "text": "Миф: ягодицы нужно «прожимать» в упражнениях, чтобы они лучше работали и росли",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481869",
+     "type": "image",
+     "rect": [
+      20,
+      3349,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2465,
+     320,
+     1150
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec582676455",
+   "type": "396",
+   "rect": [
+    0,
+    3615,
+    320,
+    1240
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1682356977615",
+     "type": "shape",
+     "rect": [
+      10,
+      3658,
+      300,
+      480
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977621",
+     "type": "button",
+     "rect": [
+      20,
+      3837,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682356977632",
+     "type": "text",
+     "rect": [
+      20,
+      3867,
+      279,
+      256
+     ],
+     "text": "Только в России есть такой диагноз, как остеохондроз. Остеохондроз — это как сказать: «У меня морщины или седина». Причина остеохондроза, грыж или протрузий, бо",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977634",
+     "type": "text",
+     "rect": [
+      20,
+      3758,
+      277,
+      72
+     ],
+     "text": "Миф: «У меня остеохондроз/протрузия/грыжа. Что делать, куда бежать, можно ли вообще заниматься?»",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682357083640",
+     "type": "image",
+     "rect": [
+      20,
+      3668,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137069",
+     "type": "shape",
+     "rect": [
+      10,
+      4150,
+      300,
+      367
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137076",
+     "type": "button",
+     "rect": [
+      20,
+      4312,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392137080",
+     "type": "text",
+     "rect": [
+      20,
+      4342,
+      279,
+      160
+     ],
+     "text": "Поясница — заложница компенсаций. Чтобы поясница не болела, нет никакого одного «секретного» упражнения, нужно: работать с дыханием, мобильностью грудной клетки",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137083",
+     "type": "text",
+     "rect": [
+      20,
+      4250,
+      277,
+      54
+     ],
+     "text": "Миф: чтобы поясница не болела, её надо «закачать». Гиперэкстензия — отлично подходит для этой цели.",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137089",
+     "type": "image",
+     "rect": [
+      20,
+      4160,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481841",
+     "type": "shape",
+     "rect": [
+      10,
+      4527,
+      300,
+      308
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481850",
+     "type": "button",
+     "rect": [
+      20,
+      4672,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392481855",
+     "type": "text",
+     "rect": [
+      20,
+      4702,
+      277,
+      112
+     ],
+     "text": "Ни в коем случае! Также, как углеводы или белки. От жиров зависят: гормональная и нервная системы, мозговая деятельность, волосы, ногти, кожа, усвоение многих в",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481862",
+     "type": "text",
+     "rect": [
+      20,
+      4627,
+      277,
+      36
+     ],
+     "text": "Миф: чтобы похудеть, нужно убрать жиры",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392481869",
+     "type": "image",
+     "rect": [
+      20,
+      4537,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     3645,
+     320,
+     1210
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec582685367",
+   "type": "396",
+   "rect": [
+    0,
+    4855,
+    320,
+    705
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1682356977615",
+     "type": "shape",
+     "rect": [
+      10,
+      4898,
+      300,
+      274
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977621",
+     "type": "button",
+     "rect": [
+      20,
+      5044,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682356977632",
+     "type": "text",
+     "rect": [
+      20,
+      5074,
+      279,
+      80
+     ],
+     "text": "Для того, чтобы «не болело» — нужно двигаться, а не лежать. Позвоночник укрепляется и «лечится» с помощью дыхания и движения. Невозможно улучшить осанку или убр",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682356977634",
+     "type": "text",
+     "rect": [
+      20,
+      4998,
+      277,
+      36
+     ],
+     "text": "Миф: чтобы ушли боли в спине, нужно лежать на ролике/валике/аппликаторе",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682357083640",
+     "type": "image",
+     "rect": [
+      20,
+      4908,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137069",
+     "type": "shape",
+     "rect": [
+      10,
+      5182,
+      300,
+      255
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "16px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137076",
+     "type": "button",
+     "rect": [
+      20,
+      5324,
+      64,
+      20
+     ],
+     "text": "ПРАВДА:",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1682392137080",
+     "type": "text",
+     "rect": [
+      20,
+      5354,
+      279,
+      64
+     ],
+     "text": "Нужно поработать над высвобождением крестца, расслаблением грушевидных мышц, но ни в коем случае не тянуть. Это чревато еще большим защемлением",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(61, 61, 61)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137083",
+     "type": "text",
+     "rect": [
+      20,
+      5282,
+      264,
+      36
+     ],
+     "text": "Миф: если стреляет или защемило в ягодице, нужно её «растянуть»",
+     "href": "",
+     "font": "14px/18px 700 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1682392137089",
+     "type": "image",
+     "rect": [
+      20,
+      5192,
+      80,
+      80
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     4885,
+     320,
+     570
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec779568494",
+   "type": "131",
+   "rect": [
+    0,
+    5560,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec779568495",
+   "type": "396",
+   "rect": [
+    0,
+    740,
+    320,
+    160
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1719923677879",
+     "type": "button",
+     "rect": [
+      216,
+      744,
+      94,
+      45
+     ],
+     "text": "Назад",
+     "href": "javascript:history.back()",
+     "font": "12px/18.6px 600 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(240, 119, 159) 0%, rgb(195, 146, 165) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     740,
+     320,
+     70
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec1120432771",
+   "type": "131",
+   "rect": [
+    0,
+    5560,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120448561",
+   "type": "396",
+   "rect": [
+    0,
+    5560,
+    320,
+    553
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1749597221603",
+     "type": "button",
+     "rect": [
+      15,
+      372,
+      49,
+      19
+     ],
+     "text": "Главная",
+     "href": "https://popovichfit.ru/",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597242361",
+     "type": "button",
+     "rect": [
+      15,
+      397,
+      39,
+      19
+     ],
+     "text": "Курсы",
+     "href": "https://popovichfit.ru/",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597275677",
+     "type": "button",
+     "rect": [
+      15,
+      422,
+      66,
+      19
+     ],
+     "text": "Результаты",
+     "href": "https://popovichfit.ru/results",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597276052",
+     "type": "button",
+     "rect": [
+      15,
+      447,
+      54,
+      19
+     ],
+     "text": "Обо мне",
+     "href": "https://popovichfit.ru/about",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597276374",
+     "type": "button",
+     "rect": [
+      15,
+      472,
+      38,
+      19
+     ],
+     "text": "Media",
+     "href": "https://popovichfit.ru/media",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597309677",
+     "type": "button",
+     "rect": [
+      15,
+      497,
+      79,
+      19
+     ],
+     "text": "Сообщество",
+     "href": "https://popovichfit.ru/community",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597447049",
+     "type": "text",
+     "rect": [
+      15,
+      687,
+      85,
+      13
+     ],
+     "text": "Договор-оферта",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597476207",
+     "type": "text",
+     "rect": [
+      15,
+      712,
+      233,
+      26
+     ],
+     "text": "Партнерское соглашение (Договор-оферта) о реферальной программе",
+     "href": "https://popovichfit.ru/part_oferta",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597395336",
+     "type": "text",
+     "rect": [
+      15,
+      662,
+      309,
+      13
+     ],
+     "text": "Политика в отношении обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750650026561",
+     "type": "text",
+     "rect": [
+      15,
+      782,
+      309,
+      13
+     ],
+     "text": "Согласие на обработку персональных данных",
+     "href": "https://popovichfit.ru/data-consent",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "175916580376279630",
+     "type": "text",
+     "rect": [
+      15,
+      802,
+      309,
+      13
+     ],
+     "text": "Согласие на рассылку информационных сообщений",
+     "href": "https://popovichfit.ru/consent",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597352468",
+     "type": "text",
+     "rect": [
+      15,
+      637,
+      312,
+      13
+     ],
+     "text": "ИП Попович Наталья Викторовна ИНН: 780528255230",
+     "href": "",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750650003498",
+     "type": "text",
+     "rect": [
+      15,
+      757,
+      312,
+      13
+     ],
+     "text": "e-mail: info@popovichfit.ru",
+     "href": "",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597598043",
+     "type": "image",
+     "rect": [
+      15,
+      577,
+      290,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597681380",
+     "type": "button",
+     "rect": [
+      189,
+      414,
+      116,
+      34
+     ],
+     "text": "Предзапись",
+     "href": "tg://resolve?domain=popovichfitcourse_bot",
+     "font": "10px/15.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597623457",
+     "type": "button",
+     "rect": [
+      189,
+      372,
+      116,
+      34
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "10px/15.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597712349",
+     "type": "shape",
+     "rect": [
+      15,
+      833,
+      290,
+      1
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.27",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597826758",
+     "type": "image",
+     "rect": [
+      105,
+      860,
+      110,
+      11
+     ],
+     "text": "",
+     "href": "https://shumann.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.6",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825682",
+     "type": "image",
+     "rect": [
+      195,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "tg://resolve?domain=natalyapopovich87",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825721",
+     "type": "image",
+     "rect": [
+      225,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "https://www.youtube.com/@popovichfit",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825744",
+     "type": "image",
+     "rect": [
+      255,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825766",
+     "type": "image",
+     "rect": [
+      285,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "mailto:info@popovichfit.ru",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073913259",
+     "type": "image",
+     "rect": [
+      276,
+      460,
+      6,
+      6
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073992932",
+     "type": "text",
+     "rect": [
+      179,
+      496,
+      128,
+      24
+     ],
+     "text": "*Meta признана экстремистской организацией на территории РФ",
+     "href": "",
+     "font": "8px/12px 400 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.3",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G174959725855129400",
+     "type": "group",
+     "rect": [
+      15,
+      372,
+      85,
+      144
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:6px align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G175007383007674350",
+     "type": "group",
+     "rect": [
+      195,
+      463,
+      115,
+      25
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     347,
+     320,
+     553
+    ],
+    "bg": "rgb(29, 29, 29)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec681175286",
+   "type": "131",
+   "rect": [
+    0,
+    6113,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec485115011",
+   "type": "270",
+   "rect": [
+    0,
+    6113,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec541441588",
+   "type": "890",
+   "rect": [
+    0,
+    6113,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec2828455201",
+   "type": "131",
+   "rect": [
+    0,
+    6113,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec840321610",
+   "type": "131",
+   "rect": [
+    0,
+    6113,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

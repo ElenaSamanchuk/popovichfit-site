@@ -1,0 +1,751 @@
+{
+ "width": 320,
+ "height": 1059,
+ "recs": [
+  {
+   "id": "rec774067934",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120433846",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1750064216340",
+     "type": "shape",
+     "rect": [
+      0,
+      0,
+      320,
+      34
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064585345",
+     "type": "button",
+     "rect": [
+      -17,
+      -54,
+      40,
+      16
+     ],
+     "text": "КУРСЫ",
+     "href": "https://popovichfit.ru/#rec1120250416",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064641344",
+     "type": "button",
+     "rect": [
+      39,
+      -54,
+      65,
+      16
+     ],
+     "text": "ДО/ПОСЛЕ",
+     "href": "https://popovichfit.ru/results",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064660802",
+     "type": "button",
+     "rect": [
+      120,
+      -54,
+      45,
+      16
+     ],
+     "text": "СТАТЬИ",
+     "href": "https://popovichfit.ru/media",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064661319",
+     "type": "button",
+     "rect": [
+      181,
+      -54,
+      55,
+      16
+     ],
+     "text": "О ТРЕНЕРЕ",
+     "href": "https://popovichfit.ru/about",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1773122482265000001",
+     "type": "button",
+     "rect": [
+      252,
+      -54,
+      85,
+      16
+     ],
+     "text": "ВОПРОС/ОТВЕТ",
+     "href": "https://popovichfit.ru/#question-answer",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064265438",
+     "type": "shape",
+     "rect": [
+      16,
+      -79,
+      109,
+      43
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064321583",
+     "type": "text",
+     "rect": [
+      25,
+      12,
+      58,
+      11
+     ],
+     "text": "POPOVICHFIT",
+     "href": "https://popovichfit.ru/",
+     "font": "9px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064375153",
+     "type": "image",
+     "rect": [
+      8,
+      11,
+      13,
+      13
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065106018",
+     "type": "shape",
+     "rect": [
+      287,
+      8,
+      26,
+      19
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(245, 244, 244)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065303997",
+     "type": "image",
+     "rect": [
+      295,
+      19,
+      10,
+      1
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065280847",
+     "type": "image",
+     "rect": [
+      295,
+      15,
+      10,
+      1
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064777730",
+     "type": "shape",
+     "rect": [
+      700,
+      -65,
+      126,
+      43
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064809384",
+     "type": "button",
+     "rect": [
+      203,
+      8,
+      78,
+      19
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "8px/12.4px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(48, 48, 48)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G175006465878646380",
+     "type": "group",
+     "rect": [
+      -37,
+      -63,
+      394,
+      34
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "0px 0px 6px 6px",
+     "display": "flex",
+     "flex": "row gap:normal 16px align:center justify:flex-start pad:9px 20px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     320,
+     34
+    ],
+    "bg": "rgb(245, 245, 245)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec1551840931",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828336527",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec592229670",
+   "type": "450",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Главная Курсы До/после Статьи О тренере Вопрос-ответ ПРЕДЗАПИСЬ"
+  },
+  {
+   "id": "rec2019524321",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1773213623323000003",
+     "type": "text",
+     "rect": [
+      15,
+      777,
+      218,
+      68
+     ],
+     "text": "Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "10px/13.5px 500 Involve",
+     "color": "rgb(38, 38, 38)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1773213623325000005",
+     "type": "button",
+     "rect": [
+      15,
+      855,
+      79,
+      31
+     ],
+     "text": "Согласен",
+     "href": "",
+     "font": "10px/14.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1773213623322000002",
+     "type": "group",
+     "rect": [
+      5,
+      767,
+      233,
+      128
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:10px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     750,
+     320,
+     150
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec2019524641",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828337470",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec617943455",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    1059
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1721209754940",
+     "type": "shape",
+     "rect": [
+      10,
+      222,
+      300,
+      563
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(251, 251, 251)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1669372132956",
+     "type": "text",
+     "rect": [
+      10,
+      90,
+      263,
+      31
+     ],
+     "text": "Служба заботы",
+     "href": "",
+     "font": "25px/31px 600 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1689755138576",
+     "type": "text",
+     "rect": [
+      10,
+      132,
+      287,
+      76
+     ],
+     "text": "Если у вас возникли сложности или что-то работает некорректно - воспользуйтесь любой из форм связи с техподдержкой на сайте:",
+     "href": "",
+     "font": "14px/19px 100 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1689754868109",
+     "type": "text",
+     "rect": [
+      23,
+      237,
+      261,
+      32
+     ],
+     "text": "Вы можете воспользоваться стандартной формой для обращения в поддержку:",
+     "href": "",
+     "font": "12px/16px 100 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1689754539315",
+     "type": "form",
+     "rect": [
+      23,
+      279,
+      274,
+      325
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1689754937608",
+     "type": "text",
+     "rect": [
+      26,
+      624,
+      224,
+      28
+     ],
+     "text": "Нажимая кнопку отправить, вы соглашаетесь с политикой обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "10px/14px 100 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1689754425741",
+     "type": "text",
+     "rect": [
+      26,
+      667,
+      272,
+      98
+     ],
+     "text": "Техподдержка отвечает только на технические вопросы: доступ в личный кабинет, пароли, другие проблемы с сайтом или личным кабинетом и тому подобные. Специалист ",
+     "href": "",
+     "font": "10px/14px 100 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1672139173377",
+     "type": "text",
+     "rect": [
+      9,
+      805,
+      287,
+      152
+     ],
+     "text": "После того, как мы получим ваше обращение, потребуется чуть больше времени, чтобы корректно его обработать. При любом способе 99% обращений быстро обрабатываютс",
+     "href": "",
+     "font": "14px/19px 100 Manrope",
+     "color": "rgb(27, 27, 27)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     90,
+     320,
+     879
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  }
+ ]
+}

@@ -1,0 +1,2210 @@
+{
+ "width": 320,
+ "height": 20169,
+ "recs": [
+  {
+   "id": "rec774067934",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120433846",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1750064216340",
+     "type": "shape",
+     "rect": [
+      0,
+      0,
+      320,
+      34
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064585345",
+     "type": "button",
+     "rect": [
+      -17,
+      -54,
+      40,
+      16
+     ],
+     "text": "КУРСЫ",
+     "href": "https://popovichfit.ru/#rec1120250416",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064641344",
+     "type": "button",
+     "rect": [
+      39,
+      -54,
+      65,
+      16
+     ],
+     "text": "ДО/ПОСЛЕ",
+     "href": "https://popovichfit.ru/results",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064660802",
+     "type": "button",
+     "rect": [
+      120,
+      -54,
+      45,
+      16
+     ],
+     "text": "СТАТЬИ",
+     "href": "https://popovichfit.ru/media",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064661319",
+     "type": "button",
+     "rect": [
+      181,
+      -54,
+      55,
+      16
+     ],
+     "text": "О ТРЕНЕРЕ",
+     "href": "https://popovichfit.ru/about",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1773122482265000001",
+     "type": "button",
+     "rect": [
+      252,
+      -54,
+      85,
+      16
+     ],
+     "text": "ВОПРОС/ОТВЕТ",
+     "href": "https://popovichfit.ru/#question-answer",
+     "font": "10px/15.5px 500 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064265438",
+     "type": "shape",
+     "rect": [
+      16,
+      -79,
+      109,
+      43
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064321583",
+     "type": "text",
+     "rect": [
+      25,
+      12,
+      58,
+      11
+     ],
+     "text": "POPOVICHFIT",
+     "href": "https://popovichfit.ru/",
+     "font": "9px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1750064375153",
+     "type": "image",
+     "rect": [
+      8,
+      11,
+      13,
+      13
+     ],
+     "text": "",
+     "href": "https://popovichfit.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065106018",
+     "type": "shape",
+     "rect": [
+      287,
+      8,
+      26,
+      19
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgb(245, 244, 244)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065303997",
+     "type": "image",
+     "rect": [
+      295,
+      19,
+      10,
+      1
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750065280847",
+     "type": "image",
+     "rect": [
+      295,
+      15,
+      10,
+      1
+     ],
+     "text": "",
+     "href": "#menu_open",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064777730",
+     "type": "shape",
+     "rect": [
+      700,
+      -65,
+      126,
+      43
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px 0px 0px 6px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750064809384",
+     "type": "button",
+     "rect": [
+      203,
+      8,
+      78,
+      19
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "8px/12.4px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(48, 48, 48)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "4px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G175006465878646380",
+     "type": "group",
+     "rect": [
+      -37,
+      -63,
+      394,
+      34
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "0px 0px 6px 6px",
+     "display": "flex",
+     "flex": "row gap:normal 16px align:center justify:flex-start pad:9px 20px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     320,
+     34
+    ],
+    "bg": "rgb(245, 245, 245)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec1551840931",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828336527",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec592229670",
+   "type": "450",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Главная Курсы До/после Статьи О тренере Вопрос-ответ ПРЕДЗАПИСЬ"
+  },
+  {
+   "id": "rec2019524321",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1773213623323000003",
+     "type": "text",
+     "rect": [
+      15,
+      777,
+      218,
+      68
+     ],
+     "text": "Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "10px/13.5px 500 Involve",
+     "color": "rgb(38, 38, 38)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1773213623325000005",
+     "type": "button",
+     "rect": [
+      15,
+      855,
+      79,
+      31
+     ],
+     "text": "Согласен",
+     "href": "",
+     "font": "10px/14.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1773213623322000002",
+     "type": "group",
+     "rect": [
+      5,
+      767,
+      233,
+      128
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:10px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     750,
+     320,
+     150
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec2019524641",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec828337470",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec779582415",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    305
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1674476238540",
+     "type": "shape",
+     "rect": [
+      10,
+      55,
+      300,
+      127
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "E85A6210_3_2.jpg",
+     "bgSize": "cover",
+     "bgPos": "0% 30.872%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1669372132956",
+     "type": "text",
+     "rect": [
+      12,
+      199,
+      297,
+      92
+     ],
+     "text": "Ягодичные мышцы: их функции, работа, форма. Проблемные зоны — галифе, складки под и ямки над ягодицами",
+     "href": "",
+     "font": "18px/23px 600 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     45,
+     320,
+     260
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec779582073",
+   "type": "131",
+   "rect": [
+    0,
+    305,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618658250",
+   "type": "106",
+   "rect": [
+    0,
+    305,
+    320,
+    389
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Начать статью нужно с анатомии, чтобы дальше у вас было более глубокое понимание этой зоны и всех её взаимосвязей. Большая ягодичная мышца (БЯМ): верхняя часть крепится большей своей частью к ягодично"
+  },
+  {
+   "id": "rec618653234",
+   "type": "3",
+   "rect": [
+    0,
+    694,
+    320,
+    178
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653235",
+   "type": "106",
+   "rect": [
+    0,
+    872,
+    320,
+    730
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Нижняя часть разделяется волокнами на 2 части — одна часть вплетается в подвздошно-большеберцовый тракт, а другая крепится к ягодичной бугристости бедренной кости. Это очень важный момент, который поз"
+  },
+  {
+   "id": "rec618661258",
+   "type": "3",
+   "rect": [
+    0,
+    1602,
+    320,
+    265
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618661436",
+   "type": "106",
+   "rect": [
+    0,
+    1867,
+    320,
+    150
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Еще раз посмотрите, как они расположены все вместе:"
+  },
+  {
+   "id": "rec618661492",
+   "type": "3",
+   "rect": [
+    0,
+    2017,
+    320,
+    213
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618662090",
+   "type": "106",
+   "rect": [
+    0,
+    2231,
+    320,
+    150
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Еще раз посмотрите, как они расположены все вместе:"
+  },
+  {
+   "id": "rec618653238",
+   "type": "33",
+   "rect": [
+    0,
+    2381,
+    320,
+    279
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Причины и факторы, которые оказывают влияние на рост ягодичных мышц"
+  },
+  {
+   "id": "rec618653239",
+   "type": "106",
+   "rect": [
+    0,
+    2660,
+    320,
+    233
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "1. Стопа Здесь как раз и нужна информация, что одна часть БЯМ вплетается в подвздошно-большеберцовый тракт, а другая крепится к ягодичной бугристости бедренной кости."
+  },
+  {
+   "id": "rec618653240",
+   "type": "3",
+   "rect": [
+    0,
+    2893,
+    320,
+    264
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653241",
+   "type": "106",
+   "rect": [
+    0,
+    3158,
+    320,
+    220
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Далее спускается вниз, минует коленный сустав, вплетается в мышцы голени и заканчивается только у основания большого пальца."
+  },
+  {
+   "id": "rec618653242",
+   "type": "3",
+   "rect": [
+    0,
+    3378,
+    320,
+    180
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653243",
+   "type": "106",
+   "rect": [
+    0,
+    3558,
+    320,
+    367
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Поэтому фраза о том, что ягодица начинается на стопе — не маркетинг и уловка тренеров, а факт. Это — единый слинг. Работа со стопой очень важна. Например: если стопа заваливается вовнутрь, она по цепо"
+  },
+  {
+   "id": "rec618653244",
+   "type": "3",
+   "rect": [
+    0,
+    3925,
+    320,
+    207
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653245",
+   "type": "106",
+   "rect": [
+    0,
+    4132,
+    320,
+    348
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "2. Голеностопный сустав и его мобильность Этот пункт следует из предыдущего: когда мы работаем со стопой — мы работаем с мышцами голени и, конечно, мобильностью голеностопного сустава."
+  },
+  {
+   "id": "rec618664782",
+   "type": "3",
+   "rect": [
+    0,
+    4480,
+    320,
+    192
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618665070",
+   "type": "106",
+   "rect": [
+    0,
+    4672,
+    320,
+    765
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Это поможет мышцам полноценно вовлекаться в работу в физиологически заданной амплитуде. При недостатке мобильности голеностопного сустава будет происходить то же, что и в примере про стопу, которая за"
+  },
+  {
+   "id": "rec618665376",
+   "type": "3",
+   "rect": [
+    0,
+    5437,
+    320,
+    343
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653247",
+   "type": "106",
+   "rect": [
+    0,
+    5780,
+    320,
+    167
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Ведь шаг — это самое лучшее упражнение для ягодиц. И это — прекрасный бонус от регулярных занятий в POPOVICHFIT."
+  },
+  {
+   "id": "rec618667138",
+   "type": "3",
+   "rect": [
+    0,
+    5946,
+    320,
+    164
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618667673",
+   "type": "106",
+   "rect": [
+    0,
+    6110,
+    320,
+    399
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Если же таз недостаточно, то нагрузку будут брать на себя синнергисты. Как я объясняю на курсах: «Если вы не вышли на работу, то ваши коллеги частично будут брать на себя ваши обязанности. И часто дел"
+  },
+  {
+   "id": "rec618667878",
+   "type": "3",
+   "rect": [
+    0,
+    6509,
+    320,
+    127
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618668340",
+   "type": "106",
+   "rect": [
+    0,
+    6636,
+    320,
+    591
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "4. Проблемы в районе крестца и позвоночника в виде грыж, протрузий и т.д. Ягодичная — это очень рефлекторная мышца, то есть она будет работать только тогда, когда соблюдены все условия. Для красивых и"
+  },
+  {
+   "id": "rec618668908",
+   "type": "3",
+   "rect": [
+    0,
+    7227,
+    320,
+    213
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618669521",
+   "type": "106",
+   "rect": [
+    0,
+    7440,
+    320,
+    243
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Также в крестце есть микроскопические движения — например, нутация и контрнутация (если по-простому обьяснить эти движения, когда крестец наклоняется вперёд и назад)."
+  },
+  {
+   "id": "rec618669864",
+   "type": "3",
+   "rect": [
+    0,
+    7683,
+    320,
+    440
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618670185",
+   "type": "106",
+   "rect": [
+    0,
+    8124,
+    320,
+    405
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Это обеспечивает вовлечение ягодиц в работу, а также снимает ударную нагрузку с таза и разгружает поясницу. Крестец переходит в копчик, а к копчику, помимо нижних волокон большой ягодичной мышцы, прик"
+  },
+  {
+   "id": "rec618670415",
+   "type": "3",
+   "rect": [
+    0,
+    8529,
+    320,
+    179
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618671333",
+   "type": "106",
+   "rect": [
+    0,
+    8708,
+    320,
+    174
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Именно поэтому мы уделяем большое внимание этой зоне в тренировках POPOVICHFIT."
+  },
+  {
+   "id": "rec618671395",
+   "type": "3",
+   "rect": [
+    0,
+    8882,
+    320,
+    207
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618671762",
+   "type": "106",
+   "rect": [
+    0,
+    9089,
+    320,
+    301
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "5. Положение таза (передний и задний наклон) Здесь в одном случае будет зажат задний треугольник мышц тазового дна, в другом случае — передний."
+  },
+  {
+   "id": "rec618671966",
+   "type": "3",
+   "rect": [
+    0,
+    9390,
+    320,
+    203
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618672430",
+   "type": "106",
+   "rect": [
+    0,
+    9593,
+    320,
+    405
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Если таз наклонён кпереди, грудная клетка и таз находятся в разных плоскостях. В паттерне шага ягодица отрабатывать не будет, так как грудная клетка вынуждена тормозить падение тела вперёд — ягодице р"
+  },
+  {
+   "id": "rec618672691",
+   "type": "3",
+   "rect": [
+    0,
+    9998,
+    320,
+    203
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618672973",
+   "type": "106",
+   "rect": [
+    0,
+    10201,
+    320,
+    684
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Обычно в таком положении сложно раскрыть седалищные бугры, а таз всегда подкручивается и «клюёт». 6. Эластичность тканей бёдер Все ткани в нашем теле должны скользить относительно друг друга — тогда н"
+  },
+  {
+   "id": "rec618673251",
+   "type": "3",
+   "rect": [
+    0,
+    10885,
+    320,
+    203
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618673320",
+   "type": "106",
+   "rect": [
+    0,
+    11088,
+    320,
+    174
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Кстати, именно эластичность бёдер и положение таза будет убирать ВАЛИКИ НАД КОЛЕНЯМИ."
+  },
+  {
+   "id": "rec618673537",
+   "type": "3",
+   "rect": [
+    0,
+    11262,
+    320,
+    127
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618673872",
+   "type": "106",
+   "rect": [
+    0,
+    11389,
+    320,
+    568
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "7. Мобильность грудной клетки и мышцы брюшного пресса Кажется, что этот пункт — самый удивительный среди остальных факторов, которые влияют на работу ягодичных. Давайте разберемся. Мышцы брюшного прес"
+  },
+  {
+   "id": "rec618673950",
+   "type": "3",
+   "rect": [
+    0,
+    11957,
+    320,
+    251
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618674138",
+   "type": "106",
+   "rect": [
+    0,
+    12208,
+    320,
+    336
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "В данной передаче усилия очень важную ролью будет играть грудопоясничная фасция и подвижность позвоночника. Когда у человека мало скольжения в этой зоне — поясница ощущается «дубовой», и передачи усил"
+  },
+  {
+   "id": "rec618674224",
+   "type": "3",
+   "rect": [
+    0,
+    12544,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618674379",
+   "type": "106",
+   "rect": [
+    0,
+    12726,
+    320,
+    313
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Кстати, когда ягодицы функциональны — отёчность в зоне «боков» уходит. Мы поговорили об основных факторах, которые оказывают влияние на включение ягодиц в работу, далее обсудим проблемные зоны и самые"
+  },
+  {
+   "id": "rec618674756",
+   "type": "106",
+   "rect": [
+    0,
+    13039,
+    320,
+    197
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "1. Ягодичные «квадратной» формы"
+  },
+  {
+   "id": "rec618674555",
+   "type": "3",
+   "rect": [
+    0,
+    13236,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618675574",
+   "type": "106",
+   "rect": [
+    0,
+    13418,
+    320,
+    1182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Плоская спина и очень поджатые ягодицы — в результате: закрытый задний треугольник мышц тазового дна, сильное напряжение в крестце, поясничный отдел уплощен, много отечности и складок. Всегда, когда п"
+  },
+  {
+   "id": "rec618675938",
+   "type": "3",
+   "rect": [
+    0,
+    14600,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618676614",
+   "type": "106",
+   "rect": [
+    0,
+    14783,
+    320,
+    475
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Тазовое оно всегда под натяжением из-за слипание танец, а оно вплетается в приводящие. И ни в коем случае ЗДЕСЬ нельзя ЗАКАЧИВАТЬ и это тренажёров - самое неразумение, что можно сделать ,если у вас др"
+  },
+  {
+   "id": "rec618676997",
+   "type": "3",
+   "rect": [
+    0,
+    15258,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618677566",
+   "type": "106",
+   "rect": [
+    0,
+    15440,
+    320,
+    162
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "3. Область галифе"
+  },
+  {
+   "id": "rec618677699",
+   "type": "3",
+   "rect": [
+    0,
+    15602,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618678447",
+   "type": "106",
+   "rect": [
+    0,
+    15784,
+    320,
+    974
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Как мы с вами уже знаем: ягодица вплетается в подвздошно-большеберцовый тракт — это плотный тяж соединительной ткани. А там, где много соединительной ткани, всегда будет задерживаться жидкость Почему "
+  },
+  {
+   "id": "rec618678812",
+   "type": "3",
+   "rect": [
+    0,
+    16758,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653250",
+   "type": "106",
+   "rect": [
+    0,
+    16940,
+    320,
+    314
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "И это даже без силовых, а лишь курс «коррекция» Также есть такое понятие, как «подъягодичная борозда» (на картинке - «связка») но: у кого-то она есть, а у кого-то ее нет. У кого-то она более плотная, "
+  },
+  {
+   "id": "rec618653251",
+   "type": "3",
+   "rect": [
+    0,
+    17254,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653252",
+   "type": "106",
+   "rect": [
+    0,
+    17436,
+    320,
+    591
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "И состояние этой борозды зависит от того, насколько ягодицы будут выпуклыми. Естественно, при мышечном компоненте — то есть, если вы будете их тренировать. С маленькой бороздой будет более плавный пер"
+  },
+  {
+   "id": "rec618653253",
+   "type": "3",
+   "rect": [
+    0,
+    18027,
+    320,
+    182
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618680267",
+   "type": "3",
+   "rect": [
+    0,
+    18209,
+    320,
+    212
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec618653256",
+   "type": "106",
+   "rect": [
+    0,
+    18422,
+    320,
+    1194
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Вспомните начало статьи - куда крепится ягодица? Вот эти костные структуры и будут влиять на них И РАССТОЯНИЕ и БОЛЬШОГО ВЕРТЕЛА ДО КРЫЛА ТАЗА (на фото красным линия справа) Ни и про ягодицы «полочкой"
+  },
+  {
+   "id": "rec779582311",
+   "type": "131",
+   "rect": [
+    0,
+    19616,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec779582312",
+   "type": "396",
+   "rect": [
+    0,
+    740,
+    320,
+    160
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1719923677879",
+     "type": "button",
+     "rect": [
+      216,
+      744,
+      94,
+      45
+     ],
+     "text": "Назад",
+     "href": "javascript:history.back()",
+     "font": "12px/18.6px 600 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(240, 119, 159) 0%, rgb(195, 146, 165) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     740,
+     320,
+     70
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec1120432771",
+   "type": "131",
+   "rect": [
+    0,
+    19616,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec1120448561",
+   "type": "396",
+   "rect": [
+    0,
+    19616,
+    320,
+    553
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1749597221603",
+     "type": "button",
+     "rect": [
+      15,
+      372,
+      49,
+      19
+     ],
+     "text": "Главная",
+     "href": "https://popovichfit.ru/",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597242361",
+     "type": "button",
+     "rect": [
+      15,
+      397,
+      39,
+      19
+     ],
+     "text": "Курсы",
+     "href": "https://popovichfit.ru/",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597275677",
+     "type": "button",
+     "rect": [
+      15,
+      422,
+      66,
+      19
+     ],
+     "text": "Результаты",
+     "href": "https://popovichfit.ru/results",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597276052",
+     "type": "button",
+     "rect": [
+      15,
+      447,
+      54,
+      19
+     ],
+     "text": "Обо мне",
+     "href": "https://popovichfit.ru/about",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597276374",
+     "type": "button",
+     "rect": [
+      15,
+      472,
+      38,
+      19
+     ],
+     "text": "Media",
+     "href": "https://popovichfit.ru/media",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597309677",
+     "type": "button",
+     "rect": [
+      15,
+      497,
+      79,
+      19
+     ],
+     "text": "Сообщество",
+     "href": "https://popovichfit.ru/community",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597447049",
+     "type": "text",
+     "rect": [
+      15,
+      687,
+      85,
+      13
+     ],
+     "text": "Договор-оферта",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597476207",
+     "type": "text",
+     "rect": [
+      15,
+      712,
+      233,
+      26
+     ],
+     "text": "Партнерское соглашение (Договор-оферта) о реферальной программе",
+     "href": "https://popovichfit.ru/part_oferta",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597395336",
+     "type": "text",
+     "rect": [
+      15,
+      662,
+      309,
+      13
+     ],
+     "text": "Политика в отношении обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750650026561",
+     "type": "text",
+     "rect": [
+      15,
+      782,
+      309,
+      13
+     ],
+     "text": "Согласие на обработку персональных данных",
+     "href": "https://popovichfit.ru/data-consent",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "175916580376279630",
+     "type": "text",
+     "rect": [
+      15,
+      802,
+      309,
+      13
+     ],
+     "text": "Согласие на рассылку информационных сообщений",
+     "href": "https://popovichfit.ru/consent",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597352468",
+     "type": "text",
+     "rect": [
+      15,
+      637,
+      312,
+      13
+     ],
+     "text": "ИП Попович Наталья Викторовна ИНН: 780528255230",
+     "href": "",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750650003498",
+     "type": "text",
+     "rect": [
+      15,
+      757,
+      312,
+      13
+     ],
+     "text": "e-mail: info@popovichfit.ru",
+     "href": "",
+     "font": "10px/13px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.15",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597598043",
+     "type": "image",
+     "rect": [
+      15,
+      577,
+      290,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597681380",
+     "type": "button",
+     "rect": [
+      189,
+      414,
+      116,
+      34
+     ],
+     "text": "Предзапись",
+     "href": "tg://resolve?domain=popovichfitcourse_bot",
+     "font": "10px/15.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597623457",
+     "type": "button",
+     "rect": [
+      189,
+      372,
+      116,
+      34
+     ],
+     "text": "Личный кабинет",
+     "href": "https://lk.popovichfit.ru/",
+     "font": "10px/15.5px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597712349",
+     "type": "shape",
+     "rect": [
+      15,
+      833,
+      290,
+      1
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.27",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1749597826758",
+     "type": "image",
+     "rect": [
+      105,
+      860,
+      110,
+      11
+     ],
+     "text": "",
+     "href": "https://shumann.ru/",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.6",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825682",
+     "type": "image",
+     "rect": [
+      195,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "tg://resolve?domain=natalyapopovich87",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825721",
+     "type": "image",
+     "rect": [
+      225,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "https://www.youtube.com/@popovichfit",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825744",
+     "type": "image",
+     "rect": [
+      255,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073825766",
+     "type": "image",
+     "rect": [
+      285,
+      463,
+      25,
+      25
+     ],
+     "text": "",
+     "href": "mailto:info@popovichfit.ru",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073913259",
+     "type": "image",
+     "rect": [
+      276,
+      460,
+      6,
+      6
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1750073992932",
+     "type": "text",
+     "rect": [
+      179,
+      496,
+      128,
+      24
+     ],
+     "text": "*Meta признана экстремистской организацией на территории РФ",
+     "href": "",
+     "font": "8px/12px 400 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.3",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G174959725855129400",
+     "type": "group",
+     "rect": [
+      15,
+      372,
+      85,
+      144
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:6px align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G175007383007674350",
+     "type": "group",
+     "rect": [
+      195,
+      463,
+      115,
+      25
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     347,
+     320,
+     553
+    ],
+    "bg": "rgb(29, 29, 29)",
+    "bgImage": "none",
+    "position": "fixed"
+   }
+  },
+  {
+   "id": "rec681175286",
+   "type": "131",
+   "rect": [
+    0,
+    20169,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec485115011",
+   "type": "270",
+   "rect": [
+    0,
+    20169,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec541441588",
+   "type": "890",
+   "rect": [
+    0,
+    20169,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec2828455201",
+   "type": "131",
+   "rect": [
+    0,
+    20169,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec840321610",
+   "type": "131",
+   "rect": [
+    0,
+    20169,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/vvedine_tariff
+Call log:
+  - navigating to "https://popovichfit.ru/vvedine_tariff", waiting until "load"

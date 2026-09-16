@@ -1,0 +1,36 @@
+# /support @960 — высота 1080
+
+## rec1120433846 T396 rect=0,0,960,0  
+   artboard: 0,0,960,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064265438 @-32,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064216340 @0,0,960,10 bg:rgb(255, 255, 255)
+- [shape] #1750064777730 @834,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @283,10,394,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @842,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @-19,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @2,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @303,19,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @359,19,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @440,19,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @501,19,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @572,19,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,0,960,0  
+   artboard: 0,700,960,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:cover pos:0% 0% r:8px
+
+## rec617943455 T396 rect=0,0,960,1080  
+   artboard: 0,120,960,870 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1669372132956 @10,120,512,45 «Служба заботы» | 36px/45px 600 Manrope rgb(27, 27, 27)
+- [text] #1689755138576 @12,184,452,38 «Если у вас возникли сложности или что-то работает некорректно - воспользуйтесь любой из форм связи с техподдержкой на сайте:» | 14px/19px 100 Manrope rgb(27, 27, 27)
+- [shape] #1721209754940 @10,243,481,560 bg:rgb(251, 251, 251) r:14px
+- [text] #1689754868109 @29,263,252,32 «Вы можете воспользоваться стандартной формой для обращения в поддержку:» | 12px/16px 100 Manrope rgb(27, 27, 27)
+- [form] #1689754539315 @29,310,440,325
+- [text] #1689754937608 @32,654,358,28 «Нажимая кнопку отправить, вы соглашаетесь с политикой обработки персональных данных» → https://popovichfit.ru/privacy | 10px/14px 100 Manrope rgb(27, 27, 27)
+- [text] #1689754425741 @32,694,358,84 «Техподдержка отвечает только на технические вопросы: доступ в личный кабинет, пароли, другие проблемы с сайтом или личным кабинетом и тому подобные. Специалист » | 10px/14px 100 Manrope rgb(27, 27, 27)
+- [text] #1672139173377 @10,833,461,133 «После того, как мы получим ваше обращение, потребуется чуть больше времени, чтобы корректно его обработать. При любом способе 99% обращений быстро обрабатываютс» | 14px/19px 100 Manrope rgb(27, 27, 27)

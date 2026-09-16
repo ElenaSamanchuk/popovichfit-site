@@ -62,19 +62,19 @@ def elem_spec(el_html, rules):
     atom = re.search(r"<(?:div|a|img|iframe)[^>]*class=['\"][^'\"]*tn-atom[^'\"]*['\"][^>]*>(.*)", el_html, re.S)
     text = ''; html_inner = ''
     if etype in ('text', 'button'):
-        inner = re.search(r"class=['\"]tn-atom(?:__button-text)?['\"][^>]*>(.*?)</(?:div|span|a)>", el_html, re.S)
+        inner = re.search(r"class=['\"]tn-atom(?:__button-text)?(?:\s[^'\"]*)?['\"][^>]*>(.*?)</(?:div|span|a)>", el_html, re.S)
         if inner:
             t = inner.group(1)
             html_inner = re.sub(r'\s+', ' ', t).strip()
             t = re.sub(r'<br\s*/?>', '⏎', t); t = re.sub(r'<[^>]+>', '', t)
             text = H.unescape(re.sub(r'[ \t\r\n]+', ' ', t)).strip()
-    href = re.search(r"<a[^>]*class=['\"]tn-atom['\"][^>]*href=[\"']([^\"']*)[\"']", el_html) or re.search(r"href=[\"']([^\"']*)[\"'][^>]*class=['\"]tn-atom['\"]", el_html)
+    href = re.search(r"<a[^>]*class=['\"]tn-atom(?:\s[^'\"]*)?['\"][^>]*href=[\"']([^\"']*)[\"']", el_html) or re.search(r"href=[\"']([^\"']*)[\"'][^>]*class=['\"]tn-atom(?:\s[^'\"]*)?['\"]", el_html)
     href = href.group(1) if href else ''
     img = re.search(r"data-original=[\"']([^\"']*)[\"']", el_html) or re.search(r"<img[^>]*src=[\"']([^\"']*)[\"']", el_html)
     img = img.group(1) if img else ''
     bg = re.search(r"background-image:\s*url\(['\"]?([^'\")]+)", el_html); bg = bg.group(1) if bg else ''
     anim = dict(re.findall(r'data-animate-([\w-]+)=[\'"]([^\'"]*)[\'"]', el_html))
-    inline = re.search(r"class=['\"]tn-atom['\"][^>]*style=[\"']([^\"']*)[\"']", el_html)
+    inline = re.search(r"class=['\"]tn-atom(?:\s[^'\"]*)?['\"][^>]*style=[\"']([^\"']*)[\"']", el_html)
     inline = inline.group(1) if inline else ''
     geo = {}
     for scr in SCREENS:

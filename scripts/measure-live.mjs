@@ -13,13 +13,33 @@ import path from 'node:path'
 const ROOT = path.resolve(import.meta.dirname, '..')
 const OUT = path.join(ROOT, 'docs/specs/measured')
 fs.mkdirSync(OUT, { recursive: true })
-const [url, ...ws] = process.argv.slice(2)
+const argv = process.argv.slice(2)
+const urlsArg = argv.filter((a) => a.startsWith('/'))
+const ws = argv.filter((a) => /^\d+$/.test(a))
 const widths = ws.length ? ws.map(Number) : [1200, 390]
+// --all: все страницы из docs/meta.json (сначала категории по docs/old-site-url-map.md: A, B, D, C, F, E, S)
+let urls = urlsArg
+if (argv.includes('--all')) {
+  const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/meta.json'), 'utf8'))
+  const map = fs.readFileSync(path.join(ROOT, 'docs/old-site-url-map.md'), 'utf8')
+  const order = ['A', 'B', 'D', 'C', 'F', 'E', 'S']
+  const cat = {}
+  let cur = ''
+  for (const line of map.split('\n')) {
+    const m = line.match(/^## ([A-Z])\./); if (m) cur = m[1]
+    const u = line.match(/^\| `([^`]+)`/); if (u && cur) cat[u[1]] = cur
+  }
+  urls = Object.values(meta).map((p) => p.url).sort((a, b) => order.indexOf(cat[a] || 'S') - order.indexOf(cat[b] || 'S'))
+}
+const skipExisting = argv.includes('--skip-existing')
 const BASE = process.env.BASE || 'https://popovichfit.ru'
 const slugOf = (u) => (u === '/' ? 'index' : u.replace(/^\//, '').replace(/[\/.]/g, '_'))
 
 const browser = await chromium.launch()
+for (const url of urls) {
 for (const w of widths) {
+  if (skipExisting && fs.existsSync(path.join(OUT, `${slugOf(url)}-${w}.txt`))) continue
+  try {
   const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'ru-RU' })
   const page = await ctx.newPage()
   await page.goto(BASE + url, { waitUntil: 'load', timeout: 90000 })
@@ -99,5 +119,7 @@ for (const w of widths) {
   fs.writeFileSync(path.join(OUT, `${slug}-${w}.txt`), lines.join('\n'))
   console.log(`${url} @${w}: ${data.recs.length} блоков, высота ${data.height} → docs/specs/measured/${slug}-${w}.txt`)
   await ctx.close()
+  } catch (e) { console.log(`${url} @${w}: ОШИБКА ${String(e).slice(0, 120)}`) }
+}
 }
 await browser.close()

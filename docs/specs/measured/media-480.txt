@@ -1,0 +1,106 @@
+# /media @480 — высота 2577
+
+## rec1120433846 T396 rect=0,0,480,0  
+   artboard: 0,0,480,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750064265438 @16,-79,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @860,-65,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @43,-63,499,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064585345 @63,-54,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @119,-54,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @200,-54,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @261,-54,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @332,-54,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [button] #1786447424492000001 @433,-54,89,16 «ТЕХ.ПОДДЕРЖКА» → tg://resolve?domain=popovichfitCare_Bot | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [shape] #1750064216340 @0,0,480,44 bg:rgb(255, 255, 255)
+- [button] #1750064809384 @318,10,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [shape] #1750065106018 @434,10,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750064375153 @12,15,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @33,16,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [image] #1750065280847 @444,19,14,2 → #menu_open
+- [image] #1750065303997 @444,23,14,2 → #menu_open
+
+## rec2019524321 T396 rect=0,0,480,0  
+   artboard: 0,700,480,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,78 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/15.6px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,830,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:cover pos:0% 0% r:8px
+
+## rec1112943926 T396 rect=0,0,480,125  
+   artboard: 0,75,480,50 bg=rgb(245, 244, 244) img=none pos=relative
+- [text] #1720534073989 @65,85,351,29 «POPOVICH MEDIA» | 26px/29px 700 Involve rgb(32, 32, 32) align:center
+
+## rec1112944221 T396 rect=0,125,480,480  
+   artboard: 0,155,480,450 bg=rgb(245, 244, 244) img=none pos=relative
+- [shape] #1720617699673 @10,165,225,434 bg:rgb(255, 255, 255) r:14px
+- [shape] #1720619679575 @245,165,225,434 bg:rgb(255, 255, 255) r:14px
+- [shape] #1720612438121 @15,170,215,138 bg:rgb(108, 108, 108) img:image_1.jpg size:106.977% auto pos:50% 0% r:8px
+- [shape] #1720619679568 @250,170,215,138 bg:rgb(108, 108, 108) img:image_2.jpg size:106.977% auto pos:50% 0% r:8px
+- [button] #1720695087453 @25,320,55,18 «ТЕОРИЯ» | 8px/12.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(304.92deg, rgb(196, 192, 187) 0%, rgb(187, 181, 174) 100%) size:cover pos:0% 0% r:30px
+- [button] #1721644396519 @83,320,69,18 «ПРАКТИКА» | 9px/13.95px 700 Involve rgb(142, 142, 150) uppercase align:center r:30px
+- [button] #1720619831775 @260,320,55,18 «ТЕОРИЯ» | 8px/12.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(304.92deg, rgb(196, 192, 187) 0%, rgb(187, 181, 174) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720596490697 @25,346,178,18 «Отёки и целлюлит» | 16px/18px 700 Involve rgb(32, 32, 32)
+- [text] #1720619679571 @260,346,178,18 «Фитнес-мифы» | 16px/18px 700 Involve rgb(32, 32, 32)
+- [text] #1720617219151 @25,368,204,150 «Что вы привыкли слышать, когда речь идёт о причинах целлюлита и отеков? Почти уверена, что что-то вроде: несбалансированный рацион, малоподвижный образ жизни, о» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1720619679565 @260,368,195,120 «Хотите убрать холку массажем или делаете 100 прыжков «на носочках» по утрам, чтобы разогнать лимфу? Уверены, что это эффективно? В статье разбираем самые популя» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [button] #1720617699664 @25,533,195,51 «ОТКРЫТЬ» → https://popovichfit.ru/media_1_otek | 11px/17.05px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720619679552 @260,533,195,51 «ОТКРЫТЬ» → https://popovichfit.ru/mif | 11px/17.05px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+
+## rec776742273 T396 rect=0,605,480,565  
+   artboard: 0,620,480,550 bg=rgb(245, 244, 244) img=none pos=relative
+- [shape] #1720617699673 @10,630,225,530 bg:rgb(255, 255, 255) r:14px
+- [shape] #1720619679575 @245,630,225,530 bg:rgb(255, 255, 255) r:14px
+- [shape] #1720612438121 @15,635,215,138 bg:rgb(108, 108, 108) img:image_3.jpg size:128.372% auto pos:50% 0% r:8px
+- [shape] #1720619679568 @250,635,215,138 bg:rgb(108, 108, 108) img:image_4.jpg size:137.893% auto pos:50% 0% r:8px
+- [button] #1720695087453 @25,785,55,18 «ТЕОРИЯ» | 8px/12.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(304.92deg, rgb(196, 192, 187) 0%, rgb(187, 181, 174) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720619831775 @260,785,55,18 «ТЕОРИЯ» | 8px/12.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(304.92deg, rgb(196, 192, 187) 0%, rgb(187, 181, 174) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720596490697 @25,811,197,54 «Холка: почему возникает и что поможет избавиться» | 16px/18px 700 Involve rgb(32, 32, 32)
+- [text] #1720619679571 @260,811,201,108 «Ягодичные мышцы: их функции, работа, форма. Проблемные зоны — галифе, складки под и ямки над ягодицами» | 16px/18px 700 Involve rgb(32, 32, 32)
+- [text] #1720617219151 @25,871,189,180 «Что вы знаете о холке? Скорее всего, что главная причина ее появления — это генетика. Или, может быть, что массаж отлично поможет ее «разбить»? Ведь это 2 главн» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1720619679565 @260,929,195,135 «В статье поговорим о топографии ягодичных мышц, их функциях, от чего зависит их работа и форма. А также о проблемных зонах этого региона — галифе, складках под,» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [button] #1720617699664 @25,1094,195,51 «ОТКРЫТЬ» → https://popovichfit.ru/mediah | 11px/17.05px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720619679552 @260,1094,195,51 «ОТКРЫТЬ» → https://popovichfit.ru/media_gluteal_muscles | 11px/17.05px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+
+## rec776744702 T396 rect=0,1170,480,795  
+   artboard: 0,1185,480,720 bg=rgb(245, 244, 244) img=none pos=relative
+- [shape] #1720617699673 @10,1195,225,695 bg:rgb(255, 255, 255) r:14px
+- [shape] #1720619679575 @245,1195,225,695 bg:rgb(255, 255, 255) r:14px
+- [shape] #1720612438121 @15,1200,215,138 bg:rgb(108, 108, 108) img:image_5.jpg size:128.372% auto pos:50% 0% r:8px
+- [shape] #1720619679568 @250,1200,215,138 bg:rgb(108, 108, 108) img:image_6.jpg size:137.893% auto pos:50% 0% r:8px
+- [button] #1720695087453 @25,1350,55,18 «ТЕОРИЯ» | 8px/12.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(304.92deg, rgb(196, 192, 187) 0%, rgb(187, 181, 174) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720619831775 @260,1350,55,18 «ТЕОРИЯ» | 8px/12.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(304.92deg, rgb(196, 192, 187) 0%, rgb(187, 181, 174) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720596490697 @25,1376,189,90 «Тазовое дно: что это, на что влияет и какие проблемы могут появиться, если с ним не работать» | 16px/18px 700 Involve rgb(32, 32, 32)
+- [text] #1720619679571 @260,1376,201,36 «Кор: что такое кор и зачем нужен» | 16px/18px 700 Involve rgb(32, 32, 32)
+- [text] #1720619679565 @260,1422,201,392 «Что такое кор? Немногие грамотно и развернуто ответят на этот вопрос. Между тем, результат работы с кором — это: плоский живот; отсутствие болей в пояснице, гру» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1720617219151 @25,1476,195,332 «Тазовое дно… Каких только мифов вокруг него не витает: Кто-то думает, что оно есть только у женщин и это — влагалище. А, чтобы его «укрепить», нужно делать упра» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [button] #1720617699664 @25,1824,195,51 «ОТКРЫТЬ» → https://popovichfit.ru/media_mtd2 | 11px/17.05px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720619679552 @260,1824,195,51 «ОТКРЫТЬ» → https://popovichfit.ru/media_kor | 11px/17.05px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+
+## rec1120448561 T396 rect=0,1965,480,612  
+   artboard: 0,288,480,612 bg=rgb(29, 29, 29) img=none pos=fixed
+- [button] #1749597221603 @10,339,49,19 «Главная» → https://popovichfit.ru/ | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @10,339,85,223 img:none size:undefined pos:undefined flex row gap:15px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597623457 @320,339,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [button] #1749597242361 @10,373,39,19 «Курсы» → https://popovichfit.ru/ | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597681380 @320,389,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [button] #1749597275677 @10,407,66,19 «Результаты» → https://popovichfit.ru/results | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073913259 @430,439,6,6
+- [button] #1749597276052 @10,441,54,19 «Обо мне» → https://popovichfit.ru/about | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @334,443,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @334,443,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @369,443,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @404,443,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @439,443,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597276374 @10,475,38,19 «Media» → https://popovichfit.ru/media | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [text] #1750073992932 @337,488,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597309677 @10,509,79,19 «Сообщество» → https://popovichfit.ru/community | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1786447328157000001 @10,543,93,19 «Тех.поддержка» → tg://resolve?domain=popovichfitCare_Bot | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1749597598043 @13,558,454,55
+- [text] #1749597352468 @10,643,199,28 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @249,643,208,28 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @249,695,242,28 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @10,703,94,14 «Договор-оферта» → https://popovichfit.ru/oferta | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @0,743,199,14 «e-mail: info@popovichfit.ru» | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @249,743,208,28 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @249,783,208,28 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 11px/14px 600 Involve rgb(255, 255, 255) op:0.15
+- [shape] #1749597712349 @10,823,460,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @185,858,110,11 → https://shumann.ru/ op:0.6

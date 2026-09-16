@@ -1,0 +1,3752 @@
+{
+ "width": 320,
+ "height": 1730,
+ "recs": [
+  {
+   "id": "rec2372280691",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    180
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1781175844754000005",
+     "type": "text",
+     "rect": [
+      12,
+      86,
+      300,
+      22
+     ],
+     "text": "КУРС КОРРЕКЦИЯ",
+     "href": "",
+     "font": "18px/21.6px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781175844755000008",
+     "type": "text",
+     "rect": [
+      22,
+      49,
+      142,
+      10
+     ],
+     "text": "СТАРТ НОВОГО ПОТОКА — 22 ИЮНЯ",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781175844755000010",
+     "type": "text",
+     "rect": [
+      188,
+      49,
+      115,
+      10
+     ],
+     "text": "ДЛИТЕЛЬНОСТЬ — 5 НЕДЕЛЬ",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781175844756000011",
+     "type": "text",
+     "rect": [
+      11,
+      118,
+      300,
+      43
+     ],
+     "text": "Освобождение от зажимов, работа с осанкой, дыханием, тазовым дном. Идеально для восстановления и заботы о себе",
+     "href": "",
+     "font": "12px/14.4px 500 Involve",
+     "color": "rgb(96, 96, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1781175844754000003",
+     "type": "group",
+     "rect": [
+      10,
+      40,
+      300,
+      122
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844754000004",
+     "type": "group",
+     "rect": [
+      11,
+      41,
+      300,
+      67
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column-reverse gap:20px 8px align:flex-start justify:space-between pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844755000006",
+     "type": "group",
+     "rect": [
+      12,
+      42,
+      300,
+      24
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:8px 5px align:center justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844755000007",
+     "type": "group",
+     "rect": [
+      12,
+      43,
+      161,
+      22
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "radius": "40px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844755000009",
+     "type": "group",
+     "rect": [
+      178,
+      43,
+      134,
+      22
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "40px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:center pad:5px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     320,
+     180
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2372446531",
+   "type": "396",
+   "rect": [
+    0,
+    180,
+    320,
+    100
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1781176745312000022",
+     "type": "image",
+     "rect": [
+      45,
+      216,
+      11,
+      11
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781176695650000015",
+     "type": "text",
+     "rect": [
+      19,
+      232,
+      63,
+      10
+     ],
+     "text": "РОЗЫГРЫШ!",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781176695651000017",
+     "type": "text",
+     "rect": [
+      91,
+      205,
+      181,
+      24
+     ],
+     "text": "Купи тариф с куратором — участвуй в розыгрыше",
+     "href": "",
+     "font": "10px/12px 700 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781176695651000018",
+     "type": "text",
+     "rect": [
+      91,
+      234,
+      219,
+      19
+     ],
+     "text": "Выиграй вещи бренда Nasha, косметику Dr. Kondrashova, гаджеты от Натальи",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(96, 96, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781176695652000019",
+     "type": "shape",
+     "rect": [
+      716,
+      -82,
+      95,
+      91
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "2_3_2.png",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781176695652000020",
+     "type": "image",
+     "rect": [
+      808,
+      -56,
+      44,
+      87
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781176695653000021",
+     "type": "image",
+     "rect": [
+      261,
+      178,
+      37,
+      51
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1781176695646000010",
+     "type": "group",
+     "rect": [
+      11,
+      192,
+      300,
+      74
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "8px",
+     "display": "flex",
+     "flex": "row gap:normal 10px align:center justify:space-between pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781176695648000011",
+     "type": "group",
+     "rect": [
+      17,
+      198,
+      281,
+      62
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 7px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781176695648000012",
+     "type": "group",
+     "rect": [
+      18,
+      199,
+      65,
+      60
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781176695648000013",
+     "type": "group",
+     "rect": [
+      18,
+      199,
+      65,
+      60
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.42deg, rgb(248, 162, 180) 0%, rgb(238, 134, 156) 100%)",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "column gap:5px normal align:center justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781176695651000016",
+     "type": "group",
+     "rect": [
+      90,
+      204,
+      215,
+      50
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:5px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     180,
+     320,
+     100
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2476376111",
+   "type": "396",
+   "rect": [
+    0,
+    280,
+    320,
+    630
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1781178033076000021",
+     "type": "text",
+     "rect": [
+      26,
+      351,
+      271,
+      12
+     ],
+     "text": "самостоятельное прохождение",
+     "href": "",
+     "font": "10px/12px 600 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520406000033",
+     "type": "text",
+     "rect": [
+      260,
+      619,
+      38,
+      10
+     ],
+     "text": "ДО — 23%",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520406000034",
+     "type": "text",
+     "rect": [
+      27,
+      621,
+      212,
+      14
+     ],
+     "text": "Коррекция с тренером",
+     "href": "",
+     "font": "12px/14.4px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784206216248000003",
+     "type": "text",
+     "rect": [
+      196,
+      653,
+      90,
+      10
+     ],
+     "text": "РАЗБОР УПРАЖНЕНИЙ",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1784206216248000004",
+     "type": "text",
+     "rect": [
+      27,
+      676,
+      278,
+      22
+     ],
+     "text": "Тариф вклюючает в себя проверку техники выполнения упражнений с рекомендациями тренера",
+     "href": "",
+     "font": "9px/10.8px 500 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784206216248000005",
+     "type": "button",
+     "rect": [
+      27,
+      650,
+      154,
+      16
+     ],
+     "text": "КОЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО",
+     "href": "",
+     "font": "8px/9.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(67.32deg, rgb(248, 162, 180) 0%, rgb(238, 134, 156) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1784206216248000006",
+     "type": "shape",
+     "rect": [
+      27,
+      708,
+      270,
+      2
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000028",
+     "type": "button",
+     "rect": [
+      36,
+      731,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "8px/8px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000027",
+     "type": "text",
+     "rect": [
+      55,
+      732,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000025",
+     "type": "text",
+     "rect": [
+      35,
+      756,
+      34,
+      10
+     ],
+     "text": "1 ПОТОК",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000022",
+     "type": "button",
+     "rect": [
+      128,
+      731,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "14px/14px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000021",
+     "type": "text",
+     "rect": [
+      147,
+      732,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000019",
+     "type": "text",
+     "rect": [
+      127,
+      756,
+      40,
+      10
+     ],
+     "text": "3 ПОТОКА",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000016",
+     "type": "button",
+     "rect": [
+      220,
+      731,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000015",
+     "type": "text",
+     "rect": [
+      239,
+      732,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000013",
+     "type": "text",
+     "rect": [
+      219,
+      756,
+      45,
+      10
+     ],
+     "text": "6 ПОТОКОВ",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000009",
+     "type": "text",
+     "rect": [
+      28,
+      792,
+      54,
+      11
+     ],
+     "text": "Стоимость",
+     "href": "",
+     "font": "10px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000008",
+     "type": "text",
+     "rect": [
+      28,
+      815,
+      77,
+      10
+     ],
+     "text": "скидка до 18 июня",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000006",
+     "type": "text",
+     "rect": [
+      205,
+      790,
+      91,
+      13
+     ],
+     "text": "5 599 р.",
+     "href": "",
+     "font": "12px/13.2px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000005",
+     "type": "text",
+     "rect": [
+      211,
+      815,
+      85,
+      11
+     ],
+     "text": "7 699 р.",
+     "href": "",
+     "font": "10px/11px 600 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000002",
+     "type": "button",
+     "rect": [
+      27,
+      842,
+      271,
+      35
+     ],
+     "text": "КУПИТЬ",
+     "href": "https://lk.popovichfit.ru/payments/tariff_Jo4XGo/checkout",
+     "font": "10px/12px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000043",
+     "type": "text",
+     "rect": [
+      256,
+      324,
+      38,
+      10
+     ],
+     "text": "ДО — 23%",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033076000020",
+     "type": "text",
+     "rect": [
+      26,
+      326,
+      199,
+      17
+     ],
+     "text": "Коррекция",
+     "href": "",
+     "font": "14px/16.8px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784206257170000002",
+     "type": "text",
+     "rect": [
+      26,
+      385,
+      278,
+      22
+     ],
+     "text": "Тариф подразумевает самостоятельно прохождение программы курса без обратной связи от куратора",
+     "href": "",
+     "font": "9px/10.8px 500 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784206257170000003",
+     "type": "button",
+     "rect": [
+      26,
+      357,
+      164,
+      16
+     ],
+     "text": "КОЛИЧЕСТВО МЕСТ НЕ ОГРАНИЧЕНО",
+     "href": "",
+     "font": "8px/9.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(90deg, rgb(186, 181, 173) 0%, rgb(195, 191, 186) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1784206257170000004",
+     "type": "shape",
+     "rect": [
+      26,
+      418,
+      270,
+      2
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033078000027",
+     "type": "button",
+     "rect": [
+      35,
+      443,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "8px/8px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033078000028",
+     "type": "text",
+     "rect": [
+      54,
+      444,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033078000029",
+     "type": "text",
+     "rect": [
+      34,
+      468,
+      34,
+      10
+     ],
+     "text": "1 ПОТОК",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033079000033",
+     "type": "button",
+     "rect": [
+      126,
+      443,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "14px/14px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033079000034",
+     "type": "text",
+     "rect": [
+      145,
+      444,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033079000035",
+     "type": "text",
+     "rect": [
+      125,
+      468,
+      40,
+      10
+     ],
+     "text": "3 ПОТОКА",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000039",
+     "type": "button",
+     "rect": [
+      218,
+      443,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000040",
+     "type": "text",
+     "rect": [
+      237,
+      444,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000041",
+     "type": "text",
+     "rect": [
+      217,
+      468,
+      45,
+      10
+     ],
+     "text": "6 ПОТОКОВ",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033074000016",
+     "type": "text",
+     "rect": [
+      27,
+      501,
+      54,
+      11
+     ],
+     "text": "Стоимость",
+     "href": "",
+     "font": "10px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000044",
+     "type": "text",
+     "rect": [
+      27,
+      522,
+      77,
+      10
+     ],
+     "text": "скидка до 18 июня",
+     "href": "",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033075000018",
+     "type": "text",
+     "rect": [
+      204,
+      505,
+      91,
+      13
+     ],
+     "text": "3 799 р.",
+     "href": "",
+     "font": "12px/13.2px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033076000019",
+     "type": "text",
+     "rect": [
+      220,
+      528,
+      75,
+      0
+     ],
+     "text": "",
+     "href": "",
+     "font": "10px/11px 600 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": false
+    },
+    {
+     "id": "1781178033076000022",
+     "type": "button",
+     "rect": [
+      26,
+      545,
+      271,
+      35
+     ],
+     "text": "КУПИТЬ",
+     "href": "https://lk.popovichfit.ru/payments/tariff_D9nEQP/checkout",
+     "font": "10px/12px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "G1781180520403000001",
+     "type": "group",
+     "rect": [
+      11,
+      605,
+      300,
+      283
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "10px",
+     "display": "flex",
+     "flex": "row gap:14px 0px align:flex-end justify:flex-start pad:15px",
+     "visible": true
+    },
+    {
+     "id": "G1784207244959000002",
+     "type": "group",
+     "rect": [
+      27,
+      621,
+      273,
+      15
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520406000032",
+     "type": "group",
+     "rect": [
+      254,
+      616,
+      51,
+      15
+     ],
+     "text": "",
+     "bg": "rgb(248, 62, 96)",
+     "bgImage": "none",
+     "radius": "1px",
+     "display": "flex",
+     "flex": "row gap:normal 14px align:center justify:center pad:2px 8px",
+     "visible": true
+    },
+    {
+     "id": "G1784206216248000001",
+     "type": "group",
+     "rect": [
+      27,
+      650,
+      278,
+      59
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1784206216248000002",
+     "type": "group",
+     "rect": [
+      187,
+      650,
+      108,
+      16
+     ],
+     "text": "",
+     "bg": "rgb(228, 240, 255)",
+     "bgImage": "none",
+     "radius": "40px",
+     "display": "flex",
+     "flex": "row gap:normal 8px align:center justify:center pad:2px 8px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000010",
+     "type": "group",
+     "rect": [
+      27,
+      723,
+      271,
+      51
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000023",
+     "type": "group",
+     "rect": [
+      28,
+      723,
+      87,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:flex-start justify:flex-start pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000024",
+     "type": "group",
+     "rect": [
+      34,
+      729,
+      75,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000026",
+     "type": "group",
+     "rect": [
+      35,
+      730,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000017",
+     "type": "group",
+     "rect": [
+      120,
+      723,
+      87,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:flex-start justify:flex-start pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000018",
+     "type": "group",
+     "rect": [
+      126,
+      729,
+      75,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000020",
+     "type": "group",
+     "rect": [
+      127,
+      730,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000011",
+     "type": "group",
+     "rect": [
+      212,
+      723,
+      87,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:flex-start justify:flex-start pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000012",
+     "type": "group",
+     "rect": [
+      218,
+      729,
+      75,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000014",
+     "type": "group",
+     "rect": [
+      219,
+      730,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000003",
+     "type": "group",
+     "rect": [
+      27,
+      788,
+      271,
+      40
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 50px align:center justify:space-between pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000007",
+     "type": "group",
+     "rect": [
+      28,
+      792,
+      77,
+      33
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:12px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000004",
+     "type": "group",
+     "rect": [
+      204,
+      789,
+      93,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:12px normal align:flex-end justify:flex-end pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781179197502000049",
+     "type": "group",
+     "rect": [
+      11,
+      311,
+      300,
+      282
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "8px",
+     "display": "flex",
+     "flex": "row gap:14px 0px align:flex-end justify:flex-start pad:15px",
+     "visible": true
+    },
+    {
+     "id": "G1784207216423000001",
+     "type": "group",
+     "rect": [
+      26,
+      326,
+      270,
+      17
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033080000042",
+     "type": "group",
+     "rect": [
+      250,
+      321,
+      51,
+      15
+     ],
+     "text": "",
+     "bg": "rgb(248, 62, 96)",
+     "bgImage": "none",
+     "radius": "1px",
+     "display": "flex",
+     "flex": "row gap:normal 14px align:center justify:center pad:2px 8px",
+     "visible": true
+    },
+    {
+     "id": "G1784206257169000001",
+     "type": "group",
+     "rect": [
+      26,
+      357,
+      278,
+      62
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033077000023",
+     "type": "group",
+     "rect": [
+      26,
+      433,
+      271,
+      53
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033077000024",
+     "type": "group",
+     "rect": [
+      27,
+      434,
+      86,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033078000025",
+     "type": "group",
+     "rect": [
+      33,
+      441,
+      74,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033078000026",
+     "type": "group",
+     "rect": [
+      34,
+      442,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033078000030",
+     "type": "group",
+     "rect": [
+      118,
+      434,
+      86,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000031",
+     "type": "group",
+     "rect": [
+      124,
+      441,
+      74,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000032",
+     "type": "group",
+     "rect": [
+      125,
+      442,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000036",
+     "type": "group",
+     "rect": [
+      210,
+      434,
+      86,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000037",
+     "type": "group",
+     "rect": [
+      216,
+      441,
+      74,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033080000038",
+     "type": "group",
+     "rect": [
+      217,
+      442,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033072000015",
+     "type": "group",
+     "rect": [
+      26,
+      500,
+      271,
+      33
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:space-between pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781179325496000050",
+     "type": "group",
+     "rect": [
+      27,
+      501,
+      77,
+      31
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033075000017",
+     "type": "group",
+     "rect": [
+      203,
+      504,
+      93,
+      25
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-end justify:flex-end pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     280,
+     320,
+     630
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2372929161",
+   "type": "396",
+   "rect": [
+    0,
+    910,
+    320,
+    180
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1781175844754000005",
+     "type": "text",
+     "rect": [
+      12,
+      996,
+      300,
+      22
+     ],
+     "text": "КУРС СИЛОВОЙ",
+     "href": "",
+     "font": "18px/21.6px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781175844755000008",
+     "type": "text",
+     "rect": [
+      22,
+      959,
+      142,
+      10
+     ],
+     "text": "СТАРТ НОВОГО ПОТОКА — 22 ИЮНЯ",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781175844755000010",
+     "type": "text",
+     "rect": [
+      188,
+      959,
+      115,
+      10
+     ],
+     "text": "ДЛИТЕЛЬНОСТЬ — 5 НЕДЕЛЬ",
+     "href": "",
+     "font": "8px/9.6px 800 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781175844756000011",
+     "type": "text",
+     "rect": [
+      11,
+      1028,
+      300,
+      43
+     ],
+     "text": "Укрепление тела, рельеф и сила. Для тех, кто хочет поработать не только над осанкой, но и над формами",
+     "href": "",
+     "font": "12px/14.4px 500 Involve",
+     "color": "rgb(96, 96, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1781175844754000003",
+     "type": "group",
+     "rect": [
+      10,
+      950,
+      300,
+      122
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844754000004",
+     "type": "group",
+     "rect": [
+      11,
+      951,
+      300,
+      67
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column-reverse gap:20px 8px align:flex-start justify:space-between pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844755000006",
+     "type": "group",
+     "rect": [
+      12,
+      952,
+      300,
+      24
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:8px 5px align:center justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844755000007",
+     "type": "group",
+     "rect": [
+      12,
+      953,
+      161,
+      22
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "radius": "40px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781175844755000009",
+     "type": "group",
+     "rect": [
+      178,
+      953,
+      134,
+      22
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "40px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:center pad:5px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     910,
+     320,
+     180
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2476377761",
+   "type": "396",
+   "rect": [
+    0,
+    1090,
+    320,
+    640
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1781180520406000033",
+     "type": "text",
+     "rect": [
+      258,
+      1432,
+      39,
+      10
+     ],
+     "text": "ДО — 20%",
+     "href": "",
+     "font": "8px/10px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520406000034",
+     "type": "text",
+     "rect": [
+      27,
+      1434,
+      199,
+      17
+     ],
+     "text": "Силовой с тренером",
+     "href": "",
+     "font": "14px/17px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000006",
+     "type": "text",
+     "rect": [
+      196,
+      1468,
+      90,
+      10
+     ],
+     "text": "РАЗБОР УПРАЖНЕНИЙ",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000003",
+     "type": "text",
+     "rect": [
+      27,
+      1491,
+      278,
+      22
+     ],
+     "text": "Тариф вклюючает в себя проверку техники выполнения упражнений с рекомендациями тренера",
+     "href": "",
+     "font": "9px/11px 500 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000004",
+     "type": "button",
+     "rect": [
+      27,
+      1465,
+      154,
+      16
+     ],
+     "text": "КОЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО",
+     "href": "",
+     "font": "8px/9.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(67.32deg, rgb(248, 162, 180) 0%, rgb(238, 134, 156) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000008",
+     "type": "shape",
+     "rect": [
+      27,
+      1528,
+      270,
+      2
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000028",
+     "type": "button",
+     "rect": [
+      36,
+      1551,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "8px/8px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000027",
+     "type": "text",
+     "rect": [
+      55,
+      1552,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000025",
+     "type": "text",
+     "rect": [
+      35,
+      1576,
+      34,
+      10
+     ],
+     "text": "1 ПОТОК",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000022",
+     "type": "button",
+     "rect": [
+      128,
+      1551,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "14px/14px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000021",
+     "type": "text",
+     "rect": [
+      147,
+      1552,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000019",
+     "type": "text",
+     "rect": [
+      127,
+      1576,
+      40,
+      10
+     ],
+     "text": "3 ПОТОКА",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000016",
+     "type": "button",
+     "rect": [
+      220,
+      1551,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000015",
+     "type": "text",
+     "rect": [
+      239,
+      1552,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520405000013",
+     "type": "text",
+     "rect": [
+      219,
+      1576,
+      45,
+      10
+     ],
+     "text": "6 ПОТОКОВ",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000009",
+     "type": "text",
+     "rect": [
+      28,
+      1612,
+      54,
+      11
+     ],
+     "text": "Стоимость",
+     "href": "",
+     "font": "10px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000008",
+     "type": "text",
+     "rect": [
+      28,
+      1635,
+      77,
+      10
+     ],
+     "text": "скидка до 18 июня",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000006",
+     "type": "text",
+     "rect": [
+      205,
+      1610,
+      91,
+      13
+     ],
+     "text": "5 599 р.",
+     "href": "",
+     "font": "12px/13px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000005",
+     "type": "text",
+     "rect": [
+      211,
+      1635,
+      85,
+      11
+     ],
+     "text": "7 699 р.",
+     "href": "",
+     "font": "10px/11px 600 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781180520404000002",
+     "type": "button",
+     "rect": [
+      27,
+      1662,
+      271,
+      35
+     ],
+     "text": "КУПИТЬ",
+     "href": "https://lk.popovichfit.ru/payments/tariff_Jo4XGo/checkout",
+     "font": "10px/12px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000043",
+     "type": "text",
+     "rect": [
+      254,
+      1134,
+      39,
+      10
+     ],
+     "text": "ДО — 20%",
+     "href": "",
+     "font": "8px/10px 800 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033076000020",
+     "type": "text",
+     "rect": [
+      26,
+      1136,
+      202,
+      17
+     ],
+     "text": "Силовой",
+     "href": "",
+     "font": "14px/17px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000001",
+     "type": "text",
+     "rect": [
+      26,
+      1195,
+      278,
+      22
+     ],
+     "text": "Тариф подразумевает самостоятельно прохождение программы курса без обратной связи от куратора",
+     "href": "",
+     "font": "9px/11px 500 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000002",
+     "type": "button",
+     "rect": [
+      26,
+      1167,
+      164,
+      16
+     ],
+     "text": "КОЛИЧЕСТВО МЕСТ НЕ ОГРАНИЧЕНО",
+     "href": "",
+     "font": "8px/9.6px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(90deg, rgb(186, 181, 173) 0%, rgb(195, 191, 186) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1784205309675000007",
+     "type": "shape",
+     "rect": [
+      26,
+      1228,
+      270,
+      2
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033078000027",
+     "type": "button",
+     "rect": [
+      35,
+      1253,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "8px/8px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033078000028",
+     "type": "text",
+     "rect": [
+      54,
+      1254,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033078000029",
+     "type": "text",
+     "rect": [
+      34,
+      1278,
+      34,
+      10
+     ],
+     "text": "1 ПОТОК",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033079000033",
+     "type": "button",
+     "rect": [
+      126,
+      1253,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "14px/14px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033079000034",
+     "type": "text",
+     "rect": [
+      145,
+      1254,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033079000035",
+     "type": "text",
+     "rect": [
+      125,
+      1278,
+      40,
+      10
+     ],
+     "text": "3 ПОТОКА",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000039",
+     "type": "button",
+     "rect": [
+      218,
+      1253,
+      14,
+      14
+     ],
+     "text": "",
+     "href": "",
+     "font": "10px/15.5px 600 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000040",
+     "type": "text",
+     "rect": [
+      237,
+      1254,
+      42,
+      12
+     ],
+     "text": "выбрать",
+     "href": "",
+     "font": "10px/12px 500 Involve",
+     "color": "rgb(157, 157, 160)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "lowercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000041",
+     "type": "text",
+     "rect": [
+      217,
+      1278,
+      45,
+      10
+     ],
+     "text": "6 ПОТОКОВ",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(79, 134, 196)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1781178033074000016",
+     "type": "text",
+     "rect": [
+      27,
+      1311,
+      54,
+      11
+     ],
+     "text": "Стоимость",
+     "href": "",
+     "font": "10px/11px 500 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033080000044",
+     "type": "text",
+     "rect": [
+      27,
+      1332,
+      77,
+      10
+     ],
+     "text": "скидка до 18 июня",
+     "href": "",
+     "font": "8px/10px 700 Involve",
+     "color": "rgb(248, 62, 96)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033075000018",
+     "type": "text",
+     "rect": [
+      204,
+      1315,
+      91,
+      13
+     ],
+     "text": "3 799 р.",
+     "href": "",
+     "font": "12px/13px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781178033076000019",
+     "type": "text",
+     "rect": [
+      220,
+      1338,
+      75,
+      0
+     ],
+     "text": "",
+     "href": "",
+     "font": "10px/11px 600 Involve",
+     "color": "rgb(156, 157, 159)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "right",
+     "transform": "none",
+     "visible": false
+    },
+    {
+     "id": "1781178033076000022",
+     "type": "button",
+     "rect": [
+      26,
+      1357,
+      271,
+      35
+     ],
+     "text": "КУПИТЬ",
+     "href": "https://lk.popovichfit.ru/payments/tariff_D9nEQP/checkout",
+     "font": "10px/12px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "G1781180520403000001",
+     "type": "group",
+     "rect": [
+      11,
+      1418,
+      300,
+      292
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "10px",
+     "display": "flex",
+     "flex": "row gap:14px 0px align:flex-end justify:flex-start pad:15px",
+     "visible": true
+    },
+    {
+     "id": "G1784207001813000002",
+     "type": "group",
+     "rect": [
+      27,
+      1434,
+      271,
+      17
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520406000032",
+     "type": "group",
+     "rect": [
+      252,
+      1429,
+      51,
+      15
+     ],
+     "text": "",
+     "bg": "rgb(248, 62, 96)",
+     "bgImage": "none",
+     "radius": "1px",
+     "display": "flex",
+     "flex": "row gap:normal 14px align:center justify:center pad:2px 8px",
+     "visible": true
+    },
+    {
+     "id": "G1784205429361000010",
+     "type": "group",
+     "rect": [
+      27,
+      1465,
+      278,
+      64
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1784205309675000005",
+     "type": "group",
+     "rect": [
+      187,
+      1465,
+      108,
+      16
+     ],
+     "text": "",
+     "bg": "rgb(228, 240, 255)",
+     "bgImage": "none",
+     "radius": "40px",
+     "display": "flex",
+     "flex": "row gap:normal 8px align:center justify:center pad:2px 8px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000010",
+     "type": "group",
+     "rect": [
+      27,
+      1543,
+      271,
+      51
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000023",
+     "type": "group",
+     "rect": [
+      28,
+      1543,
+      87,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:flex-start justify:flex-start pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000024",
+     "type": "group",
+     "rect": [
+      34,
+      1549,
+      75,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000026",
+     "type": "group",
+     "rect": [
+      35,
+      1550,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000017",
+     "type": "group",
+     "rect": [
+      120,
+      1543,
+      87,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:flex-start justify:flex-start pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000018",
+     "type": "group",
+     "rect": [
+      126,
+      1549,
+      75,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000020",
+     "type": "group",
+     "rect": [
+      127,
+      1550,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000011",
+     "type": "group",
+     "rect": [
+      212,
+      1543,
+      87,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:flex-start justify:flex-start pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000012",
+     "type": "group",
+     "rect": [
+      218,
+      1549,
+      75,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520405000014",
+     "type": "group",
+     "rect": [
+      219,
+      1550,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000003",
+     "type": "group",
+     "rect": [
+      27,
+      1608,
+      271,
+      40
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 50px align:center justify:space-between pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000007",
+     "type": "group",
+     "rect": [
+      28,
+      1612,
+      77,
+      33
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:12px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781180520404000004",
+     "type": "group",
+     "rect": [
+      204,
+      1609,
+      93,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:12px normal align:flex-end justify:flex-end pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781179197502000049",
+     "type": "group",
+     "rect": [
+      11,
+      1121,
+      300,
+      284
+     ],
+     "text": "",
+     "bg": "rgb(248, 248, 248)",
+     "bgImage": "none",
+     "radius": "8px",
+     "display": "flex",
+     "flex": "row gap:14px 0px align:flex-end justify:flex-start pad:15px",
+     "visible": true
+    },
+    {
+     "id": "G1784206963089000001",
+     "type": "group",
+     "rect": [
+      26,
+      1136,
+      268,
+      17
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033080000042",
+     "type": "group",
+     "rect": [
+      248,
+      1131,
+      51,
+      15
+     ],
+     "text": "",
+     "bg": "rgb(248, 62, 96)",
+     "bgImage": "none",
+     "radius": "1px",
+     "display": "flex",
+     "flex": "row gap:normal 14px align:center justify:center pad:2px 8px",
+     "visible": true
+    },
+    {
+     "id": "G1784205378736000009",
+     "type": "group",
+     "rect": [
+      26,
+      1167,
+      278,
+      62
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "block",
+     "flex": "row gap:normal align:normal justify:normal pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033077000023",
+     "type": "group",
+     "rect": [
+      26,
+      1243,
+      271,
+      53
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033077000024",
+     "type": "group",
+     "rect": [
+      27,
+      1244,
+      86,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033078000025",
+     "type": "group",
+     "rect": [
+      33,
+      1251,
+      74,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033078000026",
+     "type": "group",
+     "rect": [
+      34,
+      1252,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033078000030",
+     "type": "group",
+     "rect": [
+      118,
+      1244,
+      86,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000031",
+     "type": "group",
+     "rect": [
+      124,
+      1251,
+      74,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000032",
+     "type": "group",
+     "rect": [
+      125,
+      1252,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000036",
+     "type": "group",
+     "rect": [
+      210,
+      1244,
+      86,
+      51
+     ],
+     "text": "",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "none",
+     "radius": "6px",
+     "display": "flex",
+     "flex": "row gap:normal 0px align:center justify:center pad:5px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033079000037",
+     "type": "group",
+     "rect": [
+      216,
+      1251,
+      74,
+      38
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:center pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033080000038",
+     "type": "group",
+     "rect": [
+      217,
+      1252,
+      63,
+      16
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033072000015",
+     "type": "group",
+     "rect": [
+      26,
+      1310,
+      271,
+      33
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 5px align:center justify:space-between pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781179325496000050",
+     "type": "group",
+     "rect": [
+      27,
+      1311,
+      77,
+      31
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1781178033075000017",
+     "type": "group",
+     "rect": [
+      203,
+      1314,
+      93,
+      25
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:flex-end justify:flex-end pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1090,
+     320,
+     640
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2372735141",
+   "type": "131",
+   "rect": [
+    0,
+    1730,
+    320,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

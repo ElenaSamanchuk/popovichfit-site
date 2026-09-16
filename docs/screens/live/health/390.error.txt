@@ -1,0 +1,3 @@
+Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/health
+Call log:
+  - navigating to "https://popovichfit.ru/health", waiting until "load"

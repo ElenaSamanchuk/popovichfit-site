@@ -1,0 +1,193 @@
+# /new-course @640 — высота 2425
+
+## rec2372280691 T396 rect=0,0,640,205  
+   artboard: 0,0,640,205 bg=rgb(255, 255, 255) img=none pos=relative
+- [group] #G1781175844754000003 @10,80,620,98 img:none size:undefined pos:undefined flex column gap:8px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781175844754000004 @11,81,618,60 img:none size:undefined pos:undefined flex row gap:normal 8px align:flex-start justify:space-between pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781175844754000005 @12,82,401,36 «КУРС КОРРЕКЦИЯ» | 30px/36px 600 Involve rgb(48, 48, 48) uppercase
+- [group] #G1781175844755000006 @421,82,207,58 img:none size:undefined pos:undefined flex column gap:8px align:flex-end justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781175844755000007 @422,83,205,24 img:linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:undefined pos:undefined r:40px flex row gap:normal 14px align:center justify:center pad:5px 13px bg:rgba(0, 0, 0, 0) r:40px
+- [text] #1781175844755000008 @436,89,177,12 «СТАРТ НОВОГО ПОТОКА — 22 ИЮНЯ» | 10px/12px 800 Involve rgb(255, 255, 255) uppercase
+- [group] #G1781175844755000009 @460,115,167,24 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:40px flex row gap:normal 14px align:center justify:center pad:5px 13px bg:rgb(248, 248, 248) r:40px
+- [text] #1781175844755000010 @472,121,143,12 «ДЛИТЕЛЬНОСТЬ — 5 НЕДЕЛЬ» | 10px/12px 800 Involve rgb(48, 48, 48) uppercase
+- [text] #1781175844756000011 @11,149,429,28 «Освобождение от зажимов, работа с осанкой, дыханием, тазовым дном. Идеально для восстановления и заботы о себе» | 12px/14px 500 Involve rgb(96, 96, 96)
+
+## rec2372446531 T396 rect=0,205,640,205  
+   artboard: 0,205,640,205 bg=rgb(255, 255, 255) img=none pos=relative
+- [image] #1781176695653000021 @416,225,67,93
+- [group] #G1781176695646000010 @20,229,1160,104 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:10px flex row gap:normal 10px align:center justify:space-between pad:12px bg:rgb(248, 248, 248) r:10px
+- [shape] #1781176695652000019 @486,233,107,69 img:2_3_2.png size:cover pos:50% 50%
+- [group] #G1781176695648000011 @33,242,681,78 img:none size:undefined pos:undefined flex row gap:normal 20px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781176695651000016 @175,243,591,76 img:none size:undefined pos:undefined flex column gap:8px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781176695648000012 @34,244,121,75 img:none size:undefined pos:undefined flex row gap:normal 4px align:center justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781176695648000013 @35,244,119,75 img:linear-gradient(129.42deg, rgb(248, 162, 180) 0%, rgb(238, 134, 156) 100%) size:undefined pos:undefined r:8px flex column gap:8px normal align:center justify:center pad:5px 13px bg:rgba(0, 0, 0, 0) r:8px
+- [text] #1781176695651000017 @176,244,264,38 «Купи тариф с куратором — участвуй в розыгрыше» | 16px/19px 700 Involve rgb(48, 48, 48)
+- [image] #1781176695652000020 @584,246,44,87
+- [image] #1781176745312000022 @89,265,12,12
+- [text] #1781176695650000015 @40,285,109,12 «РОЗЫГРЫШ!» | 10px/12px 800 Involve rgb(255, 255, 255) uppercase align:center
+- [text] #1781176695651000018 @176,290,332,28 «Выиграй вещи бренда Nasha, косметику Dr. Kondrashova, гаджеты от Натальи» | 12px/14px 700 Involve rgb(96, 96, 96)
+
+## rec2476376111 T396 rect=0,410,640,905  
+   artboard: 0,410,640,905 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1781179197502000049 @11,434,620,414 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:10px flex row gap:20px 0px align:flex-end justify:flex-start pad:20px bg:rgb(248, 248, 248) r:10px
+- [group] #G1781178033080000042 @552,434,75,19 bg:rgb(248, 62, 96) img:none size:undefined pos:undefined r:1px flex row gap:normal 14px align:center justify:center pad:2px 8px bg:rgb(248, 62, 96) r:1px
+- [text] #1781178033080000043 @561,437,57,14 «ДО — 23%» | 12px/14px 800 Involve rgb(255, 255, 255) uppercase
+- [text] #1781178033076000020 @31,454,481,32 «Коррекция» | 26px/31px 600 Involve rgb(48, 48, 48)
+- [group] #G1784207216423000001 @31,454,576,32 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781178033076000021 @31,498,580,19 «самостоятельное прохождение» | 16px/19px 600 Involve rgb(156, 157, 159)
+- [button] #1784206257170000003 @31,506,206,17 «КОЛИЧЕСТВО МЕСТ НЕ ОГРАНИЧЕНО» | 10px/12px 600 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(90deg, rgb(186, 181, 173) 0%, rgb(195, 191, 186) 100%) size:cover pos:0% 0% r:100px
+- [group] #G1784206257169000001 @31,506,580,77 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1784206257170000002 @31,534,537,28 «Тариф подразумевает самостоятельно прохождение программы курса без обратной связи от куратора» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1784206257170000004 @31,582,580,2
+- [group] #G1781178033077000023 @31,603,580,84 img:none size:undefined pos:undefined flex row gap:normal 5px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033077000024 @32,603,189,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781178033078000030 @226,603,189,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781178033079000036 @421,603,189,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781178033078000025 @45,616,163,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033079000031 @239,616,163,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033079000037 @434,616,163,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033078000026 @46,617,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033079000032 @240,617,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033080000038 @435,617,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1781178033078000027 @47,618,16,16 | 8px/8px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781178033079000033 @241,618,16,16 | 14px/14px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781178033080000039 @436,618,16,16 | 10px/15.5px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [text] #1781178033078000028 @75,619,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781178033079000034 @269,619,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781178033080000040 @464,619,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781178033078000029 @46,663,51,14 «1 ПОТОК» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781178033079000035 @240,663,60,14 «3 ПОТОКА» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781178033080000041 @435,663,68,14 «6 ПОТОКОВ» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [group] #G1781178033072000015 @31,707,580,46 img:none size:undefined pos:undefined flex row gap:normal 5px align:center justify:space-between pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781178033074000016 @32,708,87,18 «Стоимость» | 16px/18px 500 Involve rgb(48, 48, 48)
+- [group] #G1781179325496000050 @32,708,115,44 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033075000017 @517,710,93,41 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-end justify:flex-end pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781178033075000018 @518,711,91,27 «3 799 р.» | 24px/26px 600 Involve rgb(48, 48, 48) align:right
+- [text] #1781178033080000044 @32,738,115,14 «скидка до 18 июня» | 12px/14px 700 Involve rgb(248, 62, 96)
+- [button] #1781178033076000022 @30,785,580,44 «КУПИТЬ» → https://lk.popovichfit.ru/payments/tariff_D9nEQP/checkout | 12px/14.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:cover pos:0% 0% r:8px
+- [group] #G1781180520403000001 @11,868,620,413 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:10px flex row gap:20px 0px align:flex-end justify:flex-start pad:20px bg:rgb(248, 248, 248) r:10px
+- [group] #G1781180520406000032 @549,869,75,19 bg:rgb(248, 62, 96) img:none size:undefined pos:undefined r:1px flex row gap:normal 14px align:center justify:center pad:2px 8px bg:rgb(248, 62, 96) r:1px
+- [text] #1781180520406000033 @558,872,57,14 «ДО — 23%» | 12px/14px 800 Involve rgb(255, 255, 255) uppercase
+- [text] #1781180520406000034 @32,889,486,31 «Коррекция с тренером» | 26px/31px 600 Involve rgb(48, 48, 48)
+- [group] #G1784207244959000002 @32,889,572,31 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1784206216248000005 @32,940,188,17 «КОЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО» | 10px/12px 600 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(67.32deg, rgb(248, 162, 180) 0%, rgb(238, 134, 156) 100%) size:cover pos:0% 0% r:100px
+- [group] #G1784206216248000001 @32,940,580,77 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1784206216248000002 @228,940,131,18 bg:rgb(228, 240, 255) img:none size:undefined pos:undefined r:40px flex row gap:normal 8px align:center justify:center pad:2px 8px bg:rgb(228, 240, 255) r:40px
+- [text] #1784206216248000003 @237,943,113,12 «РАЗБОР УПРАЖНЕНИЙ» | 10px/12px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1784206216248000004 @32,968,566,28 «Тариф вклюючает в себя проверку техники выполнения упражнений с рекомендациями тренера» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1784206216248000006 @32,1016,580,2
+- [group] #G1781180520404000010 @32,1037,580,84 img:none size:undefined pos:undefined flex row gap:normal 8px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000023 @33,1037,187,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781180520405000017 @228,1037,187,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781180520404000011 @424,1037,187,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781180520405000024 @46,1050,161,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000018 @241,1050,161,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000012 @437,1050,161,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000026 @47,1051,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000020 @242,1051,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000014 @438,1051,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1781180520405000028 @48,1052,16,16 | 8px/8px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781180520405000022 @243,1052,16,16 | 14px/14px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781180520405000016 @439,1052,16,16 | 10px/15.5px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [text] #1781180520405000027 @76,1053,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781180520405000021 @271,1053,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781180520405000015 @467,1053,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781180520405000025 @47,1097,51,14 «1 ПОТОК» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781180520405000019 @242,1097,60,14 «3 ПОТОКА» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781180520405000013 @438,1097,68,14 «6 ПОТОКОВ» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [group] #G1781180520404000003 @32,1141,580,58 img:none size:undefined pos:undefined flex row gap:normal 136px align:center justify:space-between pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520404000004 @518,1142,93,56 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-end justify:flex-end pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781180520404000006 @519,1143,91,27 «5 599 р.» | 24px/26px 600 Involve rgb(48, 48, 48) align:right
+- [text] #1781180520404000009 @33,1148,87,18 «Стоимость» | 16px/18px 500 Involve rgb(48, 48, 48)
+- [group] #G1781180520404000007 @33,1148,115,44 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781180520404000008 @33,1178,115,14 «скидка до 18 июня» | 12px/14px 700 Involve rgb(248, 62, 96)
+- [text] #1781180520404000005 @558,1182,52,15 «7 699 р.» | 14px/15px 600 Involve rgb(156, 157, 159) align:right
+- [button] #1781180520404000002 @32,1219,580,44 «КУПИТЬ» → https://lk.popovichfit.ru/payments/tariff_Jo4XGo/checkout | 12px/14.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:cover pos:0% 0% r:8px
+
+## rec2372929161 T396 rect=0,1315,640,205  
+   artboard: 0,1315,640,205 bg=rgb(255, 255, 255) img=none pos=relative
+- [group] #G1781175844754000003 @10,1395,620,98 img:none size:undefined pos:undefined flex column gap:8px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781175844754000004 @11,1396,618,60 img:none size:undefined pos:undefined flex row gap:normal 8px align:flex-start justify:space-between pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781175844754000005 @12,1397,401,36 «КУРС СИЛОВОЙ» | 30px/36px 600 Involve rgb(48, 48, 48) uppercase
+- [group] #G1781175844755000006 @421,1397,207,58 img:none size:undefined pos:undefined flex column gap:8px align:flex-end justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781175844755000007 @422,1398,205,24 img:linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:undefined pos:undefined r:40px flex row gap:normal 14px align:center justify:center pad:5px 13px bg:rgba(0, 0, 0, 0) r:40px
+- [text] #1781175844755000008 @436,1404,177,12 «СТАРТ НОВОГО ПОТОКА — 22 ИЮНЯ» | 10px/12px 800 Involve rgb(255, 255, 255) uppercase
+- [group] #G1781175844755000009 @460,1430,167,24 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:40px flex row gap:normal 14px align:center justify:center pad:5px 13px bg:rgb(248, 248, 248) r:40px
+- [text] #1781175844755000010 @472,1436,143,12 «ДЛИТЕЛЬНОСТЬ — 5 НЕДЕЛЬ» | 10px/12px 800 Involve rgb(48, 48, 48) uppercase
+- [text] #1781175844756000011 @11,1464,429,28 «Укрепление тела, рельеф и сила. Для тех, кто хочет поработать не только над осанкой, но и над формами» | 12px/14px 500 Involve rgb(96, 96, 96)
+
+## rec2476377761 T396 rect=0,1520,640,905  
+   artboard: 0,1520,640,905 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [group] #G1781179197502000049 @11,1544,620,417 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:10px flex row gap:20px 0px align:flex-end justify:flex-start pad:20px bg:rgb(248, 248, 248) r:10px
+- [group] #G1781178033080000042 @554,1544,75,19 bg:rgb(248, 62, 96) img:none size:undefined pos:undefined r:1px flex row gap:normal 14px align:center justify:center pad:2px 8px bg:rgb(248, 62, 96) r:1px
+- [text] #1781178033080000043 @562,1547,58,14 «ДО — 20%» | 12px/14px 800 Involve rgb(255, 255, 255) uppercase
+- [text] #1781178033076000020 @31,1564,324,32 «Силовой» | 26px/31px 600 Involve rgb(48, 48, 48)
+- [group] #G1784206963089000001 @31,1564,578,32 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1784205309675000002 @31,1616,206,17 «КОЛИЧЕСТВО МЕСТ НЕ ОГРАНИЧЕНО» | 10px/12px 600 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(90deg, rgb(186, 181, 173) 0%, rgb(195, 191, 186) 100%) size:cover pos:0% 0% r:100px
+- [group] #G1784205378736000009 @31,1616,580,77 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1784205309675000001 @31,1644,537,28 «Тариф подразумевает самостоятельно прохождение программы курса без обратной связи от куратора» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1784205309675000007 @31,1692,580,2
+- [group] #G1781178033077000023 @31,1713,580,86 img:none size:undefined pos:undefined flex row gap:normal 5px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033077000024 @32,1714,189,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781178033078000030 @226,1714,189,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781178033079000036 @421,1714,189,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781178033078000025 @45,1727,163,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033079000031 @239,1727,163,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033079000037 @434,1727,163,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033078000026 @46,1728,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033079000032 @240,1728,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033080000038 @435,1728,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1781178033078000027 @47,1729,16,16 | 8px/8px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781178033079000033 @241,1729,16,16 | 14px/14px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781178033080000039 @436,1729,16,16 | 10px/15.5px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [text] #1781178033078000028 @75,1730,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781178033079000034 @269,1730,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781178033080000040 @464,1730,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781178033078000029 @46,1774,51,14 «1 ПОТОК» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781178033079000035 @240,1774,60,14 «3 ПОТОКА» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781178033080000041 @435,1774,68,14 «6 ПОТОКОВ» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [group] #G1781178033072000015 @31,1819,580,46 img:none size:undefined pos:undefined flex row gap:normal 5px align:center justify:space-between pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781178033074000016 @32,1820,87,18 «Стоимость» | 16px/18px 500 Involve rgb(48, 48, 48)
+- [group] #G1781179325496000050 @32,1820,115,44 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781178033075000017 @517,1822,93,41 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-end justify:flex-end pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781178033075000018 @518,1823,91,27 «3 799 р.» | 24px/26px 600 Involve rgb(48, 48, 48) align:right
+- [text] #1781178033080000044 @32,1850,115,14 «скидка до 18 июня» | 12px/14px 700 Involve rgb(248, 62, 96)
+- [button] #1781178033076000022 @30,1896,580,44 «КУПИТЬ» → https://lk.popovichfit.ru/payments/tariff_D9nEQP/checkout | 12px/14.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:cover pos:0% 0% r:8px
+- [group] #G1781180520403000001 @11,1978,620,416 bg:rgb(248, 248, 248) img:none size:undefined pos:undefined r:10px flex row gap:20px 0px align:flex-end justify:flex-start pad:20px bg:rgb(248, 248, 248) r:10px
+- [group] #G1781180520406000032 @553,1979,75,19 bg:rgb(248, 62, 96) img:none size:undefined pos:undefined r:1px flex row gap:normal 14px align:center justify:center pad:2px 8px bg:rgb(248, 62, 96) r:1px
+- [text] #1781180520406000033 @561,1982,58,14 «ДО — 20%» | 12px/14px 800 Involve rgb(255, 255, 255) uppercase
+- [text] #1781180520406000034 @32,1999,483,31 «Силовой с тренером» | 26px/31px 600 Involve rgb(48, 48, 48)
+- [group] #G1784207001813000002 @32,1999,576,31 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1784205309675000004 @32,2050,188,17 «КОЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО» | 10px/12px 600 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(67.32deg, rgb(248, 162, 180) 0%, rgb(238, 134, 156) 100%) size:cover pos:0% 0% r:100px
+- [group] #G1784205429361000010 @32,2050,580,77 img:none size:undefined pos:undefined block row gap:normal align:normal justify:normal pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1784205309675000005 @228,2050,131,18 bg:rgb(228, 240, 255) img:none size:undefined pos:undefined r:40px flex row gap:normal 8px align:center justify:center pad:2px 8px bg:rgb(228, 240, 255) r:40px
+- [text] #1784205309675000006 @237,2053,113,12 «РАЗБОР УПРАЖНЕНИЙ» | 10px/12px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1784205309675000003 @32,2078,566,28 «Тариф вклюючает в себя проверку техники выполнения упражнений с рекомендациями тренера» | 12px/14px 500 Involve rgb(156, 157, 159)
+- [shape] #1784205309675000008 @32,2126,580,2
+- [group] #G1781180520404000010 @32,2147,580,84 img:none size:undefined pos:undefined flex row gap:normal 8px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000023 @33,2147,187,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781180520405000017 @228,2147,187,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781180520404000011 @424,2147,187,84 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:6px flex row gap:normal 20px align:flex-start justify:flex-start pad:12px bg:rgb(255, 255, 255) r:6px
+- [group] #G1781180520405000024 @46,2160,161,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000018 @241,2160,161,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000012 @437,2160,161,62 img:none size:undefined pos:undefined flex column gap:28px normal align:flex-start justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000026 @47,2161,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000020 @242,2161,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520405000014 @438,2161,80,18 img:none size:undefined pos:undefined flex row gap:normal 12px align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1781180520405000028 @48,2162,16,16 | 8px/8px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781180520405000022 @243,2162,16,16 | 14px/14px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [button] #1781180520405000016 @439,2162,16,16 | 10px/15.5px 600 Involve rgb(79, 134, 196) align:center bg:rgb(255, 255, 255) r:30px
+- [text] #1781180520405000027 @76,2163,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781180520405000021 @271,2163,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781180520405000015 @467,2163,50,14 «выбрать» | 12px/14px 500 Involve rgb(157, 157, 160) lowercase
+- [text] #1781180520405000025 @47,2207,51,14 «1 ПОТОК» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781180520405000019 @242,2207,60,14 «3 ПОТОКА» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [text] #1781180520405000013 @438,2207,68,14 «6 ПОТОКОВ» | 12px/14px 700 Involve rgb(79, 134, 196) uppercase
+- [group] #G1781180520404000003 @32,2251,580,58 img:none size:undefined pos:undefined flex row gap:normal 136px align:center justify:space-between pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1781180520404000004 @518,2252,93,56 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-end justify:flex-end pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781180520404000006 @519,2253,91,27 «5 599 р.» | 24px/26px 600 Involve rgb(48, 48, 48) align:right
+- [text] #1781180520404000009 @33,2258,87,18 «Стоимость» | 16px/18px 500 Involve rgb(48, 48, 48)
+- [group] #G1781180520404000007 @33,2258,115,44 img:none size:undefined pos:undefined flex column gap:12px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781180520404000008 @33,2288,115,14 «скидка до 18 июня» | 12px/14px 700 Involve rgb(248, 62, 96)
+- [text] #1781180520404000005 @558,2292,52,15 «7 699 р.» | 14px/15px 600 Involve rgb(156, 157, 159) align:right
+- [button] #1781180520404000002 @32,2329,580,44 «КУПИТЬ» → https://lk.popovichfit.ru/payments/tariff_Jo4XGo/checkout | 12px/14.4px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(95.76deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:cover pos:0% 0% r:8px

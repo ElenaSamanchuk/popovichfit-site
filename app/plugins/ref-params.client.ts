@@ -55,8 +55,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     params = collectParams(location.search)
     decorateLinks(params)
   }
-  nuxtApp.hook('app:mounted', apply)
-  router.afterEach(() => nextTick(apply))
+  // только после гидрации: правка href в SSR-разметке до неё даёт hydration mismatch
+  nuxtApp.hook('app:mounted', () => nextTick(apply))
+  router.afterEach(() => { if (!nuxtApp.isHydrating) nextTick(apply) })
   // динамически добавленные ссылки (попапы, карточки тарифов) — наблюдаем за DOM
   nuxtApp.hook('app:mounted', () => {
     const mo = new MutationObserver((muts) => {

@@ -1,0 +1,183 @@
+# /results @1200 — высота 4535
+
+## rec1120433846 T396 rect=0,0,1200,0  
+   artboard: 0,0,1200,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064216340 @0,0,1200,10 bg:rgb(255, 255, 255)
+- [shape] #1750064265438 @0,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @1074,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @352,10,499,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @1082,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @13,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @34,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @372,19,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @428,19,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @509,19,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @570,19,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @641,19,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [button] #1786447424492000001 @742,19,89,16 «ТЕХ.ПОДДЕРЖКА» → tg://resolve?domain=popovichfitCare_Bot | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,0,1200,0  
+   artboard: 0,700,1200,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:auto pos:0% 0% r:8px
+
+## rec778065990 T396 rect=0,0,1200,215  
+   artboard: 0,75,1200,110 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [text] #1720534073989 @20,85,556,88 «Результаты участниц проекта POPOVICHFIT:» | 40px/44px 700 Manrope rgb(32, 32, 32)
+
+## rec748014229 T396 rect=0,215,1200,386  
+   artboard: 0,215,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,216,279,279 → #popup:ph1 img:1.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,216,278,279 → #popup:ph2 img:Frame_1321318625.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,216,279,279 → #popup:ph3 img:Frame_1321318629.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,216,279,279 → #popup:ph4 img:Frame_1321318632.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,228,44,44 → #popup:ph1 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227418 @536,228,44,44 → #popup:ph2 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+- [shape] #1715676227420 @830,228,44,44 → #popup:ph3 img:a415f83d-2157-424f-a.png.webp size:cover pos:50% 50%
+- [shape] #1715676227423 @1124,228,44,44 → #popup:ph4 img:1292096e-8c4a-448e-8.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,515,217,45 «Читать историю участницы» → #popup:info1 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227408 @345,515,217,45 «Читать историю участницы» → #popup:info2 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227409 @638,515,217,45 «Читать историю участницы» → #popup:info3 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227411 @932,515,217,45 «Читать историю участницы» → #popup:info4 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec749618984 T396 rect=0,601,1200,386  
+   artboard: 0,601,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,602,279,279 → #popup:ph5 img:Frame_1321318635.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,602,278,279 → #popup:ph6 img:Frame_1321318649.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,602,279,279 → #popup:ph3 img:Frame_1321318720.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,602,279,279 → #popup:ph8 img:Frame_1321318643.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,614,44,44 → #popup:ph5 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227418 @536,614,44,44 → #popup:ph6 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+- [shape] #1715676227423 @1124,614,44,44 → #popup:ph8 img:1292096e-8c4a-448e-8.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,901,217,45 «Читать историю участницы» → #popup:info5 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227408 @345,901,217,45 «Читать историю участницы» → #popup:info6 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227411 @932,901,217,45 «Читать историю участницы» → #popup:info8 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec749631858 T396 rect=0,987,1200,330  
+   artboard: 0,987,1200,330 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,988,279,279 img:Frame_1321318646.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,988,278,279 img:Frame_1321318648.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,988,279,279 img:Frame_1321318641.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,988,279,279 img:Frame_1321318647.png.webp size:cover pos:50% 50% r:30px
+
+## rec749636996 T396 rect=0,1317,1200,386  
+   artboard: 0,1317,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,1318,279,279 → #popup:ph9 img:Frame_1321318652.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,1318,278,279 → #popup:ph10 img:Frame_1321318655.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,1318,279,279 → #popup:ph11 img:Frame_1321318659.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,1318,279,279 img:Frame_1321318658.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,1330,44,44 → #popup:ph9 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227418 @536,1330,44,44 → #popup:ph10 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+- [shape] #1715676227420 @830,1330,44,44 → #popup:ph11 img:a415f83d-2157-424f-a.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,1617,217,45 «Читать историю участницы» → #popup:info9 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227408 @345,1617,217,45 «Читать историю участницы» → #popup:info10 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec750164865 T396 rect=0,1703,1200,386  
+   artboard: 0,1703,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,1704,279,279 → #popup:ph13 img:Frame_1321318661.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,1704,278,279 img:Frame_1321318695.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,1704,279,279 → #popup:ph15 img:Frame_1321318667.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,1704,279,279 → #popup:ph16 img:Frame_1321318670.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,1716,44,44 → #popup:ph13 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227420 @830,1716,44,44 → #popup:ph15 img:a415f83d-2157-424f-a.png.webp size:cover pos:50% 50%
+- [shape] #1715676227423 @1124,1716,44,44 → #popup:ph16 img:1292096e-8c4a-448e-8.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,2003,217,45 «Читать историю участницы» → #popup:info13 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227409 @638,2003,217,45 «Читать историю участницы» → #popup:info15 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227411 @932,2003,217,45 «Читать историю участницы» → #popup:info16 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec750184874 T396 rect=0,2089,1200,330  
+   artboard: 0,2089,1200,330 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,2090,279,279 img:Frame_1321318688.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,2090,278,279 img:Frame_1321318689.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,2090,279,279 img:Frame_1321318716.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,2090,279,279 img:Frame_1321318691.png.webp size:cover pos:50% 50% r:30px
+
+## rec750173335 T396 rect=0,2419,1200,386  
+   artboard: 0,2419,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,2420,279,279 → #popup:ph17 img:Frame_1321318672.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,2420,278,279 → #popup:ph18 img:Frame_1321318678.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,2420,279,279 → #popup:ph19 img:Frame_1321318684.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,2420,279,279 → #popup:ph20 img:Frame_1321318685.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,2432,44,44 → #popup:ph17 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227418 @536,2432,44,44 → #popup:ph18 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+- [shape] #1715676227420 @830,2432,44,44 → #popup:ph19 img:a415f83d-2157-424f-a.png.webp size:cover pos:50% 50%
+- [shape] #1715676227423 @1124,2432,44,44 → #popup:ph20 img:1292096e-8c4a-448e-8.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,2719,217,45 «Читать историю участницы» → #popup:info17 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227408 @345,2719,217,45 «Читать историю участницы» → #popup:info18 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227409 @638,2719,217,45 «Читать историю участницы» → #popup:info19 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227411 @932,2719,217,45 «Читать историю участницы» → #popup:info20 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec750807419 T396 rect=0,2805,1200,386  
+   artboard: 0,2805,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,2806,279,279 → #popup:ph21 img:Frame_1321318696.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,2806,278,279 → #popup:ph22 img:Frame_1321318701.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,2806,279,279 → #popup:ph23 img:Frame_1321318702.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,2806,279,279 → #popup:ph24 img:Frame_1321318703.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,2818,44,44 → #popup:ph21 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227418 @536,2818,44,44 → #popup:ph22 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+- [shape] #1715676227420 @830,2818,44,44 → #popup:ph23 img:a415f83d-2157-424f-a.png.webp size:cover pos:50% 50%
+- [shape] #1715676227423 @1124,2818,44,44 → #popup:ph24 img:1292096e-8c4a-448e-8.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,3105,217,45 «Читать историю участницы» → #popup:info21 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227408 @345,3105,217,45 «Читать историю участницы» → #popup:info22 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227409 @638,3105,217,45 «Читать историю участницы» → #popup:info23 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227411 @932,3105,217,45 «Читать историю участницы» → #popup:info24 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec750833534 T396 rect=0,3191,1200,386  
+   artboard: 0,3191,1200,386 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,3192,279,279 → #popup:ph25 img:Frame_1321318706.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,3192,278,279 → #popup:ph26 img:Frame_1321318709.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,3192,279,279 → #popup:ph27 img:Frame_1321318712.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227393 @901,3192,279,279 → #popup:ph28 img:Frame_1321318713.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227414 @243,3204,44,44 → #popup:ph25 img:8d2507fa-4d5b-4f26-b.png.webp size:cover pos:50% 50%
+- [shape] #1715676227418 @536,3204,44,44 → #popup:ph26 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+- [shape] #1715676227420 @830,3204,44,44 → #popup:ph27 img:a415f83d-2157-424f-a.png.webp size:cover pos:50% 50%
+- [shape] #1715676227423 @1124,3204,44,44 → #popup:ph28 img:1292096e-8c4a-448e-8.png.webp size:cover pos:50% 50%
+- [button] #1715676227406 @57,3491,217,45 «Читать историю участницы» → #popup:info25 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227408 @345,3491,217,45 «Читать историю участницы» → #popup:info26 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227409 @638,3491,217,45 «Читать историю участницы» → #popup:info27 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+- [button] #1715676227411 @932,3491,217,45 «Читать историю участницы» → #popup:info28 | 12px/normal 700 Manrope rgb(79, 134, 196) align:center r:8px
+
+## rec750848846 T396 rect=0,3577,1200,375  
+   artboard: 0,3577,1200,330 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1715676227397 @20,3578,279,279 img:Frame_1321318717.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227403 @314,3578,278,279 img:Frame_1321318718.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227400 @607,3578,279,279 img:Frame_1321318719.png.webp size:cover pos:50% 50% r:30px
+- [shape] #1715676227418 @536,3590,44,44 → #popup:ph6 img:3e9a117e-314f-431c-8.png.webp size:cover pos:50% 50%
+
+## rec778067830 T396 rect=0,720,1200,180  
+   artboard: 0,720,1200,60 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [button] #1719923677879 @1067,724,113,50 «Назад» → javascript:history.back() | 12px/18.6px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(129.24deg, rgb(98, 151, 210) 0%, rgb(62, 120, 184) 100%) size:auto pos:0% 0% r:8px
+
+## rec1120448561 T396 rect=0,3952,1200,583  
+   artboard: 0,317,1200,583 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @966,363,6,6
+- [button] #1749597221603 @20,368,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @20,368,631,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @103,368,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @176,368,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @276,368,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @364,368,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @436,368,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1786447328157000001 @549,368,102,19 «Тех.поддержка» → tg://resolve?domain=popovichfitCare_Bot | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @871,368,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @871,368,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @906,368,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @941,368,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @976,368,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @1030,368,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:auto pos:0% 0% r:8px
+- [text] #1750073992932 @874,418,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @1030,418,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,526,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @349,526,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @658,526,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @940,526,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,576,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @349,576,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @658,576,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @23,630,1154,139
+- [shape] #1749597712349 @20,812,1160,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @545,843,110,11 → https://shumann.ru/ op:0.6
