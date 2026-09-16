@@ -1,0 +1,3 @@
+Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/inspiration
+Call log:
+  - navigating to "https://popovichfit.ru/inspiration", waiting until "load"

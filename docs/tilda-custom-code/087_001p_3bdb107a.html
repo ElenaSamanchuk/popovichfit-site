@@ -1,0 +1,81 @@
+<!-- pages (1): page60178073.html -->
+<!-- rec ids: rec841411836 -->
+<!-- NOLIM --> <!-- NLM615 --> <!-- settings{"discount_auto":"0","inputName":"phone","BTN":{"btn_title":"Бонусов доступно: ","btn_placeholder":"Введите значение","btn_desc":"Можно списать не больше доступного количества бонусов и не меньше ","btn_text":"Списать","btn_border_radius":"0","bonusInputFontColor":"#000000","bonusInputBorderWidth":"1","bonusInputBorderColor":"#000000","bonusBtnFontColor":"#ffffff","bonusBtnBgColor":"#000000"}}settingsend--> <!-- ts1732823784018ts --> <script src="js/tilda-promocode-1.0.min.js"></script> <script>
+function nolim_AT_promocode({ name = 'promo', type = 'sum', available = '' }) {
+    // Функция применения промокода
+    window.nolimGetPromo = function () {
+        const inputField = document.querySelector('[name="nolim_Promoco"]');
+        if (!inputField || inputField.value.trim() === '') {
+            alert('Введите количество бонусов.');
+            return;
+        }
+
+        let inputBonus = parseFloat(inputField.value);
+        if (isNaN(inputBonus) || inputBonus <= 0) {
+            alert('Введите корректное количество бонусов.');
+            return;
+        }
+
+        if (inputBonus > available) {
+            alert('Пожалуйста, введите значение не больше доступного количества бонусов.');
+            return;
+        }
+
+        const orderAmount = window.tcart && window.tcart.prodamount ? window.tcart.prodamount : 0;
+        const maxUsableBonus = orderAmount > 1 ? Math.floor(orderAmount - 1) : 0;
+
+        if (inputBonus > maxUsableBonus) {
+            alert(`Можно списать не более ${maxUsableBonus} бонусов.`);
+            return;
+        }
+
+        const confirmAction = confirm(`Подтвердите списание ${inputBonus} бонусов.`);
+        if (confirmAction) {
+            const promocode = {
+                message: "OK",
+                promocode: name,
+                [type === 'sum' ? 'discountsum' : 'discountpercent']: inputBonus
+            };
+            t_input_promocode__addPromocode(promocode);
+
+            // Скрыть поле ввода после применения
+            const inputWrapper = inputField.closest('[data-input-lid]');
+            if (inputWrapper) inputWrapper.style.display = 'none';
+        }
+    };
+
+    // Создание поля ввода после инициализации корзины
+    let interval = setInterval(() => {
+        if (window.tcart && window.tcart.prodamount) {
+            clearInterval(interval);
+            let orderAmount = window.tcart.prodamount;
+            nolim_create_input({ available, orderAmount, btntext: 'Списать' });
+        }
+    }, 100);
+}
+
+function nolim_create_input({ available = '', orderAmount = 0, btntext = 'Списать' }) {
+    const maxUsableBonus = orderAmount > 1 ? Math.floor(orderAmount - 1) : 0;
+
+    let inputHtml = `
+    <div class="t-input-group" data-input-lid="1679488686739"> <div class="t-input-title t-descr t-descr_md" style="">Бонусов доступно: ${available}</div> <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" style="">
+            Можно списать не больше ${Math.min(available, maxUsableBonus)} бонусов.
+        </div> <div class="t-input-block"> <div class="t-inputpromocode__wrapper" style="display: table; width: 100%;"> <input type="text" name="nolim_Promoco" class="t-input t-inputpromocode js-tilda-rule nolim-promo-input" 
+                    placeholder="Введите значение" style="display: table-cell; color: #000000; border: 1px solid #000000;"> <div onclick="nolimGetPromo()" class="t-inputpromocode__btn t-btn t-btn_md nolim-promo-button" 
+                    style="display: table-cell; position: relative; color: #ffffff; background: #000000;">${btntext}</div> </div> <div class="t-input-error" aria-live="polite"></div> </div> </div>`;
+
+    const phoneField = document.querySelector('.t706 [name="phone"]');
+    if (phoneField) {
+        const parent = phoneField.closest('.t-input-group');
+        if (parent) {
+            parent.insertAdjacentHTML('afterend', inputHtml);
+        }
+    }
+}
+</script> <style>
+.t-inputpromocode__wrapper .t-text { color: #000; }
+.t-input-group_pc { display: none !important; }
+.t-select__wrapper:after { content: unset !important; }
+[name="nolim_Promoco"] { border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
+.nolim-promo-button { border-top-right-radius: 0px; border-bottom-right-radius: 0px; }
+</style>

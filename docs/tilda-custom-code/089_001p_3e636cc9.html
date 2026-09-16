@@ -1,0 +1,26 @@
+<!-- pages (1): page77076666.html -->
+<!-- rec ids: rec1294007841 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const zones = document.querySelectorAll(".copy-zone");
+
+  zones.forEach(function (zone) {
+    zone.addEventListener("click", function () {
+      const textToCopy = this.getAttribute("data-copy");
+
+      if (textToCopy) {
+        const tempInput = document.createElement("input");
+        tempInput.value = textToCopy;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+
+        // Можешь заменить или убрать alert
+        alert(`Скопировано: ${textToCopy}`);
+      }
+    });
+  });
+});
+</script>

@@ -1,0 +1,26 @@
+<!-- pages (1): page60178073.html -->
+<!-- rec ids: rec841411832 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Функция для вставки содержимого
+    function insertContent() {
+      var sourceBlock = document.querySelector("#rec833688639 .t123");
+      var targetElement = document.querySelector("#rec828582931 .t-rasrochka");
+
+      if (sourceBlock && targetElement) {
+        targetElement.innerHTML = sourceBlock.innerHTML;
+        console.log("Содержимое успешно вставлено.");
+        clearInterval(checkInterval); // Останавливаем проверку после успешной вставки
+      }
+    }
+
+    // Проверяем наличие элементов каждые 100 мс
+    var checkInterval = setInterval(insertContent, 100);
+
+    // Останавливаем проверку через 5 секунд, если элемент так и не появился
+    setTimeout(function () {
+      clearInterval(checkInterval);
+      console.error("Элемент t-rasrochka так и не появился в блоке #rec828582931.");
+    }, 5000);
+  });
+</script>

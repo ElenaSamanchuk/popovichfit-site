@@ -1,0 +1,14 @@
+# Экспорт Тильды — только справочный материал (820 МБ)
+/old-site/
+node_modules/
+.nuxt/
+.output/
+.data/
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+docs/screens/**/full/
+docs/screens/**/*.png
+!docs/screens/**/preview/*.png

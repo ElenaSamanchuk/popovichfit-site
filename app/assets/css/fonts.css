@@ -1,0 +1,12 @@
+/* Шрифты сайта. Все файлы локальные (public/fonts), с Тильды/Google ничего не грузится.
+   ВАЖНО: на Тильде под именем 'Involve' смешаны Involve и Manrope — привязка веса к файлу
+   воспроизведена 1:1 (см. old-site/_fonts-tildacdn/README.md). Не «исправлять». */
+@font-face { font-family: 'Involve'; font-weight: 100; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-100__Involve-VF.woff') format('woff'); }
+@font-face { font-family: 'Involve'; font-weight: 400; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-400__Manrope-SemiBold.woff') format('woff'); }
+@font-face { font-family: 'Involve'; font-weight: 500; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-500__Involve-Medium.woff') format('woff'); }
+@font-face { font-family: 'Involve'; font-weight: 600; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-600__Involve-SemiBold.woff') format('woff'); }
+@font-face { font-family: 'Involve'; font-weight: 700; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-700__Involve-Bold.woff') format('woff'); }
+@font-face { font-family: 'Involve'; font-weight: 800; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-800__Manrope-ExtraBold.woff') format('woff'); }
+@font-face { font-family: 'Involve'; font-weight: 900; font-style: normal; font-display: swap; src: url('/fonts/involve/Involve-900__Manrope-Bold.woff') format('woff'); }
+
+/* Manrope и Unbounded — бывшие Google Fonts (subset latin + cyrillic), см. fonts-google.css */

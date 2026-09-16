@@ -1,0 +1,36 @@
+<!-- pages (1): page36666945.html -->
+<!-- rec ids: rec594485580 -->
+<!--https://romanyu.ru/skroll-s-uderzhaniem-knopki-myshi--> <script src="https://unpkg.com/scrollbooster@3/dist/scrollbooster.min.js" defer></script> <script>
+$(function() {
+    // Укажи ID Zero блока и включи overflow: auto
+    const blockId = '#rec596019289';
+    
+    $(blockId + ' .t396__artboard').addClass('scrollbooster-viewport').wrapInner('<div class="scrollbooster-content"></div>');
+    $(blockId + ' .t396').css('overflow','hidden');
+    
+    new ScrollBooster({
+        viewport: $(blockId + ' .scrollbooster-viewport')[0],
+        content:  $(blockId + ' .scrollbooster-content')[0],
+        scrollMode: 'native',
+        pointerMode: 'mouse',
+        bounce: false,
+        onPointerDown: function() { $(blockId + ' *:focus').blur() }
+    });
+});
+</script> <style>
+.scrollbooster-viewport {
+    cursor: -webkit-grab;
+    cursor: grab;
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+}
+.scrollbooster-viewport:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+.scrollbooster-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+</style>

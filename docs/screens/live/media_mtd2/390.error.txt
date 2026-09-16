@@ -1,0 +1,3 @@
+Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/media_mtd2
+Call log:
+  - navigating to "https://popovichfit.ru/media_mtd2", waiting until "load"

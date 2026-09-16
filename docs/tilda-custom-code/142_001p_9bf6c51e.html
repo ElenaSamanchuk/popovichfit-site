@@ -1,0 +1,39 @@
+<!-- pages (1): page60178073.html -->
+<!-- rec ids: rec841411834 -->
+<script>
+t_onReady(function(){
+
+const utmName = 'r';// Тут название переменной в GET параметрах
+
+const refIdName = 'ref_id';//Сюда вместо ref_id пишешь название твоего скрытого поля
+
+const url = new URLSearchParams(window.location.search);
+
+if (url.has(utmName)) {
+
+localStorage.setItem(utmName, url.get(utmName));
+
+}
+
+if (utmValue = localStorage.getItem(utmName)) {
+
+let a = setInterval(function(){
+
+// Сюда в кавычках, вместо ref_id пишешь название твоего скрытого поля
+
+let inputRefId = document.querySelector('[name="ref_id"]');
+
+if(inputRefId){
+
+inputRefId.value = utmValue;
+
+clearInterval(a);
+
+}
+
+}, 1000);
+
+}
+
+});
+</script>

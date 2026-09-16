@@ -1,0 +1,36 @@
+<!-- pages (1): page60771825.html -->
+<!-- rec ids: rec852414171 -->
+<!-- Как сделать показ скрытых блоков по клику на любую кнопку или ссылку в Tilda mo-ti.ru --> <script>
+document.addEventListener("DOMContentLoaded", function(){
+(function () {
+let shmoreArr = [ '#showmore' , 'uc-showmore' ]; // Ссылка кнопки - Класс блоков для скрытия
+let anchor = true; //Скролл до якоря true
+let hideBtn = false; //Скрыть кнопку по клику true
+let hideBlk = false; //Скрыть блок с кнопкой по клику true
+let shmoreBtn = document.querySelectorAll('[href="'+shmoreArr[0]+'"]');
+let shmoreBlock = document.querySelectorAll('.'+shmoreArr[1]);
+shmoreBlock.forEach(i => i.classList.add("tabshide"));
+for (let i = 0; i < shmoreBtn.length; i++) {
+    shmoreBtn[i].addEventListener('click', function(event) { 
+        this.classList.toggle('more-btn-active');
+        if(!anchor) event.preventDefault(); 
+        if(hideBtn) this.classList.add('tabshide');
+        if(hideBlk) this.closest('.r').classList.add('tabshide');
+        shmoreBlock.forEach(i => i.classList.toggle("tabshide"));
+        window.dispatchEvent(new Event('resize'));
+   });
+};
+})();
+
+});
+</script> <style>
+.tabshide {
+    opacity: 0!important;
+    min-height: 0!important;
+    max-height: 0!important;
+    pointer-events: none!important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    overflow: hidden !important;
+}
+</style>

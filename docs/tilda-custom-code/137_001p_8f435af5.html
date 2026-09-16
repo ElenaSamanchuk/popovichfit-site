@@ -1,0 +1,91 @@
+<!-- pages (1): page57646355.html -->
+<!-- rec ids: rec872199766 -->
+<!--Библиотека VORON--><!--Боковой скролл зеро https://voron-dev.ru/horizontal-scroll--> <script>
+document.addEventListener('DOMContentLoaded', function () {  
+    let pos = { top: 0, left: 0, x: 0, y: 0 };
+    let blocks = ['#rec872199848', '', '', ''];
+            let shift = 300;
+    switch (true) {
+                case (window.innerWidth > 1200):
+                shift = 200;
+                break;
+                case (window.innerWidth > 960):
+                shift = 200;
+                break;
+                case (window.innerWidth > 640):
+                shift = 200;
+                break;
+                case (window.innerWidth > 480):
+                shift = 200;
+                break;                    
+                default:
+                shift = 200;
+                break;
+    };
+    blocks.forEach((elem) => {
+        elem = document.querySelector(elem + " .t396__artboard");
+        if (elem.querySelector("img") !== null) {
+            elem.querySelector("img").ondragstart = function() { return false; };
+        };
+        elem.style.overflowX = 'auto';
+        elem.style.overflowY = 'hidden';
+        elem.querySelector('.t396__carrier').style.position = 'sticky';
+        elem.style.cursor = 'grab';
+        const mouseDownHandler = function (e) {
+            elem.style.cursor = 'grabbing';
+            elem.style.userSelect = 'none';
+            pos = {
+                left: elem.scrollLeft,
+                x: e.clientX,
+            };
+            document.addEventListener('mousemove', mouseMoveHandler);
+            document.addEventListener('mouseup', mouseUpHandler);
+        };
+        const mouseMoveHandler = function (e) {
+            const dx = e.clientX - pos.x;
+            elem.scrollLeft = pos.left - dx;
+        };
+        const mouseUpHandler = function () {
+            elem.style.cursor = 'grab';
+            elem.style.removeProperty('user-select');
+    
+            document.removeEventListener('mousemove', mouseMoveHandler);
+            document.removeEventListener('mouseup', mouseUpHandler);
+        };
+        elem.addEventListener('mousedown', mouseDownHandler);
+        
+    });
+    
+    setTimeout(function () {
+      if (document.querySelector('.scrollfwd').style.zIndex !== "99") {
+      document.querySelectorAll('.scrollfwd').forEach((button) => {
+      button.closest('.t396__artboard').setAttribute('style', 'overflow: visible; height: 0px !important;');
+      button.style.zIndex = '99';
+      button.style.userSelect = 'none';
+      button.style.cursor = 'pointer';
+      button.closest('.t396__artboard').querySelector('.t396__filter').style.zIndex = '0';
+      button.addEventListener('click', (element)=> {
+          $(element.target.closest('.t-rec').nextElementSibling.querySelector('.t396__artboard')).animate( { scrollLeft: '+=' + shift }, 300);
+        }) 
+  });
+  document.querySelectorAll('.scrollback').forEach((button) => {
+      button.style.zIndex = '99';
+      button.style.userSelect = 'none';
+      button.style.cursor = 'pointer';
+
+      button.addEventListener('click', (element)=> {
+          $(element.target.closest('.t-rec').nextElementSibling.querySelector('.t396__artboard')).animate( { scrollLeft: '-=' + shift }, 300);
+        })
+      })
+    }
+    }, 500);
+  
+});
+</script> <style>
+   #rec787020857 .t396__artboard::-webkit-scrollbar, #rec787020859 .t396__artboard::-webkit-scrollbar, #rec787020861 .t396__artboard::-webkit-scrollbar, #rec787020863 .t396__artboard::-webkit-scrollbar {
+      display: none;
+  }
+  #rec787020857 .t396__artboard, #rec787020859 .t396__artboard, #rec787020861 .t396__artboard, #rec787020863 .t396__artboard {
+      scrollbar-width: none;
+  }
+</style>

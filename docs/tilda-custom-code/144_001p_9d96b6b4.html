@@ -1,0 +1,42 @@
+<!-- pages (1): page41085668.html -->
+<!-- rec ids: rec864830215 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Определяем текущий URL и его параметры
+    const urlParams = new URLSearchParams(window.location.search);
+    const rParam = urlParams.get('r'); // Получаем значение параметра r
+    const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']; // Список UTM-меток
+    const paramsToPass = {};
+
+    // Собираем параметры для передачи
+    if (rParam) {
+        paramsToPass['r'] = rParam;
+    }
+    utmParams.forEach(param => {
+        const value = urlParams.get(param);
+        if (value) {
+            paramsToPass[param] = value;
+        }
+    });
+
+    // Если есть параметры для передачи
+    if (Object.keys(paramsToPass).length > 0) {
+        // Находим все ссылки в блоке с конкретным ID
+        const block = document.querySelector('#rec836007762'); // Замените ID на ваш ID Zero Блока
+        if (block) {
+            const links = block.querySelectorAll('a'); // Все ссылки внутри блока
+            links.forEach(link => {
+                const href = link.getAttribute('href'); // Получаем href ссылки
+                if (href && href.startsWith("https://popovichfit.ru/")) {
+                    const url = new URL(href);
+                    // Добавляем или обновляем параметры
+                    for (const [key, value] of Object.entries(paramsToPass)) {
+                        url.searchParams.set(key, value);
+                    }
+                    link.setAttribute('href', url.toString()); // Обновляем href ссылки
+                }
+            });
+        }
+    }
+});
+</script>

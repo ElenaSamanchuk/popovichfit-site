@@ -1,0 +1,27 @@
+<!-- pages (1): page51434445.html -->
+<!-- rec ids: rec828342675 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Определяем текущий URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const rParam = urlParams.get('r'); // Получаем значение параметра r
+
+    // Если параметр r присутствует
+    if (rParam) {
+        // Находим все ссылки в блоке с конкретным ID
+        const block = document.querySelector('#rec768772840'); // Замените ID на ваш ID Zero Блока
+        if (block) {
+            const links = block.querySelectorAll('a'); // Все ссылки внутри блока
+            links.forEach(link => {
+                const href = link.getAttribute('href'); // Получаем href ссылки
+                if (href && href.startsWith("https://popovichfit.ru/")) {
+                    // Проверяем, содержит ли уже ссылка параметр ?r=
+                    const url = new URL(href);
+                    url.searchParams.set('r', rParam); // Устанавливаем/заменяем параметр r
+                    link.setAttribute('href', url.toString()); // Обновляем href ссылки
+                }
+            });
+        }
+    }
+});
+</script>

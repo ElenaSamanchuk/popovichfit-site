@@ -1,0 +1,23 @@
+<!-- pages (1): page60067049.html -->
+<!-- rec ids: rec840490543 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Найти поле по имени
+        var bf502nField = document.querySelector("#rec831568505 [name='bf502n']");
+        if (bf502nField) {
+            // Запретить ввод
+            bf502nField.setAttribute("readonly", "true");
+
+            // Отключить отображение курсора печати
+            bf502nField.setAttribute("tabindex", "-1");
+            bf502nField.style.pointerEvents = "none";
+
+            // Удалить рамку
+            bf502nField.style.border = "none";
+
+            // Сместить поле на 5 пикселей влево
+            bf502nField.style.position = "relative";
+            bf502nField.style.left = "-25px";
+        }
+    });
+</script>

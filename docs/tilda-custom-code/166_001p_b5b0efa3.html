@@ -1,0 +1,266 @@
+<!-- pages (1): page41085668.html -->
+<!-- rec ids: rec3446036601 -->
+<style>
+  /* ===== СТИЛИ — не менять при копировании ===== */
+
+  .pf-card .pf-option {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .pf-card .pf-option .tn-atom__button-icon {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .pf-card .pf-option.pf-active .tn-atom__button-icon {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .pf-card .pf-option.pf-active {
+    outline: 2px solid #4f86c4;
+    outline-offset: -2px;
+    border-radius: 8px;
+  }
+
+  /* ★ РАЗМЕР РАДИО — меняйте здесь */
+  :root {
+    --pf-radio-size: 16px;
+    --pf-radio-dot: 30px;
+  }
+  
+  @media screen and (max-width: 479px) {
+    :root {
+      --pf-radio-size: 14px;
+      --pf-radio-dot: 20px;
+    }
+  }
+
+  .pf-card .pf-option .tn-elem[data-elem-type="button"] .tn-atom,
+  .pf-card .pf-option .pf-radio.tn-elem .tn-atom,
+  .pf-card .pf-option .tn-elem[data-elem-type="button"],
+  .pf-card .pf-option .pf-radio.tn-elem {
+    width: var(--pf-radio-size) !important;
+    height: var(--pf-radio-size) !important;
+    min-width: var(--pf-radio-size) !important;
+    min-height: var(--pf-radio-size) !important;
+    max-width: var(--pf-radio-size) !important;
+    max-height: var(--pf-radio-size) !important;
+  }
+
+  .pf-card .pf-option .tn-elem[data-elem-type="button"] .tn-atom__button-icon,
+  .pf-card .pf-option .pf-radio .tn-atom__button-icon {
+    width: var(--pf-radio-dot) !important;
+    height: var(--pf-radio-dot) !important;
+  }
+
+  .pf-card {
+    overflow: visible !important;
+  }
+
+  .pf-card > .tn-molecule,
+  .pf-card .tn-molecule:first-child {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .pf-card .pf-discount {
+    position: absolute !important;
+    top: -20px !important;
+    right: -20px !important;
+    left: auto !important;
+    z-index: 10 !important;
+  }
+
+  .pf-card .pf-discount .tn-elem {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  @media screen and (max-width: 639px) {
+    .pf-card .pf-discount {
+      top: -5px !important;
+      right: -5px !important;
+      left: auto !important;
+    }
+  }
+</style> <script>
+(function () {
+
+  /* ================================================================
+     ★ ЕДИНСТВЕННОЕ МЕСТО ДЛЯ ПРАВОК ★
+     ================================================================ */
+  window.PF_CARDS = {
+    'korekciya': {
+      defaultOption: 0,
+      options: [
+        { newPrice: '5\u2009399 р.', oldPrice: '5\u2009399 р.', link: 'https://lk.popovichfit.ru/payments/tariff_7owz39/checkout' },
+        { newPrice: '12\u2009899 р.', oldPrice: '12\u2009899 р.', link: 'https://lk.popovichfit.ru/payments/tariff_3PXZmo/checkout' },
+        { newPrice: '24\u2009399 р.', oldPrice: '24\u2009399 р.', link: 'https://lk.popovichfit.ru/payments/tariff_VKZmjo/checkout' }
+      ]
+    },
+    'korekciya-trener': {
+      defaultOption: 0,
+      options: [
+        { newPrice: '7\u2009699 р.', oldPrice: '7\u2009699 р.', link: 'https://lk.popovichfit.ru/payments/tariff_5K5rnP/checkout' },
+        { newPrice: '19\u2009299 р.', oldPrice: '19\u2009299 р.', link: 'https://lk.popovichfit.ru/payments/tariff_BKLmnP/checkout' },
+        { newPrice: '34\u2009799 р.', oldPrice: '34\u2009799 р.', link: 'https://lk.popovichfit.ru/payments/tariff_VPxOpK/checkout' }
+      ]
+    },
+    'silovoj': {
+      defaultOption: 0,
+      options: [
+        { newPrice: '5\u2009199 р.', oldPrice: '6\u2009399 р.', link: 'https://lk.popovichfit.ru/payments/tariff_B9DEYo/checkout' },
+        { newPrice: '13\u2009299 р.', oldPrice: '16\u2009599 р.', link: 'https://lk.popovichfit.ru/payments/tariff_3o8NwP/checkout' },
+        { newPrice: '23\u2009299 р.', oldPrice: '29\u2009099 р.', link: 'https://lk.popovichfit.ru/payments/tariff_v9vQDP/checkout' }
+      ]
+    },
+    'silovoj-trener': {
+      defaultOption: 0,
+      options: [
+        { newPrice: '7\u2009599 р.', oldPrice: '8\u2009799 р.', link: 'https://lk.popovichfit.ru/payments/tariff_1K7zmo/checkout' },
+        { newPrice: '19\u2009299 р.', oldPrice: '23\u2009199 р.', link: 'https://lk.popovichfit.ru/payments/tariff_dPkm0o/checkout' },
+        { newPrice: '32\u2009799 р.', oldPrice: '40\u2009899 р.', link: 'https://lk.popovichfit.ru/payments/tariff_X9GEVK/checkout' }
+      ]
+    }
+  };
+
+  /* ===== Ниже менять не нужно ===== */
+
+  function getCardKey(cardEl) {
+    var list = cardEl.classList;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].indexOf('pf-card--') === 0) {
+        return list[i].replace('pf-card--', '');
+      }
+    }
+    return cardEl.getAttribute('data-pf-card');
+  }
+
+  function setText(elem, html) {
+    var atom = elem && elem.querySelector('.tn-atom');
+    if (atom) atom.innerHTML = html;
+  }
+
+  function setBuyLink(buyElem, url) {
+    if (!buyElem) return;
+    var atom = buyElem.querySelector('.tn-atom');
+    if (!atom) return;
+    var link = buyElem.querySelector('a.tn-atom');
+    if (!link) {
+      link = document.createElement('a');
+      link.className = atom.className;
+      link.innerHTML = atom.innerHTML;
+      atom.replaceWith(link);
+    }
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  }
+
+  /* Tilda после t396_init ставит inline width:16px — перебиваем */
+  function applyRadioSizes() {
+    var size = getComputedStyle(document.documentElement).getPropertyValue('--pf-radio-size').trim() || '22px';
+    var dot = getComputedStyle(document.documentElement).getPropertyValue('--pf-radio-dot').trim() || '16px';
+
+    document.querySelectorAll('.pf-card .pf-option .tn-atom__button-icon').forEach(function (icon) {
+      var elem = icon.closest('.tn-elem');
+      var atom = icon.closest('.tn-atom');
+
+      if (elem) {
+        elem.style.setProperty('width', size, 'important');
+        elem.style.setProperty('height', size, 'important');
+      }
+      if (atom) {
+        atom.style.setProperty('width', size, 'important');
+        atom.style.setProperty('height', size, 'important');
+        atom.style.setProperty('min-width', size, 'important');
+        atom.style.setProperty('min-height', size, 'important');
+      }
+      icon.style.setProperty('width', dot, 'important');
+      icon.style.setProperty('height', dot, 'important');
+    });
+  }
+
+  function selectOption(cardState, index) {
+    var option = cardState.config.options[index];
+    if (!option) return;
+
+    cardState.optionEls.forEach(function (el, i) {
+      el.classList.toggle('pf-active', i === index);
+    });
+
+    setText(cardState.priceNewEl, option.newPrice);
+    setText(cardState.priceOldEl, '<s>' + option.oldPrice + '</s>');
+    setBuyLink(cardState.buyEl, option.link);
+  }
+
+  function initCard(cardEl) {
+    if (cardEl.getAttribute('data-pf-inited') === '1') return;
+
+    var key = getCardKey(cardEl);
+    var config = key && window.PF_CARDS[key];
+
+    if (!config) {
+      console.warn('[PF] Нет конфига для карточки:', key || '(класс pf-card--... не найден)', cardEl);
+      return;
+    }
+
+    var optionEls = cardEl.querySelectorAll('.pf-option');
+    var priceNewEl = cardEl.querySelector('.pf-price-new');
+    var priceOldEl = cardEl.querySelector('.pf-price-old');
+    var buyEl = cardEl.querySelector('.pf-buy');
+
+    if (!optionEls.length || !priceNewEl || !priceOldEl || !buyEl) {
+      console.warn('[PF] Не хватает элементов в карточке:', key);
+      return;
+    }
+
+    var cardState = {
+      config: config,
+      optionEls: Array.prototype.slice.call(optionEls),
+      priceNewEl: priceNewEl,
+      priceOldEl: priceOldEl,
+      buyEl: buyEl
+    };
+
+    cardState.optionEls.forEach(function (optEl, index) {
+      optEl.addEventListener('click', function (e) {
+        e.preventDefault();
+        selectOption(cardState, index);
+      });
+    });
+
+    cardEl.setAttribute('data-pf-inited', '1');
+    selectOption(cardState, config.defaultOption || 0);
+  }
+
+  function initAll() {
+    if (window.PF_CARDS) {
+      document.querySelectorAll('.pf-card').forEach(initCard);
+    }
+    applyRadioSizes();
+  }
+
+  function boot() {
+    initAll();
+    setTimeout(initAll, 300);
+    setTimeout(initAll, 1000);
+    setTimeout(applyRadioSizes, 2000);
+  }
+
+  window.addEventListener('resize', applyRadioSizes);
+
+  if (typeof t_onReady === 'function') {
+    t_onReady(boot);
+  } else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+
+})();
+</script>
