@@ -10,6 +10,8 @@ const ROOT = path.resolve(import.meta.dirname, '..')
 const dir = path.resolve(process.argv[2] || path.join(ROOT, '.output/public'))
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/meta.json'), 'utf8'))
 const known = new Set(Object.values(meta).flatMap((p) => [p.url, ...p.slugs.map((s) => '/' + s)]))
+const dead = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts/known-dead-links.json'), 'utf8'))
+const isKnownDead = (u) => dead.paths.includes(u) || dead.redirected.some((pre) => u.startsWith(pre))
 const exists = (u) => {
   const clean = u.split(/[?#]/)[0].replace(/\/+$/, '') || '/'
   if (known.has(clean) || known.has(clean.toLowerCase())) return true
@@ -34,6 +36,7 @@ function walk(d) {
   }
 }
 walk(dir)
-for (const [u, from] of [...bad.entries()].sort()) console.log(`✗ ${u}  ← ${from.slice(0, 3).join(', ')}${from.length > 3 ? ` (+${from.length - 3})` : ''}`)
-console.log(bad.size ? `\n✗ битых внутренних ссылок: ${bad.size} (страниц ${pages}, ссылок ${total})` : `✓ внутренние ссылки в порядке (страниц ${pages}, ссылок ${total})`)
-process.exit(bad.size ? 1 : 0)
+let real = 0
+for (const [u, from] of [...bad.entries()].sort()) { const k = isKnownDead(u); if (!k) real++; console.log(`${k ? '⚠' : '✗'} ${u}  ← ${from.slice(0, 3).join(', ')}${from.length > 3 ? ` (+${from.length - 3})` : ''}${k ? '  (известно: нет и на живом сайте / редирект)' : ''}`) }
+console.log(real ? `\n✗ битых внутренних ссылок: ${real} (страниц ${pages}, ссылок ${total})` : `✓ внутренние ссылки в порядке (страниц ${pages}, ссылок ${total}${bad.size ? `, известных мёртвых: ${bad.size}` : ''})`)
+process.exit(real ? 1 : 0)

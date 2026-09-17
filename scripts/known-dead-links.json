@@ -1,0 +1,5 @@
+{
+  "_comment": "Ссылки экспорта на страницы, которых нет и на живом сайте (403 — не опубликованы). См. docs/HANDOFF.md. check-links считает их предупреждением, а не ошибкой.",
+  "paths": ["/19cor1", "/introduction", "/prod12", "/special_cor_tariff", "/special_siltren_tariff", "/tarifpred"],
+  "redirected": ["/members/"]
+}

@@ -14,8 +14,9 @@ for (const [file, p] of Object.entries(meta)) {
   if (p.url !== '/' + file && p.url !== '/404.html') lines.push(`/${file} ${p.url};`)
   for (const s of p.slugs.slice(1)) if ('/' + s !== p.url) lines.push(`/${s} ${p.url};`)
 }
+lines.push('~^/members(/|$) https://lk.popovichfit.ru/login;') // вход Tilda Members → новый ЛК (см. server/middleware/redirects.ts)
 fs.mkdirSync(path.join(ROOT, '.output'), { recursive: true })
-fs.writeFileSync(path.join(ROOT, '.output/redirects.map'), '# nginx: map $uri $redirect_to { include redirects.map; }\n' + [...new Set(lines)].sort().join('\n') + '\n')
+fs.writeFileSync(path.join(ROOT, '.output/redirects.map'), '# nginx: map $uri $pf_redirect { include redirects.map; } (строки с ~ — регулярные выражения)\n' + [...new Set(lines)].sort().join('\n') + '\n')
 console.log(`redirects.map: ${new Set(lines).size} правил`)
 let fail = false
 for (const s of ['check-urls.mjs', 'check-links.mjs', 'check-no-tilda.mjs']) {

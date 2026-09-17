@@ -4,6 +4,7 @@
 // по hash-хуку; фиксированный фон T674 — FixedBackground; T131 (HTML-код) — только если это видимый контент
 // без скриптов; служебные (T270/T890/T450/T215/T887/T367) — не рендерятся (их заменяют общие компоненты).
 import type { TildaBlock } from '~/utils/tilda-css'
+import { visCss } from '~/utils/tilda-css'
 
 const props = defineProps<{ block: TildaBlock; popupContent?: TildaBlock | null }>()
 const b = props.block
@@ -28,7 +29,8 @@ const customHtml = computed(() => (b.custom || '').replace(/<script[\s\S]*?<\/sc
 const isPreloader = computed(() => /NLM048|nl_reploader|simple-preloader/i.test(b.custom || ''))
 const customVisible = computed(() => b.type === '131' && !isPreloader.value && /<(div|iframe|img|p|a|span|table|h\d|ul)\b/.test(customHtml.value))
 
-if (b.css) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: b.css }] })
+const blockCss = (b.css || '') + visCss('#' + b.id, b.vis)  // CSS блока из экспорта + видимость по ширине экрана
+if (blockCss) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: blockCss }] })
 const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"/)?.[1] : undefined)
 
 // интерактив стандартных блоков без runtime Тильды: аккордеон T585 и табы T395
@@ -49,11 +51,19 @@ onMounted(() => {
   if (b.type === '395') {
     const tabs = [...el.querySelectorAll<HTMLElement>('.t395__tab')]
     const panels = [...el.querySelectorAll<HTMLElement>('.t395__content')]
-    tabs.forEach((tab, i) => tab.addEventListener('click', () => {
-      tabs.forEach((t, j) => t.classList.toggle('t395__tab_active', i === j))
+    const select = el.querySelector<HTMLSelectElement>('.t395__select')
+    // «табы из блоков»: у вкладок data-tab-rec-ids — показываем блоки активной вкладки, остальные прячем (t395__off)
+    const recIds = tabs.map((t) => (t.getAttribute('data-tab-rec-ids') || '').split(',').map((x) => x.trim()).filter(Boolean))
+    const activate = (i: number) => {
+      tabs.forEach((t, j) => { t.classList.toggle('t395__tab_active', i === j); t.querySelector('button')?.setAttribute('aria-selected', String(i === j)) })
       panels.forEach((p, j) => { p.style.display = i === j ? 'block' : 'none' })
-    }))
-    panels.forEach((p, j) => { p.style.display = j === 0 ? 'block' : 'none' })
+      recIds.forEach((ids, j) => ids.forEach((id) => document.getElementById('rec' + id)?.classList.toggle('t395__off', i !== j)))
+      if (select) select.selectedIndex = i
+    }
+    tabs.forEach((tab, i) => tab.addEventListener('click', () => activate(i)))
+    select?.addEventListener('change', () => activate(select.selectedIndex))
+    const cur = Number(el.querySelector('[data-tab-current]')?.getAttribute('data-tab-current') || 1) - 1
+    if (panels.length) panels.forEach((p, j) => { p.style.display = j === cur ? 'block' : 'none' })
   }
 })
 </script>
@@ -85,7 +95,7 @@ onMounted(() => {
     :id="b.id"
     ref="root"
     class="tb t-rec"
-    :class="'t-rec-' + b.type"
+    :class="['t-rec-' + b.type, b.tabHidden ? 't395__off' : '']"
     :style="{ paddingTop: b.pad['padding-top'] != null ? b.pad['padding-top'] + 'px' : undefined, paddingBottom: b.pad['padding-bottom'] != null ? b.pad['padding-bottom'] + 'px' : undefined, backgroundColor: b.bg || undefined }"
     :data-tilda-rec="b.id"
     v-html="b.html"

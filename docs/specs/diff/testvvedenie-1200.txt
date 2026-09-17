@@ -1,0 +1,10 @@
+/testvvedenie @1200: высота live 2887 / local 2833  (общий сдвиг по вертикали -54px — вычтен)
+
+## rec851306689 T396
+  Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@909,431,271,219  
+  Δ #1721902075463 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@72,506,60,60  
+
+## rec851306690 T396
+  Δ #1720591572494 [shape] bg-image live 1556_1_1.jpg.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t61323038-1556_1_1.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@321,905,560,470  
+
+элементов: 95, с расхождениями > 3px: 3

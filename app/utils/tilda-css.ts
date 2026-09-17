@@ -29,6 +29,8 @@ export interface TildaBlock {
   artboard?: { screens: string; fixed: boolean; fixedPos?: string | null; ovrflw?: string | null; bg: Record<string, string> }
   artboards?: Record<string, Artboard>; elems?: ZeroElem[]; groups?: ZeroGroup[]; tree?: ZeroNode[]
   html?: string; css?: string; hooks?: string[]; popupRecs?: string[]; custom?: string
+  /** блок внутри вкладки T395 «табы из блоков»; tabHidden — вкладка не активна при загрузке */
+  tab?: { of: string; index: number }; tabHidden?: boolean
 }
 export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }> }
 
@@ -180,19 +182,28 @@ function sbsRules(sel: string, e: ZeroElem): string {
   return out
 }
 
+/** Видимость блока по ширине экрана (t-screenmin-640px / t-screenmax-1200px Тильды): границы включительно,
+ *  как в её CSS (@media (max-width: 639px) / (min-width: 1201px)). */
+export function visCss(id: string, vis?: { min: number | null; max: number | null } | null): string {
+  let css = ''
+  if (vis?.min) css += `@media (max-width:${vis.min - 0.02}px){${id}{display:none !important}}`
+  if (vis?.max) css += `@media (min-width:${vis.max + 0.02}px){${id}{display:none !important}}`
+  return css
+}
+
 /** CSS одного Zero Block: секция (высоты, фон) + элементы + группы, по 5 диапазонам ширин. */
 export function zeroBlockCss(b: TildaBlock): string {
   const id = `#${b.id}`
   const parts: string[] = []
-  const vis = b.vis || { min: null, max: null }
-  if (vis.min) parts.push(`@media (max-width:${vis.min - 0.02}px){${id}{display:none !important}}`)
-  if (vis.max) parts.push(`@media (min-width:${vis.max}px){${id}{display:none !important}}`)
+  parts.push(visCss(id, b.vis))
   for (const r of RANGES) {
     const art = b.artboards?.[r.scr]
     if (!art) continue
     const mobile = r.scr === '320' || (r.scr === '480' && art.upscale === 'window')
     const u = mobile ? `${id}{--u:calc(100vw / ${r.artW});}` : ''
     let sec = `${id} .tz__art{`
+    // артборд position:absolute (Тильда): запись схлопывается в 0, содержимое наезжает на следующий блок
+    if (art.pos === 'absolute') sec += 'position:absolute;left:0;right:0;top:0;'
     if (art.h !== null && art.h !== undefined) sec += `height:${mobile ? `calc(${art.h} * var(--u))` : art.h + 'px'};`
     if (art.bg) sec += `background-color:${art.bg};`
     if (art.bgImage && art.bgImage !== 'none') sec += `background-image:${art.bgImage};background-size:cover;background-position:center;`

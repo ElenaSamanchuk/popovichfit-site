@@ -1,0 +1,55 @@
+# Перенос popovichfit.ru с Тильды — передача
+
+Дата: 17.09.2026. Исходник — экспорт Тильды (архив `natalya-popovich_….zip`, распакован в `old-site/`, в git не входит).
+Стек: Nuxt 4 + Vue 3 + Tailwind 4 + TypeScript. Структура и команды — в `README.md`.
+
+## Что перенесено
+
+- Все 220 страниц экспорта (219 + стандартная 404) с теми же адресами; 47 страниц без slug доступны как `/pageNNN.html`.
+- 1651 Zero Block отрисовываются из данных экспорта (5 артбордов 1200/960/640/480/320, группы, flex, иконки, пошаговые
+  анимации при наведении, попапы), типовые блоки (FAQ T585, табы T395, видео, галереи, попапы T390/T702/T868/T1093) — из HTML экспорта
+  и его CSS; главная собрана вручную.
+- Шапка, мобильное меню, футер, cookie-баннер, плашка ВК, виджет поддержки Sender — общие компоненты.
+- Реферальная программа `?r=` + utm: параметры дописываются во все ссылки сайта и на `lk.popovichfit.ru/…/checkout`
+  (замена ~15 скриптов), ссылка на бот предзаписи при `r` подменяется на salebot — как было.
+- Карточки тарифов (варианты потоков → цена и ссылка на checkout ЛК) — `app/data/tariffs.ts`.
+- Формы: Zero Block и попапы T702 → `POST /api/lead`; корзина T706 (`#order:Товар=цена`, /gift1, /mk_msk и др.) → `POST /api/order`
+  → виджет CloudPayments → вебхук `POST /api/cloudpayments/pay`. Заявки/заказы дублируются в `.data/*.jsonl`.
+- Метрика 88400923 и VK-пиксель — свои подключения (`app/plugins/analytics.client.ts`); ни одного обращения к Тильде
+  (проверка `npm run check:no-tilda`).
+- Картинки экспорта — WebP (оригиналы > 2400px уменьшены), og-картинки — `public/img/og`, шрифты Involve/Manrope/Unbounded — свои файлы.
+- SEO: title/description/og/canonical/noindex — дословно из экспорта (проверка `scripts/check-seo.mjs`: 219/219 совпадают),
+  `sitemap.xml` (179 индексируемых страниц), `robots.txt`, 301 с `/pageNNN.html` на slug, нижний регистр, без завершающего слэша.
+
+## Решения, которые стоит подтвердить
+
+| Решение | Почему |
+|---|---|
+| Прелоадеры NOLIM (NLM048) и mt-webdesign не переносим | Оверлей на 3 с без пользы; на /course_power перекрывал первый экран |
+| Блоки «только для Tilda Members» (NLM607 `auth`, бонусные rec840321608/609) скрыты | Tilda Members у нас нет — на живом сайте они тоже никому не показываются |
+| Демо-квиз T806 «What kind of traveler are you?» на /gift1 скрыт | Стандартный демо-блок Тильды на английском, явно забыт |
+| Три пустых блока Collabza (rec955731071/860129115/895382617) не выводятся | На живом сайте в них печатается «Collabza error… подписка истекла» (54 px мусора под шапкой на 113 страницах) |
+| `/members/login`, `/members/signup`, `/members/recover-password` → 301 на `https://lk.popovichfit.ru/login` | Вход Tilda Members больше не существует; личный кабинет — на NN99. Меняется в `server/middleware/redirects.ts` |
+| Ссылки на несуществующие страницы (`/tarifpred`, `/prod12`, `/introduction`, `/19cor1`, `/special_*_tariff`) оставлены как есть | На живом сайте они отдают 403 (страницы не опубликованы) — у нас 404 |
+| amoCRM-кнопка и NN99-виджет поддержки не переносятся | По решению: только Sender |
+| Тестовые страницы с чужими шрифтами (page144954996: evolventavetrino, Bounded, Inter, Nunito Sans) — фолбэк Arial | Шрифтов нет в экспорте; RockStar на /gift1 и на Тильде рендерился Arial (нет @font-face) |
+
+## Что нужно от заказчика
+
+1. **CloudPayments**: Public ID и API-секрет → `NUXT_PUBLIC_CLOUDPAYMENTS_PUBLIC_ID`, `NUXT_CLOUDPAYMENTS_API_SECRET`;
+   в кабинете CloudPayments указать URL уведомления «Pay»: `https://popovichfit.ru/api/cloudpayments/pay`.
+   Без Public ID корзина принимает заказ и показывает «заказ принят», оплата не запускается.
+2. **Уведомления о заявках**: Telegram-бот и chat_id (`NUXT_TELEGRAM_*`) и/или SMTP (`NUXT_SMTP_URL`, `NUXT_MAIL_TO`).
+3. **DNS** (reg.ru): после проверки сайта по IP — A-записи `@` и `www` → 146.185.241.179, затем `certbot --nginx` и `server_name` в nginx.
+4. Проверить тексты писем/полей форм, если хочется что-то поменять (сейчас — дословно как в Тильде).
+
+## Проверки и инструменты
+
+- `docs/specs/diff/SUMMARY.md` — сверка геометрии/шрифтов/цветов/текстов каждой страницы с живым сайтом (пока он доступен);
+- `docs/MIGRATION-STATUS.md` — скриншотные diff'ы по страницам; `docs/QA-REPORT.md` — итог QA;
+- `npm run build` запускает проверки URL/ссылок/«нет Тильды»; `scripts/check-browsers.mjs` — WebKit/Firefox против Chromium.
+
+## Деплой
+
+`deploy/server-setup.sh` (на сервере, один раз) → заполнить `/var/www/popovichfit/.env` → `deploy/deploy.sh` (локально).
+Схема: nginx отдаёт пререндер (`.output/public`), `/api/*` и `sitemap.xml` проксируются в node-сервис `popovichfit` (порт 3100).

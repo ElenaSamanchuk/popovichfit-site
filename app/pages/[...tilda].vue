@@ -15,6 +15,11 @@ usePageMeta(file)
 
 // данные блоков — с сервера (серверный ассет), при клиентских переходах — из пререндеренного _payload.json
 const { data } = await useAsyncData('tilda:' + file, () => $fetch<import('~/utils/tilda-css').TildaPageData>('/api/tilda/' + file.replace('.html', '.json')))
+// отладка гидрации (только dev): ?blocks=2-5 — отрисовать часть блоков
+if (import.meta.dev && typeof route.query.blocks === 'string' && data.value) {
+  const [a, b] = route.query.blocks.split('-').map(Number)
+  data.value = { ...data.value, blocks: data.value.blocks.filter((_, i) => i >= (a || 0) && i <= (b ?? 999)) }
+}
 </script>
 
 <template>

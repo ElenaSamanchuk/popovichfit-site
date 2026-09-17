@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { pages } from './app/data/pages'
 
@@ -48,9 +49,17 @@ export default defineNuxtConfig({
     '/sitemap.xml': { prerender: true },
   },
   nitro: {
-    prerender: { crawlLinks: true, routes: ['/', '/sitemap.xml', ...prerenderRoutes], failOnError: false },
+    // crawlLinks выключен: все адреса заданы списком, а обход ссылок Nitro падает на URI с некорректным % в ссылках экспорта
+    prerender: { crawlLinks: false, routes: ['/', '/sitemap.xml', ...prerenderRoutes], failOnError: false },
     // JSON страниц экспорта — серверные ассеты (лениво, по файлу), см. server/api/tilda/[file].get.ts
-    serverAssets: [{ baseName: 'tilda', dir: './app/data/tilda' }],
+    serverAssets: [{ baseName: 'tilda', dir: fileURLToPath(new URL('./app/data/tilda', import.meta.url)) }],  // dir иначе считается от server/
+    hooks: {
+      // страницы с адресом /pageNNN.html пишем как каталог pageNNN.html/index.html: иначе файл pageNNN.html
+      // конфликтует с каталогом для _payload.json (nginx/Nitro отдают $uri/index.html)
+      'prerender:generate'(route) {
+        if (/\.html$/.test(route.route) && route.fileName && !route.fileName.endsWith('/index.html') && !route.fileName.endsWith('_payload.json')) route.fileName = route.route + '/index.html'
+      },
+    },
   },
   router: { options: { scrollBehaviorType: 'smooth' } },
 })

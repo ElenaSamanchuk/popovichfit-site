@@ -42,6 +42,8 @@ def rewrite_links(h):
     h = re.sub(r'(src|data-original|data-src|content)="(images/[^"]+)"', lambda m: f'{m.group(1)}="{img_path(m.group(2))}"', h)
     h = re.sub(r"url\(['\"]?(images/[^'\")]+)['\"]?\)", lambda m: f"url('{img_path(m.group(1))}')", h)
     h = re.sub(r"url\('\.\./images/(lib__[^']+)'\)", lambda m: f"url('/img/t/{m.group(1)}')", h)
+    # свои иконки кнопок (--icon:url('../images/tild…__name.svg')) → как остальные картинки экспорта
+    h = re.sub(r"url\(['\"]?\.\./images/(tild[^'\")]+)['\"]?\)", lambda m: f"url('{img_path(m.group(1))}')", h)
     return h
 
 def px(v):
@@ -140,7 +142,9 @@ def elem_extra(el_html, etype):
         m = re.search(r'<svg.*?</svg>', el_html, re.S)
         if m: out['svg'] = re.sub(r'\s+', ' ', m.group(0))
     elif etype == 'html':
-        m = re.search(r"<div class='tn-atom tn-atom__html'>(.*?)</div>\s*</div>\s*</div>", el_html, re.S)
+        # содержимое атома — сбалансированно (внутри бывают свои <div>): иначе теряется закрывающий тег и ломается гидрация
+        am = re.search(r"<div class='tn-atom tn-atom__html'>", el_html)
+        m = re.match(r'(.*)', Z.balanced_inner(el_html, am.start())[1], re.S) if am else None
         if m: out['embed'] = rewrite_links(re.sub(r'\s+', ' ', m.group(1)).strip())
     elif etype == 'video':
         for key, kind in (('data-youtubeid', 'youtube'), ('data-vimeoid', 'vimeo'), ('data-kinescopeid', 'kinescope'), ('data-video-kinescope-id', 'kinescope')):
@@ -259,6 +263,20 @@ def parse_page(fname):
             if b['pad'].get('padding-bottom') == 75: b['pad']['padding-bottom'] = 0
     return blocks
 
+def tabs_of_blocks(blocks):
+    """T395 «табы из блоков»: data-tab-rec-ids на вкладках — блоки невыбранных вкладок скрыты (t395__off).
+    Помечаем блоки: tab = {'of': id T395, 'index': номер вкладки (0-based)}, tabHidden — скрыт при загрузке."""
+    by = {b['id']: b for b in blocks}
+    for b in blocks:
+        if b['type'] != '395' or not b.get('html'): continue
+        h = b['html']
+        cur = int((re.search(r'data-tab-current="(\d+)"', h) or [None, '1'])[1]) - 1
+        tabs = re.findall(r'data-tab-rec-ids="([^"]*)"', h)
+        for i, ids in enumerate(tabs):
+            for rid in ids.split(','):
+                t = by.get('rec' + rid.strip())
+                if t: t['tab'] = {'of': b['id'], 'index': i}; t['tabHidden'] = i != cur
+
 def hscroll_configs(blocks):
     """Горизонтальный скролл Zero Block (romanyu: scrollbooster + стрелки) из T123: блок со скроллом, блок со стрелками
     (.arrow-left/.arrow-right), сдвиг по клику. Воспроизводится компонентом tilda/HScroll.vue."""
@@ -277,6 +295,7 @@ def main(files):
     report = []
     for f in files:
         blocks = parse_page(f)
+        tabs_of_blocks(blocks)
         hs = hscroll_configs(blocks)
         json.dump({'file': f, 'blocks': blocks, **({'hscroll': hs} if hs else {})}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
         types = {}

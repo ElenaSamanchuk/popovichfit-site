@@ -43,10 +43,12 @@ const local = await page.evaluate((recs) => {
       // ищем внутри блока: одинаковые id элементов встречаются в скопированных блоках
       const el = root.querySelector(id.startsWith('G') ? '.g' + id.slice(1) : '.e' + id)
       if (el) {
-        const cs = getComputedStyle(el)
+        // у групп фон/скругление — на молекуле (.tz__mol), как у Тильды на #molecule-…
+        const cs = getComputedStyle(id.startsWith('G') ? el.querySelector(':scope > .tz__mol') || el : el)
         const atom = el.querySelector('.tz__atom, .tz__btn-text') || el
         const c = getComputedStyle(atom)
         out.elems[r.id + ':' + id] = { rect: rect(el), opacity: cs.opacity, visible: cs.display !== 'none' && cs.visibility !== 'hidden',
+          text: (el.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 160),
           font: `${c.fontSize}/${c.lineHeight} ${c.fontWeight} ${c.fontFamily.split(',')[0].replace(/"/g, '')}`,
           color: c.color, bg: cs.backgroundColor, radius: cs.borderRadius, align: c.textAlign, transform: c.textTransform,
           bgImage: cs.backgroundImage === 'none' ? '' : cs.backgroundImage.replace(/.*\/([^/)"']+)["']?\)/, '$1') }
@@ -71,12 +73,18 @@ for (const rec of live.recs) {
   if (SHARED.has(rec.id)) continue
   const lr = local.recs[rec.id]
   if (!(rec.elems || []).length) {
-    // типовой блок: только прямоугольник (y и высота); блоки нулевой высоты на живом (скрипты, попапы) — пропускаем
+    // типовой блок: только прямоугольник (y и высота); блоки нулевой высоты на живом (скрипты, попапы) — пропускаем,
+    // но если локально такой блок получил высоту — это лишний блок (сообщаем)
     if (rec.rect[3] > 0 && (!lr || Math.abs(lr[1] - globalDy - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol)) console.log(`\n## ${rec.id} T${rec.type}  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local ${lr ? `y=${lr[1] - globalDy} h=${lr[3]}` : 'отсутствует'}`)
+    else if (rec.rect[3] === 0 && lr && lr[3] > tol) console.log(`\n## ${rec.id} T${rec.type}  лишний блок локально: на живом h=0, local h=${lr[3]}`)
     continue
   }
-  // zero-попапы (контент T1093): на живом все элементы невидимы → локально живут в модалке, не сверяем
-  if (!(rec.elems || []).some((e) => e.visible)) continue
+  // zero-попапы (контент T1093): на живом все элементы невидимы → локально живут в модалке (в DOM их нет), не сверяем;
+  // но если такой «невидимый на живом» блок локально отрисован в потоке с высотой — это лишний блок
+  if (!(rec.elems || []).some((e) => e.visible)) {
+    if (lr && lr[3] > tol) console.log(`\n## ${rec.id} T${rec.type}  скрытый на живом блок отрисован локально: h=${lr[3]} (live y=${rec.rect[1]} h=${rec.rect[3]})`)
+    continue
+  }
   const rows = []
   for (const e of rec.elems) {
     if (!e.visible) continue
@@ -89,6 +97,9 @@ for (const rec of live.recs) {
     const notes = []
     if (d.some((v) => Math.abs(v) > tol)) notes.push(`dx=${d[0]} dy=${d[1]} dw=${d[2]} dh=${d[3]}`)
     // стили: шрифт (размер ±0.5, интерлиньяж ±1, вес, семейство), цвет, выравнивание, регистр; фон, скругление, картинка фона
+    // тексты дословно (нормализуем пробелы/nbsp; live обрезан до 160 символов)
+    const norm = (t) => (t || '').replace(/[\s\u00a0]+/g, ' ').trim()
+    if ((e.type === 'text' || e.type === 'button') && e.text && norm(e.text) !== norm(l.text)) notes.push(`текст live «${norm(e.text).slice(0, 60)}» / local «${norm(l.text).slice(0, 60)}»`)
     if (styles && (e.type === 'text' || e.type === 'button')) {
       const pf = parseFont(e.font), lf = parseFont(l.font)
       if (pf && lf && (Math.abs(pf.size - lf.size) > 0.5 || Math.abs(pf.lh - lf.lh) > 1 || pf.weight !== lf.weight || pf.family !== lf.family)) notes.push(`шрифт live ${e.font} / local ${l.font}`)
