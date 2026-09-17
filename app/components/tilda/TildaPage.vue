@@ -32,6 +32,7 @@ const membersOnly = computed(() => {
   }
   return s
 })
+const hasVkNotice = computed(() => props.data.blocks.some((b) => b.id === 'rec2322627601'))
 const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && !popupRecs.value.has(b.id) && !membersOnly.value.has(b.id)))
 function popupContent(b: TildaBlock): TildaBlock | null {
   const id = b.popupRecs?.[0]?.split(',')[0]?.trim().replace(/^rec/, '')
@@ -41,6 +42,8 @@ function popupContent(b: TildaBlock): TildaBlock | null {
 
 <template>
   <div class="tilda-page">
+    <!-- плашка ВК (общий компонент) — только на страницах, где есть её блок -->
+    <VkNotice v-if="hasVkNotice" />
     <template v-for="b in flow" :key="b.id">
       <ZeroBlock v-if="b.type === '396'" :block="b" />
       <Cart v-else-if="b.type === '706'" :block="b" />

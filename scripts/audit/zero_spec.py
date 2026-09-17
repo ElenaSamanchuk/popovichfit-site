@@ -10,11 +10,13 @@ SCREENS = ['1200', '960', '640', '480', '320']
 
 ART_W = {'1200': 1200, '960': 960, '640': 640, '480': 480, '320': 320}
 
-def gattr(attrs, key, scr):
-    """значение поля группы для разрешения с каскадом вверх (t396_group__getFieldValue): res-N → ближайшее большее → база"""
-    order = ['320', '480', '640', '960', '1200']
+def gattr(attrs, key, scr, maxscr='1200'):
+    """значение поля группы для разрешения с каскадом вверх (t396_group__getFieldValue): res-N → ближайшее большее → база.
+    База (без -res-) относится к самому большому экрану артборда: 1200 или 1600 (data-artboard-screens)."""
+    order = ['320', '480', '640', '960', '1200', '1600']
     for s in order[order.index(scr):]:
-        v = attrs.get(f'{key}-value') if s == '1200' else attrs.get(f'{key}-res-{s}-value')
+        if s == '1600' and maxscr != '1600': continue
+        v = attrs.get(f'{key}-value') if s == maxscr else attrs.get(f'{key}-res-{s}-value')
         if v not in (None, ''): return v
     return None
 
@@ -99,7 +101,8 @@ def balanced_inner(s, start):
         if depth == 0: return tag, s[body:mm.start()]
         pos = mm.end()
 
-def elem_spec(el_html, rules):
+def elem_spec(el_html, rules, screens=''):
+    maxscr = '1600' if '1600' in str(screens) else '1200'
     # у последнего элемента блока в кусок попадает хвост записи (script/noscript Метрики и т.п.) — отрезаем
     el_html = re.split(r'<(?:script|noscript)\b', el_html, 1)[0]
     m = re.search(r'data-elem-id=[\'"](\d+)[\'"]', el_html); eid = m.group(1)
@@ -120,6 +123,19 @@ def elem_spec(el_html, rules):
             html_inner = re.sub(r'\s+', ' ', t).strip()
             t = re.sub(r'<br\s*/?>', '⏎', t); t = re.sub(r'<[^>]+>', '', t)
             text = H.unescape(re.sub(r'[ \t\r\n]+', ' ', t)).strip()
+    # data-field-* — источник координат для рантайма Тильды (CSS экспорта иногда устаревший): каскад по экранам
+    df = dict(re.findall(r'data-field-([\w-]+)-value="([^"]*)"', el_html))
+    def dval(key, scr):
+        order = ['320', '480', '640', '960', '1200', '1600']
+        for sc in order[order.index(scr):]:
+            if sc == '1600' and maxscr != '1600': continue
+            v = df.get(key) if sc == maxscr else df.get(f'{key}-res-{sc}')
+            if v not in (None, ''): return v
+        return None
+    data = {}
+    for scr in SCREENS:
+        d = {k: dval(k, scr) for k in ('top', 'left', 'width', 'height', 'container', 'axisx', 'axisy', 'topunits', 'leftunits', 'widthunits', 'heightunits')}
+        data[scr] = d
     href = re.search(r"<a[^>]*class=['\"]tn-atom(?:\s[^'\"]*)?['\"][^>]*href=[\"']([^\"']*)[\"']", el_html) or re.search(r"href=[\"']([^\"']*)[\"'][^>]*class=['\"]tn-atom(?:\s[^'\"]*)?['\"]", el_html)
     href = href.group(1) if href else ''
     img = re.search(r"data-original=[\"']([^\"']*)[\"']", el_html) or re.search(r"<img[^>]*src=[\"']([^\"']*)[\"']", el_html)
@@ -140,7 +156,8 @@ def elem_spec(el_html, rules):
     for scr in SCREENS:
         r = rules.get((eid, scr, 'elem'), {}); a = rules.get((eid, scr, 'atom'), {}); hv = rules.get((eid, scr, 'hover'), {})
         # 'px' без числа — пустое значение в экспорте (width:px), в каскад не берём (рантайм берёт значение большего экрана)
-        g = {k: r[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'opacity', 'text-align') if k in r and r[k] not in ('px', '')}  # text-align Тильда пишет на элемент, не на атом
+        g = {k: r[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'text-align', 'backdrop-filter') if k in r and r[k] not in ('px', '')}  # text-align Тильда пишет на элемент, не на атом
+        if r.get('opacity') not in (None, ''): g['$elem-opacity'] = r['opacity']  # opacity элемента (anim-hidden и т.п.) — отдельный слой от opacity атома
         for k in ('font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color', 'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow', 'background-position', 'background-size', 'object-fit', 'white-space', 'padding', 'display', 'justify-content', 'align-items'):
             if k in a: g[k] = a[k]
         for k, v in a.items():
@@ -158,7 +175,7 @@ def elem_spec(el_html, rules):
             if k in r and r[k] != '': g[k] = r[k]
         if hv: g['hover'] = '{' + ' '.join(f'{k}:{v}' for k, v in hv.items()) + '}'
         if g: geo[scr] = g
-    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, sbs=sbs, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
+    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, data=data, anim=anim, sbs=sbs, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
 
 def block_spec(rec_html):
     rid = re.match(r'<div id="(rec\d+)"', rec_html).group(1)
@@ -170,7 +187,8 @@ def block_spec(rec_html):
     artattrs = dict(re.findall(r'data-artboard-([\w-]+)="([^"]*)"', art.group(0))) if art else {}
     artcss = {scr: rules.get(('ARTBOARD', scr, 'elem'), {}) for scr in SCREENS}
     els = re.split(r"(?=<div class='t396__elem tn-elem)", rec_html)[1:]
-    specs = [elem_spec(e, rules) for e in els]
+    specs = [elem_spec(e, rules, artattrs.get('screens', '')) for e in els]
+    maxscr = '1600' if '1600' in artattrs.get('screens', '') else '1200'
     # группы (tn-group / molecule): дерево вложенности обходом тегов, стили контейнера и молекулы
     groups = []
     tree = []
@@ -202,7 +220,7 @@ def block_spec(rec_html):
             absxy = {}
             if 'top' in fields and 'left' in fields and attrs.get('type-value', 'physical') == 'physical':
                 for scr in SCREENS:
-                    top = gattr(attrs, 'top', scr); left = gattr(attrs, 'left', scr)
+                    top = gattr(attrs, 'top', scr, maxscr); left = gattr(attrs, 'left', scr, maxscr)
                     if top is None or left is None: continue
                     absxy[scr] = (float(top), float(left))
                     d = geo.setdefault(scr, {})
@@ -210,7 +228,7 @@ def block_spec(rec_html):
                     if pxy:
                         d['top'] = f'{float(top) - pxy[0]:g}px'; d['left'] = f'{float(left) - pxy[1]:g}px'
                     else:
-                        cont = gattr(attrs, 'container', scr) or 'grid'
+                        cont = gattr(attrs, 'container', scr, maxscr) or 'grid'
                         d['top'] = f'{float(top):g}px'
                         d['left'] = f'calc(50% - {ART_W[scr] / 2:g}px + {float(left):g}px)' if cont == 'grid' else f'{float(left):g}px'
             node = dict(kind='group', id=gid, absxy=absxy, cls=' '.join(c for c in cl.split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate', 't396__elem-flex')),
@@ -222,6 +240,45 @@ def block_spec(rec_html):
         em = re.search(r"class='t396__elem tn-elem[^']*'[^>]*data-elem-id='(\d+)'", tag)
         if em:
             (stack[-1][0]['children'] if stack else tree).append(dict(kind='elem', id=em.group(1)))
+    # родительская группа каждого элемента (для перевода абсолютных data-координат в относительные)
+    parent_of = {}
+    def walk(nodes, parent):
+        for n in nodes:
+            if n['kind'] == 'group': walk(n['children'], n)
+            else: parent_of[n['id']] = parent
+    walk(tree, None)
+    by_id = {sp['id']: sp for sp in specs}
+    for sp in specs:
+        par = parent_of.get(sp['id'])
+        # элемент с классом t396__elem-flex, но без группы-родителя в экспорте (группа потеряна) — позиционируем абсолютно
+        orphan = sp['flex'] and par is None
+        if orphan: sp['flex'] = False
+        if sp['flex']: continue  # flex-дети раскладывает молекула
+        for scr in SCREENS:
+            d = sp['data'].get(scr) or {}
+            if d.get('top') is None or d.get('left') is None: continue
+            if (d.get('axisx') or 'left') != 'left' or (d.get('axisy') or 'top') != 'top': continue
+            if (d.get('topunits') or 'px') != 'px' or (d.get('leftunits') or 'px') != 'px': continue
+            try: top, left = float(d['top']), float(d['left'])
+            except ValueError: continue
+            pxy = (par or {}).get('absxy', {}).get(scr) if par else None
+            if par and not pxy: continue
+            if pxy: top, left = top - pxy[0], left - pxy[1]
+            g = sp['geo'].setdefault(scr, {})
+            # сирота flex-группы: ширина в CSS — доля молекулы (100%), берём из data
+            if orphan and d.get('width') and (d.get('widthunits') or 'px') == 'px':
+                try: g['width'] = f"{float(d['width']):g}px"
+                except ValueError: pass
+            # top: только если в CSS простое число
+            mt = re.fullmatch(r'(-?[\d.]+)px', (g.get('top') or '').strip())
+            if mt and abs(float(mt.group(1)) - top) > 0.5: g['top'] = f'{top:g}px'
+            elif not g.get('top') and scr == '1200': g['top'] = f'{top:g}px'
+            cl = (g.get('left') or '').strip()
+            ml = re.fullmatch(r'(-?[\d.]+)px', cl)
+            mg = re.fullmatch(r'calc\(50% - ([\d.]+)px \+ (-?[\d.]+)px\)', cl)
+            if ml and abs(float(ml.group(1)) - left) > 0.5: g['left'] = f'{left:g}px'
+            elif mg and abs(float(mg.group(1)) - ART_W[scr] / 2) < 0.5 and abs(float(mg.group(2)) - left) > 0.5: g['left'] = f'calc(50% - {ART_W[scr] / 2:g}px + {left:g}px)'
+            elif not cl and scr == '1200' and not par: g['left'] = f'calc(50% - {ART_W[scr] / 2:g}px + {left:g}px)' if (d.get('container') or 'grid') == 'grid' else f'{left:g}px'
     # sort by top at 1200 then left
     def key(s):
         g = s['geo'].get('1200', {})

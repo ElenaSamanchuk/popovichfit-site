@@ -11,6 +11,8 @@ const cls = computed(() => `tz__el tz__el--${e.type} e${e.id}${e.cls ? ' ' + e.c
 
 // карточки тарифов: начальное состояние из данных (SSR), клики — utils/pf-cards.ts
 const pfKey = inject<string | null>('pfKey', null)
+const eager = inject<boolean>('pfEagerImages', false)
+const loading = eager ? 'eager' : 'lazy'
 const pf = computed(() => (pfKey && tariffs[pfKey] ? tariffs[pfKey]!.options[tariffs[pfKey]!.defaultOption || 0] : null))
 const classes = (e.cls || '').split(' ')
 const html = computed(() => {
@@ -43,9 +45,9 @@ const isInternal = computed(() => !!e.href && e.href.startsWith('/') && !e.href.
 
   <!-- картинка -->
   <template v-else-if="e.type === 'image'">
-    <NuxtLink v-if="isInternal" :to="href!" :class="cls"><img :src="e.img" alt="" loading="lazy"></NuxtLink>
-    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><img :src="e.img" alt="" loading="lazy"></a>
-    <div v-else :class="cls"><img :src="e.img" alt="" loading="lazy"></div>
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls"><img :src="e.img" alt="" :loading="loading"></NuxtLink>
+    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><img :src="e.img" alt="" :loading="loading"></a>
+    <div v-else :class="cls"><img :src="e.img" alt="" :loading="loading"></div>
   </template>
 
   <!-- фигура (картинка фона — в CSS элемента, см. elemRules: url + градиент) -->

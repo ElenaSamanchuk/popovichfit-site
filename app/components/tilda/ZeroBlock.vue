@@ -12,11 +12,15 @@ useHead({ style: [{ key: 'zb-' + props.block.id, innerHTML: css.value }] })
 const elemMap = computed(() => new Map((props.block.elems ?? []).map((e) => [e.id, e as ZeroElem])))
 /** дерево (новые данные) или плоский список (совместимость) */
 const tree = computed<ZeroNode[]>(() => props.block.tree ?? (props.block.elems ?? []).map((e) => ({ kind: 'elem', id: e.id })))
-const fixedStyle = computed(() => {
+// фиксированный артборд (шапка/плашка): как у Тильды — fixed сам артборд (.tz__art), а секция остаётся в потоке высотой 0
+const fixedStyle = computed(() => (props.block.artboard?.fixed ? { height: 0, padding: 0 } as Record<string, string | number> : undefined))
+const artStyle = computed(() => {
   const a = props.block.artboard
   if (!a?.fixed) return undefined
   return { position: 'fixed', left: 0, width: '100%', zIndex: 1000, [a.fixedPos === 'bottom' ? 'bottom' : 'top']: 0 } as Record<string, string | number>
 })
+// картинки в fixed/«прилипающем» артборде: lazy-loading в clip-path-контейнере их не грузит → eager
+provide('pfEagerImages', !!props.block.artboard?.fixed || (props.block.uc || []).includes('uc-sticky-footer'))
 const root = ref<HTMLElement | null>(null)
 // карточки тарифов внутри блока — после гидрации этого компонента (плагин может отработать раньше)
 onMounted(() => { if (root.value?.querySelector('.pf-card')) nextTick(() => initPfCards(root.value!)) })
@@ -42,7 +46,7 @@ const padStyle = computed(() => {
     :style="[fixedStyle, block.bg ? { backgroundColor: block.bg } : undefined, block.artboard?.ovrflw === 'auto' ? { overflowX: 'auto', overflowY: 'hidden' } : undefined, padStyle]"
     :data-tilda-rec="block.id"
   >
-    <div class="tz__art relative w-full">
+    <div class="tz__art relative w-full" :style="artStyle">
       <ZeroNode v-for="(n, i) in tree" :key="n.id + i" :node="n" :elems="elemMap" />
     </div>
   </section>

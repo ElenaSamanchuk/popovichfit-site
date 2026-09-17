@@ -76,7 +76,7 @@ def parse_left(v):
     if m: return {'a': 'window-left', 'x': 0.0, 'xpct': float(m.group(1))}
     return {'a': 'raw', 'raw': v}
 
-STYLE_KEYS = ('icon', 'btn-color', 'btn-hover-color', 'btn-pad', 'btn-gap', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
+STYLE_KEYS = ('icon', 'btn-color', 'btn-hover-color', 'btn-pad', 'btn-gap', 'backdrop-filter', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
               'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow',
               'background-position', 'background-size', 'white-space', 'padding', 'justify-content', 'align-items', 'z-index',
               'text-decoration', 'font-style', 'background-attachment', 'background-repeat', 'overflow', 'display')

@@ -46,7 +46,7 @@ const RANGES = [
 
 // font-family берём из стиля: на сайте кроме Involve есть Manrope, Unbounded, Arial; var(--t-text-font,Arial) на живом
 // сайте не определена → Arial (resolveVars подставляет фолбэк); RockStar без @font-face → фолбэк Arial, как на живом
-const SKIP_STYLE = new Set(['z-index', 'hover', 'display', 'icon', 'btn-color', 'btn-pad', 'btn-gap'])
+const SKIP_STYLE = new Set(['z-index', 'hover', 'display', 'icon', 'btn-color', 'btn-pad', 'btn-gap', 'opacity', 'background-color']) // opacity/фон — см. opacityCss
 
 function num(v: Px | undefined, mobile: boolean): string | null {
   if (v === null || v === undefined) return null
@@ -92,9 +92,50 @@ function posCss(left: Left | null | undefined, mobile: boolean, artW: number): s
   }
 }
 
+/** rgba(цвет, альфа) из #rgb/#rrggbb/rgb()/rgba() */
+function withAlpha(color: string, a: number): string {
+  const c = color.trim()
+  const hex = /^#([0-9a-f]{3,8})$/i.exec(c)
+  if (hex) { let h = hex[1]!; if (h.length === 3 || h.length === 4) h = [...h].map((x) => x + x).join(''); const n = parseInt(h.slice(0, 6), 16); return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})` }
+  const m = /^rgba?\(([^)]+)\)$/.exec(c)
+  if (m) { const p = m[1]!.split(',').map((x) => x.trim()); return `rgba(${p[0]},${p[1]},${p[2]},${a})` }
+  return color
+}
+/** прозрачность и фон: слой элемента (anim-hidden / шаг sbs) × слой атома (стиль) — у Тильды это разные элементы;
+ *  элемент с backdrop-filter и полупрозрачным фоном Тильда переводит в rgba-фон с opacity 1 (t_animationSBS__chromeFixBackdropFilter) */
+function opacityCss(e: ZeroElem, st: Record<string, string>, sbsStep?: number): string {
+  const atom = st.opacity !== undefined ? Number(st.opacity) : 1
+  let elem = st['$elem-opacity'] !== undefined ? Number(st['$elem-opacity']) : 1
+  if (sbsStep !== undefined) elem = sbsStep // пошаговая анимация задаёт прозрачность элемента сама
+  else if ((e.cls || '').includes('t396__elem--anim-hidden')) elem = 1 // «скрыт до анимации появления» — конечное состояние
+  const resolvedBg = st['background-color'] ? resolveVars(st['background-color'], st) : ''
+  const bg = resolvedBg && !/^(initial|transparent|none)$/.test(resolvedBg.trim()) ? resolvedBg : ''
+  let css = ''
+  // chrome-fix Тильда применяет только к элементам с пошаговой анимацией (t_animationSBS__chromeFixBackdropFilter)
+  if (e.sbs && st['backdrop-filter'] && bg && atom < 1) {
+    css += `background-color:${withAlpha(bg, Math.round(atom * elem * 1000) / 1000)};`
+    if (elem !== 1) css += `opacity:${elem};`
+    return css
+  }
+  if (bg) css += `background-color:${bg};`
+  const v = Math.round(atom * elem * 1000) / 1000
+  if (v !== 1 || st.opacity !== undefined || st['$elem-opacity'] !== undefined || sbsStep !== undefined) css += `opacity:${v};`
+  return css
+}
+/** центрированный по оси X элемент: половина ширины в CSS экспорта бывает устаревшей — берём из реальной ширины */
+function centeredLeft(e: ZeroElem, eff: Eff): Left | null | undefined {
+  const l = eff.left
+  if (!l || l.a !== 'grid' || l.half === undefined || e.fields?.axisx !== 'center') return l
+  const w = eff.width
+  if (typeof w === 'number') return { ...l, half: w / 2 }
+  if (w && typeof w === 'object' && 'pct' in w) return { a: 'center-pct', pct: w.pct / 2, x: l.x ?? 0 }
+  return l
+}
+
 function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: number): string {
   const st = eff.style ?? {}
-  let css = posCss(eff.left, mobile, artW)
+  let css = posCss(centeredLeft(e, eff), mobile, artW)
+  css += opacityCss(e, st, e.sbs?.steps?.[0]?.op)
   const top = num(eff.top, mobile); if (top !== null) css += `top:${top};`
   const w = num(eff.width, mobile); if (w !== null) css += `width:${w};`
   // html-вставка (iframe с padding-top в %) у Тильды растёт по содержимому (элемент display:table) → min-height
@@ -118,7 +159,7 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   }
   // рамка из переменных Тильды
   if (st['$borderwidth'] && st['$borderwidth'] !== '0px' && st['$bordercolor']) css += `border:${st['$borderwidth']} ${st['$borderstyle'] ?? 'solid'} ${st['$bordercolor']};`
-  // фон кнопок/фигур из переменных
+  // фон кнопок/фигур из переменных (явный background-color ставит opacityCss)
   if (st['$bgcolor-color'] && !st['background-color']) css += `background-color:${st['$bgcolor-color']};`
   if (st['$bgcolor-image'] && st['$bgcolor-image'] !== 'none' && !st['background-image']) css += `background-image:${st['$bgcolor-image']};`
   let out = `${sel}{${css}}`
@@ -168,14 +209,17 @@ function sbsRules(sel: string, e: ZeroElem): string {
   const first = sbs.steps[0]!
   let out = ''
   const init: string[] = []
-  if (first.op !== undefined) init.push(`opacity:${first.op}`)
+  // прозрачность начального шага уже учтена в elemRules (opacityCss); здесь — transform и состояние по наведению
+  const st = e.eff?.['1200']?.style ?? {}
+  const atom = st.opacity !== undefined ? Number(st.opacity) : 1
+  const mul = (op: number) => Math.round(op * (Number.isFinite(atom) ? atom : 1) * 1000) / 1000
   const tr0 = sbsTransform(first); if (tr0) init.push(`transform:${tr0}`)
   if (init.length) out += `${sel}{${init.join(';')}}`
   if (sbs.event === 'hover' && sbs.steps.length > 1) {
     const last = sbs.steps[sbs.steps.length - 1]!
     const dur = sbs.steps.slice(1).reduce((a, s) => a + (s.ti || 0), 0) || 200
     const fin: string[] = []
-    if (last.op !== undefined) fin.push(`opacity:${last.op}`)
+    if (last.op !== undefined) fin.push(st['backdrop-filter'] ? `opacity:${last.op}` : `opacity:${mul(last.op)}`)
     fin.push(`transform:${sbsTransform(last) || 'none'}`)
     // триггер: сам элемент или другие элементы блока (trgels) — через :has() на секции
     const trigger = sbs.trg.length ? `.tz:has(${sbs.trg.map((t) => `.e${t}:hover`).join(',')}) ${sel}` : `${sel}:hover`
@@ -206,11 +250,15 @@ export function zeroBlockCss(b: TildaBlock): string {
     let sec = `${id} .tz__art{`
     // артборд position:absolute (Тильда): запись схлопывается в 0, содержимое наезжает на следующий блок
     if (art.pos === 'absolute') sec += 'position:absolute;left:0;right:0;top:0;'
+    // «прилипающий подвал» (uc-sticky-footer из T123): артборд fixed внизу, секция держит его высоту и открывает при прокрутке
+    const sticky = (b.uc || []).includes('uc-sticky-footer')
+    let stickyCss = ''
+    if (sticky) { sec += 'position:fixed;bottom:0;left:0;width:100%;'; if (art.h) stickyCss = `${id}{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);height:${mobile ? `calc(${art.h} * var(--u))` : art.h + 'px'};}` }
     if (art.h !== null && art.h !== undefined) sec += `height:${mobile ? `calc(${art.h} * var(--u))` : art.h + 'px'};`
     if (art.bg) sec += `background-color:${art.bg};`
     if (art.bgImage && art.bgImage !== 'none') sec += `background-image:${art.bgImage};background-size:cover;background-position:center;`
     sec += '}'
-    parts.push(`@media ${r.media}{${u}${sec}`)
+    parts.push(`@media ${r.media}{${u}${sec}${stickyCss}`)
     for (const g of b.groups ?? []) {
       const eff = g.eff?.[r.scr] ?? {}
       const mol = g.mol?.[r.scr] ?? {}

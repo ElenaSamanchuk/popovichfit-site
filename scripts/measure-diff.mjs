@@ -26,7 +26,7 @@ const live = JSON.parse(fs.readFileSync(specFile, 'utf8'))
 
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: w, height: 900 } })
-await page.goto((process.env.BASE || 'http://localhost:3500') + url, { waitUntil: 'load', timeout: 60000 })
+await page.goto((process.env.BASE || 'http://localhost:3500') + (process.env.LOCAL_URL || url), { waitUntil: 'load', timeout: 60000 })
 await page.waitForTimeout(1500)
 await page.evaluate(async () => { const h = document.body.scrollHeight; for (let y = 0; y < h; y += 700) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)) } scrollTo(0, 0) })
 await page.waitForTimeout(500)
@@ -74,6 +74,8 @@ let total = 0, bad = 0
 for (const rec of live.recs) {
   if (SHARED.has(rec.id)) continue
   const lr = local.recs[rec.id]
+  // блок той же высоты, но сдвинут по y (выше пропущен мусорный/лишний блок) — элементы сверяем относительно блока
+  const blockDy = lr && Math.abs(lr[3] - rec.rect[3]) <= tol && Math.abs(lr[1] - globalDy - rec.rect[1]) > tol ? lr[1] - globalDy - rec.rect[1] : 0
   if (!(rec.elems || []).length) {
     // типовой блок: только прямоугольник (y и высота); блоки нулевой высоты на живом (скрипты, попапы) — пропускаем,
     // но если локально такой блок получил высоту — это лишний блок (сообщаем)
@@ -84,18 +86,18 @@ for (const rec of live.recs) {
   // zero-попапы (контент T1093): на живом все элементы невидимы → локально живут в модалке (в DOM их нет), не сверяем;
   // но если такой «невидимый на живом» блок локально отрисован в потоке с высотой — это лишний блок
   if ((local.hiddenRecs || []).includes(rec.id)) { if (rec.rect[3] > tol) console.log(`\n## ${rec.id} T${rec.type}  скрыт локально, а на живом виден: live h=${rec.rect[3]}`); continue }
-  if (!(rec.elems || []).some((e) => e.visible)) {
+  if (!(rec.elems || []).some((e) => e.visible && !(e.type === 'group' && !(e.rect[2] > 0 && e.rect[3] > 0)))) {
     if (lr && lr[3] > tol) console.log(`\n## ${rec.id} T${rec.type}  скрытый на живом блок отрисован локально: h=${lr[3]} (live y=${rec.rect[1]} h=${rec.rect[3]})`)
     continue
   }
   const rows = []
   for (const e of rec.elems) {
-    if (!e.visible) continue
+    if (!e.visible || (e.type === 'group' && !(e.rect[2] > 0 && e.rect[3] > 0))) continue
     const l = local.elems[rec.id + ':' + e.id]
     total++
     if (!l) { rows.push(`  ✗ #${e.id} [${e.type}] нет на локальной  live@${e.rect.join(',')} ${(e.text || '').slice(0, 40)}`); bad++; continue }
     if (!l.visible) { rows.push(`  ✗ #${e.id} [${e.type}] скрыт локально  live@${e.rect.join(',')} ${(e.text || '').slice(0, 40)}`); bad++; continue }
-    const d = e.rect.map((v, i) => l.rect[i] - v); d[1] -= globalDy
+    const d = e.rect.map((v, i) => l.rect[i] - v); d[1] -= globalDy + blockDy
     if (e.opacity != null && l.opacity !== e.opacity && Math.abs(+l.opacity - +e.opacity) > 0.05) { rows.push(`  ✗ #${e.id} [${e.type}] opacity live ${e.opacity} / local ${l.opacity}  ${(e.text || '').slice(0, 40)}`); bad++; continue }
     const notes = []
     if (d.some((v) => Math.abs(v) > tol)) notes.push(`dx=${d[0]} dy=${d[1]} dw=${d[2]} dh=${d[3]}`)
@@ -111,13 +113,16 @@ for (const rec of live.recs) {
       if (e.transform !== l.transform) notes.push(`text-transform live ${e.transform} / local ${l.transform}`)
     }
     if (styles && e.type !== 'image' && e.type !== 'vector') {
-      if (e.bg !== l.bg && !(isTransparent(e.bg) && isTransparent(l.bg))) notes.push(`фон live ${e.bg} / local ${l.bg}`)
+      // полупрозрачный «кружок» с backdrop-filter: Тильда (chrome-fix для sbs-анимаций) переносит rgba-фон с атома на элемент,
+      // замер live видит прозрачный атом — у нас тот же rgba на элементе, визуально одно и то же
+      const faint = /^rgba\([^)]*,\s*0?\.[0-3]\d*\)$/.test(l.bg || '')
+      if (e.bg !== l.bg && !(isTransparent(e.bg) && (isTransparent(l.bg) || faint))) notes.push(`фон live ${e.bg} / local ${l.bg}`)
       if (e.radius !== l.radius && e.type !== 'text') notes.push(`radius live ${e.radius} / local ${l.radius}`)
       if ((e.bgImage || '') !== (l.bgImage || '') && baseName(e.bgImage) !== baseName(l.bgImage)) notes.push(`bg-image live ${e.bgImage || '—'} / local ${l.bgImage || '—'}`)
     }
     if (notes.length) { bad++; rows.push(`  Δ #${e.id} [${e.type}] ${notes.join(' | ')}  live@${e.rect.join(',')}  ${(e.text || '').slice(0, 40)}`) }
   }
-  const recNote = lr ? (Math.abs(lr[1] - globalDy - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol ? `  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local y=${lr[1] - globalDy} h=${lr[3]}` : '') : '  блок отсутствует локально'
+  const recNote = lr ? (Math.abs(lr[1] - globalDy - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol ? `  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local y=${lr[1] - globalDy} h=${lr[3]}${blockDy ? ' (сдвиг блока целиком на ' + blockDy + 'px — элементы сверены относительно блока)' : ''}` : '') : '  блок отсутствует локально'
   if (rows.length || recNote) { console.log(`\n## ${rec.id} T${rec.type}${recNote}`); rows.slice(0, 25).forEach((r) => console.log(r)); if (rows.length > 25) console.log(`  … ещё ${rows.length - 25}`) }
 }
 console.log(`\nэлементов: ${total}, с расхождениями > ${tol}px: ${bad}`)
