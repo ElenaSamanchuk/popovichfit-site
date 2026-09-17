@@ -7,9 +7,36 @@ import re, sys, os, json, html as H
 ROOT = 'old-site'
 SCREENS = ['1200', '960', '640', '480', '320']
 
+ART_W = {'1200': 1200, '960': 960, '640': 640, '480': 480, '320': 320}
+
+def gattr(attrs, key, scr):
+    """значение поля группы для разрешения с каскадом вверх (t396_group__getFieldValue): res-N → ближайшее большее → база"""
+    order = ['320', '480', '640', '960', '1200']
+    for s in order[order.index(scr):]:
+        v = attrs.get(f'{key}-value') if s == '1200' else attrs.get(f'{key}-res-{s}-value')
+        if v not in (None, ''): return v
+    return None
+
+def strip_at_blocks(css, at):
+    """убрать блоки @supports…{…} (с вложенными скобками)"""
+    out = []; pos = 0
+    for m in re.finditer(re.escape(at) + r'[^{]*\{', css):
+        if m.start() < pos: continue
+        out.append(css[pos:m.start()])
+        depth = 1; i = m.end()
+        while depth and i < len(css):
+            if css[i] == '{': depth += 1
+            elif css[i] == '}': depth -= 1
+            i += 1
+        pos = i
+    out.append(css[pos:])
+    return ''.join(out)
+
 def parse_style_rules(style_css, rec):
     """#recNNN .tn-elem[data-elem-id="X"]{...} и @media → {(elem_id, screen): {prop: val}}"""
     rules = {}
+    # @supports (-webkit-touch-callout:none) … { gap:0; margin-bottom } — фолбэк для старого iOS, в каскад не берём
+    style_css = strip_at_blocks(style_css, '@supports')
     # split media blocks
     pos = 0
     out = []
@@ -102,7 +129,8 @@ def elem_spec(el_html, rules):
     geo = {}
     for scr in SCREENS:
         r = rules.get((eid, scr, 'elem'), {}); a = rules.get((eid, scr, 'atom'), {}); hv = rules.get((eid, scr, 'hover'), {})
-        g = {k: r[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'opacity') if k in r}
+        # 'px' без числа — пустое значение в экспорте (width:px), в каскад не берём (рантайм берёт значение большего экрана)
+        g = {k: r[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'opacity', 'text-align') if k in r and r[k] not in ('px', '')}  # text-align Тильда пишет на элемент, не на атом
         for k in ('font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color', 'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow', 'background-position', 'background-size', 'object-fit', 'white-space', 'padding', 'display', 'justify-content', 'align-items'):
             if k in a: g[k] = a[k]
         for k, v in a.items():
@@ -150,12 +178,30 @@ def block_spec(rec_html):
             geo = {}
             for scr in SCREENS:
                 g = rules.get(('G' + gid, scr, 'group'), {}); mol = rules.get(('G' + gid, scr, 'molecule'), {})
-                d = {k: g[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width') if k in g and g[k] != ''}
+                d = {k: g[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width') if k in g and g[k] not in ('', 'px')}
                 for k, v in mol.items():
                     if k in ('display', 'flex-direction', 'row-gap', 'column-gap', 'gap', 'align-items', 'justify-content', 'padding', 'background-color', 'border-radius', 'box-shadow', 'flex-wrap', 'background-image', 'border-width', 'border-color', 'border-style', 'opacity', 'width', 'height', 'align-content'):
                         d['mol.' + k] = v
                 if d: geo[scr] = d
-            node = dict(kind='group', id=gid, cls=' '.join(c for c in cl.split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate', 't396__elem-flex')),
+            # позиция группы: как в рантайме Тильды (t396_group__renderView) — из data-group-top/left(-res-N)-value,
+            # абсолютных в артборде, за вычетом координат родительской группы; CSS экспорта для групп бывает устаревшим
+            fm = re.search(r'data-fields="([^"]*)"', tag); fields = fm.group(1).split(',') if fm else []
+            parent = stack[-1][0] if stack else None
+            absxy = {}
+            if 'top' in fields and 'left' in fields and attrs.get('type-value', 'physical') == 'physical':
+                for scr in SCREENS:
+                    top = gattr(attrs, 'top', scr); left = gattr(attrs, 'left', scr)
+                    if top is None or left is None: continue
+                    absxy[scr] = (float(top), float(left))
+                    d = geo.setdefault(scr, {})
+                    pxy = (parent or {}).get('absxy', {}).get(scr) if parent else None
+                    if pxy:
+                        d['top'] = f'{float(top) - pxy[0]:g}px'; d['left'] = f'{float(left) - pxy[1]:g}px'
+                    else:
+                        cont = gattr(attrs, 'container', scr) or 'grid'
+                        d['top'] = f'{float(top):g}px'
+                        d['left'] = f'calc(50% - {ART_W[scr] / 2:g}px + {float(left):g}px)' if cont == 'grid' else f'{float(left):g}px'
+            node = dict(kind='group', id=gid, absxy=absxy, cls=' '.join(c for c in cl.split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate', 't396__elem-flex')),
                         flex='t396__elem-flex' in cl, molFlex='t396__group-flex' in cl, attrs={k: v for k, v in attrs.items() if k in ('flex', 'flexdirection', 'flexalignitems', 'padding', 'widthmode', 'heightmode', 'type-value')}, geo=geo, children=[])
             groups.append(dict(id=gid, cls=node['cls'], flex=node['flex'], molFlex=node['molFlex'], attrs=node['attrs'], geo=geo))
             (stack[-1][0]['children'] if stack else tree).append(node)

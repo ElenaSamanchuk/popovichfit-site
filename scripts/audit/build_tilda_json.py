@@ -57,8 +57,9 @@ def px(v):
 def parse_left(v):
     if v is None: return None
     v = v.strip()
-    m = re.fullmatch(r'calc\(50% - (\d+)px \+ (-?[\d.]+)px\)', v)
-    if m: return {'a': 'grid', 'x': float(m.group(2))}
+    # calc(50% - Hpx + Xpx): H = половина артборда (grid) или половина ширины элемента (axisx=center) — различает posCss
+    m = re.fullmatch(r'calc\(50% - ([\d.]+)px \+ (-?[\d.]+)px\)', v)
+    if m: return {'a': 'grid', 'x': float(m.group(2)), 'half': float(m.group(1))}
     m = re.fullmatch(r'calc\(50% \+ (\d+)px - ([\d.]+)px \+ (-?[\d.]+)px\)', v)
     if m: return {'a': 'grid-right', 'x': float(m.group(3)), 'w': float(m.group(2))}
     m = re.fullmatch(r'calc\(100% - ([\d.]+)px \+ (-?[\d.]+)px\)', v)

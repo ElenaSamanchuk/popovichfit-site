@@ -24,7 +24,9 @@ const youtubeId = computed(() => b.html?.match(/data-videolazy-id="([^"]+)"/)?.[
 const bgImage = computed(() => b.html?.match(/data-src="([^"]+)"/)?.[1] || b.html?.match(/url\('([^']+)'\)/)?.[1])
 /** HTML-код (T123): показываем только видимую разметку без скриптов (скрипты Тильды/фрилансеров не переносятся) */
 const customHtml = computed(() => (b.custom || '').replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<!--[\s\S]*?-->/g, '').trim())
-const customVisible = computed(() => b.type === '131' && /<(div|iframe|img|p|a|span|table|h\d|ul)\b/.test(customHtml.value))
+// прелоадеры (NOLIM NLM048 «nl_reploader», mt-webdesign) — оверлей на 3 с, в статике не нужен → блок пропускаем
+const isPreloader = computed(() => /NLM048|nl_reploader|simple-preloader/i.test(b.custom || ''))
+const customVisible = computed(() => b.type === '131' && !isPreloader.value && /<(div|iframe|img|p|a|span|table|h\d|ul)\b/.test(customHtml.value))
 
 if (b.css) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: b.css }] })
 const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"/)?.[1] : undefined)

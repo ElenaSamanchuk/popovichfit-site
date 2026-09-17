@@ -4,7 +4,8 @@
  * в своём диапазоне ширин; на мобильных артбордах (320 всегда; 480 при upscale=window) геометрия
  * масштабируется на ширину экрана (единица --u = 100vw/ширина артборда), шрифты не масштабируются.
  */
-export type Left = { a: 'grid' | 'grid-right' | 'window-left' | 'window-right' | 'center-pct' | 'raw'; x?: number; w?: number; pct?: number; xpct?: number; raw?: string }
+/** half — вычитаемое из calc(50% - half + x): половина артборда (обычный grid) или половина ширины элемента (axisx=center) */
+export type Left = { a: 'grid' | 'grid-right' | 'window-left' | 'window-right' | 'center-pct' | 'raw'; x?: number; w?: number; pct?: number; xpct?: number; raw?: string; half?: number }
 export type Px = number | { pct: number } | null
 export interface Eff { left?: Left | null; top?: Px; width?: Px; height?: Px; style?: Record<string, string> }
 export interface ZeroElem {
@@ -58,6 +59,8 @@ function posCss(left: Left | null | undefined, mobile: boolean, artW: number): s
   switch (left.a) {
     case 'grid': {
       const xp = left.xpct !== undefined ? ` + ${left.xpct}%` : ''
+      // элемент с axisx=center: calc(50% - w/2 + x) — центр артборда, а не его левый край
+      if (left.half !== undefined && Math.abs(left.half - artW / 2) > 0.5) return `left:calc(50% - ${u(left.half)} + ${u(x)}${xp});`
       return mobile ? `left:calc(${x} * var(--u)${xp});` : `left:calc(50% - ${artW / 2}px + ${x}px${xp});`
     }
     case 'grid-right':
@@ -82,10 +85,14 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   const w = num(eff.width, mobile); if (w !== null) css += `width:${w};`
   const h = num(eff.height, mobile); if (h !== null) css += `height:${h};`
   if (st['z-index']) css += `z-index:${st['z-index']};`
+  // фигура с картинкой (data-original / inline url): картинка + градиент из стиля, как у Тильды
+  const shapeImg = e.type === 'shape' ? e.bgImg || e.img : undefined
+  if (shapeImg && !(st['background-image'] && !/none|initial/.test(st['background-image']))) css += `background-image:url('${shapeImg}');`
   for (const [k, v0] of Object.entries(st)) {
     if (k.startsWith('$') || SKIP_STYLE.has(k)) continue
     let v = resolveVars(v0, st)
     if (k === 'background-image' && (v === 'none' || v === 'initial')) continue
+    if (k === 'background-image' && shapeImg) v = `url('${shapeImg}'),${v}`
     if ((k === 'border-color' || k === 'border-width') && /initial|transparent|^0$/.test(v)) continue
     if (k === 'width' || k === 'height') continue
     css += `${k}:${v};`

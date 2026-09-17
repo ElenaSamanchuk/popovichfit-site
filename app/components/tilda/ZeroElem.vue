@@ -20,8 +20,6 @@ const html = computed(() => {
 })
 const btnText = computed(() => (pf.value && classes.includes('pf-price-new') ? pf.value.newPrice : e.text))
 const href = computed(() => (pf.value && classes.includes('pf-buy') ? pf.value.link : e.href))
-// фигура с картинкой: inline background-image или ленивый data-original (img)
-const bgStyle = computed(() => (e.bgImg || e.img ? { backgroundImage: `url('${e.bgImg || e.img}')` } : undefined))
 /** внешняя ссылка? → target/rel; hash и tg: — как есть */
 const isExternal = computed(() => !!e.href && /^https?:\/\//.test(e.href) && !e.href.includes('popovichfit.ru'))
 const hasIcon = computed(() => Object.values(e.eff ?? {}).some((x) => x.style?.icon))
@@ -31,9 +29,9 @@ const isInternal = computed(() => !!e.href && e.href.startsWith('/') && !e.href.
 <template>
   <!-- текст -->
   <template v-if="e.type === 'text'">
-    <NuxtLink v-if="isInternal" :to="href!" :class="cls" v-html="html" />
-    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" v-html="html" />
-    <component :is="e.tag || 'div'" v-else :class="cls" v-html="html" />
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls"><span class="tz__atom" v-html="html" /></NuxtLink>
+    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined"><span class="tz__atom" v-html="html" /></a>
+    <component :is="e.tag || 'div'" v-else :class="cls"><span class="tz__atom" v-html="html" /></component>
   </template>
 
   <!-- кнопка -->
@@ -50,11 +48,11 @@ const isInternal = computed(() => !!e.href && e.href.startsWith('/') && !e.href.
     <div v-else :class="cls"><img :src="e.img" alt="" loading="lazy"></div>
   </template>
 
-  <!-- фигура (в т.ч. с фоновой картинкой) -->
+  <!-- фигура (картинка фона — в CSS элемента, см. elemRules: url + градиент) -->
   <template v-else-if="e.type === 'shape'">
-    <NuxtLink v-if="isInternal" :to="href!" :class="cls" :style="bgStyle" />
-    <a v-else-if="href" :href="href" :class="cls" :style="bgStyle" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" />
-    <div v-else :class="cls" :style="bgStyle" />
+    <NuxtLink v-if="isInternal" :to="href!" :class="cls" />
+    <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" />
+    <div v-else :class="cls" />
   </template>
 
   <!-- inline SVG -->

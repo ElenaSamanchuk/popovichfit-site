@@ -1,0 +1,40 @@
+# /members/signup @1200 — высота 840
+
+## rec868433561 T396 rect=0,0,1200,460  
+   artboard: 0,30,1200,430 bg=rgb(255, 255, 255) img=none pos=relative
+- [shape] #1739912342650 @387,50,426,360 img:linear-gradient(254.16deg, rgb(127, 140, 218) 0%, rgb(141, 149, 212) 100%) size:auto pos:0% 0% r:16px op:0.3
+- [shape] #1739912342657 @402,70,396,270 img:linear-gradient(254.16deg, rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%) size:auto pos:0% 0% r:16px op:0.6
+- [shape] #1739912342662 @730,70,68,68 img:Ellipse_437-min.png.webp size:cover pos:50% 50% r:16px
+- [image] #1739912358498 @425,75,65,41 → https://popovichfit.ru/
+- [shape] #1739912358481 @417,83,82,25 img:linear-gradient(105.12deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:auto pos:0% 0% r:10px
+- [text] #1739914121987 @417,116,381,31 «Регистрация» | 20px/31px 400 Involve rgb(140, 149, 213)
+- [form] #1739914310253 @417,150,364,140
+- [text] #1739914269412 @417,293,372,32 «Регестрируясь, вы соглашаетесь с условиями договора публичной оферты и политикой в отношении обработки персональных данных.» → https://popovichfit.ru/oferta | 10px/16px 400 Involve rgb(0, 0, 0)
+- [button] #1740034028637 @412,355,396,45 → #wqsqa | 16px/normal 400 Involve rgb(255, 255, 255) align:center img:linear-gradient(254.16deg, rgb(127, 140, 218) 0%, rgb(141, 149, 212) 100%) size:auto pos:0% 0% r:10px
+- [button] #1739912342666 @412,355,396,45 → #wqsqa | 16px/normal 400 Involve rgb(255, 255, 255) align:center r:10px
+- [text] #1739912342675 @501,367,241,21 «Зарегестрировать аккаунт» → #wqsqa | 16px/21px 600 Involve rgb(255, 255, 255)
+- [image] #1739912342670 @475,369,16,17 → #wqsqa
+- [text] #1739917767648 @414,424,373,23 «Уже зарегистрированы? Войти» → https://popovichfit.ru/members/login | 15px/23px 400 Involve rgb(0, 0, 0) align:center
+
+## rec869137349 T396 rect=0,460,1200,380  
+   artboard: 0,460,1200,380 bg=rgb(27, 27, 27) img=none pos=relative
+- [button] #1684474819857 @319,494,52,40 «Главная» → https://popovichfit.ru | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [button] #1684474502781 @621,494,57,40 «Обо мне» → https://popovichfit.ru/about | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [button] #1684474502765 @1020,497,144,40 «Личный кабинет» → members/login | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center r:8px
+- [image] #1684474437643 @27,500,123,25 → https://popovichfit.ru
+- [button] #1687263687351 @319,523,199,40 «Основной курс» → https://popovichfit.ru/introduction | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [button] #1684474502785 @621,527,80,40 «Сообщество» → https://popovichfit.ru/community | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [button] #1684474901374 @1019,551,144,40 «Предзапись» → https://t.me/POPOVICHcourse_bot | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:auto pos:0% 0% r:8px
+- [button] #1684474502773 @319,552,199,40 «Введение в умный фитнес» → https://popovichfit.ru/introduction | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [button] #1684474502787 @621,560,41,40 «Media» → https://popovichfit.ru/media | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [image] #1708953929659 @103,578,31,31 → https://www.youtube.com/@popovichfit
+- [image] #1684475897957 @23,579,31,31 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1684478265334 @63,579,31,31 → https://t.me/natalyapopovich87
+- [button] #1684474502777 @319,581,80,40 «Результаты» → https://popovichfit.ru/results | 11px/17.05px 200 Involve rgb(255, 255, 255) r:11px
+- [shape] #1684475554340 @20,652,1160,1 bg:rgb(41, 41, 41)
+- [button] #1684475516477 @320,668,121,40 «Договор - оферта» → https://popovichfit.ru/oferta | 11px/17.05px 100 Involve rgb(189, 189, 189) r:11px
+- [button] #1684475480886 @621,668,382,40 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 11px/17.05px 100 Involve rgb(189, 189, 189) r:11px
+- [image] #1721588527573 @1085,695,30,20 → https://shumann.ru/
+- [button] #1735556731319 @621,708,254,40 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 11px/17.05px 100 Involve rgb(189, 189, 189) r:11px
+- [button] #1708095283912 @320,714,125,47 «ООО "НАЙНТИ НАЙН" ИНН: 2460124961» | 11px/17.05px 100 Involve rgb(189, 189, 189) r:11px
+- [text] #1721588527580 @1030,721,140,16 «PWRD BY NinetyNine» → https://shumann.ru/ | 13px/16px 400 Involve rgb(197, 197, 197) align:center

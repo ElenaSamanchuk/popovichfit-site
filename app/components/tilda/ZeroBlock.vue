@@ -52,7 +52,14 @@ const padStyle = computed(() => {
 .tz .tz__el { position: absolute; box-sizing: border-box; }
 .tz .tz__flex { position: relative !important; left: auto !important; top: auto !important; right: auto !important; height: fit-content; flex-shrink: 0; }
 .tz .tz__group.absolute { position: absolute; }
-.tz .tz__el--text { overflow-wrap: break-word; }
+/* текст — как у Тильды: элемент display:table, атом table-cell с vertical-align:middle
+   (таблица не уже своего min-content → слово шире рамки не переносится, фикс. высота центрирует текст) */
+.tz .tz__el--text { display: table; word-break: normal; }
+.tz .tz__el--text > .tz__atom { display: table-cell; vertical-align: middle; width: 100%; }
+/* списки в тексте — как на живом сайте (Tailwind preflight обнуляет): маркеры, отступ 20px, без внешних отступов */
+.tz .tz__el--text ul { list-style: disc outside; }
+.tz .tz__el--text ol { list-style: decimal outside; }
+.tz .tz__el--text ul, .tz .tz__el--text ol { padding-left: 20px; margin: 0; }
 .tz .tz__el--button { display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; column-gap: 8px; }
 .tz .tz__icon { display: inline-block; flex-shrink: 0; background-color: currentColor; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; }
 .tz .tz__el--image img, .tz .tz__el--vector svg { display: block; width: 100%; height: auto; }
