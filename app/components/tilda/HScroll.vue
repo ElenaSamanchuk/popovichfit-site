@@ -8,7 +8,8 @@ const props = defineProps<{ items: HScrollConfig[] }>()
 const cleanups: Array<() => void> = []
 onMounted(() => {
   for (const cfg of props.items) {
-    const viewport = document.getElementById(cfg.scroll)
+    // прокручивается артборд (.tz__art), как .t396__artboard у Тильды
+    const viewport = document.getElementById(cfg.scroll)?.querySelector<HTMLElement>('.tz__art') || document.getElementById(cfg.scroll)
     if (!viewport) continue
     viewport.classList.add('tz-hscroll')
     // как скрипты Тильды: блок со скроллом получает overflow-x:auto (в данных артборда ovrflw бывает не задан)

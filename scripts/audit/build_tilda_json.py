@@ -303,6 +303,9 @@ def hscroll_configs(blocks):
             ar = re.search(r"blockArrowsId\s*=\s*'#(rec\d+)'", c)
             sh = re.search(r"shiftSize\s*=\s*'(\d+)px'", c)
             out.append({'scroll': sc.group(1), 'arrows': ar.group(1) if ar else None, 'shift': int(sh.group(1)) if sh else 320})
+        elif 'TCD014' in c or 'dragscroll' in c:  # TICODE TCD014 (dragscroll): только перетаскивание, блок из $('#recN')
+            for sc in re.findall(r"\$\('#(rec\d+)'\)", c):
+                out.append({'scroll': sc, 'arrows': None, 'shift': 300})
         elif 'voron-dev.ru/horizontal-scroll' in c:  # VORON: стрелки .scrollback/.scrollfwd, пары блоков по индексу
             arrows = re.findall(r"'#(rec\d+)'", (re.search(r'arrowBlocks\s*=\s*\[([^\]]*)\]', c) or [None, ''])[1])
             scrolls = re.findall(r"'#(rec\d+)'", (re.search(r'scrollableBlocks\s*=\s*\[([^\]]*)\]', c) or [None, ''])[1])

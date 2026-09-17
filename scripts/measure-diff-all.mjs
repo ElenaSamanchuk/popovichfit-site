@@ -37,5 +37,6 @@ let md = `# Сверка геометрии и стилей с живым сай
 for (const r of rows) md += `| \`${r.url}\` | ${r.w} | ${r.total ?? '—'} | ${r.bad ?? '—'} | ${r.missing} | ${r.styles} | ${r.hLive ?? '—'} / ${r.hLocal ?? '—'}${r.hLive && r.hLocal && Math.abs(r.hLive - r.hLocal) > 30 ? ' ⚠' : ''} |${r.err ? ' ошибка: ' + r.err : ''}\n`
 const ok = rows.filter((r) => r.bad !== null && r.bad <= 2).length
 md += `\nСтраниц×ширин: ${rows.length}, с ≤ 2 расхождениями: ${ok}.\n`
-fs.writeFileSync(path.join(OUT, 'SUMMARY.md'), md)
-console.log(`\nготово → docs/specs/diff/SUMMARY.md (в норме ${ok}/${rows.length})`)
+const name = onlyW && onlyW !== '1200' ? `SUMMARY-${onlyW}.md` : 'SUMMARY.md'
+fs.writeFileSync(path.join(OUT, name), md)
+console.log(`\nготово → docs/specs/diff/${name} (в норме ${ok}/${rows.length})`)

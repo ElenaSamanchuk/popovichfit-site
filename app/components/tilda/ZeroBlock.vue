@@ -43,10 +43,11 @@ const padStyle = computed(() => {
     ref="root"
     class="tz relative w-full overflow-visible box-content"
     :class="[block.uc, block.tabHidden ? 't395__off' : '', block.showHidden ? 'tabshide' : '']"
-    :style="[fixedStyle, block.bg ? { backgroundColor: block.bg } : undefined, block.artboard?.ovrflw === 'auto' ? { overflowX: 'auto', overflowY: 'hidden' } : undefined, padStyle]"
+    :style="[fixedStyle, block.bg ? { backgroundColor: block.bg } : undefined, padStyle]"
     :data-tilda-rec="block.id"
   >
-    <div class="tz__art relative w-full" :style="artStyle">
+    <!-- overflow как у артборда Тильды: по умолчанию hidden, data-artboard-ovrflw = visible | auto (горизонтальный скролл) -->
+    <div class="tz__art relative w-full" :class="block.artboard?.ovrflw === 'visible' ? 'overflow-visible' : block.artboard?.ovrflw === 'auto' ? 'overflow-x-auto overflow-y-hidden' : 'overflow-hidden'" :style="artStyle">
       <ZeroNode v-for="(n, i) in tree" :key="n.id + i" :node="n" :elems="elemMap" />
     </div>
   </section>
