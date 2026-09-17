@@ -114,7 +114,17 @@ def clean_block_html(rec_html):
     b = re.sub(r'<!--.*?-->', '', b, flags=re.S)
     b = re.sub(r'src="images/[^"]*__-__(?:resize|empty)[^"]*"\s+data-original="([^"]+)"', r'src="\1"', b)
     b = re.sub(r'data-original="([^"]+)"', r'data-src="\1"', b)
-    return rewrite_links(re.sub(r'\s+', ' ', b).strip())
+    b = re.sub(r'\s+', ' ', b).strip()
+    # корневой <div id="recN" class="r t-rec …" style="padding…"> не берём: id, отступы и фон ставит TildaBlock (иначе дубль id и двойной padding)
+    m = re.match(r'<div id="rec\d+"[^>]*>', b)
+    if m:
+        # содержимое до парного закрывающего тега корня (у последнего блока страницы в кусок попадает хвост страницы)
+        depth = 1; end = len(b)
+        for t in re.finditer(r'<div\b|</div>', b[m.end():]):
+            depth += 1 if t.group(0) == '<div' else -1
+            if depth == 0: end = m.end() + t.start(); break
+        b = b[m.end():end].strip()
+    return rewrite_links(b)
 
 def elem_extra(el_html, etype):
     """inline-SVG (vector), встроенный HTML (html), видео (video), поля формы (form)"""
