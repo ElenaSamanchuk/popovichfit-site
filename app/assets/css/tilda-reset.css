@@ -6,3 +6,7 @@
 .tb ol { list-style: decimal; }
 .tb img { display: inline-block; }
 .tb b, .tb strong { font-weight: 700; }
+
+/* Tailwind preflight даёт кнопкам font:inherit; у Тильды кнопки типовых блоков (например, заголовки FAQ T585) со шрифтом
+   браузера по умолчанию — от него зависит высота строки (line box) */
+.tb button { font-family: Arial, sans-serif; font-size: 13.3333px; line-height: normal; }

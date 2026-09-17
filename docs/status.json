@@ -29,16 +29,16 @@
   "cat": "A",
   "file": "Инвентарь для тренировок",
   "d1200": {
-   "diff": 3,
+   "diff": 1.1,
    "live": 2679,
-   "local": 4599
+   "local": 2679
   },
   "d390": {
-   "diff": 25.6,
+   "diff": 23.5,
    "live": 4707,
-   "local": 9046
+   "local": 4766
   },
-  "at": "2026-09-17T09:47:19.011Z"
+  "at": "2026-09-17T19:18:04.566Z"
  },
  "/page128228306.html": {
   "cat": "F",
@@ -420,11 +420,11 @@
    "local": 4535
   },
   "d390": {
-   "diff": 30.2,
+   "diff": 30.3,
    "live": 5767,
    "local": 5773
   },
-  "at": "2026-09-17T09:46:30.977Z"
+  "at": "2026-09-17T19:17:52.375Z"
  },
  "/menu7": {
   "error": "ers/elena/Projects/popovichfit-site/scripts/shoot-local.mjs:31:16 {\n  log: [\n    '  - navigating to \"http://localhost:3500/menu7\", waiting until \"load\"'\n  ],\n  name: 'TimeoutError'\n}\n\nNode.js v26.0.0\n",
@@ -843,16 +843,16 @@
   "cat": "A",
   "file": "POPOVICHFIT. Онлайн фитнес-клуб Натальи Попович",
   "d1200": {
-   "diff": 3.3,
+   "diff": 1.7,
    "live": 5195,
-   "local": 5193
+   "local": 5195
   },
   "d390": {
-   "diff": 8.7,
+   "diff": 8.6,
    "live": 7278,
-   "local": 7269
+   "local": 7353
   },
-  "at": "2026-09-17T09:43:15.428Z"
+  "at": "2026-09-17T19:17:23.420Z"
  },
  "/page36666832.html": {
   "cat": "S",
@@ -1805,16 +1805,16 @@
   "cat": "A",
   "file": "КУРС СИЛОВОЙ",
   "d1200": {
-   "diff": 6.6,
+   "diff": 6.5,
    "live": 5221,
-   "local": 5205
+   "local": 5203
   },
   "d390": {
-   "diff": 11.5,
+   "diff": 11.3,
    "live": 7101,
-   "local": 7142
+   "local": 7133
   },
-  "at": "2026-09-17T09:44:32.149Z"
+  "at": "2026-09-17T19:17:37.559Z"
  },
  "/page04": {
   "cat": "C",

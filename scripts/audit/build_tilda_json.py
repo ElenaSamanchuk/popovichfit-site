@@ -182,6 +182,11 @@ def parse_page(fname):
             mm = re.search(k + r':\s*(\d+)px', tag); pad[k] = int(mm.group(1)) if mm else None
         uc = re.findall(r'\b(uc-[\w-]+)', cls)
         block = {'id': rid, 'type': t, 'vis': vis, 'bg': bgc, 'pad': pad, 'uc': uc}
+        # отступы записи для отдельных экранов: классы t-rec_pt-res-480_15 / t-rec_pb-res-480_0 (Тильда: @media (max-width:480px) … !important)
+        pad_res = {}
+        for side, res, val in re.findall(r't-rec_p([tb])-res-(\d+)_(\d+)', cls):
+            pad_res.setdefault(res, {})['padding-top' if side == 't' else 'padding-bottom'] = int(val)
+        if pad_res: block['padRes'] = pad_res
         if '.t-rec_pb_75' in r and 'padding-bottom: 0' in r.replace('padding-bottom:0', 'padding-bottom: 0'): pb75zero = True
         if t == '396':
             spec = Z.block_spec(r)

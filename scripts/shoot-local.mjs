@@ -29,12 +29,16 @@ for (const url of urls) {
     const page = await ctx.newPage()
     // cookie-баннер уже принят, плашка ВК не закрыта — как на живых скриншотах (там баннер виден) → не трогаем
     await page.goto(BASE + url, { waitUntil: 'load', timeout: 60000 })
+    // для замера/скриншота ленивые картинки грузим сразу (иначе далёкие от вьюпорта остаются высотой 0)
+    await page.evaluate(() => document.querySelectorAll('img[loading="lazy"]').forEach((i) => { i.loading = 'eager' }))
     await page.waitForTimeout(1500)
     await page.evaluate(async () => {
       const h = document.body.scrollHeight
       for (let y = 0; y < h; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 80)) }
       window.scrollTo(0, 0)
     })
+    // дожидаемся ленивых картинок (после прокрутки они начинают грузиться)
+    await page.evaluate(() => Promise.race([Promise.all([...document.images].filter((i) => !i.complete).map((i) => new Promise((r) => { i.onload = i.onerror = r }))), new Promise((r) => setTimeout(r, 6000))]))
     await page.waitForTimeout(800)
     await page.screenshot({ path: path.join(dir, `${w}.viewport.png`) })
     await page.screenshot({ path: path.join(dir, `${w}.png`), fullPage: true })

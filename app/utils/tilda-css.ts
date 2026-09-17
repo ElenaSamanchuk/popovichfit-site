@@ -25,6 +25,8 @@ export type ZeroNode = { kind: 'elem'; id: string } | { kind: 'group'; id: strin
 export interface Artboard { h: number | null; bg?: string | null; pos?: string | null; upscale?: string | null; valign?: string | null; hug?: boolean; bgImage?: string | null }
 export interface TildaBlock {
   id: string; type: string; vis: { min: number | null; max: number | null }; bg?: string | null
+  /** отступы записи для экранов ≤ N px (классы t-rec_pt-res-N_M): { '480': { 'padding-top': 15 } } */
+  padRes?: Record<string, Record<string, number>>
   pad: { 'padding-top': number | null; 'padding-bottom': number | null }; uc: string[]
   artboard?: { screens: string; fixed: boolean; fixedPos?: string | null; ovrflw?: string | null; bg: Record<string, string> }
   artboards?: Record<string, Artboard>; elems?: ZeroElem[]; groups?: ZeroGroup[]; tree?: ZeroNode[]
@@ -228,6 +230,12 @@ function sbsRules(sel: string, e: ZeroElem): string {
   return out
 }
 
+/** Отступы записи для отдельных экранов (t-rec_pt-res-480_15 и т.п.): у Тильды — @media (max-width:N px) … !important */
+export function padResCss(id: string, padRes?: Record<string, Record<string, number>> | null): string {
+  if (!padRes) return ''
+  return Object.entries(padRes).map(([res, p]) => `@media (max-width:${res}px){${id}{${Object.entries(p).map(([k, v]) => `${k}:${v}px !important`).join(';')}}}`).join('')
+}
+
 /** Видимость блока по ширине экрана (t-screenmin-640px / t-screenmax-1200px Тильды): границы включительно,
  *  как в её CSS (@media (max-width: 639px) / (min-width: 1201px)). */
 export function visCss(id: string, vis?: { min: number | null; max: number | null } | null): string {
@@ -241,7 +249,7 @@ export function visCss(id: string, vis?: { min: number | null; max: number | nul
 export function zeroBlockCss(b: TildaBlock): string {
   const id = `#${b.id}`
   const parts: string[] = []
-  parts.push(visCss(id, b.vis))
+  parts.push(visCss(id, b.vis), padResCss(id, b.padRes))
   for (const r of RANGES) {
     const art = b.artboards?.[r.scr]
     if (!art) continue

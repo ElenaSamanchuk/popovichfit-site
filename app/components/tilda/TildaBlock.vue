@@ -4,7 +4,7 @@
 // по hash-хуку; фиксированный фон T674 — FixedBackground; T131 (HTML-код) — только если это видимый контент
 // без скриптов; служебные (T270/T890/T450/T215/T887/T367) — не рендерятся (их заменяют общие компоненты).
 import type { TildaBlock } from '~/utils/tilda-css'
-import { visCss } from '~/utils/tilda-css'
+import { visCss, padResCss } from '~/utils/tilda-css'
 
 const props = defineProps<{ block: TildaBlock; popupContent?: TildaBlock | null }>()
 const b = props.block
@@ -31,7 +31,7 @@ const customVisible = computed(() => b.type === '131' && !isPreloader.value && /
 
 // стили видимого кастомного HTML (виджеты вроде розыгрыша #pf-pl-v1) — свои, со скоупом по id; у невидимых T123 не нужны
 const customCss = computed(() => (b.type === '131' && customVisible.value ? [...(b.custom || '').matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)].map((m) => m[1]).join('\n') : ''))
-const blockCss = (b.css || '') + visCss('#' + b.id, b.vis) + customCss.value  // CSS блока из экспорта + видимость по ширине экрана
+const blockCss = (b.css || '') + visCss('#' + b.id, b.vis) + padResCss('#' + b.id, b.padRes) + customCss.value  // CSS блока из экспорта + видимость + отступы для экранов
 if (blockCss) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: blockCss }] })
 const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"/)?.[1] : undefined)
 

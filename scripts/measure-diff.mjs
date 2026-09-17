@@ -27,9 +27,13 @@ const live = JSON.parse(fs.readFileSync(specFile, 'utf8'))
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: w, height: 900 } })
 await page.goto((process.env.BASE || 'http://localhost:3500') + (process.env.LOCAL_URL || url), { waitUntil: 'load', timeout: 60000 })
+// для замера/скриншота ленивые картинки грузим сразу (иначе далёкие от вьюпорта остаются высотой 0)
+await page.evaluate(() => document.querySelectorAll('img[loading="lazy"]').forEach((i) => { i.loading = 'eager' }))
 await page.waitForTimeout(1500)
 await page.evaluate(async () => { const h = document.body.scrollHeight; for (let y = 0; y < h; y += 700) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)) } scrollTo(0, 0) })
-await page.waitForTimeout(500)
+// дожидаемся ленивых картинок (после прокрутки они начинают грузиться), иначе их высота 0
+await page.evaluate(() => Promise.race([Promise.all([...document.images].filter((i) => !i.complete).map((i) => new Promise((r) => { i.onload = i.onerror = r }))), new Promise((r) => setTimeout(r, 5000))]))
+await page.waitForTimeout(300)
 /** блоки, которые заменены общими компонентами layout (шапка/cookie/меню/футер/плашка ВК) — не сверяем */
 const SHARED = new Set(['rec1120433846', 'rec2019524321', 'rec592229670', 'rec1120448561', 'rec2322627601', 'rec2322644301'])
 const local = await page.evaluate((recs) => {
