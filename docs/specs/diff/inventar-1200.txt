@@ -1,11 +1,21 @@
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
+/inventar @1200: высота live 4523 / local 4523
 
-page.evaluate: Execution context was destroyed, most likely because of a navigation
-    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:31:12 {
-  log: [],
-  name: 'Error'
-}
+## rec774931892 T396
+  Δ #1721120715927 [text] dx=0 dy=0 dw=0 dh=-5  live@750,349,328,192  Не паникуйте, если что-то не успели купи
+  Δ #1724423147917 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@350,464,60,60  
 
-Node.js v26.0.0
+## rec774934888 T396
+  Δ #1720616062703 [video] фон live rgb(0, 0, 0) / local rgba(0, 0, 0, 0)  live@40,1243,680,391  
+  Δ #1721120715927 [text] dx=0 dy=0 dw=0 dh=-5  live@750,1294,328,192  Не паникуйте, если что-то не успели купи
+
+## rec774934891 T396
+  Δ #1720616062703 [video] фон live rgb(0, 0, 0) / local rgba(0, 0, 0, 0)  live@20,2023,660,379  
+  Δ #1721124567600 [shape] bg-image live — / local t35383935-03_2.webp  live@20,1825,80,80  
+
+## rec774934892 T396
+  Δ #1721124567600 [shape] bg-image live — / local t30613032-05_3.webp  live@20,3130,80,80  
+
+## rec774934893 T396
+  Δ #1721124567600 [shape] bg-image live — / local t64323663-04_1.webp  live@20,3385,80,80  
+
+элементов: 68, с расхождениями > 3px: 8

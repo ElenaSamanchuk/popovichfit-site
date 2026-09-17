@@ -1,16 +1,9 @@
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
+/knees @1200: высота live 1173 / local 1173
 
-page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3500/knees
-Call log:
-  - navigating to "http://localhost:3500/knees", waiting until "load"
+## rec786027187 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
+  Δ #1723705809197 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@722,230,60,60  
+  Δ #1728462311750 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1018,230,60,60  
 
-    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:29:12 {
-  log: [
-    '  - navigating to "http://localhost:3500/knees", waiting until "load"'
-  ],
-  name: 'Error'
-}
-
-Node.js v26.0.0
+элементов: 30, с расхождениями > 3px: 4

@@ -1,16 +1,6 @@
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
+/media_gluteal_muscles @1200: высота live 21050 / local 21050
 
-page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3500/media_gluteal_muscles
-Call log:
-  - navigating to "http://localhost:3500/media_gluteal_muscles", waiting until "load"
+## rec779582312 T396  блок: live y=720 h=180 / local y=782 h=180
+  Δ #1719923677879 [button] dx=0 dy=62 dw=0 dh=0  live@1067,724,113,50  Назад
 
-    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:29:12 {
-  log: [
-    '  - navigating to "http://localhost:3500/media_gluteal_muscles", waiting until "load"'
-  ],
-  name: 'Error'
-}
-
-Node.js v26.0.0
+элементов: 3, с расхождениями > 3px: 1

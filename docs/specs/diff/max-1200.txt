@@ -1,16 +1,25 @@
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
+/max @1200: высота live 1948 / local 1948
 
-page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3500/max
-Call log:
-  - navigating to "http://localhost:3500/max", waiting until "load"
+## rec864097177 T396
+  Δ #1739267777413 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@423,245,60,60  
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@716,245,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@131,245,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1009,245,60,60  
 
-    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:29:12 {
-  log: [
-    '  - navigating to "http://localhost:3500/max", waiting until "load"'
-  ],
-  name: 'Error'
-}
+## rec864099105 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@423,495,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@713,495,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1009,495,60,60  
+  Δ #1739268032026 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@121,495,60,60  
 
-Node.js v26.0.0
+## rec776833366 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@423,875,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@713,875,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1009,875,60,60  
+  Δ #1739268339522 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@131,875,60,60  
+
+## rec829564583 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@425,1125,60,60  
+  Δ #1739268603310 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@131,1125,60,60  
+
+элементов: 101, с расхождениями > 3px: 14

@@ -1,79 +1,18 @@
-/bonus6 @1200: высота live 1598 / local 900
+/bonus6 @1200: высота live 1598 / local 1598
 
-## rec778009924 T396  блок: live y=0 h=145 / local y=0 h=75
-  Δ #1720534073989 [text] dx=-20 dy=-10 dw=-519 dh=-20 | шрифт live 40px/44px 700 Manrope / local 16px/24px 400 Involve | цвет live rgb(32, 32, 32) / local rgb(48, 48, 48)  live@20,85,680,44  Галифе, отеки бедер
+## rec778009925 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,230,60,60  
+  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,230,60,60  
 
-## rec778009925 T396  блок: live y=145 h=265 / local y=75 h=15
-  Δ #1721648754826 [shape] dx=-20 dy=-85 dw=-283 dh=-219 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@20,175,283,219  
-  Δ #1721648754823 [shape] dx=-25 dy=-90 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live image.png / local —  live@25,180,273,160  
-  Δ #1721648754819 [text] dx=-35 dy=-260 dw=-48 dh=9 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@35,350,250,15  От галифе и отеков бедер
-  Δ #1721648754816 [button] dx=-240 dy=-219 dw=5 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@240,309,48,21  42 мин
-  Δ #1721649051964 [shape] dx=-311 dy=-85 dw=-283 dh=-219 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@311,175,283,219  
-  Δ #1721649051961 [shape] dx=-316 dy=-90 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live __2023-12-24__174917.png / local —  live@316,180,273,160  
-  Δ #1721648754814 [shape] dx=-132 dy=-140 dw=-60 dh=-60 | radius live 3000px / local 0px  live@132,230,60,60  
-  Δ #1721648754812 [image] dx=-152 dy=-160 dw=0 dh=0  live@152,250,20,20  
-  Δ #1721648754808 [shape] dx=-132 dy=-140 dw=-60 dh=-60 | radius live 3000px / local 0px  live@132,230,60,60  
-  Δ #1721649051956 [text] dx=-326 dy=-260 dw=127 dh=-6 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@326,350,250,30  От отечности бёдер, галифе - активация я
-  Δ #1721649051954 [button] dx=-531 dy=-219 dw=2 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@531,309,48,21  31 мин
-  Δ #1721649279455 [shape] dx=-606 dy=-85 dw=-283 dh=-219 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@606,175,283,219  
-  Δ #1721649279454 [shape] dx=-611 dy=-90 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live __2023-12-24__175019.png / local —  live@611,180,273,160  
-  Δ #1721649279452 [text] dx=-621 dy=-260 dw=69 dh=-6 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@621,350,250,30  Мобильность таза - прощаемся с галифе
-  Δ #1721649279451 [button] dx=-826 dy=-219 dw=4 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@826,309,48,21  33 мин
-  Δ #1721649051951 [shape] dx=-422 dy=-140 dw=-60 dh=-60 | radius live 3000px / local 0px  live@422,230,60,60  
-  Δ #1721649051936 [image] dx=-442 dy=-160 dw=0 dh=0  live@442,250,20,20  
-  Δ #1721649051931 [shape] dx=-422 dy=-140 dw=-60 dh=-60 | radius live 3000px / local 0px  live@422,230,60,60  
-  Δ #1721649279432 [shape] dx=-897 dy=-85 dw=-283 dh=-219 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@897,175,283,219  
-  Δ #1721649279429 [shape] dx=-902 dy=-90 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live __2023-12-24__175211.png / local —  live@902,180,273,160  
-  Δ #1721649279424 [text] dx=-912 dy=-260 dw=145 dh=-6 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@912,350,250,30  Снятие напряжения с таза, устранение оте
-  Δ #1721649279422 [button] dx=-1117 dy=-219 dw=5 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@1117,309,48,21  36 мин
-  Δ #1721649279449 [shape] dx=-718 dy=-140 dw=-60 dh=-60 | radius live 3000px / local 0px  live@718,230,60,60  
-  Δ #1721649279437 [image] dx=-738 dy=-160 dw=0 dh=0  live@738,250,20,20  
-  Δ #1721649279435 [shape] dx=-718 dy=-140 dw=-60 dh=-60 | radius live 3000px / local 0px  live@718,230,60,60  
-  … ещё 23
+## rec778009926 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,480,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,480,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,480,60,60  
+  Δ #1723709862243 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,480,60,60  
 
-## rec778009926 T396  блок: live y=410 h=265 / local y=90 h=15
-  Δ #1721648754826 [shape] dx=-20 dy=-335 dw=-283 dh=-223 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@20,425,283,223  
-  Δ #1721648754823 [shape] dx=-25 dy=-340 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live __2023-12-24__175312.png / local —  live@25,430,273,160  
-  Δ #1721648754819 [text] dx=-35 dy=-510 dw=136 dh=-6 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@35,600,250,30  Свободный таз, отсутствие галифе и болей
-  Δ #1721648754816 [button] dx=-240 dy=-469 dw=6 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@240,559,48,21  40 мин
-  Δ #1721649051964 [shape] dx=-311 dy=-335 dw=-283 dh=-223 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@311,425,283,223  
-  Δ #1721649051961 [shape] dx=-316 dy=-340 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live __2023-12-24__174656.png / local —  live@316,430,273,160  
-  Δ #1721648754814 [shape] dx=-132 dy=-390 dw=-60 dh=-60 | radius live 3000px / local 0px  live@132,480,60,60  
-  Δ #1721648754812 [image] dx=-152 dy=-410 dw=0 dh=0  live@152,500,20,20  
-  Δ #1721648754808 [shape] dx=-132 dy=-390 dw=-60 dh=-60 | radius live 3000px / local 0px  live@132,480,60,60  
-  Δ #1721649051956 [text] dx=-326 dy=-510 dw=51 dh=-6 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@326,600,250,30  Задняя поверхность бедра, целлюлит
-  Δ #1721649051954 [button] dx=-531 dy=-469 dw=5 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@531,559,48,21  26 мин
-  Δ #1721649051951 [shape] dx=-422 dy=-390 dw=-60 dh=-60 | radius live 3000px / local 0px  live@422,480,60,60  
-  Δ #1721649051936 [image] dx=-442 dy=-410 dw=0 dh=0  live@442,500,20,20  
-  Δ #1721649051931 [shape] dx=-422 dy=-390 dw=-60 dh=-60 | radius live 3000px / local 0px  live@422,480,60,60  
-  Δ #1722161875082 [shape] dx=-31 dy=-472 dw=-102 dh=-22 | фон live rgb(255, 255, 255) / local rgba(0, 0, 0, 0) | radius live 8px / local 0px  live@31,562,102,22  
-  Δ #1722161875080 [text] dx=-35 dy=-473 dw=22 dh=5 | шрифт live 12px/19px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(106, 89, 89) / local rgb(48, 48, 48)  live@35,563,66,19  Сложность
-  Δ #1722161875079 [shape] dx=-103 dy=-480 dw=-6 dh=-6 | фон live rgb(106, 89, 89) / local rgba(0, 0, 0, 0) | radius live 3000px / local 0px  live@103,570,6,6  
-  ✗ #1722161875078 [shape] opacity live 0.15 / local 1  
-  ✗ #1722161875076 [shape] opacity live 0.15 / local 1  
-  Δ #1722161875075 [shape] dx=-331 dy=-472 dw=-102 dh=-22 | фон live rgb(255, 255, 255) / local rgba(0, 0, 0, 0) | radius live 8px / local 0px  live@331,562,102,22  
-  Δ #1722161875073 [text] dx=-335 dy=-473 dw=22 dh=5 | шрифт live 12px/19px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(106, 89, 89) / local rgb(48, 48, 48)  live@335,563,66,19  Сложность
-  Δ #1722161875072 [shape] dx=-403 dy=-480 dw=-6 dh=-6 | фон live rgb(106, 89, 89) / local rgba(0, 0, 0, 0) | radius live 3000px / local 0px  live@403,570,6,6  
-  Δ #1722161875070 [shape] dx=-412 dy=-480 dw=-6 dh=-6 | фон live rgb(106, 89, 89) / local rgba(0, 0, 0, 0) | radius live 3000px / local 0px  live@412,570,6,6  
-  ✗ #1722161875069 [shape] opacity live 0.15 / local 1  
-  Δ #1721649279455 [shape] dx=-606 dy=-335 dw=-283 dh=-223 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@606,425,283,223  
-  … ещё 23
+## rec786063078 T396
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,745,60,60  
 
-## rec786063078 T396  блок: live y=675 h=340 / local y=105 h=90
-  Δ #1721648754826 [shape] dx=-20 dy=-585 dw=-283 dh=-223 | radius live 14px / local 0px | bg-image live linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) / local —  live@20,690,283,223  
-  Δ #1721648754823 [shape] dx=-25 dy=-590 dw=-273 dh=-160 | фон live rgb(246, 246, 246) / local rgba(0, 0, 0, 0) | radius live 12px / local 0px | bg-image live image.png / local —  live@25,695,273,160  
-  Δ #1721648754819 [text] dx=-35 dy=-760 dw=48 dh=-6 | шрифт live 14px/15px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(38, 38, 38) / local rgb(48, 48, 48) | align live left / local start  live@35,865,250,30  Активация ягодиц, галифе, дряхлость
-  Δ #1721648754816 [button] dx=-240 dy=-719 dw=4 dh=3 | шрифт live 9px/13.95px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@240,824,48,21  32 мин
-  Δ #1721648754814 [shape] dx=-132 dy=-640 dw=-60 dh=-60 | radius live 3000px / local 0px  live@132,745,60,60  
-  Δ #1721648754812 [image] dx=-152 dy=-660 dw=0 dh=0  live@152,765,20,20  
-  Δ #1721648754808 [shape] dx=-132 dy=-640 dw=-60 dh=-60 | radius live 3000px / local 0px  live@132,745,60,60  
-  Δ #1722161875082 [shape] dx=-31 dy=-722 dw=-102 dh=-22 | фон live rgb(255, 255, 255) / local rgba(0, 0, 0, 0) | radius live 8px / local 0px  live@31,827,102,22  
-  Δ #1722161875080 [text] dx=-35 dy=-723 dw=22 dh=5 | шрифт live 12px/19px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(106, 89, 89) / local rgb(48, 48, 48)  live@35,828,66,19  Сложность
-  Δ #1722161875079 [shape] dx=-103 dy=-730 dw=-6 dh=-6 | фон live rgb(106, 89, 89) / local rgba(0, 0, 0, 0) | radius live 3000px / local 0px  live@103,835,6,6  
-  Δ #1722161875078 [shape] dx=-112 dy=-730 dw=-6 dh=-6 | фон live rgb(106, 89, 89) / local rgba(0, 0, 0, 0) | radius live 3000px / local 0px  live@112,835,6,6  
-  ✗ #1722161875076 [shape] opacity live 0.15 / local 1  
-
-## rec778009928 T396  блок: live y=720 h=180 / local y=195 h=120
-  Δ #1719923677879 [button] dx=-1067 dy=-529 dw=-65 dh=-26 | шрифт live 12px/18.6px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 8px / local 0px | bg-image live linear-gradient(129.24deg, rgb(240, 119, 159) 0%, rgb(195, 146, 165) 100%) / local —  live@1067,724,113,50  Назад
-
-элементов: 110, с расхождениями > 3px: 110
+элементов: 110, с расхождениями > 3px: 9

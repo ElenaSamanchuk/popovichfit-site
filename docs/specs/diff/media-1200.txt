@@ -1,16 +1,3 @@
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
+/media @1200: высота live 2678 / local 2678
 
-page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3500/media
-Call log:
-  - navigating to "http://localhost:3500/media", waiting until "load"
-
-    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:29:12 {
-  log: [
-    '  - navigating to "http://localhost:3500/media", waiting until "load"'
-  ],
-  name: 'Error'
-}
-
-Node.js v26.0.0
+элементов: 38, с расхождениями > 3px: 0

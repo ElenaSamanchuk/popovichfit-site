@@ -1,31 +1,3 @@
 /priut @1200: высота live 1880 / local 1880
 
-## rec1329018871 T396
-  Δ #1745364671879 [text] dx=0 dy=0 dw=0 dh=10 | шрифт live 28px/normal 600 Arial / local 28px/42px 600 Arial  live@20,113,409,32  ОПЛАТА ЧЕРЕЗ ПРИЮТ
-
-## rec1329018881 T396
-  Δ #1758028018585 [text] шрифт live 24px/normal 600 Manrope / local 24px/36px 600 Manrope  live@20,214,262,33  Как принять участие?
-  Δ #1758028018649 [button] шрифт live 12px/normal 600 Manrope / local 12px/18px 600 Manrope  live@40,531,148,39  Выбрать приют
-  Δ #175829097915494510 [button] шрифт live 12px/normal 600 Manrope / local 12px/18px 600 Manrope  live@198,531,200,39  Техническая поддержка
-  Δ #1758028018667 [text] шрифт live 24px/normal 600 Manrope / local 24px/36px 600 Manrope  live@1026,432,124,33  2025 год
-  Δ #1758028018671 [text] шрифт live 22px/normal 600 Manrope / local 22px/33px 600 Manrope  live@999,534,178,30  1 242 200 руб.
-  Δ #175829055711773200 [text] шрифт live 24px/normal 600 Manrope / local 24px/36px 600 Manrope  live@816,432,124,33  2024 год
-  Δ #175829055712439440 [text] шрифт live 22px/normal 600 Manrope / local 22px/33px 600 Manrope  live@789,534,178,30  149 500 руб.
-
-## rec1329018891 T396
-  Δ #1758029012335 [text] шрифт live 24px/normal 600 Manrope / local 24px/36px 600 Manrope  live@20,670,393,33  Приюты, которым можно помочь
-  Δ #1758029012361 [text] dx=0 dy=0 dw=0 dh=4 | шрифт live 16px/normal 600 Manrope / local 16px/24px 600 Manrope  live@246,1059,288,44  Приют для животных центр «Сирин»
-  Δ #1758029012377 [button] шрифт live 14px/normal 600 Manrope / local 14px/21px 600 Manrope  live@246,1141,258,50  Информация о реквизитах
-  Δ #1758029012369 [text] шрифт live 12px/normal 500 Manrope / local 12px/18px 500 Manrope  live@267,1024,37,17  Минск
-  Δ #175803000286532950 [text] dx=0 dy=0 dw=0 dh=4 | шрифт live 16px/normal 600 Manrope / local 16px/24px 600 Manrope  live@838,1059,288,44  Приют для животных «Старый кот»
-  Δ #175803000287082930 [button] шрифт live 14px/normal 600 Manrope / local 14px/21px 600 Manrope  live@838,1141,258,50  Информация о реквизитах
-  Δ #175803000288170800 [text] шрифт live 12px/normal 500 Manrope / local 12px/18px 500 Manrope  live@859,1024,37,17  Минск
-  Δ #175803018372210400 [text] dx=0 dy=0 dw=0 dh=4 | шрифт live 16px/normal 600 Manrope / local 16px/24px 600 Manrope  live@246,823,288,44  Приют для животных ОФ «Zoohome_Almaty»
-  Δ #175803018372780710 [button] шрифт live 14px/normal 600 Manrope / local 14px/21px 600 Manrope  live@246,905,258,50  Информация о реквизитах
-  Δ #175803018373843710 [text] шрифт live 12px/normal 500 Manrope / local 12px/18px 500 Manrope  live@267,788,61,17  Казахстан
-  Δ #175803018378716460 [text] dx=0 dy=0 dw=0 dh=4 | шрифт live 16px/normal 600 Manrope / local 16px/24px 600 Manrope  live@838,823,288,44  Приют для животных «Пушистый ангел»
-  Δ #175803018379315520 [button] шрифт live 14px/normal 600 Manrope / local 14px/21px 600 Manrope  live@838,905,258,50  Информация о реквизитах
-  Δ #175803018380264250 [text] шрифт live 12px/normal 500 Manrope / local 12px/18px 500 Manrope  live@859,788,61,17  Казахстан
-  Δ #1758029012340 [text] шрифт live 16px/normal 500 Manrope / local 16px/24px 500 Manrope  live@20,711,464,22  Размер вашей скидки будет равен размеру 
-
-элементов: 63, с расхождениями > 3px: 22
+элементов: 63, с расхождениями > 3px: 0
