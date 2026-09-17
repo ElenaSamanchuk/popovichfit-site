@@ -20,7 +20,8 @@ const html = computed(() => {
   if (pf.value && classes.includes('pf-price-old')) return pf.value.oldPrice ? `<s>${pf.value.oldPrice}</s>` : ''
   return e.html
 })
-const btnText = computed(() => (pf.value && classes.includes('pf-price-new') ? pf.value.newPrice : e.text))
+// текст кнопки — html (внутри бывают ссылки, например «Сертификаты» → /sertif)
+const btnText = computed(() => (pf.value && classes.includes('pf-price-new') ? pf.value.newPrice : e.html || e.text))
 const href = computed(() => (pf.value && classes.includes('pf-buy') ? pf.value.link : e.href))
 /** внешняя ссылка? → target/rel; hash и tg: — как есть */
 const isExternal = computed(() => !!e.href && /^https?:\/\//.test(e.href) && !e.href.includes('popovichfit.ru'))

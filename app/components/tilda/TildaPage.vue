@@ -9,12 +9,10 @@ const props = defineProps<{ data: TildaPageData }>()
 
 /** блоки, за которые отвечают общие компоненты layout */
 const SHARED = new Set([
-  'rec1120433846', // шапка (Zero)
-  'rec2019524321', // cookie-баннер (Zero)
-  'rec592229670', // мобильное меню T450
-  'rec1120448561', // футер (Zero)
-  'rec2322627601', 'rec2322644301', // плашка ВК + её скрипт
+  'rec592229670', // мобильное меню T450 — компонент MobileMenu (открывается по #menu_open)
+  'rec2322644301', // скрипт плашки ВК (T123) — поведение в VkNotice
 ])
+const COOKIE = 'rec2019524321' // cookie-баннер (Zero) — рендерится внутри CookieBanner (логика согласия)
 const popupRecs = computed(() => {
   const s = new Set<string>()
   for (const b of props.data.blocks) for (const r of b.popupRecs ?? []) for (const id of r.split(',')) s.add('rec' + id.trim().replace(/^rec/, ''))
@@ -39,8 +37,9 @@ const vkCopies = computed(() => {
   for (const b of props.data.blocks) if (/top-banner--visible/.test(b.custom || '')) for (const m of (b.custom || '').matchAll(/#(rec\d+)/g)) s.add(m[1]!)
   return s
 })
-const hasVkNotice = computed(() => props.data.blocks.some((b) => b.id === 'rec2322627601' || vkCopies.value.has(b.id)))
-const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && !popupRecs.value.has(b.id) && !membersOnly.value.has(b.id) && !vkCopies.value.has(b.id)))
+const vkBlock = computed(() => props.data.blocks.find((b) => b.id === 'rec2322627601' || vkCopies.value.has(b.id)) ?? null)
+const cookieBlock = computed(() => props.data.blocks.find((b) => b.id === COOKIE) ?? null)
+const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && b.id !== COOKIE && b.id !== 'rec2322627601' && !popupRecs.value.has(b.id) && !membersOnly.value.has(b.id) && !vkCopies.value.has(b.id)))
 function popupContent(b: TildaBlock): TildaBlock | null {
   const id = b.popupRecs?.[0]?.split(',')[0]?.trim().replace(/^rec/, '')
   return id ? byId.value.get('rec' + id) ?? null : null
@@ -49,8 +48,9 @@ function popupContent(b: TildaBlock): TildaBlock | null {
 
 <template>
   <div class="tilda-page">
-    <!-- плашка ВК (общий компонент) — только на страницах, где есть её блок -->
-    <VkNotice v-if="hasVkNotice" />
+    <!-- плашка ВК и cookie-баннер: содержимое — Zero Block со страницы, поведение — обёртки -->
+    <VkNotice v-if="vkBlock" :block="vkBlock" />
+    <CookieBanner v-if="cookieBlock" :block="cookieBlock" />
     <template v-for="b in flow" :key="b.id">
       <ZeroBlock v-if="b.type === '396'" :block="b" />
       <Cart v-else-if="b.type === '706'" :block="b" />

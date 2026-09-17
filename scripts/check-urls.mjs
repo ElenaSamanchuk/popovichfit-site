@@ -10,9 +10,10 @@ import path from 'node:path'
 const ROOT = path.resolve(import.meta.dirname, '..')
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/meta.json'), 'utf8'))
 const BASE = process.env.BASE
+const unpublished = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/unpublished.json'), 'utf8')).urls || [])
 let bad = 0, n = 0
 for (const [file, p] of Object.entries(meta)) {
-  if (p.url === '/404.html') continue
+  if (p.url === '/404.html' || unpublished.has(p.url)) continue // скрытые страницы: их нет в сборке намеренно
   n++
   if (BASE) {
     const res = await fetch(BASE + p.url, { redirect: 'manual' }).catch(() => null)

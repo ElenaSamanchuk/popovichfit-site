@@ -117,6 +117,25 @@ def effective(geo):
         eff[scr] = cur
     return eff
 
+# Типографика по просьбе заказчика (осознанное отличие от Тильды): неразрывный пробел после коротких предлогов/союзов
+# (висячие предлоги) и без точки в конце абзаца.
+SHORT_WORDS = r'(?:в|во|на|с|со|к|ко|о|об|обо|у|от|до|по|за|из|изо|и|а|но|да|не|ни|же|ли|бы|для|при|под|над|про|без|как|что|то|или|если)'  # предлоги, союзы, частицы
+
+def typograf_html(h):
+    """h — HTML фрагмент (текст элемента/абзац): nbsp после коротких слов, без точки в конце абзаца."""
+    if not h: return h
+    parts = re.split(r'(<[^>]+>)', h)  # теги не трогаем
+    out = []
+    for i, part in enumerate(parts):
+        if part.startswith('<'): out.append(part); continue
+        # висячие предлоги: слово из списка + пробел → nbsp (только между словами, регистр любой)
+        part = re.sub(r'(?<![\w-])(' + SHORT_WORDS + r')\s+(?=[\wА-Яа-яЁё«(„"])', lambda m: m.group(1) + '\u00a0', part, flags=re.I)
+        out.append(part)
+    h = ''.join(out)
+    # точка в конце абзаца: перед </p>, </li>, <br>, концом текста (не «...», не сокращения вроде «т.д.», не после цифр «2024.»)
+    h = re.sub(r'(?<![.\d])(?<!\b[а-яa-z])\.(\s*)(?=(</p>|</li>|</div>|<br\s*/?>|$))', r'\1', h, flags=re.I)
+    return h
+
 def clean_block_html(rec_html):
     b = re.sub(r'<script.*?</script>', '', rec_html, flags=re.S)
     b = re.sub(r'<style.*?</style>', '', b, flags=re.S)
@@ -227,7 +246,7 @@ def parse_page(fname):
                 geo = {scr: norm_geo(g) for scr, g in e['geo'].items()}
                 el = {'id': e['id'], 'type': e['type'], 'cls': e['cls'], 'eff': effective(geo), 'fields': e['fields'], 'anim': {k: v for k, v in e['anim'].items() if k != 'sbs-opts'}}
                 if e.get('sbs'): el['sbs'] = e['sbs']
-                if e['html']: el['html'] = rewrite_links(e['html'])
+                if e['html']: el['html'] = typograf_html(rewrite_links(e['html'])) if e['type'] in ('text',) else rewrite_links(e['html'])
                 if e['text']: el['text'] = e['text']
                 if e.get('tag') in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'): el['tag'] = e['tag']
                 if e['href']: el['href'] = rewrite_links(f'href="{e["href"]}"')[6:-1]
@@ -255,7 +274,7 @@ def parse_page(fname):
             for el in elems:
                 el['flex'] = by_id[el['id']].get('flex', False)
         else:
-            block['html'] = clean_block_html(r)[:80000]
+            block['html'] = typograf_html(clean_block_html(r))[:80000]
             # блочный CSS экспорта (#recNNN …) — безопасен, нужен для типовых блоков
             css = ' '.join(re.findall(r'<style>(.*?)</style>', r, re.S))
             css = re.sub(r'\s+', ' ', css).strip()

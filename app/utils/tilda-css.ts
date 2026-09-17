@@ -68,7 +68,7 @@ function resolveVars(v: string, st: Record<string, string>): string {
   })
 }
 
-function posCss(left: Left | null | undefined, mobile: boolean, artW: number): string {
+function posCss(left: Left | null | undefined, mobile: boolean, artW: number, windowContainer = false): string {
   if (!left) return ''
   const x = left.x ?? 0
   const u = (n: number) => (mobile ? `calc(${n} * var(--u))` : `${n}px`)
@@ -88,7 +88,8 @@ function posCss(left: Left | null | undefined, mobile: boolean, artW: number): s
     case 'window-right':
       return `right:${u(-x)};`
     case 'center-pct':
-      return `left:calc(50% - ${left.pct}% + ${u(x)});`
+      // pct — половина ширины элемента в % сетки; на экранах шире сетки считаем от ширины сетки (artW), как рантайм Тильды
+      return mobile || windowContainer ? `left:calc(50% - ${left.pct}% + ${u(x)});` : `left:calc(50% - ${Math.round(artW * left.pct) / 100}px + ${x}px);`
     default:
       return left.raw ? `left:${left.raw};` : ''
   }
@@ -136,10 +137,15 @@ function centeredLeft(e: ZeroElem, eff: Eff): Left | null | undefined {
 
 function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: number): string {
   const st = eff.style ?? {}
-  let css = posCss(centeredLeft(e, eff), mobile, artW)
+  const windowContainer = (e.fields?.container || 'grid') === 'window'
+  let css = posCss(centeredLeft(e, eff), mobile, artW, windowContainer)
   css += opacityCss(e, st, e.sbs?.steps?.[0]?.op)
   const top = num(eff.top, mobile); if (top !== null) css += `top:${top};`
-  const w = num(eff.width, mobile); if (w !== null) css += `width:${w};`
+  // ширина в %: для контейнера grid у Тильды это доля сетки артборда (1200/960/…), а не окна — на широких экранах окно
+  // шире сетки, поэтому переводим в px; для контейнера window и flex-детей — как есть
+  const wv = eff.width
+  const gridPct = !mobile && !e.flex && wv && typeof wv === 'object' && 'pct' in wv && (e.fields?.container || 'grid') !== 'window'
+  const w = gridPct ? `${Math.round(artW * (wv as { pct: number }).pct) / 100}px` : num(eff.width, mobile); if (w !== null) css += `width:${w};`
   // html-вставка (iframe с padding-top в %) у Тильды растёт по содержимому (элемент display:table) → min-height
   const h = num(eff.height, mobile); if (h !== null) css += e.type === 'html' ? `min-height:${h};` : `height:${h};`
   // axisy=center у элемента с авто-высотой: экспорт пишет calc(<пол-артборда> - 0px + x), рантайм вычитает
@@ -170,7 +176,9 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
     const ic: Record<string, string> = {}
     for (const part of st['icon'].split(/\s+(?=[\w-]+:)/)) { const i = part.indexOf(':'); if (i > 0) ic[part.slice(0, i)] = part.slice(i + 1) }
     let icss = ''
-    if (ic['--icon']) icss += `-webkit-mask-image:${ic['--icon']};mask-image:${ic['--icon']};`
+    // библиотечные иконки (lib__icons) — маска цветом текста; загруженные svg (tild…) — картинка с собственными цветами
+    if (ic['--icon'] && /lib__icons/.test(ic['--icon'])) icss += `-webkit-mask-image:${ic['--icon']};mask-image:${ic['--icon']};`
+    else if (ic['--icon']) icss += `background-image:${ic['--icon']};background-size:contain;background-repeat:no-repeat;background-position:center;-webkit-mask-image:none;mask-image:none;background-color:transparent;`
     for (const k of ['width', 'height', 'order', 'margin-right', 'margin-left']) if (ic[k]) icss += `${k}:${ic[k]};`
     if (icss) out += `${sel} .tz__icon{${icss}}`
   }

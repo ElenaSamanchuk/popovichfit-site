@@ -4,7 +4,10 @@
 export default defineNuxtPlugin((nuxtApp) => {
   const modal = useModal()
 
+  const menu = useSiteMenu()
   function handle(hash: string): boolean {
+    // бургер в шапке (Zero Block): #menu_open / #menuopen → мобильное меню (T450)
+    if (/^#menu_?open$/i.test(hash)) { menu.openMenu(); return true }
     const name = modal.nameFromHash(hash)
     if (!name) return false
     if (name === modal.HASH_CLOSE) modal.close()

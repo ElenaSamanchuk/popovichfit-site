@@ -6,8 +6,8 @@ const props = withDefaults(defineProps<{
   name: string
   /** ширина контейнера (px) на десктопе */
   width?: number
-  /** тёмный оверлей как у T868 (по умолчанию) или светлый как у zero-попапов */
-  overlay?: 'dark' | 'light'
+  /** оверлей: dark — как у T868/T746 (rgba(0,0,0,.8)), dim — как у zero-попапов T1093 (rgba(0,0,0,.3) на живом сайте), light — белый */
+  overlay?: 'dark' | 'light' | 'dim'
   /** без белой подложки (например, для видео) */
   bare?: boolean
 }>(), { width: 960, overlay: 'dark', bare: false })
@@ -33,7 +33,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
       <div
         v-if="isOpen"
         class="fixed inset-0 z-[100000] overflow-y-auto"
-        :class="overlay === 'dark' ? 'bg-black/80' : 'bg-white/90'"
+        :class="overlay === 'dark' ? 'bg-black/80' : overlay === 'dim' ? 'bg-black/30' : 'bg-white/90'"
         role="dialog"
         aria-modal="true"
         @click.self="modal.close()"
@@ -45,7 +45,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
           @click="modal.close()"
         >
           <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" role="presentation">
-            <g :fill="overlay === 'dark' ? '#fff' : '#000'" fill-rule="evenodd">
+            <g :fill="overlay === 'light' ? '#000' : '#fff'" fill-rule="evenodd">
               <rect transform="translate(11.313708, 11.313708) rotate(-45) translate(-11.313708, -11.313708)" x="10.3137085" y="-3.6862915" width="2" height="30" />
               <rect transform="translate(11.313708, 11.313708) rotate(-315) translate(-11.313708, -11.313708)" x="10.3137085" y="-3.6862915" width="2" height="30" />
             </g>

@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { pages } from './app/data/pages'
 
 // все URL экспорта — чтобы пререндер не зависел от обхода ссылок (черновики и legacy-страницы никто не линкует)
-const prerenderRoutes = Object.values(pages).map((p) => p.url).filter((u) => u !== '/404.html')
+const prerenderRoutes = Object.values(pages).filter((p) => p.published !== false).map((p) => p.url).filter((u) => u !== '/404.html') // скрытые страницы не пререндерим — их отдаёт node по токену
 
 // Статическая генерация всех страниц (nuxt generate) + серверные роуты /api/* для форм и корзины
 // (работают при запуске через `nuxt build` + node-server; при чисто статическом хостинге
@@ -33,6 +33,7 @@ export default defineNuxtConfig({
     smtpUrl: '',
     mailTo: 'info@popovichfit.ru',
     cloudpaymentsApiSecret: '',
+    previewToken: '', // NUXT_PREVIEW_TOKEN — просмотр скрытых страниц: /<url>?preview=<токен>
     public: {
       siteUrl: 'https://popovichfit.ru',
       apiBase: '', // '' = тот же origin (/api/...)

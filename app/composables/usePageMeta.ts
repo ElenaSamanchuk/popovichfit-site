@@ -14,7 +14,7 @@ export function usePageMeta(oldFile: string) {
     ogImage: page.ogImageOld ? siteUrl + '/img/og/' + page.ogImageOld.split('/').pop() : undefined,
     ogUrl: canonical,
     ogType: 'website',
-    robots: page.noindex ? 'noindex' : undefined,
+    robots: page.noindex || page.published === false ? 'noindex' : undefined,
   })
   useHead({ link: [{ rel: 'canonical', href: canonical }] })
   return page

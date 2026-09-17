@@ -107,7 +107,8 @@ for (const rec of live.recs) {
     if (d.some((v) => Math.abs(v) > tol)) notes.push(`dx=${d[0]} dy=${d[1]} dw=${d[2]} dh=${d[3]}`)
     // стили: шрифт (размер ±0.5, интерлиньяж ±1, вес, семейство), цвет, выравнивание, регистр; фон, скругление, картинка фона
     // тексты дословно (нормализуем пробелы/nbsp; live обрезан до 160 символов)
-    const norm = (t) => (t || '').replace(/[\s\u00a0]+/g, ' ').trim()
+    // nbsp после предлогов и убранные точки в конце абзацев — осознанная типографика заказчика, не считаем расхождением
+    const norm = (t) => (t || '').replace(/[\s\u00a0]+/g, ' ').replace(/\.(\s|$)/g, '$1').trim()
     if ((e.type === 'text' || e.type === 'button') && e.text && norm(e.text) !== norm(l.text)) notes.push(`текст live «${norm(e.text).slice(0, 60)}» / local «${norm(l.text).slice(0, 60)}»`)
     if (styles && (e.type === 'text' || e.type === 'button')) {
       const pf = parseFont(e.font), lf = parseFont(l.font)

@@ -41,14 +41,18 @@ onMounted(() => {
   const el = root.value
   if (!el) return
   if (b.type === '585') {
-    el.querySelectorAll<HTMLElement>('.t585__header').forEach((header) => {
+    const headers = [...el.querySelectorAll<HTMLElement>('.t585__header')]
+    const setOpen = (header: HTMLElement, open: boolean) => {
+      header.classList.toggle('t585__opened', open)
+      header.querySelector('.t585__trigger-button')?.setAttribute('aria-expanded', String(open))
       const content = header.nextElementSibling as HTMLElement | null
-      header.addEventListener('click', () => {
-        const open = header.classList.toggle('t585__opened')
-        header.querySelector('.t585__trigger-button')?.setAttribute('aria-expanded', String(open))
-        if (content) { content.hidden = !open; content.style.display = open ? 'block' : 'none' }
-      })
-    })
+      if (content) { content.hidden = !open; content.style.display = open ? 'block' : 'none' }
+    }
+    headers.forEach((header) => header.addEventListener('click', () => {
+      const open = !header.classList.contains('t585__opened')
+      headers.forEach((h) => { if (h !== header) setOpen(h, false) }) // как на Тильде: открыт только один вопрос
+      setOpen(header, open)
+    }))
   }
   if (b.type === '395' || b.type === '1281') {
     const t = 't' + b.type // T395 и T1281 (табы-карусель) устроены одинаково: .tNNN__tab[data-tab-rec-ids], .tNNN__tab_active
@@ -79,7 +83,7 @@ onMounted(() => {
   <FixedBackground v-else-if="b.type === '674' && bgImage" :image="bgImage" />
 
   <!-- попапы -->
-  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093'" :overlay="b.type === '1093' || b.type === '390' ? 'light' : 'dark'">
+  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093'" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'">
     <ZeroBlock v-if="b.type === '1093' && popupContent" :block="popupContent" />
     <VideoEmbed v-else-if="b.type === '331' && youtubeId" kind="youtube" :id="youtubeId" autoplay />
     <div v-else class="tb tb--popup p-[30px] max-xs:p-[16px]" :data-tilda-rec="b.id" v-html="popupHtml" />

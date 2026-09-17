@@ -60,7 +60,9 @@ const padStyle = computed(() => {
 /* текст — как у Тильды: элемент display:table, атом table-cell с vertical-align:middle
    (таблица не уже своего min-content → слово шире рамки не переносится, фикс. высота центрирует текст) */
 .tz { color: #000; line-height: normal; }
-.tz .tz__el--video { background: #000; } /* как .tn-atom видео у Тильды */ /* текст без заданного цвета/интерлиньяжа у Тильды чёрный и с line-height:normal (Tailwind даёт 1.5) */
+.tz .tz__el--video { background: #000; } /* как .tn-atom видео у Тильды */
+.tz .tz__el--image img { border-radius: inherit; } /* скругление атома у Тильды наследуется картинкой */
+.tz .tz__icon--img { -webkit-mask-image: none; mask-image: none; background-color: transparent; background-size: contain; background-repeat: no-repeat; background-position: center; } /* свой svg-иконка: как есть, без маски */ /* текст без заданного цвета/интерлиньяжа у Тильды чёрный и с line-height:normal (Tailwind даёт 1.5) */
 .tz .tz__el--text { display: table; word-break: normal; }
 .tz .tz__el--text > .tz__atom { display: table-cell; vertical-align: middle; width: 100%; }
 /* списки в тексте — как на живом сайте (Tailwind preflight обнуляет): маркеры, отступ 20px, без внешних отступов */

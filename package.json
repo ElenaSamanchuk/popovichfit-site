@@ -17,7 +17,8 @@
     "check:links": "node scripts/check-links.mjs",
     "check:no-tilda": "node scripts/check-no-tilda.mjs",
     "images": "node scripts/import-images.mjs",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "pages:sync": "python3 scripts/audit/extract_meta.py && python3 scripts/audit/gen_pages_ts.py && python3 scripts/audit/build_tilda_json.py && node scripts/import-images-all.mjs"
   },
   "dependencies": {
     "nuxt": "^4.5.2",
