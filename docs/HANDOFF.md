@@ -51,5 +51,14 @@
 
 ## Деплой
 
+Код — https://github.com/ElenaSamanchuk/popovichfit-site (приватный, ветка `main`).
+
+Сервер `146.185.241.179` (Ubuntu 24.04, 2 ГБ RAM, hostname popovichfit): 17.09.2026 поставлены node 22 и nginx 1.24, создан сервис
+`popovichfit` (порт 3100) и каталог `/var/www/popovichfit` (`releases/<дата>` → симлинк `current`, `.env`, `.data`). Сайт выкачен по IP
+(`server_name _`, HTTP). После переноса DNS: в `/etc/nginx/sites-available/popovichfit` заменить `server_name _` на
+`popovichfit.ru www.popovichfit.ru`, выполнить `sudo certbot --nginx -d popovichfit.ru -d www.popovichfit.ru` (пакет `certbot python3-certbot-nginx`).
+Переменные окружения — `/var/www/popovichfit/.env` (сейчас пустые значения из `.env.example`): после заполнения `sudo systemctl restart popovichfit`.
+Сборка на сервере не запускается (мало памяти) — только локально через `deploy/deploy.sh` (rsync готового `.output`).
+
 `deploy/server-setup.sh` (на сервере, один раз) → заполнить `/var/www/popovichfit/.env` → `deploy/deploy.sh` (локально).
 Схема: nginx отдаёт пререндер (`.output/public`), `/api/*` и `sitemap.xml` проксируются в node-сервис `popovichfit` (порт 3100).
