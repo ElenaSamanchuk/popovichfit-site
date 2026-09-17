@@ -186,6 +186,13 @@ def parse_page(fname):
         pad_res = {}
         for side, res, val in re.findall(r't-rec_p([tb])-res-(\d+)_(\d+)', cls):
             pad_res.setdefault(res, {})['padding-top' if side == 't' else 'padding-bottom'] = int(val)
+        # правило Тильды для экранов ≤480: отступы 120/135/150/165 → 90px, 210 → 120px (!important, перекрывает inline);
+        # меньшие значения остаются (правило без !important проигрывает inline-стилю записи)
+        for side, key in (('padding-top', 'padding-top'), ('padding-bottom', 'padding-bottom')):
+            v = pad.get(key)
+            if v and key not in pad_res.get('480', {}):
+                if v >= 210: pad_res.setdefault('480', {})[key] = 120
+                elif v >= 120: pad_res.setdefault('480', {})[key] = 90
         if pad_res: block['padRes'] = pad_res
         if '.t-rec_pb_75' in r and 'padding-bottom: 0' in r.replace('padding-bottom:0', 'padding-bottom: 0'): pb75zero = True
         if t == '396':
