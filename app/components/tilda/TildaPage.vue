@@ -32,8 +32,15 @@ const membersOnly = computed(() => {
   }
   return s
 })
-const hasVkNotice = computed(() => props.data.blocks.some((b) => b.id === 'rec2322627601'))
-const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && !popupRecs.value.has(b.id) && !membersOnly.value.has(b.id)))
+/** копии плашки ВК на других страницах: T123 со скриптом top-banner (…--visible/--hiding) указывает на свой #recN —
+ *  такой блок не рендерим, показываем общий компонент VkNotice */
+const vkCopies = computed(() => {
+  const s = new Set<string>()
+  for (const b of props.data.blocks) if (/top-banner--visible/.test(b.custom || '')) for (const m of (b.custom || '').matchAll(/#(rec\d+)/g)) s.add(m[1]!)
+  return s
+})
+const hasVkNotice = computed(() => props.data.blocks.some((b) => b.id === 'rec2322627601' || vkCopies.value.has(b.id)))
+const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && !popupRecs.value.has(b.id) && !membersOnly.value.has(b.id) && !vkCopies.value.has(b.id)))
 function popupContent(b: TildaBlock): TildaBlock | null {
   const id = b.popupRecs?.[0]?.split(',')[0]?.trim().replace(/^rec/, '')
   return id ? byId.value.get('rec' + id) ?? null : null
