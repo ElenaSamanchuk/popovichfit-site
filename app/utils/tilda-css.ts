@@ -31,8 +31,10 @@ export interface TildaBlock {
   html?: string; css?: string; hooks?: string[]; popupRecs?: string[]; custom?: string
   /** блок внутри вкладки T395 «табы из блоков»; tabHidden — вкладка не активна при загрузке */
   tab?: { of: string; index: number }; tabHidden?: boolean
+  /** блок класса «показать ещё» (uc-showmore): скрыт до клика по ссылке #showmore */
+  showHidden?: boolean
 }
-export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }> }
+export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }>; showmore?: Array<{ href: string; cls: string; hideBtn: boolean; hideBlk: boolean }> }
 
 const RANGES = [
   { scr: '1200', media: '(min-width: 1200px)', artW: 1200 },

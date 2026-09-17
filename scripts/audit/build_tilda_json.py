@@ -268,7 +268,7 @@ def tabs_of_blocks(blocks):
     Помечаем блоки: tab = {'of': id T395, 'index': номер вкладки (0-based)}, tabHidden — скрыт при загрузке."""
     by = {b['id']: b for b in blocks}
     for b in blocks:
-        if b['type'] != '395' or not b.get('html'): continue
+        if b['type'] not in ('395', '1281') or not b.get('html'): continue  # T1281 — те же «табы из блоков» (t1281__off)
         h = b['html']
         cur = int((re.search(r'data-tab-current="(\d+)"', h) or [None, '1'])[1]) - 1
         tabs = re.findall(r'data-tab-rec-ids="([^"]*)"', h)
@@ -277,18 +277,38 @@ def tabs_of_blocks(blocks):
                 t = by.get('rec' + rid.strip())
                 if t: t['tab'] = {'of': b['id'], 'index': i}; t['tabHidden'] = i != cur
 
+def showmore_configs(blocks):
+    """«Показ скрытых блоков по клику» (mo-ti.ru): shmoreArr = ['#showmore', 'uc-showmore'] — блоки с классом скрыты (tabshide),
+    ссылка с таким href их переключает. Блоки помечаем showHidden, конфиг — на страницу."""
+    out = []
+    for b in blocks:
+        c = b.get('custom') or ''
+        m = re.search(r"shmoreArr\s*=\s*\[\s*'([^']+)'\s*,\s*'([^']+)'", c)
+        if not m: continue
+        href, cls = m.group(1), m.group(2)
+        out.append({'href': href, 'cls': cls, 'hideBtn': bool(re.search(r'hideBtn\s*=\s*true', c)), 'hideBlk': bool(re.search(r'hideBlk\s*=\s*true', c))})
+        for t in blocks:
+            if cls in (t.get('uc') or []): t['showHidden'] = True
+    return out
+
 def hscroll_configs(blocks):
     """Горизонтальный скролл Zero Block (romanyu: scrollbooster + стрелки) из T123: блок со скроллом, блок со стрелками
     (.arrow-left/.arrow-right), сдвиг по клику. Воспроизводится компонентом tilda/HScroll.vue."""
     out = []
     for b in blocks:
         c = b.get('custom') or ''
-        if 'scrollbooster' not in c: continue
-        sc = re.search(r"blockScrollId\s*=\s*'#(rec\d+)'", c) or re.search(r"blockId\s*=\s*'#(rec\d+)'", c)
-        if not sc: continue
-        ar = re.search(r"blockArrowsId\s*=\s*'#(rec\d+)'", c)
-        sh = re.search(r"shiftSize\s*=\s*'(\d+)px'", c)
-        out.append({'scroll': sc.group(1), 'arrows': ar.group(1) if ar else None, 'shift': int(sh.group(1)) if sh else 320})
+        if 'scrollbooster' in c:  # romanyu: стрелки .arrow-left/.arrow-right
+            sc = re.search(r"blockScrollId\s*=\s*'#(rec\d+)'", c) or re.search(r"blockId\s*=\s*'#(rec\d+)'", c)
+            if not sc: continue
+            ar = re.search(r"blockArrowsId\s*=\s*'#(rec\d+)'", c)
+            sh = re.search(r"shiftSize\s*=\s*'(\d+)px'", c)
+            out.append({'scroll': sc.group(1), 'arrows': ar.group(1) if ar else None, 'shift': int(sh.group(1)) if sh else 320})
+        elif 'voron-dev.ru/horizontal-scroll' in c:  # VORON: стрелки .scrollback/.scrollfwd, пары блоков по индексу
+            arrows = re.findall(r"'#(rec\d+)'", (re.search(r'arrowBlocks\s*=\s*\[([^\]]*)\]', c) or [None, ''])[1])
+            scrolls = re.findall(r"'#(rec\d+)'", (re.search(r'scrollableBlocks\s*=\s*\[([^\]]*)\]', c) or [None, ''])[1])
+            sh = re.search(r'innerWidth\s*>\s*1200\)\s*:\s*shift\s*=\s*(\d+)', c) or re.search(r'shift\s*=\s*(\d+)', c)
+            for i, sc in enumerate(scrolls):
+                out.append({'scroll': sc, 'arrows': arrows[i] if i < len(arrows) else None, 'shift': int(sh.group(1)) if sh else 200})
     return out
 
 def main(files):
@@ -297,7 +317,8 @@ def main(files):
         blocks = parse_page(f)
         tabs_of_blocks(blocks)
         hs = hscroll_configs(blocks)
-        json.dump({'file': f, 'blocks': blocks, **({'hscroll': hs} if hs else {})}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
+        sm = showmore_configs(blocks)
+        json.dump({'file': f, 'blocks': blocks, **({'hscroll': hs} if hs else {}), **({'showmore': sm} if sm else {})}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
         types = {}
         for b in blocks: types[b['type']] = types.get(b['type'], 0) + 1
         report.append((f, len(blocks), types))

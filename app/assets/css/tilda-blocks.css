@@ -2,7 +2,7 @@
    сетка t-container/t-col, типографика t-text/t-title/t-descr/t-name, T004/T017/T030/T220/T195/T107,
    аккордеон T585, табы T395, галерея T663, попапы. Значения — из tilda-grid-3.0 / tilda-blocks (замерено по экспорту),
    переписаны своими правилами; блочные переопределения (#recNNN …) приходят из CSS экспорта вместе с блоком. */
-.tb { font-family: var(--font-involve); color: #000; } /* у Тильды цвет по умолчанию — чёрный (не задан) */
+.tb { font-family: var(--font-involve); color: #000; line-height: normal; } /* у Тильды цвет по умолчанию чёрный, интерлиньяж normal (не заданы) */
 :where(.tb img.t-img) { max-width: 100%; height: auto; }
 /* попапы из экспорта */
 .tb--popup { background: #fff; border-radius: 10px; }
@@ -23,3 +23,6 @@
 
 /* T395 «табы из блоков»: блоки неактивной вкладки */
 .t395__off { display: none !important; }
+
+/* «показать ещё» (mo-ti.ru): скрытые блоки */
+.tabshide { opacity: 0 !important; min-height: 0 !important; max-height: 0 !important; height: 0 !important; overflow: hidden !important; pointer-events: none !important; padding-top: 0 !important; padding-bottom: 0 !important; margin: 0 !important; }

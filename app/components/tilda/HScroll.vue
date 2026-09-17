@@ -11,6 +11,8 @@ onMounted(() => {
     const viewport = document.getElementById(cfg.scroll)
     if (!viewport) continue
     viewport.classList.add('tz-hscroll')
+    // как скрипты Тильды: блок со скроллом получает overflow-x:auto (в данных артборда ovrflw бывает не задан)
+    viewport.style.overflowX = 'auto'; viewport.style.overflowY = 'hidden'
     // перетаскивание мышью (тач-скролл нативный)
     let down = false, startX = 0, startLeft = 0, moved = false
     const onDown = (e: PointerEvent) => { if (e.pointerType !== 'mouse' || e.button !== 0) return; down = true; moved = false; startX = e.clientX; startLeft = viewport.scrollLeft; viewport.classList.add('tz-hscroll--drag') }
@@ -27,7 +29,7 @@ onMounted(() => {
         a.addEventListener('click', h); a.style.cursor = 'pointer'
         cleanups.push(() => a.removeEventListener('click', h))
       })
-      bind('.arrow-left', -1); bind('.arrow-right', 1)
+      bind('.arrow-left, .scrollback', -1); bind('.arrow-right, .scrollfwd', 1) // romanyu / VORON
     }
   }
 })

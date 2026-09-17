@@ -47,5 +47,6 @@ function popupContent(b: TildaBlock): TildaBlock | null {
       <TildaBlock v-else :block="b" :popup-content="popupContent(b)" />
     </template>
     <HScroll v-if="data.hscroll?.length" :items="data.hscroll" />
+    <ShowMore v-if="data.showmore?.length" :items="data.showmore" />
   </div>
 </template>

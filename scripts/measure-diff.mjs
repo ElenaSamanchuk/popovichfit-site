@@ -39,6 +39,8 @@ const local = await page.evaluate((recs) => {
     const root = document.getElementById(r.id)
     if (!root) continue
     out.recs[r.id] = rect(root)
+    // блок скрыт локально (табы из блоков, «показать ещё») — элементы не сверяем
+    if (getComputedStyle(root).display === 'none' || root.classList.contains('tabshide')) { out.hiddenRecs = [...(out.hiddenRecs || []), r.id]; continue }
     for (const id of r.elems) {
       // ищем внутри блока: одинаковые id элементов встречаются в скопированных блоках
       const el = root.querySelector(id.startsWith('G') ? '.g' + id.slice(1) : '.e' + id)
@@ -81,6 +83,7 @@ for (const rec of live.recs) {
   }
   // zero-попапы (контент T1093): на живом все элементы невидимы → локально живут в модалке (в DOM их нет), не сверяем;
   // но если такой «невидимый на живом» блок локально отрисован в потоке с высотой — это лишний блок
+  if ((local.hiddenRecs || []).includes(rec.id)) { if (rec.rect[3] > tol) console.log(`\n## ${rec.id} T${rec.type}  скрыт локально, а на живом виден: live h=${rec.rect[3]}`); continue }
   if (!(rec.elems || []).some((e) => e.visible)) {
     if (lr && lr[3] > tol) console.log(`\n## ${rec.id} T${rec.type}  скрытый на живом блок отрисован локально: h=${lr[3]} (live y=${rec.rect[1]} h=${rec.rect[3]})`)
     continue

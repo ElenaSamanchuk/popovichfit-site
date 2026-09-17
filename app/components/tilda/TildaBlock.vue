@@ -29,7 +29,9 @@ const customHtml = computed(() => (b.custom || '').replace(/<script[\s\S]*?<\/sc
 const isPreloader = computed(() => /NLM048|nl_reploader|simple-preloader/i.test(b.custom || ''))
 const customVisible = computed(() => b.type === '131' && !isPreloader.value && /<(div|iframe|img|p|a|span|table|h\d|ul)\b/.test(customHtml.value))
 
-const blockCss = (b.css || '') + visCss('#' + b.id, b.vis)  // CSS блока из экспорта + видимость по ширине экрана
+// стили видимого кастомного HTML (виджеты вроде розыгрыша #pf-pl-v1) — свои, со скоупом по id; у невидимых T123 не нужны
+const customCss = computed(() => (b.type === '131' && customVisible.value ? [...(b.custom || '').matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)].map((m) => m[1]).join('\n') : ''))
+const blockCss = (b.css || '') + visCss('#' + b.id, b.vis) + customCss.value  // CSS блока из экспорта + видимость по ширине экрана
 if (blockCss) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: blockCss }] })
 const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"/)?.[1] : undefined)
 
@@ -48,14 +50,15 @@ onMounted(() => {
       })
     })
   }
-  if (b.type === '395') {
-    const tabs = [...el.querySelectorAll<HTMLElement>('.t395__tab')]
-    const panels = [...el.querySelectorAll<HTMLElement>('.t395__content')]
-    const select = el.querySelector<HTMLSelectElement>('.t395__select')
+  if (b.type === '395' || b.type === '1281') {
+    const t = 't' + b.type // T395 и T1281 (табы-карусель) устроены одинаково: .tNNN__tab[data-tab-rec-ids], .tNNN__tab_active
+    const tabs = [...el.querySelectorAll<HTMLElement>(`.${t}__tab`)]
+    const panels = [...el.querySelectorAll<HTMLElement>(`.${t}__content`)]
+    const select = el.querySelector<HTMLSelectElement>(`.${t}__select`)
     // «табы из блоков»: у вкладок data-tab-rec-ids — показываем блоки активной вкладки, остальные прячем (t395__off)
     const recIds = tabs.map((t) => (t.getAttribute('data-tab-rec-ids') || '').split(',').map((x) => x.trim()).filter(Boolean))
     const activate = (i: number) => {
-      tabs.forEach((t, j) => { t.classList.toggle('t395__tab_active', i === j); t.querySelector('button')?.setAttribute('aria-selected', String(i === j)) })
+      tabs.forEach((tab, j) => { tab.classList.toggle(`${t}__tab_active`, i === j); tab.classList.toggle(`${t}__tab-style1_active`, i === j && b.type === '1281'); tab.querySelector('button')?.setAttribute('aria-selected', String(i === j)) })
       panels.forEach((p, j) => { p.style.display = i === j ? 'block' : 'none' })
       recIds.forEach((ids, j) => ids.forEach((id) => document.getElementById('rec' + id)?.classList.toggle('t395__off', i !== j)))
       if (select) select.selectedIndex = i
@@ -95,7 +98,7 @@ onMounted(() => {
     :id="b.id"
     ref="root"
     class="tb t-rec"
-    :class="['t-rec-' + b.type, b.tabHidden ? 't395__off' : '']"
+    :class="['t-rec-' + b.type, b.tabHidden ? 't395__off' : '', b.showHidden ? 'tabshide' : '']"
     :style="{ paddingTop: b.pad['padding-top'] != null ? b.pad['padding-top'] + 'px' : undefined, paddingBottom: b.pad['padding-bottom'] != null ? b.pad['padding-bottom'] + 'px' : undefined, backgroundColor: b.bg || undefined }"
     :data-tilda-rec="b.id"
     v-html="b.html"
