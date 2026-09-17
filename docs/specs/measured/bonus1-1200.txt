@@ -1,0 +1,164 @@
+# /bonus1 @1200 — высота 1243
+
+## rec1120433846 T396 rect=0,0,1200,0  
+   artboard: 0,0,1200,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064216340 @0,0,1200,10 bg:rgb(255, 255, 255)
+- [shape] #1750064265438 @0,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @1074,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @403,10,394,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @1082,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @13,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @34,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @423,19,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @479,19,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @560,19,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @621,19,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @692,19,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,0,1200,0  
+   artboard: 0,700,1200,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:auto pos:0% 0% r:8px
+
+## rec777997045 T396 rect=0,0,1200,145  
+   artboard: 0,75,1200,70 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @20,85,680,44 «Дыхание» | 40px/44px 700 Manrope rgb(32, 32, 32)
+
+## rec777997046 T396 rect=0,145,1200,265  
+   artboard: 0,160,1200,250 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1721648754826 @20,175,283,219 → #popup:embedcode8 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721649051964 @311,175,283,219 → #popup:embedcode4 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721649279455 @606,175,283,219 → #popup:embedcode2 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721649279432 @897,175,283,219 → #popup:embedcode3 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721648754823 @25,180,273,160 → #popup:embedcode8 bg:rgb(246, 246, 246) img:image.png size:112.724% auto pos:50% 0% r:12px
+- [shape] #1721649051961 @316,180,273,160 → #popup:embedcode4 bg:rgb(246, 246, 246) img:__2023-12-24__152549.png size:124.32% auto pos:50% 0% r:12px
+- [shape] #1721649279454 @611,180,273,160 → #popup:embedcode2 bg:rgb(246, 246, 246) img:image_33_6.jpg size:117.496% auto pos:50% 0% r:12px
+- [shape] #1721649279429 @902,180,273,160 → #popup:embedcode3 bg:rgb(246, 246, 246) img:image_33_9.jpg size:116.363% auto pos:50% 0% r:12px
+- [shape] #1721648754814 @132,230,60,60 → #popup:embedcode8 r:3000px
+- [shape] #1721648754808 @132,230,60,60 → #popup:embedcode8 r:3000px
+- [shape] #1721649051951 @422,230,60,60 → #popup:embedcode4 r:3000px
+- [shape] #1721649051931 @422,230,60,60 → #popup:embedcode4 r:3000px
+- [shape] #1721649279449 @718,230,60,60 → #popup:embedcode2 r:3000px
+- [shape] #1721649279435 @718,230,60,60 → #popup:embedcode2 r:3000px
+- [shape] #1721649279420 @1008,230,60,60 → #popup:embedcode3 r:3000px
+- [shape] #1721649279395 @1008,230,60,60 → #popup:embedcode3 r:3000px
+- [image] #1721648754812 @152,250,20,20 → #popup:embedcode8
+- [image] #1721649051936 @442,250,20,20 → #popup:embedcode4
+- [image] #1721649279437 @738,250,20,20 → #popup:embedcode2
+- [image] #1721649279400 @1028,250,20,20 → #popup:embedcode3
+- [button] #1721648754816 @240,309,48,21 «32 мин» → #popup:embedcode8 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [button] #1721649051954 @531,309,48,21 «26 мин» → #popup:embedcode4 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [button] #1721649279451 @826,309,48,21 «17 мин» → #popup:embedcode2 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [button] #1721649279422 @1117,309,48,21 «25 мин» → #popup:embedcode3 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [shape] #1722160472653 @41,312,102,22 bg:rgb(255, 255, 255) r:8px
+- [shape] #1722160472646 @341,312,102,22 → #popup:embedcode4 bg:rgb(255, 255, 255) r:8px
+- [shape] #1722160472639 @631,312,102,22 bg:rgb(255, 255, 255) r:8px
+- [shape] #1722160472631 @921,312,102,22 → #popup:embedcode3 bg:rgb(255, 255, 255) r:8px
+- [text] #1722160472651 @45,313,66,19 «Сложность» | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [text] #1722160472644 @345,313,66,19 «Сложность» → #popup:embedcode4 | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [text] #1722160472637 @635,313,66,19 «Сложность» | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [text] #1722160472629 @925,313,66,19 «Сложность» → #popup:embedcode3 | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [shape] #1722160472650 @113,320,6,6 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160472649 @122,320,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472648 @131,320,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472643 @413,320,6,6 → #popup:embedcode4 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160472642 @422,320,6,6 → #popup:embedcode4 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472640 @431,320,6,6 → #popup:embedcode4 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472636 @703,320,6,6 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160472634 @712,320,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472633 @721,320,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472628 @993,320,6,6 → #popup:embedcode3 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160472626 @1002,320,6,6 → #popup:embedcode3 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160472624 @1011,320,6,6 → #popup:embedcode3 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [text] #1721648754819 @35,350,250,15 «Дыхание как основа» → #popup:embedcode8 | 14px/15px 600 Manrope rgb(38, 38, 38)
+- [text] #1721649051956 @326,350,206,30 «Дыхание для расслабления и снятие отеков» → #popup:embedcode4 | 14px/15px 600 Manrope rgb(38, 38, 38)
+- [text] #1721649279452 @621,350,250,15 «Дыхание и снятие отеков» → #popup:embedcode2 | 14px/15px 600 Manrope rgb(38, 38, 38)
+- [text] #1721649279424 @912,350,250,15 «Расслабляющее дыхание» → #popup:embedcode3 | 14px/15px 600 Manrope rgb(38, 38, 38)
+
+## rec777997047 T396 rect=0,410,1200,250  
+   artboard: 0,410,1200,250 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1721648754826 @20,425,283,223 → #popup:embedcode5 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721649051964 @311,425,283,223 → #popup:embedcode6 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721649279455 @606,425,283,223 → #popup:embedcode7 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721649279432 @897,425,283,223 → #popup:embedcode1 img:linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1721648754823 @25,430,273,160 → #popup:embedcode5 bg:rgb(246, 246, 246) img:image_33_11.jpg size:113.044% auto pos:50% 0% r:12px
+- [shape] #1721649051961 @316,430,273,160 → #popup:embedcode6 bg:rgb(246, 246, 246) img:__2023-08-06__162019.png size:115.973% auto pos:50% 0% r:12px
+- [shape] #1721649279454 @611,430,273,160 → #popup:embedcode7 bg:rgb(246, 246, 246) img:__2023-08-06__161837.png size:117.496% auto pos:50% 0% r:12px
+- [shape] #1721649279429 @902,430,273,160 → #popup:embedcode1 bg:rgb(246, 246, 246) img:__2023-10-14__195656.png size:119.637% auto pos:50% 0% r:12px
+- [shape] #1721648754814 @132,480,60,60 → #popup:embedcode5 r:3000px
+- [shape] #1721648754808 @132,480,60,60 → #popup:embedcode5 r:3000px
+- [shape] #1721649051951 @422,480,60,60 → #popup:embedcode6 r:3000px
+- [shape] #1721649051931 @422,480,60,60 → #popup:embedcode6 r:3000px
+- [shape] #1721649279449 @718,480,60,60 → #popup:embedcode7 r:3000px
+- [shape] #1721649279435 @718,480,60,60 → #popup:embedcode7 r:3000px
+- [shape] #1721649279420 @1008,480,60,60 → #popup:embedcode1 r:3000px
+- [shape] #1721649279395 @1008,480,60,60 → #popup:embedcode1 r:3000px
+- [image] #1721648754812 @152,500,20,20 → #popup:embedcode5
+- [image] #1721649051936 @442,500,20,20 → #popup:embedcode6
+- [image] #1721649279437 @738,500,20,20 → #popup:embedcode7
+- [image] #1721649279400 @1028,500,20,20 → #popup:embedcode1
+- [shape] #1722160591851 @31,552,102,22 bg:rgb(255, 255, 255) r:8px
+- [shape] #1722160591843 @331,552,102,22 bg:rgb(255, 255, 255) r:8px
+- [shape] #1722160591836 @621,552,102,22 bg:rgb(255, 255, 255) r:8px
+- [shape] #1722160591828 @911,552,102,22 → #popup:embedcode1 bg:rgb(255, 255, 255) r:8px
+- [text] #1722160591849 @35,553,66,19 «Сложность» | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [text] #1722160591841 @335,553,66,19 «Сложность» | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [text] #1722160591834 @625,553,66,19 «Сложность» | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [text] #1722160591826 @915,553,66,19 «Сложность» → #popup:embedcode1 | 12px/19px 600 Manrope rgb(106, 89, 89)
+- [button] #1721648754816 @240,559,48,21 «29 мин» → #popup:embedcode5 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [button] #1721649051954 @531,559,48,21 «29 мин» → #popup:embedcode6 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [button] #1721649279451 @826,559,48,21 «31 мин» → #popup:embedcode7 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [button] #1721649279422 @1117,559,48,21 «38 мин» → #popup:embedcode1 | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:auto pos:0% 0% r:40px
+- [shape] #1722160591847 @103,560,6,6 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160591846 @112,560,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591844 @121,560,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591840 @403,560,6,6 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160591839 @412,560,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591837 @421,560,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591833 @693,560,6,6 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160591831 @702,560,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591830 @711,560,6,6 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591825 @983,560,6,6 → #popup:embedcode1 bg:rgb(106, 89, 89) r:3000px
+- [shape] #1722160591824 @992,560,6,6 → #popup:embedcode1 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [shape] #1722160591822 @1001,560,6,6 → #popup:embedcode1 bg:rgb(106, 89, 89) r:3000px op:0.15
+- [text] #1721648754819 @35,600,250,30 «Грудобрюшная и тазовая диафрагма, как партнеры» → #popup:embedcode5 | 14px/15px 600 Manrope rgb(38, 38, 38)
+- [text] #1721649051956 @326,600,250,15 «Дыхание для снятия отечности» → #popup:embedcode6 | 14px/15px 600 Manrope rgb(38, 38, 38)
+- [text] #1721649279452 @621,600,250,15 «Дыхание для расслабления» → #popup:embedcode7 | 14px/15px 600 Manrope rgb(38, 38, 38)
+- [text] #1721649279424 @912,600,250,30 «Дыхание - снятие отечности и уменьшений болей» → #popup:embedcode1 | 14px/15px 600 Manrope rgb(38, 38, 38)
+
+## rec777997049 T396 rect=0,720,1200,180  
+   artboard: 0,720,1200,60 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [button] #1719923677879 @1067,724,113,50 «Назад» → javascript:history.back() | 12px/18.6px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(129.24deg, rgb(240, 119, 159) 0%, rgb(195, 146, 165) 100%) size:auto pos:0% 0% r:8px
+
+## rec1120448561 T396 rect=0,660,1200,583  
+   artboard: 0,317,1200,583 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @966,363,6,6
+- [button] #1749597221603 @20,368,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @20,368,495,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @103,368,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @176,368,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @276,368,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @364,368,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @436,368,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @871,368,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @871,368,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @906,368,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @941,368,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @976,368,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @1030,368,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:auto pos:0% 0% r:8px
+- [text] #1750073992932 @874,418,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @1030,418,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,526,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @349,526,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @658,526,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @940,526,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,576,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @349,576,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @658,576,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @23,630,1154,139
+- [shape] #1749597712349 @20,812,1160,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @545,843,110,11 → https://shumann.ru/ op:0.6

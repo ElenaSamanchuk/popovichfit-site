@@ -1,0 +1,1780 @@
+{
+ "width": 1200,
+ "height": 3220,
+ "recs": [
+  {
+   "id": "rec782422491",
+   "type": "131",
+   "rect": [
+    0,
+    0,
+    1200,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec782422492",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    1200,
+    50
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720448527219",
+     "type": "button",
+     "rect": [
+      1071,
+      10,
+      110,
+      30
+     ],
+     "text": "ЛИЧНЫЙ КАБИНЕТ",
+     "href": "members/login",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(35, 35, 35)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     1200,
+     50
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782421054",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    1200,
+    690
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720448097344",
+     "type": "shape",
+     "rect": [
+      14,
+      10,
+      1176,
+      640
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(86.4deg, rgb(243, 243, 245) 0%, rgb(208, 208, 208) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720533707678",
+     "type": "image",
+     "rect": [
+      579,
+      55,
+      516,
+      594
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      19,
+      219,
+      488,
+      53
+     ],
+     "text": "Курс «Коррекция»",
+     "href": "",
+     "font": "44px/53px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720534230751",
+     "type": "text",
+     "rect": [
+      19,
+      292,
+      450,
+      168
+     ],
+     "text": "Наш курс создан в целях получения знаний, формирования установок, личностных ориентиров и норм поведения, обеспечивающих сохранение и укрепление физического и п",
+     "href": "",
+     "font": "15px/21px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     1200,
+     690
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782421065",
+   "type": "396",
+   "rect": [
+    0,
+    690,
+    1200,
+    490
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      20,
+      848,
+      433,
+      44
+     ],
+     "text": "В рамках курса вы:",
+     "href": "",
+     "font": "40px/44px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720534395548",
+     "type": "shape",
+     "rect": [
+      21,
+      921,
+      374,
+      242
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720596465477",
+     "type": "shape",
+     "rect": [
+      39,
+      941,
+      60,
+      60
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(108, 108, 108)",
+     "bgImage": "Rectangle_3077_1.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720597374178",
+     "type": "text",
+     "rect": [
+      119,
+      991,
+      247,
+      150
+     ],
+     "text": "основы здорового питания, включая балансирование рациона, основные понятия о КБЖУ, значение общей физической подготовки в развитии физических способностей и сов",
+     "href": "",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720612438124",
+     "type": "shape",
+     "rect": [
+      415,
+      921,
+      374,
+      242
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720612438121",
+     "type": "shape",
+     "rect": [
+      435,
+      941,
+      60,
+      60
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(108, 108, 108)",
+     "bgImage": "Rectangle_3076_1.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720612438107",
+     "type": "text",
+     "rect": [
+      515,
+      1011,
+      256,
+      120
+     ],
+     "text": "выполнять упражнения на разные группы мышц, составлять комплексы упражнений и собственный рацион питания, организовывать здоровьеформирующую и здоровьесберегающ",
+     "href": "",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931063418",
+     "type": "text",
+     "rect": [
+      20,
+      767,
+      433,
+      60
+     ],
+     "text": "Курс “Коррекция” направлен на получение знаний, обеспечивающих сохранение и укрепление физического и психологического здоровья как одного из ценностных составля",
+     "href": "",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931274387",
+     "type": "shape",
+     "rect": [
+      809,
+      921,
+      374,
+      242
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931274383",
+     "type": "shape",
+     "rect": [
+      829,
+      941,
+      60,
+      60
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(108, 108, 108)",
+     "bgImage": "1389_2_1.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "100px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931274376",
+     "type": "text",
+     "rect": [
+      910,
+      1011,
+      242,
+      90
+     ],
+     "text": "согласованной одновременной работы всех частей тела – корпуса, ног, рук, головы, самоконтроля, самостоятельного применения полученных знаний и умений в повседне",
+     "href": "",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931431196",
+     "type": "text",
+     "rect": [
+      119,
+      941,
+      201,
+      40
+     ],
+     "text": "Узнаете основные понятия анатомии",
+     "href": "",
+     "font": "18px/20px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931431188",
+     "type": "text",
+     "rect": [
+      910,
+      941,
+      240,
+      60
+     ],
+     "text": "Овладеете практическими навыками правильного питания",
+     "href": "",
+     "font": "18px/20px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931552972",
+     "type": "text",
+     "rect": [
+      515,
+      941,
+      246,
+      60
+     ],
+     "text": "Научитесь направлять свои усилия на коррекцию фигуры",
+     "href": "",
+     "font": "18px/20px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     750,
+     1200,
+     430
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782449351",
+   "type": "396",
+   "rect": [
+    0,
+    1180,
+    1200,
+    660
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      20,
+      1235,
+      536,
+      44
+     ],
+     "text": "Программа обучения:",
+     "href": "",
+     "font": "40px/44px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720534395548",
+     "type": "shape",
+     "rect": [
+      21,
+      1306,
+      374,
+      405
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720597374178",
+     "type": "text",
+     "rect": [
+      39,
+      1543,
+      247,
+      75
+     ],
+     "text": "Тема 1.1 Мышцы тазового дна Тема 1.2 Дыхание Тема 1.3 Мышцы брюшного пресса Тема 1.4 Ягодичные мышцы Промежуточный контроль",
+     "href": "",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722931431196",
+     "type": "text",
+     "rect": [
+      39,
+      1516,
+      201,
+      20
+     ],
+     "text": "Тело",
+     "href": "",
+     "font": "18px/20px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722932742904",
+     "type": "button",
+     "rect": [
+      39,
+      1486,
+      73,
+      22
+     ],
+     "text": "МОДУЛЬ 1",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1722932742893",
+     "type": "shape",
+     "rect": [
+      26,
+      1311,
+      363,
+      160
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(141, 141, 141)",
+     "bgImage": "1568_1_1.jpg",
+     "bgSize": "100% auto",
+     "bgPos": "0% 83.559%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933569190",
+     "type": "shape",
+     "rect": [
+      413,
+      1306,
+      374,
+      405
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933569186",
+     "type": "text",
+     "rect": [
+      431,
+      1543,
+      294,
+      150
+     ],
+     "text": "Тема 2.1 Макронутриенты. Белки Тема 2.2 Макронутриенты. Жиры Тема 2.3 Макронутриенты. Углеводы Тема 2.4 Рацион Тема 2.5 Тяга к сладкому Тема 2.6 Похудение Тема ",
+     "href": "",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933569181",
+     "type": "text",
+     "rect": [
+      431,
+      1516,
+      201,
+      20
+     ],
+     "text": "Питание",
+     "href": "",
+     "font": "18px/20px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933569180",
+     "type": "button",
+     "rect": [
+      431,
+      1486,
+      73,
+      22
+     ],
+     "text": "МОДУЛЬ 2",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1722933569175",
+     "type": "shape",
+     "rect": [
+      418,
+      1311,
+      363,
+      160
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(141, 141, 141)",
+     "bgImage": "1717_4_2.jpg",
+     "bgSize": "100% auto",
+     "bgPos": "0% 83.559%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933620326",
+     "type": "shape",
+     "rect": [
+      806,
+      1306,
+      374,
+      405
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933620317",
+     "type": "text",
+     "rect": [
+      824,
+      1486,
+      201,
+      20
+     ],
+     "text": "Итоговый контроль",
+     "href": "",
+     "font": "18px/20px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933620311",
+     "type": "shape",
+     "rect": [
+      811,
+      1311,
+      363,
+      160
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(141, 141, 141)",
+     "bgImage": "Rectangle_3074.jpg",
+     "bgSize": "100% auto",
+     "bgPos": "0% 83.559%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722933710827",
+     "type": "text",
+     "rect": [
+      21,
+      1741,
+      433,
+      30
+     ],
+     "text": "Дополнительная общеобразовательная программа –дополнительная общеразвивающая программа «Коррекция»",
+     "href": "https://disk.yandex.ru/i/In_VD4zQs-Bnqw",
+     "font": "12px/15px 500 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1225,
+     1200,
+     570
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782421070",
+   "type": "396",
+   "rect": [
+    0,
+    1840,
+    1200,
+    200
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      20,
+      1866,
+      459,
+      88
+     ],
+     "text": "Как начать обучаться с POPOVICHFIT:",
+     "href": "",
+     "font": "40px/44px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720689154278",
+     "type": "image",
+     "rect": [
+      66,
+      1971,
+      40,
+      40
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.7",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720689154271",
+     "type": "image",
+     "rect": [
+      20,
+      1971,
+      40,
+      40
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "0.7",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1840,
+     1200,
+     200
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782421071",
+   "type": "131",
+   "rect": [
+    0,
+    2040,
+    1200,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec782421073",
+   "type": "396",
+   "rect": [
+    0,
+    2040,
+    1200,
+    460
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720688572141",
+     "type": "shape",
+     "rect": [
+      20,
+      2054,
+      280,
+      370
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(251, 251, 251)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572139",
+     "type": "button",
+     "rect": [
+      40,
+      2074,
+      30,
+      30
+     ],
+     "text": "1",
+     "href": "",
+     "font": "12px/13.2px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1720688572138",
+     "type": "text",
+     "rect": [
+      40,
+      2119,
+      238,
+      133
+     ],
+     "text": "После оплаты вам на почту придет письмо с логином и паролем, который будет использоваться для входа на образовательную платформу через кнопку “Личный кабинет”.",
+     "href": "",
+     "font": "16px/19px 600 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572135",
+     "type": "shape",
+     "rect": [
+      319,
+      2054,
+      280,
+      370
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(251, 251, 251)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572134",
+     "type": "button",
+     "rect": [
+      338,
+      2074,
+      30,
+      30
+     ],
+     "text": "2",
+     "href": "",
+     "font": "12px/13.2px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1720688572133",
+     "type": "text",
+     "rect": [
+      338,
+      2119,
+      222,
+      57
+     ],
+     "text": "Все материалы в личном кабинете откроются за 1 день до даты старта курса",
+     "href": "",
+     "font": "16px/19px 600 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572131",
+     "type": "text",
+     "rect": [
+      338,
+      2185,
+      244,
+      75
+     ],
+     "text": "Доступ к основной программе курса открывается за день до старта потока в 20:00 по Мск, закрывается в 20:00 по Мск в день окончания срока доступа, до этого вам д",
+     "href": "",
+     "font": "12px/15px 400 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572128",
+     "type": "shape",
+     "rect": [
+      618,
+      2053,
+      280,
+      370
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(251, 251, 251)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572126",
+     "type": "button",
+     "rect": [
+      638,
+      2073,
+      30,
+      30
+     ],
+     "text": "3",
+     "href": "",
+     "font": "12px/13.2px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1720688572122",
+     "type": "text",
+     "rect": [
+      638,
+      2119,
+      241,
+      38
+     ],
+     "text": "В день старта курса вы начинаете обучаться",
+     "href": "",
+     "font": "16px/19px 600 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720688572119",
+     "type": "shape",
+     "rect": [
+      2409,
+      2080,
+      62,
+      370
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1721287493829",
+     "type": "shape",
+     "rect": [
+      912,
+      2053,
+      269,
+      370
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(251, 251, 251)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1721287493827",
+     "type": "button",
+     "rect": [
+      933,
+      2073,
+      30,
+      30
+     ],
+     "text": "4",
+     "href": "",
+     "font": "12px/13.2px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1721287493825",
+     "type": "text",
+     "rect": [
+      933,
+      2118,
+      218,
+      190
+     ],
+     "text": "В случае, если вы не сможете обучаться по каким-либо обстоятельствам или вам не подойдет курс/формат, то в течение 5 дней после даты старта курса вы можете сдел",
+     "href": "",
+     "font": "16px/19px 600 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1721289174446",
+     "type": "shape",
+     "rect": [
+      39,
+      2271,
+      242,
+      133
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "Group_12.jpg.webp",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1721289288537",
+     "type": "text",
+     "rect": [
+      638,
+      2167,
+      227,
+      60
+     ],
+     "text": "В случае возникновения проблем технического характера на ваши вопросы ответит техподдержка",
+     "href": "",
+     "font": "12px/15px 400 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2040,
+     1200,
+     430
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782421075",
+   "type": "215",
+   "rect": [
+    0,
+    2500,
+    1200,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec782421076",
+   "type": "396",
+   "rect": [
+    0,
+    2500,
+    1200,
+    510
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720617699673",
+     "type": "shape",
+     "rect": [
+      20,
+      2605,
+      570,
+      330
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(235, 235, 235)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "14px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      20,
+      2525,
+      482,
+      44
+     ],
+     "text": "Над курсом работают:",
+     "href": "",
+     "font": "40px/44px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720596490697",
+     "type": "text",
+     "rect": [
+      286,
+      2660,
+      222,
+      26
+     ],
+     "text": "Наталья Попович",
+     "href": "",
+     "font": "24px/26px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720612438121",
+     "type": "shape",
+     "rect": [
+      25,
+      2610,
+      240,
+      320
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgb(108, 108, 108)",
+     "bgImage": "0182_1.jpg",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720617219151",
+     "type": "text",
+     "rect": [
+      286,
+      2696,
+      273,
+      60
+     ],
+     "text": "Регулярно повышает квалификацию и следит за квалификацией сотрудников Проводит мастер-классы для участников курса POPOVICHFIT",
+     "href": "",
+     "font": "12px/15px 400 Manrope",
+     "color": "rgb(97, 97, 97)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1720695087453",
+     "type": "button",
+     "rect": [
+      285,
+      2628,
+      163,
+      22
+     ],
+     "text": "ПЕДАГОГ И СОЗДАТЕЛЬ КУРСА",
+     "href": "",
+     "font": "9px/13.95px 700 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "30px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1720695664889",
+     "type": "button",
+     "rect": [
+      286,
+      2776,
+      220,
+      50
+     ],
+     "text": "СЕРТИФИКАТЫ И ОБУЧЕНИЯ",
+     "href": "https://popovichfit.ru/sertif",
+     "font": "12px/18.6px 700 Manrope",
+     "color": "rgb(112, 147, 185)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2515,
+     1200,
+     450
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782482553",
+   "type": "396",
+   "rect": [
+    0,
+    3010,
+    1200,
+    210
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1684474502765",
+     "type": "button",
+     "rect": [
+      1020,
+      3047,
+      144,
+      40
+     ],
+     "text": "Личный кабинет",
+     "href": "members/login",
+     "font": "11px/17.05px 600 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684475516477",
+     "type": "button",
+     "rect": [
+      520,
+      3052,
+      121,
+      30
+     ],
+     "text": "Публичная оферта",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1684475480886",
+     "type": "button",
+     "rect": [
+      520,
+      3085,
+      382,
+      30
+     ],
+     "text": "Политика в отношении обработки персональных данных",
+     "href": "https://popovichfit.ru/privacy",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722935400129",
+     "type": "text",
+     "rect": [
+      20,
+      3052,
+      560,
+      57
+     ],
+     "text": "Индивидуальный предприниматель Попович Наталья Викторовна ИНН 780528255230, ОГРНИП 321784700363794 NATALYA.POPOVICH87@YANDEX.RU",
+     "href": "",
+     "font": "12px/19px 400 Manrope",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722935452945",
+     "type": "button",
+     "rect": [
+      520,
+      3118,
+      289,
+      30
+     ],
+     "text": "Согласие на обработку персональных данных",
+     "href": "https://popovichfit.ru/oferta",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1722935467315",
+     "type": "button",
+     "rect": [
+      520,
+      3151,
+      121,
+      30
+     ],
+     "text": "Документы",
+     "href": "https://popovichfit.ru/doc_l",
+     "font": "11px/17.05px 100 Manrope",
+     "color": "rgb(189, 189, 189)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "11px",
+     "opacity": "1",
+     "align": "left",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     3010,
+     1200,
+     210
+    ],
+    "bg": "rgb(27, 27, 27)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec782421086",
+   "type": "270",
+   "rect": [
+    0,
+    3220,
+    1200,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "width": 480,
+ "height": 192,
+ "recs": [
+  {
+   "id": "rec2398298741",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    480,
+    192
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1781881607696000002",
+     "type": "shape",
+     "rect": [
+      10,
+      48,
+      460,
+      96
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(128.52deg, rgb(233, 240, 252) 0%, rgb(247, 250, 255) 27%, rgb(254, 254, 255) 55%, rgb(246, 249, 255) 75%, rgb(214, 230, 255) 100%)",
+     "bgSize": "auto",
+     "bgPos": "0% 0%",
+     "radius": "10px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781879966146",
+     "type": "shape",
+     "rect": [
+      505,
+      58,
+      67,
+      55
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "Group_1321319198.svg",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781879463526",
+     "type": "shape",
+     "rect": [
+      10,
+      47,
+      460,
+      97
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781879096989000224",
+     "type": "text",
+     "rect": [
+      25,
+      61,
+      275,
+      36
+     ],
+     "text": "Хотите подарить POPOVICHFIT близкому человеку?",
+     "href": "",
+     "font": "14px/18px 600 Involve",
+     "color": "rgb(49, 49, 49)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781879096989000225",
+     "type": "text",
+     "rect": [
+      25,
+      102,
+      255,
+      28
+     ],
+     "text": "Напишите нам, поможем выбрать курс и оформить сертификат",
+     "href": "",
+     "font": "12px/14px 600 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781879769129",
+     "type": "shape",
+     "rect": [
+      350,
+      57,
+      94,
+      48
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "Group_1321319461.svg",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1781879251508",
+     "type": "button",
+     "rect": [
+      338,
+      102,
+      110,
+      30
+     ],
+     "text": "НАПИСАТЬ НАМ",
+     "href": "https://t.me/PopovichfitCare_Bot",
+     "font": "10px/12px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(84.96deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%)",
+     "bgSize": "cover",
+     "bgPos": "0% 0%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "G1781880578142000001",
+     "type": "group",
+     "rect": [
+      25,
+      61,
+      251,
+      69
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:5px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     480,
+     192
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2823018901",
+   "type": "131",
+   "rect": [
+    0,
+    192,
+    480,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+# /inv_pow @1200 — высота 4523
+
+## rec1120433846 T396 rect=0,0,1200,0  
+   artboard: 0,0,1200,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064216340 @0,0,1200,10 bg:rgb(255, 255, 255)
+- [shape] #1750064265438 @0,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @1074,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @403,10,394,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @1082,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @13,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @34,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @423,19,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @479,19,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @560,19,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @621,19,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @692,19,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,0,1200,0  
+   artboard: 0,700,1200,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:auto pos:0% 0% r:8px
+
+## rec789432118 T396 rect=0,0,1200,750  
+   artboard: 0,90,1200,660 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @20,100,515,88 «Где приобрести инвентарь?» | 40px/44px 700 Manrope rgb(32, 32, 32)
+- [text] #1721120547894 @20,208,223,30 «Актуализировала для вашего удобства ссылки на инвентарь ❤️» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [shape] #1721120742467 @20,278,1161,430 img:linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1724423000698 @39,298,681,391 → #popup:embedcode_invent img:image_1_1.jpg.webp size:cover pos:50% 50% r:14px
+- [text] #1720609530861 @750,318,199,21 «Важно:» | 18px/21px 700 Manrope rgb(32, 32, 32)
+- [text] #1721120715927 @750,349,328,192 «Не паникуйте, если что-то не успели купить и тд, на курсе «Коррекция» большинство тренировок вообще без инвентаря и вы ВСЕГДА сможете позаниматься. Самое важное» | 12px/16px 500 Manrope rgb(97, 97, 97)
+- [shape] #1724423147917 @350,464,60,60 → #popup:embedcode_invent r:3000px
+- [shape] #1724423147904 @350,464,60,60 → #popup:embedcode_invent r:3000px
+- [image] #1724423147909 @370,484,20,20 → #popup:embedcode_invent
+
+## rec775120813 T396 rect=0,750,1200,285  
+   artboard: 0,750,1200,240 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720701413927 @20,760,560,200 bg:rgb(244, 244, 244) r:14px
+- [button] #1721122506347 @40,780,85,22 «ПРОМОКОДЫ» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%) size:auto pos:0% 0% r:30px
+- [text] #1720701413917 @40,822,194,48 «Structura.shop скидка 15% на все товары по коду natalyapopovich» → http://structura.shop/ | 14px/16px 700 Manrope rgb(32, 32, 32)
+- [text] #1720701413912 @269,822,285,90 «Вы всегда можете написать менеджерам, они уже знают наизусть, какой участницам нужен инвентарь для курсов ❤️ Всегда помогут. Также много различного инвентаря ес» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [text] #1721122596701 @40,889,185,32 «Fitnessroller.ru скидка 15% по коду NPopovich» → http://fitnessroller.ru/ | 14px/16px 700 Manrope rgb(32, 32, 32)
+
+## rec774909921 T396 rect=0,1035,1200,70  
+   artboard: 0,1035,1200,70 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @20,1045,515,44 «Ниже примеры» | 40px/44px 700 Manrope rgb(32, 32, 32)
+- [text] #1721120547894 @20,1153,223,30 «Актуализировала для вашего удобства ссылки на инвентарь ❤️» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [shape] #1721120742467 @20,1223,1161,430 img:linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%) size:auto pos:0% 0% r:14px
+- [video] #1720616062703 @40,1243,680,391 bg:rgb(0, 0, 0) r:14px
+- [text] #1720609530861 @750,1263,199,21 «Важно:» | 18px/21px 700 Manrope rgb(32, 32, 32)
+- [text] #1721120715927 @750,1294,328,192 «Не паникуйте, если что-то не успели купить и тд, на курсе «Коррекция» большинство тренировок вообще без инвентаря и вы ВСЕГДА сможете позаниматься. Самое важное» | 12px/16px 500 Manrope rgb(97, 97, 97)
+
+## rec774914896 T396 rect=0,1105,1200,695  
+   artboard: 0,1165,1200,590 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720609530861 @20,1175,658,28 «Отягощения для курса «СИЛОВОЙ»» | 24px/28px 700 Manrope rgb(32, 32, 32)
+- [text] #1721154642230 @20,1230,575,60 «Если вы занимаетесь в зале, вам из данного пункта для силовых не нужно ничего, всё уже есть в зале — это гантели, гири, штанга. Из тренажеров я использую кроссо» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [text] #1721205256021 @20,1309,199,21 «Наборные гантели» | 18px/21px 700 Manrope rgb(32, 32, 32)
+- [text] #1721203503466 @20,1338,442,30 «Это выгоднее, если вы планируете заниматься дома, у вас будут разные веса и вы сможете качественно прогрессировать. Ниже примеры:» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1721124865776 @20,1379,127,35 «Ozon» → https://ozon.ru/t/bZdJNBq | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [button] #1721203586357 @152,1379,127,35 «Ozon» → https://ozon.ru/t/k6E1BaN | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721205586971 @20,1437,199,21 «Гири» | 18px/21px 700 Manrope rgb(32, 32, 32)
+- [text] #1721205586962 @20,1466,493,30 «Также я очень люблю гири, если вы не хотите брать набор гантелей, то новичкам рекомендую начать с 4 кг (для тренировок ягодиц). Ниже примеры:» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1721205586959 @20,1507,127,35 «Ozon» → https://ozon.ru/t/ADEV3A0 | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [button] #1721205586968 @152,1507,127,35 «Ozon» → https://ozon.ru/t/0R4qQ5K | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721205633958 @20,1573,332,21 «Гантели (для тренировок «верха»)» | 18px/21px 700 Manrope rgb(32, 32, 32)
+- [text] #1721205633969 @20,1602,300,30 «Новичкам рекомендую начинать с 2 кг (понадобится 2 гантели одного веса). Пример:» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1721205633975 @20,1643,127,35 «Ozon» → https://ozon.ru/t/V0E4LV5 | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721205689643 @20,1705,452,30 «Выбор веса зависит от уровня вашей подготовленности, я все проговариваю в тренировках - следуйте моим рекомендациям в подборе веса.» | 12px/15px 500 Manrope rgb(97, 97, 97)
+
+## rec1100164651 T396 rect=0,1800,1200,1305  
+   artboard: 0,1815,1200,1260 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1721124567600 @20,1825,80,80 bg:rgb(255, 255, 255) img:03_2.jpg.webp size:cover pos:50% 50% r:2000px
+- [text] #1720609530861 @20,1925,328,28 «Массажные мячи - 2 шт.» | 24px/28px 700 Involve rgb(32, 32, 32)
+- [text] #1721154642230 @20,1963,281,30 «Самый ВАЖНЫЙ ПУНКТ в наших коррекциях. Берем строго РЕКОМЕНДОВАННЫЕ позиции.» | 12px/15px 500 Involve rgb(97, 97, 97)
+- [shape] #1724425759085 @20,2023,660,379 → #popup:embedcode_invent2 img:image_33.jpg.webp size:cover pos:50% 50% r:14px
+- [shape] #1724425759081 @320,2183,60,60 → #popup:embedcode_invent2 r:3000px
+- [shape] #1724425759074 @320,2183,60,60 → #popup:embedcode_invent2 r:3000px
+- [image] #1724425759076 @340,2203,20,20 → #popup:embedcode_invent2
+- [text] #1721124865784 @20,2432,199,21 «Structura shop» | 18px/21px 700 Involve rgb(32, 32, 32)
+- [text] #1721124865779 @20,2473,272,30 «Красные мячи 10 см - самые МЯГКИЕ и идеально подойдут новичкам» | 12px/15px 500 Involve rgb(97, 97, 97)
+- [button] #1721124865776 @20,2509,180,35 «Красные мячи 10 см (2 шт)» → http://structura.shop/balls/tproduct/600546795192-massazhnii-myagkii-myach-10-sm | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721125260678 @20,2554,209,15 «Разноцветные мячи 12 см» | 12px/15px 500 Involve rgb(97, 97, 97)
+- [button] #1721125260674 @20,2575,234,35 «Массажные мячи 12 см (2 шт)» → https://structura.shop/balls/tproduct/269285510572-massazhnie-myagkie-myachi-12-sm-2-sht | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721125549868 @20,2640,391,21 «Вариант в других магазинах:» | 18px/21px 700 Involve rgb(32, 32, 32)
+- [button] #1721125580781 @20,2671,130,35 «Мячи SENSYBALL» → https://elephant.ru/catalog/lechebnaya_fizkultura/massazh/myach-dlya-massazha/diametr_10_12_sm/myach_massazhnyy_10_sm_ledraplastic.html | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [button] #1721125584164 @155,2671,129,35 «Мячи Easy Grip» → https://elephant.ru/catalog/lechebnaya_fizkultura/massazh/myach-dlya-massazha/diametr_10_12_sm/myachi_myagkie_massazhnye_izi_krip_easy_grip_set_10_sm_2_shtuki_ledraplastic.html | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721153932424 @20,2737,391,21 «Вариант с WB:» | 18px/21px 700 Involve rgb(32, 32, 32)
+- [button] #1721153932420 @20,2768,130,35 «Ledraplastic» → https://www.wildberries.ru/catalog/114201663/detail.aspx?targetUrl=MS&size=205259798 | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721153977925 @20,2833,391,21 «Вариант с OZON:» | 18px/21px 700 Involve rgb(32, 32, 32)
+- [button] #1721153977919 @20,2864,130,35 «Массажные мячи» → https://ozon.ru/t/V0EVQYQ | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721120547894 @20,2919,281,30 «Остерегайтесь подделок на маркетплейсах, только эти позиции проверенные.» | 12px/15px 500 Involve rgb(97, 97, 97)
+- [text] #1721154125325 @20,2969,448,42 «Если вы находитесь заграницей, то на AMAZON вводите “franklin method easy crip”» | 18px/21px 700 Involve rgb(32, 32, 32)
+- [button] #1721154125320 @20,3021,130,35 «Amazon мячи» → https://www.amazon.com/OPTP-Franklin-Easy-Grip-Ball/dp/B073QWNMWX/ref=mp_s_a_1_1?crid=1KIILFXMGZNK9&dib=eyJ2IjoiMSJ9.FgP9UPniG2G9RayG6thiNHOdnLWNobGdDfHmLMkom07GjHj071QN20LucGBJIEps.WKAxESwRUqdi-95-63EJwtA_K80aQOVwj2Wx7ZytU5w&dib_tag=se&keywords=franklin+method+easy+crip&qid=1719328611&sprefix=franklin+method+easy+crip,aps,244&sr=8-1 | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+
+## rec774910521 T396 rect=0,3105,1200,255  
+   artboard: 0,3120,1200,210 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1721124567600 @20,3130,80,80 bg:rgb(255, 255, 255) img:05_3.jpg.webp size:cover pos:50% 50% r:2000px
+- [text] #1720609530861 @20,3230,328,28 «Мяч для пилатеса 25-30 см» | 24px/28px 700 Manrope rgb(32, 32, 32)
+- [button] #1721125260674 @175,3277,156,34 «structura.shop» → http://structura.shop/pilatesballs/tproduct/604925000822-myach-dlya-pilatesa-30-sm | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [button] #1721124865776 @20,3278,150,34 «Вариант с озон» → https://ozon.ru/t/M8dM3VG | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+
+## rec774910523 T396 rect=0,3360,1200,285  
+   artboard: 0,3375,1200,240 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1721124567600 @20,3385,80,80 bg:rgb(255, 255, 255) img:04_1.jpg.webp size:cover pos:50% 50% r:2000px
+- [text] #1720609530861 @20,3485,328,28 «Лента для пилатеса» | 24px/28px 700 Manrope rgb(32, 32, 32)
+- [text] #1721154642230 @20,3523,281,30 «Выбираем средний уровень. Эспандеры, ленты, фитнес-резинки – Эспандер ленточный 1,5 м.» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1721124865776 @20,3567,180,35 «structura.shop» → http://structura.shop/elastic/tproduct/702741942782-espander-lentochnii-15-m | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+
+## rec774910524 T396 rect=0,3645,1200,295  
+   artboard: 0,3660,1200,280 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720609530861 @20,3670,658,56 «ОПЦИОНАЛЬНО (используется реже всего либо в доп. материалах), поэтому можно докупить позже:» | 24px/28px 700 Manrope rgb(32, 32, 32)
+- [text] #1721154642230 @20,3745,420,15 «Кольцевые мини-ленты (их можно заменить лентой для пилатеса)» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [text] #1721203503466 @20,3775,420,30 «Ролл для МФР (можно заменить полотенцем). Ролл должен быть МЯГКИЙ, 33-45 см» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1721124865776 @40,3813,180,35 «Массажный ролл 45 см» → http://structura.shop/rolls/tproduct/962955473562-massazhnii-roll-45-sm | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [button] #1721203586357 @226,3813,180,35 «Массажный ролл Ozon» → https://www.ozon.ru/product/massazhnyy-tsilindr-roller-roll-rolik-valik-trigger-point-grid-myatnyy-33-sm-248488925/?__rr=1&from=share_ios&utm_campaign=productpage_link&utm_medium=share_button&utm_source=smm | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+- [text] #1721203624208 @20,3863,420,15 «Мяч для стоп» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1721203631123 @40,3886,129,35 «Это лучший» → https://www.ozon.ru/product/massazhnyy-myach-trigger-point-mobipoint-5-sm-152167703/?from=share_ios&sh=ykseB1zwDg&utm_campaign=productpage_link&utm_medium=share_button&utm_source=smm | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:auto pos:0% 0% r:6px
+
+## rec1120448561 T396 rect=0,3940,1200,583  
+   artboard: 0,317,1200,583 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @966,363,6,6
+- [button] #1749597221603 @20,368,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @20,368,495,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @103,368,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @176,368,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @276,368,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @364,368,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @436,368,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @871,368,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @871,368,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @906,368,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @941,368,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @976,368,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @1030,368,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:auto pos:0% 0% r:8px
+- [text] #1750073992932 @874,418,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @1030,418,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,526,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @349,526,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @658,526,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @940,526,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,576,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @349,576,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @658,576,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @23,630,1154,139
+- [shape] #1749597712349 @20,812,1160,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @545,843,110,11 → https://shumann.ru/ op:0.6

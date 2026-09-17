@@ -26,7 +26,9 @@ def img_path(p):
     base = os.path.basename(p)
     m = re.match(r'tild([0-9a-f]{4})-([0-9a-f]{4})-[0-9a-f-]+__(.+)$', base)
     if not m: return '/img/t/' + base
-    name = re.sub(r'[^A-Za-z0-9._-]+', '_', m.group(3)).lower()
+    # варианты -/resize/504x/, -/resizeb/20x/ (ленивые превью) → оригинал
+    name = re.sub(r'^-__(?:resizeb?|empty)__(?:\d+x__)?', '', m.group(3))
+    name = re.sub(r'[^A-Za-z0-9._-]+', '_', name).lower()
     ext = os.path.splitext(name)[1]
     if ext in ('.jpg', '.jpeg', '.png'):
         name = name[:-len(ext)] + '.webp'
@@ -190,6 +192,7 @@ def parse_page(fname):
                 el = {'id': e['id'], 'type': e['type'], 'cls': e['cls'], 'eff': effective(geo), 'fields': e['fields'], 'anim': e['anim']}
                 if e['html']: el['html'] = rewrite_links(e['html'])
                 if e['text']: el['text'] = e['text']
+                if e.get('tag') in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'): el['tag'] = e['tag']
                 if e['href']: el['href'] = rewrite_links(f'href="{e["href"]}"')[6:-1]
                 if e['img']: el['img'] = img_path(e['img'])
                 if e.get('inline'):

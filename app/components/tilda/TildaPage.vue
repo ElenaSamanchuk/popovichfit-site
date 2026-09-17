@@ -17,13 +17,13 @@ const SHARED = new Set([
 ])
 const popupRecs = computed(() => {
   const s = new Set<string>()
-  for (const b of props.data.blocks) for (const r of b.popupRecs ?? []) for (const id of r.split(',')) s.add('rec' + id.trim())
+  for (const b of props.data.blocks) for (const r of b.popupRecs ?? []) for (const id of r.split(',')) s.add('rec' + id.trim().replace(/^rec/, ''))
   return s
 })
 const byId = computed(() => new Map(props.data.blocks.map((b) => [b.id, b])))
 const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && !popupRecs.value.has(b.id)))
 function popupContent(b: TildaBlock): TildaBlock | null {
-  const id = b.popupRecs?.[0]?.split(',')[0]?.trim()
+  const id = b.popupRecs?.[0]?.split(',')[0]?.trim().replace(/^rec/, '')
   return id ? byId.value.get('rec' + id) ?? null : null
 }
 </script>

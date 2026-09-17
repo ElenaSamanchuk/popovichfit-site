@@ -33,7 +33,7 @@ const isInternal = computed(() => !!e.href && e.href.startsWith('/') && !e.href.
   <template v-if="e.type === 'text'">
     <NuxtLink v-if="isInternal" :to="href!" :class="cls" v-html="html" />
     <a v-else-if="href" :href="href" :class="cls" :target="isExternal ? '_blank' : undefined" :rel="isExternal ? 'noopener' : undefined" v-html="html" />
-    <div v-else :class="cls" v-html="html" />
+    <component :is="e.tag || 'div'" v-else :class="cls" v-html="html" />
   </template>
 
   <!-- кнопка -->

@@ -1,0 +1,11 @@
+# /page144406906.html @480 — высота 151
+
+## rec2313646141 T396 rect=0,0,480,151  
+   artboard: 0,0,480,151 bg=rgb(245, 245, 245) img=none pos=relative
+- [button] #1779800868944000002 @669,-160,120,40 «ПЕРЕЙТИ В ВК» → https://vk.com/popovichfit | 10px/12px 700 Involve rgb(48, 48, 48) uppercase align:center bg:rgb(255, 255, 255) r:6px
+- [shape] #1779800012434 @10,40,460,71 → https://vk.com/popovichfit img:Main_Container.svg size:cover pos:50% 50% r:10px
+- [text] #1779798129531000003 @20,50,321,32 «ЧТОБЫ НИЧЕГО НЕ ПОТЕРЯЛОСЬ, МЫ ДУБЛИРУЕМ ВСЮ ИНФОРМАЦИЮ В ДРУГИЕ СОЦ. СЕТИ.» | 12px/16px 700 Involve rgb(255, 255, 255) uppercase
+- [group] #G1779798367783000008 @20,50,315,51 img:none size:undefined pos:undefined flex column gap:5px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [shape] #1779798129534000007 @440,50,20,20 → https://vk.com/popovichfit img:Rectangle.png size:cover pos:50% 50%
+- [button] #1779798129533000006 @440,81,20,20 → https://vk.com/popovichfit | 12px/14.4px 700 Involve rgb(48, 48, 48) uppercase align:center bg:rgb(255, 255, 255) r:60px
+- [text] #1779798129532000004 @20,87,246,14 «Если не работает Телеграм, переходите ВК» | 10px/14px 500 Involve rgb(255, 255, 255)

@@ -1,0 +1,12 @@
+# /page149736926.html @480 — высота 192
+
+## rec2398298741 T396 rect=0,0,480,192  
+   artboard: 0,0,480,192 bg=rgb(255, 255, 255) img=none pos=relative
+- [shape] #1781879463526 @10,47,460,97 img:linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%) size:cover pos:0% 0% r:8px
+- [shape] #1781881607696000002 @10,48,460,96 img:linear-gradient(128.52deg, rgb(233, 240, 252) 0%, rgb(247, 250, 255) 27%, rgb(254, 254, 255) 55%, rgb(246, 249, 255) 75%, rgb(214, 230, 255) 100%) size:auto pos:0% 0% r:10px
+- [shape] #1781879769129 @350,57,94,48 img:Group_1321319461.svg size:cover pos:50% 50%
+- [shape] #1781879966146 @505,58,67,55 img:Group_1321319198.svg size:cover pos:50% 50%
+- [text] #1781879096989000224 @25,61,275,36 «Хотите подарить POPOVICHFIT близкому человеку?» | 14px/18px 600 Involve rgb(49, 49, 49)
+- [group] #G1781880578142000001 @25,61,251,69 img:none size:undefined pos:undefined flex column gap:5px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [text] #1781879096989000225 @25,102,255,28 «Напишите нам, поможем выбрать курс и оформить сертификат» | 12px/14px 600 Involve rgb(48, 48, 48)
+- [button] #1781879251508 @338,102,110,30 «НАПИСАТЬ НАМ» → https://t.me/PopovichfitCare_Bot | 10px/12px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(84.96deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:cover pos:0% 0% r:6px

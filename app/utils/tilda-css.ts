@@ -11,6 +11,8 @@ export interface ZeroElem {
   id: string; type: 'text' | 'button' | 'image' | 'shape' | 'vector' | 'html' | 'video' | 'form' | 'gallery' | 'tooltip'
   cls?: string; flex?: boolean; eff: Record<string, Eff>; fields: Record<string, string>; anim?: Record<string, string>
   html?: string; text?: string; href?: string; img?: string; bgImg?: string; svg?: string; embed?: string
+  /** тег атома у текстов: h1–h6/p (семантика заголовков), иначе div */
+  tag?: string
   video?: { kind: 'youtube' | 'vimeo' | 'kinescope'; id: string }; form?: unknown[]; formServices?: string[]
 }
 export interface ZeroGroup { id: string; cls: string; flex?: boolean; molFlex?: boolean; attrs?: Record<string, string>; eff: Record<string, Eff>; mol: Record<string, Record<string, string>> }

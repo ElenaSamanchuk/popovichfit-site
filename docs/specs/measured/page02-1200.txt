@@ -1,0 +1,148 @@
+# /page02 @1200 — высота 3467
+
+## rec1120433846 T396 rect=0,54,1200,0  
+   artboard: 0,0,1200,44 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750065106018 @400,-50,34,24 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750065280847 @410,-41,14,2 → #menu_open
+- [image] #1750065303997 @410,-37,14,2 → #menu_open
+- [shape] #1750064216340 @0,0,1200,10 bg:rgb(255, 255, 255)
+- [shape] #1750064265438 @0,0,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @1074,0,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @419,10,361,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064809384 @1082,11,108,24 «Личный кабинет» → https://lk.popovichfit.ru/ | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [image] #1750064375153 @13,18,14,14 → https://popovichfit.ru/
+- [text] #1750064321583 @34,19,65,12 «POPOVICHFIT» → https://popovichfit.ru/ | 10px/12px 500 Involve rgb(48, 48, 48) uppercase
+- [button] #1750064585345 @439,19,34,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @489,19,58,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @563,19,38,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @617,19,51,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @684,19,76,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+
+## rec2019524321 T396 rect=0,54,1200,0  
+   artboard: 0,700,1200,200 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @20,728,270,152 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:10px flex column gap:12px normal align:flex-start justify:flex-start pad:12px bg:rgba(0, 0, 0, 0) r:10px
+- [text] #1773213623323000003 @32,740,257,80 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 12px/16px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @32,832,100,36 «Согласен» | 14px/20.3px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:auto pos:0% 0% r:8px
+
+## rec662427322 T396 rect=0,54,1200,265  
+   artboard: 0,159,1200,160 bg=rgb(243, 246, 255) img=none pos=relative
+- [button] #1684741430611 @499,168,80,16 «ЦЕЛЛЮЛИТ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(138, 115, 255) r:6px
+- [button] #1684741455292 @582,168,55,16 «ОТЁКИ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(97, 152, 255) r:6px
+- [button] #1684741443519 @641,168,59,16 «ЛИМФА» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(202, 122, 255) r:6px
+- [text] #1669372132956 @34,205,1133,76 «ТO DO-ЛИСТ "5 ШАГОВ РАЗОГНАТЬ ЛИМФУ И ИЗБАВИТЬСЯ ОТ ЦЕЛЛЮЛИТА В ДОМАШНИХ УСЛОВИЯХ"» | 30px/38px 300 RockStar rgb(27, 27, 27) uppercase align:center
+
+## rec596029589 T396 rect=0,319,1200,330  
+   artboard: 0,349,1200,300 bg=rgb(243, 246, 255) img=none pos=relative
+- [shape] #1685011112302 @21,349,602,274 bg:rgb(255, 255, 255) img:noroot.jpg size:100% auto pos:0% 0%
+- [text] #1688974364651 @638,364,542,66 «Внутри — 5 простых и эффективных шагов, чтобы избавиться от целлюлита в домашних условиях, а также трекер полезных привычек. Скачать to do-лист можно в боте:» | 16px/22px 100 RockStar rgb(27, 27, 27)
+- [shape] #1688974364655 @638,563,260,60 → https://t.me/POPOVICHcourse_bot bg:rgb(55, 174, 226) r:16px
+- [image] #1688974364660 @654,576,34,34 → https://t.me/POPOVICHcourse_bot
+- [text] #1688974364664 @696,582,188,22 «Жми, чтобы скачать» → https://t.me/POPOVICHcourse_bot | 14px/22px 300 RockStar rgb(255, 255, 255) align:center
+
+## rec596031507 T396 rect=0,649,1200,265  
+   artboard: 0,724,1200,190 bg=rgb(243, 246, 255) img=none pos=relative
+- [text] #1684742497987 @136,723,929,56 «Хотите больше полезных видео? В боте POPOVICHFIT — еженедельная рассылка коротких тренировок и полезных советов на все случаи жизни» | 22px/28px 300 RockStar rgb(27, 27, 27) align:center
+- [shape] #1684742126287 @470,827,260,60 → https://t.me/POPOVICHcourse_bot bg:rgb(55, 174, 226) r:16px
+- [image] #1684741955367 @521,840,34,34 → https://t.me/POPOVICHcourse_bot
+- [text] #1684742090949 @564,846,116,22 «Telegram-бот» → https://t.me/POPOVICHcourse_bot | 14px/22px 300 RockStar rgb(255, 255, 255) align:center
+
+## rec596031508 T396 rect=0,914,1200,135  
+   artboard: 0,989,1200,30 bg=rgb(243, 246, 255) img=none pos=relative
+- [text] #1684742497987 @20,989,434,28 «Вам может быть интересно:» | 22px/28px 300 RockStar rgb(27, 27, 27)
+
+## rec596031509 T396 rect=0,1049,1200,475  
+   artboard: 0,1049,1200,490 bg=rgb(243, 246, 255) img=none pos=relative
+- [shape] #1685011271869 @22,1048,366,190 bg:rgb(255, 255, 255) img:_.jpg.webp size:cover pos:50% 50% r:14px
+- [shape] #1684942952684 @417,1048,366,440 bg:rgb(255, 255, 255) r:14px
+- [shape] #1684751202322 @417,1048,366,190 bg:rgb(255, 255, 255) img:Rectangle_2876.png.webp size:cover pos:50% 50% r:14px
+- [shape] #1684942952689 @813,1048,366,440 bg:rgb(255, 255, 255) r:14px
+- [shape] #1684751696064 @814,1048,366,190 bg:rgb(255, 255, 255) img:image_22.jpg.webp size:cover pos:50% 50% r:14px
+- [shape] #1685011271862 @22,1049,366,440 bg:rgb(255, 255, 255) r:14px
+- [vector] #1698850187436 @30,1056,34,34 → https://popovichfit.ru/20pow1
+- [button] #1698850187440 @69,1056,75,34 «3 мин» → https://popovichfit.ru/20pow1 | 12px/16.8px 400 Manrope rgb(38, 38, 38) align:center bg:rgb(255, 255, 255) r:60px
+- [button] #1698850214973 @425,1056,75,34 «Статья» → https://popovichfit.ru/20pow1 | 12px/16.8px 400 Manrope rgb(38, 38, 38) align:center bg:rgb(255, 255, 255) r:60px
+- [vector] #1698850200028 @822,1056,34,34 → https://popovichfit.ru/20pow1
+- [button] #1698850200032 @861,1056,75,34 «5 мин» → https://popovichfit.ru/20pow1 | 12px/16.8px 400 Manrope rgb(38, 38, 38) align:center bg:rgb(255, 255, 255) r:60px
+- [button] #1684751696086 @826,1209,79,17 «ЦЕЛЛЮЛИТ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(138, 115, 255) r:6px
+- [button] #1684751696089 @907,1209,54,17 «ОТЁКИ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(97, 152, 255) r:6px
+- [button] #1684751696092 @967,1209,54,17 «ЛИМФА» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(202, 122, 255) r:6px
+- [button] #1684751202343 @428,1210,79,17 «ЦЕЛЛЮЛИТ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(138, 115, 255) r:6px
+- [button] #1684751202346 @512,1210,54,17 «ОТЁКИ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(97, 152, 255) r:6px
+- [button] #1684751202348 @570,1210,54,17 «ЛИМФА» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(202, 122, 255) r:6px
+- [button] #1685011271883 @32,1211,79,17 «ЦЕЛЛЮЛИТ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(138, 115, 255) r:6px
+- [button] #1685011271886 @114,1211,54,17 «ОТЁКИ» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(97, 152, 255) r:6px
+- [button] #1685011271888 @173,1211,54,17 «ЛИМФА» | 9px/9px 300 RockStar rgb(255, 255, 255) uppercase align:center bg:rgb(202, 122, 255) r:6px
+- [text] #1684751202340 @430,1253,240,18 «Отёки и целлюлит» | 14px/18px 300 RockStar rgb(27, 27, 27)
+- [text] #1684751696083 @826,1253,314,36 ««Одно из самых эффективных упражнений от отёков и целлюлита. Для дома или зала»» | 14px/18px 300 RockStar rgb(27, 27, 27)
+- [text] #1685011271880 @35,1255,333,36 ««5 реальных причин отёков и целлюлита. Как от них избавиться»» | 14px/18px 300 RockStar rgb(27, 27, 27)
+- [text] #1684751202330 @430,1280,313,96 «Что вы привыкли слышать, когда речь идёт о причинах целлюлита и отеков? Почти уверена, что что-то вроде: несбалансированный рацион, малоподвижный образ жизни, о» | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [text] #1685011271874 @35,1302,328,32 «В видео - всё, что вы реально должны знать о целлюлите и отёках: причинах и методах борьбы.» | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [text] #1684751696074 @826,1315,315,64 «В видео - одно из самых действительно эффективных упражнений от отёков и целлюлита. Выполняйте его в домашних условиях и уже через неделю вы увидите изменения.» | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [button] #1684751696078 @837,1426,130,45 «Открыть» → https://popovichfit.ru/page03 | 10px/15.5px 200 RockStar rgb(27, 27, 27) align:center r:16px
+- [button] #1684751202336 @433,1427,130,45 «Открыть» → https://popovichfit.ru/media_1_otek | 10px/15.5px 200 RockStar rgb(27, 27, 27) align:center r:16px
+- [button] #1685011271877 @37,1429,130,45 «Открыть» → https://popovichfit.ru/page01 | 10px/15.5px 200 RockStar rgb(27, 27, 27) align:center r:16px
+
+## rec660804368 T396 rect=0,1524,1200,520  
+   artboard: 0,1554,1200,490 bg=rgb(247, 246, 250) img=none pos=relative
+- [shape] #1685011112302 @221,1554,560,320 bg:rgb(255, 255, 255) img:_5____________.jpg size:cover pos:50% 100%
+- [shape] #1684941296016 @819,1554,85,85 img:Rectangle_2725.png.webp size:cover pos:50% 50% r:3000px
+- [text] #1684941296020 @819,1649,170,18 «Наталья Попович» | 14px/18px 300 RockStar rgb(27, 27, 27)
+- [text] #1684941296007 @819,1675,180,32 «Тренер и создатель POPOVICHFIT» | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [text] #1684944600438 @819,1717,80,16 «О Наталье» → https://popovichfit.ru/about | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [text] #1684944553765 @913,1717,80,16 «Instagram» → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg== | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [text] #1688974364651 @221,1894,531,48 «Здесь 5 простых и эффективных шагов, чтобы избавиться от целлюлита в домашних условиях, а также трекер для вашего удобства от Натальи Попович, тренера и создате» | 12px/16px 100 RockStar rgb(27, 27, 27)
+- [shape] #1688974364655 @221,1978,260,60 → https://t.me/popovichfitads_bot bg:rgb(55, 174, 226) r:16px
+- [image] #1688974364660 @237,1991,34,34 → https://t.me/popovichfitads_bot
+- [text] #1688974364664 @280,1997,180,22 «Жми чтобы скачать» → https://t.me/popovichfitads_bot | 14px/22px 300 RockStar rgb(255, 255, 255) align:center
+
+## rec614357820 T396 rect=0,2044,1200,135  
+   artboard: 0,2119,1200,30 bg=rgb(243, 246, 255) img=none pos=relative
+- [text] #1684742497987 @20,2119,434,28 «Instagram:» | 22px/28px 300 RockStar rgb(27, 27, 27)
+
+## rec615494925 T396 rect=0,2179,1200,705  
+   artboard: 0,2179,1200,600 bg=rgb(243, 246, 255) img=none pos=relative
+- [shape] #1684751202322 @417,2178,368,503 → https://www.instagram.com/reel/CyFo5OII9J3/?igshid=MTc4MmM1YmI2Ng== bg:rgb(255, 255, 255) img:Rectangle_287.png.webp size:cover pos:50% 50% r:14px
+- [shape] #1684751696064 @814,2178,368,503 → https://www.instagram.com/reel/CwMku_7ozAx/?igshid=MTc4MmM1YmI2Ng== bg:rgb(255, 255, 255) img:Rectangle_2875.png.webp size:cover pos:50% 50% r:14px
+- [shape] #1685011271869 @20,2181,368,503 → https://www.instagram.com/reel/CyNTPn_o0rY/?igshid=MzRlODBiNWFlZA== bg:rgb(255, 255, 255) img:E85A6014_1.png.webp size:cover pos:50% 50% r:14px
+- [shape] #1698847230966 @825,2189,346,55 → https://www.instagram.com/reel/CwMku_7ozAx/?igshid=MTc4MmM1YmI2Ng== bg:rgb(255, 255, 255) r:14px
+- [shape] #1698847163291 @428,2190,346,55 → https://www.instagram.com/reel/CyFo5OII9J3/?igshid=MTc4MmM1YmI2Ng== bg:rgb(255, 255, 255) r:14px
+- [shape] #1698847022292 @30,2191,346,55 → https://www.instagram.com/reel/CyNTPn_o0rY/?igshid=MzRlODBiNWFlZA== bg:rgb(255, 255, 255) r:14px
+- [text] #1698847230975 @866,2198,264,18 ««Настоящая причина ушек на бедрах»» → https://www.instagram.com/reel/CwMku_7ozAx/?igshid=MTc4MmM1YmI2Ng== | 14px/18px 300 RockStar rgb(27, 27, 27) align:center
+- [text] #1698847163285 @450,2199,303,36 ««Упражнение для осанки, собравшее тысячи просмотров»» → https://www.instagram.com/reel/CyFo5OII9J3/?igshid=MTc4MmM1YmI2Ng== | 14px/18px 300 RockStar rgb(27, 27, 27) align:center
+- [text] #1698847098864 @62,2200,282,36 ««Косточка на большом пальце - не генетика»» → https://www.instagram.com/reel/CyNTPn_o0rY/?igshid=MzRlODBiNWFlZA== | 14px/18px 300 RockStar rgb(27, 27, 27) align:center
+- [vector] #1698846525086 @572,2400,59,59 → https://www.instagram.com/reel/CyFo5OII9J3/?igshid=MTc4MmM1YmI2Ng==
+- [vector] #1698846536117 @969,2400,59,59 → https://www.instagram.com/reel/CwMku_7ozAx/?igshid=MTc4MmM1YmI2Ng==
+- [vector] #1698846452908 @175,2403,59,59 → https://www.instagram.com/reel/CyNTPn_o0rY/?igshid=MzRlODBiNWFlZA==
+- [button] #1688977573825 @496,2720,202,45 «Перейти в Instagram» → https://instagram.com/natalyapopovich?igshid=MzRlODBiNWFlZA== | 10px/15.5px 200 RockStar rgb(27, 27, 27) align:center r:16px
+- [shape] #1688977526176 @220,2842,241,240 → https://www.instagram.com/p/CuM-50zIV3h/?igshid=MzRlODBiNWFlZA== bg:rgb(255, 255, 255) r:14px
+- [shape] #1688977526167 @480,2842,241,240 → https://www.instagram.com/p/CuXRwZmogOS/?igshid=MzRlODBiNWFlZA== bg:rgb(255, 255, 255) r:14px
+- [shape] #1688977526173 @741,2842,241,240 → https://www.instagram.com/p/CuPoSwHoXVv/?igshid=MzRlODBiNWFlZA== bg:rgb(255, 255, 255) r:14px
+
+## rec1120448561 T396 rect=0,2884,1200,583  
+   artboard: 0,317,1200,583 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @966,363,6,6
+- [button] #1749597221603 @20,368,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @20,368,495,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @103,368,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @176,368,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @276,368,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @364,368,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @436,368,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @871,368,30,30 → https://t.me/natalyapopovich87
+- [group] #G175007383007674350 @871,368,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @906,368,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @941,368,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @976,368,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @1030,368,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:auto pos:0% 0% r:8px
+- [text] #1750073992932 @874,418,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @1030,418,150,39 «Предзапись» → https://t.me/popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,526,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @349,526,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @658,526,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @940,526,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,576,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @349,576,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @658,576,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @23,630,1154,139
+- [shape] #1749597712349 @20,812,1160,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @545,843,110,11 → https://shumann.ru/ op:0.6

@@ -1,0 +1,18 @@
+# /page128228306.html @320 — высота 208
+
+## rec2057488851 T396 rect=0,0,320,208  
+   artboard: 0,0,320,208 bg=rgb(245, 245, 245) img=none pos=relative
+- [shape] #1774006339637 @10,20,300,168 img:Frame_1321318693_1.png size:cover pos:50% 50% r:10px
+- [image] #1774006548647000007 @248,29,20,20
+- [image] #1774006408297000003 @29,32,20,20
+- [group] #G1774007041298000012 @25,40,270,127 img:none size:undefined pos:undefined flex column gap:15px normal align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [group] #G1774006854631000009 @25,40,270,82 img:none size:undefined pos:undefined flex column gap:15px normal align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1774006244448 @83,40,155,20 «Нам важно оставаться на связи» | 8px/12.4px 600 Involve rgb(255, 255, 255) align:center bg:rgb(47, 47, 47) r:39px
+- [image] #1774006478949000005 @284,54,20,20
+- [text] #1774006079872000018 @10,75,300,30 «ЧТОБЫ НИЧЕГО НЕ ПОТЕРЯЛОСЬ, МЫ ДУБЛИРУЕМ ВСЮ ИНФОРМАЦИЮ В ДРУГИЕ СОЦ. СЕТИ.» | 11px/15px 700 Involve rgb(255, 255, 255) uppercase align:center
+- [group] #G1774006844829000008 @25,75,270,47 img:none size:undefined pos:undefined flex column gap:5px normal align:center justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1774006442033000004 @19,101,20,20
+- [text] #1774006079872000019 @25,110,270,12 «Если не работает Телеграм, переходите сюда» | 9px/12px 500 Involve rgb(255, 255, 255) align:center
+- [image] #1774006510051000006 @283,121,20,20
+- [group] #G1774007007649000011 @25,137,270,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:center justify:center pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1774006981388000010 @100,137,120,30 «ПЕРЕЙТИ В ВК» | 10px/15.5px 700 Involve rgb(48, 48, 48) uppercase align:center bg:rgb(255, 255, 255) r:5px

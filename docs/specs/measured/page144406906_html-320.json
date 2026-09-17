@@ -1,0 +1,186 @@
+{
+ "width": 320,
+ "height": 124,
+ "recs": [
+  {
+   "id": "rec2313646141",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    320,
+    124
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1779800012434",
+     "type": "shape",
+     "rect": [
+      10,
+      30,
+      300,
+      64
+     ],
+     "text": "",
+     "href": "https://vk.com/popovichfit",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "Main_Container.svg",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "10px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1779798129533000006",
+     "type": "button",
+     "rect": [
+      285,
+      69,
+      20,
+      20
+     ],
+     "text": "",
+     "href": "https://vk.com/popovichfit",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "60px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1779800868944000002",
+     "type": "button",
+     "rect": [
+      539,
+      -111,
+      80,
+      25
+     ],
+     "text": "ПЕРЕЙТИ В ВК",
+     "href": "https://vk.com/popovichfit",
+     "font": "8px/9.6px 700 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "6px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1779798129531000003",
+     "type": "text",
+     "rect": [
+      20,
+      40,
+      262,
+      28
+     ],
+     "text": "ЧТОБЫ НИЧЕГО НЕ ПОТЕРЯЛОСЬ, МЫ ДУБЛИРУЕМ ВСЮ ИНФОРМАЦИЮ В ДРУГИЕ СОЦ. СЕТИ.",
+     "href": "",
+     "font": "10px/14px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1779798129532000004",
+     "type": "text",
+     "rect": [
+      20,
+      73,
+      199,
+      11
+     ],
+     "text": "Если не работает Телеграм, переходите ВК",
+     "href": "",
+     "font": "8px/11px 500 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1779798129534000007",
+     "type": "shape",
+     "rect": [
+      285,
+      35,
+      20,
+      20
+     ],
+     "text": "",
+     "href": "https://vk.com/popovichfit",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(255, 133, 98)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "Rectangle.png",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "G1779798367783000008",
+     "type": "group",
+     "rect": [
+      20,
+      40,
+      254,
+      44
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:5px normal align:flex-start justify:flex-start pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     320,
+     124
+    ],
+    "bg": "rgb(245, 245, 245)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  }
+ ]
+}

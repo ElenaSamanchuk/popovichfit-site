@@ -55,7 +55,24 @@ def parse_style_rules(style_css, rec):
                     k, v = prop.split(':', 1); d[k.strip()] = v.strip()
     return rules
 
+def balanced_inner(s, start):
+    """s[start:] начинается с открывающего тега; вернуть (имя тега, внутренний HTML до парного закрывающего)"""
+    m = re.match(r'<([a-zA-Z][\w-]*)\b[^>]*>', s[start:])
+    if not m: return '', ''
+    tag = m.group(1).lower()
+    body = start + m.end()
+    pat = re.compile(r'<(/?)' + re.escape(tag) + r'\b[^>]*>', re.I)
+    depth, pos = 1, body
+    while True:
+        mm = pat.search(s, pos)
+        if not mm: return tag, s[body:]
+        depth += -1 if mm.group(1) else 1
+        if depth == 0: return tag, s[body:mm.start()]
+        pos = mm.end()
+
 def elem_spec(el_html, rules):
+    # у последнего элемента блока в кусок попадает хвост записи (script/noscript Метрики и т.п.) — отрезаем
+    el_html = re.split(r'<(?:script|noscript)\b', el_html, 1)[0]
     m = re.search(r'data-elem-id=[\'"](\d+)[\'"]', el_html); eid = m.group(1)
     etype = re.search(r'data-elem-type=[\'"](\w+)[\'"]', el_html); etype = etype.group(1) if etype else '?'
     cls_raw = re.search(r"<div class='t396__elem tn-elem([^']*)'", el_html)
@@ -63,11 +80,14 @@ def elem_spec(el_html, rules):
     cls = re.sub(r'\s*(t396__elem-flex|tn-elem__\d+)\s*', ' ', cls_raw.group(1)).strip() if cls_raw else ''
     fields = dict(re.findall(r'data-field-([\w-]+)-value=[\'"]([^\'"]*)[\'"]', el_html))
     atom = re.search(r"<(?:div|a|img|iframe)[^>]*class=['\"][^'\"]*tn-atom[^'\"]*['\"][^>]*>(.*)", el_html, re.S)
-    text = ''; html_inner = ''
+    text = ''; html_inner = ''; tag = ''
     if etype in ('text', 'button'):
-        inner = re.search(r"class=['\"]tn-atom(?:__button-text)?(?:\s[^'\"]*)?['\"][^>]*>(.*?)</(?:div|span|a)>", el_html, re.S)
-        if inner:
-            t = inner.group(1)
+        # содержимое атома — сбалансированно (до парного закрывающего тега), а не до первого </div>:
+        # иначе в SSR-разметку попадают незакрытые <a>/<span>/<div>, браузер чинит их не так, как vdom → ломается гидрация
+        key = 'tn-atom__button-text' if etype == 'button' and 'tn-atom__button-text' in el_html else 'tn-atom'
+        am = re.search(r"<[a-zA-Z][\w-]*\b[^>]*class=['\"]" + key + r"(?:\s[^'\"]*)?['\"][^>]*>", el_html)
+        if am:
+            tag, t = balanced_inner(el_html, am.start())
             html_inner = re.sub(r'\s+', ' ', t).strip()
             t = re.sub(r'<br\s*/?>', '⏎', t); t = re.sub(r'<[^>]+>', '', t)
             text = H.unescape(re.sub(r'[ \t\r\n]+', ' ', t)).strip()
@@ -98,7 +118,7 @@ def elem_spec(el_html, rules):
             if k in r and r[k] != '': g[k] = r[k]
         if hv: g['hover'] = '{' + ' '.join(f'{k}:{v}' for k, v in hv.items()) + '}'
         if g: geo[scr] = g
-    return dict(id=eid, type=etype, cls=cls, flex=is_flex, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
+    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
 
 def block_spec(rec_html):
     rid = re.match(r'<div id="(rec\d+)"', rec_html).group(1)

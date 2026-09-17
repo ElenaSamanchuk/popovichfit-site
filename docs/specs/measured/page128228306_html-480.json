@@ -1,0 +1,343 @@
+{
+ "width": 480,
+ "height": 407,
+ "recs": [
+  {
+   "id": "rec2057488851",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    480,
+    407
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1774006339637",
+     "type": "shape",
+     "rect": [
+      10,
+      47,
+      460,
+      314
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "Frame_1321318693_1.png",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "20px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006548647000007",
+     "type": "image",
+     "rect": [
+      389,
+      75,
+      35,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006510051000006",
+     "type": "image",
+     "rect": [
+      432,
+      251,
+      35,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006478949000005",
+     "type": "image",
+     "rect": [
+      409,
+      187,
+      35,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006442033000004",
+     "type": "image",
+     "rect": [
+      24,
+      206,
+      35,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006408297000003",
+     "type": "image",
+     "rect": [
+      47,
+      71,
+      35,
+      35
+     ],
+     "text": "",
+     "href": "",
+     "font": "16px/normal 400 Times",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006244448",
+     "type": "button",
+     "rect": [
+      140,
+      96,
+      200,
+      30
+     ],
+     "text": "Нам важно оставаться на связи",
+     "href": "",
+     "font": "10px/12px 600 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgb(47, 47, 47)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "39px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006079872000018",
+     "type": "text",
+     "rect": [
+      8,
+      146,
+      464,
+      44
+     ],
+     "text": "ЧТОБЫ НИЧЕГО НЕ ПОТЕРЯЛОСЬ, МЫ ДУБЛИРУЕМ ВСЮ ИНФОРМАЦИЮ В ДРУГИЕ СОЦ. СЕТИ.",
+     "href": "",
+     "font": "16px/22px 700 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "1774006079872000019",
+     "type": "text",
+     "rect": [
+      -134,
+      200,
+      748,
+      22
+     ],
+     "text": "Если не работает Телеграм, переходите сюда",
+     "href": "",
+     "font": "14px/19px 500 Involve",
+     "color": "rgb(255, 255, 255)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1774006981388000010",
+     "type": "button",
+     "rect": [
+      151,
+      264,
+      179,
+      46
+     ],
+     "text": "ПЕРЕЙТИ В ВК",
+     "href": "",
+     "font": "12px/18.6px 700 Involve",
+     "color": "rgb(48, 48, 48)",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "8px",
+     "opacity": "1",
+     "align": "center",
+     "transform": "uppercase",
+     "visible": true
+    },
+    {
+     "id": "G1774007041298000012",
+     "type": "group",
+     "rect": [
+      -134,
+      96,
+      748,
+      214
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:42px normal align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1774006854631000009",
+     "type": "group",
+     "rect": [
+      -134,
+      96,
+      748,
+      126
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:20px normal align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1774006844829000008",
+     "type": "group",
+     "rect": [
+      -134,
+      146,
+      748,
+      76
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "column gap:10px normal align:center justify:flex-start pad:0px",
+     "visible": true
+    },
+    {
+     "id": "G1774007007649000011",
+     "type": "group",
+     "rect": [
+      151,
+      264,
+      179,
+      46
+     ],
+     "text": "",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "none",
+     "radius": "0px",
+     "display": "flex",
+     "flex": "row gap:normal 12px align:center justify:flex-start pad:0px",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     0,
+     480,
+     407
+    ],
+    "bg": "rgb(245, 245, 245)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec2094473581",
+   "type": "131",
+   "rect": [
+    0,
+    407,
+    480,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  }
+ ]
+}

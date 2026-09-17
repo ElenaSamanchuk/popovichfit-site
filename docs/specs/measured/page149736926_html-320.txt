@@ -1,0 +1,12 @@
+# /page149736926.html @320 — высота 142
+
+## rec2398298741 T396 rect=0,0,320,142  
+   artboard: 0,0,320,142 bg=rgb(255, 255, 255) img=none pos=relative
+- [shape] #1781879463526 @10,34,300,73 img:linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%) size:cover pos:0% 0% r:8px
+- [shape] #1781881607696000002 @10,35,300,73 img:linear-gradient(140.76deg, rgb(233, 240, 252) 0%, rgb(247, 250, 255) 17%, rgb(254, 254, 255) 37%, rgb(246, 249, 255) 41%, rgb(214, 230, 255) 78%) size:193.331% auto pos:0% 0% r:8px
+- [shape] #1781879769129 @225,36,72,37 img:Group_1321319461.svg size:cover pos:50% 50%
+- [shape] #1781879966146 @325,41,67,55 img:Group_1321319198.svg size:cover pos:50% 50%
+- [text] #1781879096989000224 @20,44,201,28 «Хотите подарить POPOVICHFIT близкому человеку?» | 12px/14px 600 Involve rgb(49, 49, 49)
+- [group] #G1781880578142000001 @20,44,251,53 img:none size:undefined pos:undefined flex column gap:5px normal align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1781879251508 @210,72,90,25 «НАПИСАТЬ НАМ» → https://t.me/PopovichfitCare_Bot | 8px/8px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(84.96deg, rgb(98, 151, 209) 0%, rgb(62, 120, 184) 100%) size:cover pos:0% 0% r:4px
+- [text] #1781879096989000225 @20,77,193,20 «Напишите нам, поможем выбрать курс и оформить сертификат» | 8px/10px 600 Involve rgb(48, 48, 48)

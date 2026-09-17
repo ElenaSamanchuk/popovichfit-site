@@ -55,11 +55,12 @@ export default defineNuxtPlugin((nuxtApp) => {
     params = collectParams(location.search)
     decorateLinks(params)
   }
-  // только после гидрации: правка href в SSR-разметке до неё даёт hydration mismatch
-  nuxtApp.hook('app:mounted', () => nextTick(apply))
-  router.afterEach(() => { if (!nuxtApp.isHydrating) nextTick(apply) })
+  // только после гидрации страницы (page:finish): правка href в SSR-разметке до гидрации ломает её
+  nuxtApp.hook('page:finish', () => nextTick(apply))
   // динамически добавленные ссылки (попапы, карточки тарифов) — наблюдаем за DOM
-  nuxtApp.hook('app:mounted', () => {
+  nuxtApp.hook('page:finish', () => {
+    if ((window as any).__pfRefObserver) return
+    ;(window as any).__pfRefObserver = true
     const mo = new MutationObserver((muts) => {
       if (!Object.keys(params).length) return
       for (const m of muts) m.addedNodes.forEach((n) => { if (n instanceof HTMLElement) decorateLinks(params, n) })
