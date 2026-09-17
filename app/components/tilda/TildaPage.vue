@@ -43,7 +43,9 @@ function popupContent(b: TildaBlock): TildaBlock | null {
   <div class="tilda-page">
     <template v-for="b in flow" :key="b.id">
       <ZeroBlock v-if="b.type === '396'" :block="b" />
+      <Cart v-else-if="b.type === '706'" :block="b" />
       <TildaBlock v-else :block="b" :popup-content="popupContent(b)" />
     </template>
+    <HScroll v-if="data.hscroll?.length" :items="data.hscroll" />
   </div>
 </template>

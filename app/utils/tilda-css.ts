@@ -6,7 +6,8 @@
  */
 /** half — вычитаемое из calc(50% - half + x): половина артборда (обычный grid) или половина ширины элемента (axisx=center) */
 export type Left = { a: 'grid' | 'grid-right' | 'window-left' | 'window-right' | 'center-pct' | 'raw'; x?: number; w?: number; pct?: number; xpct?: number; raw?: string; half?: number }
-export type Px = number | { pct: number } | null
+/** calc — top вида calc(280px - 0px + 0px) / calc(50vh - 40px + 0px) (axisy center/bottom) */
+export type Px = number | { pct: number } | { calc: { base: number; unit: 'px' | 'vh'; sub: number; x: number } } | null
 export interface Eff { left?: Left | null; top?: Px; width?: Px; height?: Px; style?: Record<string, string> }
 export interface ZeroElem {
   id: string; type: 'text' | 'button' | 'image' | 'shape' | 'vector' | 'html' | 'video' | 'form' | 'gallery' | 'tooltip'
@@ -14,6 +15,9 @@ export interface ZeroElem {
   html?: string; text?: string; href?: string; img?: string; bgImg?: string; svg?: string; embed?: string
   /** тег атома у текстов: h1–h6/p (семантика заголовков), иначе div */
   tag?: string
+  /** пошаговая анимация Тильды (sbs): steps[0] — начальное состояние (перекрывает opacity/transform стиля),
+   *  event hover → последний шаг по наведению (на сам элемент или на trg-элементы) */
+  sbs?: { event: string; trg: string[]; steps: Array<{ mx?: number; my?: number; sx?: number; sy?: number; op?: number; ro?: number; ti?: number; ea?: string; dt?: number }> }
   video?: { kind: 'youtube' | 'vimeo' | 'kinescope'; id: string }; form?: unknown[]; formServices?: string[]
 }
 export interface ZeroGroup { id: string; cls: string; flex?: boolean; molFlex?: boolean; attrs?: Record<string, string>; eff: Record<string, Eff>; mol: Record<string, Record<string, string>> }
@@ -26,7 +30,7 @@ export interface TildaBlock {
   artboards?: Record<string, Artboard>; elems?: ZeroElem[]; groups?: ZeroGroup[]; tree?: ZeroNode[]
   html?: string; css?: string; hooks?: string[]; popupRecs?: string[]; custom?: string
 }
-export interface TildaPageData { file: string; blocks: TildaBlock[] }
+export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }> }
 
 const RANGES = [
   { scr: '1200', media: '(min-width: 1200px)', artW: 1200 },
@@ -36,10 +40,16 @@ const RANGES = [
   { scr: '320', media: '(max-width: 479.98px)', artW: 320 },
 ] as const
 
-const SKIP_STYLE = new Set(['z-index', 'hover', 'font-family', 'display', 'icon', 'btn-color', 'btn-pad', 'btn-gap'])
+// font-family берём из стиля: на сайте кроме Involve есть Manrope, Unbounded, Arial; var(--t-text-font,Arial) на живом
+// сайте не определена → Arial (resolveVars подставляет фолбэк); RockStar без @font-face → фолбэк Arial, как на живом
+const SKIP_STYLE = new Set(['z-index', 'hover', 'display', 'icon', 'btn-color', 'btn-pad', 'btn-gap'])
 
 function num(v: Px | undefined, mobile: boolean): string | null {
   if (v === null || v === undefined) return null
+  if (typeof v === 'object' && 'calc' in v) {
+    const c = v.calc, u = (n: number) => (mobile ? `${n} * var(--u)` : `${n}px`)
+    return `calc(${c.unit === 'vh' ? c.base + 'vh' : u(c.base)} - ${u(c.sub)} + ${u(c.x)})`
+  }
   if (typeof v === 'object') return `${v.pct}%`
   return mobile ? `calc(${v} * var(--u))` : `${v}px`
 }
@@ -83,7 +93,12 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   let css = posCss(eff.left, mobile, artW)
   const top = num(eff.top, mobile); if (top !== null) css += `top:${top};`
   const w = num(eff.width, mobile); if (w !== null) css += `width:${w};`
-  const h = num(eff.height, mobile); if (h !== null) css += `height:${h};`
+  // html-вставка (iframe с padding-top в %) у Тильды растёт по содержимому (элемент display:table) → min-height
+  const h = num(eff.height, mobile); if (h !== null) css += e.type === 'html' ? `min-height:${h};` : `height:${h};`
+  // axisy=center у элемента с авто-высотой: экспорт пишет calc(<пол-артборда> - 0px + x), рантайм вычитает
+  // половину реальной высоты → translateY(-50%) (если нет своего transform)
+  const t = eff.top
+  if (t && typeof t === 'object' && 'calc' in t && t.calc.sub === 0 && h === null && !st['transform'] && !e.sbs) css += 'transform:translateY(-50%);'
   if (st['z-index']) css += `z-index:${st['z-index']};`
   // фигура с картинкой (data-original / inline url): картинка + градиент из стиля, как у Тильды
   const shapeImg = e.type === 'shape' ? e.bgImg || e.img : undefined
@@ -113,6 +128,7 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
     if (icss) out += `${sel} .tz__icon{${icss}}`
   }
   if (st['btn-color']) out += `${sel} .tz__btn-text{color:${st['btn-color']};}`
+  if (st['btn-hover-color']) out += `${sel}:hover .tz__btn-text{color:${st['btn-hover-color']};}`
   // кнопка без фиксированной высоты: высота из padding контента (.tn-atom__button-content)
   if (e.type === 'button' && (st['btn-pad'] || st['btn-gap'])) {
     let b2 = ''
@@ -128,6 +144,39 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   if (st['$bordercolor-hover']) hv.push(`border-color:${st['$bordercolor-hover']}`)
   if (st['$hover-opacity']) hv.push(`opacity:${st['$hover-opacity']}`)
   if (hv.length) out += `${sel}:hover{${hv.join(';')}}`
+  out += sbsRules(sel, e)
+  return out
+}
+
+/** transform шага пошаговой анимации */
+function sbsTransform(s: { mx?: number; my?: number; sx?: number; sy?: number; ro?: number }): string {
+  const t: string[] = []
+  if (s.mx || s.my) t.push(`translate(${s.mx || 0}px,${s.my || 0}px)`)
+  if ((s.sx !== undefined && s.sx !== 1) || (s.sy !== undefined && s.sy !== 1)) t.push(`scale(${s.sx ?? 1},${s.sy ?? 1})`)
+  if (s.ro) t.push(`rotate(${s.ro}deg)`)
+  return t.join(' ')
+}
+/** пошаговая анимация: начальное состояние всегда (иначе элемент останется с opacity:0 из редактора),
+ *  по наведению — конечный шаг с переходом (scroll/blockintoview-анимации в статике не воспроизводим) */
+function sbsRules(sel: string, e: ZeroElem): string {
+  const sbs = e.sbs
+  if (!sbs?.steps?.length) return ''
+  const first = sbs.steps[0]!
+  let out = ''
+  const init: string[] = []
+  if (first.op !== undefined) init.push(`opacity:${first.op}`)
+  const tr0 = sbsTransform(first); if (tr0) init.push(`transform:${tr0}`)
+  if (init.length) out += `${sel}{${init.join(';')}}`
+  if (sbs.event === 'hover' && sbs.steps.length > 1) {
+    const last = sbs.steps[sbs.steps.length - 1]!
+    const dur = sbs.steps.slice(1).reduce((a, s) => a + (s.ti || 0), 0) || 200
+    const fin: string[] = []
+    if (last.op !== undefined) fin.push(`opacity:${last.op}`)
+    fin.push(`transform:${sbsTransform(last) || 'none'}`)
+    // триггер: сам элемент или другие элементы блока (trgels) — через :has() на секции
+    const trigger = sbs.trg.length ? `.tz:has(${sbs.trg.map((t) => `.e${t}:hover`).join(',')}) ${sel}` : `${sel}:hover`
+    out += `${sel}{transition:opacity ${dur}ms ease,transform ${dur}ms ease}${trigger}{${fin.join(';')}}`
+  }
   return out
 }
 

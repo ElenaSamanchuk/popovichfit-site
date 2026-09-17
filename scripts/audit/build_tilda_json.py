@@ -74,15 +74,22 @@ def parse_left(v):
     if m: return {'a': 'window-left', 'x': 0.0, 'xpct': float(m.group(1))}
     return {'a': 'raw', 'raw': v}
 
-STYLE_KEYS = ('icon', 'btn-color', 'btn-pad', 'btn-gap', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
+STYLE_KEYS = ('icon', 'btn-color', 'btn-hover-color', 'btn-pad', 'btn-gap', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
               'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow',
               'background-position', 'background-size', 'white-space', 'padding', 'justify-content', 'align-items', 'z-index',
               'text-decoration', 'font-style', 'background-attachment', 'background-repeat', 'overflow', 'display')
 
+def parse_top(v):
+    """top: 280px | calc(280px - 0px + 0px) | calc(50vh - 40px + 0px) (axisy center/bottom, контейнер окно)"""
+    if v is None: return None
+    m = re.fullmatch(r'calc\((-?[\d.]+)(px|vh) - (-?[\d.]+)px \+ (-?[\d.]+)px\)', v.strip())
+    if m: return {'calc': {'base': float(m.group(1)), 'unit': m.group(2), 'sub': float(m.group(3)), 'x': float(m.group(4))}}
+    return px(v)
+
 def norm_geo(g):
     out = {}
     if 'left' in g: out['left'] = parse_left(g['left'])
-    if 'top' in g: out['top'] = px(g['top'])
+    if 'top' in g: out['top'] = parse_top(g['top'])
     if 'width' in g: out['width'] = px(g['width'])
     if 'height' in g: out['height'] = px(g['height'])
     st = {k: (rewrite_links(g[k]) if k == 'icon' else g[k]) for k in g if k in STYLE_KEYS or k.startswith('$')}
@@ -156,6 +163,7 @@ def parse_page(fname):
     body = html.split('<!--allrecords-->')[1] if '<!--allrecords-->' in html else html
     recs = re.split(r'(?=<div id="rec\d+" class="r t-rec)', body)
     blocks = []
+    pb75zero = False  # на странице есть T123 с .t-rec_pb_75{padding-bottom:0!important}
     for r in recs:
         m = re.match(r'<div id="(rec\d+)" class="r t-rec([^"]*)"([^>]*)data-record-type="(\d+)"', r)
         if not m: continue
@@ -170,6 +178,7 @@ def parse_page(fname):
             mm = re.search(k + r':\s*(\d+)px', tag); pad[k] = int(mm.group(1)) if mm else None
         uc = re.findall(r'\b(uc-[\w-]+)', cls)
         block = {'id': rid, 'type': t, 'vis': vis, 'bg': bgc, 'pad': pad, 'uc': uc}
+        if '.t-rec_pb_75' in r and 'padding-bottom: 0' in r.replace('padding-bottom:0', 'padding-bottom: 0'): pb75zero = True
         if t == '396':
             spec = Z.block_spec(r)
             art = spec['artboard']
@@ -200,7 +209,8 @@ def parse_page(fname):
                 if not mm or mm.group(1) not in by_id: continue
                 e = by_id[mm.group(1)]
                 geo = {scr: norm_geo(g) for scr, g in e['geo'].items()}
-                el = {'id': e['id'], 'type': e['type'], 'cls': e['cls'], 'eff': effective(geo), 'fields': e['fields'], 'anim': e['anim']}
+                el = {'id': e['id'], 'type': e['type'], 'cls': e['cls'], 'eff': effective(geo), 'fields': e['fields'], 'anim': {k: v for k, v in e['anim'].items() if k != 'sbs-opts'}}
+                if e.get('sbs'): el['sbs'] = e['sbs']
                 if e['html']: el['html'] = rewrite_links(e['html'])
                 if e['text']: el['text'] = e['text']
                 if e.get('tag') in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'): el['tag'] = e['tag']
@@ -238,16 +248,37 @@ def parse_page(fname):
             block['popupRecs'] = re.findall(r'data-popup-rec-ids="([^"]*)"', r)
             if t == '131':
                 mm = re.search(r'<!-- nominify begin -->(.*?)<!-- nominify end -->', r, re.S)
-                block['custom'] = rewrite_links((mm.group(1).strip() if mm else '')[:80000])
+                custom = (mm.group(1).strip() if mm else '')[:80000]
+                # подключения скриптов с серверов Тильды (Tilda Members и т.п.) — в данные не берём
+                custom = re.sub(r'<script[^>]*src="https?://[^"]*tilda[^"]*"[^>]*>\s*</script>', '', custom)
+                block['custom'] = rewrite_links(custom)
                 del block['html']
         blocks.append(block)
+    if pb75zero:
+        for b in blocks:
+            if b['pad'].get('padding-bottom') == 75: b['pad']['padding-bottom'] = 0
     return blocks
+
+def hscroll_configs(blocks):
+    """Горизонтальный скролл Zero Block (romanyu: scrollbooster + стрелки) из T123: блок со скроллом, блок со стрелками
+    (.arrow-left/.arrow-right), сдвиг по клику. Воспроизводится компонентом tilda/HScroll.vue."""
+    out = []
+    for b in blocks:
+        c = b.get('custom') or ''
+        if 'scrollbooster' not in c: continue
+        sc = re.search(r"blockScrollId\s*=\s*'#(rec\d+)'", c) or re.search(r"blockId\s*=\s*'#(rec\d+)'", c)
+        if not sc: continue
+        ar = re.search(r"blockArrowsId\s*=\s*'#(rec\d+)'", c)
+        sh = re.search(r"shiftSize\s*=\s*'(\d+)px'", c)
+        out.append({'scroll': sc.group(1), 'arrows': ar.group(1) if ar else None, 'shift': int(sh.group(1)) if sh else 320})
+    return out
 
 def main(files):
     report = []
     for f in files:
         blocks = parse_page(f)
-        json.dump({'file': f, 'blocks': blocks}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
+        hs = hscroll_configs(blocks)
+        json.dump({'file': f, 'blocks': blocks, **({'hscroll': hs} if hs else {})}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
         types = {}
         for b in blocks: types[b['type']] = types.get(b['type'], 0) + 1
         report.append((f, len(blocks), types))

@@ -1,0 +1,26 @@
+# /page36666832.html @320 — высота 0
+
+## rec1120433846 T396 rect=0,0,320,0  
+   artboard: 0,0,320,34 bg=rgb(245, 245, 245) img=none pos=fixed
+- [shape] #1750064265438 @16,-79,109,43 → https://popovichfit.ru/ bg:rgb(255, 255, 255) r:0px 0px 6px
+- [shape] #1750064777730 @700,-65,126,43 bg:rgb(255, 255, 255) r:0px 0px 0px 6px
+- [group] #G175006465878646380 @-37,-63,499,34 bg:rgb(255, 255, 255) img:none size:undefined pos:undefined r:0px 0px 6px 6px flex row gap:normal 16px align:center justify:flex-start pad:9px 20px bg:rgb(255, 255, 255) r:0px 0px 6px 6px
+- [button] #1750064585345 @-17,-54,40,16 «КУРСЫ» → https://popovichfit.ru/#rec1120250416 | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064641344 @39,-54,65,16 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064660802 @120,-54,45,16 «СТАТЬИ» → https://popovichfit.ru/media | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1750064661319 @181,-54,55,16 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 10px/15.5px 500 Involve rgb(48, 48, 48) uppercase align:center r:30px
+- [button] #1773122482265000001 @252,-54,85,16 «ВОПРОС/ОТВЕТ» → https://popovichfit.ru/#question-answer | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [button] #1786447424492000001 @353,-54,89,16 «ТЕХ.ПОДДЕРЖКА» → tg://resolve?domain=popovichfitCare_Bot | 10px/15.5px 500 Involve rgb(248, 62, 96) uppercase align:center r:30px
+- [shape] #1750064216340 @0,0,320,34 bg:rgb(255, 255, 255)
+- [button] #1750064809384 @203,8,78,19 «Личный кабинет» → https://lk.popovichfit.ru/ | 8px/12.4px 600 Involve rgb(255, 255, 255) align:center bg:rgb(48, 48, 48) r:4px
+- [shape] #1750065106018 @287,8,26,19 → #menu_open bg:rgb(245, 244, 244) r:4px
+- [image] #1750064375153 @8,11,13,13 → https://popovichfit.ru/
+- [text] #1750064321583 @25,12,58,11 «POPOVICHFIT» → https://popovichfit.ru/ | 9px/11px 500 Involve rgb(48, 48, 48) uppercase
+- [image] #1750065280847 @295,15,10,1 → #menu_open
+- [image] #1750065303997 @295,19,10,1 → #menu_open
+
+## rec2019524321 T396 rect=0,0,320,0  
+   artboard: 0,750,320,150 bg=rgba(0, 0, 0, 0) img=none pos=fixed
+- [group] #G1773213623322000002 @5,767,233,128 img:linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100% size:undefined pos:undefined r:6px flex column gap:10px normal align:flex-start justify:flex-start pad:10px bg:rgba(0, 0, 0, 0) r:6px
+- [text] #1773213623323000003 @15,777,218,70 «Наш сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку персональных данных в соответствии с политикой в отношении обработки персональ» → https://popovichfit.ru/privacy | 10px/14px 500 Involve rgb(38, 38, 38)
+- [button] #1773213623325000005 @15,857,79,31 «Согласен» | 10px/14.5px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(79, 134, 196) 0%, rgb(79, 134, 196) 100%) size:cover pos:0% 0% r:6px

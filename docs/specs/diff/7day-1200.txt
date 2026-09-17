@@ -1,23 +1,6 @@
-/7day @1200: высота live 2232 / local 2178
+/7day @1200: высота live 2232 / local 2178  (общий сдвиг по вертикали -54px — вычтен)
 
-## rec779505819 T396  блок: live y=54 h=145 / local y=0 h=145
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 40px/44px 700 Manrope / local 40px/44px 700 Involve  live@120,139,680,44  7 день
+## rec779543458 T396  блок: live y=720 h=180 / local y=774 h=180
+  Δ #1719923677879 [button] dx=0 dy=54 dw=0 dh=0  live@1067,724,113,50  Назад
 
-## rec779509169 T396  блок: live y=199 h=85 / local y=145 h=85
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 20px/22px 600 Manrope / local 20px/22px 600 Involve  live@120,254,680,22  Лайфхаки для жизни
-  Δ #1722255048349 [button] dx=0 dy=-54 dw=0 dh=0 | шрифт live 12px/18.6px 500 Manrope / local 12px/18.6px 500 Involve  live@1021,250,59,28  19 мин
-
-## rec779509170 T396  блок: live y=284 h=640 / local y=230 h=640
-  Δ #1719922769287 [html] dx=0 dy=-54 dw=0 dh=-40  live@120,294,960,540  
-
-## rec779509499 T396  блок: live y=924 h=85 / local y=870 h=85
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 20px/22px 600 Manrope / local 20px/22px 600 Involve  live@120,979,680,22  Зарядка неврологическая
-  Δ #1722255048349 [button] dx=0 dy=-54 dw=0 dh=0 | шрифт live 12px/18.6px 500 Manrope / local 12px/18.6px 500 Involve  live@1021,975,59,28  11 мин
-
-## rec779509500 T396  блок: live y=1009 h=640 / local y=955 h=640
-  Δ #1719922769287 [html] dx=0 dy=-54 dw=0 dh=-40  live@120,1019,960,540  
-
-## rec779543458 T396
-  Δ #1719923677879 [button] шрифт live 12px/18.6px 600 Manrope / local 12px/18.6px 600 Involve  live@1067,724,113,50  Назад
-
-элементов: 8, с расхождениями > 3px: 8
+элементов: 8, с расхождениями > 3px: 1

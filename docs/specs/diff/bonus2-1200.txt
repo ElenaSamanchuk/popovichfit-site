@@ -1,75 +1,21 @@
 /bonus2 @1200: высота live 1592 / local 1592
 
-## rec778002870 T396
-  Δ #1720534073989 [text] шрифт live 40px/44px 700 Manrope / local 40px/44px 700 Involve  live@20,85,680,88  Дыхание / Боли в шее и между лопаток / Л
-
 ## rec778002871 T396
-  Δ #1721648754819 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@35,419,250,15  Антихолка
-  Δ #1721648754816 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@240,378,48,21  39 мин
-  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
-  ✗ #1721648754808 [shape] opacity live 1 / local 0  
-  Δ #1721649051956 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@326,419,202,30  Мобильность грудной клетки и лопаток
-  Δ #1721649051954 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@531,378,48,21  37 мин
-  Δ #1721649279452 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@621,419,250,15  Антихолка
-  Δ #1721649279451 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@826,378,48,21  27 мин
-  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649051931 [shape] opacity live 1 / local 0  
-  Δ #1721649279424 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@912,419,250,15  Пилатес
-  Δ #1721649279422 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@1117,378,48,21  31 мин
-  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649279435 [shape] opacity live 1 / local 0  
-  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649279395 [shape] opacity live 1 / local 0  
-  Δ #1722160808499 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@35,382,64,19  Сложность
-  Δ #1722160808492 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@335,382,64,19  Сложность
-  Δ #1722160808485 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@625,382,64,19  Сложность
-  Δ #1722160808476 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@915,382,64,19  Сложность
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,299,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,299,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,299,60,60  
+  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,299,60,60  
 
 ## rec778002872 T396
-  Δ #1721648754819 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@35,669,250,15  От боли в спине
-  Δ #1721648754816 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@240,628,48,21  24 мин
-  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
-  ✗ #1721648754808 [shape] opacity live 1 / local 0  
-  Δ #1721649051956 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@326,669,250,15  Шея
-  Δ #1721649051954 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@531,628,48,21  25 мин
-  Δ #1721649279452 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@621,669,250,15  Мобильность грудной клетки
-  Δ #1721649279451 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@826,628,48,21  34 мин
-  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649051931 [shape] opacity live 1 / local 0  
-  Δ #1721649279424 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@912,669,250,15  Функциональные линии рук
-  Δ #1721649279422 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@1117,628,48,21  36 мин
-  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649279435 [shape] opacity live 1 / local 0  
-  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649279395 [shape] opacity live 1 / local 0  
-  Δ #1722160940338 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@35,632,66,19  Сложность
-  Δ #1722160940330 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@335,632,66,19  Сложность
-  Δ #1722160940323 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@625,632,66,19  Сложность
-  Δ #1722160940315 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@915,632,66,19  Сложность
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,549,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,549,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,549,60,60  
+  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,549,60,60  
 
 ## rec778003057 T396
-  Δ #1721648754819 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@35,919,250,15  Комплекс после дороги
-  Δ #1721648754816 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@240,878,48,21  31 мин
-  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
-  ✗ #1721648754808 [shape] opacity live 1 / local 0  
-  Δ #1722161023282 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@35,882,66,19  Сложность
-  Δ #1723708871879 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@621,919,250,15  Свобода движения грудной клетки
-  Δ #1723708871878 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@826,878,48,21  34 мин
-  ✗ #1723708871877 [shape] opacity live 1 / local 0.1  
-  ✗ #1723708871873 [shape] opacity live 1 / local 0  
-  Δ #1723708871859 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@625,882,66,19  Сложность
-  Δ #1723708871868 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@912,919,250,15  Отеки лица
-  Δ #1723708871867 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@1117,878,48,21  25 мин
-  ✗ #1723708871866 [shape] opacity live 1 / local 0.1  
-  ✗ #1723708871862 [shape] opacity live 1 / local 0  
-  Δ #1723708871852 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@915,882,66,19  Сложность
-  Δ #1724160572537 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@328,919,250,15  Язык и ВНЧС
-  Δ #1724160572536 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@533,878,48,21  19 мин
-  ✗ #1724160572534 [shape] opacity live 1 / local 0.1  
-  ✗ #1724160572531 [shape] opacity live 1 / local 0  
-  Δ #1724160572527 [text] шрифт live 12px/19px 600 Manrope / local 12px/18.6px 600 Involve  live@328,882,66,19  Сложность
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,799,60,60  
+  Δ #1723708871877 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,799,60,60  
+  Δ #1723708871866 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,799,60,60  
+  Δ #1724160572534 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@425,799,60,60  
 
-## rec778002874 T396
-  Δ #1719923677879 [button] шрифт live 12px/18.6px 600 Manrope / local 12px/18.6px 600 Involve  live@1067,724,113,50  Назад
-
-элементов: 146, с расхождениями > 3px: 62
+элементов: 146, с расхождениями > 3px: 12

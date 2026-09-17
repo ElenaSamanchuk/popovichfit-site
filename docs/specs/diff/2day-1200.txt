@@ -1,24 +1,24 @@
-/2day @1200: высота live 2262 / local 2208
+/2day @1200: высота live 2262 / local 900
 
-## rec779486597 T396  блок: live y=54 h=145 / local y=0 h=145
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 40px/44px 700 Manrope / local 40px/44px 700 Involve  live@120,139,680,44  2 день
+## rec779486597 T396  блок: live y=54 h=145 / local y=0 h=75
+  Δ #1720534073989 [text] dx=-120 dy=-64 dw=-629 dh=-20 | шрифт live 40px/44px 700 Manrope / local 16px/24px 400 Involve | цвет live rgb(32, 32, 32) / local rgb(48, 48, 48)  live@120,139,680,44  2 день
 
-## rec779486875 T396  блок: live y=199 h=85 / local y=145 h=85
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 20px/22px 600 Manrope / local 20px/22px 600 Involve  live@120,254,680,22  Про МФР
-  Δ #1722255048349 [button] dx=0 dy=-54 dw=0 dh=0 | шрифт live 12px/18.6px 500 Manrope / local 12px/18.6px 500 Involve  live@1021,250,59,28  11 мин
+## rec779486875 T396  блок: live y=199 h=85 / local y=75 h=45
+  Δ #1720534073989 [text] dx=-120 dy=-134 dw=-611 dh=2 | шрифт live 20px/22px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(32, 32, 32) / local rgb(48, 48, 48)  live@120,254,680,22  Про МФР
+  Δ #1722255048349 [button] dx=-1021 dy=-130 dw=-12 dh=-4 | шрифт live 12px/18.6px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@1021,250,59,28  11 мин
 
-## rec779486876 T396  блок: live y=284 h=640 / local y=230 h=640
-  Δ #1719922769287 [html] dx=0 dy=-54 dw=0 dh=-40  live@120,294,960,540  
+## rec779486876 T396  блок: live y=284 h=640 / local y=120 h=0
+  Δ #1719922769287 [html] dx=-120 dy=-174 dw=-960 dh=-540  live@120,294,960,540  
 
-## rec779487437 T396  блок: live y=924 h=115 / local y=870 h=115
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 18px/20px 600 Manrope / local 18px/19.8px 600 Involve  live@120,979,680,20  МФР - комплекс для всего тела. Теория и 
-  Δ #1722255048349 [button] dx=0 dy=-54 dw=0 dh=0 | шрифт live 12px/18.6px 500 Manrope / local 12px/18.6px 500 Involve  live@1021,975,59,28  35 мин
-  Δ #1722255645580 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 12px/14px 400 Manrope / local 12px/14.4px 400 Involve  live@120,1011,524,14  Инвентарь: ролик, массажный мяч
+## rec779487437 T396  блок: live y=924 h=115 / local y=120 h=45
+  Δ #1720534073989 [text] dx=-120 dy=-814 dw=-285 dh=4 | шрифт live 18px/20px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(32, 32, 32) / local rgb(48, 48, 48)  live@120,979,680,20  МФР - комплекс для всего тела. Теория и 
+  Δ #1722255048349 [button] dx=-1021 dy=-810 dw=-7 dh=-4 | шрифт live 12px/18.6px 500 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 40px / local 0px | bg-image live linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) / local —  live@1021,975,59,28  35 мин
+  Δ #1722255645580 [text] dx=-120 dy=-846 dw=-252 dh=11 | шрифт live 12px/14px 400 Manrope / local 16px/24px 400 Involve | цвет live rgb(85, 85, 85) / local rgb(48, 48, 48) | align live left / local start  live@120,1011,524,14  Инвентарь: ролик, массажный мяч
 
-## rec779487438 T396  блок: live y=1039 h=640 / local y=985 h=640
-  Δ #1719922769287 [html] dx=0 dy=-54 dw=0 dh=-40  live@120,1049,960,540  
+## rec779487438 T396  блок: live y=1039 h=640 / local y=165 h=0
+  Δ #1719922769287 [html] dx=-120 dy=-884 dw=-960 dh=-540  live@120,1049,960,540  
 
-## rec779488411 T396
-  Δ #1719923677879 [button] шрифт live 12px/18.6px 600 Manrope / local 12px/18.6px 600 Involve  live@1067,724,113,50  Назад
+## rec779488411 T396  блок: live y=720 h=180 / local y=165 h=120
+  Δ #1719923677879 [button] dx=-1067 dy=-559 dw=-65 dh=-26 | шрифт live 12px/18.6px 600 Manrope / local 16px/24px 400 Involve | цвет live rgb(255, 255, 255) / local rgb(48, 48, 48) | radius live 8px / local 0px | bg-image live linear-gradient(129.24deg, rgb(240, 119, 159) 0%, rgb(195, 146, 165) 100%) / local —  live@1067,724,113,50  Назад
 
 элементов: 9, с расхождениями > 3px: 9

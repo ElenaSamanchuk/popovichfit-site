@@ -29,6 +29,12 @@
   --color-black: #000000;
 }
 
+:root {
+  /* переменные шрифтов проекта Тильды (используются в стилях элементов как var(--t-text-font, Arial)) */
+  --t-text-font: 'Involve', Arial, sans-serif;
+  --t-headline-font: 'Involve', Arial, sans-serif;
+}
+
 @layer base {
   html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
   body { @apply font-involve text-ink antialiased; background-color: var(--color-page); }

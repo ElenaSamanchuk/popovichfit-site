@@ -1,17 +1,6 @@
-/14day @1200: высота live 1637 / local 1583
+/14day @1200: высота live 1637 / local 1583  (общий сдвиг по вертикали -54px — вычтен)
 
-## rec779559451 T396  блок: live y=54 h=145 / local y=0 h=145
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 40px/44px 700 Manrope / local 40px/44px 700 Involve  live@120,139,680,44  14 день
+## rec779560458 T396  блок: live y=720 h=180 / local y=774 h=180
+  Δ #1719923677879 [button] dx=0 dy=54 dw=0 dh=0  live@1067,724,113,50  Назад
 
-## rec779559605 T396  блок: live y=199 h=215 / local y=145 h=215
-  Δ #1720534073989 [text] dx=0 dy=-54 dw=0 dh=0 | шрифт live 18px/20px 600 Manrope / local 18px/19.8px 600 Involve  live@120,254,680,20  ПОПРОБОВАТЬ СИЛОВУЮ НА ЯГОДИЦЫ
-  Δ #1722255048349 [button] dx=0 dy=-54 dw=0 dh=0 | шрифт live 12px/18.6px 500 Manrope / local 12px/18.6px 500 Involve  live@1021,250,59,28  50 мин
-  Δ #1722255645580 [text] dx=0 dy=-54 dw=0 dh=3 | шрифт live 12px/14px 400 Manrope / local 12px/14.4px 400 Involve  live@120,286,464,112  КОРРЕКЦИЯ «Мобильность таза, активация я
-
-## rec779560190 T396  блок: live y=414 h=640 / local y=360 h=640
-  Δ #1719922769287 [html] dx=0 dy=-54 dw=0 dh=-40  live@120,424,960,540  
-
-## rec779560458 T396
-  Δ #1719923677879 [button] шрифт live 12px/18.6px 600 Manrope / local 12px/18.6px 600 Involve  live@1067,724,113,50  Назад
-
-элементов: 6, с расхождениями > 3px: 6
+элементов: 6, с расхождениями > 3px: 1

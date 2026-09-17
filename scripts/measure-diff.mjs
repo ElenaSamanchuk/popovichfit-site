@@ -58,14 +58,21 @@ const local = await page.evaluate((recs) => {
 // у типовых блоков локально id стоит на .tb (T-блок) — тот же rec-id
 await browser.close()
 
-console.log(`${url} @${w}: высота live ${live.height} / local ${local.height}`)
+// общий вертикальный сдвиг страницы (например, 54px мусорного текста Collabza над контентом на живом сайте):
+// если ≥ 60 % элементов сдвинуты на одну и ту же величину — вычитаем её и сообщаем один раз
+const dys = []
+for (const rec of live.recs) for (const e of rec.elems || []) { const l = local.elems[rec.id + ':' + e.id]; if (e.visible && l) dys.push(l.rect[1] - e.rect[1]) }
+const freq = new Map(); for (const v of dys) freq.set(v, (freq.get(v) || 0) + 1)
+const [modeDy, modeN] = [...freq.entries()].sort((a, b) => b[1] - a[1])[0] || [0, 0]
+const globalDy = Math.abs(modeDy) > tol && modeN >= dys.length * 0.6 ? modeDy : 0
+console.log(`${url} @${w}: высота live ${live.height} / local ${local.height}${globalDy ? `  (общий сдвиг по вертикали ${globalDy}px — вычтен)` : ''}`)
 let total = 0, bad = 0
 for (const rec of live.recs) {
   if (SHARED.has(rec.id)) continue
   const lr = local.recs[rec.id]
   if (!(rec.elems || []).length) {
     // типовой блок: только прямоугольник (y и высота); блоки нулевой высоты на живом (скрипты, попапы) — пропускаем
-    if (rec.rect[3] > 0 && (!lr || Math.abs(lr[1] - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol)) console.log(`\n## ${rec.id} T${rec.type}  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local ${lr ? `y=${lr[1]} h=${lr[3]}` : 'отсутствует'}`)
+    if (rec.rect[3] > 0 && (!lr || Math.abs(lr[1] - globalDy - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol)) console.log(`\n## ${rec.id} T${rec.type}  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local ${lr ? `y=${lr[1] - globalDy} h=${lr[3]}` : 'отсутствует'}`)
     continue
   }
   // zero-попапы (контент T1093): на живом все элементы невидимы → локально живут в модалке, не сверяем
@@ -77,7 +84,7 @@ for (const rec of live.recs) {
     total++
     if (!l) { rows.push(`  ✗ #${e.id} [${e.type}] нет на локальной  live@${e.rect.join(',')} ${(e.text || '').slice(0, 40)}`); bad++; continue }
     if (!l.visible) { rows.push(`  ✗ #${e.id} [${e.type}] скрыт локально  live@${e.rect.join(',')} ${(e.text || '').slice(0, 40)}`); bad++; continue }
-    const d = e.rect.map((v, i) => l.rect[i] - v)
+    const d = e.rect.map((v, i) => l.rect[i] - v); d[1] -= globalDy
     if (e.opacity != null && l.opacity !== e.opacity && Math.abs(+l.opacity - +e.opacity) > 0.05) { rows.push(`  ✗ #${e.id} [${e.type}] opacity live ${e.opacity} / local ${l.opacity}  ${(e.text || '').slice(0, 40)}`); bad++; continue }
     const notes = []
     if (d.some((v) => Math.abs(v) > tol)) notes.push(`dx=${d[0]} dy=${d[1]} dw=${d[2]} dh=${d[3]}`)
@@ -96,7 +103,7 @@ for (const rec of live.recs) {
     }
     if (notes.length) { bad++; rows.push(`  Δ #${e.id} [${e.type}] ${notes.join(' | ')}  live@${e.rect.join(',')}  ${(e.text || '').slice(0, 40)}`) }
   }
-  const recNote = lr ? (Math.abs(lr[1] - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol ? `  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local y=${lr[1]} h=${lr[3]}` : '') : '  блок отсутствует локально'
+  const recNote = lr ? (Math.abs(lr[1] - globalDy - rec.rect[1]) > tol || Math.abs(lr[3] - rec.rect[3]) > tol ? `  блок: live y=${rec.rect[1]} h=${rec.rect[3]} / local y=${lr[1] - globalDy} h=${lr[3]}` : '') : '  блок отсутствует локально'
   if (rows.length || recNote) { console.log(`\n## ${rec.id} T${rec.type}${recNote}`); rows.slice(0, 25).forEach((r) => console.log(r)); if (rows.length > 25) console.log(`  … ещё ${rows.length - 25}`) }
 }
 console.log(`\nэлементов: ${total}, с расхождениями > ${tol}px: ${bad}`)

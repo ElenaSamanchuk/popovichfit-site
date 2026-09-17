@@ -3,7 +3,8 @@
 Запуск из корня: python3 scripts/audit/zero_spec.py page36594700.html [recId ...] [--json out.json]
 Печатает Markdown-подобную спеку для ручной вёрстки.
 """
-import re, sys, os, json, html as H
+import re
+import json, sys, os, json, html as H
 ROOT = 'old-site'
 SCREENS = ['1200', '960', '640', '480', '320']
 
@@ -69,6 +70,7 @@ def parse_style_rules(style_css, rec):
                 if tail == '': kind = 'elem'
                 elif tail == '.tn-atom': kind = 'atom'
                 elif tail == '.tn-atom:hover': kind = 'hover'
+                elif ':hover' in tail and 'tn-atom__button-text' in tail: kind = 'hover-btntext'  # цвет текста кнопки при наведении
                 elif 'tn-atom__button-text' in tail or 'tn-atom__button-content' in tail: kind = 'btntext'
                 elif tail == '.tn-atom .tn-atom__button-icon' or tail == '.tn-atom__button-icon': kind = 'icon'
                 else: kind = 'other:' + tail
@@ -123,7 +125,15 @@ def elem_spec(el_html, rules):
     img = re.search(r"data-original=[\"']([^\"']*)[\"']", el_html) or re.search(r"<img[^>]*src=[\"']([^\"']*)[\"']", el_html)
     img = img.group(1) if img else ''
     bg = re.search(r"background-image:\s*url\(['\"]?([^'\")]+)", el_html); bg = bg.group(1) if bg else ''
-    anim = dict(re.findall(r'data-animate-([\w-]+)=[\'"]([^\'"]*)[\'"]', el_html))
+    anim = {k: v for k, _q, v in re.findall(r'data-animate-([\w-]+)=([\'"])(.*?)\2', el_html)}
+    # пошаговая анимация (sbs): opts — JSON с одинарными кавычками; первый шаг = начальное состояние
+    sbs = None
+    if anim.get('sbs-opts'):
+        try:
+            steps = json.loads(anim['sbs-opts'].replace("'", '"'))
+            sbs = {'event': anim.get('sbs-event', ''), 'trg': [t for t in re.split(r'[,\s]+', anim.get('sbs-trgels', '')) if t], 'steps': [{k: (float(v) if isinstance(v, (int, float)) or re.fullmatch(r'-?[\d.]+', str(v)) else v) for k, v in st.items() if k in ('mx', 'my', 'sx', 'sy', 'op', 'ro', 'ti', 'ea', 'dt', 'bl')} for st in steps]}
+        except Exception:
+            sbs = None
     inline = re.search(r"class=['\"]tn-atom(?:\s[^'\"]*)?['\"][^>]*style=[\"']([^\"']*)[\"']", el_html)
     inline = inline.group(1) if inline else ''
     geo = {}
@@ -138,6 +148,8 @@ def elem_spec(el_html, rules):
         ic = rules.get((eid, scr, 'icon'), {})
         if ic:
             g['icon'] = ' '.join(f'{k}:{v}' for k, v in ic.items() if k in ('width', 'height', 'order', '--icon', 'margin-right', 'margin-left'))
+        hb = rules.get((eid, scr, 'hover-btntext'), {})
+        if hb.get('color'): g['btn-hover-color'] = hb['color']
         bt = rules.get((eid, scr, 'btntext'), {})
         if bt.get('color'): g['btn-color'] = bt['color']
         if bt.get('padding'): g['btn-pad'] = bt['padding']
@@ -146,7 +158,7 @@ def elem_spec(el_html, rules):
             if k in r and r[k] != '': g[k] = r[k]
         if hv: g['hover'] = '{' + ' '.join(f'{k}:{v}' for k, v in hv.items()) + '}'
         if g: geo[scr] = g
-    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
+    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, anim=anim, sbs=sbs, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
 
 def block_spec(rec_html):
     rid = re.match(r'<div id="(rec\d+)"', rec_html).group(1)

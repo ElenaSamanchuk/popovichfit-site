@@ -1,0 +1,12 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1200, height: 900 } })
+const errs = []; p.on('console', (m) => { if (m.type() === 'error') errs.push(m.text().slice(0, 150)) })
+await p.goto('http://localhost:3500/before', { waitUntil: 'load' }); await p.waitForTimeout(1500)
+const info = await p.evaluate(() => { const v = document.getElementById('rec773176188'); return { cls: v?.className, sw: v?.scrollWidth, cw: v?.clientWidth, ox: v && getComputedStyle(v).overflowX, arrows: document.querySelectorAll('#rec773176187 .arrow-right, #rec773176187 .arrow-left').length } })
+console.log(info)
+await p.evaluate(() => document.getElementById('rec773176188').scrollIntoView())
+const before = await p.evaluate(() => document.getElementById('rec773176188').scrollLeft)
+await p.click('#rec773176187 .arrow-right'); await p.waitForTimeout(700)
+const after = await p.evaluate(() => document.getElementById('rec773176188').scrollLeft)
+console.log('scrollLeft before/after arrow:', before, after, 'errors:', errs)
+await b.close()

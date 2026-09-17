@@ -1,0 +1,239 @@
+# /page60380137.html @960 — высота 2830
+
+## rec843133363 T396 rect=0,0,960,185  
+   artboard: 0,45,960,140 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1734426702849 @19,59,116,116 img:Group_1321319271.png.webp size:cover pos:50% 50%
+- [shape] #1734426202757 @10,60,941,112 → https://popovichfit.ru/bonus img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [button] #1734426509795 @610,89,310,54 «Участвовать» → https://popovichfit.ru/money_draw | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:10px
+- [text] #1734429469693 @140,91,446,38 «100 000 РУБЛЕЙ ОТ POPOVICHFIT» → https://popovichfit.ru/bonus | 26px/38px 700 Involve rgb(0, 0, 0) uppercase
+- [text] #1734426202775 @140,125,446,21 «Примите участие в розыгрыше» → https://popovichfit.ru/bonus | 20px/21px 400 Involve rgb(0, 0, 0)
+
+## rec843133364 T396 rect=0,185,960,490  
+   artboard: 0,185,960,490 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [image] #1719479076765 @10,215,86,14
+- [text] #1686672486980 @10,259,329,31 «Курс «Силовой»» | 26px/31px 700 Involve rgb(0, 0, 0)
+- [shape] #1719492723852 @10,310,340,330 → #zeropopup_instr img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:16px op:0.4
+- [shape] #1719493755045 @360,310,590,330 bg:rgb(246, 246, 246) img:1534_7_2.jpg size:128.772% auto pos:99.993% 13.361% r:16px
+- [text] #1686673908058 @30,330,200,15 «Инструкция к курсу» → #zeropopup_instr | 14px/15px 600 Involve rgb(27, 27, 27)
+- [button] #1686674082372 @282,330,48,21 «10 мин» → #zeropopup_instr | 9px/13.95px 500 Involve rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [shape] #1719494151950 @380,330,140,140 → https://t.me/PPVCHFT_BOT bg:rgb(246, 246, 246) img:Rectangle_3057_4.jpg.webp size:cover pos:50% 50% r:12px
+- [image] #1719494277236 @485,341,25,25 → https://t.me/PPVCHFT_BOT
+- [text] #1699633585154 @30,349,196,12 «Информация до начала курса» → #zeropopup_instr | 10px/12px 500 Involve rgb(116, 114, 118)
+- [shape] #1719493097690 @25,373,310,200 → #zeropopup_instr bg:rgb(246, 246, 246) img:Rectangle_3057.jpg size:102.069% auto pos:0.244% 31.972% r:12px
+- [text] #1719494219034 @394,423,99,33 «Бот, который присылает тренировку дня» → https://t.me/PPVCHFT_BOT | 10px/11px 600 Involve rgb(255, 255, 255)
+- [shape] #1719493245877 @150,443,60,60 → #zeropopup_instr bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1719511203244 @150,443,60,60 → #zeropopup_instr r:3000px
+- [image] #1719511186123 @170,463,20,20 → #zeropopup_instr
+- [shape] #1719494375035 @379,481,140,140 → https://popovichfit.ru/inv_pow bg:rgb(246, 246, 246) img:Rectangle_3058.jpg.webp size:cover pos:50% 50% r:12px
+- [image] #1719494375023 @484,492,25,25 → https://popovichfit.ru/inv_pow
+- [text] #1719494375032 @394,566,94,44 «Ссылки на инвентарь, готовые наборы, промокоды» → https://popovichfit.ru/inv_pow | 10px/11px 600 Involve rgb(255, 255, 255)
+- [button] #1719493374931 @25,583,310,42 «Как эффективно проходить курс» → #zeropopup_instr | 10px/15.5px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:10px
+
+## rec843133370 T396 rect=0,0,0,0  
+   artboard: 0,0,0,0 bg=rgba(0, 0, 0, 0) img=none pos=relative
+
+## rec843133376 T396 rect=0,675,960,85  
+   artboard: 0,675,960,70 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1719483984807 @415,686,130,48 bg:rgb(246, 246, 246) r:12px op:0.4
+- [shape] #1719481734605 @425,695,30,30 → #home bg:rgb(138, 138, 138) img:_1.svg size:cover pos:50% 50% r:8px
+- [shape] #1719502701681 @465,695,30,30 → #dop img:photo.svg size:cover pos:50% 50% r:8px
+- [shape] #1719502824176 @505,695,30,30 → #work img:photo.svg size:cover pos:50% 50% r:8px
+
+## rec843133381 T396 rect=0,760,960,50 VIS:max 1200px 
+   artboard: 0,760,960,50 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [image] #1719570832612 @10,770,30,30
+- [image] #1719570878103 @45,770,30,30
+
+## rec843133382 T396 rect=0,810,960,170  
+   artboard: 0,810,960,200 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1719571597030 @595,825,185,139 → https://popovichfit.ru/nutric img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719571597018 @790,825,185,139 → https://popovichfit.ru/spikery img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719571597006 @985,825,185,139 → #popup:spec img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719571759564 @1170,825,20,134 → #popup:spec r:16px
+- [shape] #1719501452663 @10,826,185,139 → https://popovichfit.ru/bonus img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719571478673 @205,826,185,139 → https://popovichfit.ru/max img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719571532796 @400,826,185,139 → https://popovichfit.ru/warmup img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [image] #1719571597020 @748,834,22,22 → https://popovichfit.ru/nutric
+- [image] #1719571597009 @943,834,22,22 → https://popovichfit.ru/spikery
+- [image] #1719571596993 @1138,834,22,22 → #popup:spec
+- [text] #1719501714827 @22,835,99,22 «Бонусные тренировки» → https://popovichfit.ru/bonus | 10px/11px 600 Involve rgb(29, 29, 32)
+- [image] #1719501782936 @163,835,22,22 → https://popovichfit.ru/bonus
+- [text] #1719571478671 @217,835,116,22 «Советы: как получить от курса максимум» → https://popovichfit.ru/max | 10px/11px 600 Involve rgb(29, 29, 32)
+- [image] #1719571478661 @358,835,22,22 → https://popovichfit.ru/max
+- [text] #1719571532792 @412,835,99,11 «Зарядки» → https://popovichfit.ru/warmup | 10px/11px 600 Involve rgb(29, 29, 32)
+- [image] #1719571532781 @553,835,22,22 → https://popovichfit.ru/warmup
+- [text] #1719571597028 @607,835,82,22 «Питание и образ жизни» → https://popovichfit.ru/nutric | 10px/11px 600 Involve rgb(29, 29, 32)
+- [text] #1719571597016 @802,835,59,22 «Вебинары и лекции» → https://popovichfit.ru/spikery | 10px/11px 600 Involve rgb(29, 29, 32)
+- [text] #1719571597002 @997,835,99,11 «Спецпредложения» → #popup:spec | 10px/11px 600 Involve rgb(29, 29, 32)
+- [shape] #1719571597026 @600,865,175,89 → https://popovichfit.ru/nutric bg:rgb(223, 223, 223) img:1717_4_1.jpg size:100% auto pos:0% 88.063% r:12px
+- [shape] #1719571597013 @795,865,175,89 → https://popovichfit.ru/spikery bg:rgb(223, 223, 223) img:1717_3.jpg.webp size:cover pos:50% 50% r:12px
+- [shape] #1719571596999 @990,865,175,89 → #popup:spec bg:rgb(223, 223, 223) r:12px
+- [shape] #1719501734076 @15,871,175,89 → https://popovichfit.ru/bonus bg:rgb(223, 223, 223) img:1717_5_1.jpg size:100% auto pos:0% 0% r:12px
+- [shape] #1719571478668 @210,871,175,89 → https://popovichfit.ru/max bg:rgb(223, 223, 223) img:1717_2.jpg.webp size:cover pos:50% 50% r:12px
+- [shape] #1719571532789 @405,871,175,89 → https://popovichfit.ru/warmup bg:rgb(223, 223, 223) img:1355_1.jpg size:100% auto pos:0% 75.853% r:12px
+
+## rec843140856 T396 rect=0,980,960,170  
+   artboard: 0,980,960,170 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,990,474,74 «Как начать тренироваться с POPOVICHFIT:» | 34px/37px 700 Involve rgb(32, 32, 32)
+- [image] #1720689154271 @10,1080,40,40 op:0.7
+- [image] #1720689154278 @55,1080,40,40 op:0.7
+
+## rec843140718 T396 rect=0,1150,960,530  
+   artboard: 0,1150,960,500 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720688572119 @2405,1150,62,370 r:30px
+- [shape] #1720688572156 @10,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572148 @309,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572141 @610,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572135 @909,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572128 @1208,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1721287493829 @1502,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1721287493822 @1801,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [shape] #1721287493811 @2100,1160,280,433 bg:rgb(251, 251, 251) r:14px
+- [button] #1720688572126 @1227,1179,30,30 «5» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1721287493808 @2119,1179,30,30 «8» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572155 @30,1180,30,30 «1» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572147 @329,1180,30,30 «2» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572139 @630,1180,30,30 «3» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572134 @926,1180,30,30 «4» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1721287493827 @1522,1180,30,30 «6» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [button] #1721287493820 @1821,1180,30,30 «7» | 12px/13.2px 700 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720688572122 @1227,1216,241,38 «Если не получилось восстановить пароль» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1721287493799 @2119,1216,248,171 «В случае, если вы не сможете заниматься по каким-либо обстоятельствам или вам не подойдет продукт/формат/подача тренера, то в течение 5 дней после даты старта к» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1720688572153 @30,1218,232,57 «Если вы оформляете предзапись, бот уведомит вас о старте продаж курса» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1720688572145 @329,1218,248,95 «После покупки (доступна покупка абонементов на 3 и 6 мес. в кредит), вам на почту придет письмо с логином и паролем в личный кабинет» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1720688572138 @630,1218,238,19 «Кнопка «Личный кабинет»» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1720688572133 @926,1218,222,38 «Логин – это ваша почта, пароль – в письме» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1721287493825 @1522,1218,238,57 «Все материалы в личном кабинете откроются за 1 день до даты старта курса» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1721287493818 @1821,1218,222,38 «В день старта курса вы начинаете тренироваться» | 16px/19px 600 Involve rgb(32, 32, 32)
+- [text] #1720688572117 @630,1249,232,135 «Чтобы зайти в личный кабинет, нажмите кнопку “Личный кабинет” в правом верхнем углу. Доступ к основной программе курса открывается за день до старта потока в 21» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1720688572131 @926,1267,244,105 «Логин - адрес электронной почты, указанный при оплате. Пароль отправили в письме на почту, указанную при оплате. Если вы не можете найти письмо с паролем, пожал» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1721289288537 @1228,1267,227,75 «Если после этого пароль не пришел на электронную почту в течение 10 минут, а вы проверили папки "Спам" и "Рассылки" - напишите, пожалуйста, в техподдержку курса» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1721287493814 @1820,1267,244,90 «по желанию - отправляете технику выполнения упражнений в чат с куратором в случае возникновения проблем технического характера на ваши вопросы ответит техподдер» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1721287493794 @1522,1282,232,90 «Доступ к основной программе курса открывается за день до старта потока в 21:00 по Мск, закрывается в 21:00 по Мск в день окончания срока доступа, до этого вам д» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1720688572152 @30,1288,179,60 «А также поможет выбрать подходящий тариф. Основной курс стартует в определенную дату» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [text] #1720688572143 @328,1323,253,60 «Также вы получаете письмо со ссылками на необходимое оборудование, которое по желанию нужно приобрести. Или воспользоваться подручными заменами.» | 12px/15px 400 Involve rgb(97, 97, 97)
+- [button] #1721289797559 @330,1396,113,35 «Техподдержка» → https://t.me/PopovichfitCare_Bot | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [button] #1721290340950 @926,1396,160,35 «Восстановить пароль» → https://popovichfit.ru/members/recover-password | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [button] #1721290389515 @1227,1396,113,35 «Техподдержка» → https://t.me/PopovichfitCare_Bot | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [button] #1721290430990 @2119,1401,113,35 «Техподдержка» → https://t.me/PopovichfitCare_Bot | 11px/17.05px 600 Involve rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [shape] #1720688572113 @326,1446,242,133 bg:rgb(255, 255, 255) img:Group_15.jpg.webp size:cover pos:50% 50% r:8px
+- [shape] #1721289174446 @630,1446,242,133 bg:rgb(255, 255, 255) img:Group_12.jpg.webp size:cover pos:50% 50% r:8px
+- [shape] #1721289258836 @926,1446,242,133 bg:rgb(255, 255, 255) img:Group_11.jpg.webp size:cover pos:50% 50% r:8px
+- [shape] #1721289299049 @1227,1446,242,133 bg:rgb(255, 255, 255) r:8px
+
+## rec843133386 T395 rect=0,1680,960,112  
+   text: 1 неделя 2 неделя 3 неделя 4 неделя
+
+## rec843133387 T396 rect=0,1792,960,50  
+   artboard: 0,1792,960,50 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [image] #1719570832612 @10,1802,30,30
+- [image] #1719570878103 @45,1802,30,30
+
+## rec843133388 T396 rect=0,1842,960,455  
+   artboard: 0,1842,960,410 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1719586369895 @1524,1856,56,134 → https://popovichfit.ru/20pow5 r:16px
+- [shape] #1719501452663 @10,1857,330,325 → https://popovichfit.ru/20pow1 img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719585833626 @350,1857,330,325 → https://popovichfit.ru/20pow2 img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719585953100 @690,1857,330,325 → https://popovichfit.ru/20pow3 img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719585953061 @1030,1857,330,325 → https://popovichfit.ru/20pow4 img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719586369893 @1370,1857,330,325 → https://popovichfit.ru/20pow5 img:linear-gradient(0deg, rgb(242, 242, 242) 0%, rgb(255, 255, 255) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1719577519330 @15,1862,320,185 → https://popovichfit.ru/20pow1 bg:rgb(246, 246, 246) img:photo.png size:115.214% auto pos:50% 0% r:14px
+- [shape] #1719585833623 @355,1862,320,185 → https://popovichfit.ru/20pow2 bg:rgb(246, 246, 246) img:photo.png size:108.52% auto pos:50% 0% r:14px
+- [shape] #1719585953097 @695,1862,320,185 → https://popovichfit.ru/20pow3 bg:rgb(246, 246, 246) img:photo.png size:107.797% auto pos:50% 0% r:14px
+- [shape] #1719585953058 @1035,1862,320,185 → https://popovichfit.ru/20pow4 bg:rgb(246, 246, 246) img:photo.png size:115.901% auto pos:50% 0% r:14px
+- [shape] #1719586369891 @1375,1862,320,185 → https://popovichfit.ru/20pow5 bg:rgb(246, 246, 246) img:image.png size:110.621% auto pos:50% 0% r:14px
+- [button] #1719577682943 @25,1872,76,21 «9 декабря, пн» → https://popovichfit.ru/20pow1 | 9px/13.95px 500 Involve rgb(33, 33, 33) align:center img:linear-gradient(136.8deg, rgb(255, 255, 255) 0%, rgb(230, 229, 237) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719585833605 @365,1872,69,21 «10 декабря, вт» → https://popovichfit.ru/20pow2 | 9px/13.95px 500 Involve rgb(33, 33, 33) align:center img:linear-gradient(136.8deg, rgb(255, 255, 255) 0%, rgb(230, 229, 237) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719585953076 @705,1872,76,21 «11 декабря, ср» → https://popovichfit.ru/20pow3 | 9px/13.95px 500 Involve rgb(33, 33, 33) align:center img:linear-gradient(136.8deg, rgb(255, 255, 255) 0%, rgb(230, 229, 237) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719585953037 @1045,1872,79,21 «12 декабря, чт» → https://popovichfit.ru/20pow4 | 9px/13.95px 500 Involve rgb(33, 33, 33) align:center img:linear-gradient(136.8deg, rgb(255, 255, 255) 0%, rgb(230, 229, 237) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719586369860 @1385,1872,79,21 «13 декабря, пт» → https://popovichfit.ru/20pow5 | 9px/13.95px 500 Involve rgb(33, 33, 33) align:center img:linear-gradient(136.8deg, rgb(255, 255, 255) 0%, rgb(230, 229, 237) 100%) size:cover pos:0% 0% r:40px
+- [shape] #1719577519328 @145,1925,60,60 → https://popovichfit.ru/20pow1 bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1719577519320 @145,1925,60,60 → https://popovichfit.ru/20pow1 r:3000px
+- [shape] #1719585833614 @485,1925,60,60 → https://popovichfit.ru/20pow2 bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1719585833607 @485,1925,60,60 → https://popovichfit.ru/20pow2 r:3000px
+- [shape] #1719585953088 @825,1925,60,60 → https://popovichfit.ru/20pow3 bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1719585953077 @825,1925,60,60 → https://popovichfit.ru/20pow3 r:3000px
+- [shape] #1719585953050 @1165,1925,60,60 → https://popovichfit.ru/20pow4 bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1719585953039 @1165,1925,60,60 → https://popovichfit.ru/20pow4 r:3000px
+- [shape] #1719586369884 @1505,1925,60,60 → https://popovichfit.ru/20pow5 bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1719586369861 @1505,1925,60,60 → https://popovichfit.ru/20pow5 r:3000px
+- [image] #1719577519323 @165,1945,20,20 → https://popovichfit.ru/20pow1
+- [image] #1719585833609 @505,1945,20,20 → https://popovichfit.ru/20pow2
+- [image] #1719585953080 @845,1945,20,20 → https://popovichfit.ru/20pow3
+- [image] #1719585953041 @1185,1945,20,20 → https://popovichfit.ru/20pow4
+- [image] #1719586369864 @1525,1945,20,20 → https://popovichfit.ru/20pow5
+- [shape] #1719571759564 @1700,1963,20,134 r:16px
+- [button] #1719577519333 @277,2016,48,21 «68 мин» → https://popovichfit.ru/20pow1 | 9px/13.95px 500 Involve rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719585833616 @617,2016,48,21 «38 мин» → https://popovichfit.ru/20pow2 | 9px/13.95px 500 Involve rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719585953091 @957,2016,48,21 «64 мин» → https://popovichfit.ru/20pow3 | 9px/13.95px 500 Involve rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719585953052 @1297,2016,48,21 «34 мин» → https://popovichfit.ru/20pow4 | 9px/13.95px 500 Involve rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719586369886 @1637,2016,48,21 «39 мин» → https://popovichfit.ru/20pow5 | 9px/13.95px 500 Involve rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [button] #1719577846928 @25,2062,62,18 «СИЛОВАЯ» → https://popovichfit.ru/20pow1 | 9px/12.6px 500 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:6px
+- [button] #1719577846932 @91,2062,55,18 «ЯГОДИЦЫ» → https://popovichfit.ru/20pow1 | 9px/12.6px 500 Involve rgb(82, 77, 94) uppercase align:center bg:rgb(229, 228, 235) r:6px
+- [button] #1719585833600 @365,2062,62,18 «КОРРЕКЦИЯ» → https://popovichfit.ru/20pow2 | 9px/12.6px 500 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:6px
+- [button] #1719585833602 @431,2062,48,18 «ХОЛКА» → https://popovichfit.ru/20pow2 | 9px/12.6px 500 Involve rgb(82, 77, 94) uppercase align:center bg:rgb(229, 228, 235) r:6px
+- [button] #1719585953072 @705,2062,62,18 «СИЛОВАЯ» → https://popovichfit.ru/20pow3 | 9px/12.6px 500 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:6px
+- [button] #1719585953073 @771,2062,55,18 «ПЛЕЧИ» → https://popovichfit.ru/20pow3 | 9px/12.6px 500 Involve rgb(82, 77, 94) uppercase align:center bg:rgb(229, 228, 235) r:6px
+- [button] #1719585953034 @1045,2062,62,18 «КОРРЕКЦИЯ» → https://popovichfit.ru/20pow4 | 9px/12.6px 500 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:6px
+- [button] #1719585953036 @1111,2062,55,18 «ЖИВОТ» → https://popovichfit.ru/20pow4 | 9px/12.6px 500 Involve rgb(82, 77, 94) uppercase align:center bg:rgb(229, 228, 235) r:6px
+- [button] #1719586369856 @1385,2062,62,18 «СИЛОВАЯ» → https://popovichfit.ru/20pow5 | 9px/12.6px 500 Involve rgb(255, 255, 255) uppercase align:center img:linear-gradient(100.8deg, rgb(141, 149, 212) 0%, rgb(127, 140, 218) 100%) size:cover pos:0% 0% r:6px
+- [button] #1719586369858 @1451,2062,62,18 «КОМПЛЕКС» → https://popovichfit.ru/20pow5 | 9px/12.6px 500 Involve rgb(82, 77, 94) uppercase align:center bg:rgb(229, 228, 235) r:6px
+- [text] #1719577451663 @25,2090,291,26 «Коррекция мобильность таза, эластичность бедер. Силовая ягодицы и бедра» → https://popovichfit.ru/20pow1 | 12px/13px 600 Involve rgb(38, 38, 38)
+- [text] #1719585833622 @365,2090,291,13 «Холка» → https://popovichfit.ru/20pow2 | 12px/13px 600 Involve rgb(38, 38, 38)
+- [text] #1719585953095 @705,2090,301,26 «КОРРЕКЦИЯ «Снятие напряжения с грудной клетки, рук». СИЛОВАЯ «Верхний плечевой пояс»» → https://popovichfit.ru/20pow3 | 12px/13px 600 Involve rgb(38, 38, 38)
+- [text] #1719585953056 @1045,2090,291,26 «Дыхание от отеков болей. Плоский живот и красивая осанка» → https://popovichfit.ru/20pow4 | 12px/13px 600 Involve rgb(38, 38, 38)
+- [text] #1719586369889 @1385,2090,291,26 «Снятие напряжения с таза, мобильность. Ягодичная круговая» → https://popovichfit.ru/20pow5 | 12px/13px 600 Involve rgb(38, 38, 38)
+- [text] #1719577451660 @25,2121,248,12 «Инвентарь: массажный мяч, отягощения, скамья» → https://popovichfit.ru/20pow1 | 10px/12px 400 Involve rgb(85, 85, 85)
+- [text] #1719585833618 @365,2121,223,24 «Инвентарь: лента для пилатеса, мячи массажные, мяч для пилатеса, стул» → https://popovichfit.ru/20pow2 | 10px/12px 400 Involve rgb(85, 85, 85)
+- [text] #1719585953092 @705,2121,301,24 «Инвентарь: ролл, массажный мяч, отягощение, лента для пилатеса / эспандер (в зале - кроссовер), стул (скамья)» → https://popovichfit.ru/20pow3 | 10px/12px 400 Involve rgb(85, 85, 85)
+- [text] #1719585953054 @1045,2121,231,12 «Инвентарь: полотенце, массажный мяч» → https://popovichfit.ru/20pow4 | 10px/12px 400 Involve rgb(85, 85, 85)
+- [text] #1719586369887 @1385,2121,282,24 «Инвентарь: массажный мяч, отягощения в зависимости от уровня подготовленности» → https://popovichfit.ru/20pow5 | 10px/12px 400 Involve rgb(85, 85, 85)
+- [text] #1719577925452 @25,2154,60,12 «Сложность:» → https://popovichfit.ru/20pow1 | 10px/12px 500 Involve rgb(143, 142, 145)
+- [text] #1719585833594 @365,2154,60,12 «Сложность:» → https://popovichfit.ru/20pow2 | 10px/12px 500 Involve rgb(143, 142, 145)
+- [text] #1719585953067 @705,2154,60,12 «Сложность:» → https://popovichfit.ru/20pow3 | 10px/12px 500 Involve rgb(143, 142, 145)
+- [text] #1719585953030 @1045,2154,60,12 «Сложность:» → https://popovichfit.ru/20pow4 | 10px/12px 500 Involve rgb(143, 142, 145)
+- [text] #1719586369851 @1385,2154,60,12 «Сложность:» → https://popovichfit.ru/20pow5 | 10px/12px 500 Involve rgb(143, 142, 145)
+- [shape] #1719577925457 @87,2157,6,6 → https://popovichfit.ru/20pow1 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719577925467 @96,2157,6,6 → https://popovichfit.ru/20pow1 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719577925464 @105,2157,6,6 → https://popovichfit.ru/20pow1 bg:rgb(255, 255, 255) r:3000px
+- [shape] #1719585833586 @427,2157,6,6 → https://popovichfit.ru/20pow2 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719585833597 @436,2157,6,6 → https://popovichfit.ru/20pow2 r:3000px
+- [shape] #1719585833590 @445,2157,6,6 → https://popovichfit.ru/20pow2 bg:rgb(255, 255, 255) r:3000px
+- [shape] #1719585953064 @767,2157,6,6 → https://popovichfit.ru/20pow3 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719585953070 @776,2157,6,6 → https://popovichfit.ru/20pow3 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719585953065 @785,2157,6,6 → https://popovichfit.ru/20pow3 bg:rgb(255, 255, 255) r:3000px
+- [shape] #1719585953024 @1107,2157,6,6 → https://popovichfit.ru/20pow4 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719585953032 @1116,2157,6,6 → https://popovichfit.ru/20pow4 bg:rgb(255, 255, 255) r:3000px
+- [shape] #1719585953027 @1125,2157,6,6 → https://popovichfit.ru/20pow4 bg:rgb(255, 255, 255) r:3000px
+- [shape] #1719586369844 @1447,2157,6,6 → https://popovichfit.ru/20pow5 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719586369854 @1456,2157,6,6 → https://popovichfit.ru/20pow5 bg:rgb(143, 142, 145) r:3000px
+- [shape] #1719586369848 @1465,2157,6,6 → https://popovichfit.ru/20pow5 bg:rgb(255, 255, 255) r:3000px
+
+## rec1120448561 T396 rect=0,2297,960,533  
+   artboard: 0,367,960,533 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @734,412,6,6
+- [button] #1749597221603 @10,418,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @10,418,495,19 img:none size:undefined pos:undefined flex row gap:normal 34px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [button] #1749597242361 @93,418,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597275677 @166,418,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @266,418,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @354,418,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @426,418,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1750073825682 @641,418,30,30 → https://t.me/natalyapopovich87
+- [group] #G175007383007674350 @641,418,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @676,418,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @711,418,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @746,418,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @800,418,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [text] #1750073992932 @644,468,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @800,468,150,39 «Предзапись» → https://t.me/popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [text] #1749597352468 @10,576,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @259,576,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @502,576,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @719,576,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,629,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @259,629,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @502,629,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [image] #1749597598043 @17,680,926,112
+- [shape] #1749597712349 @10,835,940,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @425,857,110,11 → https://shumann.ru/ op:0.6

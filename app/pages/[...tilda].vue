@@ -13,10 +13,8 @@ const meta = pages[file]!
 definePageMeta({ layout: false })
 usePageMeta(file)
 
-const modules = import.meta.glob('../data/tilda/*.json')
-const loader = modules[`../data/tilda/${file.replace('.html', '.json')}`] as (() => Promise<{ default: unknown }>) | undefined
-if (!loader) throw createError({ statusCode: 404, statusMessage: 'Нет данных страницы', fatal: true })
-const { data } = await useAsyncData('tilda:' + file, async () => (await loader()).default as import('~/utils/tilda-css').TildaPageData)
+// данные блоков — с сервера (серверный ассет), при клиентских переходах — из пререндеренного _payload.json
+const { data } = await useAsyncData('tilda:' + file, () => $fetch<import('~/utils/tilda-css').TildaPageData>('/api/tilda/' + file.replace('.html', '.json')))
 </script>
 
 <template>

@@ -1,48 +1,15 @@
 /eat @1200: высота live 1533 / local 1533
 
-## rec777343280 T396
-  Δ #1720534073989 [text] шрифт live 40px/44px 700 Manrope / local 40px/44px 700 Involve  live@20,85,680,44  Питание
-
 ## rec777343871 T396
-  Δ #1721648754819 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@35,350,250,15  Знакомство
-  Δ #1721648754816 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@240,309,48,21  11 мин
-  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
-  ✗ #1721648754808 [shape] opacity live 1 / local 0  
-  Δ #1721649051956 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@326,350,250,15  Калории: считать или нет
-  Δ #1721649051954 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@531,309,48,21  18 мин
-  Δ #1721649279452 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@621,350,250,15  Насмотренность в питании
-  Δ #1721649279451 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@826,309,48,21  11 мин
-  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649051931 [shape] opacity live 1 / local 0  
-  Δ #1721649279424 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@912,350,250,15  Питьевой режим
-  Δ #1721649279422 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@1117,309,48,21  26 мин
-  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649279435 [shape] opacity live 1 / local 0  
-  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
-  ✗ #1721649279395 [shape] opacity live 1 / local 0  
+  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
+  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
+  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,230,60,60  
+  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,230,60,60  
 
 ## rec777343872 T396
-  Δ #1721649051956 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@326,590,250,15  Меню на 7 дней
-  Δ #1721649279452 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@621,590,250,15  Меню на 7 дней
-  Δ #1721649279424 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@912,590,250,30  Анализ рациона. Как и зачем считать кало
-  Δ #1721650371589 [button] шрифт live 11px/17.05px 700 Manrope / local 11px/17.05px 700 Involve  live@326,630,114,40  ОТКРЫТЬ
-  Δ #1721650371584 [text] шрифт live 12px/13px 700 Manrope / local 12px/13.2px 700 Involve  live@658,438,120,13  Наталья Попович
-  Δ #1721650859938 [button] шрифт live 11px/17.05px 700 Manrope / local 11px/17.05px 700 Involve  live@621,630,114,40  ОТКРЫТЬ
-  Δ #1721650929853 [button] шрифт live 11px/17.05px 700 Manrope / local 11px/17.05px 700 Involve  live@912,630,114,40  ОТКРЫТЬ
-  Δ #1721650643679 [text] шрифт live 12px/13px 700 Manrope / local 12px/13.2px 700 Involve  live@361,438,120,13  Дарья Редькина
-  Δ #1721745069245 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@35,590,250,15  О продуктах и рационе
-  Δ #1721745069243 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@240,549,48,21  31 мин
-  ✗ #1721745069241 [shape] opacity live 1 / local 0.1  
-  Δ #1721651115822 [text] шрифт live 12px/13px 700 Manrope / local 12px/13.2px 700 Involve  live@948,438,120,13  Наталья Попович
-  ✗ #1721745069231 [shape] opacity live 1 / local 0  
+  Δ #1721745069241 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,470,60,60  
 
 ## rec777343873 T396
-  Δ #1721745002498 [text] шрифт live 14px/15px 600 Manrope / local 14px/15.4px 600 Involve  live@35,890,250,15  Комплексная работа и результат
-  Δ #1721745002496 [button] шрифт live 9px/13.95px 500 Manrope / local 9px/13.95px 500 Involve  live@240,849,48,21  22 мин
-  ✗ #1721745002494 [shape] opacity live 1 / local 0.1  
-  ✗ #1721745002486 [shape] opacity live 1 / local 0  
+  Δ #1721745002494 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@131,770,60,60  
 
-## rec777342495 T396
-  Δ #1719923677879 [button] шрифт live 12px/18.6px 600 Manrope / local 12px/18.6px 600 Involve  live@1067,724,113,50  Назад
-
-элементов: 65, с расхождениями > 3px: 35
+элементов: 65, с расхождениями > 3px: 6

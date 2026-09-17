@@ -1,4 +1,8 @@
 import tailwindcss from '@tailwindcss/vite'
+import { pages } from './app/data/pages'
+
+// все URL экспорта — чтобы пререндер не зависел от обхода ссылок (черновики и legacy-страницы никто не линкует)
+const prerenderRoutes = Object.values(pages).map((p) => p.url).filter((u) => u !== '/404.html')
 
 // Статическая генерация всех страниц (nuxt generate) + серверные роуты /api/* для форм и корзины
 // (работают при запуске через `nuxt build` + node-server; при чисто статическом хостинге
@@ -36,8 +40,17 @@ export default defineNuxtConfig({
       vkPixelId: 'VK-RTRG-1817271-8E0Ye',
     },
   },
+  // Гибрид: все страницы пререндерятся при сборке (статический HTML), /api/* и sitemap живут в node-server.
+  // `nuxt build` → .output (node .output/server/index.mjs); `nuxt generate` → чисто статика (формы через NUXT_PUBLIC_API_BASE).
+  routeRules: {
+    '/**': { prerender: true },
+    '/api/**': { prerender: false, cache: false },
+    '/sitemap.xml': { prerender: true },
+  },
   nitro: {
-    prerender: { crawlLinks: true, routes: ['/'], failOnError: false },
+    prerender: { crawlLinks: true, routes: ['/', '/sitemap.xml', ...prerenderRoutes], failOnError: false },
+    // JSON страниц экспорта — серверные ассеты (лениво, по файлу), см. server/api/tilda/[file].get.ts
+    serverAssets: [{ baseName: 'tilda', dir: './app/data/tilda' }],
   },
   router: { options: { scrollBehaviorType: 'smooth' } },
 })

@@ -1,0 +1,459 @@
+{
+ "width": 960,
+ "height": 3146,
+ "recs": [
+  {
+   "id": "rec842891984",
+   "type": "230",
+   "rect": [
+    0,
+    0,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "ВЫВОД СРЕДСТВ ДОБАВИТЬ ЮЗЕРА ПО ПОЧТЕ ИЗМЕНИТЬ ПРОЦЕНТ РЕФ.ПРОГИ"
+  },
+  {
+   "id": "rec842891985",
+   "type": "396",
+   "rect": [
+    0,
+    0,
+    960,
+    470
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      10,
+      100,
+      494,
+      37
+     ],
+     "text": "Выводы средств",
+     "href": "",
+     "font": "34px/37px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     90,
+     960,
+     380
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec842891986",
+   "type": "690",
+   "rect": [
+    0,
+    470,
+    960,
+    336
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Ид заявки Статус транзакции Выведен Платеж не прошел,средства вернулись Ожидает вывода Изменить статус заявки"
+  },
+  {
+   "id": "rec842891987",
+   "type": "131",
+   "rect": [
+    0,
+    806,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec842891988",
+   "type": "395",
+   "rect": [
+    0,
+    806,
+    960,
+    51
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Все выводы Выводы для админа удачные Выводы для админа ожиджающие Выводы для админа неудачные"
+  },
+  {
+   "id": "rec842891989",
+   "type": "431",
+   "rect": [
+    0,
+    857,
+    960,
+    183
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "ИД заявки Сумма Номер Карты Статус заявки"
+  },
+  {
+   "id": "rec842891990",
+   "type": "131",
+   "rect": [
+    0,
+    1040,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec842891991",
+   "type": "431",
+   "rect": [
+    0,
+    1040,
+    960,
+    183
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "ИД заявки Сумма Номер Карты Статус заявки"
+  },
+  {
+   "id": "rec842891992",
+   "type": "131",
+   "rect": [
+    0,
+    1223,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec842891993",
+   "type": "431",
+   "rect": [
+    0,
+    1223,
+    960,
+    183
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "ИД заявки Сумма Номер Карты Статус заявки"
+  },
+  {
+   "id": "rec842891994",
+   "type": "131",
+   "rect": [
+    0,
+    1406,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec842891995",
+   "type": "431",
+   "rect": [
+    0,
+    1406,
+    960,
+    183
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "ИД заявки Сумма Номер Карты Статус заявки"
+  },
+  {
+   "id": "rec842891996",
+   "type": "131",
+   "rect": [
+    0,
+    1588,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec842891997",
+   "type": "396",
+   "rect": [
+    0,
+    1588,
+    960,
+    160
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      10,
+      1688,
+      494,
+      37
+     ],
+     "text": "Добавить пользователя",
+     "href": "",
+     "font": "34px/37px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    },
+    {
+     "id": "1732706475062",
+     "type": "text",
+     "rect": [
+      432,
+      1694,
+      560,
+      31
+     ],
+     "text": "(Без оплат)",
+     "href": "",
+     "font": "20px/31px 400 Manrope",
+     "color": "rgb(0, 0, 0)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "auto",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     1678,
+     960,
+     70
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec842891998",
+   "type": "690",
+   "rect": [
+    0,
+    1748,
+    960,
+    346
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Имя реф Емайл Добавить пользователя без оплаты"
+  },
+  {
+   "id": "rec842891999",
+   "type": "131",
+   "rect": [
+    0,
+    2094,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec842892000",
+   "type": "396",
+   "rect": [
+    0,
+    2094,
+    960,
+    160
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      10,
+      2194,
+      494,
+      74
+     ],
+     "text": "Изменить процент реф.проги",
+     "href": "",
+     "font": "34px/37px 700 Manrope",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2184,
+     960,
+     70
+    ],
+    "bg": "rgb(229, 229, 231)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec842892001",
+   "type": "690",
+   "rect": [
+    0,
+    2254,
+    960,
+    346
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Емайл Процент для реферальной проги 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 Изменить процент"
+  },
+  {
+   "id": "rec842892002",
+   "type": "131",
+   "rect": [
+    0,
+    2600,
+    960,
+    0
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": ""
+  },
+  {
+   "id": "rec848608504",
+   "type": "396",
+   "rect": [
+    0,
+    2600,
+    960,
+    200
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [
+    {
+     "id": "1720534073989",
+     "type": "text",
+     "rect": [
+      10,
+      2700,
+      494,
+      74
+     ],
+     "text": "Добавить рефку пользователю",
+     "href": "",
+     "font": "34px/37px 700 Involve",
+     "color": "rgb(32, 32, 32)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "",
+     "bgSize": "cover",
+     "bgPos": "50% 50%",
+     "radius": "0px",
+     "opacity": "1",
+     "align": "start",
+     "transform": "none",
+     "visible": true
+    }
+   ],
+   "artboard": {
+    "rect": [
+     0,
+     2690,
+     960,
+     110
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "position": "relative"
+   }
+  },
+  {
+   "id": "rec848608505",
+   "type": "690",
+   "rect": [
+    0,
+    2800,
+    960,
+    346
+   ],
+   "vis": "",
+   "display": "block",
+   "elems": [],
+   "text": "Емайл пользователя Реф ид Добавить пользователя без оплаты"
+  }
+ ]
+}

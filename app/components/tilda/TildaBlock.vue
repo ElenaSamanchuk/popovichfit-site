@@ -8,7 +8,7 @@ import type { TildaBlock } from '~/utils/tilda-css'
 const props = defineProps<{ block: TildaBlock; popupContent?: TildaBlock | null }>()
 const b = props.block
 const POPUP_TYPES = new Set(['868', '331', '390', '746', '702', '1093', '702'])
-const SKIP = new Set(['270', '890', '450', '215', '887', '367', '806'])
+const SKIP = new Set(['270', '890', '450', '215', '887', '367', '806', '706']) // 706 — корзина, см. site/Cart.vue
 const isPopup = computed(() => POPUP_TYPES.has(b.type) && !!b.hooks?.length)
 const popupName = computed(() => (b.hooks?.[0] || '').replace(/^#/, ''))
 

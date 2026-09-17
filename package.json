@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nuxt dev -p 3500",
-    "build": "nuxt build",
+    "build": "nuxt build && node scripts/postgenerate.mjs",
     "generate": "nuxt generate && node scripts/postgenerate.mjs",
     "preview": "sirv .output/public --port 3501 --single false",
     "typecheck": "nuxt typecheck",
@@ -16,7 +16,8 @@
     "check:urls": "node scripts/check-urls.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:no-tilda": "node scripts/check-no-tilda.mjs",
-    "images": "node scripts/import-images.mjs"
+    "images": "node scripts/import-images.mjs",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "nuxt": "^4.5.2",

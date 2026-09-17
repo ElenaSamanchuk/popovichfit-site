@@ -26,8 +26,8 @@ const padStyle = computed(() => {
   const p = props.block.pad || {}
   const st: Record<string, string> = {}
   if (p['padding-top']) st.paddingTop = p['padding-top'] + 'px'
-  // сайт-wide правка из T123 экспорта: .t-rec_pb_75 { padding-bottom: 0 !important } (на 178 страницах)
-  if (p['padding-bottom'] && p['padding-bottom'] !== 75) st.paddingBottom = p['padding-bottom'] + 'px'
+  // правка .t-rec_pb_75{padding-bottom:0!important} из T123 учтена в данных (build_tilda_json: только на страницах с этим блоком)
+  if (p['padding-bottom']) st.paddingBottom = p['padding-bottom'] + 'px'
   return st
 })
 </script>

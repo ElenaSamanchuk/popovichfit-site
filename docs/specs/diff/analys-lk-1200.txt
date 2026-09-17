@@ -1,13 +1,12 @@
-/analys-lk @1200: высота live 8670 / local 9246
+/analys-lk @1200: высота live 8670 / local 8660
 
 ## rec1035393066 T396
   Δ #1674476028612 [shape] bg-image live delicious-salad-with.jpg.webp, linear-gradient(1deg, rgba(36, 36, 36, 0.2) 0%, rgba(43, 43, 43, 0.5) 98%) / local t39636638-delicious-salad-with.webp, linear-gradient(1deg, rgba(36, 36, 36, 0.2) 0%, rgba(43, 43, 43, 0.5) 98%)  live@0,0,1200,560  
-  Δ #1669372132956 [text] dx=0 dy=-230 dw=0 dh=0 | шрифт live 40px/50px 300 RockStar / local 40px/50px 300 Involve  live@227,230,746,100  Анализ рациона. Как и зачем считать кало
 
 ## rec1035393086 T106  блок: live y=2624 h=1285 / local y=2624 h=1275
 
-## rec1035393091 T3  блок: live y=3909 h=626 / local y=3899 h=1212
+## rec1035393091 T3  блок: live y=3909 h=626 / local y=3899 h=626
 
-## rec1035393096 T106  блок: live y=4535 h=3552 / local y=5111 h=3552
+## rec1035393096 T106  блок: live y=4535 h=3552 / local y=4525 h=3552
 
-элементов: 3, с расхождениями > 3px: 2
+элементов: 3, с расхождениями > 3px: 1

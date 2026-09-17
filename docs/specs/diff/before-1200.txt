@@ -1,11 +1,6 @@
-/before @1200: высота live 1318 / local 1243
+/before @1200: высота live 1318 / local 1318
 
 ## rec847585779 T396
-  ✗ #1719494277236 [image] opacity live 1 / local 0  
-  ✗ #1719494375023 [image] opacity live 1 / local 0  
-  ✗ #1719493245877 [shape] opacity live 1 / local 0.1  
-  ✗ #1719511203244 [shape] opacity live 1 / local 0  
+  Δ #1719493245877 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1067,371,36,36  
 
-## rec773176188 T396  блок: live y=490 h=245 / local y=490 h=170
-
-элементов: 38, с расхождениями > 3px: 4
+элементов: 38, с расхождениями > 3px: 1

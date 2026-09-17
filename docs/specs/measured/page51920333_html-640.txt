@@ -1,0 +1,312 @@
+# /page51920333.html @640 — высота 7814
+
+## rec772920506 T396 rect=0,0,640,50  
+   artboard: 0,0,640,50 bg=rgba(0, 0, 0, 0) img=none pos=relative
+- [shape] #1720448097344 @20,5,600,40 img:linear-gradient(86.4deg, rgb(243, 243, 245) 0%, rgb(208, 208, 208) 100%) size:cover pos:50% 50% r:8px op:0.3
+- [button] #1720448296988 @220,5,36,40 «КУРСЫ» → https://popovichfit.ru | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448374036 @261,5,56,40 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448388035 @322,5,41,40 «СТАТЬИ» → https://popovichfit.ru/media | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448395403 @366,5,54,40 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448527219 @500,10,110,30 «ЛИЧНЫЙ КАБИНЕТ» → members/login | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center bg:rgb(35, 35, 35) r:6px
+- [image] #1720448178705 @36,18,78,14 → https://popovichfit.ru
+
+## rec772920507 T396 rect=0,50,640,720  
+   artboard: 0,50,640,720 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720448097344 @10,60,620,458 img:linear-gradient(86.4deg, rgb(243, 243, 245) 0%, rgb(208, 208, 208) 100%) size:cover pos:50% 50% r:16px
+- [button] #1720448296988 @224,71,35,30 «КУРСЫ» → https://popovichfit.ru | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448374036 @265,71,53,30 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448388035 @326,71,30,30 «СТАТЬИ» → https://popovichfit.ru/media | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448395403 @370,71,51,30 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448527219 @510,71,110,30 «ЛИЧНЫЙ КАБИНЕТ» → members/login | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center bg:rgb(35, 35, 35) r:6px
+- [image] #1720448178705 @28,79,78,14 → https://popovichfit.ru
+- [image] #1720533707678 @301,101,339,418
+- [button] #1720533434845 @168,140,178,20 «СТАРТ ПРОДАЖ В БОТЕ — 12 ИЮЛЯ» | 9px/13.95px 700 Manrope rgb(142, 142, 150) uppercase align:center r:30px
+- [button] #1720533247985 @30,141,134,20 «СТАРТ КУРСА: 22 ИЮЛЯ» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720534073989 @30,180,335,43 «Курс «Силовой»» | 36px/43px 700 Manrope rgb(32, 32, 32)
+- [text] #1720534230751 @30,234,345,68 «Курс «Силовой» - это микс из нескольких направлений в сфере фитнеса: pilates, sling in motion, функционального тренинга, классического силового тренинга, 3Д- тр» | 12px/17px 500 Manrope rgb(97, 97, 97)
+- [shape] #1720534395548 @30,323,360,176 img:linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1720534504013 @35,328,120,166 bg:rgb(241, 241, 241) img:image_1.jpg.webp size:cover pos:50% 50% r:10px
+- [shape] #1720534796613 @167,335,98,20 bg:rgb(255, 255, 255) r:30px
+- [image] #1720534918149 @247,337,16,16
+- [text] #1720534860860 @175,338,70,14 «TELEGRAM-БОТ» | 9px/14px 600 Manrope rgb(97, 97, 97) uppercase
+- [image] #1720533833310 @457,340,155,155
+- [text] #1720534990446 @167,361,180,18 «Скидка по предзаписи» | 14px/18px 600 Manrope rgb(32, 32, 32)
+- [shape] #1720533948574 @473,368,120,100 bg:rgb(84, 84, 84) op:0.1
+- [text] #1720533865008 @474,381,122,34 «60 мин» | 22px/34px 700 Manrope rgb(255, 255, 255) align:center
+- [text] #1720535026852 @167,383,198,45 «Оформите предзапись в телеграм-боте и получите сообщение о старте продаж с максимальной скидкой» | 11px/15px 500 Manrope rgb(97, 97, 97)
+- [text] #1720533909990 @476,416,118,33 «Средняя продолжительность тренировки» | 9px/11px 600 Manrope rgb(255, 255, 255) align:center
+- [button] #1720535141361 @167,436,210,50 «ПОЛУЧАТЬ УВЕДОМЛЕНИЯ» | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(110, 145, 184) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [shape] #1720535408538 @10,528,380,198 → https://popovichfit.ru/inv_pow img:Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) size:100% auto, 100% auto pos:0% 50%, 0% 50% r:14px
+- [shape] #1720535929687 @530,530,100,108 bg:rgb(255, 255, 255) r:12px
+- [shape] #1720536016059 @576,540,44,44 bg:rgb(129, 129, 129) img:Rectangle_3069_1.jpg.webp size:cover pos:50% 50% r:46px
+- [text] #1720535567239 @30,548,161,48 «Необходимо дополнительное оборудование» → https://popovichfit.ru/inv_pow | 14px/16px 700 Manrope rgb(32, 32, 32)
+- [text] #1720536044786 @546,591,74,39 «Тренировки подходят для дома и зала» | 11px/13px 500 Manrope rgb(97, 97, 97) align:right
+- [text] #1720535567249 @30,606,157,42 «Для участников курса собраны готовые наборы и ссылки на оборудование» → https://popovichfit.ru/inv_pow | 11px/14px 500 Manrope rgb(97, 97, 97)
+- [button] #1720535567254 @30,672,100,40 «Подробнее» → https://popovichfit.ru/inv_pow | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [image] #1720536154360 @400,698,28,28 → https://apps.apple.com/app/popovichfit/id6449698761
+- [image] #1720536148980 @431,698,28,28 → https://play.google.com/store/apps/details?id=com.mycompany.popovichfit
+
+## rec772920508 T396 rect=0,770,640,740  
+   artboard: 0,770,640,740 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720448097344 @10,780,620,495 img:linear-gradient(86.4deg, rgb(243, 243, 245) 0%, rgb(208, 208, 208) 100%) size:cover pos:50% 50% r:16px
+- [button] #1720448296988 @224,791,35,30 «КУРСЫ» → https://popovichfit.ru | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448374036 @265,791,53,30 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448388035 @326,791,30,30 «СТАТЬИ» → https://popovichfit.ru/media | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448395403 @370,791,51,30 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448527219 @510,791,110,30 «ЛИЧНЫЙ КАБИНЕТ» → https://popovichfit.ru/about | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center bg:rgb(35, 35, 35) r:6px
+- [image] #1720448178705 @28,799,78,14 → https://popovichfit.ru
+- [image] #1720533707678 @272,821,368,454
+- [button] #1720533434845 @168,856,178,20 «СТАРТ ПРОДАЖ В БОТЕ — 12 ИЮЛЯ» | 9px/13.95px 700 Manrope rgb(142, 142, 150) uppercase align:center r:30px
+- [button] #1720533247985 @30,857,134,20 «СТАРТ КУРСА: 22 ИЮЛЯ» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720534073989 @30,889,335,43 «Курс «Силовой»» | 36px/43px 700 Manrope rgb(32, 32, 32)
+- [text] #1720534230751 @30,943,349,68 «Курс «Силовой» - это микс из нескольких направлений в сфере фитнеса: pilates, sling in motion, функционального тренинга, классического силового тренинга, 3Д- тр» | 12px/17px 500 Manrope rgb(97, 97, 97)
+- [button] #1720687299645 @30,1028,186,50 «ВЫБРАТЬ ТАРИФ» → #tarif | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(110, 145, 184) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [image] #1720533833310 @457,1060,155,155
+- [shape] #1720533948574 @473,1088,120,100 bg:rgb(84, 84, 84) op:0.1
+- [shape] #1720534395548 @30,1100,360,155 img:linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) size:auto pos:0% 0% r:14px
+- [text] #1720533865008 @474,1101,122,34 «60 мин» | 22px/34px 700 Manrope rgb(255, 255, 255) align:center
+- [shape] #1720534796613 @43,1112,98,20 bg:rgb(255, 255, 255) r:30px
+- [shape] #1720534504013 @322,1112,56,56 bg:rgb(241, 241, 241) img:image_1.jpg.webp size:cover pos:50% 50% r:10px
+- [image] #1720534918149 @123,1114,16,16
+- [text] #1720534860860 @51,1115,70,14 «TELEGRAM-БОТ» | 9px/14px 600 Manrope rgb(97, 97, 97) uppercase
+- [text] #1720533909990 @476,1136,118,33 «Средняя продолжительность тренировки» | 9px/11px 600 Manrope rgb(255, 255, 255) align:center
+- [text] #1720534990446 @43,1138,180,18 «Скидка по предзаписи» | 14px/18px 600 Manrope rgb(32, 32, 32)
+- [text] #1720535026852 @43,1160,282,28 «Оформите предзапись в телеграм-боте и получите сообщение о старте продаж с максимальной скидкой» | 10px/14px 500 Manrope rgb(97, 97, 97)
+- [button] #1720535141361 @43,1196,185,43 «Получать уведомления» | 12px/18.6px 600 Manrope rgb(122, 156, 193) align:center r:8px
+- [shape] #1720535408538 @10,1288,380,198 → https://popovichfit.ru/inv_pow img:Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) size:100% auto, 100% auto pos:0% 50%, 0% 50% r:14px
+- [shape] #1720535929687 @530,1290,100,108 bg:rgb(255, 255, 255) r:12px
+- [shape] #1720536016059 @576,1300,44,44 bg:rgb(129, 129, 129) img:Rectangle_3069_1.jpg.webp size:cover pos:50% 50% r:46px
+- [text] #1720535567239 @30,1308,161,48 «Необходимо дополнительное оборудование» → https://popovichfit.ru/inv_pow | 14px/16px 700 Manrope rgb(32, 32, 32)
+- [text] #1720536044786 @546,1351,74,39 «Тренировки подходят для дома и зала» | 11px/13px 500 Manrope rgb(97, 97, 97) align:right
+- [text] #1720535567249 @30,1366,157,42 «Для участников курса собраны готовые наборы и ссылки на оборудование» → https://popovichfit.ru/inv_pow | 11px/14px 500 Manrope rgb(97, 97, 97)
+- [button] #1720535567254 @30,1432,100,40 «Подробнее» → https://popovichfit.ru/inv_pow | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [image] #1720536154360 @400,1458,28,28 → https://apps.apple.com/app/popovichfit/id6449698761
+- [image] #1720536148980 @431,1458,28,28 → https://play.google.com/store/apps/details?id=com.mycompany.popovichfit
+
+## rec772920509 T396 rect=0,1510,640,700  
+   artboard: 0,1510,640,700 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720448097344 @10,1520,620,456 img:linear-gradient(86.4deg, rgb(243, 243, 245) 0%, rgb(208, 208, 208) 100%) size:cover pos:50% 50% r:16px
+- [button] #1720448296988 @224,1531,35,30 «КУРСЫ» → https://popovichfit.ru | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448374036 @265,1531,53,30 «ДО/ПОСЛЕ» → https://popovichfit.ru/results | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448388035 @326,1531,30,30 «СТАТЬИ» → https://popovichfit.ru/media | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448395403 @370,1531,51,30 «О ТРЕНЕРЕ» → https://popovichfit.ru/about | 9px/13.95px 500 Manrope rgb(97, 97, 97) uppercase align:center r:30px
+- [button] #1720448527219 @510,1531,110,30 «ЛИЧНЫЙ КАБИНЕТ» → members/login | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center bg:rgb(35, 35, 35) r:6px
+- [image] #1720448178705 @28,1539,78,14 → https://popovichfit.ru
+- [image] #1720533707678 @250,1542,352,434
+- [button] #1720533434845 @168,1606,178,20 «СТАРТ ПРОДАЖ В БОТЕ — 12 ИЮЛЯ» | 9px/13.95px 700 Manrope rgb(142, 142, 150) uppercase align:center r:30px
+- [button] #1720533247985 @30,1607,134,20 «СТАРТ КУРСА: 22 ИЮЛЯ» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720534073989 @30,1644,335,43 «Курс «Силовой»» | 36px/43px 700 Manrope rgb(32, 32, 32)
+- [text] #1720534230751 @30,1698,260,102 «Курс «Силовой» - это микс из нескольких направлений в сфере фитнеса: pilates, sling in motion, функционального тренинга, классического силового тренинга, 3Д- тр» | 12px/17px 500 Manrope rgb(97, 97, 97)
+- [image] #1720533833310 @447,1790,155,155
+- [button] #1720687299645 @30,1815,186,50 «ВЫБРАТЬ ТАРИФ» → #tarif | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(110, 145, 184) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [shape] #1720533948574 @463,1818,120,100 bg:rgb(84, 84, 84) op:0.1
+- [text] #1720533865008 @464,1831,122,34 «60 мин» | 22px/34px 700 Manrope rgb(255, 255, 255) align:center
+- [text] #1720533909990 @466,1866,118,33 «Средняя продолжительность тренировки» | 9px/11px 600 Manrope rgb(255, 255, 255) align:center
+- [shape] #1720535408538 @10,1989,380,198 → https://popovichfit.ru/inv_pow img:Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) size:100% auto, 100% auto pos:0% 50%, 0% 50% r:14px
+- [shape] #1720535929687 @530,1991,100,108 bg:rgb(255, 255, 255) r:12px
+- [shape] #1720536016059 @576,2001,44,44 bg:rgb(129, 129, 129) img:Rectangle_3069_1.jpg.webp size:cover pos:50% 50% r:46px
+- [text] #1720535567239 @30,2009,161,48 «Необходимо дополнительное оборудование» → https://popovichfit.ru/inv_pow | 14px/16px 700 Manrope rgb(32, 32, 32)
+- [text] #1720536044786 @546,2052,74,39 «Тренировки подходят для дома и зала» | 11px/13px 500 Manrope rgb(97, 97, 97) align:right
+- [text] #1720535567249 @30,2067,157,42 «Для участников курса собраны готовые наборы и ссылки на оборудование» → https://popovichfit.ru/inv_pow | 11px/14px 500 Manrope rgb(97, 97, 97)
+- [button] #1720535567254 @30,2133,100,40 «Подробнее» → https://popovichfit.ru/inv_pow | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [image] #1720536154360 @400,2159,28,28 → https://apps.apple.com/app/popovichfit/id6449698761
+- [image] #1720536148980 @431,2159,28,28 → https://play.google.com/store/apps/details?id=com.mycompany.popovichfit
+
+## rec772920511 T396 rect=0,2210,640,1345  
+   artboard: 0,2270,640,1240 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720596465477 @303,2188,60,60 bg:rgb(108, 108, 108) img:Rectangle_3077_1.jpg.webp size:cover pos:50% 50% r:100px
+- [text] #1720534073989 @10,2280,194,62 «Из чего состоит курс» | 28px/31px 700 Manrope rgb(32, 32, 32)
+- [button] #1720533247985 @10,2363,68,20 «4 НЕДЕЛИ» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720533434845 @82,2363,213,20 «+ 1 НЕДЕЛЯ ДОПОЛНИТЕЛЬНОГО ДОСТУПА» | 9px/13.95px 700 Manrope rgb(142, 142, 150) uppercase align:center r:30px
+- [shape] #1720534395548 @10,2416,340,140 img:linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%) size:auto pos:0% 0% r:14px
+- [shape] #1720609530856 @370,2416,260,302 bg:rgb(235, 235, 235) img:1584_1.jpg size:116.192% auto pos:25.625% 85.044% r:14px
+- [video] #1720616062703 @370,2416,260,304 r:14px
+- [text] #1720596490697 @30,2436,212,18 «5 тренировок в неделю» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720609530861 @390,2436,205,36 «Наталья Попович о курсе «Коррекция»» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720597374178 @30,2462,285,75 «3 силовых тренировки с разминкой-коррекцией в неделю с акцентом на ягодицы, плечевой пояс, мышцы пресса и 2 коррекционных тренировки в неделю для плоского живот» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [shape] #1720609603259 @470,2537,60,60 bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1720609603246 @470,2537,60,60 r:3000px
+- [image] #1720609603249 @490,2557,20,20
+- [shape] #1720612438124 @10,2576,340,145 img:linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%) size:auto pos:0% 0% r:14px
+- [text] #1720612438115 @28,2594,233,54 «Каждый поток (5 недель) курс "Силовой" обновляется на 30%» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [shape] #1720612438121 @274,2596,60,60 bg:rgb(108, 108, 108) img:Rectangle_3076_1.jpg.webp size:cover pos:50% 50% r:100px
+- [text] #1720612438107 @28,2656,196,45 «То есть, приобретая абонемент на 3/6 потоков, каждый поток у вас – обновленный курс.» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1720609603261 @572,2687,48,21 «10 мин» | 9px/13.95px 500 Manrope rgb(255, 255, 255) align:center img:linear-gradient(136.8deg, rgb(37, 37, 37) 0%, rgb(81, 81, 81) 100%) size:cover pos:0% 0% r:40px
+- [shape] #1720591572494 @10,2743,619,540 img:1556_1_1.jpg.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) size:cover, cover pos:50% 50%, 50% 50% r:14px
+- [text] #1720597612563 @30,2763,242,54 «Папка «Бонусы» — более 100 дополнительных тренировок и материалов:» | 16px/18px 700 Manrope rgb(255, 255, 255)
+- [shape] #1720597749174 @30,2843,160,120 bg:rgb(255, 255, 255) r:10px
+- [shape] #1720610433506 @440,2843,160,120 bg:rgb(255, 255, 255) r:10px
+- [text] #1720597797370 @39,2852,100,28 «Тренировки по запросу» | 11px/14px 500 Manrope rgb(32, 32, 32)
+- [text] #1720610433500 @449,2852,139,42 «Блок «Нутрициология и образ жизни» с лекциями и примерами меню» | 11px/14px 500 Manrope rgb(32, 32, 32)
+- [image] #1720597831241 @159,2853,22,22
+- [shape] #1720597934503 @159,2879,132,70 img:linear-gradient(132.84deg, rgb(184, 184, 184) 0%, rgb(228, 228, 228) 100%) size:auto pos:0% 0% r:10px op:0.5
+- [shape] #1720597863356 @35,2888,150,72 bg:rgb(141, 141, 141) img:Rectangle_3074.jpg.webp size:cover pos:50% 50% r:8px
+- [text] #1720598021234 @161,2888,122,52 ««боль в шее» «от отеков» «от вздутия живота» «после дороги»» | 10px/13px 500 Manrope rgb(255, 255, 255)
+- [shape] #1720610433493 @445,2900,150,57 bg:rgb(141, 141, 141) img:1717_4_2.jpg size:100% auto pos:0% 68.024% r:8px
+- [shape] #1720610395563 @30,2983,160,120 bg:rgb(255, 255, 255) r:10px
+- [shape] #1720610420105 @235,2983,160,120 bg:rgb(255, 255, 255) r:10px
+- [text] #1720610395559 @39,2992,117,28 «Зарядки и разминки от 15 минут» | 11px/14px 500 Manrope rgb(32, 32, 32)
+- [text] #1720610420102 @244,2992,100,28 «Лекции от спикеров:» | 11px/14px 500 Manrope rgb(32, 32, 32)
+- [image] #1720610420097 @364,2993,22,22
+- [shape] #1720610420089 @364,3019,124,70 img:linear-gradient(132.84deg, rgb(184, 184, 184) 0%, rgb(228, 228, 228) 100%) size:auto pos:0% 0% r:10px op:0.5
+- [shape] #1720610395549 @35,3028,150,72 bg:rgb(141, 141, 141) img:1568_1_1.jpg size:100% auto pos:0% 83.559% r:8px
+- [shape] #1720610420094 @240,3028,150,72 bg:rgb(141, 141, 141) img:Rectangle_3058_1.jpg.webp size:cover pos:50% 50% r:8px
+- [text] #1720610420079 @366,3028,122,52 «Натальи Попович Нутрициолога Психотерапевта Кинезиолога» | 10px/13px 500 Manrope rgb(255, 255, 255)
+- [shape] #1720610449514 @235,3123,160,120 bg:rgb(255, 255, 255) r:10px
+- [shape] #1720610454361 @440,3123,160,120 bg:rgb(255, 255, 255) r:10px
+- [text] #1720610449506 @244,3132,79,28 «МФР для тела и лица» | 11px/14px 500 Manrope rgb(32, 32, 32)
+- [text] #1720610454358 @449,3132,100,28 «Тейпирование и отработка шрамов» | 11px/14px 500 Manrope rgb(32, 32, 32)
+- [shape] #1720610449501 @240,3168,150,72 bg:rgb(141, 141, 141) img:0005_1.jpg size:100% auto pos:0% 76.327% r:8px
+- [shape] #1720610454352 @445,3168,150,72 bg:rgb(141, 141, 141) img:1717_3_1.jpg.webp size:cover pos:50% 50% r:8px
+- [shape] #1720597126514 @10,3303,619,170 bg:rgb(235, 235, 235) r:14px
+- [shape] #1720597223737 @355,3308,270,160 bg:rgb(235, 235, 235) img:1428_1.jpg size:111.847% auto pos:6.039% 9.2% r:14px
+- [text] #1720597178772 @30,3325,246,18 «Чат обратной связи» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720597178764 @30,3352,207,45 «Для проверки техники выполнения упражнений и ответов на вопросы от тренера курса Светланы» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [button] #1720597178760 @30,3412,180,40 «Узнать больше о тренере» → #about | 11px/17.05px 600 Manrope rgb(255, 255, 255) align:center img:linear-gradient(17.28deg, rgb(50, 50, 50) 0%, rgb(72, 72, 72) 100%) size:cover pos:0% 0% r:6px
+- [button] #1720597687419 @364,3438,104,20 «ТРЕНЕР СВЕТЛАНА» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%) size:cover pos:0% 0% r:30px
+
+## rec772920513 T396 rect=0,3555,640,440  
+   artboard: 0,3555,640,410 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,3565,194,31 «Тарифы» | 28px/31px 700 Manrope rgb(32, 32, 32)
+- [button] #1720533247985 @10,3613,160,20 «1,3 ИЛИ 6 ПОТОКОВ НА ВЫБОР» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(194, 194, 201) 0%, rgb(173, 173, 179) 100%) size:cover pos:0% 0% r:30px
+- [shape] #1720612438124 @10,3664,210,276 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720683786059 @230,3664,400,276 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720597223737 @448,3670,177,265 bg:rgb(235, 235, 235) img:1467_1_1.jpg size:111.847% auto pos:12.932% 90.879% r:14px
+- [button] #1720597687419 @458,3680,104,20 «ТРЕНЕР СВЕТЛАНА» | 9px/13.95px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720684145408 @30,3684,177,20 ««Силовой»» | 18px/20px 700 Manrope rgb(32, 32, 32)
+- [text] #1720684145395 @250,3684,173,60 ««Силовой» с обратной связью от тренера» | 18px/20px 700 Manrope rgb(32, 32, 32)
+- [text] #1720684145406 @30,3712,171,15 «1,3 или 6 потоков на выбор» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [text] #1720684145393 @250,3752,173,45 «1,3 или 6 потоков на выбор Обратная связь в общем чате» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [text] #1720684145404 @30,3822,130,18 «от 5499» | 16px/18px 600 Manrope rgb(32, 32, 32)
+- [text] #1720684145388 @248,3822,113,18 «от 7499» | 16px/18px 600 Manrope rgb(32, 32, 32)
+- [text] #1720684145403 @30,3845,169,15 «По предзаписи: от 4499 р.» | 12px/15px 500 Manrope rgb(96, 133, 173)
+- [text] #1720684145382 @248,3845,169,15 «По предзаписи: от 6499 р.» | 12px/15px 500 Manrope rgb(96, 133, 173)
+- [shape] #1720597934503 @515,3862,100,63 img:linear-gradient(132.84deg, rgb(224, 224, 224) 0%, rgb(150, 150, 150) 100%) size:auto pos:0% 0% r:10px op:0.5
+- [button] #1720684145401 @30,3870,170,51 «ПРЕДЗАПИСЬ» | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720684145380 @248,3870,170,51 «ПРЕДЗАПИСЬ» | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [text] #1720598021234 @525,3873,83,42 «Обратная связь в общем чате» | 11px/14px 600 Manrope rgb(255, 255, 255)
+
+## rec772920514 T396 rect=0,3995,640,140  
+   artboard: 0,3995,640,140 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,4005,389,62 «Как начать тренироваться с POPOVICHFIT:» | 28px/31px 700 Manrope rgb(32, 32, 32)
+- [image] #1720689154271 @10,4079,33,33 op:0.7
+- [image] #1720689154278 @47,4079,33,33 op:0.7
+
+## rec772920516 T396 rect=0,4135,640,470  
+   artboard: 0,4135,640,410 bg=rgb(229, 229, 231) img=none pos=relative
+- [shape] #1720688572128 @1409,4134,269,365 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572156 @290,4135,269,365 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572148 @570,4135,270,365 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572141 @850,4135,269,365 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572135 @1129,4135,269,365 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720688572119 @1706,4136,60,353 bg:rgb(229, 229, 231) r:30px
+- [shape] #1720688572160 @10,4138,269,365 bg:rgb(251, 251, 251) r:14px
+- [button] #1720688572126 @1429,4151,30,30 «06» | 12px/13.2px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572155 @310,4152,30,30 «02» | 12px/13.2px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572147 @590,4152,30,30 «03» | 12px/13.2px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572139 @870,4152,30,30 «04» | 12px/13.2px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572134 @1150,4152,30,30 «05» | 12px/13.2px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720688572159 @30,4154,30,30 «01» | 12px/13.2px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720688572122 @1429,4196,224,153 «В случае, если вы не сможете заниматься по каким-либо обстоятельствам или вам не подойдет продукт/формат/подача тренера, то в течение 5 дней после даты старта к» | 14px/17px 600 Manrope rgb(32, 32, 32)
+- [text] #1720688572153 @310,4197,201,51 «Если вы оформляете предзапись, бот уведомит вас о старте продаж курса» | 14px/17px 600 Manrope rgb(32, 32, 32)
+- [text] #1720688572145 @590,4197,233,85 «После покупки (доступна покупка абонементов на 3 и 6 мес. в кредит), вам на почту придет письмо с логином и паролем в личный кабинет» | 14px/17px 600 Manrope rgb(32, 32, 32)
+- [text] #1720688572138 @870,4197,219,51 «Все материалы в личном кабинете откроются за 1 день до даты старта курса» | 14px/17px 600 Manrope rgb(32, 32, 32)
+- [text] #1720688572133 @1150,4197,203,34 «В день старта курса вы начинаете тренироваться» | 14px/17px 600 Manrope rgb(32, 32, 32)
+- [text] #1720688572158 @30,4199,173,34 «Основной курс стартует в определенную дату» | 14px/17px 600 Manrope rgb(32, 32, 32)
+- [text] #1720688572131 @1150,4242,220,90 «по желанию - отправляете технику выполнения упражнений в чат с куратором в случае возникновения проблем технического характера на ваши вопросы ответит техподдер» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [text] #1720688572152 @310,4257,154,30 «А также поможет выбрать подходящий тариф» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [text] #1720688572117 @871,4261,226,75 «Доступ к основной программе курса открывается за день до старта потока в 20:00 по Мск, закрывается в 20:00 по Мск в день окончания срока доступа, до этого вам д» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [text] #1720688572143 @590,4292,236,60 «Также вы получаете письмо со ссылками на необходимое оборудование, которое по желанию нужно приобрести. Или воспользоваться подручными заменами.» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [shape] #1720688572113 @589,4365,236,118 bg:rgb(255, 255, 255) img:Group_1321318723.jpg.webp size:cover pos:50% 50% r:8px
+
+## rec772920540 T396 rect=0,4605,640,535  
+   artboard: 0,4620,640,520 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,4630,337,31 «Над курсом работают:» | 28px/31px 700 Manrope rgb(32, 32, 32)
+- [shape] #1720617699673 @10,4684,305,440 bg:rgb(235, 235, 235) r:14px
+- [shape] #1720619679575 @325,4684,305,440 bg:rgb(235, 235, 235) r:14px
+- [shape] #1720612438121 @15,4689,295,140 bg:rgb(108, 108, 108) img:0182_1.jpg size:100% auto pos:0% 29.38% r:8px
+- [shape] #1720619679568 @330,4689,295,140 bg:rgb(108, 108, 108) img:1428_1.jpg size:100.58% auto pos:0% 10.113% r:8px
+- [button] #1720695087453 @25,4843,125,20 «ТРЕНЕР И ОСНОВАТЕЛЬ» | 8px/12.4px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%) size:cover pos:0% 0% r:30px
+- [button] #1720619831775 @340,4843,62,20 «ТРЕНЕР» | 8px/12.4px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(89.64deg, rgb(179, 179, 187) 0%, rgb(145, 145, 154) 100%) size:cover pos:0% 0% r:30px
+- [text] #1720596490697 @25,4873,177,20 «Наталья Попович» | 18px/20px 700 Manrope rgb(32, 32, 32)
+- [text] #1720619679571 @340,4873,177,20 «Светлана» | 18px/20px 700 Manrope rgb(32, 32, 32)
+- [text] #1720617219151 @25,4899,276,90 «Создает всю структуру курса, снимает тренировки Регулярно повышает квалификацию и следит за квалификацией сотрудников Проводит мастер-классы для участников курс» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [text] #1720619679565 @340,4899,239,60 «Проверяет технику выполнения упражнений, даёт комментарии и отвечает на вопросы в чате обратной связи на тарифах «С тренером»» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [button] #1720617699664 @25,5003,220,51 «ПОДРОБНЕЕ О НАТАЛЬЕ» → https://popovichfit.ru/about | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(110, 145, 184) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720619679552 @340,5003,220,51 «ОТЗЫВЫ О ТРЕНЕРЕ» → #popup:mygallery_svt_otz | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(110, 145, 184) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720695664889 @25,5059,220,51 «СЕРТИФИКАТЫ И ОБУЧЕНИЯ» → https://popovichfit.ru/sertif | 12px/18.6px 700 Manrope rgb(112, 147, 185) uppercase align:center r:8px
+- [button] #1720695664884 @340,5059,220,51 «СЕРТИФИКАТЫ И ОБУЧЕНИЯ» → #popup:mygallery_svt | 12px/18.6px 700 Manrope rgb(112, 147, 185) uppercase align:center r:8px
+
+## rec772920543 T396 rect=0,5140,640,440  
+   artboard: 0,5200,640,380 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,5210,205,31 «Оборудование» | 28px/31px 700 Manrope rgb(32, 32, 32) align:center
+- [shape] #1720683786059 @10,5269,400,274 → https://popovichfit.ru/inv_pow bg:rgb(251, 251, 251) r:14px
+- [shape] #1720612438124 @420,5269,210,274 bg:rgb(251, 251, 251) r:14px
+- [shape] #1720597223737 @15,5274,390,194 → https://popovichfit.ru/inv_pow bg:rgb(235, 235, 235) img:image_32.jpg size:111.847% auto pos:12.932% 90.879% r:14px
+- [shape] #1720698569995 @425,5274,200,98 bg:rgb(235, 235, 235) img:94986275.jpg size:100% auto pos:0% 59.179% r:14px
+- [shape] #1720698441948 @180,5341,60,60 → https://popovichfit.ru/inv_pow bg:rgb(255, 255, 255) r:3000px op:0.1
+- [shape] #1720698441938 @180,5341,60,60 → https://popovichfit.ru/inv_pow r:3000px
+- [image] #1720698441942 @200,5361,20,20 → https://popovichfit.ru/inv_pow
+- [text] #1720684145408 @435,5379,177,36 «Сет: Popovich Силовой» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720684145406 @435,5422,179,45 «Для участников курса собраны готовые наборы оборудования от магазина Structura.shop» | 12px/15px 400 Manrope rgb(97, 97, 97)
+- [button] #1720684145380 @227,5479,170,51 «ОТКРЫТЬ» → https://popovichfit.ru/inv_pow | 12px/18.6px 700 Manrope rgb(255, 255, 255) uppercase align:center img:linear-gradient(0deg, rgb(103, 146, 193) 0%, rgb(159, 188, 222) 100%) size:cover pos:0% 0% r:8px
+- [button] #1720684145401 @435,5479,181,51 «КУПИТЬ ГОТОВЫЙ НАБОР» → http://structura.shop/gifts/tproduct/393900298-364561949421-set-popovich-silovoi | 12px/18.6px 700 Manrope rgb(112, 153, 198) uppercase align:center r:8px
+- [text] #1720684145395 @25,5487,173,36 «Ссылки и видеообзор на инвентарь» → https://popovichfit.ru/inv_pow | 16px/18px 700 Manrope rgb(32, 32, 32)
+
+## rec772920547 T396 rect=0,5580,640,735  
+   artboard: 0,5640,640,630 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,5650,430,62 «Комфортный и качественный формат тренировок» | 28px/31px 700 Manrope rgb(32, 32, 32)
+- [shape] #1720534395548 @10,5739,200,190 bg:rgb(244, 244, 244) r:14px
+- [shape] #1720701413927 @220,5739,200,190 bg:rgb(244, 244, 244) r:14px
+- [shape] #1720701569357 @430,5739,200,190 bg:rgb(244, 244, 244) r:14px
+- [shape] #1720596465477 @24,5753,50,50 bg:rgb(108, 108, 108) img:1743_1.jpg.webp size:cover pos:50% 50% r:100px
+- [shape] #1720701413923 @234,5753,50,50 bg:rgb(108, 108, 108) img:1384.jpg.webp size:cover pos:50% 50% r:100px
+- [shape] #1720701569351 @444,5753,50,50 bg:rgb(108, 108, 108) img:Rectangle_3076_1.jpg.webp size:cover pos:50% 50% r:100px
+- [text] #1720701569343 @444,5809,171,54 «Тренируйся в любом месте в любой точке мира:» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720596490697 @24,5810,122,36 «Тренируйся в любое время» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720701413917 @234,5810,171,36 «Тренируйся с любого устройства:» | 16px/18px 700 Manrope rgb(32, 32, 32)
+- [text] #1720597374178 @24,5852,171,45 «Тренировки уже записаны, информация о необходимом оборудовании – под видео» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [text] #1720701413912 @234,5852,171,60 «Телевизора, смартфона или ноутбука – все видео в качестве 4К и с профессиональным звуком» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [text] #1720701569335 @444,5870,171,45 «в тренажерном зале дома на улице» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [shape] #1720612438124 @10,5939,620,279 img:linear-gradient(129.24deg, rgb(252, 249, 250) 0%, rgb(193, 191, 191) 100%) size:auto pos:0% 0% r:14px
+- [text] #1720612438115 @28,5957,255,80 «Мобильное приложение POPOVICHFIT уже доступно для скачивания в App Store и Google Play» | 18px/20px 700 Manrope rgb(32, 32, 32)
+- [shape] #1720700339364 @190,5961,512,257 img:iPhone_13_Pro_1.png size:99.999% auto pos:0% 6.302%
+- [text] #1720612438107 @28,6046,140,30 «*приложение работает в тестовом режиме» | 12px/15px 500 Manrope rgb(97, 97, 97)
+- [image] #1720700339339 @32,6090,131,39 → https://apps.apple.com/app/popovichfit/id6449698761
+- [image] #1720700339344 @167,6091,131,39 → https://play.google.com/store/apps/details?id=com.mycompany.popovichfit
+
+## rec772920552 T396 rect=0,6315,640,120  
+   artboard: 0,6345,640,60 bg=rgb(229, 229, 231) img=none pos=relative
+- [text] #1720534073989 @10,6355,389,31 «Ответы на вопросы» | 28px/31px 700 Manrope rgb(32, 32, 32)
+
+## rec772920553 T585 rect=0,6435,640,727  
+   text: Когда открывается доступ к новому потоку курса? Где искать тренировки? Когда я могу приступить к курсу и сколько он продлится? В какое время проходят тренировки? Могу ли я задать вопрос, выслать техни
+
+## rec1120448561 T396 rect=0,7162,640,652  
+   artboard: 0,248,640,652 bg=rgb(29, 29, 29) img=none pos=fixed
+- [image] #1750073913259 @427,296,6,6
+- [button] #1749597221603 @10,299,49,19 «Главная» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [group] #G174959725855129400 @10,299,85,189 img:none size:undefined pos:undefined flex row gap:15px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825682 @331,299,30,30 → tg://resolve?domain=natalyapopovich87
+- [group] #G175007383007674350 @331,299,136,30 img:none size:undefined pos:undefined flex row gap:normal 5px align:flex-start justify:flex-start pad:0px bg:rgba(0, 0, 0, 0) r:0px
+- [image] #1750073825721 @366,299,30,30 → https://www.youtube.com/@popovichfit
+- [image] #1750073825744 @401,299,30,30 → https://instagram.com/natalyapopovich?igshid=MmJiY2I4NDBkZg==
+- [image] #1750073825766 @436,299,30,30 → mailto:info@popovichfit.ru
+- [button] #1749597623457 @480,299,150,39 «Личный кабинет» → https://lk.popovichfit.ru/ | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center img:linear-gradient(288deg, rgb(62, 120, 184) 0%, rgb(98, 151, 210) 100%) size:cover pos:0% 0% r:8px
+- [button] #1749597242361 @10,333,39,19 «Курсы» → https://popovichfit.ru/ | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [text] #1750073992932 @334,349,128,24 «*Meta признана экстремистской организацией на территории РФ» | 8px/12px 400 Involve rgb(255, 255, 255) align:right op:0.3
+- [button] #1749597681380 @480,349,150,39 «Предзапись» → tg://resolve?domain=popovichfitcourse_bot | 12px/18.6px 700 Involve rgb(255, 255, 255) align:center r:8px
+- [button] #1749597275677 @10,367,66,19 «Результаты» → https://popovichfit.ru/results | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276052 @10,401,54,19 «Обо мне» → https://popovichfit.ru/about | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597276374 @10,435,38,19 «Media» → https://popovichfit.ru/media | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [button] #1749597309677 @10,469,79,19 «Сообщество» → https://popovichfit.ru/community | 12px/18.6px 600 Involve rgb(255, 255, 255) align:center r:30px
+- [image] #1749597598043 @14,528,612,74
+- [text] #1749597352468 @10,642,199,32 «ИП Попович Наталья Викторовна ИНН: 780528255230» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597395336 @359,642,208,32 «Политика в отношении обработки персональных данных» → https://popovichfit.ru/privacy | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597476207 @359,694,242,32 «Партнерское соглашение (Договор-оферта) о реферальной программе» → https://popovichfit.ru/part_oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1749597447049 @10,702,102,16 «Договор-оферта» → https://popovichfit.ru/oferta | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650003498 @10,742,199,16 «e-mail: info@popovichfit.ru» | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #1750650026561 @359,742,208,32 «Согласие на обработку персональных данных» → https://popovichfit.ru/data-consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [text] #175916580376279630 @359,782,208,32 «Согласие на рассылку информационных сообщений» → https://popovichfit.ru/consent | 12px/16px 600 Involve rgb(255, 255, 255) op:0.15
+- [shape] #1749597712349 @10,826,620,1 bg:rgb(255, 255, 255) op:0.27
+- [image] #1749597826758 @265,861,110,11 → https://shumann.ru/ op:0.6

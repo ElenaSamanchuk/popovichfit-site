@@ -3,7 +3,7 @@
    аккордеон T585, табы T395, галерея T663, попапы. Значения — из tilda-grid-3.0 / tilda-blocks (замерено по экспорту),
    переписаны своими правилами; блочные переопределения (#recNNN …) приходят из CSS экспорта вместе с блоком. */
 .tb { font-family: var(--font-involve); }
-.tb img.t-img { max-width: 100%; height: auto; }
+:where(.tb img.t-img) { max-width: 100%; height: auto; }
 /* попапы из экспорта */
 .tb--popup { background: #fff; border-radius: 10px; }
 .tb--popup .t-popup__close, .tb--popup .t-popup__block-close { display: none; }
@@ -16,4 +16,7 @@
 .tb--popup .t-input { height: 56px; width: 100%; border: 1px solid #dbdbdb; border-radius: 6px; padding: 0 20px; font-size: 16px; }
 .tb--popup .t-submit { height: 56px; border-radius: 6px; padding: 0 30px; font-weight: 700; text-transform: uppercase; color: #fff; background: #4f86c4; border: none; cursor: pointer; }
 .tb--popup .t-form__errorbox-middle, .tb--popup .t-form__successbox { display: none; }
+.tb--popup .t-form__errorbox-wrapper { margin-top: 12px; color: #f83e60; font-size: 14px; }
+.tb--popup .t-form__errorbox-text { list-style: none; padding: 0; margin: 0; }
+.tb--popup .js-successbox { padding: 10px 0; font-size: 16px; font-weight: 600; }
 .tb--popup .t-checkbox__control { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; cursor: pointer; }
