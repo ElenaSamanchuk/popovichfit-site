@@ -118,7 +118,13 @@ def effective(geo):
     for scr in SCREENS:
         g = {k: v for k, v in geo.get(scr, {}).items() if v not in (None, {})} if scr == '1600' else geo.get(scr, {})
         if scr == '1600' and not g: continue
+        own_left = 'left' in g
         cur = merge(cur, g)
+        # left по сетке, унаследованный с большего экрана: x остаётся, а половина сетки — текущего артборда
+        # (у Тильды left-res-N отсутствует → x считается от сетки текущего экрана, а не 960/1200)
+        l = cur.get('left')
+        if not own_left and isinstance(l, dict) and l.get('a') == 'grid' and 'half' in l and scr in ART_W:
+            cur = {**cur, 'left': {**l, 'half': ART_W[scr] / 2}}
         eff[scr] = cur
     return eff
 

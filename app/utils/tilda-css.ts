@@ -315,7 +315,8 @@ export function zeroBlockCss(b: TildaBlock): string {
     const art = b.artboards?.[r0.scr]
     if (!art) continue
     const r = r0.scr === '1200' && b.artboards?.['1600'] ? { ...r0, media: '(min-width: 1200px) and (max-width: 1599.98px)' } : r0
-    const mobile = r.scr === '320' || (r.scr === '480' && art.upscale === 'window')
+    // фиксированные артборды (шапка, cookie-плашка) Тильда на телефонах не масштабирует (элементы без zoom) — они в px
+    const mobile = (r.scr === '320' || (r.scr === '480' && art.upscale === 'window')) && !b.artboard?.fixed
     const u = mobile ? `${id}{--u:calc(100vw / ${r.artW});}` : ''
     let sec = `${id} .tz__art{`
     // артборд position:absolute (Тильда): запись схлопывается в 0, содержимое наезжает на следующий блок
