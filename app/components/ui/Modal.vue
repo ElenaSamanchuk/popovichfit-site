@@ -10,7 +10,9 @@ const props = withDefaults(defineProps<{
   overlay?: 'dark' | 'light' | 'dim'
   /** без белой подложки (например, для видео) */
   bare?: boolean
-}>(), { width: 960, overlay: 'dark', bare: false })
+  /** стиль подложки из CSS блока (zero-попапы: свой цвет и backdrop-filter) — перекрывает overlay */
+  overlayStyle?: Record<string, string>
+}>(), { width: 960, overlay: 'dark', bare: false, overlayStyle: undefined })
 
 const modal = useModal()
 const isOpen = computed(() => modal.active.value === props.name)
@@ -33,7 +35,8 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
       <div
         v-if="isOpen"
         class="fixed inset-0 z-[100000] overflow-y-auto"
-        :class="overlay === 'dark' ? 'bg-black/80' : overlay === 'dim' ? 'bg-black/30' : 'bg-white/90'"
+        :class="overlayStyle ? '' : overlay === 'dark' ? 'bg-black/80' : overlay === 'dim' ? 'bg-black/30' : 'bg-white/90'"
+        :style="overlayStyle"
         role="dialog"
         aria-modal="true"
         @click.self="modal.close()"

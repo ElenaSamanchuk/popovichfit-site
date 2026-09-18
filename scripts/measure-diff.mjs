@@ -23,6 +23,18 @@ const slug = url === '/' ? 'index' : url.replace(/^\//, '').replace(/[\/.]/g, '_
 const specFile = path.join(ROOT, 'docs/specs/measured', `${slug}-${w}.json`)
 if (!fs.existsSync(specFile)) { console.error('нет замера: ' + specFile + ' (node scripts/measure-live.mjs ' + url + ' ' + w + ')'); process.exit(1) }
 const live = JSON.parse(fs.readFileSync(specFile, 'utf8'))
+// элементы с sbs-анимацией по наведению, у которых состояние покоя ≠ шагу 0 (см. sbsRestStep в tilda-css.ts)
+const sbsRest = new Set()
+try {
+  const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/meta.json'), 'utf8'))
+  const file = Object.keys(meta).find((f) => meta[f].url === url || (meta[f].slugs || []).some((sl) => '/' + sl === url))
+  const page = JSON.parse(fs.readFileSync(path.join(ROOT, 'app/data/tilda', file.replace('.html', '.json')), 'utf8'))
+  for (const b of page.blocks) for (const el of b.elems || []) {
+    const st = el.sbs?.steps; if (!st?.length || el.sbs.event !== 'hover') continue
+    let i = 0; while (i + 1 < st.length && !st[i + 1].ti) i++
+    if (i > 0 && st[i].op !== st[0].op) sbsRest.add(b.id + ':' + el.id)
+  }
+} catch { /* нет данных страницы — сверяем как есть */ }
 
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: w, height: 900 } })
@@ -53,7 +65,13 @@ const local = await page.evaluate((recs) => {
         const cs = getComputedStyle(id.startsWith('G') ? el.querySelector(':scope > .tz__mol') || el : el)
         const atom = el.querySelector('.tz__atom, .tz__btn-text') || el
         const c = getComputedStyle(atom)
-        out.elems[r.id + ':' + id] = { rect: rect(el), opacity: cs.opacity, visible: cs.display !== 'none' && cs.visibility !== 'hidden',
+        // элемент с backdrop-filter: прозрачность атома у нас ушла в альфу фона (см. opacityCss) — для сверки восстанавливаем её
+        const bgA = /rgba\([^)]*,\s*([\d.]+)\)/.exec(cs.backgroundColor)
+        const bf = !!cs.backdropFilter && cs.backdropFilter !== 'none'
+        const opacity = bf && bgA && +bgA[1] > 0 && +bgA[1] < 1 ? String(Math.round(+bgA[1] * +cs.opacity * 100) / 100) : cs.opacity
+        // blur без фона: прозрачность атома у Тильды ни на что не влияет (пустой атом), у нас не ставится — не сверяем
+        const bfNoBg = bf && (!bgA || +bgA[1] === 0)
+        out.elems[r.id + ':' + id] = { rect: rect(el), opacity, bfNoBg, visible: cs.display !== 'none' && cs.visibility !== 'hidden',
           text: (el.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 160),
           font: `${c.fontSize}/${c.lineHeight} ${c.fontWeight} ${c.fontFamily.split(',')[0].replace(/"/g, '')}`,
           color: c.color, bg: cs.backgroundColor, radius: cs.borderRadius, align: c.textAlign, transform: c.textTransform,
@@ -102,14 +120,20 @@ for (const rec of live.recs) {
     if (!l) { rows.push(`  ✗ #${e.id} [${e.type}] нет на локальной  live@${e.rect.join(',')} ${(e.text || '').slice(0, 40)}`); bad++; continue }
     if (!l.visible) { rows.push(`  ✗ #${e.id} [${e.type}] скрыт локально  live@${e.rect.join(',')} ${(e.text || '').slice(0, 40)}`); bad++; continue }
     const d = e.rect.map((v, i) => l.rect[i] - v); d[1] -= globalDy + blockDy
-    if (e.opacity != null && l.opacity !== e.opacity && Math.abs(+l.opacity - +e.opacity) > 0.05) { rows.push(`  ✗ #${e.id} [${e.type}] opacity live ${e.opacity} / local ${l.opacity}  ${(e.text || '').slice(0, 40)}`); bad++; continue }
+    // sbs по наведению с мгновенными шагами: на живом сайте прозрачность покоя стоит на обёртке .tn-atom__sbs-anim-wrapper,
+    // замер её не видит (берёт атом) — сверять нечего
+    if (e.opacity != null && !sbsRest.has(rec.id + ':' + e.id) && !l.bfNoBg && l.opacity !== e.opacity && Math.abs(+l.opacity - +e.opacity) > 0.05) { rows.push(`  ✗ #${e.id} [${e.type}] opacity live ${e.opacity} / local ${l.opacity}  ${(e.text || '').slice(0, 40)}`); bad++; continue }
     const notes = []
     if (d.some((v) => Math.abs(v) > tol)) notes.push(`dx=${d[0]} dy=${d[1]} dw=${d[2]} dh=${d[3]}`)
     // стили: шрифт (размер ±0.5, интерлиньяж ±1, вес, семейство), цвет, выравнивание, регистр; фон, скругление, картинка фона
     // тексты дословно (нормализуем пробелы/nbsp; live обрезан до 160 символов)
     // nbsp после предлогов и убранные точки в конце абзацев — осознанная типографика заказчика, не считаем расхождением
-    const norm = (t) => (t || '').replace(/[\s\u00a0]+/g, ' ').replace(/\.(\s|$)/g, '$1').trim()
-    if ((e.type === 'text' || e.type === 'button') && e.text && norm(e.text) !== norm(l.text)) notes.push(`текст live «${norm(e.text).slice(0, 60)}» / local «${norm(l.text).slice(0, 60)}»`)
+    // сравниваем только буквы/цифры (пунктуация и пробелы — типографика заказчика); показываем место первого расхождения
+    const norm = (t) => (t || '').replace(/[^\p{L}\p{N}]+/gu, '').toLowerCase()
+    if ((e.type === 'text' || e.type === 'button') && e.text) {
+      const a = norm(e.text), c = norm(l.text)
+      if (a !== c && !a.startsWith(c) && !c.startsWith(a)) { let k = 0; while (k < a.length && a[k] === c[k]) k++; notes.push(`текст live «…${a.slice(Math.max(0, k - 15), k + 25)}» / local «…${c.slice(Math.max(0, k - 15), k + 25)}»`) }
+    }
     if (styles && (e.type === 'text' || e.type === 'button')) {
       const pf = parseFont(e.font), lf = parseFont(l.font)
       if (pf && lf && (Math.abs(pf.size - lf.size) > 0.5 || Math.abs(pf.lh - lf.lh) > 1 || pf.weight !== lf.weight || pf.family !== lf.family)) notes.push(`шрифт live ${e.font} / local ${l.font}`)

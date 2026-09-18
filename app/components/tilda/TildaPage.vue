@@ -26,7 +26,7 @@ const membersOnly = computed(() => {
   for (const b of props.data.blocks) {
     const m = /NLM607-->\s*<!--settings(\{.*?\})settingsend-->/.exec(b.custom || '')
     if (!m) continue
-    try { for (const id of String(JSON.parse(m[1]).auth || '').split(',')) if (id.trim()) s.add(id.trim().replace(/^#/, '')) } catch { /* noop */ }
+    try { for (const id of String(JSON.parse(m[1]!).auth || '').split(',')) if (id.trim()) s.add(id.trim().replace(/^#/, '')) } catch { /* noop */ }
   }
   return s
 })

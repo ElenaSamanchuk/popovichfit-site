@@ -9,10 +9,10 @@ Nuxt 4 (Vue 3, Tailwind 4, TypeScript). Все 220 страниц экспорт
 
 | Что | Где |
 |---|---|
-| Главная (собрана вручную) | `app/pages/index.vue`, `app/components/home/*` |
-| Остальные страницы: данные экспорта → универсальный рендерер | `app/pages/[...tilda].vue` → `app/data/tilda/<pageNNN>.json` → `app/components/tilda/TildaPage.vue` |
-| Zero Block (T396): элементы/группы/5 артбордов → CSS | `app/components/tilda/ZeroBlock.vue`, `ZeroNode.vue`, `ZeroElem.vue`, `app/utils/tilda-css.ts` |
-| Типовые блоки Тильды (FAQ, табы, попапы, видео…) | `app/components/tilda/TildaBlock.vue`, CSS экспорта `app/assets/css/tilda-blocks-export.css` |
+| Все страницы (включая главную): данные экспорта → универсальный рендерер | `app/pages/index.vue`, `app/pages/[...tilda].vue` → `app/data/tilda/<pageNNN>.json` → `app/components/tilda/TildaPage.vue` |
+| Zero Block (T396): элементы/группы/артборды 1600–320, sbs-анимации, blur → CSS | `app/components/tilda/ZeroBlock.vue`, `ZeroNode.vue`, `ZeroElem.vue`, `app/utils/tilda-css.ts` |
+| Типовые блоки Тильды (FAQ, табы, попапы, слайдеры/галереи T746, видео…) — свой JS вместо runtime Тильды | `app/components/tilda/TildaBlock.vue`, CSS экспорта `app/assets/css/tilda-blocks-export.css` (`scripts/audit/extract_block_css.py`) |
+| Скрытые (неопубликованные) страницы: 404 без `?preview=<NUXT_PREVIEW_TOKEN>`, нет в sitemap | `docs/unpublished.json` → `npm run pages:sync`, `server/middleware/unpublished.ts` |
 | Общие части: шапка, меню, футер, cookie, плашка ВК, виджет Sender | `app/components/site/*`, `app/layouts/default.vue` |
 | Мета страниц (title/description/og/canonical/noindex) | `app/data/pages.ts` (из `docs/meta.json`), `app/composables/usePageMeta.ts` |
 | Карточки тарифов (варианты/цены/ссылки на checkout ЛК) | `app/data/tariffs.ts`, `app/utils/pf-cards.ts` |

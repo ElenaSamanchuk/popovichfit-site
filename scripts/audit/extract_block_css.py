@@ -14,7 +14,7 @@ for f in glob.glob('app/data/tilda/*.json'):
                 if c.startswith('t') and not c.startswith('tn-'): classes.add(c)
 print('классов:', len(classes))
 # источники: tilda-grid + все tilda-blocks-page*.css (правила дедуплицируем)
-srcs = ['old-site/css/tilda-grid-3.0.min.css'] + sorted(glob.glob('old-site/css/tilda-blocks-page*.min.css'))
+srcs = ['old-site/css/tilda-grid-3.0.min.css', 'old-site/css/tilda-slds-1.4.min.css', 'old-site/css/tilda-popup-1.1.min.css', 'old-site/css/tilda-forms-1.0.min.css', 'old-site/css/tilda-cart-1.0.min.css', 'old-site/css/tilda-zoom-2.0.min.css'] + sorted(glob.glob('old-site/css/tilda-blocks-page*.min.css'))  # + слайдер (T746/T663), попапы, формы, корзина, зум
 seen = set(); out = []
 def want(sel):
     if '#rec' in sel or '#allrecords' in sel: return False
@@ -38,7 +38,11 @@ for src in srcs:
             if css[i] == '{': depth += 1
             elif css[i] == '}': depth -= 1
             i += 1
-        emit(css[m.end():i - 1], '@media ' + m.group(1).strip())
+        media = m.group(1).strip()
+        # IE-хаки вроде «(min-width:0\0),» ломают минификатор (lightningcss) и не нужны — убираем этот вариант из списка
+        media = re.sub(r'\(min-width:0\\0\)\s*,\s*', '', media)
+        if '\\' in media: continue
+        emit(css[m.end():i - 1], '@media ' + media)
         pos = i
     emit(css[pos:], '')
 # группируем по media в порядке появления

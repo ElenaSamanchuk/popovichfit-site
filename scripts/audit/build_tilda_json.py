@@ -16,7 +16,7 @@ import zero_spec as Z
 
 ROOT = 'old-site'
 OUT = 'app/data/tilda'
-SCREENS = ['1200', '960', '640', '480', '320']
+SCREENS = ['1600', '1200', '960', '640', '480', '320']  # 1600 — только у артбордов с этим экраном
 os.makedirs(OUT, exist_ok=True)
 
 def img_path(p):
@@ -109,17 +109,20 @@ def merge(a, b):
     return out
 
 def effective(geo):
-    """каскад Тильды: base(1200) → ≤1199(960) → ≤959(640) → ≤639(480) → ≤479(320)"""
+    """каскад Тильды: base(1600 или 1200) → ≤1599(1200) → ≤1199(960) → ≤959(640) → ≤639(480) → ≤479(320);
+    экран 1600 есть только у артбордов с ним — у остальных ключ не пишем"""
     eff = {}
     cur = {}
     for scr in SCREENS:
-        cur = merge(cur, geo.get(scr, {}))
+        g = {k: v for k, v in geo.get(scr, {}).items() if v not in (None, {})} if scr == '1600' else geo.get(scr, {})
+        if scr == '1600' and not g: continue
+        cur = merge(cur, g)
         eff[scr] = cur
     return eff
 
 # Типографика по просьбе заказчика (осознанное отличие от Тильды): неразрывный пробел после коротких предлогов/союзов
 # (висячие предлоги) и без точки в конце абзаца.
-SHORT_WORDS = r'(?:в|во|на|с|со|к|ко|о|об|обо|у|от|до|по|за|из|изо|и|а|но|да|не|ни|же|ли|бы|для|при|под|над|про|без|как|что|то|или|если)'  # предлоги, союзы, частицы
+SHORT_WORDS = r'(?:в|во|на|с|со|к|ко|о|об|у|от|до|по|за|из|и|а|но|да|не|ни|же|ли|бы|то)'  # предлоги/союзы/частицы до 2 букв (классическое правило; длинные не клеим, чтобы не рвать вёрстку узких колонок)
 
 def typograf_html(h):
     """h — HTML фрагмент (текст элемента/абзац): nbsp после коротких слов, без точки в конце абзаца."""
@@ -218,11 +221,13 @@ def parse_page(fname):
             spec = Z.block_spec(r)
             art = spec['artboard']
             artboards = {}
+            base_scr = '1600' if '1600' in art.get('screens', '') else '1200'  # базовые атрибуты/правила — самый большой экран артборда
             for scr in SCREENS:
+                if scr == '1600' and base_scr != '1600': continue
                 a = spec['artcss'].get(scr, {})
                 h = px(a.get('height')) if a.get('height') else None
                 if h is None:
-                    hv = art.get(f'height-res-{scr}') if scr != '1200' else art.get('height')
+                    hv = art.get('height') if scr == base_scr else art.get(f'height-res-{scr}')
                     h = float(hv) if hv else None
                 artboards[scr] = {'h': h, 'bg': a.get('background-color'), 'pos': a.get('position'),
                                   'upscale': art.get(f'upscale-res-{scr}') or art.get('upscale'), 'valign': art.get('valign'),
@@ -230,6 +235,7 @@ def parse_page(fname):
             # эффективные высоты (каскад)
             cur = None
             for scr in SCREENS:
+                if scr not in artboards: continue
                 if artboards[scr]['h'] is None: artboards[scr]['h'] = cur
                 cur = artboards[scr]['h']
             block['artboard'] = {'screens': art.get('screens', ''), 'fixed': art.get('pos') == 'fixed', 'fixedPos': art.get('fixed-pos'),

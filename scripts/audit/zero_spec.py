@@ -6,9 +6,9 @@
 import re
 import json, sys, os, json, html as H
 ROOT = 'old-site'
-SCREENS = ['1200', '960', '640', '480', '320']
+SCREENS = ['1600', '1200', '960', '640', '480', '320']  # 1600 — только у артбордов с data-artboard-screens «…,1600» (у остальных пусто)
 
-ART_W = {'1200': 1200, '960': 960, '640': 640, '480': 480, '320': 320}
+ART_W = {'1600': 1600, '1200': 1200, '960': 960, '640': 640, '480': 480, '320': 320}  # 1600: сетка Тильды на широких экранах
 
 def gattr(attrs, key, scr, maxscr='1200'):
     """значение поля группы для разрешения с каскадом вверх (t396_group__getFieldValue): res-N → ближайшее большее → база.
@@ -35,8 +35,9 @@ def strip_at_blocks(css, at):
     out.append(css[pos:])
     return ''.join(out)
 
-def parse_style_rules(style_css, rec):
-    """#recNNN .tn-elem[data-elem-id="X"]{...} и @media → {(elem_id, screen): {prop: val}}"""
+def parse_style_rules(style_css, rec, base_scr='1200'):
+    """#recNNN .tn-elem[data-elem-id="X"]{...} и @media → {(elem_id, screen): {prop: val}}.
+    base_scr — экран базовых правил (вне @media): 1200, а у артбордов с экраном 1600 — 1600 (тогда @media 1599 = 1200)."""
     rules = {}
     # @supports (-webkit-touch-callout:none) … { gap:0; margin-bottom } — фолбэк для старого iOS, в каскад не берём
     style_css = strip_at_blocks(style_css, '@supports')
@@ -44,7 +45,7 @@ def parse_style_rules(style_css, rec):
     pos = 0
     out = []
     for m in re.finditer(r'@media screen and \(max-width:(\d+)px\)\s*\{', style_css):
-        out.append(('1200', style_css[pos:m.start()]))
+        out.append((base_scr, style_css[pos:m.start()]))
         depth = 1; i = m.end()
         while depth and i < len(style_css):
             if style_css[i] == '{': depth += 1
@@ -53,7 +54,7 @@ def parse_style_rules(style_css, rec):
         scr = {'1199': '960', '959': '640', '639': '480', '479': '320', '1599': '1200'}.get(m.group(1), m.group(1))
         out.append((scr, style_css[m.end():i-1]))
         pos = i
-    out.append(('1200', style_css[pos:]))
+    out.append((base_scr, style_css[pos:]))
     for scr, css in out:
         for m in re.finditer(r'([^{}]+)\{([^{}]*)\}', css):
             sel, body = m.group(1).strip(), m.group(2)
@@ -182,9 +183,9 @@ def block_spec(rec_html):
     tag = rec_html[:rec_html.find('>')]
     vis = ' '.join(re.findall(r'(data-screen-(?:min|max)="[^"]*")', tag))
     style = ''.join(re.findall(r'<style>(.*?)</style>', rec_html, re.S))
-    rules = parse_style_rules(style, rid)
     art = re.search(r'<div class="t396__artboard[^>]*>', rec_html)
     artattrs = dict(re.findall(r'data-artboard-([\w-]+)="([^"]*)"', art.group(0))) if art else {}
+    rules = parse_style_rules(style, rid, '1600' if '1600' in artattrs.get('screens', '') else '1200')
     artcss = {scr: rules.get(('ARTBOARD', scr, 'elem'), {}) for scr in SCREENS}
     els = re.split(r"(?=<div class='t396__elem tn-elem)", rec_html)[1:]
     specs = [elem_spec(e, rules, artattrs.get('screens', '')) for e in els]

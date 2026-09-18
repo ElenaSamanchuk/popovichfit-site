@@ -26,3 +26,8 @@
 
 /* «показать ещё» (mo-ti.ru): скрытые блоки */
 .tabshide { opacity: 0 !important; min-height: 0 !important; max-height: 0 !important; height: 0 !important; overflow: hidden !important; pointer-events: none !important; padding-top: 0 !important; padding-bottom: 0 !important; margin: 0 !important; }
+
+/* галерея-попап T746: слайдер во всю ширину модалки, стрелки Тильды */
+.tb--gallery { background: transparent; position: relative; }
+.tb--gallery .t-slds { visibility: visible; }
+.tb--gallery .t-slds__bgimg { width: 100%; }

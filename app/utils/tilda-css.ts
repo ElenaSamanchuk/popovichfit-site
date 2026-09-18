@@ -39,7 +39,8 @@ export interface TildaBlock {
 export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }>; showmore?: Array<{ href: string; cls: string; hideBtn: boolean; hideBlk: boolean }> }
 
 const RANGES = [
-  { scr: '1200', media: '(min-width: 1200px)', artW: 1200 },
+  { scr: '1600', media: '(min-width: 1600px)', artW: 1600 }, // только у блоков с экраном 1600 (artboards['1600']); сетка там = окно
+  { scr: '1200', media: '(min-width: 1200px)', artW: 1200 }, // при наличии экрана 1600 — до 1599.98px (см. zeroBlockCss)
   { scr: '960', media: '(min-width: 960px) and (max-width: 1199.98px)', artW: 960 },
   { scr: '640', media: '(min-width: 640px) and (max-width: 959.98px)', artW: 640 },
   { scr: '480', media: '(min-width: 480px) and (max-width: 639.98px)', artW: 480 },
@@ -89,7 +90,7 @@ function posCss(left: Left | null | undefined, mobile: boolean, artW: number, wi
       return `right:${u(-x)};`
     case 'center-pct':
       // pct — половина ширины элемента в % сетки; на экранах шире сетки считаем от ширины сетки (artW), как рантайм Тильды
-      return mobile || windowContainer ? `left:calc(50% - ${left.pct}% + ${u(x)});` : `left:calc(50% - ${Math.round(artW * left.pct) / 100}px + ${x}px);`
+      return mobile || windowContainer ? `left:calc(50% - ${left.pct}% + ${u(x)});` : `left:calc(50% - ${Math.round(artW * (left.pct ?? 0)) / 100}px + ${x}px);`
     default:
       return left.raw ? `left:${left.raw};` : ''
   }
@@ -114,9 +115,11 @@ function opacityCss(e: ZeroElem, st: Record<string, string>, sbsStep?: number): 
   const resolvedBg = st['background-color'] ? resolveVars(st['background-color'], st) : ''
   const bg = resolvedBg && !/^(initial|transparent|none)$/.test(resolvedBg.trim()) ? resolvedBg : ''
   let css = ''
-  // chrome-fix Тильда применяет только к элементам с пошаговой анимацией (t_animationSBS__chromeFixBackdropFilter)
-  if (e.sbs && st['backdrop-filter'] && bg && atom < 1) {
-    css += `background-color:${withAlpha(bg, Math.round(atom * elem * 1000) / 1000)};`
+  // элемент с backdrop-filter: у Тильды blur стоит на элементе (opacity 1), а полупрозрачность и фон — на вложенном атоме;
+  // в одном узле opacity глушит и сам blur («матовое стекло» становится просто прозрачным) → прозрачность атома
+  // переводим в альфу фона (и тени — см. elemRules), как делает t_animationSBS__chromeFixBackdropFilter
+  if (backdropSplit(st)) {
+    if (bg) css += `background-color:${withAlpha(bg, atom)};`
     if (elem !== 1) css += `opacity:${elem};`
     return css
   }
@@ -124,6 +127,17 @@ function opacityCss(e: ZeroElem, st: Record<string, string>, sbsStep?: number): 
   const v = Math.round(atom * elem * 1000) / 1000
   if (v !== 1 || st.opacity !== undefined || st['$elem-opacity'] !== undefined || sbsStep !== undefined) css += `opacity:${v};`
   return css
+}
+/** элемент с backdrop-filter и полупрозрачным атомом — прозрачность уходит в альфу фона/тени, а не в opacity */
+function backdropSplit(st: Record<string, string>): boolean {
+  return !!st['backdrop-filter'] && st.opacity !== undefined && Number(st.opacity) < 1
+}
+/** тень с альфой, умноженной на прозрачность атома (для backdropSplit) */
+function scaleShadowAlpha(shadow: string, a: number): string {
+  return shadow
+    .replace(/rgba\(([^)]+)\)/g, (_, p: string) => { const q = p.split(',').map((x) => x.trim()); return `rgba(${q[0]},${q[1]},${q[2]},${Math.round(Number(q[3] ?? 1) * a * 1000) / 1000})` })
+    .replace(/rgb\(([^)]+)\)/g, (_, p: string) => `rgba(${p},${a})`)
+    .replace(/#[0-9a-f]{3,8}\b/gi, (h) => withAlpha(h, a))
 }
 /** центрированный по оси X элемент: половина ширины в CSS экспорта бывает устаревшей — берём из реальной ширины */
 function centeredLeft(e: ZeroElem, eff: Eff): Left | null | undefined {
@@ -137,14 +151,15 @@ function centeredLeft(e: ZeroElem, eff: Eff): Left | null | undefined {
 
 function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: number): string {
   const st = eff.style ?? {}
-  const windowContainer = (e.fields?.container || 'grid') === 'window'
+  // на экране 1600+ у Тильды нет фиксированной сетки: проценты и центрирование считаются от окна
+  const windowContainer = (e.fields?.container || 'grid') === 'window' || artW >= 1600
   let css = posCss(centeredLeft(e, eff), mobile, artW, windowContainer)
-  css += opacityCss(e, st, e.sbs?.steps?.[0]?.op)
+  css += opacityCss(e, st, e.sbs ? sbsRestStep(e.sbs)?.op : undefined)
   const top = num(eff.top, mobile); if (top !== null) css += `top:${top};`
   // ширина в %: для контейнера grid у Тильды это доля сетки артборда (1200/960/…), а не окна — на широких экранах окно
   // шире сетки, поэтому переводим в px; для контейнера window и flex-детей — как есть
   const wv = eff.width
-  const gridPct = !mobile && !e.flex && wv && typeof wv === 'object' && 'pct' in wv && (e.fields?.container || 'grid') !== 'window'
+  const gridPct = !mobile && !e.flex && wv && typeof wv === 'object' && 'pct' in wv && !windowContainer
   const w = gridPct ? `${Math.round(artW * (wv as { pct: number }).pct) / 100}px` : num(eff.width, mobile); if (w !== null) css += `width:${w};`
   // html-вставка (iframe с padding-top в %) у Тильды растёт по содержимому (элемент display:table) → min-height
   const h = num(eff.height, mobile); if (h !== null) css += e.type === 'html' ? `min-height:${h};` : `height:${h};`
@@ -163,6 +178,7 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
     if (k === 'background-image' && shapeImg) v = `url('${shapeImg}'),${v}`
     if ((k === 'border-color' || k === 'border-width') && /initial|transparent|^0$/.test(v)) continue
     if (k === 'width' || k === 'height') continue
+    if (k === 'box-shadow' && backdropSplit(st)) v = scaleShadowAlpha(v, Number(st.opacity))
     css += `${k}:${v};`
   }
   // рамка из переменных Тильды
@@ -203,6 +219,18 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   return out
 }
 
+/** состояние покоя пошаговой анимации: Тильда сразу применяет шаг 0 и все следующие за ним шаги с нулевой длительностью
+ *  (так «скрытые до наведения» подложки кнопок имеют шаги [1, 0 (0 мс), 1 (400 мс)] и в покое невидимы);
+ *  blockintoview проигрывается один раз при появлении блока — в статике показываем конечный шаг; scroll — как шаг 0 */
+export function sbsRestStep(sbs: NonNullable<ZeroElem['sbs']>): NonNullable<ZeroElem['sbs']>['steps'][number] | undefined {
+  const s = sbs.steps
+  if (!s?.length) return undefined
+  if (sbs.event === 'blockintoview') return s[s.length - 1]
+  if (sbs.event === 'scroll') return s[0]
+  let i = 0
+  while (i + 1 < s.length && !s[i + 1]!.ti) i++
+  return s[i]
+}
 /** transform шага пошаговой анимации */
 function sbsTransform(s: { mx?: number; my?: number; sx?: number; sy?: number; ro?: number }): string {
   const t: string[] = []
@@ -216,10 +244,10 @@ function sbsTransform(s: { mx?: number; my?: number; sx?: number; sy?: number; r
 function sbsRules(sel: string, e: ZeroElem): string {
   const sbs = e.sbs
   if (!sbs?.steps?.length) return ''
-  const first = sbs.steps[0]!
+  const first = sbsRestStep(sbs)!
   let out = ''
   const init: string[] = []
-  // прозрачность начального шага уже учтена в elemRules (opacityCss); здесь — transform и состояние по наведению
+  // прозрачность состояния покоя уже учтена в elemRules (opacityCss); здесь — transform и состояние по наведению
   const st = e.eff?.['1200']?.style ?? {}
   const atom = st.opacity !== undefined ? Number(st.opacity) : 1
   const mul = (op: number) => Math.round(op * (Number.isFinite(atom) ? atom : 1) * 1000) / 1000
@@ -227,7 +255,7 @@ function sbsRules(sel: string, e: ZeroElem): string {
   if (init.length) out += `${sel}{${init.join(';')}}`
   if (sbs.event === 'hover' && sbs.steps.length > 1) {
     const last = sbs.steps[sbs.steps.length - 1]!
-    const dur = sbs.steps.slice(1).reduce((a, s) => a + (s.ti || 0), 0) || 200
+    const dur = sbs.steps.slice(sbs.steps.indexOf(first) + 1).reduce((a, s) => a + (s.ti || 0), 0) || 200
     const fin: string[] = []
     if (last.op !== undefined) fin.push(st['backdrop-filter'] ? `opacity:${last.op}` : `opacity:${mul(last.op)}`)
     fin.push(`transform:${sbsTransform(last) || 'none'}`)
@@ -258,9 +286,10 @@ export function zeroBlockCss(b: TildaBlock): string {
   const id = `#${b.id}`
   const parts: string[] = []
   parts.push(visCss(id, b.vis), padResCss(id, b.padRes))
-  for (const r of RANGES) {
-    const art = b.artboards?.[r.scr]
+  for (const r0 of RANGES) {
+    const art = b.artboards?.[r0.scr]
     if (!art) continue
+    const r = r0.scr === '1200' && b.artboards?.['1600'] ? { ...r0, media: '(min-width: 1200px) and (max-width: 1599.98px)' } : r0
     const mobile = r.scr === '320' || (r.scr === '480' && art.upscale === 'window')
     const u = mobile ? `${id}{--u:calc(100vw / ${r.artW});}` : ''
     let sec = `${id} .tz__art{`
