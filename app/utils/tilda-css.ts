@@ -297,12 +297,13 @@ export function padResCss(id: string, padRes?: Record<string, Record<string, num
   return Object.entries(padRes).map(([res, p]) => `@media (max-width:${res}px){${id}{${Object.entries(p).map(([k, v]) => `${k}:${v}px !important`).join(';')}}}`).join('')
 }
 
-/** Видимость блока по ширине экрана (t-screenmin-640px / t-screenmax-1200px Тильды): границы включительно,
- *  как в её CSS (@media (max-width: 639px) / (min-width: 1201px)). */
+/** Видимость блока по ширине экрана (t-screenmin-640px / t-screenmax-1200px Тильды): min — виден от min+1 px,
+ *  max — виден до max px включительно (как в её CSS). */
 export function visCss(id: string, vis?: { min: number | null; max: number | null } | null): string {
   let css = ''
-  if (vis?.min) css += `@media (max-width:${vis.min - 0.02}px){${id}{display:none !important}}`
-  if (vis?.max) css += `@media (min-width:${vis.max + 0.02}px){${id}{display:none !important}}`
+  // как в CSS Тильды: .t-screenmin-480px скрыт при (max-width:480px), .t-screenmax-480px — при (min-width:481px)
+  if (vis?.min) css += `@media (max-width:${vis.min}px){${id}{display:none !important}}`
+  if (vis?.max) css += `@media (min-width:${vis.max + 1}px){${id}{display:none !important}}`
   return css
 }
 
