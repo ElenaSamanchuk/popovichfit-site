@@ -8,6 +8,13 @@
 .tb--popup { background: #fff; border-radius: 10px; }
 .tb--popup .t-popup__close, .tb--popup .t-popup__block-close { display: none; }
 .tb--popup .t-popup__container { position: relative; width: 100%; }
+/* текстовые попапы T390 (отзывы, инструкции): абзацы вместо сплошного потока <br>, читаемый интерлиньяж */
+.tb--popup .t390__descr { line-height: 1.6; }
+.tb--popup .t390__descr p { margin: 0 0 0.9em; }
+.tb--popup .t390__descr p:last-child { margin-bottom: 0; }
+.tb--popup .t390__title { line-height: 1.25; }
+/* картинки, открывающиеся крупно (data-zoomable Тильды) */
+img[data-zoomable="yes"], .tz__el--image[data-zoomable] img { cursor: zoom-in; }
 .tb--popup .t-popup__bg { display: none; }
 /* T868 embed */
 .tb--popup .t868__code-wrap { position: relative; width: 100%; }

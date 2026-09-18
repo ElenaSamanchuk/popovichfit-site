@@ -181,7 +181,10 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
     let v = resolveVars(v0, st)
     if (k === 'background-image' && (v === 'none' || v === 'initial')) continue
     if (k === 'background-image' && shapeImg) v = `url('${shapeImg}'),${v}`
-    if ((k === 'border-color' || k === 'border-width') && /initial|transparent|^0$/.test(v)) continue
+    // рамка: var(--t396-bordercolor, transparent) без переменной = прозрачная рамка (у Тильды не видна); прозрачность надо
+    // писать явно, иначе preflight Tailwind (border-style:solid) даёт чёрную рамку шириной --t396-borderwidth
+    if (k === 'border-width' && /initial|^0(px)?$/.test(v)) continue
+    if (k === 'border-color' && /initial/.test(v)) continue
     if (k === 'width' || k === 'height') continue
     if (k === 'box-shadow' && backdropSplit(st)) v = scaleShadowAlpha(v, Number(st.opacity))
     css += `${k}:${v};`

@@ -17,10 +17,18 @@ const popupName = computed(() => (b.hooks?.[0] || '').replace(/^#/, ''))
 const popupHtml = computed(() => {
   const h = b.html || ''
   const m = h.match(/<div class="t-popup__container[^"]*"[^>]*>([\s\S]*)<\/div>\s*<\/div>\s*<\/div>\s*$/)
-  const inner = m ? m[1] : h
+  let inner = m ? m[1] : h
   const arrows = b.type === '746' ? h.match(/<ul class="t-slds__arrow_container[\s\S]*?<\/ul>/)?.[0] || '' : ''
+  // текстовый попап T390 (отзывы на /results, инструкции): в экспорте текст — сплошной поток с <br />; делаем абзацы
+  // (каждый перенос — абзац с отступом, пустые убираем) — по просьбе заказчика, ради читабельности
+  if (b.type === '390') inner = inner.replace(/(<div class="t390__descr[^"]*">)([\s\S]*?)(<\/div>)/, (_, open, body, close) => {
+    const paras = body.split(/(?:\s*<br\s*\/?>\s*)+/).map((x) => x.trim()).filter((x) => x && x !== '&nbsp;')
+    return open + paras.map((x) => `<p>${x}</p>`).join('') + close
+  })
   return arrows + inner
 })
+/** фон контейнера попапа из инлайн-стиля экспорта (T390: background-color на .t-popup__container) */
+const popupBoxStyle = computed(() => { const m = (b.html || '').match(/<div class="t-popup__container[^"]*"[^>]*style="([^"]*)"/); return m ? m[1] : undefined })
 /** YouTube-попап T331: id видео из data-videolazy-id */
 const youtubeId = computed(() => b.html?.match(/data-videolazy-id="([^"]+)"/)?.[1] || b.html?.match(/youtube\.com\/embed\/([\w-]+)/)?.[1])
 /** T674: картинка фиксированного фона */
@@ -143,10 +151,24 @@ function initSlider(el: HTMLElement) {
     wrapper.addEventListener('touchend', (e) => { const dx = e.changedTouches[0]!.clientX - x0; if (Math.abs(dx) > 40) show(dx < 0 ? i + 1 : i - 1) })
   })
 }
+/** видео в типовых блоках (T121 и др.): у Тильды iframe создаёт скрипт lazyload по data-videolazy-* — делаем то же сразу */
+function initLazyVideo(el: HTMLElement) {
+  el.querySelectorAll<HTMLElement>('.t-video-lazyload[data-videolazy-id]').forEach((v) => {
+    if (v.querySelector('iframe')) return
+    const id = v.getAttribute('data-videolazy-id') || '', type = v.getAttribute('data-videolazy-type') || 'youtube'
+    const src = type === 'kinescope' ? `https://kinescope.io/embed/${id}` : type === 'vimeo' ? `https://player.vimeo.com/video/${id}` : `https://www.youtube-nocookie.com/embed/${id}?rel=0`
+    const f = document.createElement('iframe')
+    f.src = src; f.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media'; f.setAttribute('allowfullscreen', ''); f.setAttribute('frameborder', '0'); f.loading = 'lazy'; f.title = 'Видео'
+    const h = v.getAttribute('data-videolazy-height') || '540px'
+    f.style.cssText = `display:block;width:100%;height:${h};max-height:56.25vw;border:0;background:#000`
+    v.appendChild(f)
+  })
+}
 onMounted(() => {
   const el = root.value
   if (!el) return
   initSlider(el)
+  initLazyVideo(el)
   if (b.type === '585') {
     const headers = [...el.querySelectorAll<HTMLElement>('.t585__header')]
     // раскрытие как t585_accordionShow/Hide: display + max-height/opacity с переходом .3s (transition — в CSS экспорта)
@@ -204,10 +226,11 @@ onMounted(() => {
   <FixedBackground v-else-if="b.type === '674' && bgImage" :image="bgImage" />
 
   <!-- попапы -->
-  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : b.type === '746' ? 960 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093' || b.type === '746'" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'" :overlay-style="overlayStyle" @open="onPopupOpen">
+  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : b.type === '746' ? 960 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093' || b.type === '746'" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'" :overlay-style="overlayStyle" :box-style="popupBoxStyle" @open="onPopupOpen">
     <ZeroBlock v-if="b.type === '1093' && popupContent" :block="popupContent" />
     <VideoEmbed v-else-if="b.type === '331' && youtubeId" kind="youtube" :id="youtubeId" autoplay />
-    <div v-else ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />
+    <!-- id блока нужен для его CSS из экспорта (#recNNN .t390__descr{…}); в потоке страницы попап-блок не рендерится, id уникален -->
+    <div v-else :id="b.id" ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />
   </Modal>
 
   <!-- HTML-код с видимым содержимым (плашки, iframe) -->

@@ -12,7 +12,9 @@ const props = withDefaults(defineProps<{
   bare?: boolean
   /** стиль подложки из CSS блока (zero-попапы: свой цвет и backdrop-filter) — перекрывает overlay */
   overlayStyle?: Record<string, string>
-}>(), { width: 960, overlay: 'dark', bare: false, overlayStyle: undefined })
+  /** инлайн-стиль окна (например, фон контейнера T390 из экспорта) */
+  boxStyle?: string
+}>(), { width: 960, overlay: 'dark', bare: false, overlayStyle: undefined, boxStyle: undefined })
 
 const modal = useModal()
 const isOpen = computed(() => modal.active.value === props.name)
@@ -58,7 +60,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
           <div
             class="pf-modal__box relative w-full"
             :class="bare ? '' : 'rounded-[10px] bg-white'"
-            :style="{ maxWidth: width + 'px' }"
+            :style="[{ maxWidth: width + 'px' }, boxStyle]"
             @click.stop
           >
             <slot />

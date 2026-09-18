@@ -11,6 +11,7 @@
       <slot />
     </main>
     <BackToTop />
+    <ImageZoom />
     <SupportWidget />
   </div>
 </template>

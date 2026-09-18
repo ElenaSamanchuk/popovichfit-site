@@ -203,9 +203,17 @@ def block_spec(rec_html):
             continue
         depth += 1
         gm = re.search(r'class="t396__group tn-group ([^"]*)"[^>]*data-group-id="(\d+)"', tag)
+        # молекула без обёртки tn-group (бывает в экспорте: <div class="tn-molecule" id="molecule-X"> прямо в артборде, а CSS
+        # группы .tn-group[data-group-id="X"] есть) — строим группу из CSS, её flex-дети раскладываются молекулой
+        mm = None if gm else re.search(r'class="tn-molecule"[^>]*id="molecule-(\d+)"', tag)
+        if mm and not (stack and stack[-1][0]['id'] == mm.group(1)):
+            gm = None
+            gid = mm.group(1); cl = 't396__group-flex' if 'flex' in str(rules.get(('G' + gid, '1200', 'molecule'), {}).get('display', '')) else ''
+            attrs = {}
         if gm:
             gid = gm.group(2); cl = gm.group(1)
             attrs = dict(re.findall(r'data-group-([\w-]+)="([^"]*)"', tag))
+        if gm or (mm and not (stack and stack[-1][0]['id'] == mm.group(1))):
             ganim = {k: v for k, v in re.findall(r'data-animate-([\w-]+)="([^"]*)"', tag) if k in ('style', 'duration', 'delay', 'distance', 'scale', 'mobile', 'chain', 'group')}  # анимация появления группы
             geo = {}
             for scr in SCREENS:
@@ -237,7 +245,8 @@ def block_spec(rec_html):
                         flex='t396__elem-flex' in cl, molFlex='t396__group-flex' in cl, attrs={k: v for k, v in attrs.items() if k in ('flex', 'flexdirection', 'flexalignitems', 'padding', 'widthmode', 'heightmode', 'type-value')}, geo=geo, children=[], **({'anim': ganim} if ganim else {}))
             groups.append(dict(id=gid, cls=node['cls'], flex=node['flex'], molFlex=node['molFlex'], attrs=node['attrs'], geo=geo, anim=ganim))
             (stack[-1][0]['children'] if stack else tree).append(node)
-            stack.append((node, depth))
+            # у молекулы без обёртки дети лежат на один уровень ближе — узел закрывается вместе с самой молекулой
+            stack.append((node, depth - 1 if mm else depth))
             continue
         em = re.search(r"class='t396__elem tn-elem[^']*'[^>]*data-elem-id='(\d+)'", tag)
         if em:
