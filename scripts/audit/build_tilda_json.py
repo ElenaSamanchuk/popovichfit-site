@@ -236,10 +236,16 @@ def parse_page(fname):
                                   'hug': art.get('heightmode') == 'hug', 'bgImage': rewrite_links(a.get('background-image', '')) or None}
             # эффективные высоты (каскад)
             cur = None
+            prev = None
             for scr in SCREENS:
                 if scr not in artboards: continue
                 if artboards[scr]['h'] is None: artboards[scr]['h'] = cur
                 cur = artboards[scr]['h']
+                # фон/картинка/позиция артборда заданы в базовом правиле и наследуются меньшими экранами (каскад CSS Тильды)
+                if prev:
+                    for k in ('bg', 'bgImage', 'pos'):
+                        if artboards[scr].get(k) is None: artboards[scr][k] = prev.get(k)
+                prev = artboards[scr]
             block['artboard'] = {'screens': art.get('screens', ''), 'fixed': art.get('pos') == 'fixed', 'fixedPos': art.get('fixed-pos'),
                                  'ovrflw': art.get('ovrflw'), 'bg': {k: v for k, v in art.items() if k.startswith('bg')}}
             block['artboards'] = artboards
@@ -263,11 +269,22 @@ def parse_page(fname):
                     mi = re.search(r"url\(['\"]?([^'\")]+)", chunk)
                     if mi: el['bgImg'] = img_path(mi.group(1))
                 el.update(elem_extra(chunk, e['type']))
+                # поправки геометрии (scripts/audit/fixups.json → elems): top/left/width/height по экранам
+                for scr, fx in FIXUPS.get('elems', {}).get(block['id'], {}).get(e['id'], {}).items():
+                    if scr in el['eff']:
+                        for k in ('top', 'width', 'height'):
+                            if k in fx: el['eff'][scr][k] = float(fx[k])
+                        if 'left' in fx: el['eff'][scr]['left'] = {'a': 'grid', 'x': float(fx['left']), 'half': ART_W[scr] / 2}
+                fx_href = FIXUPS.get('hrefs', {}).get(block['id'], {}).get(e['id'])
+                if fx_href: el['href'] = fx_href
                 # правки текстов с живого сайта (scripts/audit/fixups.json → texts)
                 fx_text = FIXUPS.get('texts', {}).get(block['id'], {}).get(e['id'])
                 if fx_text is not None:
                     el['html'] = typograf_html(fx_text); el['text'] = re.sub(r'<[^>]+>', '', fx_text)
                 elems.append(el)
+            # плавающая кнопка «Назад» (javascript:history.back()) — по просьбе заказчика 18.09 не переносится
+            if elems and all(e['type'] == 'button' and (e.get('href') or '').startswith('javascript:history.back') for e in elems):
+                continue
             block['elems'] = elems
             groups = []
             for g in spec['groups']:
@@ -298,6 +315,9 @@ def parse_page(fname):
             css = re.sub(r'\s+', ' ', css).strip()
             if css: block['css'] = rewrite_links(css)[:40000]
             block['hooks'] = re.findall(r'data-tooltip-hook="([^"]*)"', r)
+            if t == '979':  # галерея «в ряд» (justified): t979_init('recid','rowheight','gutter') из скрипта записи
+                m9 = re.search(r"t979_init\('%s','(\d+)','(\d*)'\)" % rid[3:], r) or re.search(r"t979_init\('%s','(\d+)','(\d*)'\)" % rid[3:], html)
+                block['t979'] = {'rowH': int(m9.group(1)) if m9 else 400, 'gutter': int(m9.group(2) or 0) if m9 else 10}
             block['popupRecs'] = re.findall(r'data-popup-rec-ids="([^"]*)"', r)
             if t == '131':
                 mm = re.search(r'<!-- nominify begin -->(.*?)<!-- nominify end -->', r, re.S)
@@ -380,6 +400,21 @@ def main(files):
             o.write(f"| {f} | {n} | {', '.join(f'T{k}×{v}' for k, v in sorted(types.items(), key=lambda kv: -kv[1]))} |\n")
     print('done', len(files), 'pages')
 
+def write_chrome():
+    """Шапка и футер главной (записи внутри <header>/<footer> экспорта) → app/data/tilda/_chrome.json:
+    подставляются на страницы, у которых в Тильде шапки/футера не было (просьба заказчика: общие на всех страницах)."""
+    html = open(os.path.join(ROOT, 'page36594700.html'), encoding='utf-8', errors='ignore').read()
+    ids = {}
+    for tag in ('header', 'footer'):
+        m = re.search(r'<%s[^>]*>(.*?)</%s>' % (tag, tag), html, re.S)
+        ids[tag] = re.findall(r'<div id="(rec\d+)"', m.group(1)) if m else []
+    page = json.load(open(os.path.join(OUT, 'page36594700.json')))
+    by = {b['id']: b for b in page['blocks']}
+    chrome = {tag: [by[i] for i in ids[tag] if i in by] for tag in ('header', 'footer')}
+    json.dump(chrome, open(os.path.join(OUT, '_chrome.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
+    print('_chrome.json:', {k: len(v) for k, v in chrome.items()})
+
 if __name__ == '__main__':
     files = sys.argv[1:] or sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, 'page*.html')))
     main(files)
+    if 'page36594700.html' in files: write_chrome()

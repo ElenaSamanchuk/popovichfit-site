@@ -8,6 +8,9 @@
 .tb--popup { background: #fff; border-radius: 10px; }
 .tb--popup .t-popup__close, .tb--popup .t-popup__block-close { display: none; }
 .tb--popup .t-popup__container { position: relative; width: 100%; }
+/* попап с кодом T868 (видео Kinescope): у Тильды содержимое скрыто до открытия скриптом; окно без подложки и отступов */
+.tb--embed { background: transparent; padding: 0; }
+.tb--embed .t868__code-wrap { display: block; }
 /* текстовые попапы T390 (отзывы, инструкции): абзацы вместо сплошного потока <br>, читаемый интерлиньяж */
 .tb--popup .t390__descr { line-height: 1.6; }
 .tb--popup .t390__descr p { margin: 0 0 0.9em; }
@@ -54,3 +57,38 @@ html.pf-wd { scroll-behavior: auto; }
 /* плавное переключение вкладок T395/T1281 и блоков «показать ещё» */
 @keyframes pf-fade-in { from { opacity: 0; } to { opacity: 1; } }
 .pf-fade-in { animation: pf-fade-in 0.35s ease-in-out; }
+
+/* страницы документов (оферта, политика, согласия): широкая колонка, абзацы, нумерованные пункты — просьба заказчика 18.09 */
+.pf-doc .t004 .t-col, .pf-doc .t106 .t-col { float: none; max-width: 960px; margin-left: auto; margin-right: auto; padding-left: 0 !important; }
+.pf-doc .t004 .t-container, .pf-doc .t106 .t-container { max-width: 1000px; }
+.pf-doc .t-text { font-size: 17px; line-height: 1.7; font-weight: 400; color: #1b1b1b; }
+.pf-doc .t-text p { margin: 0 0 1em; }
+.pf-doc .t-text p.pf-doc__title { font-size: 26px; line-height: 1.3; font-weight: 600; margin: 0 0 1.4em; }
+.pf-doc .t-text p.pf-doc__title strong { font-weight: 600; }
+.pf-doc .t-text p.pf-doc__n-1 { font-weight: 500; margin-top: 1.6em; }
+.pf-doc .t-text p.pf-doc__n-2 { padding-left: 1.6em; }
+.pf-doc .t-text p.pf-doc__n-3 { padding-left: 3.2em; }
+.pf-doc .t-text p:last-child { margin-bottom: 0; }
+@media (max-width: 640px) { .pf-doc .t-text { font-size: 16px; line-height: 1.6; } .pf-doc .t-text p.pf-doc__title { font-size: 22px; } .pf-doc .t-text p.pf-doc__n-2 { padding-left: 1em; } .pf-doc .t-text p.pf-doc__n-3 { padding-left: 2em; } }
+/* попап отзыва T390 — шире (860) */
+.tb--popup .t390__wrapper { max-width: none; }
+
+/* статьи /media_*: колонка текста и картинок шире (760 → 960) */
+.pf-wide .t-col.t-col_8.t-prefix_2, .pf-wide .t-col.t-col_8 { float: none; max-width: 960px; margin-left: auto; margin-right: auto; padding-left: 0 !important; }
+.pf-wide .t-text_md { line-height: 1.65; }
+.pf-wide .t-col img { max-width: 100%; height: auto; }
+/* /sertif: сетка сертификатов вместо слайдера */
+.pf-cert-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+.pf-cert-grid__item { display: block; aspect-ratio: 3 / 4; background: #f5f5f5; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+.pf-cert-grid__item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); }
+.pf-cert-grid__item img { width: 100%; height: 100%; object-fit: contain; display: block; cursor: zoom-in; }
+@media (max-width: 959px) { .pf-cert-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 639px) { .pf-cert-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0 10px; } }
+
+/* страницы, где шапки не было в Тильде: отступ под фиксированную шапку (высота её артборда 44 / на 320 — 34) */
+.pf-chrome-added { padding-top: 44px; }
+@media (max-width: 479.98px) { .pf-chrome-added { padding-top: calc(34 * 100vw / 320); } }
+
+/* горизонтальный скролл блоков (HScroll): прокрутка есть, полоса скрыта — просьба заказчика 18.09 (в оригинале так же у VORON-скрипта) */
+.tz__art.overflow-x-auto, .tz-hscroll { scrollbar-width: none; -ms-overflow-style: none; }
+.tz__art.overflow-x-auto::-webkit-scrollbar, .tz-hscroll::-webkit-scrollbar { display: none; width: 0; height: 0; }

@@ -35,6 +35,8 @@ export interface TildaBlock {
   tab?: { of: string; index: number }; tabHidden?: boolean
   /** блок класса «показать ещё» (uc-showmore): скрыт до клика по ссылке #showmore */
   showHidden?: boolean
+  /** галерея «в ряд» T979: целевая высота ряда и отступ (из t979_init) */
+  t979?: { rowH: number; gutter: number }
 }
 export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }>; showmore?: Array<{ href: string; cls: string; hideBtn: boolean; hideBlk: boolean }> }
 
@@ -176,9 +178,14 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   // фигура с картинкой (data-original / inline url): картинка + градиент из стиля, как у Тильды
   const shapeImg = e.type === 'shape' ? e.bgImg || e.img : undefined
   if (shapeImg && !(st['background-image'] && !/none|initial/.test(st['background-image']))) css += `background-image:url('${shapeImg}');`
+  // мобильные артборды Тильда масштабирует целиком (transform scale на ширину окна) — вместе со шрифтами, скруглениями,
+  // отступами; у нас геометрия в единицах --u, поэтому px этих свойств тоже переводим в --u (иначе на 390–479 px текст мельче, чем на Тильде)
+  const SCALED = new Set(['font-size', 'line-height', 'letter-spacing', 'border-radius', 'padding', 'box-shadow', 'border-width'])
+  const scalePx = (v: string) => v.replace(/(-?\d*\.?\d+)px/g, (_, n) => (n === '0' ? '0' : `calc(${n} * var(--u))`))
   for (const [k, v0] of Object.entries(st)) {
     if (k.startsWith('$') || SKIP_STYLE.has(k)) continue
     let v = resolveVars(v0, st)
+    if (mobile && SCALED.has(k)) v = scalePx(v)
     if (k === 'background-image' && (v === 'none' || v === 'initial')) continue
     if (k === 'background-image' && shapeImg) v = `url('${shapeImg}'),${v}`
     // рамка: var(--t396-bordercolor, transparent) без переменной = прозрачная рамка (у Тильды не видна); прозрачность надо
@@ -190,7 +197,7 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
     css += `${k}:${v};`
   }
   // рамка из переменных Тильды
-  if (st['$borderwidth'] && st['$borderwidth'] !== '0px' && st['$bordercolor']) css += `border:${st['$borderwidth']} ${st['$borderstyle'] ?? 'solid'} ${st['$bordercolor']};`
+  if (st['$borderwidth'] && st['$borderwidth'] !== '0px' && st['$bordercolor']) css += `border:${mobile ? scalePx(st['$borderwidth']) : st['$borderwidth']} ${st['$borderstyle'] ?? 'solid'} ${st['$bordercolor']};`
   // фон кнопок/фигур из переменных (явный background-color ставит opacityCss)
   if (st['$bgcolor-color'] && !st['background-color']) css += `background-color:${st['$bgcolor-color']};`
   if (st['$bgcolor-image'] && st['$bgcolor-image'] !== 'none' && !st['background-image']) css += `background-image:${st['$bgcolor-image']};`
@@ -199,12 +206,16 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   // иконка кнопки (библиотечная svg через mask) и цвет текста кнопки
   if (st['icon']) {
     const ic: Record<string, string> = {}
-    for (const part of st['icon'].split(/\s+(?=[\w-]+:)/)) { const i = part.indexOf(':'); if (i > 0) ic[part.slice(0, i)] = part.slice(i + 1) }
+    // на меньших экранах Тильда пишет только размеры иконки (width/height) — сама картинка (--icon) наследуется от базового экрана
+    const parseIcon = (v: string) => { for (const part of v.split(/\s+(?=[\w-]+:)/)) { const i = part.indexOf(':'); if (i > 0) ic[part.slice(0, i)] = part.slice(i + 1) } }
+    const baseIcon = Object.values(e.eff ?? {}).map((x) => x.style?.icon).find((v) => v && /--icon:/.test(v))
+    if (baseIcon && !/--icon:/.test(st['icon'])) parseIcon(baseIcon)
+    parseIcon(st['icon'])
     let icss = ''
     // библиотечные иконки (lib__icons) — маска цветом текста; загруженные svg (tild…) — картинка с собственными цветами
     if (ic['--icon'] && /lib__icons/.test(ic['--icon'])) icss += `-webkit-mask-image:${ic['--icon']};mask-image:${ic['--icon']};`
     else if (ic['--icon']) icss += `background-image:${ic['--icon']};background-size:contain;background-repeat:no-repeat;background-position:center;-webkit-mask-image:none;mask-image:none;background-color:transparent;`
-    for (const k of ['width', 'height', 'order', 'margin-right', 'margin-left']) if (ic[k]) icss += `${k}:${ic[k]};`
+    for (const k of ['width', 'height', 'order', 'margin-right', 'margin-left']) if (ic[k]) icss += `${k}:${mobile ? scalePx(ic[k]) : ic[k]};`
     if (icss) out += `${sel} .tz__icon{${icss}}`
   }
   const sp = st['--t396-speedhover'] || '0.2s' // скорость hover-перехода Тильды (var(--t396-speedhover))
@@ -213,8 +224,8 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   // кнопка без фиксированной высоты: высота из padding контента (.tn-atom__button-content)
   if (e.type === 'button' && (st['btn-pad'] || st['btn-gap'])) {
     let b2 = ''
-    if (st['btn-pad'] && (eff.height === null || eff.height === undefined)) b2 += `padding:${st['btn-pad']};`
-    if (st['btn-gap']) b2 += `column-gap:${st['btn-gap']};`
+    if (st['btn-pad'] && (eff.height === null || eff.height === undefined)) b2 += `padding:${mobile ? scalePx(st['btn-pad']) : st['btn-pad']};`
+    if (st['btn-gap']) b2 += `column-gap:${mobile ? scalePx(st['btn-gap']) : st['btn-gap']};`
     if (b2) out += `${sel}{${b2}}`
   }
   // hover
@@ -271,7 +282,10 @@ function sbsRules(sel: string, e: ZeroElem): string {
     if (last.op !== undefined) fin.push(st['backdrop-filter'] ? `opacity:${last.op}` : `opacity:${mul(last.op)}`)
     fin.push(`transform:${sbsTransform(last) || 'none'}`)
     // триггер: сам элемент или другие элементы блока (trgels) — через :has() на секции
-    const trigger = sbs.trg.length ? `.tz:has(${sbs.trg.map((t) => `.e${t}:hover`).join(',')}) ${sel}` : `${sel}:hover`
+    // триггер — другой элемент блока (trgels): секция блока (#recNNN) содержит наведённый триггер → :has() на самой секции
+    // (sel = «#recNNN .eID»; вариант «.tz:has(…) #recNNN .eID» не срабатывал — .tz и #recNNN один и тот же узел)
+    const has = `:has(${sbs.trg.map((t) => `.e${t}:hover`).join(',')})`
+    const trigger = sbs.trg.length ? sel.replace(/^(#\S+)(\s)/, `$1${has}$2`) : `${sel}:hover`
     out += `${sel}{transition:opacity ${dur}ms ease,transform ${dur}ms ease,background-color .2s ease-in-out,color .2s ease-in-out,translate var(--ap-dur,.2s) var(--ap-ease,ease) var(--ap-delay,0s),scale var(--ap-dur,.2s) var(--ap-ease,ease) var(--ap-delay,0s)}${trigger}{${fin.join(';')}}`
   }
   return out

@@ -43,6 +43,30 @@ const customVisible = computed(() => b.type === '131' && !isPreloader.value && /
 const customCss = computed(() => (b.type === '131' && customVisible.value ? [...(b.custom || '').matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)].map((m) => m[1]).join('\n') : ''))
 const blockCss = (b.css || '') + visCss('#' + b.id, b.vis) + padResCss('#' + b.id, b.padRes) + customCss.value  // CSS блока из экспорта + видимость + отступы для экранов
 if (blockCss) useHead({ style: [{ key: 'tb-' + b.id, innerHTML: blockCss }] })
+/** текстовые блоки на страницах документов: сплошной текст с <br> → абзацы (нумерованные пункты — с отступом) */
+const pfDoc = inject<boolean>('pfDoc', false)
+const docHtml = computed(() => {
+  const h = b.html || ''
+  if (!pfDoc || !/t-text/.test(h)) return null
+  return h.replace(/(<div[^>]*class="[^"]*\bt-text\b[^"]*"[^>]*>)([\s\S]*?)(<\/div>)/g, (_, open, body, close) => {
+    const parts = body.split(/(?:\s*<br\s*\/?>\s*){1,}/).map((x) => x.trim()).filter((x) => x && x !== '&nbsp;')
+    const out = parts.map((x) => {
+      if (/^<p[\s>]/.test(x)) return x.replace(/^<p([^>]*)>/, '<p$1 class="pf-doc__title">')
+      const m = /^(\d+(?:\.\d+)*\.?)\s+/.exec(x.replace(/<[^>]+>/g, ''))
+      const level = m ? m[1].split('.').filter(Boolean).length : 0
+      return `<p class="${m ? `pf-doc__n pf-doc__n-${Math.min(level, 3)}` : 'pf-doc__p'}">${x}</p>`
+    })
+    return open + out.join('') + close
+  })
+})
+/** /sertif: слайдер T604 с 54 сертификатами → сетка картинок с просмотром (ImageZoom) */
+const pfCertGrid = inject<boolean>('pfCertGrid', false)
+const certHtml = computed(() => {
+  if (!pfCertGrid || b.type !== '604') return null
+  const srcs = [...(b.html || '').matchAll(/class="t-slds__bgimg[^"]*"[^>]*data-src="([^"]+)"/g)].map((m) => m[1]!)
+  if (!srcs.length) return null
+  return `<div class="pf-cert-grid">${srcs.map((src, i) => `<div class="pf-cert-grid__item"><img src="${src}" alt="Сертификат ${i + 1}" loading="lazy" data-zoomable="yes"></div>`).join('')}</div>`
+})
 const popupRoot = ref<HTMLElement | null>(null)
 /** подложка zero-попапа T1093 из CSS блока (#rec .t1093 .t-popup__bg{…}): у Тильды по умолчанию она прозрачная, у части попапов
  *  rgba(0,0,0,.2/.3), почти у всех — backdrop-filter: blur(4px) */
@@ -54,7 +78,7 @@ const overlayStyle = computed(() => {
   const bf = body.match(/(?:^|;)\s*backdrop-filter:([^;]+)/)?.[1]?.trim()
   return { backgroundColor: bg || 'transparent', backdropFilter: bf || 'none', WebkitBackdropFilter: bf || 'none' }
 })
-function onPopupOpen() { nextTick(() => { if (popupRoot.value) initSlider(popupRoot.value) }) }
+function onPopupOpen() { nextTick(() => { if (popupRoot.value) { initSlider(popupRoot.value); initLazyVideo(popupRoot.value) } }) }
 const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"/)?.[1] : undefined)
 
 // интерактив стандартных блоков без runtime Тильды: аккордеон T585, табы T395, слайдер t-slds (галереи T746/T663)
@@ -164,11 +188,44 @@ function initLazyVideo(el: HTMLElement) {
     v.appendChild(f)
   })
 }
+/** галерея «в ряд» T979 (justified): порт t979_getImageWidths/divideRows/fitItemsByWidth/updateItems — ряды картинок
+ *  подгоняются по ширине контейнера при целевой высоте ряда (t979_init: rowH, gutter) */
+function initJustified(el: HTMLElement) {
+  const grid = el.querySelector<HTMLElement>('.t979__grid')
+  if (!grid || grid.dataset.pfInit) return
+  grid.dataset.pfInit = '1'
+  const rowH = b.t979?.rowH || 400, gutter = b.t979?.gutter ?? 10
+  const items = [...grid.querySelectorAll<HTMLElement>('.t979__grid-item')]
+  const imgs = items.map((it) => it.querySelector<HTMLImageElement>('img'))
+  const layout = () => {
+    const cw = grid.offsetWidth
+    if (!cw) return
+    const widths = imgs.map((im) => (im && im.naturalWidth && im.naturalHeight ? (im.naturalWidth * rowH) / im.naturalHeight : rowH))
+    const rows: number[][] = []; let cur = 0, rw = 0
+    widths.forEach((w) => { rw += w; (rows[cur] ||= []).push(w); if (rw >= cw) { cur++; rw = 0 } })
+    const heights: number[] = []
+    rows.forEach((row) => { const sum = row.reduce((a, x) => a + x, 0); const avail = cw - gutter * (row.length - 1); const ratio = avail / sum; if (ratio < 1.5) { row.forEach((w, i) => { row[i] = w * ratio }); heights.push(rowH * ratio) } else heights.push(rowH) })
+    let r = 0, c = 0, top = 0, left = 0, k = 0
+    for (const it of items) {
+      if (c >= rows[r]!.length) { top += heights[r]! + gutter; r++; c = 0; left = 0 }
+      left += c > 0 ? rows[r]![c - 1]! + gutter : 0
+      Object.assign(it.style, { top: `${top}px`, left: `${left}px`, width: `${rows[r]![c]}px`, height: `${heights[r]}px` })
+      c++; k++
+    }
+    grid.style.height = `${heights.reduce((a, h) => a + h + gutter, 0) - gutter}px`
+    imgs.forEach((im) => { if (im) im.style.display = 'block' })
+  }
+  let pending = imgs.filter((im) => im && !(im.complete && im.naturalWidth)).length
+  imgs.forEach((im) => { if (im && !(im.complete && im.naturalWidth)) im.addEventListener('load', () => { if (--pending <= 0) layout() }, { once: true }) })
+  layout()
+  window.addEventListener('resize', layout)
+}
 onMounted(() => {
   const el = root.value
   if (!el) return
-  initSlider(el)
+  if (!certHtml.value) initSlider(el)
   initLazyVideo(el)
+  if (b.type === '979') initJustified(el)
   if (b.type === '585') {
     const headers = [...el.querySelectorAll<HTMLElement>('.t585__header')]
     // раскрытие как t585_accordionShow/Hide: display + max-height/opacity с переходом .3s (transition — в CSS экспорта)
@@ -190,6 +247,8 @@ onMounted(() => {
         setTimeout(() => { if (!header.classList.contains('t585__opened')) { content.style.display = 'none'; content.hidden = true } }, 320)
       }
     }
+    // при загрузке все пункты закрыты (просьба заказчика; в экспорте у части блоков первый пункт открыт)
+    headers.forEach((header) => { if (header.classList.contains('t585__opened')) { header.classList.remove('t585__opened'); header.querySelector('.t585__trigger-button')?.setAttribute('aria-expanded', 'false'); const c = header.nextElementSibling as HTMLElement | null; if (c) { c.style.display = 'none'; c.hidden = true } } })
     headers.forEach((header) => header.addEventListener('click', () => {
       const open = !header.classList.contains('t585__opened')
       headers.forEach((h) => { if (h !== header) setOpen(h, false) }) // как на Тильде: открыт только один вопрос
@@ -226,11 +285,11 @@ onMounted(() => {
   <FixedBackground v-else-if="b.type === '674' && bgImage" :image="bgImage" />
 
   <!-- попапы -->
-  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : b.type === '746' ? 960 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093' || b.type === '746'" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'" :overlay-style="overlayStyle" :box-style="popupBoxStyle" @open="onPopupOpen">
+  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : b.type === '746' ? 960 : b.type === '390' ? 860 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093' || b.type === '746'" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'" :overlay-style="overlayStyle" :box-style="popupBoxStyle" @open="onPopupOpen">
     <ZeroBlock v-if="b.type === '1093' && popupContent" :block="popupContent" />
     <VideoEmbed v-else-if="b.type === '331' && youtubeId" kind="youtube" :id="youtubeId" autoplay />
     <!-- id блока нужен для его CSS из экспорта (#recNNN .t390__descr{…}); в потоке страницы попап-блок не рендерится, id уникален -->
-    <div v-else :id="b.id" ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />
+    <div v-else :id="b.id" ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : b.type === '868' ? 'tb--embed' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />
   </Modal>
 
   <!-- HTML-код с видимым содержимым (плашки, iframe) -->
@@ -249,6 +308,6 @@ onMounted(() => {
     :class="['t-rec-' + b.type, b.tabHidden ? 't395__off' : '', b.showHidden ? 'tabshide' : '']"
     :style="{ paddingTop: b.pad['padding-top'] != null ? b.pad['padding-top'] + 'px' : undefined, paddingBottom: b.pad['padding-bottom'] != null ? b.pad['padding-bottom'] + 'px' : undefined, backgroundColor: b.bg || undefined }"
     :data-tilda-rec="b.id"
-    v-html="b.html"
+    v-html="certHtml || docHtml || b.html"
   />
 </template>

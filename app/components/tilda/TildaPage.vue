@@ -39,6 +39,17 @@ const vkCopies = computed(() => {
 })
 const vkBlock = computed(() => props.data.blocks.find((b) => b.id === 'rec2322627601' || vkCopies.value.has(b.id)) ?? null)
 const cookieBlock = computed(() => props.data.blocks.find((b) => b.id === COOKIE) ?? null)
+/** страницы документов (оферта, политика, согласия): шире колонка и форматирование абзацев — просьба заказчика 18.09 */
+const DOC_PAGES = new Set(['/oferta', '/part_oferta', '/privacy', '/data-consent', '/consent', '/doc_l'])
+/** статьи (/media_*): шире колонка текста — просьба заказчика 18.09 */
+const WIDE_PAGES = new Set(['/media_1_otek', '/media_gluteal_muscles', '/media_kor', '/media_mtd2', '/mediah'])
+const pagePath = useRoute().path.replace(/\/+$/, '').toLowerCase()
+const isDoc = DOC_PAGES.has(pagePath)
+const isWide = WIDE_PAGES.has(pagePath)
+/** /sertif: сертификаты сеткой с просмотром вместо слайдера — просьба заказчика 18.09 */
+const isCertGrid = pagePath === '/sertif'
+provide('pfDoc', isDoc)
+provide('pfCertGrid', isCertGrid)
 const flow = computed(() => props.data.blocks.filter((b) => !SHARED.has(b.id) && b.id !== COOKIE && b.id !== 'rec2322627601' && !popupRecs.value.has(b.id) && !membersOnly.value.has(b.id) && !vkCopies.value.has(b.id)))
 function popupContent(b: TildaBlock): TildaBlock | null {
   const id = b.popupRecs?.[0]?.split(',')[0]?.trim().replace(/^rec/, '')
@@ -47,7 +58,7 @@ function popupContent(b: TildaBlock): TildaBlock | null {
 </script>
 
 <template>
-  <div class="tilda-page">
+  <div class="tilda-page" :class="{ 'pf-doc': isDoc, 'pf-wide': isWide }">
     <!-- плашка ВК и cookie-баннер: содержимое — Zero Block со страницы, поведение — обёртки -->
     <VkNotice v-if="vkBlock" :block="vkBlock" />
     <CookieBanner v-if="cookieBlock" :block="cookieBlock" />

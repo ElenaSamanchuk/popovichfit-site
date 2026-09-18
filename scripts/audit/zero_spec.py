@@ -241,6 +241,16 @@ def block_spec(rec_html):
                         cont = gattr(attrs, 'container', scr, maxscr) or 'grid'
                         d['top'] = f'{float(top):g}px'
                         d['left'] = f'calc(50% - {ART_W[scr] / 2:g}px + {float(left):g}px)' if cont == 'grid' else f'{float(left):g}px'
+            # группа без data-group-top/left (координаты только в CSS, относительно родителя): абсолютные координаты
+            # = CSS + абсолютные родителя — иначе у вложенных групп с data-атрибутами не от чего отнимать (плашка «38 мин» на /inventory)
+            if not absxy:
+                for scr in SCREENS:
+                    g0 = geo.get(scr, {})
+                    mt = re.match(r'^(-?[\d.]+)px$', str(g0.get('top', '')))
+                    ml = re.search(r'\+\s*(-?[\d.]+)px\)$', str(g0.get('left', ''))) or re.match(r'^(-?[\d.]+)px$', str(g0.get('left', '')))
+                    if not mt or not ml: continue
+                    pxy = (parent or {}).get('absxy', {}).get(scr) if parent else None
+                    absxy[scr] = (float(mt.group(1)) + (pxy[0] if pxy else 0), float(ml.group(1)) + (pxy[1] if pxy else 0))
             node = dict(kind='group', id=gid, absxy=absxy, cls=' '.join(c for c in cl.split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate', 't396__elem-flex')),
                         flex='t396__elem-flex' in cl, molFlex='t396__group-flex' in cl, attrs={k: v for k, v in attrs.items() if k in ('flex', 'flexdirection', 'flexalignitems', 'padding', 'widthmode', 'heightmode', 'type-value')}, geo=geo, children=[], **({'anim': ganim} if ganim else {}))
             groups.append(dict(id=gid, cls=node['cls'], flex=node['flex'], molFlex=node['molFlex'], attrs=node['attrs'], geo=geo, anim=ganim))
