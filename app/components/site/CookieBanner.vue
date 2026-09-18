@@ -16,7 +16,9 @@ function accept() {
   setTimeout(() => { visible.value = false }, 400)
 }
 function onGlobalClick(e: Event) {
-  if ((e.target as HTMLElement | null)?.closest('.cookie-banner-link')) return
+  const t = e.target as HTMLElement | null
+  if (t?.closest('.cookie-banner-link')) return
+  if (t?.closest('.pf-vk-notice')) return // клик по плашке ВК (в т. ч. её крестик) — не согласие, как на живом сайте
   accept()
 }
 onMounted(() => {

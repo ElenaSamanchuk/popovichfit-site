@@ -156,10 +156,19 @@ function centeredLeft(e: ZeroElem, eff: Eff): Left | null | undefined {
   return l
 }
 
-function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: number): string {
+/** Контейнер элемента (grid/window) для экрана: значение res-экрана, иначе ближайшего большего, иначе базовое —
+ *  каскад Тильды (data-field-container-res-NNN-value наследуются вниз). У блоков с экраном 1600 базовое значение —
+ *  для 1600, а у 1200 своё (напр. фото первого экрана курсов: 1600 — grid 1259px, 1200 — window 98%). */
+function containerAt(e: ZeroElem, scr: string): string {
+  const order = ['320', '480', '640', '960', '1200', '1600']
+  for (let i = Math.max(0, order.indexOf(scr)); i < order.length; i++) { const v = e.fields?.[`container-res-${order[i]}`]; if (v) return v }
+  return e.fields?.container || 'grid'
+}
+
+function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: number, scr: string): string {
   const st = eff.style ?? {}
   // на экране 1600+ у Тильды нет фиксированной сетки: проценты и центрирование считаются от окна
-  const windowContainer = (e.fields?.container || 'grid') === 'window' || artW >= 1600
+  const windowContainer = containerAt(e, scr) === 'window' || artW >= 1600
   let css = posCss(centeredLeft(e, eff), mobile, artW, windowContainer)
   css += opacityCss(e, st, e.sbs ? sbsRestStep(e.sbs)?.op : undefined)
   const top = num(eff.top, mobile); if (top !== null) css += `top:${top};`
@@ -316,8 +325,9 @@ export function zeroBlockCss(b: TildaBlock): string {
     const art = b.artboards?.[r0.scr]
     if (!art) continue
     const r = r0.scr === '1200' && b.artboards?.['1600'] ? { ...r0, media: '(min-width: 1200px) and (max-width: 1599.98px)' } : r0
-    // фиксированные артборды (шапка, cookie-плашка) Тильда на телефонах не масштабирует (элементы без zoom) — они в px
-    const mobile = (r.scr === '320' || (r.scr === '480' && art.upscale === 'window')) && !b.artboard?.fixed
+    // автоскейл Тильды на телефонах (zoom = ширина окна / 320) — и у фиксированных артбордов тоже (шапка, cookie-плашка, плашка ВК:
+    // на живом сайте при 390px шапка 41px, cookie 182px, элементы ×1.219)
+    const mobile = r.scr === '320' || (r.scr === '480' && art.upscale === 'window')
     const u = mobile ? `${id}{--u:calc(100vw / ${r.artW});}` : ''
     let sec = `${id} .tz__art{`
     // артборд position:absolute (Тильда): запись схлопывается в 0, содержимое наезжает на следующий блок
@@ -355,7 +365,7 @@ export function zeroBlockCss(b: TildaBlock): string {
     }
     for (const e of b.elems ?? []) {
       const eff = e.eff?.[r.scr]; if (!eff) continue
-      parts.push(elemRules(`${id} .e${e.id}`, e, eff, mobile, r.artW))
+      parts.push(elemRules(`${id} .e${e.id}`, e, eff, mobile, r.artW, r.scr))
     }
     parts.push('}')
   }

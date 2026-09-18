@@ -279,8 +279,10 @@ def parse_page(fname):
                 for scr, fx in FIXUPS.get('elems', {}).get(block['id'], {}).get(e['id'], {}).items():
                     if scr in el['eff']:
                         for k in ('top', 'width', 'height'):
-                            if k in fx: el['eff'][scr][k] = float(fx[k])
-                        if 'left' in fx: el['eff'][scr]['left'] = {'a': 'grid', 'x': float(fx['left']), 'half': ART_W[scr] / 2}
+                            if k in fx: el['eff'][scr][k] = fx[k] if isinstance(fx[k], dict) else float(fx[k])  # width может быть {"pct": 98}
+                        if 'left' in fx:  # число — x от сетки; словарь — как в данных ({"a": "center-pct", "pct": 49, "x": 0} и т. п.)
+                            el['eff'][scr]['left'] = fx['left'] if isinstance(fx['left'], dict) else {'a': 'grid', 'x': float(fx['left']), 'half': ART_W[scr] / 2}
+                        if 'style' in fx: el['eff'][scr].setdefault('style', {}).update(fx['style'])  # точечные CSS-свойства элемента на экране
                 fx_href = FIXUPS.get('hrefs', {}).get(block['id'], {}).get(e['id'])
                 if fx_href: el['href'] = fx_href
                 # правки текстов с живого сайта (scripts/audit/fixups.json → texts)

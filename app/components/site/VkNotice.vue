@@ -24,6 +24,8 @@ onMounted(() => {
   try { closed = localStorage.getItem(STORAGE_KEY) === '1' } catch { closed = false }
   if (closed) return
   mounted.value = true
+  // крестик рисуется раньше круглой подложки (порядок слоёв экспорта) — поднимаем его, иначе клик уходит в подложку (на живом сайте z-index 200)
+  nextTick(() => { const btn = closeSel.value ? document.querySelector<HTMLElement>('.pf-vk-notice ' + closeSel.value) : null; if (btn) { btn.style.zIndex = '200'; btn.style.cursor = 'pointer' } })
   setTimeout(() => { requestAnimationFrame(() => { visible.value = true }); hideTimer = setTimeout(hide, SHOW_DURATION) }, 500)
 })
 onBeforeUnmount(() => { if (hideTimer) clearTimeout(hideTimer) })

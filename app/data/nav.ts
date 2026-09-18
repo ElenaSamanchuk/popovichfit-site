@@ -15,7 +15,7 @@ export const headerNav: NavItem[] = [
 /** Мобильное меню (T450 #rec592229670). */
 export const mobileNav: NavItem[] = [
   { label: 'Главная', href: '/' },
-  { label: 'Курсы', href: '/#courses' },
+  { label: 'Курсы', href: '/#rec1120250416' }, // блок курсов на главной (как в T450 на живом сайте)
   { label: 'До/после', href: '/results' },
   { label: 'Статьи', href: '/media' },
   { label: 'О тренере', href: '/about' },

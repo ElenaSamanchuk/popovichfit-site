@@ -176,7 +176,7 @@ def elem_spec(el_html, rules, screens=''):
             if k in r and r[k] != '': g[k] = r[k]
         if hv: g['hover'] = '{' + ' '.join(f'{k}:{v}' for k, v in hv.items()) + '}'
         if g: geo[scr] = g
-    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, data=data, anim=anim, sbs=sbs, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
+    return dict(id=eid, type=etype, cls=cls, flex=is_flex, tag=tag, text=text, html=html_inner, href=href, img=img or bg, geo=geo, data=data, anim=anim, sbs=sbs, inline=inline, fields={k: v for k, v in fields.items() if k in ('container', 'widthmode', 'heightmode', 'textfit', 'container-res-320', 'container-res-480', 'container-res-640', 'container-res-960', 'container-res-1200', 'imgwidthmode', 'lockaspectratio', 'filewidth', 'fileheight', 'zoomable', 'imgpopup', 'bgcolor', 'hoverbgcolor', 'hovercolor', 'bordercolor', 'borderwidth', 'hoverbordercolor', 'buttonicon', 'buttoniconpos', 'axisx', 'axisy', 'axisx-res-320', 'axisy-res-320', 'fixed', 'sbs-anim', 'animation', 'containermode')})
 
 def block_spec(rec_html):
     rid = re.match(r'<div id="(rec\d+)"', rec_html).group(1)
