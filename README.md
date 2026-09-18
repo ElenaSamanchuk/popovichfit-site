@@ -21,6 +21,7 @@ Nuxt 4 (Vue 3, Tailwind 4, TypeScript). Все 220 страниц экспорт
 | Корзина (T706, `#order:Товар=цена`) + оплата CloudPayments | `app/components/site/Cart.vue`, `server/api/order.post.ts`, `server/api/cloudpayments/pay.post.ts` |
 | Формы (Zero Block и попапы T702) | `app/components/tilda/ZeroForm.vue`, `app/plugins/tilda-forms.client.ts`, `server/api/lead.post.ts` |
 | Горизонтальный скролл со стрелками | `app/components/tilda/HScroll.vue` |
+| Анимации появления (t-animate Тильды), hover-переходы, слайдеры/аккордеон/табы | `app/utils/appear.ts`, `app/utils/tilda-css.ts`, `app/components/tilda/TildaBlock.vue`, CSS в `app/assets/css/tilda-blocks.css` |
 | Редиректы старых адресов, 404, sitemap, robots | `server/middleware/redirects.ts`, `app/error.vue`, `server/routes/sitemap.xml.ts`, `public/robots.txt` |
 | Картинки экспорта (WebP), шрифты (Involve/Manrope/Unbounded — свои файлы) | `public/img/**`, `public/fonts/**` |
 

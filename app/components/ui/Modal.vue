@@ -56,7 +56,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
         </button>
         <div class="flex min-h-full items-center justify-center px-[20px] py-[60px] max-xs:px-[10px] max-xs:py-[40px]">
           <div
-            class="relative w-full"
+            class="pf-modal__box relative w-full"
             :class="bare ? '' : 'rounded-[10px] bg-white'"
             :style="{ maxWidth: width + 'px' }"
             @click.stop
@@ -72,5 +72,8 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
 <style>
 .pf-modal-enter-active, .pf-modal-leave-active { transition: opacity 0.3s ease; }
 .pf-modal-enter-from, .pf-modal-leave-to { opacity: 0; }
+/* окно: как .t-popup__container Тильды — translateY(-30%) scale(.9) → на месте, .3s ease-in-out */
+.pf-modal__box { transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+.pf-modal-enter-from .pf-modal__box, .pf-modal-leave-to .pf-modal__box { transform: translateY(-40px) scale(0.92); opacity: 0; }
 html.pf-modal-open, html.pf-modal-open body { overflow: hidden; }
 </style>

@@ -6,6 +6,7 @@
 // выбранный по умолчанию вариант (pf-active), цены и ссылку «Купить» из app/data/tariffs.ts.
 import type { ZeroElem, ZeroNode } from '~/utils/tilda-css'
 import { tariffs } from '~/data/tariffs'
+import { appearClass } from '~/utils/appear'
 
 const props = defineProps<{ node: ZeroNode; elems: Map<string, ZeroElem>; optionIndex?: number }>()
 
@@ -29,7 +30,7 @@ function optionIndexOf(children: ZeroNode[], i: number) {
   <template v-if="node.kind === 'elem'">
     <ZeroElem v-if="elems.get(node.id)" :elem="elems.get(node.id)!" />
   </template>
-  <div v-else class="tz__group" :class="['g' + node.id, node.cls, node.flex ? 'tz__flex' : 'absolute', isActive ? 'pf-active' : '']">
+  <div v-else class="tz__group" :class="['g' + node.id, node.cls, node.flex ? 'tz__flex' : 'absolute', isActive ? 'pf-active' : '', appearClass(node.anim)]">
     <div class="tz__mol relative h-full w-full">
       <ZeroNode v-for="(child, i) in node.children" :key="child.id + i" :node="child" :elems="elems" :option-index="optionIndexOf(node.children, i)" />
     </div>

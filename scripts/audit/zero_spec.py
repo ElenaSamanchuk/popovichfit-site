@@ -159,7 +159,7 @@ def elem_spec(el_html, rules, screens=''):
         # 'px' без числа — пустое значение в экспорте (width:px), в каскад не берём (рантайм берёт значение большего экрана)
         g = {k: r[k] for k in ('top', 'left', 'width', 'height', 'z-index', 'text-align', 'backdrop-filter') if k in r and r[k] not in ('px', '')}  # text-align Тильда пишет на элемент, не на атом
         if r.get('opacity') not in (None, ''): g['$elem-opacity'] = r['opacity']  # opacity элемента (anim-hidden и т.п.) — отдельный слой от opacity атома
-        for k in ('font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color', 'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow', 'background-position', 'background-size', 'object-fit', 'white-space', 'padding', 'display', 'justify-content', 'align-items'):
+        for k in ('font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color', 'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow', 'background-position', 'background-size', 'object-fit', 'white-space', 'padding', 'display', 'justify-content', 'align-items', '--t396-speedhover'):
             if k in a: g[k] = a[k]
         for k, v in a.items():
             if k.startswith('--t396-'): g[k.replace('--t396-', '$')] = v
@@ -206,6 +206,7 @@ def block_spec(rec_html):
         if gm:
             gid = gm.group(2); cl = gm.group(1)
             attrs = dict(re.findall(r'data-group-([\w-]+)="([^"]*)"', tag))
+            ganim = {k: v for k, v in re.findall(r'data-animate-([\w-]+)="([^"]*)"', tag) if k in ('style', 'duration', 'delay', 'distance', 'scale', 'mobile', 'chain', 'group')}  # анимация появления группы
             geo = {}
             for scr in SCREENS:
                 g = rules.get(('G' + gid, scr, 'group'), {}); mol = rules.get(('G' + gid, scr, 'molecule'), {})
@@ -233,8 +234,8 @@ def block_spec(rec_html):
                         d['top'] = f'{float(top):g}px'
                         d['left'] = f'calc(50% - {ART_W[scr] / 2:g}px + {float(left):g}px)' if cont == 'grid' else f'{float(left):g}px'
             node = dict(kind='group', id=gid, absxy=absxy, cls=' '.join(c for c in cl.split() if not c.startswith('tn-group__') and c not in ('t396__group-flex', 't-animate', 't396__elem-flex')),
-                        flex='t396__elem-flex' in cl, molFlex='t396__group-flex' in cl, attrs={k: v for k, v in attrs.items() if k in ('flex', 'flexdirection', 'flexalignitems', 'padding', 'widthmode', 'heightmode', 'type-value')}, geo=geo, children=[])
-            groups.append(dict(id=gid, cls=node['cls'], flex=node['flex'], molFlex=node['molFlex'], attrs=node['attrs'], geo=geo))
+                        flex='t396__elem-flex' in cl, molFlex='t396__group-flex' in cl, attrs={k: v for k, v in attrs.items() if k in ('flex', 'flexdirection', 'flexalignitems', 'padding', 'widthmode', 'heightmode', 'type-value')}, geo=geo, children=[], **({'anim': ganim} if ganim else {}))
+            groups.append(dict(id=gid, cls=node['cls'], flex=node['flex'], molFlex=node['molFlex'], attrs=node['attrs'], geo=geo, anim=ganim))
             (stack[-1][0]['children'] if stack else tree).append(node)
             stack.append((node, depth))
             continue

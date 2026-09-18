@@ -24,6 +24,8 @@ export default defineNuxtConfig({
         { name: 'yandex-verification', content: 'ef3a6b04ad30f479' },
       ],
       link: [{ rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
+      // анимации появления (t-animate) включаются только при JS и без prefers-reduced-motion; Playwright (webdriver) — без анимаций и без smooth-scroll
+      script: [{ innerHTML: "(function(){var h=document.documentElement;if(navigator.webdriver){h.classList.add('pf-wd')}else if(!matchMedia('(prefers-reduced-motion: reduce)').matches){h.classList.add('pf-js')}if(window.innerWidth<1200)h.classList.add('pf-nomob')})()", tagPosition: 'head' }],
     },
   },
   runtimeConfig: {

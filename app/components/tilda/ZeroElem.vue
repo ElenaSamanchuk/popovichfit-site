@@ -2,12 +2,14 @@
 // Один элемент Zero Block: text / button / image / shape / vector / html / video / form.
 // Геометрия и стили — в CSS (класс .e<id>, см. utils/tilda-css.ts); здесь только разметка и контент.
 import type { ZeroElem } from '~/utils/tilda-css'
+import { appearClass } from '~/utils/appear'
 
 import { tariffs } from '~/data/tariffs'
 
 const props = defineProps<{ elem: ZeroElem }>()
 const e = props.elem
-const cls = computed(() => `tz__el tz__el--${e.type} e${e.id}${e.cls ? ' ' + e.cls : ''}${e.flex ? ' tz__flex' : ''}`)
+const ap = appearClass(e.anim)
+const cls = computed(() => `tz__el tz__el--${e.type} e${e.id}${e.cls ? ' ' + e.cls : ''}${e.flex ? ' tz__flex' : ''}${ap ? ' ' + ap : ''}`)
 
 // карточки тарифов: начальное состояние из данных (SSR), клики — utils/pf-cards.ts
 const pfKey = inject<string | null>('pfKey', null)

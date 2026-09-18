@@ -20,8 +20,8 @@ export interface ZeroElem {
   sbs?: { event: string; trg: string[]; steps: Array<{ mx?: number; my?: number; sx?: number; sy?: number; op?: number; ro?: number; ti?: number; ea?: string; dt?: number }> }
   video?: { kind: 'youtube' | 'vimeo' | 'kinescope'; id: string }; form?: unknown[]; formServices?: string[]
 }
-export interface ZeroGroup { id: string; cls: string; flex?: boolean; molFlex?: boolean; attrs?: Record<string, string>; eff: Record<string, Eff>; mol: Record<string, Record<string, string>> }
-export type ZeroNode = { kind: 'elem'; id: string } | { kind: 'group'; id: string; cls: string; flex: boolean; molFlex: boolean; children: ZeroNode[] }
+export interface ZeroGroup { id: string; cls: string; flex?: boolean; molFlex?: boolean; attrs?: Record<string, string>; eff: Record<string, Eff>; mol: Record<string, Record<string, string>>; anim?: Record<string, string> }
+export type ZeroNode = { kind: 'elem'; id: string } | { kind: 'group'; id: string; cls: string; flex: boolean; molFlex: boolean; children: ZeroNode[]; anim?: Record<string, string> }
 export interface Artboard { h: number | null; bg?: string | null; pos?: string | null; upscale?: string | null; valign?: string | null; hug?: boolean; bgImage?: string | null }
 export interface TildaBlock {
   id: string; type: string; vis: { min: number | null; max: number | null }; bg?: string | null
@@ -37,6 +37,11 @@ export interface TildaBlock {
   showHidden?: boolean
 }
 export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }>; showmore?: Array<{ href: string; cls: string; hideBtn: boolean; hideBlk: boolean }> }
+
+import { appearVars } from '~/utils/appear'
+
+/** переходы анимации появления (opacity/translate/scale по --ap-*); у элементов без неё переменных нет → короткий hover-переход */
+const AP_TRANSITION = 'opacity var(--ap-dur,.2s) var(--ap-ease,ease-in-out) var(--ap-delay,0s),translate var(--ap-dur,.2s) var(--ap-ease,ease) var(--ap-delay,0s),scale var(--ap-dur,.2s) var(--ap-ease,ease) var(--ap-delay,0s)'
 
 const RANGES = [
   { scr: '1600', media: '(min-width: 1600px)', artW: 1600 }, // только у блоков с экраном 1600 (artboards['1600']); сетка там = окно
@@ -186,6 +191,7 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   // фон кнопок/фигур из переменных (явный background-color ставит opacityCss)
   if (st['$bgcolor-color'] && !st['background-color']) css += `background-color:${st['$bgcolor-color']};`
   if (st['$bgcolor-image'] && st['$bgcolor-image'] !== 'none' && !st['background-image']) css += `background-image:${st['$bgcolor-image']};`
+  css += appearVars(e.anim) // переменные анимации появления (в каждом диапазоне: медиа-правила не наследуют друг друга)
   let out = `${sel}{${css}}`
   // иконка кнопки (библиотечная svg через mask) и цвет текста кнопки
   if (st['icon']) {
@@ -198,8 +204,9 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
     for (const k of ['width', 'height', 'order', 'margin-right', 'margin-left']) if (ic[k]) icss += `${k}:${ic[k]};`
     if (icss) out += `${sel} .tz__icon{${icss}}`
   }
+  const sp = st['--t396-speedhover'] || '0.2s' // скорость hover-перехода Тильды (var(--t396-speedhover))
   if (st['btn-color']) out += `${sel} .tz__btn-text{color:${st['btn-color']};}`
-  if (st['btn-hover-color']) out += `${sel}:hover .tz__btn-text{color:${st['btn-hover-color']};}`
+  if (st['btn-hover-color']) out += `${sel} .tz__btn-text{transition:color ${sp} ease-in-out;}${sel}:hover .tz__btn-text{color:${st['btn-hover-color']};}`
   // кнопка без фиксированной высоты: высота из padding контента (.tn-atom__button-content)
   if (e.type === 'button' && (st['btn-pad'] || st['btn-gap'])) {
     let b2 = ''
@@ -214,7 +221,8 @@ function elemRules(sel: string, e: ZeroElem, eff: Eff, mobile: boolean, artW: nu
   if (st['$hover-color']) hv.push(`color:${st['$hover-color']}`)
   if (st['$bordercolor-hover']) hv.push(`border-color:${st['$bordercolor-hover']}`)
   if (st['$hover-opacity']) hv.push(`opacity:${st['$hover-opacity']}`)
-  if (hv.length) out += `${sel}:hover{${hv.join(';')}}`
+  // плавный hover, как у атома Тильды: transition: background-color/color/border-color var(--t396-speedhover), box-shadow .2s
+  if (hv.length) out += `${sel}{transition:background-color ${sp} ease-in-out,color ${sp} ease-in-out,border-color ${sp} ease-in-out,box-shadow .2s ease-in-out,${AP_TRANSITION}}${sel}:hover{${hv.join(';')}}`
   out += sbsRules(sel, e)
   return out
 }
@@ -261,7 +269,7 @@ function sbsRules(sel: string, e: ZeroElem): string {
     fin.push(`transform:${sbsTransform(last) || 'none'}`)
     // триггер: сам элемент или другие элементы блока (trgels) — через :has() на секции
     const trigger = sbs.trg.length ? `.tz:has(${sbs.trg.map((t) => `.e${t}:hover`).join(',')}) ${sel}` : `${sel}:hover`
-    out += `${sel}{transition:opacity ${dur}ms ease,transform ${dur}ms ease}${trigger}{${fin.join(';')}}`
+    out += `${sel}{transition:opacity ${dur}ms ease,transform ${dur}ms ease,background-color .2s ease-in-out,color .2s ease-in-out,translate var(--ap-dur,.2s) var(--ap-ease,ease) var(--ap-delay,0s),scale var(--ap-dur,.2s) var(--ap-ease,ease) var(--ap-delay,0s)}${trigger}{${fin.join(';')}}`
   }
   return out
 }
@@ -313,6 +321,7 @@ export function zeroBlockCss(b: TildaBlock): string {
       const w = num(eff.width, mobile); if (w !== null) css += `width:${w};`
       const h = num(eff.height, mobile); if (h !== null) css += `height:${h};`
       if (eff.style?.['z-index']) css += `z-index:${eff.style['z-index']};`
+      css += appearVars(g.anim)
       for (const k of ['flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width']) if (eff.style?.[k]) css += `${k}:${eff.style[k]};`
       parts.push(`${id} .g${g.id}{${css}}`)
       // молекула: flex-раскладка и оформление

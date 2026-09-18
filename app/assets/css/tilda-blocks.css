@@ -31,3 +31,19 @@
 .tb--gallery { background: transparent; position: relative; }
 .tb--gallery .t-slds { visibility: visible; }
 .tb--gallery .t-slds__bgimg { width: 100%; }
+
+/* анимация появления Zero Block (t-animate Тильды): скрыто до попадания в окно только при html.pf-js (см. utils/appear.ts) */
+html.pf-js .tz__ap { transition: opacity var(--ap-dur, 1s) var(--ap-ease, ease) var(--ap-delay, 0s), translate var(--ap-dur, 1s) var(--ap-ease, ease) var(--ap-delay, 0s), scale var(--ap-dur, 1s) var(--ap-ease, ease) var(--ap-delay, 0s); }
+html.pf-js:not(.pf-nomob) .tz__ap:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap:not(.tz__ap--desktop):not(.tz__ap--in) { opacity: 0 !important; }
+html.pf-js:not(.pf-nomob) .tz__ap--fadeinup:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap--fadeinup:not(.tz__ap--desktop):not(.tz__ap--in) { translate: 0 var(--ap-dist, 100px); }
+html.pf-js:not(.pf-nomob) .tz__ap--fadeindown:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap--fadeindown:not(.tz__ap--desktop):not(.tz__ap--in) { translate: 0 calc(-1 * var(--ap-dist, 100px)); }
+html.pf-js:not(.pf-nomob) .tz__ap--fadeinleft:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap--fadeinleft:not(.tz__ap--desktop):not(.tz__ap--in) { translate: var(--ap-dist, 100px) 0; }
+html.pf-js:not(.pf-nomob) .tz__ap--fadeinright:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap--fadeinright:not(.tz__ap--desktop):not(.tz__ap--in) { translate: calc(-1 * var(--ap-dist, 100px)) 0; }
+html.pf-js:not(.pf-nomob) .tz__ap--zoomin:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap--zoomin:not(.tz__ap--desktop):not(.tz__ap--in) { scale: var(--ap-scale, 0.9); }
+html.pf-js:not(.pf-nomob) .tz__ap--zoomout:not(.tz__ap--in), html.pf-js.pf-nomob .tz__ap--zoomout:not(.tz__ap--desktop):not(.tz__ap--in) { scale: var(--ap-scale, 1.1); }
+.tz__ap--now { transition: none !important; }
+html.pf-wd { scroll-behavior: auto; }
+
+/* плавное переключение вкладок T395/T1281 и блоков «показать ещё» */
+@keyframes pf-fade-in { from { opacity: 0; } to { opacity: 1; } }
+.pf-fade-in { animation: pf-fade-in 0.35s ease-in-out; }

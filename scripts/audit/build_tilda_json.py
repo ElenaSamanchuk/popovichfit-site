@@ -76,7 +76,7 @@ def parse_left(v):
     if m: return {'a': 'window-left', 'x': 0.0, 'xpct': float(m.group(1))}
     return {'a': 'raw', 'raw': v}
 
-STYLE_KEYS = ('icon', 'btn-color', 'btn-hover-color', 'btn-pad', 'btn-gap', 'backdrop-filter', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
+STYLE_KEYS = ('icon', 'btn-color', 'btn-hover-color', 'btn-pad', 'btn-gap', 'backdrop-filter', '--t396-speedhover', 'flex-shrink', 'flex-grow', 'align-self', 'order', 'margin', 'min-width', 'max-width', 'font-size', 'line-height', 'font-weight', 'font-family', 'color', 'text-align', 'letter-spacing', 'background-color',
               'border-radius', 'opacity', 'transform', 'background-image', 'border-color', 'border-width', 'text-transform', 'box-shadow',
               'background-position', 'background-size', 'white-space', 'padding', 'justify-content', 'align-items', 'z-index',
               'text-decoration', 'font-style', 'background-attachment', 'background-repeat', 'overflow', 'display')
@@ -274,7 +274,7 @@ def parse_page(fname):
                 molEff = {}; cur = {}
                 for scr in SCREENS:
                     cur = {**cur, **mol.get(scr, {})}; molEff[scr] = dict(cur)
-                groups.append({'id': g['id'], 'cls': g['cls'], 'flex': g['flex'], 'molFlex': g['molFlex'], 'attrs': g['attrs'], 'eff': effective(geo), 'mol': molEff})
+                groups.append({'id': g['id'], 'cls': g['cls'], 'flex': g['flex'], 'molFlex': g['molFlex'], 'attrs': g['attrs'], 'eff': effective(geo), 'mol': molEff, **({'anim': g['anim']} if g.get('anim') else {})})
             block['groups'] = groups
             block['tree'] = spec['tree']
             for el in elems:

@@ -51,9 +51,10 @@ const anchorId = computed(() => b.type === '215' ? b.html?.match(/name="([^"]+)"
 
 // интерактив стандартных блоков без runtime Тильды: аккордеон T585, табы T395, слайдер t-slds (галереи T746/T663)
 const root = ref<HTMLElement | null>(null)
-/** слайдер Тильды (.t-slds) без её runtime: порт t_slds_SliderWidth / t746_imageHeight / t746_arrowWidth / t_slds_UpdateSliderArrowsHeight —
- * ширина слайда = ширина контейнера, высота картинки — padding-bottom разделителя по data-slider-image-width/height,
- * показываем активный слайд (остальные display:none), стрелки и буллеты листают по кругу */
+/** слайдер Тильды (.t-slds) без её runtime: порт t_slds_SliderWidth / t746_imageHeight / t746_arrowWidth / t_slds_updateSlider —
+ * слайды в ряд, обёртка сдвигается transform'ом с переходом (data-slider-transition, по умолчанию 300 мс, как .t-slds_animated),
+ * зацикливание через слайды-«пустышки» по краям (копии последнего и первого), высота — по картинке активного слайда,
+ * стрелки/буллеты/клавиатура/свайп; без зацикливания (t-slds__nocycle) стрелки на краях прячутся */
 function initSlider(el: HTMLElement) {
   el.querySelectorAll<HTMLElement>('.t-slds').forEach((slds) => {
     if (slds.dataset.pfInit) return
@@ -62,59 +63,74 @@ function initSlider(el: HTMLElement) {
     const wrapper = slds.querySelector<HTMLElement>('.t-slds__items-wrapper')
     const items = [...slds.querySelectorAll<HTMLElement>('.t-slds__item:not(.t-slds__item_dummy)')]
     if (!items.length || !wrapper) return
-    // без зацикливания (t-slds__nocycle): Тильда добавляет по краям слайды-«пустышки», а CSS прячет первый/последний
-    // (opacity:0) — без пустышек прозрачным становится первый настоящий слайд, поэтому добавляем их так же
-    const nocycle = wrapper.classList.contains('t-slds__nocycle')
-    if (nocycle) {
-      for (const pos of ['afterbegin', 'beforeend'] as const) { const d = document.createElement('div'); d.className = 't-slds__item t-slds__item_dummy'; d.setAttribute('aria-hidden', 'true'); wrapper.insertAdjacentHTML(pos, d.outerHTML) }
-    }
-    // высота картинок: как t746_imageHeight/t604_imageHeight/t670_imageHeight
+    // высота картинок: как t746_imageHeight/t604_imageHeight/t670_imageHeight (padding-bottom по пропорции)
     slds.querySelectorAll<HTMLElement>('[data-slider-image-width][data-slider-image-height]').forEach((sep) => {
       const w = parseInt(sep.getAttribute('data-slider-image-width') || '0'), h = parseInt(sep.getAttribute('data-slider-image-height') || '0')
       if (w && h) sep.style.paddingBottom = `${(h / w) * 100}%`
     })
+    const inRow = () => { const c = parseInt(wrapper.getAttribute('data-slider-items-in-row') || '1') || 1; return window.innerWidth <= 640 ? 1 : window.innerWidth <= 960 && c > 1 ? 2 : c }
+    const nocycle = wrapper.classList.contains('t-slds__nocycle') || wrapper.getAttribute('data-slider-with-cycle') === 'false' || items.length < 2 || inRow() > 1
+    const dur = parseInt(wrapper.getAttribute('data-slider-transition') || '300') || 300
+    const correctH = wrapper.getAttribute('data-slider-correct-height') !== 'false'
+    // пустышки по краям (как у Тильды): для зацикливания — копии последнего и первого слайда, иначе пустые (CSS прячет крайние)
+    const mk = (src?: HTMLElement) => { const d = src ? (src.cloneNode(true) as HTMLElement) : document.createElement('div'); d.className = (src ? d.className.replace('t-slds__item_active', '') : 't-slds__item') + ' t-slds__item_dummy'; d.setAttribute('aria-hidden', 'true'); d.removeAttribute('id'); return d }
+    wrapper.prepend(mk(nocycle ? undefined : items[items.length - 1])); wrapper.append(mk(nocycle ? undefined : items[0]))
+    const all = [...wrapper.children].filter((x) => x.classList.contains('t-slds__item')) as HTMLElement[]
     const arrows = [...rec.querySelectorAll<HTMLElement>('.t-slds__arrow_wrapper')]
     const bullets = [...slds.querySelectorAll<HTMLElement>('.t-slds__bullet')]
-    const inRow = () => { const c = parseInt(wrapper.getAttribute('data-slider-items-in-row') || '1') || 1; return window.innerWidth <= 640 ? 1 : window.innerWidth <= 960 && c > 1 ? 2 : c }
     let i = Math.max(0, items.findIndex((it) => it.classList.contains('t-slds__item_active')))
+    let w = 0, busy = false
+    const place = (k: number, animate: boolean) => {
+      wrapper.style.transition = animate ? `transform ${dur}ms ease-in-out, height 300ms ease-in-out` : 'none'
+      wrapper.style.transform = `translateX(-${(k + 1) * w}px)`
+    }
+    const mark = () => {
+      items.forEach((it, j) => { it.classList.toggle('t-slds__item_active', j === i); it.setAttribute('aria-hidden', String(j !== i)) })
+      slds.querySelectorAll<HTMLElement>('.t-slds__caption__container').forEach((c, j) => { c.style.display = j === i ? '' : 'none' })
+      bullets.forEach((bl, j) => { bl.classList.toggle('t-slds__bullet_active', j === i); bl.querySelector('button')?.setAttribute('aria-current', j === i ? 'true' : 'false') })
+      if (nocycle) { // без зацикливания стрелки на краях прячутся (как t_slds_updateSlider)
+        const l = rec.querySelector<HTMLElement>('.t-slds__arrow_wrapper-left'), r = rec.querySelector<HTMLElement>('.t-slds__arrow_wrapper-right')
+        if (l) l.style.display = i > 0 ? 'block' : ''
+        if (r) r.style.display = i + inRow() >= items.length ? 'none' : ''
+      }
+      const ah = items[i]?.offsetHeight || 0
+      if (correctH && ah) wrapper.style.height = `${ah}px`
+      // t_slds_UpdateSliderArrowsHeight: высота обёртки стрелок = высота активного слайда (у T746 перебивается height:auto!important)
+      arrows.forEach((a) => { if (ah) a.style.height = `${ah}px` })
+    }
     const layout = () => {
       // t_slds_SliderWidth: ширина слайда = ширина .t-slds__container без паддингов (делённая на число в ряду)
       const cont = slds.querySelector<HTMLElement>('.t-slds__container')
       const cs = cont ? getComputedStyle(cont) : null
       const cw = cont ? cont.clientWidth - ((parseInt(cs!.paddingLeft) || 0) + (parseInt(cs!.paddingRight) || 0)) : 0
-      const n = inRow()
-      if (cw > 0) items.forEach((it) => { it.style.width = `${cw / n}px` })
-      wrapper.style.width = ''
-      wrapper.style.height = 'auto'
+      if (cw > 0) w = cw / inRow()
+      all.forEach((it) => { it.style.width = `${w}px`; it.style.flex = `0 0 ${w}px` })
+      wrapper.style.width = `${all.length * w}px`
+      place(i, false)
       // t746_arrowWidth: стрелки «у картинки» — ширина обёртки = половина свободного места по бокам слайда (в попапе — относительно окна попапа)
       const slide = items[i]?.querySelector<HTMLElement>('.t-slds__wrapper')
       const host = rec.classList.contains('tb--gallery') ? rec.clientWidth : window.innerWidth
       arrows.forEach((a) => {
         const nearpic = a.closest('.t-slds__arrow_container')?.classList.contains('t-slds__arrow-nearpic')
         a.style.width = window.innerWidth > 960 && nearpic && slide ? `${(host - slide.offsetWidth) / 2}px` : ''
-        // t_slds_UpdateSliderArrowsHeight: высота обёртки стрелок = высота активного слайда (у T746 перебивается height:auto!important)
-        const ah = items[i]?.clientHeight || 0
-        if (ah) a.style.height = `${ah}px`
       })
+      mark()
     }
     const show = (n: number) => {
-      const cnt = inRow()
-      i = nocycle ? Math.max(0, Math.min(items.length - cnt, n)) : (n + items.length) % items.length
-      if (nocycle) { // без зацикливания стрелки на краях прячутся (как t_slds_updateSlider)
-        const l = rec.querySelector<HTMLElement>('.t-slds__arrow_wrapper-left'), r = rec.querySelector<HTMLElement>('.t-slds__arrow_wrapper-right')
-        if (l) l.style.display = i > 0 ? 'block' : ''
-        if (r) r.style.display = i + cnt >= items.length ? 'none' : ''
-      }
-      items.forEach((it, j) => {
-        const vis = (j - i + items.length) % items.length < cnt
-        it.classList.toggle('t-slds__item_active', j === i); it.style.display = vis ? 'block' : 'none'; it.setAttribute('aria-hidden', String(!vis))
-      })
-      slds.querySelectorAll<HTMLElement>('.t-slds__caption__container').forEach((c, j) => { c.style.display = j === i ? '' : 'none' })
-      bullets.forEach((bl, j) => { bl.classList.toggle('t-slds__bullet_active', j === i); bl.querySelector('button')?.setAttribute('aria-current', j === i ? 'true' : 'false') })
-      layout()
+      if (busy) return
+      if (nocycle) { i = Math.max(0, Math.min(items.length - inRow(), n)); place(i, true); mark(); return }
+      const k = n // -1 и items.length — пустышки по краям: доезжаем до них с анимацией, потом без анимации прыгаем на настоящий слайд
+      busy = true
+      place(k, true)
+      i = (k + items.length) % items.length
+      mark()
+      const done = () => { if (!busy) return; busy = false; wrapper.removeEventListener('transitionend', onEnd); if (k !== i) place(i, false) }
+      const onEnd = (e: TransitionEvent) => { if (e.target === wrapper && e.propertyName === 'transform') done() }
+      wrapper.addEventListener('transitionend', onEnd)
+      setTimeout(done, dur + 80)
     }
+    layout()
     slds.style.visibility = 'visible'
-    show(i)
     requestAnimationFrame(layout)
     rec.querySelector('.t-slds__arrow_wrapper-left')?.addEventListener('click', () => show(i - 1))
     rec.querySelector('.t-slds__arrow_wrapper-right')?.addEventListener('click', () => show(i + 1))
@@ -133,11 +149,24 @@ onMounted(() => {
   initSlider(el)
   if (b.type === '585') {
     const headers = [...el.querySelectorAll<HTMLElement>('.t585__header')]
+    // раскрытие как t585_accordionShow/Hide: display + max-height/opacity с переходом .3s (transition — в CSS экспорта)
     const setOpen = (header: HTMLElement, open: boolean) => {
+      if (header.classList.contains('t585__opened') === open) return
       header.classList.toggle('t585__opened', open)
       header.querySelector('.t585__trigger-button')?.setAttribute('aria-expanded', String(open))
       const content = header.nextElementSibling as HTMLElement | null
-      if (content) { content.hidden = !open; content.style.display = open ? 'block' : 'none' }
+      if (!content) return
+      if (open) {
+        content.hidden = false; content.style.display = 'block'; content.style.maxHeight = '0px'; content.style.opacity = '0'
+        void content.offsetHeight
+        content.style.maxHeight = `${content.scrollHeight}px`; content.style.opacity = '1'
+        setTimeout(() => { if (header.classList.contains('t585__opened')) content.style.maxHeight = 'none' }, 320)
+      } else {
+        content.style.maxHeight = `${content.scrollHeight}px`
+        void content.offsetHeight
+        content.style.maxHeight = '0px'; content.style.opacity = '0'
+        setTimeout(() => { if (!header.classList.contains('t585__opened')) { content.style.display = 'none'; content.hidden = true } }, 320)
+      }
     }
     headers.forEach((header) => header.addEventListener('click', () => {
       const open = !header.classList.contains('t585__opened')
@@ -154,8 +183,9 @@ onMounted(() => {
     const recIds = tabs.map((t) => (t.getAttribute('data-tab-rec-ids') || '').split(',').map((x) => x.trim()).filter(Boolean))
     const activate = (i: number) => {
       tabs.forEach((tab, j) => { tab.classList.toggle(`${t}__tab_active`, i === j); tab.classList.toggle(`${t}__tab-style1_active`, i === j && b.type === '1281'); tab.querySelector('button')?.setAttribute('aria-selected', String(i === j)) })
-      panels.forEach((p, j) => { p.style.display = i === j ? 'block' : 'none' })
-      recIds.forEach((ids, j) => ids.forEach((id) => document.getElementById('rec' + id)?.classList.toggle('t395__off', i !== j)))
+      const fade = (x: HTMLElement) => { x.classList.remove('pf-fade-in'); void x.offsetWidth; x.classList.add('pf-fade-in') }
+      panels.forEach((p, j) => { const was = p.style.display !== 'none'; p.style.display = i === j ? 'block' : 'none'; if (i === j && !was) fade(p) })
+      recIds.forEach((ids, j) => ids.forEach((id) => { const r = document.getElementById('rec' + id); if (!r) return; const was = !r.classList.contains('t395__off'); r.classList.toggle('t395__off', i !== j); if (i === j && !was) fade(r) }))
       if (select) select.selectedIndex = i
     }
     tabs.forEach((tab, i) => tab.addEventListener('click', () => activate(i)))

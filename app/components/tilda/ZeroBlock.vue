@@ -4,6 +4,7 @@
 // CSS-правилами из utils/tilda-css.ts — то же поведение, что у Тильды, без её runtime.
 import { zeroBlockCss, type TildaBlock, type ZeroElem, type ZeroNode } from '~/utils/tilda-css'
 import { initPfCards } from '~/utils/pf-cards'
+import { initAppear } from '~/utils/appear'
 
 const props = defineProps<{ block: TildaBlock }>()
 const css = computed(() => zeroBlockCss(props.block))
@@ -23,7 +24,10 @@ const artStyle = computed(() => {
 provide('pfEagerImages', !!props.block.artboard?.fixed || (props.block.uc || []).includes('uc-sticky-footer'))
 const root = ref<HTMLElement | null>(null)
 // карточки тарифов внутри блока — после гидрации этого компонента (плагин может отработать раньше)
-onMounted(() => { if (root.value?.querySelector('.pf-card')) nextTick(() => initPfCards(root.value!)) })
+onMounted(() => {
+  if (root.value?.querySelector('.pf-card')) nextTick(() => initPfCards(root.value!))
+  if (root.value) initAppear(root.value)
+})
 const isEmpty = computed(() => !(props.block.elems?.length || props.block.groups?.length))
 /** отступы t-rec (padding-top/bottom) — артборд лежит внутри секции с этими отступами */
 const padStyle = computed(() => {
