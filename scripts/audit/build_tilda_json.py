@@ -263,6 +263,10 @@ def parse_page(fname):
                     mi = re.search(r"url\(['\"]?([^'\")]+)", chunk)
                     if mi: el['bgImg'] = img_path(mi.group(1))
                 el.update(elem_extra(chunk, e['type']))
+                # правки текстов с живого сайта (scripts/audit/fixups.json → texts)
+                fx_text = FIXUPS.get('texts', {}).get(block['id'], {}).get(e['id'])
+                if fx_text is not None:
+                    el['html'] = typograf_html(fx_text); el['text'] = re.sub(r'<[^>]+>', '', fx_text)
                 elems.append(el)
             block['elems'] = elems
             groups = []

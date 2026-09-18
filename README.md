@@ -28,6 +28,8 @@ Nuxt 4 (Vue 3, Tailwind 4, TypeScript). Все 220 страниц экспорт
 Данные страниц (`app/data/tilda/*.json`, 69 МБ) генерируются из экспорта скриптом `scripts/audit/build_tilda_json.py`
 (экспорт лежит в `old-site/`, в git не попадает) и отдаются серверу как ассеты (`server/api/tilda/[file].get.ts`).
 
+Точечные поправки данных (битые группы экспорта, правки текстов с живого сайта) — `scripts/audit/fixups.json`.
+
 ## Команды
 
 ```bash
