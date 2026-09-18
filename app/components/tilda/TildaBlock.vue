@@ -67,6 +67,17 @@ const certHtml = computed(() => {
   if (!srcs.length) return null
   return `<div class="pf-cert-grid">${srcs.map((src, i) => `<div class="pf-cert-grid__item"><img src="${src}" alt="Сертификат ${i + 1}" loading="lazy" data-zoomable="yes"></div>`).join('')}</div>`
 })
+/** свои виджеты заказчика в HTML-блоках (тарифы popovichfit-tariffs: iframe + скрипт подгонки высоты и модалок через postMessage):
+ *  их inline-скрипты выполняем как есть — это её код, без зависимостей от Тильды */
+const customRoot = ref<HTMLElement | null>(null)
+function runCustomScripts() {
+  if (!customRoot.value || !/popovich-tariffs/.test(b.custom || '')) return
+  for (const m of (b.custom || '').matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)) {
+    const code = m[1]!.trim(); if (!code || /t_onFuncLoad|t396|tildacdn/.test(code)) continue
+    const sc = document.createElement('script'); sc.textContent = code; customRoot.value.appendChild(sc)
+  }
+}
+onMounted(() => nextTick(runCustomScripts))
 const popupRoot = ref<HTMLElement | null>(null)
 /** подложка zero-попапа T1093 из CSS блока (#rec .t1093 .t-popup__bg{…}): у Тильды по умолчанию она прозрачная, у части попапов
  *  rgba(0,0,0,.2/.3), почти у всех — backdrop-filter: blur(4px) */
@@ -293,7 +304,7 @@ onMounted(() => {
   </Modal>
 
   <!-- HTML-код с видимым содержимым (плашки, iframe) -->
-  <div v-else-if="b.type === '131' && customVisible" class="tb tb--custom" :data-tilda-rec="b.id" v-html="customHtml" />
+  <div v-else-if="b.type === '131' && customVisible" :id="b.id" ref="customRoot" class="tb tb--custom" :data-tilda-rec="b.id" v-html="customHtml" />
   <template v-else-if="b.type === '131'" />
 
   <!-- служебные блоки — их заменяют общие компоненты -->
