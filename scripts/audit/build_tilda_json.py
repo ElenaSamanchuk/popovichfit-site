@@ -17,6 +17,8 @@ import zero_spec as Z
 ROOT = 'old-site'
 OUT = 'app/data/tilda'
 SCREENS = ['1600', '1200', '960', '640', '480', '320']  # 1600 — только у артбордов с этим экраном
+ART_W = {'1600': 1600, '1200': 1200, '960': 960, '640': 640, '480': 480, '320': 320}
+FIXUPS = json.load(open(os.path.join(os.path.dirname(__file__), 'fixups.json'))) if os.path.exists(os.path.join(os.path.dirname(__file__), 'fixups.json')) else {}
 os.makedirs(OUT, exist_ok=True)
 
 def img_path(p):
@@ -274,7 +276,13 @@ def parse_page(fname):
                 molEff = {}; cur = {}
                 for scr in SCREENS:
                     cur = {**cur, **mol.get(scr, {})}; molEff[scr] = dict(cur)
-                groups.append({'id': g['id'], 'cls': g['cls'], 'flex': g['flex'], 'molFlex': g['molFlex'], 'attrs': g['attrs'], 'eff': effective(geo), 'mol': molEff, **({'anim': g['anim']} if g.get('anim') else {})})
+                geff = effective(geo)
+                # точечные поправки (scripts/audit/fixups.json): координаты группы из замера живого сайта, если экспорт битый
+                for scr, fx in FIXUPS.get('groups', {}).get(block['id'], {}).get(g['id'], {}).items():
+                    if scr in geff:
+                        if 'top' in fx: geff[scr]['top'] = float(fx['top'])
+                        if 'left' in fx: geff[scr]['left'] = {'a': 'grid', 'x': float(fx['left']), 'half': ART_W[scr] / 2}
+                groups.append({'id': g['id'], 'cls': g['cls'], 'flex': g['flex'], 'molFlex': g['molFlex'], 'attrs': g['attrs'], 'eff': geff, 'mol': molEff, **({'anim': g['anim']} if g.get('anim') else {})})
             block['groups'] = groups
             block['tree'] = spec['tree']
             for el in elems:

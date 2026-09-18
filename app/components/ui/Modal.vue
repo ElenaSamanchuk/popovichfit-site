@@ -56,7 +56,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
             </g>
           </svg>
         </button>
-        <div class="flex min-h-full items-center justify-center px-[20px] py-[60px] max-xs:px-[10px] max-xs:py-[40px]">
+        <div class="flex min-h-full items-center justify-center px-[20px] py-[60px] max-xs:px-[10px] max-xs:py-[40px]" @click.self="modal.close()">
           <div
             class="pf-modal__box relative w-full"
             :class="bare ? '' : 'rounded-[10px] bg-white'"

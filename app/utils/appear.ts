@@ -22,7 +22,22 @@ export function appearVars(anim?: Record<string, string> | null): string {
   return css
 }
 
-/** запуск анимаций появления внутри корня: элемент стартует, когда попадает в окно (как t_animate__startAnimation) */
+/** запуск анимаций появления: элемент стартует, когда его рамка попадает в окно (как t_animate__startAnimation — по
+ *  getBoundingClientRect, без учёта обрезки overflow: IntersectionObserver тут не годится — сдвинутый на 100px вниз элемент
+ *  внизу артборда с overflow:hidden «не пересекается» с окном и никогда бы не появился) */
+const pending = new Set<HTMLElement>()
+let listening = false
+let ticking = false
+function check() {
+  ticking = false
+  const vh = window.innerHeight
+  for (const el of pending) {
+    // как у Тильды: старт, когда верх элемента выше нижней границы окна (в т.ч. элементы выше окна, в fixed-плашках, скрытые)
+    if (el.getBoundingClientRect().top < vh) { el.classList.add('tz__ap--in'); pending.delete(el) }
+  }
+  if (!pending.size && listening) { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); document.removeEventListener('click', onScroll, true); document.removeEventListener('transitionend', onScroll, true); listening = false }
+}
+function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(check) } }
 export function initAppear(root: HTMLElement) {
   const els = [...root.querySelectorAll<HTMLElement>('.tz__ap:not(.tz__ap--in)')]
   if (!els.length) return
@@ -30,13 +45,17 @@ export function initAppear(root: HTMLElement) {
   const now = (el: HTMLElement) => el.classList.add('tz__ap--now', 'tz__ap--in')
   if (!html.classList.contains('pf-js')) { els.forEach(now); return }
   const mobile = html.classList.contains('pf-nomob')
-  const io = new IntersectionObserver((entries) => {
-    for (const en of entries) if (en.isIntersecting) { (en.target as HTMLElement).classList.add('tz__ap--in'); io.unobserve(en.target) }
-  }, { threshold: 0 })
   for (const el of els) {
     if (mobile && el.classList.contains('tz__ap--desktop')) { now(el); continue }
     // уже пролистано выше экрана (страница открыта по якорю) — без анимации, как у Тильды
     if (el.getBoundingClientRect().bottom < -500) { now(el); continue }
-    io.observe(el)
+    pending.add(el)
   }
+  if (!listening && pending.size) {
+    window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll)
+    // показ по клику/переходу (вкладки, «показать ещё», плашки): без прокрутки тоже перепроверяем
+    document.addEventListener('click', onScroll, true); document.addEventListener('transitionend', onScroll, true)
+    listening = true
+  }
+  onScroll()
 }

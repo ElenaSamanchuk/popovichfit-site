@@ -121,7 +121,7 @@ onBeforeUnmount(() => { document.removeEventListener('click', onClick, true); do
         <button type="button" class="fixed right-[20px] top-[20px] z-[2] flex h-[23px] w-[23px] items-center justify-center max-xs:right-[12px] max-xs:top-[12px]" aria-label="Закрыть корзину" @click="cart.close()">
           <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" role="presentation"><g fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45) translate(-11.313708, -11.313708)" x="10.3137085" y="-3.6862915" width="2" height="30" /><rect transform="translate(11.313708, 11.313708) rotate(-315) translate(-11.313708, -11.313708)" x="10.3137085" y="-3.6862915" width="2" height="30" /></g></svg>
         </button>
-        <div class="flex min-h-full items-start justify-center px-[20px] py-[60px] max-xs:px-[10px] max-xs:py-[40px]">
+        <div class="flex min-h-full items-start justify-center px-[20px] py-[60px] max-xs:px-[10px] max-xs:py-[40px]" @click.self="cart.close()">
           <div class="pf-modal__box relative w-full max-w-[560px] rounded-[10px] bg-white p-[40px] max-xs:p-[20px]" @click.stop>
             <div class="mb-[30px] text-[26px] font-semibold leading-[1.23] text-ink">Ваш заказ</div>
 
