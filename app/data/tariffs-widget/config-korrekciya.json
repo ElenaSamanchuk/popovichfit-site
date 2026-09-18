@@ -1,0 +1,181 @@
+{
+ "meta": {
+  "courseId": "korrekciya",
+  "supportUrl": "https://t.me/popovichfit",
+  "supportText": "напишите в техническую поддержку, поможем разобраться."
+ },
+ "header": {
+  "title": "Курс коррекция",
+  "subtitle": "Освобождение от зажимов, работа с осанкой, дыханием, тазовым дном. Идеально для восстановления и заботы о себе",
+  "startLabel": "старт нового потока — 31 августа",
+  "durationLabel": "длительность — 5 недель"
+ },
+ "plashka": {
+  "visible": true,
+  "eyebrow": "Оформить подписку на курс",
+  "newBadge": "NEW",
+  "title": "Подписка: продолжай без лишних действий",
+  "text": "Доступ к каждому новому потоку списывается автоматически. Никаких напоминалок — просто продолжаешь тренироваться.",
+  "priceFrom": "от 3 599 р.",
+  "priceInstead": "вместо 3 799 р. разово",
+  "limeBadge": "ВЫГОДНЕЕ · ТОЛЬКО ДЛЯ ПРОДЛЕНЦЕВ",
+  "features": [
+   "✓  Не надо помнить про продление",
+   "✓  Цена ниже, чем при разовом оформлении"
+  ],
+  "cta": "Оформить подписку",
+  "image": "/tariffs/assets/flower.png"
+ },
+ "renewalTitle": "Или продолжить по продлению:",
+ "cards": [
+  {
+   "id": "korekciya",
+   "visible": true,
+   "title": "Коррекция",
+   "discountBadge": "ДО — 23%",
+   "spotsLabel": "Количество мест НЕ ограничено",
+   "spotsLimited": false,
+   "extraBadge": "самостоятельное прохождение",
+   "description": "Тариф подразумевает самостоятельно прохождение программы курса без обратной связи от куратора",
+   "priceLabel": "Стоимость",
+   "discountUntil": "скидка до 31 августа",
+   "buyLabel": "купить",
+   "defaultOption": 0,
+   "options": [
+    {
+     "id": "1",
+     "label": "1 поток",
+     "selectLabel": "выбрать",
+     "newPrice": "3 799 р.",
+     "oldPrice": "5 399 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_7owz39/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "3",
+     "label": "3 потока",
+     "selectLabel": "выбрать",
+     "newPrice": "9 599 р.",
+     "oldPrice": "12 899 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_3PXZmo/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "6",
+     "label": "6 потоков",
+     "selectLabel": "выбрать",
+     "newPrice": "17 799 р.",
+     "oldPrice": "24 399 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_VKZmjo/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "sub",
+     "label": "Подписка",
+     "selectLabel": "выбрать",
+     "badge": "выгоднее всего",
+     "newPrice": "от 3 599 р.",
+     "oldPrice": "",
+     "link": "",
+     "action": "popup"
+    }
+   ]
+  },
+  {
+   "id": "korekciya-trener",
+   "visible": true,
+   "title": "Коррекция с куратором",
+   "discountBadge": "ДО — 23%",
+   "spotsLabel": "Количество мест ограничено",
+   "spotsLimited": true,
+   "extraBadge": "Разбор упражнений",
+   "description": "Тариф вклюючает в себя проверку техники выполнения упражнений с рекомендациями куратора",
+   "priceLabel": "Стоимость",
+   "discountUntil": "скидка до 31 августа",
+   "buyLabel": "купить",
+   "defaultOption": 0,
+   "options": [
+    {
+     "id": "1",
+     "label": "1 поток",
+     "selectLabel": "выбрать",
+     "newPrice": "5 599 р.",
+     "oldPrice": "7 699 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_5K5rnP/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "3",
+     "label": "3 потока",
+     "selectLabel": "выбрать",
+     "newPrice": "14 899 р.",
+     "oldPrice": "19 299 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_BKLmnP/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "6",
+     "label": "6 потоков",
+     "selectLabel": "выбрать",
+     "newPrice": "25 799 р.",
+     "oldPrice": "34 799 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_VPxOpK/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "sub",
+     "label": "Подписка",
+     "selectLabel": "выбрать",
+     "badge": "выгоднее всего",
+     "newPrice": "от 5 399 р.",
+     "oldPrice": "",
+     "link": "",
+     "action": "popup"
+    }
+   ]
+  }
+ ],
+ "popup": {
+  "title": "Оформление подписки",
+  "lead": "Подписка это автоматическое продление доступа перед каждым новым потоком.",
+  "lead2": "Подключаете один раз, дальше всё происходит само.",
+  "chooseLabel": "Выберите тариф:",
+  "planCaption": "Тариф подписки",
+  "oneTimeLabel": "Разовое продление:",
+  "subPriceLabel": "Стоимость с подпиской:",
+  "howTitle": "Как это работает:",
+  "howItems": [
+   "Вы оформляете подписку и привязываете карту. Сразу после подключения списывается полная стоимость следующего потока.",
+   "Дальше подписка продлевается автоматически. За 5 дней до окончания каждого потока списывается полная стоимость следующего.",
+   "За сутки до списания придёт письмо с напоминанием.",
+   "Доступ к новому потоку открывается сразу после оплаты."
+  ],
+  "failTitle": "Если платёж не прошёл:",
+  "failItems": [
+   "Система сделает ещё 2 попытки списания в течение следующих дней.",
+   "Если ни одна попытка не пройдёт, подписка не продлевается, а доступ к новому потоку не открывается."
+  ],
+  "failSupportPrefix": "Если у вас появятся вопросы по подписке,",
+  "rfNote": "Подписка доступна только для карт РФ",
+  "cta": "Оформить подписку",
+  "defaultPlan": 1,
+  "plans": [
+   {
+    "id": "korekciya",
+    "title": "Коррекция",
+    "oneTimePrice": "3 799 р.",
+    "subPrice": "3 599 р.",
+    "discountBadge": "",
+    "link": "https://lk.popovichfit.ru/payments/tariff_7owz39/checkout?subscription=1"
+   },
+   {
+    "id": "korekciya-trener",
+    "title": "Коррекция с куратором",
+    "oneTimePrice": "5 599 р.",
+    "subPrice": "5 399 р.",
+    "discountBadge": "",
+    "link": "https://lk.popovichfit.ru/payments/tariff_5K5rnP/checkout?subscription=1"
+   }
+  ]
+ }
+}

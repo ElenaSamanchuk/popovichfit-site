@@ -17,6 +17,13 @@
 - Реферальная программа `?r=` + utm: параметры дописываются во все ссылки сайта и на `lk.popovichfit.ru/…/checkout`
   (замена ~15 скриптов), ссылка на бот предзаписи при `r` подменяется на salebot — как было.
 - Карточки тарифов (варианты потоков → цена и ссылка на checkout ЛК) — `app/data/tariffs.ts`.
+- Виджет тарифов (`/korrekciya-new`, `/silovye-new`; в Тильде — iframe с GitHub Pages `elenasamanchuk.github.io/popovichfit-tariffs`)
+  реализован в коде сайта без iframe: `app/components/site/TariffsWidget.vue` + сгенерированные `app/utils/tariffs-widget.js`,
+  `app/assets/css/tariffs-widget.css`, `public/tariffs/assets/*` (скрипт `scripts/build-tariffs-widget.mjs` из репозитория
+  `popovichfit-tariffs`). Тексты и цены — `config-korrekciya.json` / `config-silovye.json` из ветки `main` того же репозитория:
+  `/api/tariffs/<course>` берёт их с GitHub (кэш 10 минут, при недоступности — копия из сборки `app/data/tariffs-widget/`),
+  так что админка виджета, коммитящая конфиг в GitHub, продолжает работать. Попап подписки, автоскейл на телефонах (<480 px,
+  как у Zero Block), ссылки на checkout ЛК — те же, что в виджете.
 - Формы: Zero Block и попапы T702 → `POST /api/lead`; корзина T706 (`#order:Товар=цена`, /gift1, /mk_msk и др.) → `POST /api/order`
   → виджет CloudPayments → вебхук `POST /api/cloudpayments/pay`. Заявки/заказы дублируются в `.data/*.jsonl`.
 - Метрика 88400923 и VK-пиксель — свои подключения (`app/plugins/analytics.client.ts`); ни одного обращения к Тильде
@@ -66,6 +73,9 @@
   с живым сайтом (пока он доступен); `node scripts/measure-diff.mjs /url 1200` — одна страница с подробностями;
 - `docs/MIGRATION-STATUS.md` — скриншотные diff'ы по страницам; `docs/QA-REPORT.md` — итог QA;
 - `npm run build` запускает проверки URL/ссылок/«нет Тильды»; `scripts/check-browsers.mjs` — WebKit/Firefox против Chromium.
+- Виджет тарифов: после правок CSS/JS/картинок в `~/Projects/popovichfit-tariffs` — `node scripts/build-tariffs-widget.mjs`
+  (путь к репозиторию — переменная `PF_TARIFFS_DIR`), сборка и выкладка; правки текстов/цен через админку виджета (конфиг в GitHub)
+  подхватываются сайтом сами, в течение 10 минут.
 
 ## Деплой
 

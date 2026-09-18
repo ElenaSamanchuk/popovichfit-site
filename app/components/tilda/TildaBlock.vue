@@ -69,9 +69,10 @@ const certHtml = computed(() => {
 })
 /** свои виджеты заказчика в HTML-блоках (тарифы popovichfit-tariffs: iframe + скрипт подгонки высоты и модалок через postMessage):
  *  их inline-скрипты выполняем как есть — это её код, без зависимостей от Тильды */
+const tariffsCourse = computed(() => { const m = /popovichfit-tariffs\/(korrekciya|silovye)\.html/.exec(b.custom || ''); return m ? (m[1] as 'korrekciya' | 'silovye') : null })
 const customRoot = ref<HTMLElement | null>(null)
 function runCustomScripts() {
-  if (!customRoot.value || !/popovich-tariffs/.test(b.custom || '')) return
+  if (!customRoot.value || tariffsCourse.value || !/popovich-tariffs/.test(b.custom || '')) return
   for (const m of (b.custom || '').matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)) {
     const code = m[1]!.trim(); if (!code || /t_onFuncLoad|t396|tildacdn/.test(code)) continue
     const sc = document.createElement('script'); sc.textContent = code; customRoot.value.appendChild(sc)
@@ -302,6 +303,9 @@ onMounted(() => {
     <!-- id блока нужен для его CSS из экспорта (#recNNN .t390__descr{…}); в потоке страницы попап-блок не рендерится, id уникален -->
     <div v-else :id="b.id" ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : b.type === '868' ? 'tb--embed' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />
   </Modal>
+
+  <!-- виджет тарифов заказчицы (в Тильде — iframe с GitHub Pages) — нативно, без iframe -->
+  <TariffsWidget v-else-if="tariffsCourse" :course="tariffsCourse" />
 
   <!-- HTML-код с видимым содержимым (плашки, iframe) -->
   <div v-else-if="b.type === '131' && customVisible" :id="b.id" ref="customRoot" class="tb tb--custom" :data-tilda-rec="b.id" v-html="customHtml" />

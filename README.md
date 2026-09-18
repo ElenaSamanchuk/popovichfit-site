@@ -16,6 +16,7 @@ Nuxt 4 (Vue 3, Tailwind 4, TypeScript). Все 220 страниц экспорт
 | Общие части: шапка, меню, футер, cookie, плашка ВК, виджет Sender | `app/components/site/*`, `app/layouts/default.vue` |
 | Мета страниц (title/description/og/canonical/noindex) | `app/data/pages.ts` (из `docs/meta.json`), `app/composables/usePageMeta.ts` |
 | Карточки тарифов (варианты/цены/ссылки на checkout ЛК) | `app/data/tariffs.ts`, `app/utils/pf-cards.ts` |
+| Виджет тарифов на /korrekciya-new и /silovye-new (без iframe; конфиг — из GitHub-репозитория `popovichfit-tariffs`, кэш 10 мин) | `app/components/site/TariffsWidget.vue`, `server/api/tariffs/[course].get.ts`, генерация `scripts/build-tariffs-widget.mjs` → `app/utils/tariffs-widget.js`, `app/assets/css/tariffs-widget.css`, `public/tariffs/assets/` |
 | Реферальный `?r=` и utm во всех ссылках (в т.ч. на ЛК) | `app/plugins/ref-params.client.ts` |
 | Попапы по hash (`#popup:x`, `#zeropopup`, `#tarif1`…) | `app/composables/useModal.ts`, `app/plugins/modal-links.client.ts` |
 | Корзина (T706, `#order:Товар=цена`) + оплата CloudPayments | `app/components/site/Cart.vue`, `server/api/order.post.ts`, `server/api/cloudpayments/pay.post.ts` |

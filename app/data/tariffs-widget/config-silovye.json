@@ -1,0 +1,181 @@
+{
+ "meta": {
+  "courseId": "silovye",
+  "supportUrl": "https://t.me/popovichfit",
+  "supportText": "напишите в техническую поддержку, поможем разобраться."
+ },
+ "header": {
+  "title": "Курс силовой",
+  "subtitle": "Укрепление тела, рельеф и сила. Для тех, кто хочет поработать не только над осанкой, но и над формами",
+  "startLabel": "старт нового потока — 31 августа",
+  "durationLabel": "длительность — 5 недель"
+ },
+ "plashka": {
+  "visible": true,
+  "eyebrow": "Оформить подписку на курс",
+  "newBadge": "NEW",
+  "title": "Подписка: продолжай без лишних действий",
+  "text": "Доступ к каждому новому потоку списывается автоматически. Никаких напоминалок — просто продолжаешь тренироваться.",
+  "priceFrom": "от 4 199 р.",
+  "priceInstead": "вместо 4 299 р. разово",
+  "limeBadge": "ВЫГОДНЕЕ · ТОЛЬКО ДЛЯ ПРОДЛЕНЦЕВ",
+  "features": [
+   "✓  Не надо помнить про продление",
+   "✓  Цена ниже, чем при разовом оформлении"
+  ],
+  "cta": "Оформить подписку",
+  "image": "/tariffs/assets/flower.png"
+ },
+ "renewalTitle": "Или продолжить по продлению:",
+ "cards": [
+  {
+   "id": "silovoj",
+   "visible": true,
+   "title": "Силовой",
+   "discountBadge": "ДО — 20%",
+   "spotsLabel": "Количество мест НЕ ограничено",
+   "spotsLimited": false,
+   "extraBadge": "самостоятельное прохождение",
+   "description": "Тариф подразумевает самостоятельно прохождение программы курса без обратной связи от куратора",
+   "priceLabel": "Стоимость",
+   "discountUntil": "скидка до 31 августа",
+   "buyLabel": "купить",
+   "defaultOption": 0,
+   "options": [
+    {
+     "id": "1",
+     "label": "1 поток",
+     "selectLabel": "выбрать",
+     "newPrice": "4 299 р.",
+     "oldPrice": "6 399 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_pKzWbP/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "3",
+     "label": "3 потока",
+     "selectLabel": "выбрать",
+     "newPrice": "12 399 р.",
+     "oldPrice": "16 599 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_kKay8K/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "6",
+     "label": "6 потоков",
+     "selectLabel": "выбрать",
+     "newPrice": "22 399 р.",
+     "oldPrice": "29 099 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_59jY4P/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "sub",
+     "label": "Подписка",
+     "selectLabel": "выбрать",
+     "badge": "выгоднее всего",
+     "newPrice": "от 4 199 р.",
+     "oldPrice": "",
+     "link": "",
+     "action": "popup"
+    }
+   ]
+  },
+  {
+   "id": "silovoj-trener",
+   "visible": true,
+   "title": "Силовой с куратором",
+   "discountBadge": "ДО — 20%",
+   "spotsLabel": "Количество мест ограничено",
+   "spotsLimited": true,
+   "extraBadge": "Разбор упражнений",
+   "description": "Тариф вклюючает в себя проверку техники выполнения упражнений с рекомендациями куратора",
+   "priceLabel": "Стоимость",
+   "discountUntil": "скидка до 31 августа",
+   "buyLabel": "купить",
+   "defaultOption": 0,
+   "options": [
+    {
+     "id": "1",
+     "label": "1 поток",
+     "selectLabel": "выбрать",
+     "newPrice": "6 699 р.",
+     "oldPrice": "8 799 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_YKgvro/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "3",
+     "label": "3 потока",
+     "selectLabel": "выбрать",
+     "newPrice": "18 399 р.",
+     "oldPrice": "23 199 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_N9p0R9/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "6",
+     "label": "6 потоков",
+     "selectLabel": "выбрать",
+     "newPrice": "31 899 р.",
+     "oldPrice": "40 899 р.",
+     "link": "https://lk.popovichfit.ru/payments/tariff_wo05bK/checkout",
+     "action": "pay"
+    },
+    {
+     "id": "sub",
+     "label": "Подписка",
+     "selectLabel": "выбрать",
+     "badge": "выгоднее всего",
+     "newPrice": "от 6 499 р.",
+     "oldPrice": "",
+     "link": "",
+     "action": "popup"
+    }
+   ]
+  }
+ ],
+ "popup": {
+  "title": "Оформление подписки",
+  "lead": "Подписка это автоматическое продление доступа перед каждым новым потоком.",
+  "lead2": "Подключаете один раз, дальше всё происходит само.",
+  "chooseLabel": "Выберите тариф:",
+  "planCaption": "Тариф подписки",
+  "oneTimeLabel": "Разовое продление:",
+  "subPriceLabel": "Стоимость с подпиской:",
+  "howTitle": "Как это работает:",
+  "howItems": [
+   "Вы оформляете подписку и привязываете карту. Сразу после подключения списывается полная стоимость следующего потока.",
+   "Дальше подписка продлевается автоматически. За 5 дней до окончания каждого потока списывается полная стоимость следующего.",
+   "За сутки до списания придёт письмо с напоминанием.",
+   "Доступ к новому потоку открывается сразу после оплаты."
+  ],
+  "failTitle": "Если платёж не прошёл:",
+  "failItems": [
+   "Система сделает ещё 2 попытки списания в течение следующих дней.",
+   "Если ни одна попытка не пройдёт, подписка не продлевается, а доступ к новому потоку не открывается."
+  ],
+  "failSupportPrefix": "Если у вас появятся вопросы по подписке,",
+  "rfNote": "Подписка доступна только для карт РФ",
+  "cta": "Оформить подписку",
+  "defaultPlan": 1,
+  "plans": [
+   {
+    "id": "silovoj",
+    "title": "Силовой",
+    "oneTimePrice": "4 299 р.",
+    "subPrice": "4 199 р.",
+    "discountBadge": "",
+    "link": "https://lk.popovichfit.ru/payments/tariff_pKzWbP/checkout?subscription=1"
+   },
+   {
+    "id": "silovoj-trener",
+    "title": "Силовой с куратором",
+    "oneTimePrice": "6 699 р.",
+    "subPrice": "6 499 р.",
+    "discountBadge": "",
+    "link": "https://lk.popovichfit.ru/payments/tariff_YKgvro/checkout?subscription=1"
+   }
+  ]
+ }
+}
