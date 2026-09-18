@@ -71,7 +71,7 @@ const local = await page.evaluate((recs) => {
         const opacity = bf && bgA && +bgA[1] > 0 && +bgA[1] < 1 ? String(Math.round(+bgA[1] * +cs.opacity * 100) / 100) : cs.opacity
         // blur без фона: прозрачность атома у Тильды ни на что не влияет (пустой атом), у нас не ставится — не сверяем
         const bfNoBg = bf && (!bgA || +bgA[1] === 0)
-        out.elems[r.id + ':' + id] = { rect: rect(el), opacity, bfNoBg, visible: cs.display !== 'none' && cs.visibility !== 'hidden',
+        out.elems[r.id + ':' + id] = { rect: rect(el), opacity, bfNoBg, bf, visible: cs.display !== 'none' && cs.visibility !== 'hidden',
           text: (el.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 160),
           font: `${c.fontSize}/${c.lineHeight} ${c.fontWeight} ${c.fontFamily.split(',')[0].replace(/"/g, '')}`,
           color: c.color, bg: cs.backgroundColor, radius: cs.borderRadius, align: c.textAlign, transform: c.textTransform,
@@ -145,7 +145,10 @@ for (const rec of live.recs) {
       // полупрозрачный «кружок» с backdrop-filter: Тильда (chrome-fix для sbs-анимаций) переносит rgba-фон с атома на элемент,
       // замер live видит прозрачный атом — у нас тот же rgba на элементе, визуально одно и то же
       const faint = /^rgba\([^)]*,\s*0?\.[0-3]\d*\)$/.test(l.bg || '')
-      if (e.bg !== l.bg && !(isTransparent(e.bg) && (isTransparent(l.bg) || faint))) notes.push(`фон live ${e.bg} / local ${l.bg}`)
+      // элемент с blur: у нас прозрачность атома переведена в альфу фона (opacityCss) — сравниваем только цвет
+      const rgbOf = (c) => (c || '').replace(/^rgba?\(([^)]*?)(?:,\s*[\d.]+)?\)$/, (_, p) => p.split(',').slice(0, 3).map((x) => x.trim()).join(','))
+      const blurSame = l.bf && l.opacity !== undefined && rgbOf(e.bg) === rgbOf(l.bg)
+      if (e.bg !== l.bg && !blurSame && !(isTransparent(e.bg) && (isTransparent(l.bg) || faint))) notes.push(`фон live ${e.bg} / local ${l.bg}`)
       if (e.radius !== l.radius && e.type !== 'text') notes.push(`radius live ${e.radius} / local ${l.radius}`)
       if ((e.bgImage || '') !== (l.bgImage || '') && baseName(e.bgImage) !== baseName(l.bgImage)) notes.push(`bg-image live ${e.bgImage || '—'} / local ${l.bgImage || '—'}`)
     }
