@@ -1,0 +1,60 @@
+[
+  {
+    "label": "/ 390 выполнение",
+    "ok": false,
+    "details": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded."
+  },
+  {
+    "label": "/open 390 выполнение",
+    "ok": false,
+    "details": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded."
+  },
+  {
+    "label": "/close 390 выполнение",
+    "ok": false,
+    "details": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded."
+  },
+  {
+    "label": "/ 1440 выполнение",
+    "ok": false,
+    "details": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded."
+  },
+  {
+    "label": "/open 1440 выполнение",
+    "ok": false,
+    "details": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded."
+  },
+  {
+    "label": "/close 1440 выполнение",
+    "ok": false,
+    "details": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded."
+  },
+  {
+    "label": "pred закрытые продажи",
+    "ok": false,
+    "details": {
+      "status": 200,
+      "location": null
+    }
+  },
+  {
+    "label": "predcor закрытые продажи",
+    "ok": false,
+    "details": {
+      "status": 200,
+      "location": null
+    }
+  },
+  {
+    "label": "predpow закрытые продажи",
+    "ok": false,
+    "details": {
+      "status": 200,
+      "location": null
+    }
+  },
+  {
+    "label": "sitemap без закрытых продаж",
+    "ok": true
+  }
+]

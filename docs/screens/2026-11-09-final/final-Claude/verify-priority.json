@@ -1,0 +1,1241 @@
+{
+ "base": "http://127.0.0.1:60058",
+ "browser": "chromium",
+ "date": "2026-11-09T20:07:13.465Z",
+ "results": [
+  {
+   "url": "/",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 8494
+  },
+  {
+   "url": "/",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8279
+  },
+  {
+   "url": "/",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 10790
+  },
+  {
+   "url": "/",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 10830
+  },
+  {
+   "url": "/",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 11248
+  },
+  {
+   "url": "/",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  },
+  {
+   "url": "/course_correction",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5175
+  },
+  {
+   "url": "/course_correction",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 5785
+  },
+  {
+   "url": "/course_correction",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7432
+  },
+  {
+   "url": "/course_correction",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 7794
+  },
+  {
+   "url": "/course_correction",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 7548
+  },
+  {
+   "url": "/course_correction",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7302
+  },
+  {
+   "url": "/course_correction",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 6929
+  },
+  {
+   "url": "/course_correction",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 6507
+  },
+  {
+   "url": "/course_power",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5117
+  },
+  {
+   "url": "/course_power",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 5759
+  },
+  {
+   "url": "/course_power",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7725
+  },
+  {
+   "url": "/course_power",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 8011
+  },
+  {
+   "url": "/course_power",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 7755
+  },
+  {
+   "url": "/course_power",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7498
+  },
+  {
+   "url": "/course_power",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 7108
+  },
+  {
+   "url": "/course_power",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 6665
+  },
+  {
+   "url": "/course_prod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1204
+  },
+  {
+   "url": "/course_prod",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1170
+  },
+  {
+   "url": "/course_prod",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1577
+  },
+  {
+   "url": "/course_prod",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 2242
+  },
+  {
+   "url": "/course_prod",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 2184
+  },
+  {
+   "url": "/course_prod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2133
+  },
+  {
+   "url": "/course_prod",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 2073
+  },
+  {
+   "url": "/course_prod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1964
+  },
+  {
+   "url": "/course_corprod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1678
+  },
+  {
+   "url": "/course_corprod",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2110
+  },
+  {
+   "url": "/course_corprod",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2083
+  },
+  {
+   "url": "/course_corprod",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 2575
+  },
+  {
+   "url": "/course_corprod",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 2502
+  },
+  {
+   "url": "/course_corprod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2439
+  },
+  {
+   "url": "/course_corprod",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 2362
+  },
+  {
+   "url": "/course_corprod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2229
+  },
+  {
+   "url": "/course_powprod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1708
+  },
+  {
+   "url": "/course_powprod",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2140
+  },
+  {
+   "url": "/course_powprod",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2113
+  },
+  {
+   "url": "/course_powprod",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 2590
+  },
+  {
+   "url": "/course_powprod",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 2517
+  },
+  {
+   "url": "/course_powprod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2454
+  },
+  {
+   "url": "/course_powprod",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 2377
+  },
+  {
+   "url": "/course_powprod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2244
+  },
+  {
+   "url": "/results",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 4502
+  },
+  {
+   "url": "/results",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 3877
+  },
+  {
+   "url": "/results",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 9876
+  },
+  {
+   "url": "/results",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 6688
+  },
+  {
+   "url": "/results",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 6451
+  },
+  {
+   "url": "/results",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 6183
+  },
+  {
+   "url": "/results",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 5826
+  },
+  {
+   "url": "/results",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 5321
+  },
+  {
+   "url": "/media",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2645
+  },
+  {
+   "url": "/media",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2405
+  },
+  {
+   "url": "/media",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2628
+  },
+  {
+   "url": "/media",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 5228
+  },
+  {
+   "url": "/media",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 5054
+  },
+  {
+   "url": "/media",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 4863
+  },
+  {
+   "url": "/media",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 4611
+  },
+  {
+   "url": "/media",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4246
+  },
+  {
+   "url": "/about",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2660
+  },
+  {
+   "url": "/about",
+   "width": 960,
+   "ok": false,
+   "problems": [
+    "console.error ×1: Failed to load resource: net::ERR_TIMED_OUT"
+   ],
+   "height": 2560
+  },
+  {
+   "url": "/about",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 3516
+  },
+  {
+   "url": "/about",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 4495
+  },
+  {
+   "url": "/about",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 4344
+  },
+  {
+   "url": "/about",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 4180
+  },
+  {
+   "url": "/about",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 3966
+  },
+  {
+   "url": "/about",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3651
+  },
+  {
+   "url": "/community",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2137
+  },
+  {
+   "url": "/community",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2470
+  },
+  {
+   "url": "/community",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2755
+  },
+  {
+   "url": "/community",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 3438
+  },
+  {
+   "url": "/community",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 3345
+  },
+  {
+   "url": "/community",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3253
+  },
+  {
+   "url": "/community",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 3136
+  },
+  {
+   "url": "/community",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2951
+  },
+  {
+   "url": "/oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 11364
+  },
+  {
+   "url": "/oferta",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 11894
+  },
+  {
+   "url": "/oferta",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 14269
+  },
+  {
+   "url": "/oferta",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 19724
+  },
+  {
+   "url": "/oferta",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 20592
+  },
+  {
+   "url": "/oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 21812
+  },
+  {
+   "url": "/oferta",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 23458
+  },
+  {
+   "url": "/oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 26851
+  },
+  {
+   "url": "/part_oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 7005
+  },
+  {
+   "url": "/part_oferta",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 7264
+  },
+  {
+   "url": "/part_oferta",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8743
+  },
+  {
+   "url": "/part_oferta",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 12660
+  },
+  {
+   "url": "/part_oferta",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 13196
+  },
+  {
+   "url": "/part_oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 13981
+  },
+  {
+   "url": "/part_oferta",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 15115
+  },
+  {
+   "url": "/part_oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 17382
+  },
+  {
+   "url": "/privacy",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6537
+  },
+  {
+   "url": "/privacy",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 6714
+  },
+  {
+   "url": "/privacy",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8116
+  },
+  {
+   "url": "/privacy",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 11366
+  },
+  {
+   "url": "/privacy",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 11725
+  },
+  {
+   "url": "/privacy",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 12207
+  },
+  {
+   "url": "/privacy",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 13298
+  },
+  {
+   "url": "/privacy",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 15338
+  },
+  {
+   "url": "/data-consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1728
+  },
+  {
+   "url": "/data-consent",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1727
+  },
+  {
+   "url": "/data-consent",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1935
+  },
+  {
+   "url": "/data-consent",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 2899
+  },
+  {
+   "url": "/data-consent",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 2976
+  },
+  {
+   "url": "/data-consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3096
+  },
+  {
+   "url": "/data-consent",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 3334
+  },
+  {
+   "url": "/data-consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3579
+  },
+  {
+   "url": "/consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2093
+  },
+  {
+   "url": "/consent",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2132
+  },
+  {
+   "url": "/consent",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2485
+  },
+  {
+   "url": "/consent",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 3449
+  },
+  {
+   "url": "/consent",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 3575
+  },
+  {
+   "url": "/consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3669
+  },
+  {
+   "url": "/consent",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 3907
+  },
+  {
+   "url": "/consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4434
+  },
+  {
+   "url": "/promo",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1920
+  },
+  {
+   "url": "/promo",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1810
+  },
+  {
+   "url": "/promo",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1837
+  },
+  {
+   "url": "/promo",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 2251
+  },
+  {
+   "url": "/promo",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 2193
+  },
+  {
+   "url": "/promo",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2142
+  },
+  {
+   "url": "/promo",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 2081
+  },
+  {
+   "url": "/promo",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1971
+  },
+  {
+   "url": "/inventory",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2646
+  },
+  {
+   "url": "/inventory",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2716
+  },
+  {
+   "url": "/inventory",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 4163
+  },
+  {
+   "url": "/inventory",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 5482
+  },
+  {
+   "url": "/inventory",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 5290
+  },
+  {
+   "url": "/inventory",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 5076
+  },
+  {
+   "url": "/inventory",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 4792
+  },
+  {
+   "url": "/inventory",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4386
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1335
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1195
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1838
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 1846
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 1809
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 1784
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 1758
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1696
+  },
+  {
+   "url": "/sertif",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6599
+  },
+  {
+   "url": "/sertif",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 5399
+  },
+  {
+   "url": "/sertif",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 6958
+  },
+  {
+   "url": "/sertif",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 9209
+  },
+  {
+   "url": "/sertif",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 8857
+  },
+  {
+   "url": "/sertif",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 8447
+  },
+  {
+   "url": "/sertif",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 7896
+  },
+  {
+   "url": "/sertif",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 7133
+  },
+  {
+   "url": "/taplink",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 3030
+  },
+  {
+   "url": "/taplink",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 3040
+  },
+  {
+   "url": "/taplink",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 3407
+  },
+  {
+   "url": "/taplink",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 3546
+  },
+  {
+   "url": "/taplink",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 3435
+  },
+  {
+   "url": "/taplink",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3320
+  },
+  {
+   "url": "/taplink",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 3172
+  },
+  {
+   "url": "/taplink",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2945
+  },
+  {
+   "url": "/open",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6767
+  },
+  {
+   "url": "/open",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 8511
+  },
+  {
+   "url": "/open",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8295
+  },
+  {
+   "url": "/open",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 10779
+  },
+  {
+   "url": "/open",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 10786
+  },
+  {
+   "url": "/open",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10880
+  },
+  {
+   "url": "/open",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 11273
+  },
+  {
+   "url": "/open",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11878
+  },
+  {
+   "url": "/close",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/close",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 8494
+  },
+  {
+   "url": "/close",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8279
+  },
+  {
+   "url": "/close",
+   "width": 430,
+   "ok": true,
+   "problems": [],
+   "height": 10790
+  },
+  {
+   "url": "/close",
+   "width": 412,
+   "ok": true,
+   "problems": [],
+   "height": 10797
+  },
+  {
+   "url": "/close",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/close",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 11248
+  },
+  {
+   "url": "/close",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  }
+ ]
+}

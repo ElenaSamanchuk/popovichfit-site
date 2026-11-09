@@ -1,0 +1,55 @@
+== verify:priority  chromium  сервер http://127.0.0.1:3702  страниц 12 × ширин 3
+ок     /                     1440  h= 6786  
+ок     /                      390  h=10891  
+ок     /                      320  h=11893  
+ок     /open                 1440  h= 6767  
+ок     /open                  390  h=10880  
+ок     /open                  320  h=11878  
+ок     /close                1440  h= 6786  
+ок     /close                 390  h=10891  
+ок     /close                 320  h=11893  
+ок     /data-consent         1440  h= 1728  
+ок     /data-consent          390  h= 3015  
+ок     /data-consent          320  h= 3519  
+ок     /oferta               1440  h=11364  
+ок     /oferta                390  h=21812  
+ок     /oferta                320  h=26851  
+ок     /privacy              1440  h= 6537  
+ок     /privacy               390  h=11939  
+ок     /privacy               320  h=14998  
+ок     /consent              1440  h= 2093  
+ок     /consent               390  h= 3669  
+ок     /consent               320  h= 4434  
+ок     /part_oferta          1440  h= 7005  
+ок     /part_oferta           390  h=13981  
+ок     /part_oferta           320  h=17382  
+ок     /course_correction    1440  h= 5175  
+ок     /course_correction     390  h= 7302  
+ок     /course_correction     320  h= 6507  
+ок     /course_power         1440  h= 5117  
+ок     /course_power          390  h= 7498  
+ок     /course_power          320  h= 6665  
+ок     /taplink              1440  h= 3030  
+ок     /taplink               390  h= 3320  
+ок     /taplink               320  h= 2945  
+ок     /course_prod          1440  h= 1204  
+ок     /course_prod           390  h= 2133  
+ок     /course_prod           320  h= 1964  
+
+Страница × ширина (ок / ОШ):
+страница               1440    390    320
+/                        ок     ок     ок
+/open                    ок     ок     ок
+/close                   ок     ок     ок
+/data-consent            ок     ок     ок
+/oferta                  ок     ок     ок
+/privacy                 ок     ок     ок
+/consent                 ок     ок     ок
+/part_oferta             ок     ок     ок
+/course_correction       ок     ок     ок
+/course_power            ок     ок     ок
+/taplink                 ок     ок     ок
+/course_prod             ок     ок     ок
+
+ИТОГ: проверок 36, с ошибками 0, время 213 с
+EXIT 0

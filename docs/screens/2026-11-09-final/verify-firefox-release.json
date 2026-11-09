@@ -1,0 +1,91 @@
+{
+ "base": "http://127.0.0.1:55197",
+ "browser": "firefox",
+ "date": "2026-11-09T17:54:44.852Z",
+ "results": [
+  {
+   "url": "/",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6787
+  },
+  {
+   "url": "/",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10872
+  },
+  {
+   "url": "/course_correction",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5176
+  },
+  {
+   "url": "/course_correction",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7283
+  },
+  {
+   "url": "/privacy",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6451
+  },
+  {
+   "url": "/privacy",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 11820
+  },
+  {
+   "url": "/taplink",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 3030
+  },
+  {
+   "url": "/taplink",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3300
+  },
+  {
+   "url": "/open",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6767
+  },
+  {
+   "url": "/open",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10861
+  },
+  {
+   "url": "/close",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6787
+  },
+  {
+   "url": "/close",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10872
+  }
+ ]
+}

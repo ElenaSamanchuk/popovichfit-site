@@ -1,5 +1,15 @@
 {
-  "_comment": "Ссылки экспорта на страницы, которых нет и на живом сайте (403 — не опубликованы). См. docs/HANDOFF.md. check-links считает их предупреждением, а не ошибкой.",
-  "paths": ["/19cor1", "/introduction", "/prod12", "/special_cor_tariff", "/special_siltren_tariff", "/tarifpred"],
-  "redirected": ["/members/"]
+  "_comment": "Ссылки экспорта на страницы, которых нет и на живом сайте (403 — не опубликованы). См. docs/HANDOFF.md. check-links считает их предупреждением, а не ошибкой. 09.11: /pred есть в htaccess, но файла страницы нет в экспорте, на живом сайте 404 — не создаём; /predcor и /predpow собираются из копий 06.11 (sources/pred-2026-11-06).",
+  "paths": [
+    "/19cor1",
+    "/introduction",
+    "/prod12",
+    "/special_cor_tariff",
+    "/special_siltren_tariff",
+    "/tarifpred",
+    "/pred"
+  ],
+  "redirected": [
+    "/members/"
+  ]
 }

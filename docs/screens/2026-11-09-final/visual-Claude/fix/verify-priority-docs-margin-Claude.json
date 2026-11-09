@@ -1,0 +1,217 @@
+{
+ "base": "http://127.0.0.1:3190",
+ "browser": "chromium",
+ "date": "2026-11-09T19:48:12.274Z",
+ "results": [
+  {
+   "url": "/oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 11364
+  },
+  {
+   "url": "/oferta",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 11894
+  },
+  {
+   "url": "/oferta",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 14269
+  },
+  {
+   "url": "/oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 21812
+  },
+  {
+   "url": "/oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 26851
+  },
+  {
+   "url": "/privacy",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6537
+  },
+  {
+   "url": "/privacy",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 6714
+  },
+  {
+   "url": "/privacy",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8116
+  },
+  {
+   "url": "/privacy",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 12207
+  },
+  {
+   "url": "/privacy",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 15338
+  },
+  {
+   "url": "/consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2093
+  },
+  {
+   "url": "/consent",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2132
+  },
+  {
+   "url": "/consent",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2485
+  },
+  {
+   "url": "/consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3669
+  },
+  {
+   "url": "/consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4434
+  },
+  {
+   "url": "/data-consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1728
+  },
+  {
+   "url": "/data-consent",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1727
+  },
+  {
+   "url": "/data-consent",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1935
+  },
+  {
+   "url": "/data-consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3096
+  },
+  {
+   "url": "/data-consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3579
+  },
+  {
+   "url": "/part_oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 7005
+  },
+  {
+   "url": "/part_oferta",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 7264
+  },
+  {
+   "url": "/part_oferta",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8743
+  },
+  {
+   "url": "/part_oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 13981
+  },
+  {
+   "url": "/part_oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 17382
+  },
+  {
+   "url": "/doc_l",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1340
+  },
+  {
+   "url": "/doc_l",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1470
+  },
+  {
+   "url": "/doc_l",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1557
+  },
+  {
+   "url": "/doc_l",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 1953
+  },
+  {
+   "url": "/doc_l",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1856
+  }
+ ]
+}

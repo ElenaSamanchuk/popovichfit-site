@@ -1,6 +1,6 @@
 // Аналитика как на Тильде: Яндекс.Метрика 88400923 (clickmap, trackLinks, accurateTrackBounce, webvisor,
 // ecommerce dataLayer) + VK-пиксель VK-RTRG-1817271-8E0Ye. Загружается с задержкой 2 с (как в экспорте),
-// при клиентской навигации отправляет hit. В dev-режиме не грузится.
+// при клиентской навигации отправляет hit. Счётчики включаются только на боевом домене.
 declare global {
   interface Window {
     ym?: (...args: unknown[]) => void
@@ -11,6 +11,7 @@ declare global {
 
 export default defineNuxtPlugin((nuxtApp) => {
   if (import.meta.dev) return
+  if (!['popovichfit.ru', 'www.popovichfit.ru'].includes(window.location.hostname)) return
   const { metrikaId, vkPixelId } = useRuntimeConfig().public
   const router = useRouter()
 

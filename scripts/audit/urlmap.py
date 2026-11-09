@@ -24,7 +24,7 @@ def info(f):
     t = re.search(r'<title>([^<]*)</title>', h)
     return dict(
         title=(t.group(1) if t else '').replace('&lrm;', '').replace('|', '¦').strip() or '—',
-        noindex='name="robots" content="noindex"' in h,
+        noindex=bool(re.search(r'name="robots" content="[^"]*noindex', h)),
         zero=len(re.findall(r'class="t396__artboard', h)),
         forms=len(re.findall(r'<form', h)),
         members='tilda-members' in h,

@@ -1,0 +1,50 @@
+== verify:priority  chromium  сервер http://127.0.0.1:3190  страниц 11 × ширин 3
+ок     /course_prod          1440  h= 1204  
+ок     /course_prod           390  h= 2133  
+ок     /course_prod           320  h= 1964  
+ок     /course_corprod       1440  h= 1678  
+ок     /course_corprod        390  h= 2439  
+ок     /course_corprod        320  h= 2229  
+ок     /course_powprod       1440  h= 1708  
+ок     /course_powprod        390  h= 2454  
+ок     /course_powprod        320  h= 2244  
+ок     /inventory            1440  h= 2646  
+ок     /inventory             390  h= 5076  
+ок     /inventory             320  h= 4386  
+ок     /promo                1440  h= 1920  
+ок     /promo                 390  h= 2142  
+ок     /promo                 320  h= 1971  
+ок     /nutric-lk            1440  h= 1335  
+ок     /nutric-lk             390  h= 1784  
+ок     /nutric-lk             320  h= 1696  
+ок     /data-consent         1440  h= 1728  
+ок     /data-consent          390  h= 2994  
+ок     /data-consent          320  h= 3477  
+ок     /privacy              1440  h= 6537  
+ок     /privacy               390  h=11976  
+ок     /privacy               320  h=14570  
+ок     /part_oferta          1440  h= 7005  
+ок     /part_oferta           390  h=13520  
+ок     /part_oferta           320  h=16614  
+ок     /oferta               1440  h=11364  
+ок     /oferta                390  h=21147  
+ок     /oferta                320  h=25700  
+ок     /consent              1440  h= 2093  
+ок     /consent               390  h= 3618  
+ок     /consent               320  h= 4178  
+
+Страница × ширина (ок / ОШ):
+страница               1440    390    320
+/course_prod             ок     ок     ок
+/course_corprod          ок     ок     ок
+/course_powprod          ок     ок     ок
+/inventory               ок     ок     ок
+/promo                   ок     ок     ок
+/nutric-lk               ок     ок     ок
+/data-consent            ок     ок     ок
+/privacy                 ок     ок     ок
+/part_oferta             ок     ок     ок
+/oferta                  ок     ок     ок
+/consent                 ок     ок     ок
+
+ИТОГ: проверок 33, с ошибками 0, время 157 с

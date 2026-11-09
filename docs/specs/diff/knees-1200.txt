@@ -1,9 +1,9 @@
 /knees @1200: высота live 1173 / local 1173
 
 ## rec786027187 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
-  Δ #1723705809197 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@722,230,60,60  
-  Δ #1728462311750 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1018,230,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1723705809197 [shape] opacity live 1 / local 0.1  
+  ✗ #1728462311750 [shape] opacity live 1 / local 0.1  
 
 элементов: 30, с расхождениями > 3px: 4

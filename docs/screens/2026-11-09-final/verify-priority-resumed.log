@@ -1,0 +1,58 @@
+
+> popovichfit-site@0.1.0 verify:priority
+> nice -n 15 node scripts/verify-priority.mjs --out docs/screens/2026-11-09-final/verify-priority-resumed.json
+
+== verify:priority  chromium  сервер http://127.0.0.1:49867  страниц 22 × ширин 8
+ок     /                     1440  h= 6786  
+ок     /                      960  h= 8494  
+ок     /                      768  h= 8279  
+ок     /                      430  h=10790  
+ок     /                      412  h=10830  
+ок     /                      390  h=10891  
+ок     /                      360  h=11248  
+ок     /                      320  h=11893  
+ок     /course_correction    1440  h= 5175  
+ок     /course_correction     960  h= 5785  
+ок     /course_correction     768  h= 7432  
+ок     /course_correction     430  h= 7794  
+ок     /course_correction     412  h= 7548  
+ок     /course_correction     390  h= 7302  
+ок     /course_correction     360  h= 6929  
+ок     /course_correction     320  h= 6507  
+ок     /course_power         1440  h= 5117  
+ок     /course_power          960  h= 5759  
+ок     /course_power          768  h= 7725  
+ок     /course_power          430  h= 8011  
+ок     /course_power          412  h= 7755  
+ок     /course_power          390  h= 7498  
+ок     /course_power          360  h= 7108  
+ок     /course_power          320  h= 6665  
+ок     /course_prod          1440  h= 1204  
+ок     /course_prod           960  h= 1210  
+ок     /course_prod           768  h= 1617  
+ок     /course_prod           430  h= 2282  
+ок     /course_prod           412  h= 2224  
+ок     /course_prod           390  h= 2173  
+ок     /course_prod           360  h= 2113  
+ок     /course_prod           320  h= 2004  
+ок     /course_corprod       1440  h= 1678  
+ок     /course_corprod        960  h= 2122  
+ок     /course_corprod        768  h= 2123  
+ок     /course_corprod        430  h= 2615  
+ок     /course_corprod        412  h= 2542  
+ок     /course_corprod        390  h= 2479  
+ок     /course_corprod        360  h= 2402  
+ок     /course_corprod        320  h= 2269  
+ок     /course_powprod       1440  h= 1708  
+ок     /course_powprod        960  h= 2152  
+ок     /course_powprod        768  h= 2153  
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserContext.close: Target page, context or browser has been closed
+    at async file:///Users/elena/Projects/popovichfit-site/scripts/verify-priority.mjs:154:5 {
+  log: []
+}
+
+Node.js v26.0.0

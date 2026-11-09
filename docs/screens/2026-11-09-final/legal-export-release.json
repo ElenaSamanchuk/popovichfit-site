@@ -1,0 +1,37 @@
+[
+  {
+    "route": "oferta",
+    "id": "783349521",
+    "ok": true,
+    "sourceLength": 20171,
+    "builtLength": 20171
+  },
+  {
+    "route": "part_oferta",
+    "id": "846853959",
+    "ok": true,
+    "sourceLength": 13740,
+    "builtLength": 13740
+  },
+  {
+    "route": "privacy",
+    "id": "1068747101",
+    "ok": true,
+    "sourceLength": 10432,
+    "builtLength": 10432
+  },
+  {
+    "route": "data-consent",
+    "id": "1068727201",
+    "ok": true,
+    "sourceLength": 2013,
+    "builtLength": 2013
+  },
+  {
+    "route": "consent",
+    "id": "804399670",
+    "ok": true,
+    "sourceLength": 2449,
+    "builtLength": 2449
+  }
+]

@@ -2,6 +2,9 @@
 """Мета всех страниц экспорта → docs/meta.json (title, description, og, canonical, noindex, slug, header/footer наличие)."""
 import re, os, glob, json, html as H
 ROOT='old-site'
+CFG=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'export-config.json'),encoding='utf-8'))
+DRAFT=set(CFG['draft']['files']); CUSTOM=set(CFG['customRoutes']['files'])
+HDR=CFG['chromeRecs']['header']; FTR=CFG['chromeRecs']['footer']
 ht=open(os.path.join(ROOT,'htaccess'),encoding='utf-8').read()
 file2slugs={}
 for m in re.finditer(r'RewriteRule \^([^\s$]+?)/?\$ (page\d+\.html)', ht):
@@ -10,7 +13,9 @@ def attr(h, pat):
     m=re.search(pat,h); return H.unescape(m.group(1)).strip() if m else ''
 out={}
 for f in sorted(glob.glob(os.path.join(ROOT,'*.html'))):
-    n=os.path.basename(f); h=open(f,encoding='utf-8',errors='ignore').read()
+    n=os.path.basename(f)
+    if n in DRAFT: continue  # черновик без адреса — в сайт не включаем
+    h=open(f,encoding='utf-8',errors='ignore').read()
     head=h.split('</head>')[0]
     out[n]=dict(
         slugs=file2slugs.get(n,[]),
@@ -22,11 +27,12 @@ for f in sorted(glob.glob(os.path.join(ROOT,'*.html'))):
         ogImage=attr(head,r'<meta property="og:image" content="([^"]*)"'),
         ogUrl=attr(head,r'<meta property="og:url" content="([^"]*)"'),
         canonical=attr(head,r'<link rel="canonical" href="([^"]*)"'),
-        noindex='name="robots" content="noindex"' in head,
+        noindex=bool(re.search(r'name="robots" content="[^"]*noindex', head)),
         favicon=attr(head,r'<link rel="shortcut icon" href="([^"]*)"'),
         members='tilda-members' in h,
-        header='id="rec1120433846"' in h,
-        footer='id="rec1120448561"' in h,
+        header=any('id="rec%s"'%i in h for i in HDR),
+        footer=any('id="rec%s"'%i in h for i in FTR),
+        customRoute=n in CUSTOM,
         mobileMenu='id="rec592229670"' in h,
         cookie='id="rec2019524321"' in h,
         vkNotice=bool(re.search(r'Дублируем информацию в других соцсетях', h)),

@@ -16,9 +16,10 @@
     "check:urls": "node scripts/check-urls.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:no-tilda": "node scripts/check-no-tilda.mjs",
+    "verify:priority": "nice -n 15 node scripts/verify-priority.mjs",
     "images": "node scripts/import-images.mjs",
     "start": "node .output/server/index.mjs",
-    "pages:sync": "python3 scripts/audit/extract_meta.py && python3 scripts/audit/gen_pages_ts.py && python3 scripts/audit/build_tilda_json.py && node scripts/import-images-all.mjs"
+    "pages:sync": "python3 -I scripts/audit/build_pred_pages.py && python3 -I scripts/audit/extract_meta.py && python3 -I scripts/audit/gen_pages_ts.py && python3 -I scripts/audit/build_tilda_json.py && python3 -I scripts/audit/extract_block_css.py && node scripts/import-images-all.mjs --only-used && node scripts/import-og.mjs"
   },
   "dependencies": {
     "nuxt": "^4.5.2",

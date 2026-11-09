@@ -1,24 +1,34 @@
 /lk_cor_end @1200: высота live 3262 / local 3262
 
+## rec983417661 T396
+  Δ #1745526330136 [text] dx=0 dy=0 dw=0 dh=21  live@208,136,496,44  Тренировки в этом личном кабинете недост
+
+## rec846808133 T396
+  Δ #1686673012131 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.55)  live@420,255,360,183  
+
 ## rec847547365 T396
-  Δ #1719493245877 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1067,866,36,36  
+  Δ #1719494375032 [text] dx=0 dy=0 dw=0 dh=16  live@431,876,128,42  Ссылки на инвентарь, готовые наборы, про
+  ✗ #1719493245877 [shape] opacity live 1 / local 0.1  
+
+## rec772888364 T396
+  Δ #1719483984807 [shape] фон live rgb(246, 246, 246) / local rgba(246, 246, 246, 0.4)  live@535,826,130,48  
 
 ## rec954298581 T396
-  Δ #1719577519328 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@155,1479,60,60  
-  Δ #1719585833614 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@495,1479,60,60  
-  Δ #1719585953088 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@835,1479,60,60  
-  Δ #1719585953050 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1175,1479,60,60  
-  Δ #1719586369884 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1515,1479,60,60  
+  ✗ #1719577519328 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585833614 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953088 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953050 [shape] opacity live 1 / local 0.1  
+  ✗ #1719586369884 [shape] opacity live 1 / local 0.1  
 
 ## rec772888386 T396
-  Δ #1719909118300 [text] dx=0 dy=0 dw=0 dh=8  live@20,1888,809,294  Тренировки ниже — пример из курса «Силов
+  Δ #1719909118300 [text] dx=0 dy=0 dw=0 dh=-6  live@20,1888,809,294  Тренировки ниже — пример из курса «Силов
 
 ## rec772888388 T396
-  Δ #1719577519328 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@155,2351,60,60  
-  Δ #1719585833614 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@495,2351,60,60  
-  Δ #1719585953088 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@835,2351,60,60  
-  Δ #1719585953050 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1175,2351,60,60  
-  Δ #1719898329398 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1515,2351,60,60  
-  Δ #1719898329345 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1857,2351,60,60  
+  ✗ #1719577519328 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585833614 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953088 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953050 [shape] opacity live 1 / local 0.1  
+  ✗ #1719898329398 [shape] opacity live 1 / local 0.1  
+  ✗ #1719898329345 [shape] opacity live 1 / local 0.1  
 
-элементов: 220, с расхождениями > 3px: 13
+элементов: 220, с расхождениями > 3px: 17

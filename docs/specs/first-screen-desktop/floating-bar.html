@@ -1,0 +1,114 @@
+<!-- ════════════════════════════════════════════════════════════════
+     Плавающая плашка «Коррекция / Силовой» (блок rec4176428801)
+     Было: показывается только на ≤480 px, на всю ширину, прижата к низу.
+     Стало: работает и на десктопе — компактная панель по центру внизу,
+            левее чат-бота и правее плашки cookie, чтобы ничего не перекрывать.
+     Куда вставить: тот же блок T123, где сейчас лежит старый код
+                    (заменить его целиком).
+     ════════════════════════════════════════════════════════════════ -->
+<style>
+/* по умолчанию блок скрыт — показывает его только скрипт */
+#rec4176428801 { display: none !important; }
+
+/* ── мобильные (≤480): как было — полоса во всю ширину ── */
+@media (max-width: 480px) {
+  #rec4176428801.js-fixed-block {
+    display: block !important;
+    position: fixed !important;
+    left: 0 !important; right: 0 !important; bottom: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
+}
+
+/* ── планшет и десктоп (≥481): панель по центру внизу ── */
+@media (min-width: 481px) {
+  #rec4176428801.js-fixed-block {
+    display: block !important;
+    position: fixed !important;
+    bottom: 24px !important;
+    left: 50% !important;
+    right: auto !important;
+    width: 510px !important;                 /* 20 + 215 + 20 + 215 + 20 */
+    transform: translateX(-50%);
+    transform-origin: bottom center;
+    z-index: 1000 !important;                /* ниже чата (у него больше) */
+    filter: drop-shadow(0 8px 24px rgba(45, 46, 54, .18));
+  }
+  /* высота панели вместо артборда 200 px */
+  #rec4176428801.js-fixed-block .t396__artboard,
+  #rec4176428801.js-fixed-block .t396__carrier,
+  #rec4176428801.js-fixed-block .t396__filter {
+    height: 104px !important;
+    min-height: 104px !important;
+  }
+  #rec4176428801.js-fixed-block .t396__artboard {
+    background-color: #fff !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+  }
+  /* координаты кнопок внутри панели (в артборде они рассчитаны на сетку 1200) */
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974368000002"],
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000010"] {
+    top: 18px !important; height: 68px !important; width: 215px !important;
+  }
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974368000002"] { left: 20px !important; }
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000010"] { left: 255px !important; }
+
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974368000003"],
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000011"] { top: 30px !important; }
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974368000003"] { left: 32px !important; }
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000011"] { left: 267px !important; }
+
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000008"],
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000016"] { top: 33px !important; }
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000008"] { left: 204px !important; }
+  #rec4176428801.js-fixed-block .tn-elem[data-elem-id="1790237974369000016"] { left: 439px !important; }
+}
+
+/* узкие планшеты: та же панель, чуть мельче, чтобы не упиралась в края */
+@media (min-width: 481px) and (max-width: 599px) {
+  #rec4176428801.js-fixed-block { transform: translateX(-50%) scale(.86); }
+}
+
+/* чат-бот и кнопка «наверх» — поднимаем над панелью только на мобильных,
+   на десктопе они справа и не пересекаются */
+@media (max-width: 480px) {
+  .js-fixed-block-active .t-feed-cardbtn,
+  .js-fixed-block-active #carrotquest-messenger-collapsed-container,
+  .js-fixed-block-active .carrot-messenger-frame { bottom: 70px !important; }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var BLOCK_ID    = 'rec4176428801';
+  var SHOW_AFTER  = 300;          // через сколько пикселей прокрутки показывать
+  var FIXED_CLASS = 'js-fixed-block';
+
+  var block = document.getElementById(BLOCK_ID);
+  if (!block) return;
+
+  var isVisible = false;
+  var ticking = false;
+
+  function update() {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    var shouldShow = scrolled > SHOW_AFTER;          // без ограничения по ширине
+    if (shouldShow !== isVisible) {
+      block.classList.toggle(FIXED_CLASS, shouldShow);
+      document.body.classList.toggle('js-fixed-block-active', shouldShow);
+      isVisible = shouldShow;
+    }
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  update();
+});
+</script>

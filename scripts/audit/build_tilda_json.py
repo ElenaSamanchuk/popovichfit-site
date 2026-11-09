@@ -16,10 +16,25 @@ import zero_spec as Z
 
 ROOT = 'old-site'
 OUT = 'app/data/tilda'
+CFG = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'export-config.json'), encoding='utf-8'))
+DRAFT = set(CFG['draft']['files'])  # черновики без адреса — в сайт не попадают
+CHROME = set(CFG['chromeRecs']['header']) | set(CFG['chromeRecs']['footer'])  # шапка/меню/подвал общие (layout) — из содержимого страниц вырезаются
 SCREENS = ['1600', '1200', '960', '640', '480', '320']  # 1600 — только у артбордов с этим экраном
 ART_W = {'1600': 1600, '1200': 1200, '960': 960, '640': 640, '480': 480, '320': 320}
 FIXUPS = json.load(open(os.path.join(os.path.dirname(__file__), 'fixups.json'))) if os.path.exists(os.path.join(os.path.dirname(__file__), 'fixups.json')) else {}
 os.makedirs(OUT, exist_ok=True)
+
+
+def upscale_cascade(art, scr, base_scr):
+    """Режим масштаба артборда с каскадом Тильды (t396_ab__getFieldValue): значение для экрана scr, иначе ближайшее
+    у БОЛЬШЕГО экрана, иначе базовый атрибут (он относится к самому большому экрану). Прежний код смотрел только
+    res-<scr> и базовый атрибут, поэтому 640/480 не наследовали window от res-960 (и т.п.)."""
+    chain = [s for s in ('320', '480', '640', '960', '1200') if int(s) >= int(scr)] if scr != '1600' else []
+    for s in chain:
+        v = art.get('upscale') if s == '1200' and base_scr == '1200' else art.get(f'upscale-res-{s}')
+        if v: return v
+    return art.get('upscale')
+
 
 def img_path(p):
     """images/tild3834-3931-4164-b935-643265363733__favicon_5.ico → /img/t/t38343931-favicon_5.ico (растровые → .webp)"""
@@ -132,7 +147,15 @@ def effective(geo):
 # (висячие предлоги) и без точки в конце абзаца.
 SHORT_WORDS = r'(?:в|во|на|с|со|к|ко|о|об|у|от|до|по|за|из|и|а|но|да|не|ни|же|ли|бы|то)'  # предлоги/союзы/частицы до 2 букв (классическое правило; длинные не клеим, чтобы не рвать вёрстку узких колонок)
 
-def typograf_html(h):
+UNITS = r'(?:мин|сек|час\w*|ч|г|кг|см|мм|м|л|мл|руб|р|₽|%|шт|недел\w*|дн\w*|день|дней|месяц\w*|мес|тренировк\w*|поток\w*|раз|раза|урок\w*|видео)'
+LEGAL_URLS = set(CFG.get('legalPages', []))  # юр-документы: точки в конце абзацев сохраняются
+LEGAL_FILES = set()
+if os.path.exists('docs/meta.json'):
+    _meta = json.load(open('docs/meta.json', encoding='utf-8'))
+    LEGAL_FILES = {f for f, v in _meta.items() if v['url'] in LEGAL_URLS}
+_legal = False  # выставляется в parse_page
+
+def typograf_html(h, zero=False):
     """h — HTML фрагмент (текст элемента/абзац): nbsp после коротких слов, без точки в конце абзаца."""
     if not h: return h
     parts = re.split(r'(<[^>]+>)', h)  # теги не трогаем
@@ -141,8 +164,14 @@ def typograf_html(h):
         if part.startswith('<'): out.append(part); continue
         # висячие предлоги: слово из списка + пробел → nbsp (только между словами, регистр любой)
         part = re.sub(r'(?<![\w-])(' + SHORT_WORDS + r')\s+(?=[\wА-Яа-яЁё«(„"])', lambda m: m.group(1) + '\u00a0', part, flags=re.I)
+        if not zero:  # свободные блоки: тире, разряды и единицы (в Zero-блоках раскладка абсолютная — лишний неразрывный пробел переносит строку, там только предлоги)
+            part = re.sub(r'(?<=\S)[ \u00a0]+(?=[—–](?:\s|\u00a0|$))', '\u00a0', part)           # перед тире
+            part = re.sub(r'(?<=\S) +(?=- )', '\u00a0', part)                                     # « - » как тире
+            part = re.sub(r'(?<![\d.,])(\d{1,3}) (?=\d{3}(?!\d))', '\\1\u00a0', part)             # разряды: 12 899
+            part = re.sub(r'(\d) (?=' + UNITS + r'(?![\w]))', '\\1\u00a0', part)                  # число + единица
         out.append(part)
     h = ''.join(out)
+    if _legal: return h  # юр-документы: точки сохраняются
     # точка в конце абзаца: перед </p>, </li>, <br>, концом текста (не «...», не сокращения вроде «т.д.», не после цифр «2024.»)
     h = re.sub(r'(?<![.\d])(?<!\b[а-яa-z])\.(\s*)(?=(</p>|</li>|</div>|<br\s*/?>|$))', r'\1', h, flags=re.I)
     return h
@@ -193,6 +222,8 @@ def elem_extra(el_html, etype):
     return out
 
 def parse_page(fname):
+    global _legal
+    _legal = fname in LEGAL_FILES
     html = open(os.path.join(ROOT, fname), encoding='utf-8', errors='ignore').read()
     body = html.split('<!--allrecords-->')[1] if '<!--allrecords-->' in html else html
     recs = re.split(r'(?=<div id="rec\d+" class="r t-rec)', body)
@@ -202,6 +233,7 @@ def parse_page(fname):
         m = re.match(r'<div id="(rec\d+)" class="r t-rec([^"]*)"([^>]*)data-record-type="(\d+)"', r)
         if not m: continue
         rid, cls, attrs, t = m.groups()
+        if rid[3:] in CHROME: continue  # общая шапка/меню/подвал: их даёт layout, в данных страницы их нет ни в какой форме
         tag = r[:r.find('>')]
         vis = {}
         mm = re.search(r'data-screen-min="(\d+)px"', tag); vis['min'] = int(mm.group(1)) if mm else None
@@ -238,7 +270,7 @@ def parse_page(fname):
                     hv = art.get('height') if scr == base_scr else art.get(f'height-res-{scr}')
                     h = float(hv) if hv else None
                 artboards[scr] = {'h': h, 'bg': a.get('background-color'), 'pos': a.get('position'),
-                                  'upscale': art.get(f'upscale-res-{scr}') or art.get('upscale'), 'valign': art.get('valign'),
+                                  'upscale': upscale_cascade(art, scr, base_scr), 'valign': art.get('valign'),
                                   'hug': art.get('heightmode') == 'hug', 'bgImage': rewrite_links(a.get('background-image', '')) or None}
             # эффективные высоты (каскад)
             cur = None
@@ -266,7 +298,7 @@ def parse_page(fname):
                 geo = {scr: norm_geo(g) for scr, g in e['geo'].items()}
                 el = {'id': e['id'], 'type': e['type'], 'cls': e['cls'], 'eff': effective(geo), 'fields': e['fields'], 'anim': {k: v for k, v in e['anim'].items() if k != 'sbs-opts'}}
                 if e.get('sbs'): el['sbs'] = e['sbs']
-                if e['html']: el['html'] = typograf_html(rewrite_links(e['html'])) if e['type'] in ('text',) else rewrite_links(e['html'])
+                if e['html']: el['html'] = typograf_html(rewrite_links(e['html']), zero=True) if e['type'] in ('text',) else rewrite_links(e['html'])
                 if e['text']: el['text'] = e['text']
                 if e.get('tag') in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'): el['tag'] = e['tag']
                 if e['href']: el['href'] = rewrite_links(f'href="{e["href"]}"')[6:-1]
@@ -287,11 +319,15 @@ def parse_page(fname):
                 if fx_href: el['href'] = fx_href
                 # правки текстов с живого сайта (scripts/audit/fixups.json → texts)
                 fx_text = FIXUPS.get('texts', {}).get(block['id'], {}).get(e['id'])
+                if isinstance(fx_text, dict):
+                    # Сохранить более новый текст при следующем экспорте.
+                    original = ' '.join((el.get('html') or '').split())
+                    fx_text = fx_text['to'] if original == fx_text['from'] else None
                 if fx_text is not None:
-                    el['html'] = typograf_html(fx_text); el['text'] = re.sub(r'<[^>]+>', '', fx_text)
+                    el['html'] = typograf_html(fx_text, zero=True); el['text'] = re.sub(r'<[^>]+>', '', fx_text)
                 elems.append(el)
-            # плавающая кнопка «Назад» (javascript:history.back()) — по просьбе заказчика 18.09 не переносится
-            if elems and all(e['type'] == 'button' and (e.get('href') or '').startswith('javascript:history.back') for e in elems):
+            # плавающая кнопка «Назад» (javascript:history.back()): по просьбе заказчика 18.09 не переносится (fixups.json: dropBackButton=true)
+            if FIXUPS.get('dropBackButton') and elems and all(e['type'] == 'button' and (e.get('href') or '').startswith('javascript:history.back') for e in elems):
                 continue
             block['elems'] = elems
             groups = []
@@ -326,13 +362,21 @@ def parse_page(fname):
             if t == '979':  # галерея «в ряд» (justified): t979_init('recid','rowheight','gutter') из скрипта записи
                 m9 = re.search(r"t979_init\('%s','(\d+)','(\d*)'\)" % rid[3:], r) or re.search(r"t979_init\('%s','(\d+)','(\d*)'\)" % rid[3:], html)
                 block['t979'] = {'rowH': int(m9.group(1)) if m9 else 400, 'gutter': int(m9.group(2) or 0) if m9 else 10}
-            block['popupRecs'] = re.findall(r'data-popup-rec-ids="([^"]*)"', r)
+            block['popupRecs'] = [','.join(re.sub(r'^rec', '', x.strip()) for x in v.split(',') if x.strip()) for v in re.findall(r'data-popup-rec-ids="([^"]*)"', r)]  # значения бывают с префиксом rec (page115553066) — нормализуем до чисел (на Medvediva это роняло Vue)
             if t == '131':
                 mm = re.search(r'<!-- nominify begin -->(.*?)<!-- nominify end -->', r, re.S)
                 custom = (mm.group(1).strip() if mm else '')[:80000]
                 # подключения скриптов с серверов Тильды (Tilda Members и т.п.) — в данные не берём
                 custom = re.sub(r'<script[^>]*src="https?://[^"]*tilda[^"]*"[^>]*>\s*</script>', '', custom)
                 block['custom'] = rewrite_links(custom)
+                # виджет тарифов «inline T123 v2» (/course_corprod, /course_powprod): конфиг страницы — в данные, сам скрипт и стили не нужны
+                # (виджет — site/TariffsWidget.vue + app/utils/tariffs-widget.js); картинки виджета — локальные /tariffs/assets/
+                mi = re.search(r'window\.__PF_INLINE_CONFIG__\s*=\s*(\{.*?\});\s*\n', custom, re.S)
+                if mi:
+                    try:
+                        block['pfInline'] = json.loads(re.sub(r'https://cdn\.jsdelivr\.net/gh/ElenaSamanchuk/popovichfit-tariffs@[\w.]+/assets/', '/tariffs/assets/', mi.group(1)))
+                        block['custom'] = '<!--pf-inline-tariffs-->'
+                    except ValueError: pass
                 del block['html']
         blocks.append(block)
     if pb75zero:
@@ -391,6 +435,21 @@ def hscroll_configs(blocks):
                 out.append({'scroll': sc, 'arrows': arrows[i] if i < len(arrows) else None, 'shift': int(sh.group(1)) if sh else 200})
     return out
 
+def pf_cards_config(blocks):
+    """Карточки тарифов Zero Block: скрипт T123 `window.PF_CARDS = {ключ: {defaultOption, options:[{newPrice, oldPrice, link}]}}`.
+    Цены у каждой страницы свои (/new-course, /course_correction, /course_power) — берём конфиг страницы, а не общий app/data/tariffs.ts."""
+    out = {}
+    for b in blocks:
+        c = b.get('custom') or ''
+        m = re.search(r'window\.PF_CARDS\s*=\s*\{(.*?)\n\s*\};', c, re.S)
+        if not m: continue
+        for km in re.finditer(r"'([\w-]+)':\s*\{(.*?)\n\s{4}\}", m.group(1), re.S):
+            d = re.search(r'defaultOption:\s*(\d+)', km.group(2))
+            dec = lambda v: json.loads('"' + v.replace('"', '\\"') + '"')
+            opts = [{'newPrice': dec(a), 'oldPrice': dec(o), 'link': dec(l)} for a, o, l in re.findall(r"newPrice:\s*'([^']*)',\s*oldPrice:\s*'([^']*)',\s*link:\s*'([^']*)'", km.group(2))]
+            if opts: out[km.group(1)] = {'defaultOption': int(d.group(1)) if d else 0, 'options': opts}
+    return out
+
 def main(files):
     report = []
     for f in files:
@@ -398,7 +457,8 @@ def main(files):
         tabs_of_blocks(blocks)
         hs = hscroll_configs(blocks)
         sm = showmore_configs(blocks)
-        json.dump({'file': f, 'blocks': blocks, **({'hscroll': hs} if hs else {}), **({'showmore': sm} if sm else {})}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
+        pc = pf_cards_config(blocks)
+        json.dump({'file': f, 'blocks': blocks, **({'hscroll': hs} if hs else {}), **({'showmore': sm} if sm else {}), **({'pfCards': pc} if pc else {})}, open(os.path.join(OUT, f.replace('.html', '.json')), 'w'), ensure_ascii=False, separators=(',', ':'))
         types = {}
         for b in blocks: types[b['type']] = types.get(b['type'], 0) + 1
         report.append((f, len(blocks), types))
@@ -408,21 +468,11 @@ def main(files):
             o.write(f"| {f} | {n} | {', '.join(f'T{k}×{v}' for k, v in sorted(types.items(), key=lambda kv: -kv[1]))} |\n")
     print('done', len(files), 'pages')
 
-def write_chrome():
-    """Шапка и футер главной (записи внутри <header>/<footer> экспорта) → app/data/tilda/_chrome.json:
-    подставляются на страницы, у которых в Тильде шапки/футера не было (просьба заказчика: общие на всех страницах)."""
-    html = open(os.path.join(ROOT, 'page36594700.html'), encoding='utf-8', errors='ignore').read()
-    ids = {}
-    for tag in ('header', 'footer'):
-        m = re.search(r'<%s[^>]*>(.*?)</%s>' % (tag, tag), html, re.S)
-        ids[tag] = re.findall(r'<div id="(rec\d+)"', m.group(1)) if m else []
-    page = json.load(open(os.path.join(OUT, 'page36594700.json')))
-    by = {b['id']: b for b in page['blocks']}
-    chrome = {tag: [by[i] for i in ids[tag] if i in by] for tag in ('header', 'footer')}
-    json.dump(chrome, open(os.path.join(OUT, '_chrome.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
-    print('_chrome.json:', {k: len(v) for k, v in chrome.items()})
-
 if __name__ == '__main__':
-    files = sys.argv[1:] or sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, 'page*.html')))
+    files = [f for f in (sys.argv[1:] or sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, 'page*.html')))) if f not in DRAFT]
     main(files)
-    if 'page36594700.html' in files: write_chrome()
+    # шапка и подвал больше не берутся из главной (_chrome.json): их даёт layout
+    if os.path.exists(os.path.join(OUT, '_chrome.json')): os.remove(os.path.join(OUT, '_chrome.json'))
+    for d in DRAFT:
+        pth = os.path.join(OUT, d.replace('.html', '.json'))
+        if os.path.exists(pth): os.remove(pth)

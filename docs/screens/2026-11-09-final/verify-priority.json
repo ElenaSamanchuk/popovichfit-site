@@ -1,0 +1,778 @@
+{
+ "base": "http://127.0.0.1:61890",
+ "date": "2026-11-09T10:29:50.920Z",
+ "results": [
+  {
+   "url": "/",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 8494
+  },
+  {
+   "url": "/",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8279
+  },
+  {
+   "url": "/",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  },
+  {
+   "url": "/course_correction",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5175
+  },
+  {
+   "url": "/course_correction",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 5785
+  },
+  {
+   "url": "/course_correction",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7432
+  },
+  {
+   "url": "/course_correction",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7302
+  },
+  {
+   "url": "/course_correction",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 6507
+  },
+  {
+   "url": "/course_power",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5117
+  },
+  {
+   "url": "/course_power",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 5759
+  },
+  {
+   "url": "/course_power",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7725
+  },
+  {
+   "url": "/course_power",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7498
+  },
+  {
+   "url": "/course_power",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 6665
+  },
+  {
+   "url": "/course_prod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1204
+  },
+  {
+   "url": "/course_prod",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1210
+  },
+  {
+   "url": "/course_prod",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1617
+  },
+  {
+   "url": "/course_prod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2173
+  },
+  {
+   "url": "/course_prod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2004
+  },
+  {
+   "url": "/course_corprod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1678
+  },
+  {
+   "url": "/course_corprod",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2122
+  },
+  {
+   "url": "/course_corprod",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2123
+  },
+  {
+   "url": "/course_corprod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2479
+  },
+  {
+   "url": "/course_corprod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2269
+  },
+  {
+   "url": "/course_powprod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1708
+  },
+  {
+   "url": "/course_powprod",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2152
+  },
+  {
+   "url": "/course_powprod",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2153
+  },
+  {
+   "url": "/course_powprod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2494
+  },
+  {
+   "url": "/course_powprod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2284
+  },
+  {
+   "url": "/results",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 4502
+  },
+  {
+   "url": "/results",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 3877
+  },
+  {
+   "url": "/results",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 9876
+  },
+  {
+   "url": "/results",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 6183
+  },
+  {
+   "url": "/results",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 5321
+  },
+  {
+   "url": "/media",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2645
+  },
+  {
+   "url": "/media",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2405
+  },
+  {
+   "url": "/media",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2628
+  },
+  {
+   "url": "/media",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 4863
+  },
+  {
+   "url": "/media",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4246
+  },
+  {
+   "url": "/about",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2660
+  },
+  {
+   "url": "/about",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2560
+  },
+  {
+   "url": "/about",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 3516
+  },
+  {
+   "url": "/about",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 4180
+  },
+  {
+   "url": "/about",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3651
+  },
+  {
+   "url": "/community",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2137
+  },
+  {
+   "url": "/community",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2470
+  },
+  {
+   "url": "/community",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2755
+  },
+  {
+   "url": "/community",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3290
+  },
+  {
+   "url": "/community",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2951
+  },
+  {
+   "url": "/oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 11251
+  },
+  {
+   "url": "/oferta",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 11665
+  },
+  {
+   "url": "/oferta",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 13607
+  },
+  {
+   "url": "/oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 20637
+  },
+  {
+   "url": "/oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 25114
+  },
+  {
+   "url": "/part_oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6938
+  },
+  {
+   "url": "/part_oferta",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 7179
+  },
+  {
+   "url": "/part_oferta",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8486
+  },
+  {
+   "url": "/part_oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 13204
+  },
+  {
+   "url": "/part_oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 16249
+  },
+  {
+   "url": "/privacy",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6450
+  },
+  {
+   "url": "/privacy",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 6696
+  },
+  {
+   "url": "/privacy",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7838
+  },
+  {
+   "url": "/privacy",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 11837
+  },
+  {
+   "url": "/privacy",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 14329
+  },
+  {
+   "url": "/data-consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1728
+  },
+  {
+   "url": "/data-consent",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1767
+  },
+  {
+   "url": "/data-consent",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1946
+  },
+  {
+   "url": "/data-consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3034
+  },
+  {
+   "url": "/data-consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3491
+  },
+  {
+   "url": "/consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2068
+  },
+  {
+   "url": "/consent",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2136
+  },
+  {
+   "url": "/consent",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2344
+  },
+  {
+   "url": "/consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3573
+  },
+  {
+   "url": "/consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4160
+  },
+  {
+   "url": "/promo",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1920
+  },
+  {
+   "url": "/promo",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1850
+  },
+  {
+   "url": "/promo",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1877
+  },
+  {
+   "url": "/promo",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2182
+  },
+  {
+   "url": "/promo",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2011
+  },
+  {
+   "url": "/inventory",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2646
+  },
+  {
+   "url": "/inventory",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2756
+  },
+  {
+   "url": "/inventory",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 4203
+  },
+  {
+   "url": "/inventory",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 5116
+  },
+  {
+   "url": "/inventory",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4426
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1335
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 1235
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 1878
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 1824
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1736
+  },
+  {
+   "url": "/sertif",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6599
+  },
+  {
+   "url": "/sertif",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 5399
+  },
+  {
+   "url": "/sertif",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 6958
+  },
+  {
+   "url": "/sertif",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 8447
+  },
+  {
+   "url": "/sertif",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 7133
+  },
+  {
+   "url": "/taplink",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 3030
+  },
+  {
+   "url": "/taplink",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 3040
+  },
+  {
+   "url": "/taplink",
+   "width": 768,
+   "ok": false,
+   "problems": [
+    "битых картинок 2: http://127.0.0.1:61890/img/t/t33613239-group_1321319991.svg ; http://127.0.0.1:61890/img/t/t33613239-group_1321319991.svg"
+   ],
+   "height": 3407
+  },
+  {
+   "url": "/taplink",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3320
+  },
+  {
+   "url": "/taplink",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2945
+  },
+  {
+   "url": "/open",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6767
+  },
+  {
+   "url": "/open",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 8511
+  },
+  {
+   "url": "/open",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8315
+  },
+  {
+   "url": "/open",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10900
+  },
+  {
+   "url": "/open",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11878
+  },
+  {
+   "url": "/close",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/close",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 8494
+  },
+  {
+   "url": "/close",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8299
+  },
+  {
+   "url": "/close",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10911
+  },
+  {
+   "url": "/close",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  }
+ ]
+}

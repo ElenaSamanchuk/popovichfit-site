@@ -6,14 +6,31 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import { SALES_OPEN, SALES_REDIRECTS } from '../app/data/sales.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/meta.json'), 'utf8'))
 const BASE = process.env.BASE
 const unpublished = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/unpublished.json'), 'utf8')).urls || [])
-let bad = 0, n = 0
+let bad = 0, n = 0, redirects = 0
 for (const [file, p] of Object.entries(meta)) {
   if (p.url === '/404.html' || unpublished.has(p.url)) continue // скрытые страницы: их нет в сборке намеренно
+  const salesTarget = !SALES_OPEN && SALES_REDIRECTS[p.url]
+  if (salesTarget) {
+    redirects++
+    if (BASE) {
+      const res = await fetch(BASE + p.url, { redirect: 'manual' }).catch(() => null)
+      const location = res?.headers.get('location')
+      if (res?.status !== 302 || !location || new URL(location, BASE).pathname !== salesTarget) {
+        bad++
+        console.log(`✗ ${p.url}: ожидался 302 → ${salesTarget}, получен ${res?.status ?? 'нет ответа'}`)
+      }
+    } else if (fs.existsSync(path.join(ROOT, '.output/public', p.url.slice(1), 'index.html'))) {
+      bad++
+      console.log(`✗ ${p.url}: HTML перекрывает серверный редирект`)
+    }
+    continue
+  }
   n++
   if (BASE) {
     const res = await fetch(BASE + p.url, { redirect: 'manual' }).catch(() => null)
@@ -27,5 +44,5 @@ for (const [file, p] of Object.entries(meta)) {
     if (!cands.some((c) => fs.existsSync(path.join(dir, c)))) { bad++; console.log(`✗ нет файла для ${p.url} (${file})`) }
   }
 }
-console.log(bad ? `\n✗ проблемных URL: ${bad} из ${n}` : `✓ все ${n} URL на месте`)
+console.log(bad ? `\n✗ проблемных URL: ${bad} из ${n + redirects}` : `✓ все ${n} URL на месте${redirects ? `, ещё ${redirects} адреса работают через редирект` : ''}`)
 process.exit(bad ? 1 : 0)

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // Виджет поддержки Sender (решение владельца: только Sender, на всех страницах).
 // Скрипт и ключи — из блока T123 экспорта (docs/tilda-custom-code/013_*.html).
-useHead({
+if (!useRuntimeConfig().public.previewMode) useHead({
   script: [
     {
       key: 'sender-widget',

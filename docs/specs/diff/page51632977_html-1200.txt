@@ -1,22 +1,24 @@
-/page51632977.html @1200: высота live 8319 / local 8330
+/page51632977.html @1200: высота live 8319 / local 8319
 
 ## rec770523516 T396
   Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@780,321,360,200  
 
-## rec772071164 T396
-  ✗ #1720448097344 [shape] opacity live 0.4 / local 1  
-
 ## rec772059413 T396
   Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@810,987,370,220  
 
-## rec770523526 T396
-  Δ #1699466529401 [image] dx=0 dy=0 dw=0 dh=-40  live@69,4665,40,40  
-  Δ #1699466530584 [image] dx=0 dy=0 dw=0 dh=-40  live@20,4665,40,40  
+## rec770536451 T396
+  Δ #1699444620779 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@20,2386,260,150  
+  Δ #1699446602219 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@552,2450,350,140  
+  Δ #1699450417063 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@879,2294,274,94  
+  Δ #1699450545339 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@970,2431,210,94  
 
-## rec770523532 T396
-  Δ #1699512344190 [image] dx=0 dy=0 dw=0 dh=-43  live@543,6561,143,43  
-  Δ #1699512344196 [image] dx=0 dy=0 dw=0 dh=-43  live@393,6561,143,43  
+## rec771413968 T396
+  Δ #1699444620779 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@20,3046,260,150  
+  Δ #1699446602219 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@552,3110,350,140  
+  Δ #1699450417063 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@879,2954,274,94  
+  Δ #1699450545339 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.5)  live@970,3091,210,94  
 
-## rec770523538 T585  блок: live y=6980 h=756 / local y=6980 h=767
+## rec770523518 T396
+  Δ #1699522797931 [video] фон live rgba(0, 0, 0, 0) / local rgb(0, 0, 0)  live@771,3558,407,246  
 
-элементов: 225, с расхождениями > 3px: 7
+элементов: 225, с расхождениями > 3px: 11

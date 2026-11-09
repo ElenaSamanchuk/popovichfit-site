@@ -1,0 +1,238 @@
+{
+ "base": "http://127.0.0.1:3190",
+ "browser": "chromium",
+ "date": "2026-11-09T19:36:47.073Z",
+ "results": [
+  {
+   "url": "/course_prod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1204
+  },
+  {
+   "url": "/course_prod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2133
+  },
+  {
+   "url": "/course_prod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1964
+  },
+  {
+   "url": "/course_corprod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1678
+  },
+  {
+   "url": "/course_corprod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2439
+  },
+  {
+   "url": "/course_corprod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2229
+  },
+  {
+   "url": "/course_powprod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1708
+  },
+  {
+   "url": "/course_powprod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2454
+  },
+  {
+   "url": "/course_powprod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2244
+  },
+  {
+   "url": "/inventory",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2646
+  },
+  {
+   "url": "/inventory",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 5076
+  },
+  {
+   "url": "/inventory",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4386
+  },
+  {
+   "url": "/promo",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1920
+  },
+  {
+   "url": "/promo",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2142
+  },
+  {
+   "url": "/promo",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1971
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1335
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 1784
+  },
+  {
+   "url": "/nutric-lk",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1696
+  },
+  {
+   "url": "/data-consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1728
+  },
+  {
+   "url": "/data-consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2994
+  },
+  {
+   "url": "/data-consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3477
+  },
+  {
+   "url": "/privacy",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6537
+  },
+  {
+   "url": "/privacy",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 11976
+  },
+  {
+   "url": "/privacy",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 14570
+  },
+  {
+   "url": "/part_oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 7005
+  },
+  {
+   "url": "/part_oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 13520
+  },
+  {
+   "url": "/part_oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 16614
+  },
+  {
+   "url": "/oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 11364
+  },
+  {
+   "url": "/oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 21147
+  },
+  {
+   "url": "/oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 25700
+  },
+  {
+   "url": "/consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2093
+  },
+  {
+   "url": "/consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3618
+  },
+  {
+   "url": "/consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4178
+  }
+ ]
+}

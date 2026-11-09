@@ -1,0 +1,196 @@
+{
+  "base": "https://elenasamanchuk.github.io/popovichfit-preview/",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/analys-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/community",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/consent",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_corprod",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_correction",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_power",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_powprod",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_prod",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/data-consent",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/delete",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/doc_l",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/inventory",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/m",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_1_otek",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_gluteal_muscles",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_kor",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_mtd2",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/menu7-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/nutric-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/oferta",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/part_oferta",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/profile-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/promo",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/results",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/sertif",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/support",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taplink",
+      "status": 200,
+      "noindex": true
+    }
+  ],
+  "browser": [
+    {
+      "width": 1440,
+      "spa": true,
+      "utm": "published-smoke",
+      "headers": 1,
+      "footers": 1,
+      "overflow": 0,
+      "errors": [],
+      "analytics": []
+    },
+    {
+      "width": 390,
+      "spa": true,
+      "utm": "published-smoke",
+      "headers": 1,
+      "footers": 1,
+      "overflow": 0,
+      "errors": [],
+      "analytics": []
+    }
+  ],
+  "excluded": [
+    {
+      "route": "speakers/",
+      "status": 404
+    },
+    {
+      "route": "pred/",
+      "status": 404
+    },
+    {
+      "route": "payment-test/",
+      "status": 404
+    }
+  ]
+}

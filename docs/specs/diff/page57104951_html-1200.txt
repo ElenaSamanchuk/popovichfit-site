@@ -1,18 +1,11 @@
-/page57104951.html @1200: высота live 19966 / local 19912  (общий сдвиг по вертикали -54px — вычтен)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-## rec816354926 T396
-  Δ #1672139173377 [text] dx=0 dy=0 dw=0 dh=4  live@20,928,539,153  За подготовку кожи к макияжу у нас отвеч
+page.evaluate: Execution context was destroyed, most likely because of a navigation
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:45:12 {
+  log: [],
+  name: 'Error'
+}
 
-## rec816354930 T396
-  Δ #1672139173377 [text] dx=0 dy=0 dw=0 dh=5  live@20,3063,542,204  Аджастер - это жидкий концентрированный 
-
-## rec816354932 T396
-  Δ #1672139173377 [text] dx=0 dy=0 dw=0 dh=4  live@20,4038,542,170  Инструмент, который поможет нанести любо
-
-## rec816354934 T396
-  Δ #1672139173377 [text] dx=0 dy=0 dw=0 dh=4  live@20,4963,589,170  Тональная основа предназначена для вырав
-
-## rec816354944 T396
-  Δ #1672139173377 [text] dx=0 dy=0 dw=0 dh=4  live@20,9903,622,187  Промежуточный этап после кремовых тексту
-
-элементов: 367, с расхождениями > 3px: 5
+Node.js v26.0.0

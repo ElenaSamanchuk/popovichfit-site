@@ -5,10 +5,13 @@
 import { tariffs } from '~/data/tariffs'
 
 export function initPfCards(root: ParentNode = document) {
+  // цены у каждой страницы свои (скрипт T123 PF_CARDS на странице): берём конфиг страницы, общий tariffs.ts — запасной
+  let pageCfg: Record<string, (typeof tariffs)[string]> = {}
+  try { pageCfg = JSON.parse(document.querySelector<HTMLElement>('.tilda-page')?.dataset.pfCards || '{}') } catch { /* нет конфига страницы */ }
   root.querySelectorAll<HTMLElement>('.pf-card').forEach((card) => {
     if (card.dataset.pfInited === '1') return
     const key = [...card.classList].find((c) => c.startsWith('pf-card--'))?.slice(9) || card.getAttribute('data-pf-card')
-    const config = key ? tariffs[key] : undefined
+    const config = key ? (pageCfg[key] ?? tariffs[key]) : undefined
     if (!config) return
     const options = [...card.querySelectorAll<HTMLElement>('.pf-option')]
     const priceNew = card.querySelector<HTMLElement>('.pf-price-new')

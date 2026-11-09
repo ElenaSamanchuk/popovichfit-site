@@ -54,3 +54,15 @@ npm run check:no-tilda # ни одной ссылки на tilda.cc / tildacdn.c
 Сервер: `deploy/server-setup.sh` (один раз, на сервере), затем `deploy/deploy.sh` с локальной машины
 (сборка → rsync → symlink `current` → перезапуск сервиса). nginx отдаёт пререндер из `public/`, `/api/*` и sitemap — node.
 Подробности переноса и решений — `docs/HANDOFF.md`, статус страниц — `docs/MIGRATION-STATUS.md`, QA — `docs/QA-REPORT.md`.
+
+## Новая главная, шапка и подвал дизайнера (09.11.2026)
+
+Шапка, меню и подвал — один общий источник на всех страницах: `app/components/home/PfhHeader.vue`, `PfhFooter.vue` (разметка — `app/components/home/html/header*.html`, `footer*.html`), подключены в `app/layouts/default.vue` и `bare.vue`. Старые Zero-шапка/подвал/меню T450 отфильтрованы в `app/pages/[...tilda].vue` (список `CHROME`). Главная, `/open`, `/close` — `app/pages/index.vue|open.vue|close.vue` + `PfhPage.vue` (разметка `html/home|open|close.html`); `/speakers` (noindex, не в меню) — `speakers.vue`. Стили — `app/assets/css/pfh.css` (всё под `.pfh`, шрифты переименованы в PfhInvolve/PfhManrope), скрипты — `app/utils/pfh.ts`, ассеты — `public/home/`. Источник правды — блоки T131 экспорта Тильды; преобразование — `docs/screens/2026-11-09-new-home/convert-from-export.py`. Правка шапки/подвала в одном месте действует на все страницы.
+
+## Режим продаж (открыты / закрыты)
+
+Один переключатель — `SALES_OPEN` в `app/data/sales.ts` (сейчас `false`).
+- закрыто: `/` — закрытая главная; `/predcor` → `/course_correction`, `/predpow` → `/course_power`, `/pred` → `/` (302, query `r`/`utm` и `#tariff` сохраняются);
+- открыто: `/` — версия `/open` (шапка/подвал с `/predcor`, `/predpow`), адреса `/pred`, `/predcor`, `/predpow` отдают страницы.
+Порядок смены: 1) поправить `SALES_OPEN` (`true`/`false`); 2) `npm run build`; 3) `deploy/deploy.sh`. nginx менять не нужно: он смотрит, есть ли в релизе маркер `sales-open/index.html` (его пререндерит страница `app/pages/sales-open.vue` только при `true`), и без маркера отвечает 302. Внутри сайта то же делает `app/middleware/sales.global.ts`. `/open` и `/close` работают всегда.
+`/pred` — своя разметка `app/components/home/html/pred.html` (из копии 06.11, генерация `docs/screens/2026-11-09-new-home/convert-from-export.py`), в sitemap попадает только при `true`. `/predcor` и `/predpow` рендерит общий `TildaPage` по данным `app/data/tilda/page41134729.json` и `page41134747.json` (`npm run pages:sync`, сопоставление в `app/data/sales.ts` → `SALES_PAGES`); пока данных нет, в режиме «открыто» адрес даёт 404. В sitemap /pred, /predcor, /predpow не входят, пока `SALES_OPEN=false` (`server/routes/sitemap.xml.ts`).

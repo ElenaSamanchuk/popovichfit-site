@@ -1,15 +1,15 @@
 /eat @1200: высота live 1533 / local 1533
 
 ## rec777343871 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
-  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,230,60,60  
-  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,230,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
 
 ## rec777343872 T396
-  Δ #1721745069241 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,470,60,60  
+  ✗ #1721745069241 [shape] opacity live 1 / local 0.1  
 
 ## rec777343873 T396
-  Δ #1721745002494 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@131,770,60,60  
+  ✗ #1721745002494 [shape] opacity live 1 / local 0.1  
 
 элементов: 65, с расхождениями > 3px: 6

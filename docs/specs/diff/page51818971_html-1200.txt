@@ -1,4 +1,4 @@
-/page51818971.html @1200: высота live 7015 / local 7016
+/page51818971.html @1200: высота live 7015 / local 7015
 
 ## rec772072447 T396
   Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@810,377,370,220  
@@ -11,13 +11,12 @@
 
 ## rec772441787 T396
   Δ #1720591572494 [shape] bg-image live 1556_1_1.jpg.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t61323038-1556_1_1.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@321,2301,560,590  
-  Δ #1720609603259 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1011,2461,60,60  
+  ✗ #1720609603259 [shape] opacity live 1 / local 0.1  
+  Δ #1720616062703 [video] фон live rgba(0, 0, 0, 0) / local rgb(0, 0, 0)  live@900,2301,281,380  
+  Δ #1720610433500 [text] dx=0 dy=0 dw=0 dh=13  live@709,2450,141,42  Блок «Нутрициология и образ жизни» с лек
+  Δ #1720610454358 [text] dx=0 dy=0 dw=0 dh=13  live@709,2731,106,28  Тейпирование и отработка шрамов
 
 ## rec772844085 T396
-  Δ #1720698441948 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@431,4881,60,60  
+  ✗ #1720698441948 [shape] opacity live 1 / local 0.1  
 
-## rec772868050 T396
-  Δ #1720700339344 [image] dx=0 dy=0 dw=0 dh=-43  live@549,5485,143,43  
-  Δ #1720700339339 [image] dx=0 dy=0 dw=0 dh=-43  live@399,5485,143,43  
-
-элементов: 236, с расхождениями > 3px: 8
+элементов: 236, с расхождениями > 3px: 9

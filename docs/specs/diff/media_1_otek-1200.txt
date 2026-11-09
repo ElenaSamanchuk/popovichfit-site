@@ -1,67 +1,11 @@
-/media_1_otek @1200: высота live 12993 / local 13176
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-## rec541446419 T4  блок: live y=1413 h=529 / local y=1413 h=720
+page.evaluate: Execution context was destroyed, most likely because of a navigation
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:47:12 {
+  log: [],
+  name: 'Error'
+}
 
-## rec540955694 T106  блок: live y=1942 h=198 / local y=2133 h=198
-
-## rec540955695 T33  блок: live y=2141 h=146 / local y=2332 h=146
-
-## rec540955696 T106  блок: live y=2287 h=171 / local y=2478 h=171
-
-## rec541124728 T3  блок: live y=2457 h=460 / local y=2648 h=460
-
-## rec541124921 T106  блок: live y=2917 h=271 / local y=3108 h=271
-
-## rec541125290 T3  блок: live y=3189 h=462 / local y=3380 h=462
-
-## rec541125395 T106  блок: live y=3651 h=535 / local y=3842 h=535
-
-## rec541125909 T3  блок: live y=4186 h=336 / local y=4377 h=336
-
-## rec541127221 T106  блок: live y=4522 h=411 / local y=4713 h=411
-
-## rec541130311 T33  блок: live y=4933 h=146 / local y=5124 h=146
-
-## rec541130312 T106  блок: live y=5079 h=505 / local y=5270 h=505
-
-## rec541130941 T223  блок: live y=5585 h=595 / local y=5776 h=591
-
-## rec541131725 T33  блок: live y=6180 h=171 / local y=6367 h=171
-
-## rec541131726 T106  блок: live y=6350 h=115 / local y=6537 h=115
-
-## rec541131825 T3  блок: live y=6465 h=602 / local y=6652 h=602
-
-## rec541132030 T106  блок: live y=7067 h=355 / local y=7254 h=355
-
-## rec541132334 T3  блок: live y=7422 h=364 / local y=7609 h=364
-
-## rec541132471 T223  блок: live y=7786 h=323 / local y=7973 h=319
-
-## rec541132776 T33  блок: live y=8109 h=186 / local y=8292 h=186
-
-## rec541132777 T106  блок: live y=8295 h=113 / local y=8478 h=113
-
-## rec541133027 T3  блок: live y=8408 h=365 / local y=8591 h=365
-
-## rec541133982 T106  блок: live y=8772 h=1331 / local y=8955 h=1331
-
-## rec541134859 T3  блок: live y=10104 h=265 / local y=10287 h=265
-
-## rec541135998 T33  блок: live y=10369 h=176 / local y=10552 h=176
-
-## rec541135999 T106  блок: live y=10545 h=198 / local y=10728 h=198
-
-## rec541136079 T33  блок: live y=10744 h=86 / local y=10927 h=86
-
-## rec541136080 T106  блок: live y=10830 h=243 / local y=11013 h=243
-
-## rec541136250 T3  блок: live y=11074 h=391 / local y=11257 h=391
-
-## rec541136703 T106  блок: live y=11465 h=243 / local y=11648 h=243
-
-## rec541137003 T33  блок: live y=11708 h=141 / local y=11891 h=141
-
-## rec541137008 T106  блок: live y=11849 h=561 / local y=12032 h=561
-
-элементов: 3, с расхождениями > 3px: 0
+Node.js v26.0.0

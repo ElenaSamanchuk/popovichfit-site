@@ -1,0 +1,397 @@
+{
+ "/course_corprod btn": [
+  {
+   "tag": "DIV",
+   "cls": "",
+   "w": 1440,
+   "h": 1678,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tilda-page pf-oldhdr",
+   "w": 1440,
+   "h": 1127,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tb",
+   "w": 1440,
+   "h": 1127,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-tariffs pf-tariffs--ready",
+   "w": 1440,
+   "h": 1052,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "hidden auto"
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "w": 1440,
+   "h": 1052,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-plashka-head",
+   "w": 1160,
+   "h": 19,
+   "x": 140,
+   "scrollW": 1160,
+   "clientW": 1160,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "P",
+   "cls": "pf-plashka-head__title",
+   "w": 233,
+   "h": 19,
+   "x": 140,
+   "scrollW": 233,
+   "clientW": 233,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-plashka__cta",
+   "w": 198,
+   "h": 46,
+   "x": 1077,
+   "scrollW": 198,
+   "clientW": 198,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "pf-btn",
+   "w": 198,
+   "h": 46,
+   "x": 1077,
+   "scrollW": 198,
+   "clientW": 198,
+   "ws": "nowrap",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-overlay",
+   "w": 1440,
+   "h": 900,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "hidden auto"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "pf-btn pf-btn--block",
+   "w": 463,
+   "h": 45,
+   "x": 489,
+   "scrollW": 472,
+   "clientW": 472,
+   "ws": "nowrap",
+   "ov": "visible"
+  }
+ ],
+ "/course_powprod btn": [
+  {
+   "tag": "DIV",
+   "cls": "",
+   "w": 1440,
+   "h": 1708,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tilda-page pf-oldhdr",
+   "w": 1440,
+   "h": 1157,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tb",
+   "w": 1440,
+   "h": 1157,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-tariffs pf-tariffs--ready",
+   "w": 1440,
+   "h": 1052,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "hidden auto"
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "w": 1440,
+   "h": 1052,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-plashka-head",
+   "w": 1160,
+   "h": 19,
+   "x": 140,
+   "scrollW": 1160,
+   "clientW": 1160,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "P",
+   "cls": "pf-plashka-head__title",
+   "w": 233,
+   "h": 19,
+   "x": 140,
+   "scrollW": 233,
+   "clientW": 233,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-plashka__cta",
+   "w": 198,
+   "h": 46,
+   "x": 1077,
+   "scrollW": 198,
+   "clientW": 198,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "pf-btn",
+   "w": 198,
+   "h": 46,
+   "x": 1077,
+   "scrollW": 198,
+   "clientW": 198,
+   "ws": "nowrap",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "pf-overlay",
+   "w": 1440,
+   "h": 900,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "hidden auto"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "pf-btn pf-btn--block",
+   "w": 463,
+   "h": 45,
+   "x": 489,
+   "scrollW": 472,
+   "clientW": 472,
+   "ws": "nowrap",
+   "ov": "visible"
+  }
+ ],
+ "/taplink 1440": [
+  {
+   "tag": "DIV",
+   "cls": "",
+   "w": 1440,
+   "h": 3030,
+   "x": 0,
+   "scrollW": 1440,
+   "clientW": 1440,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tz__el tz__el--text e1762943143619",
+   "w": 145,
+   "h": 12,
+   "x": 185,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tz__atom",
+   "w": 145,
+   "h": 12,
+   "x": 185,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tz__el tz__el--text e1762955416220",
+   "w": 145,
+   "h": 10,
+   "x": 930,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "nowrap",
+   "ov": "visible"
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tz__atom",
+   "w": 145,
+   "h": 10,
+   "x": 930,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "nowrap",
+   "ov": "visible"
+  }
+ ],
+ "/taplink 960": [
+  {
+   "tag": "DIV",
+   "cls": "",
+   "w": 960,
+   "h": 3040,
+   "x": 0,
+   "scrollW": 960,
+   "clientW": 960,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tz__el tz__el--text e1762943143619",
+   "w": 145,
+   "h": 10,
+   "x": 55,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tz__atom",
+   "w": 145,
+   "h": 10,
+   "x": 55,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "normal",
+   "ov": "visible"
+  },
+  {
+   "tag": "DIV",
+   "cls": "tz__el tz__el--text e1762955416220",
+   "w": 145,
+   "h": 10,
+   "x": 590,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "nowrap",
+   "ov": "visible"
+  },
+  {
+   "tag": "SPAN",
+   "cls": "tz__atom",
+   "w": 145,
+   "h": 10,
+   "x": 590,
+   "scrollW": 145,
+   "clientW": 145,
+   "ws": "nowrap",
+   "ov": "visible"
+  }
+ ],
+ "/results back": [],
+ "/nutric-lk back": [],
+ "testvvedenie": {
+  "robots": "noindex",
+  "header": null,
+  "inSitemap": false
+ },
+ "doc /oferta": {
+  "vw": 390,
+  "sw": 390,
+  "left": 16,
+  "right": 16,
+  "fw": "300",
+  "fs": "16px"
+ },
+ "doc /privacy": {
+  "vw": 390,
+  "sw": 390,
+  "left": 16,
+  "right": 16,
+  "fw": "300",
+  "fs": "16px"
+ },
+ "doc /doc_l": {
+  "vw": 390,
+  "sw": 390
+ },
+ "doc /part_oferta": {
+  "vw": 390,
+  "sw": 390,
+  "left": 16,
+  "right": 16,
+  "fw": "300",
+  "fs": "16px"
+ }
+}

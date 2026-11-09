@@ -1,0 +1,19 @@
+== Адреса продаж по файлам сборки и правилам nginx (без браузера)
+SALES_OPEN в app/data/sales.ts: false
+ок     маркер sales-open/index.html нет (ожидается нет)
+ок     пререндер /pred/index.html нет, сервер перенаправит на /
+ок     пререндер /predcor/index.html нет, сервер перенаправит на /course_correction
+ок     пререндер /predpow/index.html нет, сервер перенаправит на /course_power
+ок     sitemap.xml не содержит /pred (ожидается не содержит)
+ок     sitemap.xml не содержит /predcor (ожидается не содержит)
+ок     sitemap.xml не содержит /predpow (ожидается не содержит)
+ок     nginx map: /pred → / (ожидается /)
+ок     nginx map: /predcor → /course_correction (ожидается /course_correction)
+ок     nginx map: /predpow → /course_power (ожидается /course_power)
+ок     nginx location: без маркера sales-open → 302 на $pf_sales_target с сохранением query ($is_args$args)
+расчёт: GET /pred?r=x&utm_source=y при закрытых продажах → 302 → /?r=x&utm_source=y
+расчёт: GET /predcor?r=x&utm_source=y при закрытых продажах → 302 → /course_correction?r=x&utm_source=y
+расчёт: GET /predpow?r=x&utm_source=y при закрытых продажах → 302 → /course_power?r=x&utm_source=y
+ок     app/middleware/sales.global.ts обрабатывает адреса продаж
+
+ИТОГ: всё в порядке

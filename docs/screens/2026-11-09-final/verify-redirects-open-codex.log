@@ -1,0 +1,19 @@
+== Адреса продаж по файлам сборки и правилам nginx (без браузера)
+SALES_OPEN в app/data/sales.ts: true
+ок     маркер sales-open/index.html есть (ожидается есть)
+ок     пререндер /pred/index.html — настоящая страница (118840 байт), не заглушка
+ок     пререндер /predcor/index.html — настоящая страница (736037 байт), не заглушка
+ок     пререндер /predpow/index.html — настоящая страница (625112 байт), не заглушка
+ок     sitemap.xml содержит /pred (ожидается содержит)
+ок     sitemap.xml не содержит /predcor (ожидается не содержит)
+ок     sitemap.xml не содержит /predpow (ожидается не содержит)
+ок     nginx map: /pred → / (ожидается /)
+ок     nginx map: /predcor → /course_correction (ожидается /course_correction)
+ок     nginx map: /predpow → /course_power (ожидается /course_power)
+ок     nginx location: без маркера sales-open → 302 на $pf_sales_target с сохранением query ($is_args$args)
+расчёт: GET /pred?r=x&utm_source=y при открытых продажах → 200 (страница /pred)
+расчёт: GET /predcor?r=x&utm_source=y при открытых продажах → 200 (страница /predcor)
+расчёт: GET /predpow?r=x&utm_source=y при открытых продажах → 200 (страница /predpow)
+ок     app/middleware/sales.global.ts обрабатывает адреса продаж
+
+ИТОГ: всё в порядке

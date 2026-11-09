@@ -3,7 +3,9 @@
 // показывать, пока в localStorage нет cookieConsent=accepted; скрыть по клику на кнопку (.cookie-banner-btn) или любому клику
 // на странице, кроме ссылки на политику (.cookie-banner-link).
 import type { TildaBlock } from '~/utils/tilda-css'
-defineProps<{ block: TildaBlock }>()
+const props = defineProps<{ block: TildaBlock }>()
+/** ссылки вида https://popovichfit.ru/privacy -> относительные */
+const localBlock = computed<TildaBlock>(() => JSON.parse(JSON.stringify(props.block).replaceAll('https://popovichfit.ru/', '/')))
 const STORAGE_KEY = 'cookieConsent'
 const STORAGE_DATE_KEY = 'cookieConsentDate'
 const visible = ref(false)
@@ -33,7 +35,7 @@ onBeforeUnmount(() => document.removeEventListener('click', onGlobalClick, true)
 
 <template>
   <div v-if="visible" class="pf-cookie" :class="hiding ? 'pf-cookie--hidden' : ''" role="region" aria-label="Использование cookie">
-    <ZeroBlock :block="block" />
+    <ZeroBlock :block="localBlock" />
   </div>
 </template>
 

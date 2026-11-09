@@ -1,0 +1,30 @@
+ок live /course_power 360 undefined элементов
+кэш /about
+ок live /results 1440 undefined элементов
+ок live /media 1440 undefined элементов
+ок live /community 1440 undefined элементов
+ок live /community 390 undefined элементов
+ок live /taplink 1440 undefined элементов
+ок live /taplink 390 undefined элементов
+ок live /promo 1440 undefined элементов
+ок live /promo 390 undefined элементов
+ок live /inventory 1440 undefined элементов
+ок live /inventory 390 undefined элементов
+ок live /nutric-lk 1440 undefined элементов
+ок live /nutric-lk 390 undefined элементов
+ок live /course_prod 1440 undefined элементов
+ок live /course_prod 390 undefined элементов
+ок live /course_corprod 1440 undefined элементов
+ок live /course_corprod 390 undefined элементов
+ок live /course_powprod 1440 undefined элементов
+ок live /course_powprod 390 undefined элементов
+сбой /sertif 1440 Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/sertif
+Call log:
+  - navigating to "h
+сбой /sertif 390 Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/sertif
+Call log:
+  - navigating to "h
+ок live /data-consent 1440 undefined элементов
+ок live /data-consent 390 undefined элементов
+ок live / 1440 undefined элементов
+ок live / 390 undefined элементов

@@ -1,0 +1,162 @@
+[
+ {
+  "page": "/",
+  "width": 1440,
+  "dialog": "safety",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/",
+  "width": 1440,
+  "dialog": "m-schedule",
+  "openedBefore": true,
+  "closedMs": 311,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/",
+  "width": 1440,
+  "consoleErrors": []
+ },
+ {
+  "page": "/open",
+  "width": 1440,
+  "dialog": "safety",
+  "openedBefore": true,
+  "closedMs": 389,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/open",
+  "width": 1440,
+  "dialog": "m-schedule",
+  "openedBefore": true,
+  "closedMs": 340,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/open",
+  "width": 1440,
+  "consoleErrors": []
+ },
+ {
+  "page": "/close",
+  "width": 1440,
+  "dialog": "safety",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/close",
+  "width": 1440,
+  "dialog": "m-schedule",
+  "openedBefore": true,
+  "closedMs": 337,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/close",
+  "width": 1440,
+  "consoleErrors": []
+ },
+ {
+  "page": "/course_correction",
+  "width": 1440,
+  "dialog": "safety",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/course_correction",
+  "width": 1440,
+  "dialog": "m-schedule",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/course_correction",
+  "width": 1440,
+  "consoleErrors": []
+ },
+ {
+  "page": "/",
+  "width": 390,
+  "dialog": "safety",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/",
+  "width": 390,
+  "dialog": "m-schedule",
+  "openedBefore": true,
+  "closedMs": 296,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/",
+  "width": 390,
+  "consoleErrors": []
+ },
+ {
+  "page": "/open",
+  "width": 390,
+  "dialog": "safety",
+  "openedBefore": true,
+  "closedMs": 316,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/open",
+  "width": 390,
+  "dialog": "m-schedule",
+  "openedBefore": true,
+  "closedMs": 291,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/open",
+  "width": 390,
+  "consoleErrors": []
+ },
+ {
+  "page": "/close",
+  "width": 390,
+  "dialog": "safety",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/close",
+  "width": 390,
+  "dialog": "m-schedule",
+  "openedBefore": true,
+  "closedMs": 298,
+  "openAfter": false,
+  "result": "закрылось"
+ },
+ {
+  "page": "/close",
+  "width": 390,
+  "consoleErrors": []
+ },
+ {
+  "page": "/course_correction",
+  "width": 390,
+  "dialog": "safety",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/course_correction",
+  "width": 390,
+  "dialog": "m-schedule",
+  "result": "нет видимой кнопки-открывашки"
+ },
+ {
+  "page": "/course_correction",
+  "width": 390,
+  "consoleErrors": []
+ }
+]

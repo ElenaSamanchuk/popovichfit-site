@@ -1,21 +1,21 @@
 /ifrtaping @1200: высота live 1703 / local 1703
 
 ## rec786028724 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
-  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,230,60,60  
-  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,230,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
 
 ## rec786028773 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,495,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,495,60,60  
-  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,495,60,60  
-  Δ #1723705959467 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,495,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
+  ✗ #1723705959467 [shape] opacity live 1 / local 0.1  
 
 ## rec853213399 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,760,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,760,60,60  
-  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,760,60,60  
-  Δ #1723705959467 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,760,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
+  ✗ #1723705959467 [shape] opacity live 1 / local 0.1  
 
 элементов: 86, с расхождениями > 3px: 12

@@ -1,0 +1,58 @@
+ок     /predcor 1440: клик по #tariff прокручивает к тарифам (метка в 44 px от верха экрана, scrollY 1791)
+ок     /predcor 1440: карточек тарифов 2
+ок     /predcor 1440: карточка 1, вариант 1: активен, цена «7 699 р. | 7 699 р.», ссылка https://lk.popovichfit.ru/payments/tariff_5K5rnP/checkout (есть в данных страницы)
+ок     /predcor 1440: карточка 1, вариант 2: активен, цена «19 299 р. | 19 299 р.», ссылка https://lk.popovichfit.ru/payments/tariff_BKLmnP/checkout (есть в данных страницы)
+ок     /predcor 1440: карточка 1, вариант 3: активен, цена «34 799 р. | 34 799 р.», ссылка https://lk.popovichfit.ru/payments/tariff_VPxOpK/checkout (есть в данных страницы)
+ок     /predcor 1440: карточка 2, вариант 1: активен, цена «5 399 р. | 5 399 р.», ссылка https://lk.popovichfit.ru/payments/tariff_7owz39/checkout (есть в данных страницы)
+ок     /predcor 1440: карточка 2, вариант 2: активен, цена «12 899 р. | 12 899 р.», ссылка https://lk.popovichfit.ru/payments/tariff_3PXZmo/checkout (есть в данных страницы)
+ок     /predcor 1440: карточка 2, вариант 3: активен, цена «24 399 р. | 24 399 р.», ссылка https://lk.popovichfit.ru/payments/tariff_VKZmjo/checkout (есть в данных страницы)
+ок     /predcor 1440: ссылок покупки 2, все на lk.popovichfit.ru
+ок     /predcor 1440: FAQ (13 записей): первая раскрывается и сворачивается (высота ответа 0 > 228 > 0)
+ок     /predcor 1440: #safety (в записи FAQ №10) закрыт, открывается по клику на ссылку (до: false, после: true)
+ок     /predcor 1440: #safety закрывается (Esc), прокрутка страницы возвращена: overflow=''
+ок     /predcor 1440: #safety открывается повторно и закрывается кликом по подложке (true → false)
+ок     /predcor 1440: ошибок консоли/ответов 400+: 0 
+ок     /predcor 390: клик по #tariff прокручивает к тарифам (метка в 44 px от верха экрана, scrollY 2416)
+ок     /predcor 390: карточек тарифов 2
+ок     /predcor 390: карточка 1, вариант 1: активен, цена «7 699 р. | 7 699 р.», ссылка https://lk.popovichfit.ru/payments/tariff_5K5rnP/checkout (есть в данных страницы)
+ок     /predcor 390: карточка 1, вариант 2: активен, цена «19 299 р. | 19 299 р.», ссылка https://lk.popovichfit.ru/payments/tariff_BKLmnP/checkout (есть в данных страницы)
+ок     /predcor 390: карточка 1, вариант 3: активен, цена «34 799 р. | 34 799 р.», ссылка https://lk.popovichfit.ru/payments/tariff_VPxOpK/checkout (есть в данных страницы)
+ок     /predcor 390: карточка 2, вариант 1: активен, цена «5 399 р. | 5 399 р.», ссылка https://lk.popovichfit.ru/payments/tariff_7owz39/checkout (есть в данных страницы)
+ок     /predcor 390: карточка 2, вариант 2: активен, цена «12 899 р. | 12 899 р.», ссылка https://lk.popovichfit.ru/payments/tariff_3PXZmo/checkout (есть в данных страницы)
+ок     /predcor 390: карточка 2, вариант 3: активен, цена «24 399 р. | 24 399 р.», ссылка https://lk.popovichfit.ru/payments/tariff_VKZmjo/checkout (есть в данных страницы)
+ок     /predcor 390: ссылок покупки 2, все на lk.popovichfit.ru
+ок     /predcor 390: FAQ (13 записей): первая раскрывается и сворачивается (высота ответа 0 > 184 > 0)
+ок     /predcor 390: #safety (в записи FAQ №10) закрыт, открывается по клику на ссылку (до: false, после: true)
+ок     /predcor 390: #safety закрывается (Esc), прокрутка страницы возвращена: overflow=''
+ок     /predcor 390: #safety открывается повторно и закрывается кликом по подложке (true → false)
+ок     /predcor 390: ошибок консоли/ответов 400+: 0 
+ок     /predpow 1440: клик по #tariff прокручивает к тарифам (метка в 44 px от верха экрана, scrollY 1710)
+ок     /predpow 1440: карточек тарифов 2
+ок     /predpow 1440: карточка 1, вариант 1: активен, цена «8 799 р. | 8 799 р.», ссылка https://lk.popovichfit.ru/payments/tariff_YKgvro/checkout (есть в данных страницы)
+ок     /predpow 1440: карточка 1, вариант 2: активен, цена «23 199 р. | 23 199 р.», ссылка https://lk.popovichfit.ru/payments/tariff_N9p0R9/checkout (есть в данных страницы)
+ок     /predpow 1440: карточка 1, вариант 3: активен, цена «40 899 р. | 40 899 р.», ссылка https://lk.popovichfit.ru/payments/tariff_wo05bK/checkout (есть в данных страницы)
+ок     /predpow 1440: карточка 2, вариант 1: активен, цена «6 399 р. | 6 399 р.», ссылка https://lk.popovichfit.ru/payments/tariff_pKzWbP/checkout (есть в данных страницы)
+ок     /predpow 1440: карточка 2, вариант 2: активен, цена «16 599 р. | 16 599 р.», ссылка https://lk.popovichfit.ru/payments/tariff_kKay8K/checkout (есть в данных страницы)
+ок     /predpow 1440: карточка 2, вариант 3: активен, цена «29 099 р. | 29 099 р.», ссылка https://lk.popovichfit.ru/payments/tariff_59jY4P/checkout (есть в данных страницы)
+ок     /predpow 1440: ссылок покупки 2, все на lk.popovichfit.ru
+ок     /predpow 1440: FAQ (13 записей): первая раскрывается и сворачивается (высота ответа 0 > 228 > 0)
+ок     /predpow 1440: #safety (в записи FAQ №10) закрыт, открывается по клику на ссылку (до: false, после: true)
+ок     /predpow 1440: #safety закрывается (Esc), прокрутка страницы возвращена: overflow=''
+ок     /predpow 1440: #safety открывается повторно и закрывается кликом по подложке (true → false)
+ок     /predpow 1440: ошибок консоли/ответов 400+: 0 
+ок     /predpow 390: клик по #tariff прокручивает к тарифам (метка в 44 px от верха экрана, scrollY 2735)
+ок     /predpow 390: карточек тарифов 2
+ок     /predpow 390: карточка 1, вариант 1: активен, цена «8 799 р. | 8 799 р.», ссылка https://lk.popovichfit.ru/payments/tariff_YKgvro/checkout (есть в данных страницы)
+ок     /predpow 390: карточка 1, вариант 2: активен, цена «23 199 р. | 23 199 р.», ссылка https://lk.popovichfit.ru/payments/tariff_N9p0R9/checkout (есть в данных страницы)
+ок     /predpow 390: карточка 1, вариант 3: активен, цена «40 899 р. | 40 899 р.», ссылка https://lk.popovichfit.ru/payments/tariff_wo05bK/checkout (есть в данных страницы)
+ок     /predpow 390: карточка 2, вариант 1: активен, цена «6 399 р. | 6 399 р.», ссылка https://lk.popovichfit.ru/payments/tariff_pKzWbP/checkout (есть в данных страницы)
+ок     /predpow 390: карточка 2, вариант 2: активен, цена «16 599 р. | 16 599 р.», ссылка https://lk.popovichfit.ru/payments/tariff_kKay8K/checkout (есть в данных страницы)
+ок     /predpow 390: карточка 2, вариант 3: активен, цена «29 099 р. | 29 099 р.», ссылка https://lk.popovichfit.ru/payments/tariff_59jY4P/checkout (есть в данных страницы)
+ок     /predpow 390: ссылок покупки 2, все на lk.popovichfit.ru
+ок     /predpow 390: FAQ (13 записей): первая раскрывается и сворачивается (высота ответа 0 > 184 > 0)
+ок     /predpow 390: #safety (в записи FAQ №10) закрыт, открывается по клику на ссылку (до: false, после: true)
+ок     /predpow 390: #safety закрывается (Esc), прокрутка страницы возвращена: overflow=''
+ок     /predpow 390: #safety открывается повторно и закрывается кликом по подложке (true → false)
+ок     /predpow 390: ошибок консоли/ответов 400+: 0 
+
+ИТОГ: всё в порядке

@@ -1,0 +1,28 @@
+
+> popovichfit-site@0.1.0 verify:priority
+> nice -n 15 node scripts/verify-priority.mjs --base http://127.0.0.1:55197 --browser firefox --pages /,/course_correction,/privacy,/taplink,/open,/close --widths 1440,390 --out docs/screens/2026-11-09-final/verify-firefox-release.json
+
+== verify:priority  firefox  сервер http://127.0.0.1:55197  страниц 6 × ширин 2
+ок     /                     1440  h= 6787  
+ок     /                      390  h=10872  
+ок     /course_correction    1440  h= 5176  
+ок     /course_correction     390  h= 7283  
+ок     /privacy              1440  h= 6451  
+ок     /privacy               390  h=11820  
+ок     /taplink              1440  h= 3030  
+ок     /taplink               390  h= 3300  
+ок     /open                 1440  h= 6767  
+ок     /open                  390  h=10861  
+ок     /close                1440  h= 6787  
+ок     /close                 390  h=10872  
+
+Страница × ширина (ок / ОШ):
+страница               1440    390
+/                        ок     ок
+/course_correction       ок     ок
+/privacy                 ок     ок
+/taplink                 ок     ок
+/open                    ок     ок
+/close                   ок     ок
+
+ИТОГ: проверок 12, с ошибками 0, время 97 с

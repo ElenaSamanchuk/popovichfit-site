@@ -1,0 +1,60 @@
+/page50120393.html @640: высота live 4012 / local 4016  (общий сдвиг по вертикали 4px — вычтен)
+
+## rec757958486 T396  блок: live y=0 h=400 / local y=-4 h=400 (сдвиг блока целиком на -4px — элементы сверены относительно блока)
+  Δ #1686672635652 [shape] dx=-160 dy=0 dw=0 dh=0  live@10,40,620,245  
+  Δ #1686673012131 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.55)  live@29,128,200,77  
+  Δ #1699633585143 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.55)  live@240,128,210,136  
+  Δ #1699633585154 [text] dx=0 dy=0 dw=0 dh=13  live@320,138,121,56  Ссылки на инвентарь, готовые наборы, про
+  Δ #1699636664190 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.55)  live@12,295,216,49  
+
+## rec757958488 T396  блок: live y=400 h=50 / local y=396 h=50 (сдвиг блока целиком на -4px — элементы сверены относительно блока)
+
+## rec757958489 T396  блок: live y=450 h=180 / local y=446 h=180 (сдвиг блока целиком на -4px — элементы сверены относительно блока)
+
+## rec757958494 T396  блок: live y=630 h=216 / local y=626 h=216 (сдвиг блока целиком на -4px — элементы сверены относительно блока)
+  Δ #1687276772905 [text] dx=-160 dy=0 dw=0 dh=-2  live@11,660,497,80  В течение первых 2-х недель после старта
+  Δ #1687276772908 [button] dx=-160 dy=0 dw=0 dh=0  live@11,771,187,44  Добавить тренера
+
+## rec757958499 T396  блок: live y=846 h=80 / local y=842 h=80 (сдвиг блока целиком на -4px — элементы сверены относительно блока)
+
+## rec757958500 T395  блок: live y=926 h=82 / local y=922 h=86
+
+## rec757958502 T396
+  Δ #1687335080614 [shape] bg-image live — / local t38633463-069c358a-7fe2-4582-9.webp  live@1122,1075,350,352  
+  Δ #1687335080649 [shape] bg-image live — / local t61336464-image.webp  live@1122,1075,350,200  
+  Δ #1687336369479 [shape] bg-image live — / local t64633635-069c358a-7fe2-4582-9.webp  live@1492,1075,350,352  
+  Δ #1687336369540 [shape] bg-image live — / local t39326162-image.webp  live@1492,1075,350,200  
+  Δ #1687335080476 [shape] bg-image live — / local t38373230-6181dcc7-c5c6-4933-9.webp  live@751,1075,350,352  
+  Δ #1687335080520 [shape] bg-image live — / local t39643230-image.webp  live@751,1075,350,200  
+
+## rec757958505 T396
+  Δ #1687336369479 [shape] bg-image live — / local t64633635-069c358a-7fe2-4582-9.webp  live@1492,1572,350,352  
+  Δ #1687336369540 [shape] bg-image live — / local t66656363-image.webp  live@1492,1572,350,200  
+  Δ #1687335080614 [shape] bg-image live — / local t38633463-069c358a-7fe2-4582-9.webp  live@1122,1572,350,352  
+  Δ #1687335080649 [shape] bg-image live — / local t36333130-image.webp  live@1122,1572,350,200  
+  Δ #1687335080476 [shape] bg-image live — / local t38373230-6181dcc7-c5c6-4933-9.webp  live@751,1572,350,352  
+  Δ #1687335080520 [shape] bg-image live — / local t36653231-image.webp  live@751,1572,350,200  
+
+## rec757958508 T396
+  Δ #1687335080352 [shape] bg-image live — / local t39373234-image.webp  live@381,2069,350,200  
+  Δ #1687336369479 [shape] bg-image live — / local t64633635-069c358a-7fe2-4582-9.webp  live@1492,2069,350,352  
+  Δ #1687336369535 [text] dx=0 dy=0 dw=0 dh=15  live@1507,2354,268,28  Инвентарь: отягощения в зависимости от у
+  Δ #1687336369540 [shape] bg-image live — / local t31396161-image_2024-03-17_14-.webp  live@1492,2069,350,200  
+  Δ #1687335080614 [shape] bg-image live — / local t38633463-069c358a-7fe2-4582-9.webp  live@1122,2069,350,352  
+  Δ #1687335080649 [shape] bg-image live — / local t34353936-image.webp  live@1122,2069,350,200  
+  Δ #1687335080476 [shape] bg-image live — / local t38373230-6181dcc7-c5c6-4933-9.webp  live@751,2069,350,352  
+  Δ #1687335080520 [shape] bg-image live — / local t63326136-image.webp  live@751,2069,350,200  
+
+## rec757958511 T396
+  Δ #1687335080614 [shape] bg-image live — / local t38633463-069c358a-7fe2-4582-9.webp  live@1122,2566,350,352  
+  Δ #1687335080649 [shape] bg-image live — / local t35363437-image.webp  live@1122,2566,350,200  
+  Δ #1687336369479 [shape] bg-image live — / local t64633635-069c358a-7fe2-4582-9.webp  live@1492,2566,350,352  
+  Δ #1687336369540 [shape] bg-image live — / local t64313336-image_2024-03-24_15-.webp  live@1492,2566,350,200  
+  Δ #1687335080476 [shape] bg-image live — / local t38373230-6181dcc7-c5c6-4933-9.webp  live@751,2566,350,352  
+  Δ #1687335080520 [shape] bg-image live — / local t39336435-image.webp  live@751,2566,350,200  
+  Δ #1687335080210 [shape] bg-image live — / local t30396333-image_2024-04-28_17-.webp  live@12,2566,350,200  
+
+## rec757958514 T396
+  Δ #1690541882712 [shape] dx=-160 dy=0 dw=0 dh=0  live@10,3029,620,257  
+
+элементов: 423, с расхождениями > 3px: 35

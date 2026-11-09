@@ -6,12 +6,12 @@
     user-select: none;
   }
 
-  .pf-card .pf-option .tz__radio {
+  .pf-card .pf-option .tz__icon {
     opacity: 0 !important;
     visibility: hidden !important;
   }
 
-  .pf-card .pf-option.pf-active .tz__radio {
+  .pf-card .pf-option.pf-active .tz__icon {
     opacity: 1 !important;
     visibility: visible !important;
   }
@@ -47,8 +47,8 @@
     max-height: var(--pf-radio-size) !important;
   }
 
-  .pf-card .pf-option .tz__el--button .tz__radio,
-  .pf-card .pf-option .pf-radio .tz__radio {
+  .pf-card .pf-option .tz__el--button .tz__icon,
+  .pf-card .pf-option .pf-radio .tz__icon {
     width: var(--pf-radio-dot) !important;
     height: var(--pf-radio-dot) !important;
   }

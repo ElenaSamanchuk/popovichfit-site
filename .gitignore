@@ -13,3 +13,6 @@ docs/screens/**/full/
 docs/screens/**/*.png
 !docs/screens/**/preview/*.png
 scripts/tmp/
+
+# Архивы релизов для админа (150 МБ)
+/work/

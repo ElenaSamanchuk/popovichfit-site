@@ -1,0 +1,14 @@
+{
+ "base": "http://127.0.0.1:49867",
+ "browser": "chromium",
+ "date": "2026-11-09T17:48:38.398Z",
+ "results": [
+  {
+   "url": "/taplink",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 3407
+  }
+ ]
+}

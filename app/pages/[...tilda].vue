@@ -10,20 +10,21 @@ const file = pageByUrl[path] ?? pageByUrl[path.toLowerCase()]
 if (!file) throw createError({ statusCode: 404, statusMessage: 'Страница не найдена', fatal: true })
 
 const meta = pages[file]!
+// у главной, /open и /close свои маршруты (app/pages/*.vue): универсальный рендерер их не отдаёт (scripts/audit/export-config.json → customRoutes)
+if (meta.custom) throw createError({ statusCode: 404, statusMessage: 'Страница не найдена', fatal: true })
 definePageMeta({ layout: false })
 usePageMeta(file)
 
 // данные блоков — с сервера (серверный ассет), при клиентских переходах — из пререндеренного _payload.json
 type PageData = import('~/utils/tilda-css').TildaPageData
+/** старые шапка/меню/подвал страниц заменены общими PfhHeader/PfhFooter (layout) и новые T131-блоки шапки/подвала уже в layout */
+const CHROME = new Set([
+  'rec774067934', 'rec1120433846', 'rec592229670', 'rec1120432771', 'rec1120448561', // старые: фикс-шапка, Zero-шапка, меню T450, sticky-подвал, Zero-подвал
+  'rec5322139701', 'rec5322252501', 'rec5322288101', 'rec5322369201', 'rec5322387701', 'rec5322426201', // новые T131 шапки и подвала (если есть в данных страницы)
+])
 const { data } = await useAsyncData('tilda:' + file, async () => {
   const page = await $fetch<PageData>('/api/tilda/' + file.replace('.html', '.json'))
-  // шапка и футер главной на всех страницах (просьба заказчика 18.09): у страниц, где их не было в Тильде, подставляем блоки
-  // из _chrome.json; из-за фиксированной шапки контенту нужен отступ сверху высотой артборда шапки
-  if (meta.layout === 'bare' && !page.blocks.some((b) => b.id === 'rec1120433846')) {
-    const chrome = await $fetch<{ header: PageData['blocks']; footer: PageData['blocks'] }>('/api/tilda/_chrome.json')
-    return { ...page, blocks: [...chrome.header, ...page.blocks, ...chrome.footer], chromeAdded: true }
-  }
-  return page
+  return { ...page, blocks: page.blocks.filter((b) => !CHROME.has(b.id)) }
 })
 // отладка гидрации (только dev): ?blocks=2-5 — отрисовать часть блоков
 if (import.meta.dev && typeof route.query.blocks === 'string' && data.value) {
@@ -34,6 +35,6 @@ if (import.meta.dev && typeof route.query.blocks === 'string' && data.value) {
 
 <template>
   <NuxtLayout name="default">
-    <TildaPage v-if="data" :data="data" :class="(data as any).chromeAdded ? 'pf-chrome-added' : ''" />
+    <TildaPage v-if="data" :data="data" />
   </NuxtLayout>
 </template>

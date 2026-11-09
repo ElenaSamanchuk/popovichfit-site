@@ -18,7 +18,7 @@ for f in sorted(glob.glob(os.path.join(ROOT,'*.html'))):
     slugs = routes.get(name, [])
     urls = ['/'+s for s in slugs] or ['/'+name]
     in_sitemap = any(('https://popovichfit.ru'+u) in sm_urls for u in urls) or ('https://popovichfit.ru/'+name) in sm_urls or (name=='page36594700.html')
-    noindex = 'name="robots" content="noindex"' in html
+    noindex = bool(re.search(r'name="robots" content="[^"]*noindex', html))
     rec = len(re.findall(r'<div id="rec\d+"', html))
     zero = len(re.findall(r'class="t396__artboard', html))
     forms = len(re.findall(r'<form', html))

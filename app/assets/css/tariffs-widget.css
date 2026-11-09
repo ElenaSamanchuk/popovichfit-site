@@ -254,7 +254,8 @@
   white-space: nowrap;
   min-width: 0;
 }
-#pf-inline-wrap .pf-plashka__cta{ margin-left: auto; flex-shrink: 0; }
+#pf-inline-wrap .pf-plashka__cta{ margin-left: auto; flex: 0 0 auto; min-width: max-content; }
+#pf-inline-wrap .pf-plashka__cta .pf-btn{ flex-shrink: 0; min-width: max-content; }
 
 /* Buttons */
 #pf-inline-wrap .pf-btn{

@@ -1,8 +1,8 @@
 /**
  * Генерация CSS для Zero Block (T396) из данных app/data/tilda/*.json.
  * Воспроизводит поведение Тильды: 5 артбордов (1200/960/640/480/320), каждый — полный набор правил
- * в своём диапазоне ширин; на мобильных артбордах (320 всегда; 480 при upscale=window) геометрия
- * масштабируется на ширину экрана (единица --u = 100vw/ширина артборда), шрифты не масштабируются.
+ * в своём диапазоне ширин. На мобильных и планшетных артбордах с upscale=window
+ * геометрия и размеры текста масштабируются пропорционально ширине окна.
  */
 /** half — вычитаемое из calc(50% - half + x): половина артборда (обычный grid) или половина ширины элемента (axisx=center) */
 export type Left = { a: 'grid' | 'grid-right' | 'window-left' | 'window-right' | 'center-pct' | 'raw'; x?: number; w?: number; pct?: number; xpct?: number; raw?: string; half?: number }
@@ -31,6 +31,8 @@ export interface TildaBlock {
   artboard?: { screens: string; fixed: boolean; fixedPos?: string | null; ovrflw?: string | null; bg: Record<string, string> }
   artboards?: Record<string, Artboard>; elems?: ZeroElem[]; groups?: ZeroGroup[]; tree?: ZeroNode[]
   html?: string; css?: string; hooks?: string[]; popupRecs?: string[]; custom?: string
+  /** виджет тарифов inline v2: конфиг страницы (window.__PF_INLINE_CONFIG__) */
+  pfInline?: Record<string, any> & { meta?: { courseId?: string } }
   /** блок внутри вкладки T395 «табы из блоков»; tabHidden — вкладка не активна при загрузке */
   tab?: { of: string; index: number }; tabHidden?: boolean
   /** блок класса «показать ещё» (uc-showmore): скрыт до клика по ссылке #showmore */
@@ -38,7 +40,7 @@ export interface TildaBlock {
   /** галерея «в ряд» T979: целевая высота ряда и отступ (из t979_init) */
   t979?: { rowH: number; gutter: number }
 }
-export interface TildaPageData { file: string; blocks: TildaBlock[]; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }>; showmore?: Array<{ href: string; cls: string; hideBtn: boolean; hideBlk: boolean }> }
+export interface TildaPageData { file: string; blocks: TildaBlock[]; /** карточки тарифов страницы (window.PF_CARDS из T123) */ pfCards?: Record<string, { defaultOption: number; options: Array<{ newPrice: string; oldPrice: string; link: string }> }>; hscroll?: Array<{ scroll: string; arrows?: string | null; shift: number }>; showmore?: Array<{ href: string; cls: string; hideBtn: boolean; hideBlk: boolean }> }
 
 import { appearVars } from '~/utils/appear'
 
@@ -325,9 +327,8 @@ export function zeroBlockCss(b: TildaBlock): string {
     const art = b.artboards?.[r0.scr]
     if (!art) continue
     const r = r0.scr === '1200' && b.artboards?.['1600'] ? { ...r0, media: '(min-width: 1200px) and (max-width: 1599.98px)' } : r0
-    // автоскейл Тильды на телефонах (zoom = ширина окна / 320) — и у фиксированных артбордов тоже (шапка, cookie-плашка, плашка ВК:
-    // на живом сайте при 390px шапка 41px, cookie 182px, элементы ×1.219)
-    const mobile = r.scr === '320' || (r.scr === '480' && art.upscale === 'window')
+    // Режим уже разрешён по каскаду экспортёром. Grid сохраняет размеры сетки даже на экране 320.
+    const mobile = r.artW < 1200 && art.upscale === 'window'
     const u = mobile ? `${id}{--u:calc(100vw / ${r.artW});}` : ''
     let sec = `${id} .tz__art{`
     // артборд position:absolute (Тильда): запись схлопывается в 0, содержимое наезжает на следующий блок

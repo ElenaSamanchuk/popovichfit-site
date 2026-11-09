@@ -66,6 +66,14 @@
 /* открыто мобильное меню — блокируем скролл страницы (как t450__body_menushowed) */
 html.pf-menu-open, html.pf-menu-open body { overflow: hidden; height: 100vh; }
 
+/* /community: в экспорте заголовок в сетке 320 занимает 360 px и обрезается на узких экранах. */
+@media (max-width: 359px) {
+  #rec539331578 .tz__el.e1669372132956 {
+    left: 8px;
+    width: calc(100% - 16px);
+  }
+}
+
 /* Артборды Zero Block. Десктоп: контейнер 1200 по центру (.pf-art). Мобайл (<640): макет 320px, у которого
    Тильда масштабирует ГЕОМЕТРИЮ (координаты/размеры) на ширину экрана, а размер шрифта не меняет
    (upscale=window). Воспроизводим единицей --u = 1px макета: left-[calc(76*var(--u))] и т.п.; шрифты — в px. */
@@ -73,3 +81,6 @@ html.pf-menu-open, html.pf-menu-open body { overflow: hidden; height: 100vh; }
   .pf-art { position: relative; margin: 0 auto; width: 1200px; max-width: 100%; }
   .pf-m { --u: 0.3125vw; position: relative; width: 100%; overflow: hidden; }
 }
+
+/* страницы со старой шапкой: контент начинается под шапкой без пустой полосы (.pfh-gap нужен только страницам с новой шапкой) */
+.pf-site:has(.tilda-page.pf-oldhdr) .pfh.pfh-hdr .pfh-gap { height: 0; }

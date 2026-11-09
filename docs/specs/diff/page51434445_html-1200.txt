@@ -1,19 +1,24 @@
 /page51434445.html @1200: высота live 2607 / local 2607
 
 ## rec768772821 T396
-  Δ #1719493245877 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@170,258,60,60  
+  Δ #1719494375032 [text] dx=0 dy=0 dw=0 dh=16  live@616,220,128,42  Ссылки на инвентарь, готовые наборы, про
+  ✗ #1719493245877 [shape] opacity live 1 / local 0.1  
+  Δ #1719495482665 [shape] фон live rgb(246, 246, 246) / local rgba(246, 246, 246, 0.4)  live@420,285,360,151  
+
+## rec768772823 T396
+  Δ #1719483984807 [shape] фон live rgb(246, 246, 246) / local rgba(246, 246, 246, 0.4)  live@535,501,130,48  
 
 ## rec768772834 T396
-  Δ #1719577519328 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@155,1119,60,60  
-  Δ #1719585833614 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@495,1119,60,60  
-  Δ #1719585953088 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@835,1119,60,60  
-  Δ #1719585953050 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1175,1119,60,60  
-  Δ #1719586369884 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1515,1119,60,60  
+  ✗ #1719577519328 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585833614 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953088 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953050 [shape] opacity live 1 / local 0.1  
+  ✗ #1719586369884 [shape] opacity live 1 / local 0.1  
 
 ## rec768795242 T396
-  Δ #1719577519328 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@155,1664,60,60  
-  Δ #1719585833614 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@495,1664,60,60  
-  Δ #1719585953088 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@835,1664,60,60  
-  Δ #1719585953050 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1175,1664,60,60  
+  ✗ #1719577519328 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585833614 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953088 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953050 [shape] opacity live 1 / local 0.1  
 
-элементов: 198, с расхождениями > 3px: 10
+элементов: 198, с расхождениями > 3px: 13

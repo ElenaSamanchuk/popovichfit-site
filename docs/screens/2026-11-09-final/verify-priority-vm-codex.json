@@ -1,0 +1,147 @@
+{
+ "base": "http://127.0.0.1:53759",
+ "browser": "chromium",
+ "date": "2026-11-09T18:12:09.064Z",
+ "results": [
+  {
+   "url": "/",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8279
+  },
+  {
+   "url": "/",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  },
+  {
+   "url": "/open",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6767
+  },
+  {
+   "url": "/open",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8295
+  },
+  {
+   "url": "/open",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10880
+  },
+  {
+   "url": "/open",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11878
+  },
+  {
+   "url": "/close",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/close",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8279
+  },
+  {
+   "url": "/close",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/close",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  },
+  {
+   "url": "/community",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2137
+  },
+  {
+   "url": "/community",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 2755
+  },
+  {
+   "url": "/community",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3253
+  },
+  {
+   "url": "/community",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2951
+  },
+  {
+   "url": "/taplink",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 3030
+  },
+  {
+   "url": "/taplink",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 3407
+  },
+  {
+   "url": "/taplink",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3320
+  },
+  {
+   "url": "/taplink",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2945
+  }
+ ]
+}

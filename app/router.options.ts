@@ -21,7 +21,7 @@ export default <RouterConfig>{
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition
     if (to.hash) {
-      return waitFor(to.hash).then((el) => (el ? { el: to.hash, behavior: 'smooth' } : (to.path !== from.path ? { left: 0, top: 0 } : undefined)))
+      return waitFor(to.hash).then((el) => (el ? { el: to.hash, top: parseFloat(getComputedStyle(el).scrollMarginTop) || 0, behavior: 'smooth' } : (to.path !== from.path ? { left: 0, top: 0 } : undefined)))
     }
     if (to.path !== from.path) return { left: 0, top: 0 }
     return undefined

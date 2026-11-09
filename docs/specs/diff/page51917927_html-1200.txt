@@ -1,23 +1,11 @@
-/page51917927.html @1200: высота live 7015 / local 7016
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-## rec772898879 T396
-  Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@810,377,370,220  
+page.evaluate: Execution context was destroyed, most likely because of a navigation
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:45:12 {
+  log: [],
+  name: 'Error'
+}
 
-## rec772898880 T396
-  Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@810,1067,370,220  
-
-## rec772898881 T396
-  Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@810,1757,370,220  
-
-## rec772898883 T396
-  Δ #1720591572494 [shape] bg-image live 1556_1_1.jpg.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t61323038-1556_1_1.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@321,2301,560,590  
-  Δ #1720609603259 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1011,2461,60,60  
-
-## rec772898916 T396
-  Δ #1720698441948 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@431,4881,60,60  
-
-## rec772898920 T396
-  Δ #1720700339344 [image] dx=0 dy=0 dw=0 dh=-43  live@549,5485,143,43  
-  Δ #1720700339339 [image] dx=0 dy=0 dw=0 dh=-43  live@399,5485,143,43  
-
-элементов: 218, с расхождениями > 3px: 8
+Node.js v26.0.0

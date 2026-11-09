@@ -1,15 +1,15 @@
 <script setup lang="ts">
-// Общий каркас публичных страниц: мобильное меню (T450), кнопка «наверх», виджет Sender. Шапка/футер/cookie/ВК — блоки страницы.
-// Страницы без шапки/футера в оригинале используют layouts/bare.vue.
+// Общий каркас публичных страниц: новая шапка + меню и подвал дизайнера (один источник на все страницы, components/home),
+// кнопка «наверх», виджет Sender. Cookie и плашка ВК — блоки страницы (tilda/TildaPage.vue) или PfhCookie.
 </script>
 
 <template>
   <div class="pf-site min-h-screen">
-    <!-- шапка, футер, cookie и плашка ВК — Zero Block'и страницы (данные экспорта), см. tilda/TildaPage.vue -->
-    <MobileMenu />
+    <PfhHeader />
     <main class="pf-main">
       <slot />
     </main>
+    <PfhFooter />
     <BackToTop />
     <ImageZoom />
     <SupportWidget />

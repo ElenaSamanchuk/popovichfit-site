@@ -2,11 +2,14 @@
 // пути с заглавными буквами → нижний регистр, завершающий слэш → без него. Работает в режиме node-server;
 // для чисто статического хостинга те же правила — в nginx (scripts/postgenerate.mjs пишет redirects.map).
 import { pages, pageByUrl } from '~~/app/data/pages'
+import { SALES_OPEN, SALES_REDIRECTS } from '~~/app/data/sales'
 
 export default defineEventHandler((event) => {
   const url = getRequestURL(event)
   const path = url.pathname
   if (path.startsWith('/api/') || path.startsWith('/_nuxt/') || path.startsWith('/img/') || path.startsWith('/fonts/')) return
+  const salesTarget = SALES_REDIRECTS[path.replace(/\/+$/, '').toLowerCase()]
+  if (!SALES_OPEN && salesTarget) return sendRedirect(event, salesTarget + url.search, 302)
   let target: string | null = null
   // страницы входа Tilda Members (/members/login, /members/signup, /members/recover-password) больше не существуют —
   // личный кабинет теперь на lk.popovichfit.ru (решение зафиксировано в docs/HANDOFF.md, легко поменять здесь)

@@ -1,0 +1,14 @@
+/* Страница /speakers (прототип дизайнера, site/new/speakers): стили карточек спикеров, перенесены из styles.css прототипа и сужены до .pfh */
+.pfh .spks{display:grid;gap:var(--gap)}
+.pfh .spk{display:grid;grid-template-rows:auto 1fr auto;gap:16px;padding:20px;border-radius:var(--r-lg);background:var(--card)}
+.pfh .spk__top{display:flex;align-items:center;gap:14px}
+.pfh .spk__ph{flex:none;width:72px;height:72px;border-radius:50%;object-fit:cover;background:var(--light)}
+.pfh .spk__who{display:grid;gap:2px;min-width:0}
+.pfh .spk__who h3{font-size:clamp(17px,1.7vw,19px)}
+.pfh .spk__nick{font:500 14px/1.3 var(--font);color:var(--blue-text);overflow-wrap:anywhere}
+.pfh .spk__nick:hover{text-decoration:underline;text-underline-offset:3px}
+.pfh .spk__about{font:500 14px/1.55 var(--font);color:var(--sub)}
+.pfh .spk__btn{justify-self:start}
+@media (max-width:767px){.pfh .spk__btn{justify-self:stretch}}
+@media (min-width:768px){.pfh .spks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.pfh .spks{grid-template-columns:repeat(3,minmax(0,1fr))}.pfh .spk{padding:24px}.pfh .spk__ph{width:80px;height:80px}}

@@ -1,6 +1,13 @@
-/media_gluteal_muscles @1200: высота live 21050 / local 21050
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-## rec779582312 T396  блок: live y=720 h=180 / local y=782 h=180
-  Δ #1719923677879 [button] dx=0 dy=62 dw=0 dh=0  live@1067,724,113,50  Назад
+page.evaluate: TypeError: Cannot read properties of null (reading 'scrollHeight')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:39)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:45:12 {
+  log: []
+}
 
-элементов: 3, с расхождениями > 3px: 1
+Node.js v26.0.0

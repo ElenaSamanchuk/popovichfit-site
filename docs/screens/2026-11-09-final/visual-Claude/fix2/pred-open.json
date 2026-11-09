@@ -1,0 +1,45 @@
+{
+ "/predcor": {
+  "before": [
+   "Av -h -h",
+   "Av -h -h"
+  ],
+  "after6": [
+   "-h -h Av",
+   "Av -h -h"
+  ],
+  "after3": [
+   "-h Av -h",
+   "Av -h -h"
+  ],
+  "dialog": "ошибка: TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 3978.1669999999976ms excee",
+  "faq": "нет details",
+  "footer": true
+ },
+ "/predpow": {
+  "before": [
+   "Av -h -h",
+   "Av -h -h"
+  ],
+  "after6": [
+   "-h -h Av",
+   "Av -h -h"
+  ],
+  "after3": [
+   "-h Av -h",
+   "Av -h -h"
+  ],
+  "dialog": "ошибка: TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 3985.438000000002ms exceed",
+  "faq": "нет details",
+  "footer": true
+ },
+ "/pred": {
+  "before": [],
+  "dialog": {
+   "opened": true,
+   "closed": true
+  },
+  "faq": true,
+  "footer": true
+ }
+}

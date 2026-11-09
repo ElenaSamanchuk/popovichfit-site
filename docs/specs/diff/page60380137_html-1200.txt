@@ -4,16 +4,20 @@
   Δ #1734426702849 [shape] dx=-22 dy=-22 dw=44 dh=44  live@57,54,116,116  
 
 ## rec843133364 T396
-  Δ #1719493245877 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@170,445,60,60  
+  ✗ #1719493245877 [shape] opacity live 1 / local 0.1  
+  Δ #1719494375032 [text] dx=0 dy=0 dw=0 dh=16  live@431,566,128,42  Ссылки на инвентарь, готовые наборы, про
+
+## rec843133376 T396
+  Δ #1719483984807 [shape] фон live rgb(246, 246, 246) / local rgba(246, 246, 246, 0.4)  live@535,686,130,48  
 
 ## rec843140718 T396
   Δ #1721289299049 [shape] bg-image live — / local t32626363-group_14.webp  live@1238,1481,242,133  
 
 ## rec843133388 T396
-  Δ #1719577519328 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@155,1964,60,60  
-  Δ #1719585833614 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@495,1964,60,60  
-  Δ #1719585953088 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@835,1964,60,60  
-  Δ #1719585953050 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1175,1964,60,60  
-  Δ #1719586369884 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1515,1964,60,60  
+  ✗ #1719577519328 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585833614 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953088 [shape] opacity live 1 / local 0.1  
+  ✗ #1719585953050 [shape] opacity live 1 / local 0.1  
+  ✗ #1719586369884 [shape] opacity live 1 / local 0.1  
 
-элементов: 176, с расхождениями > 3px: 8
+элементов: 176, с расхождениями > 3px: 10

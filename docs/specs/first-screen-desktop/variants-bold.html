@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>POPOVICHFIT — смелые варианты первого экрана</title>
+<style>
+@font-face{font-family:Involve;src:url(assets/Involve-400__Manrope-SemiBold.woff) format('woff');font-weight:400;font-display:swap}
+@font-face{font-family:Involve;src:url(assets/Involve-500__Involve-Medium.woff) format('woff');font-weight:500;font-display:swap}
+@font-face{font-family:Involve;src:url(assets/Involve-600__Involve-SemiBold.woff) format('woff');font-weight:600;font-display:swap}
+@font-face{font-family:Involve;src:url(assets/Involve-700__Involve-Bold.woff) format('woff');font-weight:700;font-display:swap}
+
+:root{
+  --blue:#4f86c4; --blue-1:#3e78b8; --blue-2:#6297d2; --ink:#303030;
+  --glass:rgba(255,255,255,.15); --glass-2:rgba(255,255,255,.3);
+  --shadow:0 5px 10px rgba(45,46,54,.2);
+}
+*{box-sizing:border-box}
+body{margin:0;background:#f3f4f7;color:#1d1f26;font:400 15px/1.5 Involve,system-ui,Arial,sans-serif}
+.page{max-width:1320px;margin:0 auto;padding:40px 24px 80px}
+h1{font-size:30px;font-weight:700;margin:0 0 10px}
+.lead{max-width:760px;color:#555;margin:0 0 6px}
+.lead a{color:var(--blue)}
+.bar{display:flex;gap:10px;align-items:center;margin:22px 0 10px;flex-wrap:wrap}
+.btn{border:1px solid #d5d8e0;background:#fff;border-radius:8px;padding:8px 14px;font:500 13px Involve,Arial;cursor:pointer}
+.btn[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+.var{margin:44px 0 0;border-top:1px solid #e2e4ea;padding-top:28px}
+.var h2{font-size:21px;font-weight:700;margin:0 0 4px}
+.var h2 span{color:var(--blue)}
+.var p.desc{margin:0 0 4px;color:#555;max-width:860px}
+.var ul.why{margin:6px 0 18px;padding-left:18px;color:#6b6f7d;font-size:14px;max-width:860px}
+.wrap{overflow:auto;background:#fff;border:1px solid #e2e4ea;border-radius:12px;padding:16px}
+.holder{width:1200px;transform-origin:top left}
+.compare{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-top:22px}
+.compare img{width:300px;border:1px solid #e2e4ea;border-radius:12px;display:block}
+.compare .cap{font-size:13px;color:#6b6f7d;margin-top:8px;max-width:300px}
+
+/* ——— общий «конструктор» первого экрана ——— */
+.hero{position:relative;width:1200px;height:760px;border-radius:12px;overflow:hidden;
+  background:url(assets/Group_1321319637.jpg) center/cover no-repeat;font-family:Involve,Arial,sans-serif;color:#fff}
+.hero .nav{position:absolute;inset:0 0 auto 0;height:52px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 22px;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.9);z-index:6}
+.hero .nav .menu{display:flex;gap:18px}
+.hero .nav .lk{background:#1c1d22;color:#fff;border-radius:6px;padding:7px 12px;text-transform:none;letter-spacing:0;font-size:12px}
+.mark{display:block}
+.mark img{display:block;width:100%}
+.mark--solid{position:relative}
+.mark--solid img+img{position:absolute;inset:0}
+.kicker{font-size:16px;font-weight:400;opacity:.95}
+.tag{font-size:16px;font-weight:500;opacity:.95}
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:30px;
+  font-size:11px;font-weight:700;line-height:1;padding:8px 14px}
+.pill--light{background:#fff;color:var(--blue)}
+.pill--blue{background:var(--blue);color:#fff;text-transform:uppercase}
+.pill--glass{background:var(--glass-2);color:#fff;backdrop-filter:blur(6px)}
+
+.card{position:relative;border-radius:8px;background:linear-gradient(0.8turn,var(--blue-1) 0%,var(--blue-2) 100%);
+  box-shadow:var(--shadow);padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.card{text-align:left}
+.card h3{margin:0;font-size:19px;font-weight:700}
+.card p{margin:0;font-size:13px;font-weight:400;line-height:1.35;opacity:.92}
+.card .buy{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;
+  background:#fff;color:var(--blue);border-radius:6px;padding:9px 16px;font-size:13px;font-weight:700}
+.card .buy img{width:11px}
+.card .base{position:absolute;top:-10px;left:18px;background:#fff;color:var(--blue);
+  border-radius:30px;font-size:10px;font-weight:700;padding:5px 10px;box-shadow:var(--shadow)}
+
+.glass{text-align:left;border-radius:8px;background:var(--glass);backdrop-filter:blur(8px);box-shadow:var(--shadow);padding:18px 20px}
+.stream{display:flex;align-items:baseline;gap:10px}
+.stream b{font-size:40px;font-weight:700;line-height:1}
+.stream span{font-size:14px;font-weight:500;opacity:.9}
+.schedule{display:inline-flex;align-items:center;gap:12px;justify-content:space-between;
+  border-radius:100px;background:linear-gradient(0.946turn,rgba(241,240,246,.32),rgba(255,255,255,.32));
+  backdrop-filter:blur(6px);padding:8px 8px 8px 18px;font-size:13px;font-weight:500;color:#fff}
+.schedule i{width:28px;height:28px;border-radius:50%;background:#1c1d22;display:grid;place-items:center;font-style:normal}
+.schedule i img{width:10px}
+.model{position:absolute;bottom:0;pointer-events:none}
+.model img{display:block;height:100%;width:auto}
+
+/* ——— 1. Афиша ——— */
+#v1 .stack{position:absolute;inset:112px 60px 40px;display:flex;flex-direction:column;align-items:center;text-align:center}
+#v1 .kicker{margin-bottom:10px}
+#v1 .mark{width:940px;margin-bottom:16px}
+#v1 .badges{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+#v1 .tag{margin-bottom:26px}
+#v1 .row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;width:100%;margin-top:auto}
+#v1 .card{min-height:210px}
+#v1 .glass{display:flex;flex-direction:column;gap:14px;min-height:210px}
+#v1 .cta{position:relative;display:inline-flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.18);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.45);
+  border-radius:10px;padding:13px 26px;font-size:14px;font-weight:600}
+#v1 .cta img{width:12px}
+
+/* ——— 2. Два столбца ——— */
+#v2 .left{position:absolute;top:50%;transform:translateY(-46%);left:60px;width:620px;display:flex;flex-direction:column}
+#v2 .mark{width:560px;margin:10px 0 16px}
+#v2 .badges{display:flex;gap:10px;margin:0 0 12px}
+#v2 .tag{margin-bottom:28px}
+#v2 .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#v2 .card{min-height:150px}
+#v2 .glass{margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+#v2 .model{right:-10px;height:700px}
+#v2 .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,43,58,.45) 0%,rgba(38,43,58,.12) 55%,rgba(38,43,58,0) 75%)}
+
+/* ——— 3. Док-панель ——— */
+#v3 .center{position:absolute;top:92px;left:0;right:0;text-align:center}
+#v3 .mark{width:900px;margin:12px auto 0;opacity:.92}
+#v3 .tag{margin-top:14px}
+#v3 .badges{display:flex;gap:10px;justify-content:center;margin-top:16px}
+#v3 .model{left:60%;transform:translateX(-50%);height:496px}
+#v3 .dock{position:absolute;left:24px;right:24px;bottom:24px;border-radius:14px;
+  background:rgba(255,255,255,.17);backdrop-filter:blur(14px);box-shadow:var(--shadow);
+  padding:16px;display:grid;grid-template-columns:1fr 1fr 300px;gap:16px;align-items:stretch}
+#v3 .card{min-height:126px;padding:16px 18px}
+#v3 .dockstream{display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+#v3 .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,43,58,.28),rgba(38,43,58,.04) 40%,rgba(38,43,58,.42))}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Первый экран: три варианта десктопа по мобильному макету</h1>
+  <p class="lead">Заказчик на черновике
+    <a href="https://popovichfit.ru/page262563109.html" target="_blank" rel="noopener">page262563109.html</a>
+    сделал отдельный первый экран для мобильных (&le;480): без фото тренера, по центру, две карточки тарифов и стеклянная плашка потока.
+    Десктоп там остался старый. Ниже — три варианта, как собрать десктоп из той же мобильной системы: одна сетка компонентов,
+    один набор цветов (градиент #3e78b8 → #6297d2, стекло 15 %, пилюли 30 px, карточки 8 px), шрифт Involve.</p>
+  <p class="lead">Макеты живые (HTML/CSS, реальные ассеты Тильды), артборд 1200×760 — как у текущего первого экрана.</p>
+
+  <div class="bar">
+    <button class="btn" id="fit" aria-pressed="true">Вписать в экран</button>
+    <button class="btn" id="one" aria-pressed="false">1 : 1 (1200 px)</button>
+  </div>
+
+  <section class="var" id="v1">
+    <h2>1. <span>Афиша</span> — прямой перенос мобилки</h2>
+    <p class="desc">Та же вертикальная композиция, что на телефоне: подпись, логотип на всю ширину, бейдж, строка направлений,
+      кнопка. Внизу — три карточки в ряд: «Коррекция», «Силовой» и поток. Фото тренера нет вообще.</p>
+    <ul class="why">
+      <li>Один макет в голове у заказчика: десктоп = мобилка, только шире. Проще всего согласовывать и поддерживать.</li>
+      <li>Логотип работает как афиша, взгляд сразу идёт на тарифы.</li>
+      <li>Минус: пропадает фото Натальи — доверие держится только на тексте.</li>
+    </ul>
+    <div class="wrap"><div class="holder">
+      <div class="hero">
+        <div class="nav"><span>POPOVICHFIT</span><div class="menu"><span>Курсы</span><span>До/после</span><span>Статьи</span><span>О тренере</span><span>Вопрос/ответ</span><span>Тех.поддержка</span></div><span class="lk">Личный кабинет</span></div>
+        <div class="stack">
+          <div class="kicker">Онлайн фитнес-клуб</div>
+          <a class="mark mark--solid"><img src="assets/POPOVICHFIT.svg" alt="POPOVICHFIT"><img src="assets/POPOVICHFIT.svg" alt=""><img src="assets/POPOVICHFIT.svg" alt=""></a>
+          <div class="badges"><span class="pill pill--light">Комплексная работа с телом</span></div>
+          <div class="tag">Осанка&nbsp;| Ягодицы&nbsp;| Тазовое дно&nbsp;| Плоский живот</div>
+          <a class="cta">Выбрать курс <img src="assets/Group_1321318787.svg" alt=""></a>
+          <div class="row">
+            <div class="card"><span class="base">это база</span><h3>Коррекция</h3><p>Осанка, дыхание, тазовое дно</p><span class="buy">Купить <img src="assets/_.png" alt=""></span></div>
+            <div class="card"><h3>Силовой</h3><p>Сила, ягодицы, рельеф + коррекционные упражнения</p><span class="buy">Купить <img src="assets/_.png" alt=""></span></div>
+            <div class="glass">
+              <div class="stream"><b>52</b><span>поток</span></div>
+              <span class="pill pill--blue" style="align-self:flex-start">Идёт набор</span>
+              <a class="schedule" style="margin-top:auto">Расписание потоков <i><img src="assets/Group_1321318855.svg" alt=""></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="var" id="v2">
+    <h2>2. <span>Два столбца</span> — смысл слева, тренер справа</h2>
+    <p class="desc">Слева — весь мобильный блок (логотип, бейдж, направления, две карточки тарифов и плашка потока),
+      справа — фото Натальи в полный рост, как сейчас. Логотип меньше, читается как заголовок, а не как афиша.</p>
+    <ul class="why">
+      <li>Сохраняет то, что уже работает на десктопе: живое фото и ощущение «человек, а не курс».</li>
+      <li>Карточки тарифов видны без прокрутки — путь к покупке короче, чем сейчас.</li>
+      <li>Минус: справа фото диктует ширину, длинным заголовкам будет тесно.</li>
+    </ul>
+    <div class="wrap"><div class="holder">
+      <div class="hero">
+        <div class="veil"></div>
+        <div class="nav"><span>POPOVICHFIT</span><div class="menu"><span>Курсы</span><span>До/после</span><span>Статьи</span><span>О тренере</span><span>Вопрос/ответ</span><span>Тех.поддержка</span></div><span class="lk">Личный кабинет</span></div>
+        <div class="model"><img src="assets/POPOVICH_FIT_2025040.png" alt="Наталья Попович"></div>
+        <div class="left">
+          <div class="kicker">Онлайн фитнес-клуб</div>
+          <a class="mark"><img src="assets/POPOVICHFIT.svg" alt="POPOVICHFIT"></a>
+          <div class="badges"><span class="pill pill--light">Комплексная работа с телом</span></div>
+          <div class="tag">Осанка&nbsp;| Ягодицы&nbsp;| Тазовое дно&nbsp;| Плоский живот</div>
+          <div class="cards">
+            <div class="card"><span class="base">это база</span><h3>Коррекция</h3><p>Осанка, дыхание, тазовое дно</p><span class="buy">Купить <img src="assets/_.png" alt=""></span></div>
+            <div class="card"><h3>Силовой</h3><p>Сила, ягодицы, рельеф + коррекционные упражнения</p><span class="buy">Купить <img src="assets/_.png" alt=""></span></div>
+          </div>
+          <div class="glass">
+            <div class="stream"><b>52</b><span>поток</span></div>
+            <span class="pill pill--blue">Идёт набор</span>
+            <a class="schedule">Расписание потоков <i><img src="assets/Group_1321318855.svg" alt=""></i></a>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="var" id="v3">
+    <h2>3. <span>Док-панель</span> — кино сверху, продажа снизу</h2>
+    <p class="desc">Верх — чистый кадр: логотип, направления и фото по центру. Внизу во всю ширину «док» —
+      стеклянная панель с двумя тарифами, потоком и расписанием. Та же мобильная плитка, только положена в строку.</p>
+    <ul class="why">
+      <li>Самый «дорогой» первый экран: сначала эмоция, потом действие — и всё равно всё на одном экране.</li>
+      <li>Док легко переиспользовать на страницах курсов и в закрытых продажах — меняются только карточки.</li>
+      <li>Минус: больше всего работы в Тильде (панель поверх фото, 5 брейкпоинтов) и фото нужно кадрировать под центр.</li>
+    </ul>
+    <div class="wrap"><div class="holder">
+      <div class="hero">
+        <div class="veil"></div>
+        <div class="nav"><span>POPOVICHFIT</span><div class="menu"><span>Курсы</span><span>До/после</span><span>Статьи</span><span>О тренере</span><span>Вопрос/ответ</span><span>Тех.поддержка</span></div><span class="lk">Личный кабинет</span></div>
+        <div class="model"><img src="assets/POPOVICH_FIT_2025040.png" alt="Наталья Попович"></div>
+        <div class="center">
+          <div class="kicker">Онлайн фитнес-клуб</div>
+          <a class="mark"><img src="assets/POPOVICHFIT.svg" alt="POPOVICHFIT"></a>
+          <div class="tag">Осанка&nbsp;| Ягодицы&nbsp;| Тазовое дно&nbsp;| Плоский живот</div>
+          <div class="badges"><span class="pill pill--light">Комплексная работа с телом</span></div>
+        </div>
+        <div class="dock">
+          <div class="card"><span class="base">это база</span><h3>Коррекция</h3><p>Осанка, дыхание, тазовое дно</p><span class="buy">Купить <img src="assets/_.png" alt=""></span></div>
+          <div class="card"><h3>Силовой</h3><p>Сила, ягодицы, рельеф + коррекционные упражнения</p><span class="buy">Купить <img src="assets/_.png" alt=""></span></div>
+          <div class="dockstream">
+            <div class="stream"><b>52</b><span>поток</span><span class="pill pill--blue" style="margin-left:auto">Идёт набор</span></div>
+            <a class="schedule">Расписание потоков <i><img src="assets/Group_1321318855.svg" alt=""></i></a>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <div class="compare">
+    <div>
+      <img src="assets/mobile-ref.png" alt="Мобильный первый экран черновика">
+      <div class="cap">Исходник: мобильный первый экран черновика (390 px) — из него взяты все компоненты.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const holders = [...document.querySelectorAll('.holder')]
+let mode = 'fit'
+function apply(){
+  for (const h of holders){
+    const w = h.parentElement.clientWidth - 32
+    const s = mode === 'fit' ? Math.min(1, w / 1200) : 1
+    h.style.transform = `scale(${s})`
+    h.parentElement.style.height = 760 * s + 32 + 'px'
+  }
+}
+for (const [id, m] of [['fit','fit'],['one','one']]) {
+  document.getElementById(id).addEventListener('click', () => {
+    mode = m
+    document.getElementById('fit').setAttribute('aria-pressed', String(m === 'fit'))
+    document.getElementById('one').setAttribute('aria-pressed', String(m === 'one'))
+    apply()
+  })
+}
+addEventListener('resize', apply); apply()
+</script>
+</body>
+</html>

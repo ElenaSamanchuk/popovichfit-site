@@ -34,7 +34,8 @@ export function decorateLinks(params: Record<string, string>, root: ParentNode =
     try { url = new URL(href, site) } catch { return }
     const isSite = url.origin === site || /(^|\.)popovichfit\.ru$/.test(url.hostname) && !url.hostname.startsWith('lk.')
     const isLk = url.hostname === 'lk.popovichfit.ru'
-    if (params.r && (url.href === links.preorderBotWeb || url.href === links.preorderBotWeb + '/')) {
+    // как в app/utils/pfh.ts: ссылка и на старого (POPOVICHcourse_bot), и на нового (popovichfitcourse_bot) бота предзаписи
+    if (params.r && /^https:\/\/t\.me\/(POPOVICHcourse_bot|popovichfitcourse_bot)/i.test(href)) {
       a.setAttribute('href', links.preorderBotSalebot(params.r))
       return
     }
@@ -55,6 +56,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     params = collectParams(location.search)
     decorateLinks(params)
   }
+  // На пререндеренной странице исходный query возвращается после гидрации Nuxt.
+  onNuxtReady(apply)
   // только после гидрации страницы (page:finish): правка href в SSR-разметке до гидрации ломает её
   nuxtApp.hook('page:finish', () => nextTick(apply))
   // динамически добавленные ссылки (попапы, карточки тарифов) — наблюдаем за DOM

@@ -15,7 +15,7 @@ function toTop() {
 <template>
   <button
     type="button"
-    class="fixed bottom-[20px] left-[20px] z-[99990] h-[50px] w-[50px] origin-bottom-left scale-[0.8] transition-[opacity,transform] duration-300"
+    class="pf-totop fixed bottom-[20px] left-[20px] z-[99990] h-[50px] w-[50px] origin-bottom-left scale-[0.8] transition-[opacity,transform,bottom] duration-300"
     :class="visible ? 'opacity-100' : 'pointer-events-none opacity-0'"
     aria-label="Вернуться к началу страницы"
     @click="toTop"
@@ -26,3 +26,10 @@ function toTop() {
     </svg>
   </button>
 </template>
+
+<style>
+/* нижняя панель главной («Перейти в бот» / «Бесплатно») видна на телефоне и планшете до 767px: кнопка «вверх» поднимается над ней */
+@media (max-width: 767px) {
+  body:has(.pfh .dock.is-on) .pf-totop { bottom: calc(76px + env(safe-area-inset-bottom)); }
+}
+</style>

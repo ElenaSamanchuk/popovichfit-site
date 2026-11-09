@@ -1,0 +1,324 @@
+{
+  "root": "/tmp/popovichfit-pages-preview-ready",
+  "started": "2026-11-09T18:13:17.638Z",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/analys-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/community",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/consent",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_corprod",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_correction",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_power",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_powprod",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/course_prod",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/data-consent",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/delete",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/doc_l",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/inventory",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/m",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_1_otek",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_gluteal_muscles",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_kor",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/media_mtd2",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/menu7-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/nutric-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/oferta",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/part_oferta",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/profile-lk",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/promo",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/results",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/sertif",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/support",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "route": "/taplink",
+      "status": 200,
+      "noindex": true
+    }
+  ],
+  "browser": [
+    {
+      "width": 1440,
+      "route": "/",
+      "title": "POPOVICHFIT. Онлайн фитнес-клуб Натальи Попович",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/course_correction",
+      "title": "КУРС КОРРЕКЦИЯ",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/course_power",
+      "title": "КУРС СИЛОВОЙ",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/course_corprod",
+      "title": "Коррекция: выбор тарифа продление",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/oferta",
+      "title": "Договор - оферта",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/community",
+      "title": "Сообщество",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/taplink",
+      "title": "Popovichfit: быстрая навигация",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "route": "/nutric-lk",
+      "title": "Питание и образ жизни",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "title": "POPOVICHFIT. Онлайн фитнес-клуб Натальи Попович",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/course_correction",
+      "title": "КУРС КОРРЕКЦИЯ",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/course_power",
+      "title": "КУРС СИЛОВОЙ",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/course_corprod",
+      "title": "Коррекция: выбор тарифа продление",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/oferta",
+      "title": "Договор - оферта",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/community",
+      "title": "Сообщество",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/taplink",
+      "title": "Popovichfit: быстрая навигация",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    },
+    {
+      "width": 390,
+      "route": "/nutric-lk",
+      "title": "Питание и образ жизни",
+      "headers": 1,
+      "footers": 1,
+      "overflow": false,
+      "broken": [],
+      "issues": []
+    }
+  ],
+  "errors": []
+}

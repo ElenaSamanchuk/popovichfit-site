@@ -1,0 +1,91 @@
+{
+ "base": "http://127.0.0.1:65036",
+ "browser": "chromium",
+ "date": "2026-11-09T18:04:55.078Z",
+ "results": [
+  {
+   "url": "/pred",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6767
+  },
+  {
+   "url": "/pred",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 8295
+  },
+  {
+   "url": "/pred",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10880
+  },
+  {
+   "url": "/pred",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 11273
+  },
+  {
+   "url": "/predcor",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5317
+  },
+  {
+   "url": "/predcor",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7581
+  },
+  {
+   "url": "/predcor",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7599
+  },
+  {
+   "url": "/predcor",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 7203
+  },
+  {
+   "url": "/predpow",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5269
+  },
+  {
+   "url": "/predpow",
+   "width": 768,
+   "ok": true,
+   "problems": [],
+   "height": 7896
+  },
+  {
+   "url": "/predpow",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7818
+  },
+  {
+   "url": "/predpow",
+   "width": 360,
+   "ok": true,
+   "problems": [],
+   "height": 7404
+  }
+ ]
+}

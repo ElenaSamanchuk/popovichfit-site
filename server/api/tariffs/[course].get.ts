@@ -19,6 +19,7 @@ function rewrite(o: unknown): void {
 export default defineEventHandler(async (event) => {
   const course = String(getRouterParam(event, 'course') || '').replace(/\.json$/, '')
   if (!bundled[course]) throw createError({ statusCode: 404, statusMessage: 'Нет такого курса' })
+  if (useRuntimeConfig(event).public.previewMode) return bundled[course]
   const hit = cache.get(course)
   if (hit && Date.now() - hit.at < TTL) return hit.data
   try {

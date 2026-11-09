@@ -44,6 +44,9 @@ const DOC_PAGES = new Set(['/oferta', '/part_oferta', '/privacy', '/data-consent
 /** статьи (/media_*): шире колонка текста — просьба заказчика 18.09 */
 const WIDE_PAGES = new Set(['/media_1_otek', '/media_gluteal_muscles', '/media_kor', '/media_mtd2', '/mediah'])
 const pagePath = useRoute().path.replace(/\/+$/, '').toLowerCase()
+/** страницы со старой альтернативной шапкой (Zero, fixed поверх контента): на живом отступа под шапку нет, у новой шапки он есть только в мобильной версии (.pfh-gap) — убираем */
+const OLD_HEADER_PAGES = new Set(['/course_prod', '/course_corprod', '/course_powprod', '/inventory', '/promo', '/nutric-lk', '/data-consent', '/privacy', '/part_oferta'])
+const isOldHeader = OLD_HEADER_PAGES.has(pagePath)
 const isDoc = DOC_PAGES.has(pagePath)
 const isWide = WIDE_PAGES.has(pagePath)
 /** /sertif: сертификаты сеткой с просмотром вместо слайдера — просьба заказчика 18.09 */
@@ -58,7 +61,7 @@ function popupContent(b: TildaBlock): TildaBlock | null {
 </script>
 
 <template>
-  <div class="tilda-page" :class="{ 'pf-doc': isDoc, 'pf-wide': isWide }">
+  <div class="tilda-page" :class="{ 'pf-doc': isDoc, 'pf-wide': isWide, 'pf-oldhdr': isOldHeader }" :data-pf-cards="data.pfCards ? JSON.stringify(data.pfCards) : undefined">
     <!-- плашка ВК и cookie-баннер: содержимое — Zero Block со страницы, поведение — обёртки -->
     <VkNotice v-if="vkBlock" :block="vkBlock" />
     <CookieBanner v-if="cookieBlock" :block="cookieBlock" />

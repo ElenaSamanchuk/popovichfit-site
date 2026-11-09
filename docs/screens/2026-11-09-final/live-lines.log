@@ -1,0 +1,35 @@
+ок live /course_correction 360 undefined элементов
+ок live /course_correction 412 undefined элементов
+ок live /course_correction 430 undefined элементов
+ок live /course_correction 768 undefined элементов
+ок live /course_correction 1100 undefined элементов
+ок live /course_correction 390 undefined элементов
+ок live /course_correction 1440 undefined элементов
+сбой /course_power 360 Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/course_power
+Call log:
+  - navigating
+ок live /course_power 412 undefined элементов
+ок live /course_power 430 undefined элементов
+ок live /course_power 768 undefined элементов
+ок live /course_power 1100 undefined элементов
+ок live /course_power 390 undefined элементов
+ок live /course_power 1440 undefined элементов
+ок live /about 360 undefined элементов
+ок live /about 412 undefined элементов
+ок live /about 430 undefined элементов
+ок live /about 768 undefined элементов
+ок live /about 1100 undefined элементов
+ок live /about 390 undefined элементов
+ок live /about 1440 undefined элементов
+сбой /results 1440 Error: page.goto: net::ERR_NETWORK_CHANGED at https://popovichfit.ru/results
+Call log:
+  - navigatin
+ок live /results 390 undefined элементов
+сбой /media 1440 Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/media
+Call log:
+  - navigating to "ht
+ок live /media 390 undefined элементов
+сбой /community 1440 Error: page.goto: net::ERR_ABORTED at https://popovichfit.ru/community
+Call log:
+  - navigating to "
+сбой /community 390 Error: page.setViewportSize: Target page, context or browser has been closed

@@ -1,0 +1,14 @@
+{
+ "base": "http://127.0.0.1:3100",
+ "browser": "chromium",
+ "date": "2026-11-09T20:08:20.087Z",
+ "results": [
+  {
+   "url": "/about",
+   "width": 960,
+   "ok": true,
+   "problems": [],
+   "height": 2560
+  }
+ ]
+}

@@ -1,9 +1,14 @@
 import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { pages } from './app/data/pages'
+import { SALES_OPEN, SALES_REDIRECTS } from './app/data/sales'
 
 // все URL экспорта — чтобы пререндер не зависел от обхода ссылок (черновики и legacy-страницы никто не линкует)
-const prerenderRoutes = Object.values(pages).filter((p) => p.published !== false).map((p) => p.url).filter((u) => u !== '/404.html') // скрытые страницы не пререндерим — их отдаёт node по токену
+const closedSalesRoutes = new Set(SALES_OPEN ? [] : Object.keys(SALES_REDIRECTS))
+const prerenderRoutes = Object.values(pages)
+  .filter(p => p.published !== false && p.url !== '/404.html' && !closedSalesRoutes.has(p.url))
+  .map(p => p.url)
+const previewMode = process.env.POPOVICHFIT_PREVIEW === '1'
 
 // Статическая генерация всех страниц (nuxt generate) + серверные роуты /api/* для форм и корзины
 // (работают при запуске через `nuxt build` + node-server; при чисто статическом хостинге
@@ -22,6 +27,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'yandex-verification', content: 'ef3a6b04ad30f479' },
+        ...(previewMode ? [{ name: 'robots', content: 'noindex, nofollow, noarchive' }] : []),
       ],
       link: [{ rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
       // анимации появления (t-animate) включаются только при JS и без prefers-reduced-motion; Playwright (webdriver) — без анимаций и без smooth-scroll
@@ -37,6 +43,7 @@ export default defineNuxtConfig({
     cloudpaymentsApiSecret: '',
     previewToken: '', // NUXT_PREVIEW_TOKEN — просмотр скрытых страниц: /<url>?preview=<токен>
     public: {
+      previewMode,
       siteUrl: 'https://popovichfit.ru',
       apiBase: '', // '' = тот же origin (/api/...)
       cloudpaymentsPublicId: '',
@@ -50,10 +57,11 @@ export default defineNuxtConfig({
     '/**': { prerender: true },
     '/api/**': { prerender: false, cache: false },
     '/sitemap.xml': { prerender: true },
+    ...Object.fromEntries([...closedSalesRoutes].map(route => [route, { prerender: false }])),
   },
   nitro: {
     // crawlLinks выключен: все адреса заданы списком, а обход ссылок Nitro падает на URI с некорректным % в ссылках экспорта
-    prerender: { crawlLinks: false, routes: ['/', '/sitemap.xml', ...prerenderRoutes], failOnError: false },
+    prerender: { crawlLinks: false, routes: ['/', '/sitemap.xml', '/open', '/close', '/speakers', ...(SALES_OPEN ? ['/sales-open', '/pred', '/predcor', '/predpow'] : []), ...prerenderRoutes], failOnError: false },
     // JSON страниц экспорта — серверные ассеты (лениво, по файлу), см. server/api/tilda/[file].get.ts
     serverAssets: [{ baseName: 'tilda', dir: fileURLToPath(new URL('./app/data/tilda', import.meta.url)) }],  // dir иначе считается от server/
     hooks: {

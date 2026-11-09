@@ -1,21 +1,21 @@
 /bonus4 @1200: высота live 1573 / local 1573
 
 ## rec778009961 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,230,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,230,60,60  
-  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,230,60,60  
-  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,230,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
 
 ## rec778009962 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,470,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,470,60,60  
-  Δ #1721649279449 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,470,60,60  
-  Δ #1721649279420 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,470,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279449 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649279420 [shape] opacity live 1 / local 0.1  
 
 ## rec778010208 T396
-  Δ #1721648754814 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@132,720,60,60  
-  Δ #1721649051951 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@422,720,60,60  
-  Δ #1723710647314 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@718,720,60,60  
-  Δ #1723710647303 [shape] фон live rgba(0, 0, 0, 0) / local rgb(255, 255, 255)  live@1008,720,60,60  
+  ✗ #1721648754814 [shape] opacity live 1 / local 0.1  
+  ✗ #1721649051951 [shape] opacity live 1 / local 0.1  
+  ✗ #1723710647314 [shape] opacity live 1 / local 0.1  
+  ✗ #1723710647303 [shape] opacity live 1 / local 0.1  
 
 элементов: 146, с расхождениями > 3px: 12

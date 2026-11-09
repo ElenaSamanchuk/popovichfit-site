@@ -1,0 +1,16 @@
+/testvvedenie @320: высота live 4515 / local 4353  (общий сдвиг по вертикали -162px — вычтен)
+
+## rec851306689 T396
+  Δ #1720448097344 [shape] dx=0 dy=0 dw=660 dh=0  live@10,172,300,850  
+  Δ #1720535408538 [shape] bg-image live Rectangle_3069.jpg, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t39656536-rectangle_3069.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@20,570,180,109  
+  Δ #1721902075463 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.1)  live@58,465,31,31  
+
+## rec851306690 T396
+  Δ #1720591572494 [shape] bg-image live 1556_1_1.jpg.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%) / local t61323038-1556_1_1.webp, linear-gradient(267.48deg, rgb(244, 244, 244) 0%, rgb(225, 225, 225) 100%)  live@10,1431,300,790  
+
+## rec851306693 T396
+  Δ #1721046747563 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.35)  live@10,3758,242,126  
+  Δ #1722246846433 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.35)  live@260,3758,50,58  
+  Δ #1722247479651 [shape] фон live rgb(255, 255, 255) / local rgba(255, 255, 255, 0.35)  live@260,3823,50,58  
+
+элементов: 95, с расхождениями > 3px: 7

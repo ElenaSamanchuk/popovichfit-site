@@ -1,0 +1,75 @@
+ок    /data-consent 1440: status=200 h=2267 
+ок    /data-consent 390: status=200 h=2496 
+ОШИБ  /community 1440: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/community
+Call log:
+  - navigating to "https://popovichfit.ru/community", waiting until "load"
+
+ок    /community 390: status=200 h=3253 
+ок    /open 1440: status=200 h=6767 
+ок    /open 390: status=200 h=10900 
+ок    /course_prod 1440: status=200 h=1237 
+ок    /course_prod 390: status=200 h=1763 
+ок    /sertif 1440: status=200 h=1366 
+ОШИБ  /sertif 390: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/sertif
+Call log:
+  - navigating to "https://popovichfit.ru/sertif", waiting until "load"
+
+ок    /taplink 1440: status=200 h=3030 
+ок    /taplink 390: status=200 h=3317 
+ок    / 1440: status=200 h=6786 
+ок    / 390: status=200 h=10891 
+ок    /course_correction 1440: status=200 h=5175 
+ок    /course_correction 390: status=200 h=7298 
+ок    /course_power 1440: status=200 h=5135 
+ок    /course_power 390: status=200 h=7511 
+ок    /course_corprod 1440: status=200 h=1127 
+ок    /course_corprod 390: status=200 h=1516 
+ок    /course_powprod 1440: status=200 h=1157 
+ок    /course_powprod 390: status=200 h=1531 
+ок    /results 1440: status=200 h=4502 
+ок    /results 390: status=200 h=6177 
+ок    /media 1440: status=200 h=2645 
+ок    /media 390: status=200 h=4862 
+ок    /about 1440: status=200 h=2660 
+ок    /about 390: status=200 h=4179 
+ок    /oferta 1440: status=200 h=14447 
+ок    /oferta 390: status=200 h=18239 
+ок    /part_oferta 1440: status=200 h=10573 
+ок    /part_oferta 390: status=200 h=13075 
+ок    /privacy 1440: status=200 h=7816 
+ок    /privacy 390: status=200 h=9521 
+ок    /consent 1440: status=200 h=2484 
+ОШИБ  /consent 390: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/consent
+Call log:
+  - navigating to "https://popovichfit.ru/consent", waiting until "load"
+
+ок    /promo 1440: status=200 h=1953 
+ок    /promo 390: status=200 h=1772 
+ок    /inventory 1440: status=200 h=2679 
+ок    /inventory 390: status=200 h=4707 
+ок    /nutric-lk 1440: status=200 h=1548 
+ок    /nutric-lk 390: status=200 h=1588 
+ок    /close 1440: status=200 h=6786 
+ок    /close 390: status=200 h=10911 
+ок    /course_correction 640: status=200 h=6786 
+ок    /course_correction 480: status=200 h=7108 
+ок    /course_correction 320: status=200 h=6507 
+ок    /course_correction 960: status=200 h=5785 
+ОШИБ  /course_correction 1200: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/course_correction
+Call log:
+  - navigating to "https://popovichfit.ru/course_correction", waiting until "load"
+
+ОШИБ  /course_power 640: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/course_power
+Call log:
+  - navigating to "https://popovichfit.ru/course_power", waiting until "load"
+
+ОШИБ  /course_power 480: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/course_power
+Call log:
+  - navigating to "https://popovichfit.ru/course_power", waiting until "load"
+
+ок    /course_power 320: status=200 h=6683 
+ок    /course_power 960: status=200 h=5777 
+ОШИБ  /course_power 1200: status=0 h=- Error: page.goto: net::ERR_TIMED_OUT at https://popovichfit.ru/course_power
+Call log:
+  - navigating to "https://popovichfit.ru/course_power", waiting until "load"
+

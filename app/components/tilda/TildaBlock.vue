@@ -5,6 +5,7 @@
 // без скриптов; служебные (T270/T890/T450/T215/T887/T367) — не рендерятся (их заменяют общие компоненты).
 import type { TildaBlock } from '~/utils/tilda-css'
 import { visCss, padResCss } from '~/utils/tilda-css'
+import { initSafetyDialog } from '~/utils/safety-dialog'
 
 const props = defineProps<{ block: TildaBlock; popupContent?: TildaBlock | null }>()
 const b = props.block
@@ -69,7 +70,8 @@ const certHtml = computed(() => {
 })
 /** свои виджеты заказчика в HTML-блоках (тарифы popovichfit-tariffs: iframe + скрипт подгонки высоты и модалок через postMessage):
  *  их inline-скрипты выполняем как есть — это её код, без зависимостей от Тильды */
-const tariffsCourse = computed(() => { const m = /popovichfit-tariffs\/(korrekciya|silovye)\.html/.exec(b.custom || ''); return m ? (m[1] as 'korrekciya' | 'silovye') : null })
+const inlineCourse = computed(() => { const c = b.pfInline?.meta?.courseId; return c === 'korrekciya' || c === 'silovye' ? c : null })
+const tariffsCourse = computed(() => { if (inlineCourse.value) return null; const m = /popovichfit-tariffs\/(korrekciya|silovye)\.html/.exec(b.custom || ''); return m ? (m[1] as 'korrekciya' | 'silovye') : null })
 const customRoot = ref<HTMLElement | null>(null)
 function runCustomScripts() {
   if (!customRoot.value || tariffsCourse.value || !/popovich-tariffs/.test(b.custom || '')) return
@@ -79,6 +81,10 @@ function runCustomScripts() {
   }
 }
 onMounted(() => nextTick(runCustomScripts))
+// диалог «Противопоказания и безопасность» (T123 на /course_correction, /course_power: <dialog id="safety">, открывается ссылками #safety)
+let disposeSafety: (() => void) | null = null
+onMounted(() => { const d = customRoot.value?.querySelector<HTMLDialogElement>('dialog#safety'); if (d) disposeSafety = initSafetyDialog(d) })
+onBeforeUnmount(() => disposeSafety?.())
 const popupRoot = ref<HTMLElement | null>(null)
 /** подложка zero-попапа T1093 из CSS блока (#rec .t1093 .t-popup__bg{…}): у Тильды по умолчанию она прозрачная, у части попапов
  *  rgba(0,0,0,.2/.3), почти у всех — backdrop-filter: blur(4px) */
@@ -303,6 +309,11 @@ onMounted(() => {
     <!-- id блока нужен для его CSS из экспорта (#recNNN .t390__descr{…}); в потоке страницы попап-блок не рендерится, id уникален -->
     <div v-else :id="b.id" ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : b.type === '868' ? 'tb--embed' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />
   </Modal>
+
+  <!-- виджет тарифов с конфигом страницы (T123 inline v2) -->
+  <div v-else-if="inlineCourse" :id="b.id" class="tb" :data-tilda-rec="b.id" :style="{ paddingTop: b.pad['padding-top'] != null ? b.pad['padding-top'] + 'px' : undefined, paddingBottom: b.pad['padding-bottom'] != null ? b.pad['padding-bottom'] + 'px' : undefined }">
+    <TariffsInline :course="inlineCourse" :config="b.pfInline!" />
+  </div>
 
   <!-- виджет тарифов заказчицы (в Тильде — iframe с GitHub Pages) — нативно, без iframe -->
   <TariffsWidget v-else-if="tariffsCourse" :course="tariffsCourse" />

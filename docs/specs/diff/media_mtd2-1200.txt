@@ -1,6 +1,11 @@
-/media_mtd2 @1200: высота live 27216 / local 27216
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-## rec779584044 T396  блок: live y=720 h=180 / local y=848 h=180
-  Δ #1719923677879 [button] dx=0 dy=128 dw=0 dh=0  live@1067,724,113,50  Назад
+page.evaluate: Execution context was destroyed, most likely because of a navigation.
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:45:12 {
+  log: [],
+  name: 'Error'
+}
 
-элементов: 3, с расхождениями > 3px: 1
+Node.js v26.0.0

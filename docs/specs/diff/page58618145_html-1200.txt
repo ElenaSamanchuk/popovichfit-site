@@ -1,3 +1,11 @@
-/page58618145.html @1200: высота live 900 / local 3143
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-элементов: 0, с расхождениями > 3px: 0
+page.evaluate: Execution context was destroyed, most likely because of a navigation
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:43:12 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v26.0.0

@@ -1,0 +1,205 @@
+== verify:priority  chromium  сервер http://127.0.0.1:60058  страниц 22 × ширин 8
+ок     /                     1440  h= 6786  
+ок     /                      960  h= 8494  
+ок     /                      768  h= 8279  
+ок     /                      430  h=10790  
+ок     /                      412  h=10830  
+ок     /                      390  h=10891  
+ок     /                      360  h=11248  
+ок     /                      320  h=11893  
+ок     /course_correction    1440  h= 5175  
+ок     /course_correction     960  h= 5785  
+ок     /course_correction     768  h= 7432  
+ок     /course_correction     430  h= 7794  
+ок     /course_correction     412  h= 7548  
+ок     /course_correction     390  h= 7302  
+ок     /course_correction     360  h= 6929  
+ок     /course_correction     320  h= 6507  
+ок     /course_power         1440  h= 5117  
+ок     /course_power          960  h= 5759  
+ок     /course_power          768  h= 7725  
+ок     /course_power          430  h= 8011  
+ок     /course_power          412  h= 7755  
+ок     /course_power          390  h= 7498  
+ок     /course_power          360  h= 7108  
+ок     /course_power          320  h= 6665  
+ок     /course_prod          1440  h= 1204  
+ок     /course_prod           960  h= 1170  
+ок     /course_prod           768  h= 1577  
+ок     /course_prod           430  h= 2242  
+ок     /course_prod           412  h= 2184  
+ок     /course_prod           390  h= 2133  
+ок     /course_prod           360  h= 2073  
+ок     /course_prod           320  h= 1964  
+ок     /course_corprod       1440  h= 1678  
+ок     /course_corprod        960  h= 2110  
+ок     /course_corprod        768  h= 2083  
+ок     /course_corprod        430  h= 2575  
+ок     /course_corprod        412  h= 2502  
+ок     /course_corprod        390  h= 2439  
+ок     /course_corprod        360  h= 2362  
+ок     /course_corprod        320  h= 2229  
+ок     /course_powprod       1440  h= 1708  
+ок     /course_powprod        960  h= 2140  
+ок     /course_powprod        768  h= 2113  
+ок     /course_powprod        430  h= 2590  
+ок     /course_powprod        412  h= 2517  
+ок     /course_powprod        390  h= 2454  
+ок     /course_powprod        360  h= 2377  
+ок     /course_powprod        320  h= 2244  
+ок     /results              1440  h= 4502  
+ок     /results               960  h= 3877  
+ок     /results               768  h= 9876  
+ок     /results               430  h= 6688  
+ок     /results               412  h= 6451  
+ок     /results               390  h= 6183  
+ок     /results               360  h= 5826  
+ок     /results               320  h= 5321  
+ок     /media                1440  h= 2645  
+ок     /media                 960  h= 2405  
+ок     /media                 768  h= 2628  
+ок     /media                 430  h= 5228  
+ок     /media                 412  h= 5054  
+ок     /media                 390  h= 4863  
+ок     /media                 360  h= 4611  
+ок     /media                 320  h= 4246  
+ок     /about                1440  h= 2660  
+ОШИБКА /about                 960  h= 2560  console.error ×1: Failed to load resource: net::ERR_TIMED_OUT
+ок     /about                 768  h= 3516  
+ок     /about                 430  h= 4495  
+ок     /about                 412  h= 4344  
+ок     /about                 390  h= 4180  
+ок     /about                 360  h= 3966  
+ок     /about                 320  h= 3651  
+ок     /community            1440  h= 2137  
+ок     /community             960  h= 2470  
+ок     /community             768  h= 2755  
+ок     /community             430  h= 3438  
+ок     /community             412  h= 3345  
+ок     /community             390  h= 3253  
+ок     /community             360  h= 3136  
+ок     /community             320  h= 2951  
+ок     /oferta               1440  h=11364  
+ок     /oferta                960  h=11894  
+ок     /oferta                768  h=14269  
+ок     /oferta                430  h=19724  
+ок     /oferta                412  h=20592  
+ок     /oferta                390  h=21812  
+ок     /oferta                360  h=23458  
+ок     /oferta                320  h=26851  
+ок     /part_oferta          1440  h= 7005  
+ок     /part_oferta           960  h= 7264  
+ок     /part_oferta           768  h= 8743  
+ок     /part_oferta           430  h=12660  
+ок     /part_oferta           412  h=13196  
+ок     /part_oferta           390  h=13981  
+ок     /part_oferta           360  h=15115  
+ок     /part_oferta           320  h=17382  
+ок     /privacy              1440  h= 6537  
+ок     /privacy               960  h= 6714  
+ок     /privacy               768  h= 8116  
+ок     /privacy               430  h=11366  
+ок     /privacy               412  h=11725  
+ок     /privacy               390  h=12207  
+ок     /privacy               360  h=13298  
+ок     /privacy               320  h=15338  
+ок     /data-consent         1440  h= 1728  
+ок     /data-consent          960  h= 1727  
+ок     /data-consent          768  h= 1935  
+ок     /data-consent          430  h= 2899  
+ок     /data-consent          412  h= 2976  
+ок     /data-consent          390  h= 3096  
+ок     /data-consent          360  h= 3334  
+ок     /data-consent          320  h= 3579  
+ок     /consent              1440  h= 2093  
+ок     /consent               960  h= 2132  
+ок     /consent               768  h= 2485  
+ок     /consent               430  h= 3449  
+ок     /consent               412  h= 3575  
+ок     /consent               390  h= 3669  
+ок     /consent               360  h= 3907  
+ок     /consent               320  h= 4434  
+ок     /promo                1440  h= 1920  
+ок     /promo                 960  h= 1810  
+ок     /promo                 768  h= 1837  
+ок     /promo                 430  h= 2251  
+ок     /promo                 412  h= 2193  
+ок     /promo                 390  h= 2142  
+ок     /promo                 360  h= 2081  
+ок     /promo                 320  h= 1971  
+ок     /inventory            1440  h= 2646  
+ок     /inventory             960  h= 2716  
+ок     /inventory             768  h= 4163  
+ок     /inventory             430  h= 5482  
+ок     /inventory             412  h= 5290  
+ок     /inventory             390  h= 5076  
+ок     /inventory             360  h= 4792  
+ок     /inventory             320  h= 4386  
+ок     /nutric-lk            1440  h= 1335  
+ок     /nutric-lk             960  h= 1195  
+ок     /nutric-lk             768  h= 1838  
+ок     /nutric-lk             430  h= 1846  
+ок     /nutric-lk             412  h= 1809  
+ок     /nutric-lk             390  h= 1784  
+ок     /nutric-lk             360  h= 1758  
+ок     /nutric-lk             320  h= 1696  
+ок     /sertif               1440  h= 6599  
+ок     /sertif                960  h= 5399  
+ок     /sertif                768  h= 6958  
+ок     /sertif                430  h= 9209  
+ок     /sertif                412  h= 8857  
+ок     /sertif                390  h= 8447  
+ок     /sertif                360  h= 7896  
+ок     /sertif                320  h= 7133  
+ок     /taplink              1440  h= 3030  
+ок     /taplink               960  h= 3040  
+ок     /taplink               768  h= 3407  
+ок     /taplink               430  h= 3546  
+ок     /taplink               412  h= 3435  
+ок     /taplink               390  h= 3320  
+ок     /taplink               360  h= 3172  
+ок     /taplink               320  h= 2945  
+ок     /open                 1440  h= 6767  
+ок     /open                  960  h= 8511  
+ок     /open                  768  h= 8295  
+ок     /open                  430  h=10779  
+ок     /open                  412  h=10786  
+ок     /open                  390  h=10880  
+ок     /open                  360  h=11273  
+ок     /open                  320  h=11878  
+ок     /close                1440  h= 6786  
+ок     /close                 960  h= 8494  
+ок     /close                 768  h= 8279  
+ок     /close                 430  h=10790  
+ок     /close                 412  h=10797  
+ок     /close                 390  h=10891  
+ок     /close                 360  h=11248  
+ок     /close                 320  h=11893  
+
+Страница × ширина (ок / ОШ):
+страница               1440    960    768    430    412    390    360    320
+/                        ок     ок     ок     ок     ок     ок     ок     ок
+/course_correction       ок     ок     ок     ок     ок     ок     ок     ок
+/course_power            ок     ок     ок     ок     ок     ок     ок     ок
+/course_prod             ок     ок     ок     ок     ок     ок     ок     ок
+/course_corprod          ок     ок     ок     ок     ок     ок     ок     ок
+/course_powprod          ок     ок     ок     ок     ок     ок     ок     ок
+/results                 ок     ок     ок     ок     ок     ок     ок     ок
+/media                   ок     ок     ок     ок     ок     ок     ок     ок
+/about                   ок     ОШ     ок     ок     ок     ок     ок     ок
+/community               ок     ок     ок     ок     ок     ок     ок     ок
+/oferta                  ок     ок     ок     ок     ок     ок     ок     ок
+/part_oferta             ок     ок     ок     ок     ок     ок     ок     ок
+/privacy                 ок     ок     ок     ок     ок     ок     ок     ок
+/data-consent            ок     ок     ок     ок     ок     ок     ок     ок
+/consent                 ок     ок     ок     ок     ок     ок     ок     ок
+/promo                   ок     ок     ок     ок     ок     ок     ок     ок
+/inventory               ок     ок     ок     ок     ок     ок     ок     ок
+/nutric-lk               ок     ок     ок     ок     ок     ок     ок     ок
+/sertif                  ок     ок     ок     ок     ок     ок     ок     ок
+/taplink                 ок     ок     ок     ок     ок     ок     ок     ок
+/open                    ок     ок     ок     ок     ок     ок     ок     ок
+/close                   ок     ок     ок     ок     ок     ок     ок     ок
+
+ИТОГ: проверок 176, с ошибками 1, время 916 с
+EXIT 1

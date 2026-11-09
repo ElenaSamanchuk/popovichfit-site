@@ -1,0 +1,142 @@
+
+> popovichfit-site@0.1.0 verify:priority
+> nice -n 15 node scripts/verify-priority.mjs --out docs/screens/2026-11-09-final/verify-priority.json
+
+== verify:priority  сервер http://127.0.0.1:61890  страниц 22 × ширин 5
+ок     /                     1440  h= 6786  
+ок     /                      960  h= 8494  
+ок     /                      768  h= 8279  
+ок     /                      390  h=10891  
+ок     /                      320  h=11893  
+ок     /course_correction    1440  h= 5175  
+ок     /course_correction     960  h= 5785  
+ок     /course_correction     768  h= 7432  
+ок     /course_correction     390  h= 7302  
+ок     /course_correction     320  h= 6507  
+ок     /course_power         1440  h= 5117  
+ок     /course_power          960  h= 5759  
+ок     /course_power          768  h= 7725  
+ок     /course_power          390  h= 7498  
+ок     /course_power          320  h= 6665  
+ок     /course_prod          1440  h= 1204  
+ок     /course_prod           960  h= 1210  
+ок     /course_prod           768  h= 1617  
+ок     /course_prod           390  h= 2173  
+ок     /course_prod           320  h= 2004  
+ок     /course_corprod       1440  h= 1678  
+ок     /course_corprod        960  h= 2122  
+ок     /course_corprod        768  h= 2123  
+ок     /course_corprod        390  h= 2479  
+ок     /course_corprod        320  h= 2269  
+ок     /course_powprod       1440  h= 1708  
+ок     /course_powprod        960  h= 2152  
+ок     /course_powprod        768  h= 2153  
+ок     /course_powprod        390  h= 2494  
+ок     /course_powprod        320  h= 2284  
+ок     /results              1440  h= 4502  
+ок     /results               960  h= 3877  
+ок     /results               768  h= 9876  
+ок     /results               390  h= 6183  
+ок     /results               320  h= 5321  
+ок     /media                1440  h= 2645  
+ок     /media                 960  h= 2405  
+ок     /media                 768  h= 2628  
+ок     /media                 390  h= 4863  
+ок     /media                 320  h= 4246  
+ок     /about                1440  h= 2660  
+ок     /about                 960  h= 2560  
+ок     /about                 768  h= 3516  
+ок     /about                 390  h= 4180  
+ок     /about                 320  h= 3651  
+ок     /community            1440  h= 2137  
+ок     /community             960  h= 2470  
+ок     /community             768  h= 2755  
+ок     /community             390  h= 3290  
+ок     /community             320  h= 2951  
+ок     /oferta               1440  h=11251  
+ок     /oferta                960  h=11665  
+ок     /oferta                768  h=13607  
+ок     /oferta                390  h=20637  
+ок     /oferta                320  h=25114  
+ок     /part_oferta          1440  h= 6938  
+ок     /part_oferta           960  h= 7179  
+ок     /part_oferta           768  h= 8486  
+ок     /part_oferta           390  h=13204  
+ок     /part_oferta           320  h=16249  
+ок     /privacy              1440  h= 6450  
+ок     /privacy               960  h= 6696  
+ок     /privacy               768  h= 7838  
+ок     /privacy               390  h=11837  
+ок     /privacy               320  h=14329  
+ок     /data-consent         1440  h= 1728  
+ок     /data-consent          960  h= 1767  
+ок     /data-consent          768  h= 1946  
+ок     /data-consent          390  h= 3034  
+ок     /data-consent          320  h= 3491  
+ок     /consent              1440  h= 2068  
+ок     /consent               960  h= 2136  
+ок     /consent               768  h= 2344  
+ок     /consent               390  h= 3573  
+ок     /consent               320  h= 4160  
+ок     /promo                1440  h= 1920  
+ок     /promo                 960  h= 1850  
+ок     /promo                 768  h= 1877  
+ок     /promo                 390  h= 2182  
+ок     /promo                 320  h= 2011  
+ок     /inventory            1440  h= 2646  
+ок     /inventory             960  h= 2756  
+ок     /inventory             768  h= 4203  
+ок     /inventory             390  h= 5116  
+ок     /inventory             320  h= 4426  
+ок     /nutric-lk            1440  h= 1335  
+ок     /nutric-lk             960  h= 1235  
+ок     /nutric-lk             768  h= 1878  
+ок     /nutric-lk             390  h= 1824  
+ок     /nutric-lk             320  h= 1736  
+ок     /sertif               1440  h= 6599  
+ок     /sertif                960  h= 5399  
+ок     /sertif                768  h= 6958  
+ок     /sertif                390  h= 8447  
+ок     /sertif                320  h= 7133  
+ок     /taplink              1440  h= 3030  
+ок     /taplink               960  h= 3040  
+ОШИБКА /taplink               768  h= 3407  битых картинок 2: http://127.0.0.1:61890/img/t/t33613239-group_1321319991.svg ; http://127.0.0.1:61890/img/t/t33613239-group_1321319991.svg
+ок     /taplink               390  h= 3320  
+ок     /taplink               320  h= 2945  
+ок     /open                 1440  h= 6767  
+ок     /open                  960  h= 8511  
+ок     /open                  768  h= 8315  
+ок     /open                  390  h=10900  
+ок     /open                  320  h=11878  
+ок     /close                1440  h= 6786  
+ок     /close                 960  h= 8494  
+ок     /close                 768  h= 8299  
+ок     /close                 390  h=10911  
+ок     /close                 320  h=11893  
+
+Страница × ширина (ок / ОШ):
+страница               1440    960    768    390    320
+/                        ок     ок     ок     ок     ок
+/course_correction       ок     ок     ок     ок     ок
+/course_power            ок     ок     ок     ок     ок
+/course_prod             ок     ок     ок     ок     ок
+/course_corprod          ок     ок     ок     ок     ок
+/course_powprod          ок     ок     ок     ок     ок
+/results                 ок     ок     ок     ок     ок
+/media                   ок     ок     ок     ок     ок
+/about                   ок     ок     ок     ок     ок
+/community               ок     ок     ок     ок     ок
+/oferta                  ок     ок     ок     ок     ок
+/part_oferta             ок     ок     ок     ок     ок
+/privacy                 ок     ок     ок     ок     ок
+/data-consent            ок     ок     ок     ок     ок
+/consent                 ок     ок     ок     ок     ок
+/promo                   ок     ок     ок     ок     ок
+/inventory               ок     ок     ок     ок     ок
+/nutric-lk               ок     ок     ок     ок     ок
+/sertif                  ок     ок     ок     ок     ок
+/taplink                 ок     ок     ОШ     ок     ок
+/open                    ок     ок     ок     ок     ок
+/close                   ок     ок     ок     ок     ок
+
+ИТОГ: проверок 110, с ошибками 1, время 499 с

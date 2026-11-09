@@ -1,8 +1,14 @@
 /page01 @1200: высота live 3277 / local 3223  (общий сдвиг по вертикали -54px — вычтен)
 
+## rec595977155 T396
+  Δ #1684939114166 [video] фон live rgba(0, 0, 0, 0) / local rgb(0, 0, 0)  live@20,389,853,471  
+
+## rec661779736 T396
+  Δ #1685011271880 [text] dx=0 dy=0 dw=0 dh=17  live@35,1585,328,36  Тo do-лист "5 шагов разогнать лимфу и из
+
 ## rec661783488 T396
   Δ #1688977526167 [shape] bg-image live — / local t33613464-instagram_post_-_5.webp  live@480,2652,241,240  
   Δ #1688977526173 [shape] bg-image live — / local t34363533-instagram_post_-_6.webp  live@741,2652,241,240  
   Δ #1688977526176 [shape] bg-image live — / local t64383239-instagram_post_-_4.webp  live@220,2652,241,240  
 
-элементов: 64, с расхождениями > 3px: 3
+элементов: 64, с расхождениями > 3px: 5

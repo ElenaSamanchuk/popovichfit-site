@@ -1,43 +1,11 @@
-/mediah @1200: высота live 7763 / local 7946
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
 
-## rec602949430 T223  блок: live y=1656 h=469 / local y=1656 h=465
+page.evaluate: Execution context was destroyed, most likely because of a navigation
+    at /Users/elena/Projects/popovichfit-site/scripts/measure-diff.mjs:45:12 {
+  log: [],
+  name: 'Error'
+}
 
-## rec602949968 T106  блок: live y=2126 h=340 / local y=2122 h=340
-
-## rec602949995 T3  блок: live y=2466 h=414 / local y=2462 h=414
-
-## rec602948916 T106  блок: live y=2879 h=299 / local y=2875 h=299
-
-## rec602950081 T3  блок: live y=3178 h=454 / local y=3174 h=454
-
-## rec602950249 T223  блок: live y=3632 h=324 / local y=3628 h=320
-
-## rec603265755 T4  блок: live y=3957 h=469 / local y=3949 h=660
-
-## rec602950706 T33  блок: live y=4426 h=86 / local y=4609 h=86
-
-## rec602949354 T106  блок: live y=4512 h=143 / local y=4695 h=143
-
-## rec602950808 T33  блок: live y=4655 h=56 / local y=4838 h=56
-
-## rec602948715 T106  блок: live y=4711 h=183 / local y=4894 h=183
-
-## rec602951022 T33  блок: live y=4895 h=111 / local y=5078 h=111
-
-## rec602944855 T106  блок: live y=5005 h=100 / local y=5188 h=100
-
-## rec602951199 T106  блок: live y=5105 h=158 / local y=5288 h=158
-
-## rec602944856 T3  блок: live y=5263 h=143 / local y=5446 h=143
-
-## rec602951567 T223  блок: live y=5405 h=669 / local y=5588 h=669
-
-## rec602944859 T106  блок: live y=6074 h=239 / local y=6257 h=239
-
-## rec602951908 T106  блок: live y=6313 h=211 / local y=6496 h=211
-
-## rec602944861 T106  блок: live y=6525 h=256 / local y=6708 h=256
-
-## rec602952237 T3  блок: live y=6781 h=399 / local y=6964 h=399
-
-элементов: 3, с расхождениями > 3px: 0
+Node.js v26.0.0

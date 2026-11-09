@@ -1,0 +1,259 @@
+{
+ "base": "http://127.0.0.1:3702",
+ "browser": "chromium",
+ "date": "2026-11-09T20:25:14.876Z",
+ "results": [
+  {
+   "url": "/",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  },
+  {
+   "url": "/open",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6767
+  },
+  {
+   "url": "/open",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10880
+  },
+  {
+   "url": "/open",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11878
+  },
+  {
+   "url": "/close",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6786
+  },
+  {
+   "url": "/close",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 10891
+  },
+  {
+   "url": "/close",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 11893
+  },
+  {
+   "url": "/data-consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1728
+  },
+  {
+   "url": "/data-consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3015
+  },
+  {
+   "url": "/data-consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 3519
+  },
+  {
+   "url": "/oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 11364
+  },
+  {
+   "url": "/oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 21812
+  },
+  {
+   "url": "/oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 26851
+  },
+  {
+   "url": "/privacy",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 6537
+  },
+  {
+   "url": "/privacy",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 11939
+  },
+  {
+   "url": "/privacy",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 14998
+  },
+  {
+   "url": "/consent",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 2093
+  },
+  {
+   "url": "/consent",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3669
+  },
+  {
+   "url": "/consent",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 4434
+  },
+  {
+   "url": "/part_oferta",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 7005
+  },
+  {
+   "url": "/part_oferta",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 13981
+  },
+  {
+   "url": "/part_oferta",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 17382
+  },
+  {
+   "url": "/course_correction",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5175
+  },
+  {
+   "url": "/course_correction",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7302
+  },
+  {
+   "url": "/course_correction",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 6507
+  },
+  {
+   "url": "/course_power",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 5117
+  },
+  {
+   "url": "/course_power",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 7498
+  },
+  {
+   "url": "/course_power",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 6665
+  },
+  {
+   "url": "/taplink",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 3030
+  },
+  {
+   "url": "/taplink",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 3320
+  },
+  {
+   "url": "/taplink",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 2945
+  },
+  {
+   "url": "/course_prod",
+   "width": 1440,
+   "ok": true,
+   "problems": [],
+   "height": 1204
+  },
+  {
+   "url": "/course_prod",
+   "width": 390,
+   "ok": true,
+   "problems": [],
+   "height": 2133
+  },
+  {
+   "url": "/course_prod",
+   "width": 320,
+   "ok": true,
+   "problems": [],
+   "height": 1964
+  }
+ ]
+}

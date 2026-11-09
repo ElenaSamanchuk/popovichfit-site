@@ -1,0 +1,24 @@
+
+> popovichfit-site@0.1.0 verify:priority
+> nice -n 15 node scripts/verify-priority.mjs --base http://127.0.0.1:49867 --browser firefox --pages /,/course_correction,/privacy,/taplink --widths 1440,390 --out docs/screens/2026-11-09-final/verify-firefox-resumed.json
+
+== verify:priority  firefox  сервер http://127.0.0.1:49867  страниц 4 × ширин 2
+ОШИБКА /                     1440  h= 6787  console.error ×2: [JavaScript Error: "Cookie “metrika_enabled” has been rejected for invalid domain." {file: "http://127.0.0.1:49867/" line: 0}]
+ОШИБКА /                      390  h=10872  console.error ×2: [JavaScript Error: "Cookie “metrika_enabled” has been rejected for invalid domain." {file: "http://127.0.0.1:49867/" line: 0}]
+ОШИБКА /course_correction    1440  h= 5176  console.error ×2: [JavaScript Error: "Cookie “metrika_enabled” has been rejected for invalid domain." {file: "http://127.0.0.1:49867/course_correction" line: 0}]
+ОШИБКА /course_correction     390  h= 7283  console.error ×2: [JavaScript Error: "Cookie “metrika_enabled” has been rejected for invalid domain." {file: "http://127.0.0.1:49867/course_correction" line: 0}]
+ОШИБКА /privacy              1440  h= 6451  console.error ×2: [JavaScript Error: "Cookie “metrika_enabled” has been rejected for invalid domain." {file: "http://127.0.0.1:49867/privacy" line: 0}]
+ОШИБКА /privacy               390  h=    -  сбой загрузки: Error: page.evaluate: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Users/elena/Library/Ca
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browser.newContext: Target page, context or browser has been closed
+    at async file:///Users/elena/Projects/popovichfit-site/scripts/verify-priority.mjs:118:17 {
+  log: []
+}
+
+Node.js v26.0.0

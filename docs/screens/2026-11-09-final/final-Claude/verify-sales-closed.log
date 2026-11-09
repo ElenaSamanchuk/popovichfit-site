@@ -1,0 +1,157 @@
+[
+  {
+    "label": "/pred закрытые продажи",
+    "ok": true,
+    "details": {
+      "status": 302,
+      "location": "/?r=qa123&utm_source=local-qa"
+    }
+  },
+  {
+    "label": "/predcor закрытые продажи",
+    "ok": true,
+    "details": {
+      "status": 302,
+      "location": "/course_correction?r=qa123&utm_source=local-qa"
+    }
+  },
+  {
+    "label": "/predpow закрытые продажи",
+    "ok": true,
+    "details": {
+      "status": 302,
+      "location": "/course_power?r=qa123&utm_source=local-qa"
+    }
+  },
+  {
+    "label": "sitemap без закрытых продаж",
+    "ok": true
+  },
+  {
+    "label": "/ 390 окно по прямой ссылке",
+    "ok": true
+  },
+  {
+    "label": "/ 390 окно из карточки",
+    "ok": true
+  },
+  {
+    "label": "/ 390 актуальный ответ FAQ",
+    "ok": true
+  },
+  {
+    "label": "/ 390 атрибуция в ссылках",
+    "ok": true
+  },
+  {
+    "label": "/ 390 счётчики на localhost",
+    "ok": true,
+    "details": []
+  },
+  {
+    "label": "/open 390 окно по прямой ссылке",
+    "ok": true
+  },
+  {
+    "label": "/open 390 окно из карточки",
+    "ok": true
+  },
+  {
+    "label": "/open 390 актуальный ответ FAQ",
+    "ok": true
+  },
+  {
+    "label": "/open 390 атрибуция в ссылках",
+    "ok": true
+  },
+  {
+    "label": "/open 390 счётчики на localhost",
+    "ok": true,
+    "details": []
+  },
+  {
+    "label": "/close 390 окно по прямой ссылке",
+    "ok": true
+  },
+  {
+    "label": "/close 390 окно из карточки",
+    "ok": true
+  },
+  {
+    "label": "/close 390 актуальный ответ FAQ",
+    "ok": true
+  },
+  {
+    "label": "/close 390 атрибуция в ссылках",
+    "ok": true
+  },
+  {
+    "label": "/close 390 счётчики на localhost",
+    "ok": true,
+    "details": []
+  },
+  {
+    "label": "/ 1440 окно по прямой ссылке",
+    "ok": true
+  },
+  {
+    "label": "/ 1440 окно из карточки",
+    "ok": true
+  },
+  {
+    "label": "/ 1440 актуальный ответ FAQ",
+    "ok": true
+  },
+  {
+    "label": "/ 1440 атрибуция в ссылках",
+    "ok": true
+  },
+  {
+    "label": "/ 1440 счётчики на localhost",
+    "ok": true,
+    "details": []
+  },
+  {
+    "label": "/open 1440 окно по прямой ссылке",
+    "ok": true
+  },
+  {
+    "label": "/open 1440 окно из карточки",
+    "ok": true
+  },
+  {
+    "label": "/open 1440 актуальный ответ FAQ",
+    "ok": true
+  },
+  {
+    "label": "/open 1440 атрибуция в ссылках",
+    "ok": true
+  },
+  {
+    "label": "/open 1440 счётчики на localhost",
+    "ok": true,
+    "details": []
+  },
+  {
+    "label": "/close 1440 окно по прямой ссылке",
+    "ok": true
+  },
+  {
+    "label": "/close 1440 окно из карточки",
+    "ok": true
+  },
+  {
+    "label": "/close 1440 актуальный ответ FAQ",
+    "ok": true
+  },
+  {
+    "label": "/close 1440 атрибуция в ссылках",
+    "ok": true
+  },
+  {
+    "label": "/close 1440 счётчики на localhost",
+    "ok": true,
+    "details": []
+  }
+]
+EXIT 0

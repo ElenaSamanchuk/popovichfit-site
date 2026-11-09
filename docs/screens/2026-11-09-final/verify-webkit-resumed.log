@@ -1,0 +1,22 @@
+
+> popovichfit-site@0.1.0 verify:priority
+> nice -n 15 node scripts/verify-priority.mjs --base http://127.0.0.1:49867 --browser webkit --pages /,/course_correction,/privacy,/taplink --widths 1440,390 --out docs/screens/2026-11-09-final/verify-webkit-resumed.json
+
+== verify:priority  webkit  сервер http://127.0.0.1:49867  страниц 4 × ширин 2
+ок     /                     1440  h= 6786  
+ок     /                      390  h=10891  
+ок     /course_correction    1440  h= 5175  
+ок     /course_correction     390  h= 7302  
+ок     /privacy              1440  h= 6450  
+ок     /privacy               390  h=11837  
+ок     /taplink              1440  h= 3030  
+ок     /taplink               390  h= 3320  
+
+Страница × ширина (ок / ОШ):
+страница               1440    390
+/                        ок     ок
+/course_correction       ок     ок
+/privacy                 ок     ок
+/taplink                 ок     ок
+
+ИТОГ: проверок 8, с ошибками 0, время 46 с
