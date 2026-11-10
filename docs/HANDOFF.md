@@ -225,3 +225,6 @@
 ## 10.11.2026 Claude — обход сервера
 - `python3 -I scripts/verify-server.py https://preview.popovichfit.ru --report файл`: 229 адресов, ошибок 0; 135 внутренних ссылок, новых битых нет; 6 ссылок мертвы и на сайте Тильды, список в `scripts/known-dead-links.json`.
 - Предупреждения: `/404.html` отвечает 200; пустой заголовок окна на `/add_tr_ofelia`, `/chatpow`, `/history-ballance`, `/lknachalo`, `/profile-lk`, как в экспорте. Защитных заголовков, кроме nosniff, nginx не отдаёт.
+
+## 10.11.2026 Claude — скрины Тильды для сравнения
+- `node scripts/shoot-tilda-reference.mjs [папка] [--only /a,/b] [--resume]`: 27 страниц popovichfit.ru, компьютер 1440 и телефон 390, ждёт картинки и анимации, строит страницу-витрину. Результат локально: `work/tilda-screens-2026-11-10/Тильда-страницы-деск-мобилка.html`.
