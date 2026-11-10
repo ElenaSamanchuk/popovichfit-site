@@ -80,6 +80,8 @@ html.pf-wd { scroll-behavior: auto; }
 
 /* статьи /media_*: колонка текста и картинок шире (760 → 960) */
 .pf-wide .t-col.t-col_8.t-prefix_2, .pf-wide .t-col.t-col_8 { float: none; max-width: 960px; margin-left: auto; margin-right: auto; padding-left: 0 !important; }
+/* на телефоне и планшете у статей поля по 20 px, как в Тильде; padding-left:0 выше нужен только для центрирования колонки на десктопе */
+@media (max-width: 959.98px) { .pf-wide .t-col.t-col_8.t-prefix_2, .pf-wide .t-col.t-col_8 { padding-left: 20px !important; padding-right: 20px !important; box-sizing: border-box; } }
 .pf-wide .t-text_md { line-height: 1.65; }
 .pf-wide .t-col img { max-width: 100%; height: auto; }
 /* /sertif: сетка сертификатов вместо слайдера */

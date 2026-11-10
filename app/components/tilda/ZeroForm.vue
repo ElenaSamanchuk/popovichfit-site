@@ -32,11 +32,16 @@ async function submit() {
       <button type="submit" class="pf-btn-blue h-[45px] rounded-[6px] text-[12px] font-bold uppercase text-white" :disabled="state === 'sending'">{{ state === 'sending' ? 'Отправляем…' : 'Отправить' }}</button>
       <p v-if="state === 'error'" class="text-[12px] text-[#f83e60]">{{ error }}</p>
     </template>
-    <p v-else class="text-[14px] font-semibold text-ink">Спасибо! Заявка отправлена.</p>
+    <p v-else class="tz-form__ok text-[18px] font-semibold text-ink">Спасибо! Заявка отправлена.</p>
   </form>
 </template>
 
 <style>
 .tz-form__input { height: 45px; width: 100%; border: 1px solid #dbdbdb; border-radius: 6px; padding: 0 14px; font-size: 14px; background: #fff; }
 .tz-form__input:focus { outline: 2px solid #4f86c4; outline-offset: 1px; }
+/* успех по центру области формы: высота блока задана макетом и после скрытия полей не меняется */
+.tz-form__ok { margin: auto; text-align: center; animation: tz-form-ok .3s ease-out both; }
+@keyframes tz-form-ok { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+/* Safari на телефоне увеличивает страницу при фокусе на поле мельче 16 px */
+@media (max-width: 959.98px) { .tz-form__input { font-size: 16px; } }
 </style>

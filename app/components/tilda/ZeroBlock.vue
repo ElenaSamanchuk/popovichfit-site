@@ -72,7 +72,7 @@ const padStyle = computed(() => {
 /* списки в тексте — как на живом сайте (Tailwind preflight обнуляет): маркеры, отступ 20px, без внешних отступов */
 .tz .tz__el--text ul { list-style: disc outside; }
 .tz .tz__el--text ol { list-style: decimal outside; }
-.tz .tz__el--text ul, .tz .tz__el--text ol { padding-left: 20px; margin: 0; }
+.tz .tz__el--text ul, .tz .tz__el--text ol { padding-left: calc(20 * var(--u, 1px)); margin: 0; }
 .tz .tz__el--button { display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; column-gap: 8px; }
 .tz .tz__icon { display: inline-block; flex-shrink: 0; background-color: currentColor; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; }
 .tz .tz__el--image img, .tz .tz__el--vector svg { display: block; width: 100%; height: auto; }
