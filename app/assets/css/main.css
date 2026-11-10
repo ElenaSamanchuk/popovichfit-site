@@ -5,6 +5,7 @@
 @import "./tilda-blocks-export.css";
 @import "./tilda-blocks.css";
 @import "./pf-cards.css";
+@import "./zero-forms.css";
 
 /* Дизайн-токены. Брейкпоинты = артборды Zero Block Тильды (320/480/640/960/1200),
    контейнер 1200 px. Значения цветов — из экспорта (old-site), не выдумывать новые. */
