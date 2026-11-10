@@ -17,6 +17,9 @@ def fam(v):
 
 
 def css(v):
+    # кнопка нулевого размера в экспорте: у формы своя кнопка поверх, размеры по умолчанию оставляем кликабельными
+    for k in ('buttonwidth', 'buttonheight'):
+        if v.get(k) and float(v[k]) < 20: v[k] = None
     i, b = [], []
     if v.get('inputfontfamily'): i.append(f"font-family:{fam(v['inputfontfamily'])}")
     if v.get('inputfontsize'): i.append(f"font-size:{u(v['inputfontsize'])}")
