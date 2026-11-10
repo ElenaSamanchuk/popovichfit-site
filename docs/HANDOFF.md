@@ -221,3 +221,7 @@
 - Подключение: при Planet VPN SSH к VM виснет, напрямую через `en0` работает, скрипт ходит напрямую.
 - Почта настроена на сервере: форма реально отправляет письмо на адрес из `.env`, поэтому формы на этом адресе не отправляем. Telegram не настроен.
 - Метрика и пиксель VK включаются только на `popovichfit.ru` и `www.popovichfit.ru`, на `preview.popovichfit.ru` их нет намеренно.
+
+## 10.11.2026 Claude — обход сервера
+- `python3 -I scripts/verify-server.py https://preview.popovichfit.ru --report файл`: 229 адресов, ошибок 0; 135 внутренних ссылок, новых битых нет; 6 ссылок мертвы и на сайте Тильды, список в `scripts/known-dead-links.json`.
+- Предупреждения: `/404.html` отвечает 200; пустой заголовок окна на `/add_tr_ofelia`, `/chatpow`, `/history-ballance`, `/lknachalo`, `/profile-lk`, как в экспорте. Защитных заголовков, кроме nosniff, nginx не отдаёт.
