@@ -7,12 +7,16 @@ const values = reactive<Record<string, string>>({})
 const state = ref<'idle' | 'sending' | 'ok' | 'error'>('idle')
 const error = ref('')
 const previewMode = Boolean(useRuntimeConfig().public.previewMode)
+const formEl = ref<HTMLFormElement | null>(null)
+// после отправки поля скрываются: форма держит прежнюю высоту, надпись об успехе стоит по её центру
+const keptHeight = ref(0)
 
 async function submit() {
   state.value = 'sending'
   error.value = ''
   try {
     await sendLead({ form: props.formName || 'zero-' + props.elemId, page: location.pathname, fields: { ...values } }, previewMode)
+    keptHeight.value = formEl.value?.offsetHeight ?? 0
     state.value = 'ok'
   } catch (e: any) {
     state.value = 'error'
@@ -22,7 +26,7 @@ async function submit() {
 </script>
 
 <template>
-  <form class="tz-form flex h-full w-full flex-col gap-[10px]" @submit.prevent="submit">
+  <form ref="formEl" class="tz-form flex h-full w-full flex-col gap-[10px]" :style="keptHeight ? { minHeight: keptHeight + 'px' } : undefined" @submit.prevent="submit">
     <template v-if="state !== 'ok'">
       <template v-for="f in fields" :key="f.lid || f.li_name">
         <textarea v-if="f.li_type === 'ta'" v-model="values[f.li_name || f.lid!]" :placeholder="f.li_ph" class="tz-form__input min-h-[80px]" />
