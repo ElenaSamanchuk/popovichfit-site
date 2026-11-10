@@ -50,6 +50,7 @@ async function submit() {
   if (!p) return
   error.value = validate()
   if (error.value) return
+  if (useRuntimeConfig().public.previewMode) { state.value = 'ok'; return } // превью: штатный успех без заказа
   state.value = 'sending'
   try {
     const formFields: Record<string, string> = {}

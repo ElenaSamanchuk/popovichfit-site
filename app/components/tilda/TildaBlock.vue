@@ -55,7 +55,9 @@ const docHtml = computed(() => {
       if (/^<p[\s>]/.test(x)) return x.replace(/^<p([^>]*)>/, '<p$1 class="pf-doc__title">')
       const m = /^(\d+(?:\.\d+)*\.?)\s+/.exec(x.replace(/<[^>]+>/g, ''))
       const level = m ? m[1].split('.').filter(Boolean).length : 0
-      return `<p class="${m ? `pf-doc__n pf-doc__n-${Math.min(level, 3)}` : 'pf-doc__p'}">${x}</p>`
+      // длинный нумерованный абзац — обычный текст, полужирным остаются только короткие заголовки разделов
+      const long = level === 1 && x.replace(/<[^>]+>/g, '').length > 120
+      return `<p class="${m && !long ? `pf-doc__n pf-doc__n-${Math.min(level, 3)}` : m ? 'pf-doc__n pf-doc__p' : 'pf-doc__p'}">${x}</p>`
     })
     return open + out.join('') + close
   })
@@ -280,12 +282,31 @@ onMounted(() => {
     const select = el.querySelector<HTMLSelectElement>(`.${t}__select`)
     // «табы из блоков»: у вкладок data-tab-rec-ids — показываем блоки активной вкладки, остальные прячем (t395__off)
     const recIds = tabs.map((t) => (t.getAttribute('data-tab-rec-ids') || '').split(',').map((x) => x.trim()).filter(Boolean))
+    let switchToken = 0
+    const recEl = (id: string) => document.getElementById('rec' + id)
     const activate = (i: number) => {
       tabs.forEach((tab, j) => { tab.classList.toggle(`${t}__tab_active`, i === j); tab.classList.toggle(`${t}__tab-style1_active`, i === j && b.type === '1281'); tab.querySelector('button')?.setAttribute('aria-selected', String(i === j)) })
-      const fade = (x: HTMLElement) => { x.classList.remove('pf-fade-in'); void x.offsetWidth; x.classList.add('pf-fade-in') }
-      panels.forEach((p, j) => { const was = p.style.display !== 'none'; p.style.display = i === j ? 'block' : 'none'; if (i === j && !was) fade(p) })
-      recIds.forEach((ids, j) => ids.forEach((id) => { const r = document.getElementById('rec' + id); if (!r) return; const was = !r.classList.contains('t395__off'); r.classList.toggle('t395__off', i !== j); if (i === j && !was) fade(r) }))
       if (select) select.selectedIndex = i
+      const fade = (x: HTMLElement) => { x.classList.remove('pf-fade-in'); void x.offsetWidth; x.classList.add('pf-fade-in') }
+      const show = () => {
+        panels.forEach((p, j) => { const was = p.style.display !== 'none'; p.style.display = i === j ? 'block' : 'none'; if (i === j && !was) fade(p) })
+        recIds.forEach((ids, j) => ids.forEach((id) => { const r = recEl(id); if (!r) return; const was = !r.classList.contains('t395__off'); r.classList.toggle('t395__off', i !== j); if (i === j && !was) fade(r) }))
+      }
+      // старая вкладка гаснет, затем появляется новая; при быстрых переключениях действует последнее
+      const token = ++switchToken
+      const everything = [...panels, ...recIds.flat().map(recEl)].filter(Boolean) as HTMLElement[]
+      everything.forEach((x) => x.classList.remove('pf-fade-out'))
+      const leaving = [
+        ...panels.filter((p, j) => j !== i && p.style.display !== 'none'),
+        ...recIds.flatMap((ids, j) => (j === i ? [] : ids.map(recEl))).filter((r) => r && !r.classList.contains('t395__off')),
+      ] as HTMLElement[]
+      if (!leaving.length || matchMedia('(prefers-reduced-motion: reduce)').matches) { show(); return }
+      leaving.forEach((x) => x.classList.add('pf-fade-out'))
+      setTimeout(() => {
+        if (token !== switchToken) return
+        leaving.forEach((x) => x.classList.remove('pf-fade-out'))
+        show()
+      }, 180)
     }
     tabs.forEach((tab, i) => tab.addEventListener('click', () => activate(i)))
     select?.addEventListener('change', () => activate(select.selectedIndex))

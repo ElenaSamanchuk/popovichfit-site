@@ -43,7 +43,7 @@ try {
   browser = await chromium.launch({ headless:true })
   for (const width of [1440,390]) {
     const ctx = await browser.newContext({viewport:{width,height:width===390?844:960},isMobile:width===390,hasTouch:width===390,deviceScaleFactor:width===390?3:1})
-    await ctx.route('**/*', route => new URL(route.request().url()).origin === origin ? route.continue() : route.abort())
+    await ctx.route('**/*', route => { const url = new URL(route.request().url()); if (url.origin === origin) return route.continue(); if (url.hostname === 'senndder.ru') return route.fulfill({ status: 200, contentType: 'text/javascript', body: '' }); return route.abort() })
     const page = await ctx.newPage()
     let issues=[]
     page.on('pageerror', e => issues.push(e.message))
@@ -69,10 +69,18 @@ try {
     assert.equal(new URL(page.url()).searchParams.get('utm_source'),'preview-test')
     if(width===390) assert.equal(await page.locator('.burger').getAttribute('aria-expanded'),'false')
     assert.match(await page.locator('meta[name=robots]').getAttribute('content'), /noindex/)
+    assert.equal(await page.locator('script[src*="senndder.ru"]').count(),1,'chat widget missing')
     // Prove fetch/send guard and visible explanation, never send a real form.
     assert.equal(await page.evaluate(async()=>{try{await fetch('/api/lead',{method:'POST',body:'preview'});return false}catch{return true}}),true)
-    assert.ok(await page.locator('#preview-notice').isVisible())
-    await page.locator('#preview-notice').click()
+    // Форма сайта работает визуально и не создаёт ни одного изменяющего запроса.
+    const posts=[];page.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))posts.push(r.url())})
+    await page.goto(origin+base+'support/',{waitUntil:'networkidle'})
+    const form=page.locator('form.tz-form:visible').first()
+    for(const input of await form.locator('input:not([type=checkbox]),textarea').all()){const type=await input.getAttribute('type');await input.fill(type==='email'?'qa@example.com':type==='tel'?'+375291112233':'Проверка QA')}
+    for(const box of await form.locator('input[type=checkbox]').all()) await box.check()
+    await form.locator('button[type=submit]').click()
+    await page.getByText('Спасибо! Заявка отправлена.').first().waitFor({timeout:4000})
+    assert.deepEqual(posts,[],'preview form sent a request')
     await page.screenshot({path:reportFile.replace(/\.json$/,`-${width}.png`)})
     await ctx.close()
   }

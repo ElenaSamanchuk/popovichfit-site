@@ -57,6 +57,7 @@ html.pf-wd { scroll-behavior: auto; }
 /* плавное переключение вкладок T395/T1281 и блоков «показать ещё» */
 @keyframes pf-fade-in { from { opacity: 0; } to { opacity: 1; } }
 .pf-fade-in { animation: pf-fade-in 0.35s ease-in-out; }
+.pf-fade-out { opacity: 0; transition: opacity 0.18s ease-in-out; }
 
 /* страницы документов (оферта, политика, согласия): широкая колонка, абзацы, нумерованные пункты — просьба заказчика 18.09 */
 .pf-doc .t004 .t-col, .pf-doc .t106 .t-col { float: none; max-width: 960px; margin-left: auto; margin-right: auto; padding-left: 0 !important; }

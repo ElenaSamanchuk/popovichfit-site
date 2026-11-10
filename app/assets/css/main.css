@@ -84,3 +84,8 @@ html.pf-menu-open, html.pf-menu-open body { overflow: hidden; height: 100vh; }
 
 /* страницы со старой шапкой: контент начинается под шапкой без пустой полосы (.pfh-gap нужен только страницам с новой шапкой) */
 .pf-site:has(.tilda-page.pf-oldhdr) .pfh.pfh-hdr .pfh-gap { height: 0; }
+
+/* системная настройка «уменьшить движение»: состояния меняются без анимации на всём сайте */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; scroll-behavior: auto !important; }
+}

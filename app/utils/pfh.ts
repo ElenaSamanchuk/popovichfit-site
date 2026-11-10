@@ -190,13 +190,14 @@ export function initPage(root: HTMLElement) {
     d._anim?.cancel()
     if (open) d.open = true
     d._closing = !open
+    d.classList.toggle('is-closing', !open)
     const h = a.offsetHeight
     const pb = getComputedStyle(a).paddingBottom
     a.style.overflow = 'hidden'
     const full = { height: h + 'px', paddingBottom: pb, opacity: 1 }
     const zero = { height: '0px', paddingBottom: '0px', opacity: 0 }
     d._anim = a.animate(open ? [zero, full] : [full, zero], { duration: open ? 320 : 240, easing: 'cubic-bezier(.2,.7,.2,1)' })
-    d._anim.onfinish = () => { if (!open) d.open = false; a.style.overflow = ''; d._anim = null; d._closing = false }
+    d._anim.onfinish = () => { if (!open) d.open = false; d.classList.remove('is-closing'); a.style.overflow = ''; d._anim = null; d._closing = false }
   }
   qa('details.qa > summary', root).forEach((sum) => sum.addEventListener('click', (e) => {
     e.preventDefault()

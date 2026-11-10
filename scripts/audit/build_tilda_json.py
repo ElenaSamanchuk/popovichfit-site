@@ -154,6 +154,9 @@ if os.path.exists('docs/meta.json'):
     _meta = json.load(open('docs/meta.json', encoding='utf-8'))
     LEGAL_FILES = {f for f, v in _meta.items() if v['url'] in LEGAL_URLS}
 _legal = False  # выставляется в parse_page
+_file = ''  # текущая страница (parse_page)
+# Страницы курсов: в Zero-блоках дополнительно тире, разряды и число+единица (узкое правило, 10.11.2026; остальные Zero-страницы не трогаем)
+ZERO_FULL_TYPO = {'page41085668.html', 'page41126306.html', 'page153860856.html', 'page148255016.html', 'page148255026.html'}
 
 def typograf_html(h, zero=False):
     """h — HTML фрагмент (текст элемента/абзац): nbsp после коротких слов, без точки в конце абзаца."""
@@ -164,13 +167,15 @@ def typograf_html(h, zero=False):
         if part.startswith('<'): out.append(part); continue
         # висячие предлоги: слово из списка + пробел → nbsp (только между словами, регистр любой)
         part = re.sub(r'(?<![\w-])(' + SHORT_WORDS + r')\s+(?=[\wА-Яа-яЁё«(„"])', lambda m: m.group(1) + '\u00a0', part, flags=re.I)
-        if not zero:  # свободные блоки: тире, разряды и единицы (в Zero-блоках раскладка абсолютная — лишний неразрывный пробел переносит строку, там только предлоги)
+        if not zero or _file in ZERO_FULL_TYPO:  # свободные блоки: тире, разряды и единицы (в Zero-блоках раскладка абсолютная — лишний неразрывный пробел переносит строку, там только предлоги)
             part = re.sub(r'(?<=\S)[ \u00a0]+(?=[—–](?:\s|\u00a0|$))', '\u00a0', part)           # перед тире
             part = re.sub(r'(?<=\S) +(?=- )', '\u00a0', part)                                     # « - » как тире
             part = re.sub(r'(?<![\d.,])(\d{1,3}) (?=\d{3}(?!\d))', '\\1\u00a0', part)             # разряды: 12 899
             part = re.sub(r'(\d) (?=' + UNITS + r'(?![\w]))', '\\1\u00a0', part)                  # число + единица
         out.append(part)
     h = ''.join(out)
+    if not zero or _file in ZERO_FULL_TYPO:  # пробел перед тире, отделённый от него закрывающим тегом: «Поток 58</span> — старт»
+        h = re.sub(r'(?<=\S) +(?=(?:<[^>]+>)*[—–](?:\s|\u00a0|&nbsp;|$))', '\u00a0', h)
     if _legal: return h  # юр-документы: точки сохраняются
     # точка в конце абзаца: перед </p>, </li>, <br>, концом текста (не «...», не сокращения вроде «т.д.», не после цифр «2024.»)
     h = re.sub(r'(?<![.\d])(?<!\b[а-яa-z])\.(\s*)(?=(</p>|</li>|</div>|<br\s*/?>|$))', r'\1', h, flags=re.I)
@@ -222,8 +227,9 @@ def elem_extra(el_html, etype):
     return out
 
 def parse_page(fname):
-    global _legal
+    global _legal, _file
     _legal = fname in LEGAL_FILES
+    _file = fname
     html = open(os.path.join(ROOT, fname), encoding='utf-8', errors='ignore').read()
     body = html.split('<!--allrecords-->')[1] if '<!--allrecords-->' in html else html
     recs = re.split(r'(?=<div id="rec\d+" class="r t-rec)', body)
@@ -298,7 +304,7 @@ def parse_page(fname):
                 geo = {scr: norm_geo(g) for scr, g in e['geo'].items()}
                 el = {'id': e['id'], 'type': e['type'], 'cls': e['cls'], 'eff': effective(geo), 'fields': e['fields'], 'anim': {k: v for k, v in e['anim'].items() if k != 'sbs-opts'}}
                 if e.get('sbs'): el['sbs'] = e['sbs']
-                if e['html']: el['html'] = typograf_html(rewrite_links(e['html']), zero=True) if e['type'] in ('text',) else rewrite_links(e['html'])
+                if e['html']: el['html'] = typograf_html(rewrite_links(e['html']), zero=True) if (e['type'] in ('text',) or (e['type'] == 'button' and _file in ZERO_FULL_TYPO)) else rewrite_links(e['html'])
                 if e['text']: el['text'] = e['text']
                 if e.get('tag') in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'): el['tag'] = e['tag']
                 if e['href']: el['href'] = rewrite_links(f'href="{e["href"]}"')[6:-1]

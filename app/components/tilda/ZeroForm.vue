@@ -6,12 +6,13 @@ const props = defineProps<{ fields: Field[]; services: string[]; elemId: string;
 const values = reactive<Record<string, string>>({})
 const state = ref<'idle' | 'sending' | 'ok' | 'error'>('idle')
 const error = ref('')
+const previewMode = Boolean(useRuntimeConfig().public.previewMode)
 
 async function submit() {
   state.value = 'sending'
   error.value = ''
   try {
-    await $fetch('/api/lead', { method: 'POST', body: { form: props.formName || 'zero-' + props.elemId, page: location.pathname, fields: { ...values } } })
+    await sendLead({ form: props.formName || 'zero-' + props.elemId, page: location.pathname, fields: { ...values } }, previewMode)
     state.value = 'ok'
   } catch (e: any) {
     state.value = 'error'

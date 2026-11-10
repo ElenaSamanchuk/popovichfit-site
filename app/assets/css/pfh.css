@@ -18,3 +18,12 @@
 .pfh .modal .btn{--h:36px;margin-top:10px;flex:none;font-size:11px}
 .pfh .modal .timeline{gap:6px}
 }
+/* окна главной, /open, /close, /pred*: сброс стилей убирает у dialog автоцентрирование; страница под открытым окном не прокручивается */
+.pfh .modal{margin:auto}
+html:has(.pfh .modal[open]),body:has(.pfh .modal[open]){overflow:hidden}
+html:has(.pfh .modal[open]){scrollbar-gutter:stable}
+/* FAQ: значок возвращается в «плюс» вместе с закрытием ответа, а не после него */
+.pfh .qa[open].is-closing .qa__ic{background:#fff;box-shadow:inset 0 0 0 1.5px #c9c9cc}
+.pfh .qa[open].is-closing .qa__ic:before,.pfh .qa[open].is-closing .qa__ic:after{background:var(--ink)}
+.pfh .qa[open].is-closing .qa__ic:after{transform:translate(-50%,-50%) rotate(90deg)}
+.pfh .inl{transition:color .2s ease-in-out}

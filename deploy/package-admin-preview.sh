@@ -21,8 +21,12 @@ for name in ('server/index.mjs', 'public/index.html', 'redirects.map'):
     if not (src / name).is_file() or (src / name).stat().st_size == 0:
         sys.exit('ERROR: неполная гибридная сборка: ' + name)
 homepage = (src / 'public' / 'index.html').read_text(encoding='utf-8')
-if not re.search(r'<meta\b[^>]*name="robots"[^>]*content="noindex', homepage) or 'senndder.ru/' in homepage:
-    sys.exit('ERROR: для пакета нужна сборка POPOVICHFIT_PREVIEW=1 без Sender')
+production = os.environ.get('PACKAGE_MODE') == 'production'
+has_noindex = bool(re.search(r'<meta\b[^>]*name="robots"[^>]*content="noindex', homepage))
+if production and has_noindex:
+    sys.exit('ERROR: рабочий пакет нельзя собирать из сборки POPOVICHFIT_PREVIEW=1')
+if not production and not has_noindex:
+    sys.exit('ERROR: для пакета просмотра нужна сборка POPOVICHFIT_PREVIEW=1')
 if any((src / 'public' / p).exists() for p in ('sales-open', 'sales-open.html', 'pred', 'pred.html', 'predcor', 'predcor.html', 'predpow', 'predpow.html')):
     sys.exit('ERROR: найдены статические страницы/маркер открытых продаж')
 # Не читать содержимое секретов; разрешён только runtime и public из .output.
@@ -60,7 +64,7 @@ try:
             digest.update(block)
     (stage / (name + '.sha256')).write_text(digest.hexdigest() + '  ' + name + '\n')
     shutil.copyfile(instructions, stage / 'ADMIN-PREVIEW.md')
-    (stage / 'RELEASE.txt').write_text('release=' + release + '\nkind=Nuxt/Nitro hybrid\nsales_static_marker=absent\npreview_nginx_update=required\nqa_approval=must_be_supplied_separately\n')
+    (stage / 'RELEASE.txt').write_text('release=' + release + '\nkind=Nuxt/Nitro hybrid\nsales_static_marker=absent\npreview_nginx_update=' + ('none' if production else 'required') + '\nqa_approval=must_be_supplied_separately\n')
     # mkdir резервирует имя без перезаписи параллельного пакета.
     final.mkdir()
     for p in stage.iterdir():

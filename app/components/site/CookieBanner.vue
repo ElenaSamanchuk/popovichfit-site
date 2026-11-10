@@ -42,6 +42,8 @@ onBeforeUnmount(() => document.removeEventListener('click', onGlobalClick, true)
 <style>
 /* классы из T123 экспорта (.cookieBanner.hidden/.visible) */
 .pf-cookie .tz .tz__art { transition: opacity 0.4s ease, transform 0.4s ease; }
+@keyframes pf-cookie-in { from { opacity: 0; transform: translateY(20px); } }
+.pf-cookie:not(.pf-cookie--hidden) .tz .tz__art { animation: pf-cookie-in 0.4s ease; }
 .pf-cookie--hidden .tz .tz__art { opacity: 0; transform: translateY(20px); pointer-events: none; }
 .pf-cookie .cookie-banner-btn { cursor: pointer; }
 </style>

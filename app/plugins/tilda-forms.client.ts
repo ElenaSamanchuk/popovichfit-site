@@ -29,6 +29,7 @@ function validate(form: HTMLFormElement): string {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
+  const previewMode = Boolean(useRuntimeConfig().public.previewMode)
   nuxtApp.hook('app:mounted', () => {
     document.addEventListener('submit', async (e) => {
       const form = e.target as HTMLFormElement | null
@@ -49,7 +50,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       const formName = form.querySelector<HTMLInputElement>('input[name="tildaspec-formname"]')?.value
         || form.closest('[data-tilda-rec]')?.getAttribute('data-tilda-rec') || form.id || 'form'
       try {
-        await $fetch('/api/lead', { method: 'POST', body: { form: formName, page: location.pathname, fields } })
+        await sendLead({ form: formName, page: location.pathname, fields }, previewMode)
         form.querySelectorAll<HTMLElement>('.t-form__inputsbox, .t-form__submit, .t-form__errorbox-middle').forEach((el) => { el.style.display = 'none' })
         const ok = form.querySelector<HTMLElement>('.js-successbox')
         if (ok) { ok.textContent = ok.textContent?.trim() || SUCCESS; ok.style.display = 'block' }
