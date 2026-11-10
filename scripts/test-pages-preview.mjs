@@ -37,6 +37,7 @@ try {
     assert.equal(res.status, 200, route)
     assert.match(html, /name="robots"[^>]*noindex/, route)
     assert.match(html, /Content-Security-Policy/, route)
+    assert.match(html, /script-src[^;]*https:\/\/cdn\.socket\.io/, route + ': чату Sender нужен socket.io')
     report.routes.push({ route, status:res.status, noindex:true })
   }
   for (const route of ['/speakers','/pred','/predcor','/predpow','/open','/close','/payment-test','/test_mtd','/page36666832.html']) assert.equal((await fetch(origin + base + route.slice(1))).status, 404, route)
