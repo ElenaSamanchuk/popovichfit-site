@@ -56,6 +56,7 @@ async function fill(form) {
     const value = type === 'email' || rule === 'email' ? 'qa@example.com' : type === 'tel' || rule === 'phone' ? '+375291112233' : rule === 'number' ? '123' : 'Проверка QA'
     await input.fill(value).catch(() => {})
   }
+  for (const file of await form.locator('input[type=file]').all()) await file.setInputFiles({ name: 'test.png', mimeType: 'image/png', buffer: Buffer.from('test') }).catch(() => {})
   for (const box of await form.locator('input[type=checkbox]').all()) await box.check({ force: true, timeout: 1500 }).catch(() => {})
 }
 

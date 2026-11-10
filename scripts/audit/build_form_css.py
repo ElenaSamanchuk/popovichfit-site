@@ -4,7 +4,7 @@
 import glob, json, os, re
 
 RES = [('960', '1199.98px'), ('640', '959.98px'), ('480', '639.98px'), ('320', '479.98px')]
-KEYS = 'inputfontfamily inputfontsize inputfontweight inputcolor inputbgcolor inputbordercolor inputbordersize inputradius inputheight inputmargbottom buttoncolor buttonbgcolor buttonbordersize buttonbordercolor buttonradius buttonwidth buttonheight buttonfontfamily buttonfontsize buttonfontweight buttonalign buttonmargtop'.split()
+KEYS = 'inputfontfamily inputfontsize inputfontweight inputcolor inputbgcolor inputbordercolor inputbordersize inputradius inputheight inputmargbottom buttoncolor buttonbgcolor buttonbordersize buttonbordercolor buttonradius buttonwidth buttonheight buttonfontfamily buttonfontsize buttonfontweight buttonalign buttonmargtop inputtitlefontsize inputtitlefontweight inputtitlecolor inputtitlemargbottom'.split()
 FONT = {'Manrope': "'Manrope','PfhManrope',sans-serif", 'Involve': "'Involve','PfhInvolve',sans-serif"}
 
 
@@ -21,7 +21,8 @@ def css(v):
     for k in ('buttonwidth', 'buttonheight'):
         if v.get(k) and float(v[k]) < 20: v[k] = None
     i, b = [], []
-    if v.get('inputfontfamily'): i.append(f"font-family:{fam(v['inputfontfamily'])}")
+    # Arial в настройке полей Тильда не применяет: внутри поля шрифт страницы (сверено по архиву); подпись над полем в Arial
+    if v.get('inputfontfamily'): i.append(f"font-family:{fam('Involve' if v['inputfontfamily'] == 'Arial' else v['inputfontfamily'])}")
     if v.get('inputfontsize'): i.append(f"font-size:{u(v['inputfontsize'])}")
     if v.get('inputfontweight'): i.append(f"font-weight:{v['inputfontweight']}")
     if v.get('inputcolor'): i.append(f"color:{v['inputcolor']}")
@@ -45,12 +46,20 @@ def css(v):
     return i, b
 
 
-def rules(eid, v):
+def rules(bid, eid, v):
+    scope = f':where([id="{bid}"]) .e{eid}'  # один и тот же элемент на разных страницах настроен по-разному; :where не повышает вес правила
     i, b = css(v)
     out = []
-    if i: out.append(f".e{eid} .tz-form__input{{{';'.join(i)}}}")
-    if b: out.append(f".e{eid} button[type=submit]{{{';'.join(b)};text-transform:none}}")
-    if v.get('inputmargbottom'): out.append(f".e{eid} .tz-form{{gap:{u(v['inputmargbottom'])}}}")
+    t = []
+    if v.get('inputfontfamily'): t.append(f"font-family:{fam(v['inputfontfamily'])}")
+    if v.get('inputtitlefontsize'): t.append(f"font-size:{u(v['inputtitlefontsize'])}")
+    if v.get('inputtitlefontweight'): t.append(f"font-weight:{v['inputtitlefontweight']}")
+    if v.get('inputtitlecolor'): t.append(f"color:{v['inputtitlecolor']}")
+    if v.get('inputtitlemargbottom'): t.append(f"padding-bottom:{u(v['inputtitlemargbottom'])}")
+    if t: out.append(f"{scope} .tz-form__title{{{';'.join(t)}}}")
+    if i: out.append(f"{scope} .tz-form__input{{{';'.join(i)}}}")
+    if b: out.append(f"{scope} button[type=submit]{{{';'.join(b)};text-transform:none}}")
+    if v.get('inputmargbottom'): out.append(f"{scope} .tz-form{{gap:{u(v['inputmargbottom'])}}}")
     return out
 
 
@@ -66,14 +75,15 @@ for f in sorted(glob.glob('app/data/tilda/page*.json')):
             end = html.find("data-elem-id='", at + 20)
             chunk = html[at:end if end > 0 else None]
             get = lambda k: (re.search(rf'data-field-{k}-value="([^"]*)"', chunk) or [0, None])[1]
-            parts += rules(e['id'], {k: get(k) for k in KEYS})
+            parts += rules(block['id'], e['id'], {k: get(k) for k in KEYS})
             for scr, mw in RES:
                 res = {k: get(f'{k}-res-{scr}') for k in KEYS}
                 res = {k: v for k, v in res.items() if v}
-                r = rules(e['id'], res)
+                r = rules(block['id'], e['id'], res)
                 if r: parts.append(f"@media (max-width:{mw}){{{''.join(r)}}}")
             size = get('inputfontsize')
             # Safari на телефоне увеличивает страницу при фокусе на поле мельче 16 px
-            if size: parts.append(f"@media (max-width:959.98px){{.e{e['id']} .tz-form__input{{font-size:max(16px,{u(size)})}}}}")
+            scope = ':where([id="%s"]) .e%s' % (block['id'], e['id'])
+            if size: parts.append(f"@media (max-width:959.98px){{{scope} .tz-form__input{{font-size:max(16px,{u(size)})}}}}")
 open('app/assets/css/zero-forms.css', 'w', encoding='utf8').write('\n'.join(parts) + '\n')
 print(len(parts) - 1, 'правил')
