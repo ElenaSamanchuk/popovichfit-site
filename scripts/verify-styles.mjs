@@ -11,6 +11,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const argv = process.argv.slice(2)
 const opt = (name, d) => { const i = argv.indexOf('--' + name); return i >= 0 ? argv[i + 1] : d }
 const ours = argv[0] ?? 'http://127.0.0.1:3100'
+const whole = argv.includes('--whole') // вся страница одним куском: главная, /open, /close, шапка и подвал; сравниваются только шрифт и цвет
 const widths = opt('widths', '1440,390,320').split(',').map(Number)
 const SITE = path.join(ROOT, 'old-site')
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/meta.json'), 'utf8'))
@@ -19,7 +20,7 @@ const fileByUrl = Object.fromEntries(Object.entries(meta).map(([file, p]) => [p.
 const custom = new Set(cfg.customRoutes.files)
 const prio = fs.readFileSync(path.join(ROOT, 'scripts/verify-priority.mjs'), 'utf8').match(/const PAGES = \[([\s\S]*?)\]/)[1]
 let pages = opt('pages') ? opt('pages').split(',') : [...prio.matchAll(/'([^']+)'/g)].map((m) => m[1])
-const skippedPages = pages.filter((u) => !fileByUrl[u] || custom.has(fileByUrl[u]))
+const skippedPages = pages.filter((u) => !fileByUrl[u] || (!whole && custom.has(fileByUrl[u])))
 pages = pages.filter((u) => !skippedPages.includes(u))
 
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.ico': 'image/x-icon' }
@@ -34,13 +35,14 @@ const server = http.createServer((req, res) => {
 await new Promise((r) => server.listen(3199, '127.0.0.1', r))
 const archive = 'http://127.0.0.1:3199'
 
-function collect() {
+function collect(whole) {
   const clean = (s) => s.replace(/[\s ]+/g, ' ').trim()
   const zoomOf = (el) => { let z = 1; for (let e = el; e; e = e.parentElement) z *= parseFloat(getComputedStyle(e).zoom) || 1; return z }
   const px = (v, z) => (v === 'normal' ? v : Math.round(parseFloat(v) * z * 10) / 10)
   const recs = {}
-  document.querySelectorAll('[id^="rec"]').forEach((rec) => {
-    if (!/^rec\d+$/.test(rec.id) || rec.parentElement.closest('[id^="rec"]')) return
+  const roots = whole ? [document.body] : [...document.querySelectorAll('[id^="rec"]')]
+  roots.forEach((rec) => {
+    if (!whole && (!/^rec\d+$/.test(rec.id) || rec.parentElement.closest('[id^="rec"]'))) return
     const rs = getComputedStyle(rec)
     const rb = rec.getBoundingClientRect()
     if (rs.display === 'none' || rb.height === 0) return
@@ -58,10 +60,10 @@ function collect() {
       const box = el.closest('a,button') ?? el
       const bc = getComputedStyle(box)
       const zb = zoomOf(box)
-      texts.push({ t: clean(el.textContent).slice(0, 48), x: Math.round(b.x - rb.x), y: Math.round(b.y - rb.y), w: Math.round(b.width), h: Math.round(b.height), size: px(c.fontSize, z), lh: px(c.lineHeight, z), ls: px(c.letterSpacing, z), weight: c.fontWeight, family: c.fontFamily.split(',')[0].replace(/["']/g, ''), color: c.color, align: c.textAlign, up: c.textTransform,
+      texts.push({ t: clean(el.textContent).slice(0, 48), x: Math.round(b.x - rb.x), y: Math.round(b.y - rb.y), w: Math.round(b.width), h: Math.round(b.height), size: px(c.fontSize, z), lh: px(c.lineHeight, z), ls: px(c.letterSpacing, z), weight: c.fontWeight, family: c.fontFamily.split(',')[0].replace(/["']/g, '').replace(/^Pfh/, ''), color: c.color, align: c.textAlign, up: c.textTransform,
         pad: ['Top', 'Right', 'Bottom', 'Left'].map((s) => px(bc['padding' + s], zb)).join(' '), bg: bc.backgroundColor, radius: px(bc.borderTopLeftRadius, zb) })
     }
-    recs[rec.id] = { top: Math.round(rb.y + scrollY), h: Math.round(rb.height), pt: parseFloat(rs.paddingTop), pb: parseFloat(rs.paddingBottom), bg: rs.backgroundColor, texts }
+    recs[whole ? 'page' : rec.id] = { top: Math.round(rb.y + scrollY), h: Math.round(rb.height), pt: parseFloat(rs.paddingTop), pb: parseFloat(rs.paddingBottom), bg: rs.backgroundColor, texts }
   })
   return { w: innerWidth, recs }
 }
@@ -74,7 +76,7 @@ async function measure(ctx, url) {
     await page.waitForTimeout(1200)
     await page.evaluate(async () => { const h = document.body.scrollHeight; for (let y = 0; y < h; y += 400) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 170)) } scrollTo(0, 0) })
     await page.waitForTimeout(2500)
-    return await page.evaluate(collect)
+    return await page.evaluate(collect, whole)
   } finally { await page.close() }
 }
 
@@ -112,11 +114,11 @@ for (const url of pages) {
     for (const id of ids) {
       const a = A.recs[id], b = B.recs[id]
       stat.blocks++
-      if (Math.abs(a.h - b.h) > LIMIT.h) add(id, 'высота блока', `Тильда ${a.h}, у нас ${b.h}`)
-      if (Math.abs(a.pt - b.pt) > 1.5 || Math.abs(a.pb - b.pb) > 1.5) add(id, 'отступ блока внутренний', `Тильда ${a.pt}/${a.pb}, у нас ${b.pt}/${b.pb}`)
+      if (!whole && Math.abs(a.h - b.h) > LIMIT.h) add(id, 'высота блока', `Тильда ${a.h}, у нас ${b.h}`)
+      if (!whole && (Math.abs(a.pt - b.pt) > 1.5 || Math.abs(a.pb - b.pb) > 1.5)) add(id, 'отступ блока внутренний', `Тильда ${a.pt}/${a.pb}, у нас ${b.pt}/${b.pb}`)
       if (prevA) { const ga = a.top - (prevA.top + prevA.h), gb = b.top - (prevB.top + prevB.h); if (Math.abs(ga - gb) > LIMIT.y) add(id, 'расстояние до блока выше', `Тильда ${ga}, у нас ${gb}`) }
       prevA = a; prevB = b
-      if (a.bg !== b.bg && !(transparent(a.bg) && transparent(b.bg))) add(id, 'фон блока', `Тильда ${a.bg}, у нас ${b.bg}`)
+      if (!whole && a.bg !== b.bg && !(transparent(a.bg) && transparent(b.bg))) add(id, 'фон блока', `Тильда ${a.bg}, у нас ${b.bg}`)
       const pool = [...b.texts]
       for (const x of a.texts) {
         stat.texts++
@@ -136,7 +138,7 @@ for (const url of pages) {
         if (!padNear(x.pad, y.pad)) say('отступ внутри элемента', x.pad, y.pad)
         if (x.bg !== y.bg && !(transparent(x.bg) && transparent(y.bg))) say('фон элемента', x.bg, y.bg)
         if (!near(x.radius, y.radius, LIMIT.radius)) say('скругление', x.radius, y.radius)
-        if (!near(x.x, y.x, LIMIT.x) || !near(x.y, y.y, LIMIT.y)) say('положение', `${x.x},${x.y}`, `${y.x},${y.y}`)
+        if (!whole && (!near(x.x, y.x, LIMIT.x) || !near(x.y, y.y, LIMIT.y))) say('положение', `${x.x},${x.y}`, `${y.x},${y.y}`)
       }
     }
   }
