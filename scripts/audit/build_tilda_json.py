@@ -293,6 +293,9 @@ def parse_page(fname):
             block['artboard'] = {'screens': art.get('screens', ''), 'fixed': art.get('pos') == 'fixed', 'fixedPos': art.get('fixed-pos'),
                                  'ovrflw': art.get('ovrflw'), 'bg': {k: v for k, v in art.items() if k.startswith('bg')}}
             block['artboards'] = artboards
+            # поправка высоты артборда по экранам (fixups.json → artboards: rec → экран → h), где у Тильды лишняя пустота
+            for scr, fh in FIXUPS.get('artboards', {}).get(block['id'], {}).items():
+                if scr in artboards: artboards[scr]['h'] = float(fh)
             # элементы по порядку разметки (важно для групп) + доп. контент
             el_chunks = re.split(r"(?=<div\s+class='t396__elem tn-elem)", r)[1:]
             by_id = {e['id']: e for e in spec['elems']}
