@@ -30,7 +30,6 @@ const src = computed(() => {
         frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write"
         allowfullscreen
-        loading="lazy"
       />
     </ClientOnly>
   </div>

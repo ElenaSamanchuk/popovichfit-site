@@ -319,7 +319,7 @@ export function visCss(id: string, vis?: { min: number | null; max: number | nul
 }
 
 /** CSS одного Zero Block: секция (высоты, фон) + элементы + группы, по 5 диапазонам ширин. */
-export function zeroBlockCss(b: TildaBlock): string {
+export function zeroBlockCss(b: TildaBlock, opts: { popup?: boolean } = {}): string {
   const id = `#${b.id}`
   const parts: string[] = []
   parts.push(visCss(id, b.vis), padResCss(id, b.padRes))
@@ -328,7 +328,9 @@ export function zeroBlockCss(b: TildaBlock): string {
     if (!art) continue
     const r = r0.scr === '1200' && b.artboards?.['1600'] ? { ...r0, media: '(min-width: 1200px) and (max-width: 1599.98px)' } : r0
     // Режим уже разрешён по каскаду экспортёром. Grid сохраняет размеры сетки даже на экране 320.
-    const mobile = r.artW < 1200 && art.upscale === 'window'
+    // в zero-попапе Тильда масштабирует по окну и экран 1200 (window/1200, tilda-zero t396__isInPopup); на страницах вне попапа
+    // это не включено сознательно (HANDOFF: известное отличие /m, /ogin1)
+    const mobile = (r.artW < 1200 || (opts.popup && !b.artboards?.['1600'])) && art.upscale === 'window'
     const u = mobile ? `${id}{--u:calc(100vw / ${r.artW});}` : ''
     let sec = `${id} .tz__art{`
     // артборд position:absolute (Тильда): запись схлопывается в 0, содержимое наезжает на следующий блок

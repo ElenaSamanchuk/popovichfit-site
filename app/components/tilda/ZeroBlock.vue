@@ -6,8 +6,8 @@ import { zeroBlockCss, type TildaBlock, type ZeroElem, type ZeroNode } from '~/u
 import { initPfCards } from '~/utils/pf-cards'
 import { initAppear } from '~/utils/appear'
 
-const props = defineProps<{ block: TildaBlock }>()
-const css = computed(() => zeroBlockCss(props.block))
+const props = defineProps<{ block: TildaBlock; popup?: boolean }>()
+const css = computed(() => zeroBlockCss(props.block, { popup: props.popup }))
 useHead({ style: [{ key: 'zb-' + props.block.id, innerHTML: css.value }] })
 
 const elemMap = computed(() => new Map((props.block.elems ?? []).map((e) => [e.id, e as ZeroElem])))

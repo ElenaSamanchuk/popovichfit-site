@@ -202,7 +202,7 @@ function initLazyVideo(el: HTMLElement) {
     const id = v.getAttribute('data-videolazy-id') || '', type = v.getAttribute('data-videolazy-type') || 'youtube'
     const src = type === 'kinescope' ? `https://kinescope.io/embed/${id}` : type === 'vimeo' ? `https://player.vimeo.com/video/${id}` : `https://www.youtube-nocookie.com/embed/${id}?rel=0`
     const f = document.createElement('iframe')
-    f.src = src; f.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media'; f.setAttribute('allowfullscreen', ''); f.setAttribute('frameborder', '0'); f.loading = 'lazy'; f.title = 'Видео'
+    f.src = src; f.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write'; f.setAttribute('allowfullscreen', ''); f.setAttribute('frameborder', '0'); f.title = 'Видео'
     const h = v.getAttribute('data-videolazy-height') || '540px'
     f.style.cssText = `display:block;width:100%;height:${h};max-height:56.25vw;border:0;background:#000`
     v.appendChild(f)
@@ -324,8 +324,8 @@ onMounted(() => {
   <FixedBackground v-else-if="b.type === '674' && bgImage" :image="bgImage" />
 
   <!-- попапы -->
-  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : b.type === '746' ? 960 : b.type === '390' ? 860 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093' || b.type === '746'" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'" :overlay-style="overlayStyle" :box-style="popupBoxStyle" @open="onPopupOpen">
-    <ZeroBlock v-if="b.type === '1093' && popupContent" :block="popupContent" />
+  <Modal v-else-if="isPopup" :name="popupName" :width="b.type === '331' || b.type === '868' ? 960 : b.type === '746' ? 960 : b.type === '390' ? 860 : 640" :bare="b.type === '331' || b.type === '868' || b.type === '1093' || b.type === '746'" :full="b.type === '1093'" :gutter="b.type === '868' ? 20 : undefined" :overlay="b.type === '1093' ? 'dim' : b.type === '390' ? 'light' : 'dark'" :overlay-style="overlayStyle" :box-style="popupBoxStyle" @open="onPopupOpen">
+    <ZeroBlock v-if="b.type === '1093' && popupContent" :block="popupContent" popup />
     <VideoEmbed v-else-if="b.type === '331' && youtubeId" kind="youtube" :id="youtubeId" autoplay />
     <!-- id блока нужен для его CSS из экспорта (#recNNN .t390__descr{…}); в потоке страницы попап-блок не рендерится, id уникален -->
     <div v-else :id="b.id" ref="popupRoot" class="tb tb--popup" :class="b.type === '746' ? 'tb--gallery t746' : b.type === '868' ? 'tb--embed' : 'p-[30px] max-xs:p-[16px]'" :data-tilda-rec="b.id" v-html="popupHtml" />

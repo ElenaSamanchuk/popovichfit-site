@@ -14,7 +14,11 @@ const props = withDefaults(defineProps<{
   overlayStyle?: Record<string, string>
   /** инлайн-стиль окна (например, фон контейнера T390 из экспорта) */
   boxStyle?: string
-}>(), { width: 960, overlay: 'dark', bare: false, overlayStyle: undefined, boxStyle: undefined })
+  /** на всю ширину окна, без боковых полей и max-width: zero-попап T1093 считает артборд от окна, как .t-popup__container у Тильды */
+  full?: boolean
+  /** постоянное боковое поле в px на всех ширинах (видео-попап T868 у Тильды: 20 px и на телефоне) */
+  gutter?: number
+}>(), { width: 960, overlay: 'dark', bare: false, overlayStyle: undefined, boxStyle: undefined, full: false, gutter: undefined })
 
 const modal = useModal()
 const isOpen = computed(() => modal.active.value === props.name)
@@ -56,11 +60,11 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
             </g>
           </svg>
         </button>
-        <div class="flex min-h-full items-center justify-center px-[20px] py-[60px] max-xs:px-[10px] max-xs:py-[40px]" @click.self="modal.close()">
+        <div class="flex min-h-full items-center justify-center py-[60px] max-xs:py-[40px]" :class="full ? 'px-0' : gutter !== undefined ? '' : 'px-[20px] max-xs:px-[10px]'" :style="gutter !== undefined && !full ? { paddingLeft: gutter + 'px', paddingRight: gutter + 'px' } : undefined" @click.self="modal.close()">
           <div
             class="pf-modal__box relative w-full"
             :class="bare ? '' : 'rounded-[10px] bg-white'"
-            :style="[{ maxWidth: width + 'px' }, boxStyle]"
+            :style="[full ? undefined : { maxWidth: width + 'px' }, boxStyle]"
             @click.stop
           >
             <slot />
