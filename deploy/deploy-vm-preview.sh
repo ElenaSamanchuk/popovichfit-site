@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Выкладка пакета work/popovichfit-<REL> на общую VM (preview.popovichfit.ru) без ИИ.
+# Выкладка пакета work/popovichfit-<REL> на общую VM (popovichfit.ru, раньше preview.popovichfit.ru) без ИИ.
 # Запуск: bash deploy/deploy-vm-preview.sh [--dry-run] 20261110-prod-08
 # Меняет только /var/www/popovichfit: новый releases/<REL>, ссылку current, сервис popovichfit, deployment.json.
 # nginx перезагружает только если изменился redirects.map. При сбое возвращает прежний релиз.
@@ -15,7 +15,8 @@ TAR="$PKG/popovichfit-$REL.tar.gz"
 KEY="${KEY:-$HOME/Downloads/ubuntu-STD3-8-16-200GB-M9I9y4Dw.pem}"
 IFACE="${IFACE:-en0}"
 SERVER_IP=212.233.93.50
-SITE=preview.popovichfit.ru
+# с 12.11.2026 боевой домен на этой VM, preview.popovichfit.ru отвечает 301 на него — проверяем боевой
+SITE="${SITE:-popovichfit.ru}"
 NEIGHBORS=(kochfit.ru preview.medvediva.ru medvediva.ru medvediva.online medvediva.kg preview.kineziofitness.online preview.sistemayasnosti.com)
 
 [[ -f "$TAR" ]] || { echo "ОШИБКА: нет архива $TAR" >&2; exit 2; }
